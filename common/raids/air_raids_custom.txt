@@ -256,9 +256,9 @@ types = {
 							}
 						}
 						ELSE_IF = {
-							limit = { has_government = democratic }
+							limit = { has_government = Democracy }
 							add_popularity = {
-								ideology = democratic #these do not take FROM/ROOTs/var:actor_country
+								ideology = Democracy #these do not take FROM/ROOTs/var:actor_country
 								popularity = 0.1
 							}
 						}
@@ -539,9 +539,9 @@ types = {
 							}
 						}
 						ELSE_IF = {
-							limit = { has_government = democratic }
+							limit = { has_government = Democracy }
 							add_popularity = {
-								ideology = democratic #these do not take FROM/ROOTs
+								ideology = Democracy #these do not take FROM/ROOTs
 								popularity = 0.1
 							}
 						}
@@ -572,9 +572,9 @@ types = {
 							}
 						}
 						ELSE_IF = {
-							limit = { has_government = democratic }
+							limit = { has_government = Democracy }
 							add_popularity = {
-								ideology = democratic #these do not take FROM/ROOTs
+								ideology = Democracy #these do not take FROM/ROOTs
 								popularity = -0.05
 							}
 						}
@@ -641,7 +641,7 @@ types = {
 				is_fully_controlled_by = GER
 			}
 			FRA = {
-				has_government = democratic
+				has_government = Democracy
 				is_in_faction_with = ENG
 			}
 		}
@@ -1074,9 +1074,9 @@ types = {
 							}
 						}
 						ELSE_IF = {
-							limit = { has_government = democratic }
+							limit = { has_government = Democracy }
 							add_popularity = {
-								ideology = democratic #these do not take FROM/ROOTs
+								ideology = Democracy #these do not take FROM/ROOTs
 								popularity = 0.1
 							}
 						}
@@ -1107,9 +1107,9 @@ types = {
 							}
 						}
 						ELSE_IF = {
-							limit = { has_government = democratic }
+							limit = { has_government = Democracy }
 							add_popularity = {
-								ideology = democratic #these do not take FROM/ROOTs
+								ideology = Democracy #these do not take FROM/ROOTs
 								popularity = -0.05
 							}
 						}
@@ -1397,9 +1397,9 @@ types = {
 							}
 						}
 						ELSE_IF = {
-							limit = { has_government = democratic }
+							limit = { has_government = Democracy }
 							add_popularity = {
-								ideology = democratic #these do not take FROM/ROOTs
+								ideology = Democracy #these do not take FROM/ROOTs
 								popularity = 0.1
 							}
 						}
@@ -1430,9 +1430,9 @@ types = {
 							}
 						}
 						ELSE_IF = {
-							limit = { has_government = democratic }
+							limit = { has_government = Democracy }
 							add_popularity = {
-								ideology = democratic #these do not take FROM/ROOTs
+								ideology = Democracy #these do not take FROM/ROOTs
 								popularity = -0.05
 							}
 						}
@@ -1697,9 +1697,9 @@ types = {
 							}
 						}
 						ELSE_IF = {
-							limit = { has_government = democratic }
+							limit = { has_government = Democracy }
 							add_popularity = {
-								ideology = democratic #these do not take FROM/ROOTs
+								ideology = Democracy #these do not take FROM/ROOTs
 								popularity = 0.1
 							}
 						}
@@ -1730,9 +1730,9 @@ types = {
 							}
 						}
 						ELSE_IF = {
-							limit = { has_government = democratic }
+							limit = { has_government = Democracy }
 							add_popularity = {
-								ideology = democratic #these do not take FROM/ROOTs
+								ideology = Democracy #these do not take FROM/ROOTs
 								popularity = -0.05
 							}
 						}
@@ -2235,9 +2235,9 @@ types = {
 							}
 						}
 						ELSE_IF = {
-							limit = { has_government = democratic }
+							limit = { has_government = Democracy }
 							add_popularity = {
-								ideology = democratic #these do not take FROM/ROOTs
+								ideology = Democracy #these do not take FROM/ROOTs
 								popularity = 0.1
 							}
 						}
@@ -2268,9 +2268,9 @@ types = {
 							}
 						}
 						ELSE_IF = {
-							limit = { has_government = democratic }
+							limit = { has_government = Democracy }
 							add_popularity = {
-								ideology = democratic #these do not take FROM/ROOTs
+								ideology = Democracy #these do not take FROM/ROOTs
 								popularity = -0.05
 							}
 						}
@@ -2528,9 +2528,9 @@ types = {
 							}
 						}
 						ELSE_IF = {
-							limit = { has_government = democratic }
+							limit = { has_government = Democracy }
 							add_popularity = {
-								ideology = democratic #these do not take FROM/ROOTs
+								ideology = Democracy #these do not take FROM/ROOTs
 								popularity = 0.1
 							}
 						}
@@ -2561,9 +2561,9 @@ types = {
 							}
 						}
 						ELSE_IF = {
-							limit = { has_government = democratic }
+							limit = { has_government = Democracy }
 							add_popularity = {
-								ideology = democratic #these do not take FROM/ROOTs
+								ideology = Democracy #these do not take FROM/ROOTs
 								popularity = -0.05
 							}
 						}
@@ -2821,9 +2821,9 @@ types = {
 							}
 						}
 						ELSE_IF = {
-							limit = { has_government = democratic }
+							limit = { has_government = Democracy }
 							add_popularity = {
-								ideology = democratic #these do not take FROM/ROOTs
+								ideology = Democracy #these do not take FROM/ROOTs
 								popularity = 0.1
 							}
 						}
@@ -2854,9 +2854,9 @@ types = {
 							}
 						}
 						ELSE_IF = {
-							limit = { has_government = democratic }
+							limit = { has_government = Democracy }
 							add_popularity = {
-								ideology = democratic #these do not take FROM/ROOTs
+								ideology = Democracy #these do not take FROM/ROOTs
 								popularity = -0.05
 							}
 						}

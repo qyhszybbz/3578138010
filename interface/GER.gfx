@@ -24,75 +24,6 @@ spriteTypes = {
 		name = "GFX_GER_Hjalmar_Schacht_small"
 		texturefile = "gfx/interface/advisors/GER/GER_Hjalmar_Schacht.png"
 	}
-
-	#民族精神
-	#普鲁士军魂
-	spriteType = {
-		name = "GFX_idea_GER_Prussian_military_spirit"
-		texturefile = "gfx/interface/ideas/GER/GER_Prussian_military_spirit.dds"
-	}
-	#臃肿的行政系统
-	spriteType = {
-		name = "GFX_idea_GER_Bureaucratic_administrative_system"
-		texturefile = "gfx/interface/ideas/GER/GER_Bureaucratic_administrative_system.dds"
-	}
-	#十一月革命的余烬
-	spriteType = {
-		name = "GFX_idea_GER_Aftermath_of_November_Revolution"
-		texturefile = "gfx/interface/ideas/GER/Aftermath_of_November_Revolution.png"
-	}
-	#《凡尔赛条约》的枷锁
-	spriteType = {
-		name = "GFX_idea_GER_Shackles_of_Treaty_of_Versailles"
-		texturefile = "gfx/interface/ideas/GER/GER_Shackles_of_Treaty_of_Versailles.dds"
-	}
-	#战火带来的阴影
-	spriteType = {
-		name = "GFX_idea_GER_Shadow_of_War"
-		texturefile = "gfx/interface/ideas/GER/GER_Shadow_of_War.dds" 
-	}
-	#动荡不安的局面
-	#spriteType = {
-	#	name = "GFX_idea_GER_turbulent_situation"
-	#	texturefile = "gfx/interface/ideas/GER/GER_turbulent_situation.dds"
-	#}
-	#帝国陆军
-	spriteType = {
-		name = "GFX_idea_GER_Imperial_Army_1"
-		texturefile = "gfx/interface/ideas/GER/Imperial_Army_1.png"
-	}
-	#帝国海军
-	spriteType = {
-		name = "GFX_idea_GER_Imperial_Navy_1"
-		texturefile = "gfx/interface/ideas/GER/Imperial_Navy_1.png"
-	}
-	#帝国空军
-	spriteType = {
-		name = "GFX_idea_GER_Imperial_AirForce_1"
-		texturefile = "gfx/interface/ideas/GER/Imperial_AirForce_1.png"
-	}
-
-	#民族精神配图
-	spriteType = { #动荡不安的局面
-		name = "GFX_idea_GER_turbulent_situation_Pictures"
-		texturefile = "gfx/texticons/banners/GER/GER_turbulent_situation_Pictures.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = { #臃肿的行政系统
-		name = "GFX_idea_GER_Bureaucratic_administrative_system_Pictures"
-		texturefile = "gfx/texticons/banners/GER/GER_Bureaucratic_administrative_system_Pictures.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = { #战火带来的阴影
-		name = "GFX_idea_GER_Shadow_of_War_Pictures"
-		texturefile = "gfx/texticons/banners/GER/GER_Shadow_of_War_Pictures.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = { #帝国海军
-		name = "GFX_idea_GER_Imperial_Navy_Pictures"
-		texturefile = "gfx/texticons/banners/GER/GER_Imperial_Navy_Pictures.dds"
-		legacy_lazy_load = no
-	}
 	#事件及世界新闻图
 	spriteType = { #布吕宁赢得大选
         name = "GFX_events_GER_Bruning_wins_the_election"
@@ -110,10 +41,5 @@ spriteTypes = {
     spriteType = { #西部革命
         name = "GFX_events_GER_Caesar_took_control_of_tg"
         textureFile = "gfx/interface/events/GER/GER_Caesar_took_control_of_tg.dds"
-    }
-
-	spriteType = { 
-        name = "GFX_event_msln"
-        textureFile = "gfx/event_pictures/msln.dds"
     }
 }

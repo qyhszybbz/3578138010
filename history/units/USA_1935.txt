@@ -87,7 +87,7 @@ division_template = {
 units = {
 
 	division = {
-		name = "第一装甲师“老勇士”"
+		name = "第一游骑兵团"
 		location = 4760
 		division_template = "Motorized Light Tank Division"
 		start_experience_factor = 1
@@ -100,7 +100,7 @@ units = {
 	}
 
 	division = {
-		name = "第二装甲师“地狱之轮”"
+		name = "第二装甲师"
 		location = 4830
 		division_template = "Motorized Light Tank Division"
 		start_experience_factor = 1
@@ -138,7 +138,7 @@ units = {
 	}
 	
 	division = {
-		name = "第3先锋步兵师"
+		name = "第3先锋步兵师“黑马军团”"
 		location = 12586
 		division_template = "Infantry Division2"
 		start_experience_factor = 0.2
@@ -296,6 +296,14 @@ units = {
 	#九步
 	division = {
 		name = "美利坚联邦国防军步兵第1师"
+		location = 11817
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "美利坚联邦国防军步兵第1师"
 		location = 702
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
@@ -311,7 +319,7 @@ units = {
 	}
 
 	division = {
-		name = "美利坚联邦国防军步兵第3师“坚如磐石”"
+		name = "美利坚联邦国防军步兵第3师"
 		location = 4449
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
@@ -319,7 +327,7 @@ units = {
 	}
 
 	division = {
-		name = "美利坚联邦国防军步兵第4师“常春藤”"
+		name = "美利坚联邦国防军步兵第4师"
 		location = 4449
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
@@ -536,7 +544,7 @@ units = {
 
 	#六坦
 	division = {
-		name = "第1机械化师"
+		name = "第1游骑兵机械化师"
 		location = 3917
 		division_template = "Medium Armor Division"
 		start_experience_factor = 0.2
@@ -547,7 +555,7 @@ units = {
 	}
 
 	division = {
-		name = "第2机械化师"
+		name = "第2游骑兵机械化师"
 		location = 7646
 		division_template = "Medium Armor Division"
 		start_experience_factor = 0.2
@@ -558,7 +566,7 @@ units = {
 	}
 
 	division = {
-		name = "第3机械化师"
+		name = "第3游骑兵机械化师"
 		location = 7466
 		division_template = "Medium Armor Division"
 		start_experience_factor = 0.2
@@ -569,7 +577,7 @@ units = {
 	}
 
 	division = {
-		name = "第4机械化师"
+		name = "第4游骑兵机械化师"
 		location = 7528
 		division_template = "Medium Armor Division"
 		start_experience_factor = 0.2
@@ -580,7 +588,7 @@ units = {
 	}
 
 	division = {
-		name = "第5机械化师"
+		name = "第5游骑兵机械化师"
 		location = 9760
 		division_template = "Medium Armor Division"
 		start_experience_factor = 0.2
@@ -592,7 +600,7 @@ units = {
 
 	#空降兵
 	division = {
-		name = "第101空降师“呼啸之鹰”"
+		name = "第101空降师"
 		location = 3917
 		division_template = "Pratrooper Division"
 		start_experience_factor = 1
@@ -641,7 +649,7 @@ units = {
 	}
 
 	division = {
-		name = "第1海军陆战师“大红一师”"
+		name = "第1海军陆战师"
 		location = 1582
 		division_template = "Marine Division"
 		start_experience_factor = 0.2

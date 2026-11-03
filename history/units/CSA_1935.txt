@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "里士满国民警卫队"
+	name = "里士满近卫师"
 	is_locked = no
 	#template_counter = 0 # The Crossed Rifles
 	division_names_group = CSA_Inf_01
@@ -22,25 +22,25 @@
 
 	units = {
 		division = {
-			name = "里士满第1国民警卫队"
+			name = "里士满第1近卫师"
 			location = 10412
-			division_template = "里士满国民警卫队"
+			division_template = "里士满近卫师"
 			start_experience_factor = 0.3
 			start_equipment_factor = 1.0
 			start_manpower_factor = 1.0
 		}
 		division = {
-			name = "里士满第2国民警卫队"
+			name = "里士满第2近卫师"
 			location = 1506
-			division_template = "里士满国民警卫队"
+			division_template = "里士满近卫师"
 			start_experience_factor = 0.3
 			start_equipment_factor = 1.0
 			start_manpower_factor = 1.0
 		}
 		division = {
-			name = "里士满第3国民警卫队"
+			name = "里士满第3近卫师"
 			location = 11841
-			division_template = "里士满国民警卫队"
+			division_template = "里士满近卫师"
 			start_experience_factor = 0.3
 			start_equipment_factor = 1.0
 			start_manpower_factor = 1.0
@@ -111,14 +111,6 @@ division_template = {
 			start_equipment_factor = 1.0
 			start_manpower_factor = 1.0
 		}
-		division = {
-			name = "第31步兵师“迪克西师”"
-			location = 1547
-			division_template = "纽约“祖阿夫”步兵师"
-			start_experience_factor = 0.8
-			start_equipment_factor = 1.0
-			start_manpower_factor = 1.0
-		}
 	}
 division_template = {
 	name = "弗吉尼亚骑兵团部队"
@@ -142,7 +134,7 @@ division_template = {
 
 	units = {
 		division = {
-			name = "弗吉尼亚第1骑兵团部队“李将军亲卫团”"
+			name = "弗吉尼亚第1骑兵团部队"
 			location = 3823
 			division_template = "弗吉尼亚骑兵团部队"
 			start_experience_factor = 0.3
@@ -158,7 +150,7 @@ division_template = {
 			start_manpower_factor = 1.0
 		}
 		division = {
-			name = "弗吉尼亚第3骑兵团部队“绿色军刀”"
+			name = "弗吉尼亚第3骑兵团部队"
 			location = 6846
 			division_template = "弗吉尼亚骑兵团部队"
 			start_experience_factor = 0.3
@@ -166,7 +158,7 @@ division_template = {
 			start_manpower_factor = 1.0
 		}
 		division = {
-			name = "弗吉尼亚第4骑兵团部队“猎豹突击师”"
+			name = "弗吉尼亚第4骑兵团部队"
 			location = 788
 			division_template = "弗吉尼亚骑兵团部队"
 			start_experience_factor = 0.3
@@ -190,7 +182,7 @@ division_template = {
 			start_manpower_factor = 1.0
 		}
 		division = {
-			name = "弗吉尼亚第7骑兵团部队“眼镜蛇王”"
+			name = "弗吉尼亚第7骑兵团部队"
 			location = 7558
 			division_template = "弗吉尼亚骑兵团部队"
 			start_experience_factor = 0.3
@@ -236,87 +228,15 @@ division_template = {
 	
 }
 
-units = {
-	division = {
-		name = "田纳西州第1武装野战部队"
-		location = 10281
-		division_template = "田纳西州立武装野战部队"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-		start_manpower_factor = 1.0
-	}
-	division = {
-		name = "田纳西州第2武装野战部队"
-		location = 11717
-		division_template = "田纳西州立武装野战部队"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-		start_manpower_factor = 1.0
-	}
-	division = {
-		name = "田纳西州第3武装野战部队"
-		location = 7615
-		division_template = "田纳西州立武装野战部队"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-		start_manpower_factor = 1.0
-	}
-	division = {
-		name = "田纳西州第4武装野战部队"
-		location = 5001
-		division_template = "田纳西州立武装野战部队"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-		start_manpower_factor = 1.0
-	}
-	division = {
-		name = "田纳西州第5武装野战部队"
-		location = 4757
-		division_template = "田纳西州立武装野战部队"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-		start_manpower_factor = 1.0
-	}
-	division = {
-		name = "田纳西州第6武装野战部队"
-		location = 4871
-		division_template = "田纳西州立武装野战部队"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-		start_manpower_factor = 1.0
-	}
-	division = {
-		name = "田纳西州第7武装野战部队"
-		location = 10894
-		division_template = "田纳西州立武装野战部队"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-		start_manpower_factor = 1.0
-	}
-	division = {
-		name = "田纳西州第8武装野战部队"
-		location = 1998
-		division_template = "田纳西州立武装野战部队"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-		start_manpower_factor = 1.0
-	}
-	division = {
-		name = "田纳西州第9武装野战部队"
-		location = 9980
-		division_template = "田纳西州立武装野战部队"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-		start_manpower_factor = 1.0
-	}
-	division = {
-		name = "田纳西州第10武装野战部队"
-		location = 4975
-		division_template = "田纳西州立武装野战部队"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-		start_manpower_factor = 1.0
-	}
+	units = {
+		division = {
+			name = "田纳西州第1立武装野战部队"
+			location = 10281
+			division_template = "田纳西州立武装野战部队"
+			start_experience_factor = 0.3
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
 
 }
 division_template = {
@@ -337,7 +257,7 @@ division_template = {
 
 	units = {
 		division = {
-			name = "邦联第1乡土卫士"
+			name = "邦联第1民兵志愿兵团"
 			location = 5103
 			division_template = "邦联民兵志愿兵团"
 			start_experience_factor = 0
@@ -345,7 +265,7 @@ division_template = {
 			start_manpower_factor = 1.0
 		}
 		division = {
-			name = "邦联第2乡土卫士"
+			name = "邦联第2民兵志愿兵团"
 			location = 6803
 			division_template = "邦联民兵志愿兵团"
 			start_experience_factor = 0
@@ -353,7 +273,7 @@ division_template = {
 			start_manpower_factor = 1.0
 		}
 		division = {
-			name = "邦联第3乡土卫士"
+			name = "邦联第3民兵志愿兵团"
 			location = 1806
 			division_template = "邦联民兵志愿兵团"
 			start_experience_factor = 0
@@ -361,7 +281,7 @@ division_template = {
 			start_manpower_factor = 1.0
 		}
 		division = {
-			name = "邦联第4乡土卫士"
+			name = "邦联第4民兵志愿兵团"
 			location = 7762
 			division_template = "邦联民兵志愿兵团"
 			start_experience_factor = 0
@@ -369,7 +289,7 @@ division_template = {
 			start_manpower_factor = 1.0
 		}
 		division = {
-			name = "邦联第5乡土卫士"
+			name = "邦联第5民兵志愿兵团"
 			location = 12624
 			division_template = "邦联民兵志愿兵团"
 			start_experience_factor = 0
@@ -377,7 +297,7 @@ division_template = {
 			start_manpower_factor = 1.0
 		}
 		division = {
-			name = "邦联第6乡土卫士"
+			name = "邦联第6民兵志愿兵团"
 			location = 2043
 			division_template = "邦联民兵志愿兵团"
 			start_experience_factor = 0
@@ -385,7 +305,7 @@ division_template = {
 			start_manpower_factor = 1.0
 		}
 		division = {
-			name = "邦联第7乡土卫士"
+			name = "邦联第7民兵志愿兵团"
 			location = 4597
 			division_template = "邦联民兵志愿兵团"
 			start_experience_factor = 0
@@ -393,7 +313,7 @@ division_template = {
 			start_manpower_factor = 1.0
 		}
 		division = {
-			name = "邦联第8乡土卫士"
+			name = "邦联第8民兵志愿兵团"
 			location = 7834
 			division_template = "邦联民兵志愿兵团"
 			start_experience_factor = 0
@@ -401,7 +321,7 @@ division_template = {
 			start_manpower_factor = 1.0
 		}
 		division = {
-			name = "邦联第9乡土卫士"
+			name = "邦联第9民兵志愿兵团"
 			location = 4625
 			division_template = "邦联民兵志愿兵团"
 			start_experience_factor = 0
@@ -409,7 +329,7 @@ division_template = {
 			start_manpower_factor = 1.0
 		}
 		division = {
-			name = "邦联第10乡土卫士"
+			name = "邦联第10民兵志愿兵团"
 			location = 1753
 			division_template = "邦联民兵志愿兵团"
 			start_experience_factor = 0
@@ -417,7 +337,7 @@ division_template = {
 			start_manpower_factor = 1.0
 		}
 		division = {
-			name = "邦联第11乡土卫士"
+			name = "邦联第11民兵志愿兵团"
 			location = 4814
 			division_template = "邦联民兵志愿兵团"
 			start_experience_factor = 0
@@ -425,7 +345,7 @@ division_template = {
 			start_manpower_factor = 1.0
 		}
 		division = {
-			name = "邦联第12乡土卫士"
+			name = "邦联第12民兵志愿兵团"
 			location = 10532
 			division_template = "邦联民兵志愿兵团"
 			start_experience_factor = 0
@@ -433,7 +353,7 @@ division_template = {
 			start_manpower_factor = 1.0
 		}
 		division = {
-			name = "邦联第13乡土卫士"
+			name = "邦联第13民兵志愿兵团"
 			location = 12458
 			division_template = "邦联民兵志愿兵团"
 			start_experience_factor = 0
@@ -441,7 +361,7 @@ division_template = {
 			start_manpower_factor = 1.0
 		}
 		division = {
-			name = "邦联第14乡土卫士"
+			name = "邦联第14民兵志愿兵团"
 			location = 7543
 			division_template = "邦联民兵志愿兵团"
 			start_experience_factor = 0
@@ -506,7 +426,7 @@ division_template = {
 			start_manpower_factor = 1.0
 		}
 		division = {
-			name = "佐治亚第4炮兵机动团“雄兵烈火”"
+			name = "佐治亚第4炮兵机动团"
 			location = 12470
 			division_template = "佐治亚炮兵机动团"
 			start_experience_factor = 0
@@ -548,7 +468,7 @@ division_template = {
 			start_manpower_factor = 1.0
 		}
 		division = {
-			name = "联盟国第2海军陆战队“全美国人”"
+			name = "联盟国第2海军陆战队"
 			location = 4464
 			division_template = "联盟国海军陆战队"
 			start_experience_factor = 1.0

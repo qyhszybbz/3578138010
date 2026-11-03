@@ -85,5 +85,168 @@ ideas = {
 				stability_factor = -0.10
 			}
 		}
+
+		USA_Republican_consensus = { #共和共识初建
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.15
+				Liberalism_drift = 0.08
+			}
+		}
+
+		USA_National_bottleneck_industry = { #国家瓶颈事业
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.15
+			}
+		}
+
+		USA_Democratic_reform_path = { #民主改革之路
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				conscription_factor = 0.10
+				political_power_gain = 0.05
+			}
+		}
+
+		USA_Coolidge_reform = { #柯立芝改革
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.10
+				production_speed_industrial_complex_factor = 0.10
+				stability_factor = 0.02
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+
+		USA_Heavy_fist = { #重拳出击
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.10
+				political_power_gain = 0.05
+				communism_drift = -0.02
+				Socialism_drift = -0.02
+				fascism_drift = -0.02
+				nazism_drift = -0.02
+			}
+		}
+
+		USA_Open_society = { #开放的社会风气
+			removal_cost = -1
+			modifier = {
+				high_command_cost_factor = -0.30
+				#autonomy_gain = 0.1
+				party_popularity_stability_factor = 0.05
+				drift_defence_factor = -0.1
+			}
+		}
+
+		USA_Federal_defense_force = { #联邦国防军
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				supply_consumption_factor = -0.10
+				army_strength_factor = 0.025
+				land_mastery_gain_factor = 0.05
+			}
+		}
+
+		USA_Parliament_rotation_act = { #《议会任期轮换与透明法案》
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.10
+				resistance_damage_to_garrison = -0.05
+			}
+		}
+
+		USA_Sword_of_democracy = { #民主之剑
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.10
+				army_defence_factor = 0.10
+			}
+		}
+
+		USA_National_unity_idea = { #民族团结
+			removal_cost = -1
+			modifier = {
+				mobilization_speed = 0.10
+				army_core_defence_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.10
+				stability_factor = 0.10
+			}
+		}
+
+		USA_Capital_flow_control = { #调控资金流向
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.08
+				political_power_gain = 0.2
+				stability_factor = 0.10
+			}
+		}
+
+		USA_Ban_oligarchs = { #取缔寡头
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = 0.10
+				factory_energy_consumption = -0.50
+				production_factory_max_efficiency_factor = 0.12
+				production_factory_efficiency_gain_factor = 0.12
+				political_power_factor = 0.05
+			}
+		}
+
+		USA_New_constitution = { #新宪法
+			removal_cost = -1
+			modifier = {
+				compliance_gain = 0.0002
+				resistance_decay = 0.10
+				resistance_growth = -0.15
+				war_support_factor = 0.15
+				conscription_factor = 0.02
+			}
+		}
+
+		USA_Mellon_act = { #梅隆法案
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.10
+				production_speed_buildings_factor = 0.15
+				line_change_production_efficiency_factor = 0.15
+				industry_repair_factor = 0.15
+			}
+		}
+
+		USA_Star_spangled_banner = { #星条旗永不落
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				industrial_capacity_factory = 0.20
+				global_building_slots_factor = 0.20
+				research_speed_factor = 0.12
+			}
+		}
+	}
+
+	hidden_ideas = {
+
+		USA_FBI_expansion = { 
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				operative_slot = 3
+			}
+		}
 	}
 }

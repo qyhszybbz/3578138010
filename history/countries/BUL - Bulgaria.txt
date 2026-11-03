@@ -16,7 +16,7 @@ add_ideas = {
 }
 
 load_focus_tree = generic_focus
-#领导人
+### 领导人 ###
 recruit_character = BUL_boris_iii
 recruit_character = BUL_Kimon_Georgiev #基蒙·格奥尔基耶夫
 

@@ -1,88 +1,15 @@
-﻿capital = 282 # Tokyo/Kanto
-
-# Starting Stats
-set_stability = 0.29 #baseline, THE EMPEROR PROTECTS
-set_war_support = 0.95
-
-set_research_slots = 4
+﻿capital = 1380 #东京
+oob = "JAP_1935"
+set_stability = 0.39
+set_war_support = 0.67
+starting_train_buffer = 1.1
 set_fuel_ratio = 1.0
+load_focus_tree = generic_focus
+set_research_slots = 3
+set_convoys = 450
+set_country_flag = tfe_second_leader #副领导人
 
-# Starting Ideas
-add_ideas = {
-
-	# Laws
-	limited_exports
-	limited_conscription
-	civilian_economy
-
-	#初始民族精神
-	JAP_Unbroken_line_through_ages #万世一系
-	JAP_Chaotic_Cabinet #混乱的内阁
-	JAP_Confused_road #迷茫前路
-	JAP_Aftermath_of_Republican_Revolution #共和革命的余波
-	JAP_winner_of_RussoJapanese_War #日俄战争的胜利者
-
-}
-# Setup Reisstance and Compliance
-609 = {
-	start_resistance = yes
-	set_compliance = 5
-	set_resistance = 5
-	set_garrison_strength = 1.0
-}
-
-527 = {
-	start_resistance = yes
-	set_compliance = 5
-	set_resistance = 5
-	set_garrison_strength = 1.0
-}
-
-525 = {
-	start_resistance = yes
-	set_compliance = 5
-	set_resistance = 5
-	set_garrison_strength = 1.0
-}
-
-745 = {
-	start_resistance = yes
-	set_compliance = 5
-	set_resistance = 5
-	set_garrison_strength = 1.0
-}
-
-524 = {
-	start_resistance = yes
-	set_compliance = 5
-	set_resistance = 5
-	set_garrison_strength = 1.0
-}
-
-647 = {
-	start_resistance = yes
-	set_compliance = 20
-	set_resistance = 0
-	set_garrison_strength = 1.0
-}
-
-684 = {
-	start_resistance = yes
-	set_compliance = 20
-	set_resistance = 0
-	set_garrison_strength = 1.0
-}
-
-633 = {
-	start_resistance = yes
-	set_compliance = 20
-	set_resistance = 0
-	set_garrison_strength = 1.0
-}
-
-
-### Starting Technology ###
-
+### 初始科技 ###
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -94,52 +21,13 @@ set_technology = {
 	marines  = 1
 	gw_artillery = 1
 	basic_train = 1
-	trench_warfare = 1
-	base_strike = 1
 	fuel_silos = 1
 	synth_oil_experiments = 1
 	fuel_refining = 1
+	gwtank_chassis = 1
+	basic_light_tank_chassis = 1
 }
 
-complete_special_project = {
-	project = sp:sp_naval_cruiser_submarine
-	scientist = JAP_keiji_fukuda
-	state = 529
-}
-
-add_breakthrough_progress = {
-	specialization = specialization_naval
-	value = 0.8
-}
-add_breakthrough_progress = {
-	specialization = specialization_air
-	value = 0.3
-}
-add_breakthrough_progress = {
-	specialization = specialization_land
-	value = 0.1
-}
-
-IF = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
-		gwtank = 1
-		basic_light_tank = 1
-	}
-	set_oob = "JAP_1936"
-}
-IF = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
-		gwtank_chassis = 1
-		basic_light_tank_chassis = 1
-	}
-	set_oob = "JAP_1936_nsb"
-}
 IF = {
 	limit = {
 		has_dlc = "Man the Guns"
@@ -151,7 +39,6 @@ IF = {
 		basic_battery = 1
 		basic_light_battery = 1
 		basic_heavy_battery = 1
-		basic_medium_battery = 1
 		improved_ship_torpedo_launcher = 1
 		early_ship_hull_submarine = 1
 		basic_ship_hull_submarine = 1
@@ -169,27 +56,7 @@ IF = {
 		#cruiser_submarines = 1
 		basic_dp_light_battery = 1
 	}
-	set_naval_oob = "JAP_1936_naval"
-}
-IF = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	set_technology = {
-		early_submarine = 1
-		basic_submarine = 1
-		early_destroyer = 1
-		early_light_cruiser = 1
-		basic_light_cruiser = 1
-		early_heavy_cruiser = 1
-		basic_heavy_cruiser = 1
-		early_battleship = 1
-		basic_battleship = 1
-		early_battlecruiser = 1
-		early_carrier = 1
-		basic_carrier = 1
-		transport = 1
-	}
-	set_naval_oob = "JAP_1936_naval_legacy"
-}
+	set_naval_oob = "JAP_1935_naval"
 IF = {
 	limit = { has_dlc = "By Blood Alone" }
 		set_air_oob = "JAP_1936_air_bba"
@@ -220,178 +87,66 @@ IF = {
 	}
 }
 
-IF = {
-	limit = {
-		has_dlc = "La Resistance"
-	}
+complete_special_project = {
+	project = sp:sp_naval_cruiser_submarine
+	scientist = JAP_keiji_fukuda
+	state = 529
+}
+add_breakthrough_progress = {
+	specialization = specialization_naval
+	value = 0.8
+}
+add_breakthrough_progress = {
+	specialization = specialization_air
+	value = 0.3
+}
+add_breakthrough_progress = {
+	specialization = specialization_land
+	value = 0.1
+}
 
-	set_technology = {
-		armored_car1 = 1
-	}
+### 领导人 ###
+recruit_character = JAP_Hirohito #裕仁天皇
+recruit_character = JAP_Nosaka_Sanzo #野坂参三
+recruit_character = JAP_Alahata_Kanson #荒畑寒村
+recruit_character = JAP_Suzuki_Teiichi #铃木贞一
+recruit_character = JAP_Hirano_Rikizo #平野力三
+### 将领 ###
 
-	JAP_create_john_farnsworth_operative = yes
+add_ideas = {
+	### 初始法案 ###
 
-	create_operative_leader = {
-		name = JAP_yoshiko_kawashima
-		GFX = GFX_portrait_yoshiko_kawashima
-		traits = { }
-		bypass_recruitment = no
-		available_to_spy_master = yes
-		female = yes
-		nationalities = { MAN JAP CHI }
-	}
+	### 初始民族精神 ###
+	JAP_Unbroken_line_through_ages #万世一系
+	JAP_Chaotic_Cabinet #混乱的内阁
+	JAP_Confused_road #迷茫前路
+	JAP_Aftermath_of_Republican_Revolution #共和革命的余波
+	JAP_winner_of_RussoJapanese_War #日俄战争的胜利者
 
-	create_operative_leader = {
-		name = JAP_takeo_yoshikawa
-		GFX = GFX_portrait_takeo_yoshikawa
-		traits = { }
-		bypass_recruitment = no
-		available_to_spy_master = yes
-		nationalities = { JAP }
-	}
+	### 初始副领袖 ###
+	JAP_Suzuki_Teiichi #铃木贞一
 }
 
 
-
-
-set_convoys = 400
-
-
-# Setup Politics
 set_politics = {
 	ruling_party = Authoritarianism
-	last_election = "1936.1.1"
+	last_election = "1932.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
+
 set_popularities = {
-	Authoritarianism = 30
-	Liberalism = 20
-	Progressivism = 10
-	Conservatism = 20
-	fascism = 13
-	Socialism = 7
+	communism = 0
+	Socialism = 1
+	Progressivism = 1
+	Liberalism = 15
+	Democracy = 5
+	Conservatism = 23
+	Authoritarianism = 38
+	tttt = 14
+	fascism = 2
+	nazism = 1
 }
-
-
-create_country_leader = {
-	name = JAP_emperor_hirohito
-	picture = GFX_JAP_Hirohito
-	desc = JAP_emperor_hirohito_desc
-	ideology = authoritarianism_small
-	traits={ emperor_showa }
-	expire="1989.1.1.1"
-}
-
-create_country_leader = {
-	name = JAP_emperor_hirohito
-	picture = GFX_JAP_Hirohito
-	ideology = socialism
-	traits={ emperor_showa }
-	expire="1989.1.1.1"
-}
-
-create_country_leader = {
-	name = JAP_emperor_hirohito
-	picture = GFX_JAP_Hirohito
-	ideology = progressivism_small
-	traits={ emperor_showa }
-	expire="1989.1.1.1"
-}
-
-create_country_leader = {
-	name = JAP_emperor_hirohito
-	picture = GFX_JAP_Hirohito
-	ideology = tttt_small
-	traits={ emperor_showa }
-	expire="1989.1.1.1"
-}
-
-create_country_leader = {
-	name = JAP_emperor_hirohito
-	picture = GFX_JAP_Hirohito
-	ideology = fascism_small
-	traits={ emperor_showa }
-	expire="1989.1.1.1"
-}
-
-
-# Recruiting Characters
-recruit_character = JAP_emperor_hirohito_Conservatism
-recruit_character = JAP_tetsu_katayama
-recruit_character = JAP_kyuichi_tokuda
-recruit_character = JAP_emperor_hirohito
-recruit_character = JAP_tomoyuki_yamashita
-recruit_character = JAP_hisaichi_terauchi
-recruit_character = JAP_shunroku_hata
-recruit_character = JAP_akira_muto
-recruit_character = JAP_kanji_ishiwara
-recruit_character = JAP_shizuichi_tanaka
-recruit_character = JAP_yasuji_okamura
-recruit_character = JAP_toshizo_nishio
-recruit_character = JAP_rikichi_ando
-recruit_character = JAP_naruhiko_higashikuni
-recruit_character = JAP_seishiro_itagaki
-recruit_character = JAP_takashi_sakai
-recruit_character = JAP_kenji_doihara
-recruit_character = JAP_kenkichi_ueda
-recruit_character = JAP_shigeru_honjo
-recruit_character = JAP_yoshijiro_umezu
-recruit_character = JAP_otozo_yamada
-recruit_character = JAP_hatazo_adachi
-recruit_character = JAP_iwane_matsui
-recruit_character = JAP_sadao_araki
-recruit_character = JAP_keisuke_fujie
-recruit_character = JAP_kiichiro_higuchi
-recruit_character = JAP_masaharu_homma
-recruit_character = JAP_harukichi_hyakutake
-recruit_character = JAP_jo_iimura
-recruit_character = JAP_hitoshi_imamura
-recruit_character = JAP_masatane_kanda
-recruit_character = JAP_kuniaki_koiso
-recruit_character = JAP_isoroku_yamamoto
-recruit_character = JAP_mineichi_koga
-recruit_character = JAP_kiyoshi_hasegawa
-recruit_character = JAP_shigeyoshi_inoue
-recruit_character = JAP_nobutake_kondo
-recruit_character = JAP_takeo_takagi
-recruit_character = JAP_soemu_toyoda
-recruit_character = JAP_jisaburo_ozawa
-recruit_character = JAP_zengo_yoshida
-recruit_character = JAP_hiroaki_abe
-recruit_character = JAP_tadashige_daigo
-recruit_character = JAP_gengo_hyakutake
-recruit_character = JAP_yoshitoshi_tokugawa
-recruit_character = JAP_fushimi_hiroyasu
-recruit_character = JAP_korechika_anami
-recruit_character = JAP_mitsuo_fuchida
-recruit_character = JAP_minoru_genda
-recruit_character = JAP_tateo_kato
-recruit_character = JAP_osami_nagano
-recruit_character = JAP_torashiro_kawabe
-recruit_character = JAP_shigetaro_shimada
-recruit_character = JAP_yoshio_nishina
-recruit_character = JAP_hideo_itokawa
-recruit_character = JAP_kanin_kotohito
-recruit_character = JAP_hideki_tojo
-recruit_character = JAP_matome_ugaki
-recruit_character = JAP_nishizo_tsukahara
-recruit_character = JAP_hajime_sugiyama
-recruit_character = JAP_chuichi_nagumo
-recruit_character = JAP_hino_kumazo
-recruit_character = JAP_mitsumasa_yonai
-recruit_character = JAP_takuo_godo
-recruit_character = JAP_chiune_sugihara
-recruit_character = JAP_kingoro_hashimoto
-recruit_character = JAP_sanzo_nosaka
-recruit_character = JAP_hiroshi_oshima
-recruit_character = JAP_kijuro_shidehara
-recruit_character = JAP_kijiro_nambu
-recruit_character = JAP_keiji_fukuda
-recruit_character = JAP_jiro_horikoshi
-recruit_character = JAP_hideki_yukawa
-recruit_character = JAP_yoji_ito
-
 
 
 IF = {
@@ -1118,5 +873,4 @@ IF = {
 			}
 		}
 	}
-}
 	

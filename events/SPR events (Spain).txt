@@ -1,0 +1,80 @@
+add_namespace = tfe_spain_history
+add_namespace = tfe_spain_focus
+
+#意大利内战再起
+country_event = {
+	id = tfe_spain_history.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tfe_spain_history.1" }
+	title = tfe_spain_history.1.t
+	desc = tfe_spain_history.1.d
+	#picture = 
+	is_triggered_only = yes 
+	option = {
+		name = tfe_spain_history.1.a #黑衫军
+		complete_national_focus = SPR_Gunfire_in_Apennines
+		set_country_flag = SPR_help_Fascism 
+		custom_effect_tooltip = SPR_help_Fascism_tt #帮助法西斯
+		hidden_effect = {
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+}
+#暂存
+country_event = {
+	id = tfe_spain_history.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tfe_spain_history.1" }
+	title = tfe_spain_history.1.t
+	desc = tfe_spain_history.1.d
+	#picture = 
+	is_triggered_only = yes 
+	option = {
+		name = tfe_spain_history.1.b #王国
+		complete_national_focus = SPR_Gunfire_in_Apennines
+		set_country_flag = SPR_help_Kingdom
+		custom_effect_tooltip = SPR_help_Kingdom_tt #帮助法西斯
+		hidden_effect = {
+			mark_focus_tree_layout_dirty = yes
+			add_ai_strategy = {
+				type = send_volunteers_desire
+				id = TTS
+			    value = 1500
+			}
+			add_ai_strategy = {
+				type = send_lend_lease_desire
+				id = TTS
+			    value = 1500
+			}
+		}
+	}
+}
+
+#“阿拉贡”行动
+country_event = {
+	id = tfe_spain_focus.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tfe_spain_focus.1" }
+	title = tfe_spain_focus.1.t
+	desc = tfe_spain_focus.1.d
+	#picture = 
+	is_triggered_only = yes 
+	option = {
+		name = tfe_spain_focus.1.a
+		army_experience = -10
+		add_command_power = -15
+		custom_effect_tooltip = SPR_Aragon_tt
+		hidden_effect = {
+			set_autonomy = {
+				target = SPM
+				autonomy_state = autonomy_colony
+			}
+			SPM = {
+				transfer_state = 114
+				add_state_core = 114
+				load_oob = "SPM_SPR_Garrison"
+				set_cosmetic_tag = SPM_Garrison_tag
+			}
+			114 = {
+				set_demilitarized_zone = no
+			}
+		}
+	}
+}

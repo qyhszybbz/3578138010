@@ -2648,7 +2648,7 @@ form_european_union_category = {
 						original_tag = ITA
 						original_tag = GER
 					}
-					has_government = democratic
+					has_government = Democracy
 				}
 				AND = {
 					original_tag = ENG
@@ -2680,7 +2680,7 @@ form_european_union_category = {
 						}	
 						AND = {
 							has_completed_focus = AUS_the_right_to_self_determination
-							has_government = democratic
+							has_government = Democracy
 						}
 					}
 				}
@@ -10772,7 +10772,7 @@ form_greater_greece_category = {
 			is_subject = no
 			if = { 
 				limit = {
-					has_government = democratic
+					has_government = Democracy
 				}
 				has_completed_focus = GRE_nenikikamen
 			}
@@ -10799,7 +10799,7 @@ form_greater_greece_category = {
 			# Dodecanese
 			if = {
 				limit = {
-					NOT = { has_government = democratic }
+					NOT = { has_government = Democracy }
 				}
 				custom_trigger_tooltip = {
 					tooltip = form_country_dodecanese_required_state_tt
@@ -10809,7 +10809,7 @@ form_greater_greece_category = {
 			# Cyprus
 			if = {
 				limit = {
-					NOT = { has_government = democratic }
+					NOT = { has_government = Democracy }
 				}
 				custom_trigger_tooltip = {
 					tooltip = form_country_cyprus_required_state_tt
@@ -10899,7 +10899,7 @@ form_greater_greece_category = {
 			hidden_effect = {
 				if = {
 					limit = {
-						has_government = democratic
+						has_government = Democracy
 					}
 					news_event = { id = bftb_news.302 hours = 6 } 
 				}
@@ -10928,7 +10928,7 @@ form_greater_greece_category = {
 		available = {
 			is_subject = no
 			AND = {
-				has_government = democratic
+				has_government = Democracy
 				has_completed_focus = GRE_nenikikamen
 			}
 		}
@@ -10975,7 +10975,7 @@ form_greater_greece_category = {
 			is_subject = no
 			if = { 
 				limit = {
-					has_government = democratic
+					has_government = Democracy
 				}
 				has_completed_focus = GRE_nenikikamen
 			}
@@ -11023,7 +11023,7 @@ form_greater_greece_category = {
 			is_subject = no
 			if = { 
 				limit = {
-					has_government = democratic
+					has_government = Democracy
 				}
 				has_completed_focus = GRE_nenikikamen
 			}
@@ -11064,7 +11064,7 @@ form_greater_greece_category = {
 			is_subject = no
 			if = { 
 				limit = {
-					has_government = democratic
+					has_government = Democracy
 				}
 				has_completed_focus = GRE_nenikikamen
 			}
@@ -11108,7 +11108,7 @@ form_greater_greece_category = {
 			is_subject = no
 			if = { 
 				limit = {
-					has_government = democratic
+					has_government = Democracy
 				}
 				has_completed_focus = GRE_nenikikamen
 			}
@@ -12498,7 +12498,7 @@ form_transcaucasus_category = {
 			controls_state = 237 # Kalmykia
 			controls_state = 236 # Astrakhan
 			NOT = { has_government = communism }
-			NOT = { has_government = democratic }
+			NOT = { has_government = Democracy }
 		}
 
 		visible = {
@@ -12619,7 +12619,7 @@ form_transcaucasus_category = {
 			controls_state = 137 # Crimea
 			controls_state = 196 # Kherson
 			NOT = { has_government = communism }
-			NOT = { has_government = democratic }
+			NOT = { has_government = Democracy }
 		}
 
 		visible = {
@@ -15361,6 +15361,7 @@ latin_africa_category = {
 				original_tag = ANG # Angola
 				original_tag = GAB # Gabon 
 				original_tag = EQG # Equatorial Guinea
+				original_tag = CMR # Cameroon
 				original_tag = CHA # Chad
 				original_tag = CAR # Central African Republic
 			}
@@ -15376,6 +15377,7 @@ latin_africa_category = {
 				original_tag = ANG # Angola
 				original_tag = GAB # Gabon 
 				original_tag = EQG # Equatorial Guinea
+				original_tag = CMR # Cameroon
 				original_tag = CHA # Chad
 				original_tag = CAR # Central African Republic
 			}

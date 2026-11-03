@@ -1,0 +1,33 @@
+
+state={
+	id = 1495
+	name="STATE_1495"
+	manpower = 3242342
+	state_category = large_town
+	resources={
+		steel = 18
+		aluminium = 9
+	}
+	
+	history={
+		owner = TTS
+		add_core_of = TTS
+		add_claim_by = ITA
+		add_claim_by = LBV
+		victory_points = {
+			9856 8
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			dockyard = 2
+			air_base = 2
+		}
+	}
+
+	provinces={
+		851 3958 3968 6972 9856
+	}
+
+	local_supplies=0.0 
+}

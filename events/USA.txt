@@ -312,16 +312,61 @@ country_event = {
 	desc = tfe_usa.7.d
 
 	is_triggered_only = yes
+	fire_only_once = yes
 
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event tfe_usa.7"
-	}
-
-	option = { #调试：给 USA 对 CSA 的 10% 合作值
+	option = {
 		name = tfe_usa.7.a
-		add_collaboration = {
-			target = CSA
-			value = 0.1
-		}
+	}
+}
+
+country_event = {
+	id = tfe_usa.8
+	title = tfe_usa.8.t
+	desc = tfe_usa.8.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = tfe_usa.8.a
+	}
+}
+
+country_event = {
+	id = tfe_usa.9
+	title = tfe_usa.9.t
+	desc = tfe_usa.9.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = tfe_usa.9.a
+	}
+}
+
+country_event = {
+	id = tfe_usa.10
+	title = tfe_usa.10.t
+	desc = tfe_usa.10.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = tfe_usa.10.a
+	}
+}
+
+country_event = {
+	id = tfe_usa.11
+	title = tfe_usa.11.t
+	desc = tfe_usa.11.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = tfe_usa.11.a
 	}
 }

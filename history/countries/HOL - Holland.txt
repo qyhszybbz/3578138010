@@ -2,7 +2,6 @@
 load_focus_tree = generic_focus
 oob = "HOL_1936"
 set_cosmetic_tag = HOL_BEL_LUX
-#set_country_flag = tfe_second_leader
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "HOL_1936_naval_mtg"

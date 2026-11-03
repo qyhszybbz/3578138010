@@ -509,6 +509,26 @@ characters={
 		}
 	}
 
+	USA_George_Marshall = { #乔治·马歇尔
+		name = USA_George_Marshall
+		portraits = {
+			army = {
+				#large = GFX_general_USA_George_Marshall
+			}
+		}
+		field_marshal = {
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 5
+			#traits = {
+			#	logistics_wizard
+			#	organisational_leader
+			#}
+		}
+	}
+
 }
 
 

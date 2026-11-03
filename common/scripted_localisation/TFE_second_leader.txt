@@ -32,9 +32,15 @@ defined_text = {
     }
     text = {
         trigger = { #尼古拉·约尔加
-            has_idea = ROM_nicolae_iorga
+            has_idea = ROM_Nikola_Jorga
         }
-        localization_key = "ROM_nicolae_iorga_sl_desc"
+        localization_key = "ROM_Nikola_Jorga_sl_desc"
+    }
+    text = {
+        trigger = { #铃木贞一
+            has_idea = JAP_Suzuki_Teiichi
+        }
+        localization_key = "JAP_Suzuki_Teiichi_sl_desc"
     }
    # text = {
     #    trigger = { #亨舍尔

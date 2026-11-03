@@ -798,6 +798,16 @@ bitmapfonts = {
 		9 = { 252 169 125 }	# Gradient Step 9 - orange		{ 250 102 25 }
 		t = { 255 76 77 }	# Gradient Step 10 - red 		{ 229 0 0 }
 		U = { 47 51 86 }	# Gradient Step 10 - red 		{ 229 0 0 }
+
+		S = { 145 39 39 } #Socialism
+		P = { 165 58 91 } #Progressivism
+		l = { 135 206 235 } #Liberalism
+		D = { 151 172 205 } #Democracy
+		c = { 0 93 149 } #Conservatism
+		A = { 56 56 56 } #Authoritarianism
+		p = { 24 24 24 } #tttt
+		f = { 102 51 0 } #fascism
+		n = { 51 25 0 } #nazism
 	}
 
 

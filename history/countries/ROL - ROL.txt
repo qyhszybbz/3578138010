@@ -1,7 +1,6 @@
 ﻿capital = 7
 load_focus_tree = generic_focus
 #set_cosmetic_tag = HOL_BEL_LUX
-#set_country_flag = tfe_second_leader
 
 set_research_slots = 3
 set_stability = 0.75

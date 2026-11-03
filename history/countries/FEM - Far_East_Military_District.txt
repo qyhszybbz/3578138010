@@ -5,7 +5,7 @@ oob = "FEM_1936"
 
 set_research_slots = 3
 
-#领导人
+### 领导人 ###
 recruit_character = FEM_Nikolai_Kosov
 
 # Starting tech

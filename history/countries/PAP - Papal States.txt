@@ -1,17 +1,14 @@
 ﻿capital = 2
-
-
-
-set_research_slots = 3
+oob = "PAP_1935"
 set_stability = 0.5
 set_war_support = 0.5
-add_ideas = {
-}
+starting_train_buffer = 1.0
+set_fuel_ratio = 0.8
+load_focus_tree = generic_focus
+set_research_slots = 3
+set_convoys = 60
 
-recruit_character = Pope_Pius_XI
-
-#set_cosmetic_tag = PAP_color
-# Starting tech
+### 初始科技 ###
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -26,12 +23,11 @@ set_technology = {
 	early_bomber = 1
 	naval_bomber1 = 1
 	CAS1 = 1
-	trench_warfare = 1
 	
 	fuel_silos = 1
 	fuel_refining = 1
 	basic_train = 1
-	armored_car1 = 1 #Fiat AB611 entered service in 1933
+	armored_car1 = 1
 }
 if = {
 	limit = {
@@ -80,7 +76,6 @@ if = {
 		basic_battery = 1
 		basic_cruiser_armor_scheme = 1
 		basic_heavy_battery = 1
-		basic_medium_battery = 1
 		basic_light_battery = 1
 		basic_heavy_armor_scheme = 1
 		early_ship_hull_submarine = 1
@@ -93,27 +88,27 @@ if = {
 		basic_ship_hull_heavy = 1
 		mtg_transport = 1
 		coastal_defense_ships = 1
-		improved_airplane_launcher = 1
 	}
 }
+### 领导人 ###
+recruit_character = PAP_Pope_Pius_XI #庇护十一世
 
+add_ideas = {
 
-set_convoys = 60
+}
 
 set_politics = {
 	ruling_party = tttt
-	last_election = "1934.3.26"
+	last_election = "1930.3.26"
 	election_frequency = 60
 	elections_allowed = no
 }
 set_popularities = {
-	Liberalism = 10
-	fascism = 10
-	communism = 20
-	tttt = 60
+	Conservatism = 18
+	Authoritarianism = 22
+	tttt = 52
+	fascism = 8
 }
-
-
 
 
 ### VARIANTS ###

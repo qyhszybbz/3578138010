@@ -1,0 +1,47 @@
+spriteTypes = {
+	spriteType = {
+		name = "what_is_freedom_desc"
+		texturefile = "gfx/interface/ideas/COG/what_is_freedom_desc.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = no
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "GFX_idea_liaoboweiwhere"
+		texturefile = "gfx/interface/ideas/COG/GFX_idea_liaoboweiwhere.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "GFX_idea_what_is_freedom"
+		texturefile = "gfx/interface/ideas/COG/GFX_idea_what_is_freedom.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "GFX_idea_xiangjiao_land"
+		texturefile = "gfx/interface/ideas/COG/GFX_idea_xiangjiao_land.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "liaoboweiwhere_desc"
+		texturefile = "gfx/interface/ideas/COG/liaoboweiwhere_desc.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = no
+		transparencecheck = no
+	}
+
+}

@@ -1,13 +1,15 @@
-﻿capital = 46
-load_focus_tree = generic_focus
-set_convoys = 10
+﻿capital = 46 #布加勒斯特
 oob = "ROM_1935"
-set_research_slots = 3
 set_stability = 0.67
 set_war_support = 0.51
+starting_train_buffer = 1.2
+set_fuel_ratio = 0.7
+load_focus_tree = generic_focus
+set_research_slots = 3
+set_convoys = 10
+set_country_flag = tfe_second_leader #副领导人
 
-
-# Starting tech
+### 初始科技 ###
 set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
@@ -30,6 +32,32 @@ set_technology = {
 	basic_battery = 1
 }
 
+### 领导人 ###
+recruit_character = ROM_Constantin_Argetoianu #康斯坦丁·阿尔格托亚努
+recruit_character = ROM_Nikola_Jorga #尼古拉·约尔加
+recruit_character = ROM_Boris_Stefanov #鲍里斯·斯特法诺夫
+recruit_character = ROM_Lothar_Radzianu #洛塔尔·拉德齐亚努
+recruit_character = ROM_Ion_Mihalache #扬·米哈拉凯
+recruit_character = ROM_Gheorghe_Tatarescu #格奥尔基·塔塔内斯库
+recruit_character = ROM_Vintila_Bratianu #温蒂勒·布勒蒂亚努
+recruit_character = ROM_Alexandru_Vaida_Voievod	#亚历山德鲁·瓦伊达·沃艾沃德
+recruit_character = ROM_Constantin_Prezan #康斯坦丁·普雷赞
+recruit_character = ROM_Horia_Sima #霍里亚·西马
+recruit_character = ROM_Octavian_Goga #屋大维·戈加
+### 将领 ###
+recruit_character = ROM_Ion_Antonescu #扬·安东内斯库
+recruit_character = ROM_Gheorghe_Argeseanu #格奥尔基·阿尔杰沙努
+
+add_ideas = {
+	### 初始民族精神 ###
+	ROM_hollow_republic #徒有其表的共和国
+	ROM_one_party_blowback #一党制霸的反噬
+	ROM_hedgehog_nation #刺猬国度
+	ROM_new_sowingism #新播种主义的复兴
+
+	### 初始副领袖 ###
+	ROM_Nikola_Jorga #尼古拉·约尔加
+}
 
 set_politics = {
 	ruling_party = Authoritarianism
@@ -40,39 +68,14 @@ set_politics = {
 set_popularities = {
 	communism = 0
 	Socialism = 3
-	Progressivism = 12
-	Liberalism = 6
-	Democracy = 13
-	Conservatism = 14
-	Authoritarianism = 27
-	tttt = 6
-	fascism = 13
-	nazism = 6
-}
-
-recruit_character = ROM_constantin_argetoianu	#康斯坦丁·阿尔格托亚努
-recruit_character = ROM_nicolae_iorga			#尼古拉·约尔加
-recruit_character = ROM_boris_stefanov			#鲍里斯·斯特法诺夫
-recruit_character = ROM_lothar_radzianu			#洛塔尔·拉德齐亚努
-recruit_character = ROM_ion_mihalache			#杨·米哈拉凯
-recruit_character = ROM_gheorghe_tatarescu		#格奥尔基·塔塔内斯库
-recruit_character = ROM_vintila_bratianu		#温蒂勒·布勒蒂亚努
-recruit_character = ROM_alexandru_vaida_voievod	#亚历山德鲁·瓦伊达·沃艾沃德
-recruit_character = ROM_constantin_prezan		#康斯坦丁·普雷赞
-recruit_character = ROM_octavian_goga			#屋大维·戈加
-recruit_character = ROM_horia_sima				#霍里亚·西马
-
-#副领导人
-set_country_flag = tfe_second_leader
-
-add_ideas = {
-	ROM_hollow_republic			#徒有其表的共和国
-	ROM_one_party_blowback		#一党制霸的反噬
-	ROM_hedgehog_nation			#刺猬国度
-	ROM_new_sowingism			#新播种主义的复兴
-
-	#副领导人
-	ROM_nicolae_iorga			#尼古拉·约尔加
+	Progressivism = 10
+	Liberalism = 5
+	Democracy = 11
+	Conservatism = 12
+	Authoritarianism = 23
+	tttt = 5
+	fascism = 11
+	nazism = 5
 }
 
 

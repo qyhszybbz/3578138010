@@ -1,5 +1,18 @@
 characters = {
 	#领导人
+	#加布里埃尔·纳鲁托维奇
+	POL_Gabriel_Narutowicz = {
+		name = POL_Gabriel_Narutowicz
+		portraits = {
+			civilian = {
+				large = GFX_POL_Gabriel_Narutowicz_large
+			}
+		}
+		country_leader = {
+			ideology = progressivism_small
+			traits = { POL_Wrong_Chosen_People }
+		}
+	}
 	#约瑟夫·毕苏斯基
 	POL_Jozef_Pilsudski = {
 		name = POL_Jozef_Pilsudski
@@ -10,7 +23,7 @@ characters = {
 		}
 		country_leader = {
 			ideology = tttt_small
-			traits = { POL_the_greatest_marshal }
+			traits = { POL_the_greatest_marshal POL_Nation_Restorer }
 		}
 		field_marshal = {
 			traits = { old_guard brilliant_strategist war_hero politically_connected }
@@ -21,96 +34,5 @@ characters = {
 			logistics_skill=6
 		}
 	}
-	#瓦莱雷·斯瓦韦克
-	POL_Walery_Slawek = {
-		name = POL_Walery_Slawek
-		portraits = {
-			civilian = {
-				large = GFX_POL_Walery_Slawek_large
-			}
-			army = {
-				small = GFX_POL_Walery_Slawek_small
-			}
-		}
-		country_leader = {
-			ideology = progressivism_small
-			traits = { POL_marshal_friend }
-		}
-		advisor = {
-			slot = second_in_command
-			idea_token = POL_Walery_Slawek_sic
-			traits = { POL_marshal_shadow_sic }
-			cost = 0
-			can_be_fired = no
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = POL_Walery_Slawek_pol
-            allowed = {
-				original_tag = POL
-			}
-            cost = 150
-			available = {
-				not_already_hired_except_as = political_advisor
-				NOT = { 
-					has_country_leader = {
-						ruling_only = yes 
-						character = POL_Walery_Slawek
-					}
-				}
-            }
-			traits = {
-				POL_Sanacja_politician
-			}
-        }
-	}
-	#爱德华·雷兹-希米格维
-	POL_Edward_Rydz_Smigly = {
-		name = POL_Edward_Rydz_Smigly
-		portraits = {
-			civilian = {
-				large = GFX_POL_Edward_Rydz_Smigly_large
-			}
-			army = {
-				small = GFX_POL_Edward_Rydz_Smigly_small
-			}
-		}
-		country_leader = {
-			ideology = authoritarianism_small
-			traits = { POL_Proud_General }
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = POL_Edward_Rydz_Smigly_pol
-            allowed = {
-				original_tag = POL
-			}
-            cost = 150
-			available = {
-				NOT = { 
-					has_country_leader = {
-						ruling_only = yes 
-						character = POL_Edward_Rydz_Smigly
-					}
-				}
-            }
-			traits = {
-				POL_Marshal_Painter
-			}
-        }
-		field_marshal = {
-			traits = { skilled_staffer old_guard thorough_planner politically_connected }
-			skill=4
-			attack_skill=4
-			defense_skill=2
-			planning_skill=4
-			logistics_skill=3
-		}
-
-
-	}
-
-
-	#副手
 	
 }

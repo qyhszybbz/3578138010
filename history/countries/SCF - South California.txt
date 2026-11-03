@@ -1,0 +1,40 @@
+﻿capital = 1029
+#oob = "SCF_1935"
+set_stability = 0.5
+set_war_support = 0.25
+starting_train_buffer = 1.1
+set_fuel_ratio = 0.9
+load_focus_tree = generic_focus
+set_research_slots = 3
+
+### 初始科技 ###
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	marines = 1
+	basic_train = 1
+	engine_tech_1 = 1
+	gwtank_chassis = 1
+}
+
+### 领导人 ###
+recruit_character = SCF_Southern_California_AC #南加利福尼亚自治委员会
+
+add_ideas = {
+	SCF_hunluan_weiyuanhui
+	SCF_yiming_qingrao
+}
+
+set_politics = {
+	ruling_party = Authoritarianism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	Authoritarianism= 100
+}
+
+

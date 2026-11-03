@@ -1,31 +1,29 @@
 focus_tree={
+	id = TFE_germany_focus
 	country={
-		factor=0
+		factor = 0
 		modifier={
-			add=500
-			tag=GER
+			add = 500
+			tag = GER
 		}
 	}
-	focus={ #苟延残喘
-		id=GER_clinging_to_life
-		icon=GFX_GER_clinging_to_life
-		x=14
-		y=0
+
+	#苟延残喘
+	focus = {
+		id = GER_clinging_to_life
+		icon = GFX_goal_GER_clinging_to_life
+		x = 14
+		y = 0
 		cost=1
-		ai_will_do={
-			base=1
+		ai_will_do = {
+			base = 1
 		}
-		available={
-		}
-		bypass={
-		}
-		search_filters={
-			FOCUS_FILTER_POLITICAL
-		}
+		available_if_capitulated = yes
+		available = { }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward={
-			log = "[GetDateText]: [Root.GetName]: Focus GER_clinging_to_life"
 			add_political_power = 50
-			country_event = {id = germany.1 }
+			country_event = { id = germany.1 days = 2 }
 		}
 	}
 	focus={ #最后一笔债务
@@ -182,9 +180,9 @@ focus_tree={
 		}
 		completion_reward={
 			log = "[GetDateText]: [Root.GetName]: Focus GER_Settle_unemployed_youth"
-			swap_ideas = {
-				remove_idea = GER_Shadow_of_War_1
-				add_idea = GER_Shadow_of_War_2
+			add_to_variable = {
+				var = GER_consumer_goods_factor
+				value = -0.05
 			}
 		}
 	}

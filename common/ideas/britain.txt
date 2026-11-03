@@ -413,7 +413,7 @@ ideas = {
 				NOT = {
 					any_other_country = {
 						original_tag = ENG
-						has_government = democratic 
+						has_government = Democracy 
 						NOT = {
 							tag = ROOT
 						}
@@ -441,7 +441,7 @@ ideas = {
 				NOT = {
 					any_other_country = {
 						original_tag = ENG
-						has_government = democratic 
+						has_government = Democracy 
 						NOT = {
 							tag = ROOT
 						}
@@ -494,7 +494,7 @@ ideas = {
 				NOT = {
 					any_other_country = {
 						original_tag = ENG
-						has_government = democratic 
+						has_government = Democracy 
 						NOT = {
 							tag = ROOT
 						}
@@ -756,7 +756,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+				has_government = Democracy
 			}
 
 			picture = generic_morale_bonus
@@ -1692,7 +1692,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+				has_government = Democracy
 			}
 			
 			modifier = {
@@ -1713,7 +1713,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+				has_government = Democracy
 			}
 			
 			modifier = {
@@ -1736,7 +1736,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+				has_government = Democracy
 			}
 			
 			modifier = {
@@ -1799,7 +1799,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+				has_government = Democracy
 			}
 			
 			modifier = {

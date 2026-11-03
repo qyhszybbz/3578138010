@@ -4,10 +4,4 @@ spriteTypes = {
 		name = "GFX_leader_SCF_Southern_California_AC"
 		texturefile = "gfx/leaders/SCF/SCF_Southern_California_AC.dds"
 	}
-
-	#新闻事件
-	spriteType = {
-		name = "GFX_news_event_scf_labor_movement_disbanded"
-		texturefile = "gfx/event_pictures/TVE_NEWS/Amercian/SCF_labor_movement_disbanded.dds"
-	}
 }

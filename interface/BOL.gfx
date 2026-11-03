@@ -1,8 +1,0 @@
-spriteTypes = {
-	###民族精神配图
-	spriteType = { #阿普拉党泛滥
-		name = "GFX_BOL_The_Apra_Party_is_rampant_Pictures"
-		texturefile = "gfx/texticons/banners/BOL/BOL_The_Apra_Party_is_rampant_Pictures.dds" 
-		legacy_lazy_load = no
-	}
-}

@@ -4,7 +4,6 @@ characters = {
         name = ENT_Ungern_Sternberg
         portraits = {
             civilian = {
-				small = GFX_portrait_WEI_Muweizhu_civilian_small
 				large = GFX_ENT_Ungern_Sternberg_large
 			}
 		}

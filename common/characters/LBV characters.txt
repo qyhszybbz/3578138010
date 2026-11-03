@@ -5,13 +5,21 @@ characters={
 		name= LBV_Benito_Mussolini
 		portraits={
 			civilian={
-				large=GFX_LBV_Benito_Mussolini_large
+				large = GFX_LBV_Benito_Mussolini_large
+				small = GFX_LBV_Benito_Mussolini_small
 			}
 		}
 		country_leader={
 			desc = LBV_Benito_Mussolini_desc
 			ideology= National_fascism
-			traits= { LBV_Arrogant_Dictator }
+		}
+		advisor = {
+			slot = second_in_command
+			idea_token = LBV_Benito_Mussolini_sic
+			desc = LBV_Benito_Mussolini_sic_desc
+			traits = { LBV_Arrogant_Dictator }
+			cost = 0
+			can_be_fired = no
 		}
 	}
 
@@ -29,6 +37,74 @@ characters={
 			idea_token = LBV_Roberto_Farinacci_pol
 			desc = LBV_Roberto_Farinacci_desc
 			traits = { LBV_party_brain }
+			cost = 0
+			can_be_fired = no
+		}
+	}
+	#朱塞佩·沃尔皮
+	LBV_Giuseppe_Volpi = {
+		name = LBV_Giuseppe_Volpi
+		portraits = {
+			civilian = {
+				small = GFX_LBV_Giuseppe_Volpi_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = LBV_Giuseppe_Volpi_pol
+			desc = LBV_Giuseppe_Volpi_desc
+			traits = { LBV_Accountant }
+			cost = 0
+			can_be_fired = no
+		}
+	}
+	#迪诺·格兰迪
+	LBV_Dino_Grandi = {
+		name = LBV_Dino_Grandi
+		portraits = {
+			civilian = {
+				small = GFX_LBV_Dino_Grandi_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = LBV_Dino_Grandi_pol
+			desc = LBV_Dino_Grandi_desc
+			traits = { LBV_Fascist_Crusade }
+			cost = 0
+			can_be_fired = no
+		}
+	}
+	#伊塔洛·巴尔博
+	LBV_Italo_Balbo = {
+		name = LBV_Italo_Balbo
+		portraits = {
+			civilian = {
+				small = GFX_LBV_Italo_Balbo_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = LBV_Italo_Balbo_pol
+			desc = LBV_Italo_Balbo_desc
+			traits = { LBV_war_lion }
+			cost = 0
+			can_be_fired = no
+		}
+	}
+	#阿尔图罗·博基尼
+	LBV_Arturo_Bocchini = {
+		name = LBV_Arturo_Bocchini
+		portraits = {
+			civilian = {
+				small = GFX_LBV_Arturo_Bocchini_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = LBV_Arturo_Bocchini_pol
+			desc = LBV_Arturo_Bocchini_desc
+			traits = { LBV_silent_ghost }
 			cost = 0
 			can_be_fired = no
 		}

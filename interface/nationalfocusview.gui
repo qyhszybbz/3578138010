@@ -12,7 +12,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "national_focus_title"
-			position = { x = 45 y = 8 }
+			position = { x = 45 y = 16 }
 			textureFile = ""
 			font = "hoi_36header"
 			borderSize = {x = 0 y = 0}
@@ -133,7 +133,7 @@ guiTypes = {
 
 			background = {
 				name = "Background"
-				quadTextureSprite ="GFX_tiled_focus_bg"
+				quadTextureSprite ="GFX_tiled_window_1b_border"
 			}
 			
 			containerWindowType = {
@@ -522,12 +522,6 @@ guiTypes = {
 			centerposition = yes
 			Orientation = CENTER
 		}
-
-		iconType = {
-		    name = "overlay"
-		    position = { x = -9 y = -28 }
-		    alwaystransparent = yes
-		}
 		
 		iconType = {
 			name = "historical"
@@ -702,7 +696,7 @@ guiTypes = {
 			name = "close"
 			quadTextureSprite = "GFX_closebutton"
 			buttonFont = "vic_18"
-			position = { x=-43 y=9 }
+			position = { x=-47 y=13 }
 			shortcut = "ESCAPE"
 			Orientation = "UPPER_RIGHT"
 			pdx_tooltip = "CLOSE"
@@ -711,7 +705,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "name"
-			position = { x = 30 y = 12 }
+			position = { x = 43 y = 15 }
 			textureFile = ""
 			font = "hoi_24header"
 			borderSize = {x = 0 y = 0}
@@ -723,7 +717,7 @@ guiTypes = {
 		}
 		iconType = {
 			name = "symbol"
-			position = { x = 42 y = 88 }
+			position = { x = 0 y = 60 }
 			spriteType = "GFX_goal_unknown"
 			alwaystransparent = yes
 		}
@@ -763,14 +757,16 @@ guiTypes = {
 		}
 		instantTextboxType = {
 			name = "desc"
-			position = { x = 34 y = 250 }
+			position = { x = 34 y = 230 }
 			textureFile = ""
 			font = "hoi_18mbs"
 			borderSize = {x = 5 y = 0}
 			text = "Description"
 			maxWidth = 485
-			maxHeight = 70
+			maxHeight = 120
 			format = center
+			scrollbartype = "standardtext_slider"
+			fixedsize = no
 		}
 
 		iconType = {
@@ -809,7 +805,7 @@ guiTypes = {
 			quadTextureSprite = "GFX_button_123x34"
 			buttonText = "START_FOCUS"
 			buttonFont = "hoi_20b"
-			position = { x=390 y=53 }
+			position = { x=390 y=56 }
 			clicksound = select_focus
 			shortcut = "RETURN"
 		}

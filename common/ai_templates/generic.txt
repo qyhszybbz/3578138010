@@ -613,7 +613,7 @@ super_heavy_generic = {
 			num_of_military_factories > 150 # nly if we have loads of factories
 			date > 1943.6.1 # Lets wait until late war
 			NOT = { has_tech = main_battle_tank_chassis } # Abandon Super heavy projects if we start doing modern tanks instead
-			NOT = { has_government = democratic } # Let the authoritarian regimes spend money on this 
+			NOT = { has_government = Democracy } # Let the authoritarian regimes spend money on this 
 		}
 
 		modifier = {

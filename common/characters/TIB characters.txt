@@ -4,7 +4,6 @@ characters = {
         name = TIB_5th_Rezhen
         portraits = {
             civilian = {
-				small = GFX_portrait_WEI_Muweizhu_civilian_small
 				large = GFX_TIB_Rezhen_large
 			}
 		}

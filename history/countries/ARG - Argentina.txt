@@ -4,19 +4,18 @@ oob = "ARG_1936"
 
 create_faction = ARG_Buenos_Aires_Organization
 add_to_faction = BRB
-#set_country_flag = tfe_Have_a_camp
+set_country_flag = tfe_second_leader #副领导人
 
-set_country_flag = tfe_second_leader
 
 set_autonomy = {
-		target = PAR
-		autonomous_state = Governorate
-		freedom_level = 0.5
+	target = PAR
+	autonomous_state = Governorate
+	freedom_level = 0.5
 }
 set_autonomy = {
-		target = URG
-		autonomous_state = autonomy_satellite
-		freedom_level = 0.5
+	target = URG
+	autonomous_state = autonomy_satellite
+	freedom_level = 0.5
 }
 
 set_convoys = 120

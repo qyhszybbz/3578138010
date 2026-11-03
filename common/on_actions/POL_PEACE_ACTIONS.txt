@@ -65,7 +65,7 @@ on_actions = {
 						}
 					}
 					SOV = {
-						load_oob = RUS_TFE
+						
 						add_ideas = {
 							SOV_ATUCK_RKR
 						}

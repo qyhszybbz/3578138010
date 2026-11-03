@@ -47,10 +47,7 @@ recruit_character = MEN_megata_toshiro
 	oob = "MEN_1939"
 	set_technology = {
 		#doctrines
-		grand_battle_plan = 1
-		trench_warfare = 1
 		
-		battlefleet_concentration = 1
 
 		#electronics
 		electronic_mechanical_engineering = 1

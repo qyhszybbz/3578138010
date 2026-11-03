@@ -1,0 +1,30 @@
+leader_traits = {
+	#民族派军官
+	RUS_national_officer = {
+		type = land
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		modifier = {
+            breakthrough_factor = 0.03
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	#满洲派军官
+	RUS_manchu_officer = {
+		type = land
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		modifier = {
+            army_morale_factor = 0.10
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+}

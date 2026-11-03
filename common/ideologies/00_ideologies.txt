@@ -188,7 +188,7 @@ ideologies = {
 			}
 			constitutional_liberalism = { #USA共和党的宪政自由主义
 				can_be_randomly_selected = no
-				color = { 157 155 18 }
+				color = { 217 214 0 } #与 CSA 新共和党（CSA_liberalism_small）饼图同色
 			}
 			classical_liberalism = { #古典自由主义
 				can_be_randomly_selected = no
@@ -205,7 +205,7 @@ ideologies = {
 		}
 
 		color = { 135 206 235 }
-
+		
 		rules = {
 			can_force_government = yes
 			can_send_volunteers = yes
@@ -222,7 +222,7 @@ ideologies = {
 		faction_modifiers = {
 			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
 		}
-		ai_fascist = yes # uses the democratic AI behaviour
+		ai_fascist = yes # uses the Democracy AI behaviour
 		ai_ideology_wanted_units_factor = 1.10 # multiplies threat impact on number of desired units by this value, defaults to 1.0. If at war, the larger of this value and NDefines::NAI::WANTED_UNITS_WAR_THREAT_FACTOR will be used instead
 		
 		ai_give_core_state_control_threshold = 0 # Extra threshold value added to DIPLOMATIC_ACTION_PROPOSE_SCORE for this ideology to give back core state control to other country
@@ -237,7 +237,7 @@ ideologies = {
 			}
 			authoritarian_democracy_christian_democracy = { #USA民主党的威权民主主义（基督教民主）
 				can_be_randomly_selected = no
-				color = { 88 123 203 }
+				color = { 3 51 246 }
 			}
 		}
 
@@ -279,7 +279,7 @@ ideologies = {
 		faction_modifiers = {
 			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
 		}
-		ai_fascist = yes # uses the democratic AI behaviour
+		ai_fascist = yes # uses the Democracy AI behaviour
 		ai_ideology_wanted_units_factor = 1.10 # multiplies threat impact on number of desired units by this value, defaults to 1.0. If at war, the larger of this value and NDefines::NAI::WANTED_UNITS_WAR_THREAT_FACTOR will be used instead
 		
 		ai_give_core_state_control_threshold = 0 # Extra threshold value added to DIPLOMATIC_ACTION_PROPOSE_SCORE for this ideology to give back core state control to other country
@@ -314,7 +314,7 @@ ideologies = {
 			"FACTION_NAME_DEMOCRATIC_6"
 		}
 
-		color = { 80 78 79 }
+		color = { 0 93 149 }
 
 		rules = {
 			can_force_government = yes
@@ -331,7 +331,7 @@ ideologies = {
 		faction_modifiers = {
 			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
 		}
-		ai_fascist = yes # uses the democratic AI behaviour
+		ai_fascist = yes # uses the Democracy AI behaviour
 		ai_ideology_wanted_units_factor = 1.10 # multiplies threat impact on number of desired units by this value, defaults to 1.0. If at war, the larger of this value and NDefines::NAI::WANTED_UNITS_WAR_THREAT_FACTOR will be used instead
 		
 		ai_give_core_state_control_threshold = 0 # Extra threshold value added to DIPLOMATIC_ACTION_PROPOSE_SCORE for this ideology to give back core state control to other country
@@ -362,6 +362,7 @@ ideologies = {
 			crown_dominion = { #英王管辖地
 				can_be_randomly_selected = no
 			}
+			
 		}
 
 		dynamic_faction_names = {

@@ -3133,13 +3133,6 @@ leader_traits = {
 		resistance_target = -0.05
 	}
 
-	duke_of_castro = {
-		random = no
-		political_power_factor = 0.1
-		war_support_factor = 0.05
-		command_power_gain = 0.05
-	}
-
 ###########################################################################
 #################            SWISS TRAITS          ########################
 ###########################################################################

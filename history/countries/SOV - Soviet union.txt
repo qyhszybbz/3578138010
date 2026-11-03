@@ -1,20 +1,67 @@
-﻿load_focus_tree = soviet_TVE_focus
-capital = 219 # Moscow
+﻿capital = 219 #莫斯科
+oob = "SOV_1935"
+set_stability = 0.50
+set_war_support = 0.50
+set_research_slots = 3
+set_convoys = 129
+starting_train_buffer = 1.25
+set_fuel_ratio = 0.85
+load_focus_tree = soviet_TVE_focus
+set_country_flag = tfe_second_leader #副领导人
 
+### 初始科技 ###
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	marines  = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	basic_train = 1
+	fuel_silos = 1
+	synth_oil_experiments = 1
+	fuel_refining = 1
+	gwtank_chassis = 1
+	basic_light_tank_chassis = 1
+}
 
-recruit_character = SOV_aleksandr_kerensky #亚历山大·克伦斯基
-set_country_flag = tfe_second_leader
+### 领导人 ###
+recruit_character = SOV_Alexander_Kerensky #亚历山大·克伦斯基
+recruit_character = SOV_Viktor_Chernov #维克托·切尔诺夫
 
 add_ideas = {
-	ELSDQL
-	ELSBHZY
-	SOV_ZTGZ
-	SOV_MSKTYZC
-	SOV_HLDZCMB
-	SOV_LHDGY
-
-	SOV_Viktor_Chernov
+	### 初始民族精神 ###
+	SOV_Nations_Path_Forward #国家未来之路
+	SOV_Economic_development_recover #经济发展恢复中
+	SOV_Russian_protectionism #俄罗斯保护主义
+	SOV_Unconstrained_General_Staff #无法约束的总参谋部
+	### 副领袖 ###
+	SOV_Viktor_Chernov #维克托·切尔诺夫
 }
+set_variable = {
+	SOV_experience_gain_army_factor = -0.15
+}
+set_variable = {
+	SOV_land_doctrine_research = 0.10
+}
+set_variable = {
+	SOV_army_infantry_attack_factor = -0.05
+}
+set_variable = {
+	SOV_army_infantry_defence_factor = 0.10
+}
+set_variable = {
+	SOV_army_org_factor = -0.15
+}
+set_variable = {
+	SOV_breakthrough_factor = -0.10
+}
+add_dynamic_modifier = { modifier = SOV_Army_of_Republic } #共和国之军
+
 
 
 set_autonomy = {
@@ -42,14 +89,15 @@ set_politics = {
 }
 set_popularities = {
 	communism = 0
-	Socialism = 0
-	Progressivism = 50
-	Liberalism = 27
-	Conservatism = 15
-	Authoritarianism = 3
-	tttt = 5
-	fascism = 0
-	nazism = 0
+	Socialism = 1
+	Progressivism = 35
+	Liberalism = 20
+	Democracy = 9
+	Conservatism = 8
+	Authoritarianism = 6
+	tttt = 14
+	fascism = 2
+	nazism = 5
 }
 
 

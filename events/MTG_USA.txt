@@ -651,7 +651,7 @@ country_event = {
 				}
 				every_other_country = {
 					limit = {
-						has_government = democratic
+						has_government = Democracy
 						not = {
 							OR = {
 								has_completed_focus = ENG_organize_the_blackshirts
@@ -1416,7 +1416,7 @@ country_event = {
 			subtract_from_temp_variable = { neutrality_support = fascism_support }
 			start_civil_war = {
 				ruling_party = neutrality
-				ideology = democratic
+				ideology = Democracy
 				size = 0.7
 				capital = 357
 				states = { 357 685 }
@@ -1447,7 +1447,7 @@ country_event = {
 			random_other_country = {
 				limit = {
 					original_tag = USA
-					has_government = democratic
+					has_government = Democracy
 				}
 				save_global_event_target_as = USA_civil_war_democrats
 				set_cosmetic_tag = USA_REBEL
@@ -1785,7 +1785,7 @@ country_event = {
 		effect_tooltip = {
 			start_civil_war = {
 				ruling_party = neutrality
-				ideology = democratic
+				ideology = Democracy
 				size = 0.7
 				capital = 357
 				states = { 357 685 }
@@ -1812,7 +1812,7 @@ country_event = {
 			random_other_country = {
 				limit = {
 					original_tag = USA
-					has_government = democratic
+					has_government = Democracy
 				}
 				every_unit_leader = {
 					limit = {

@@ -1,0 +1,125 @@
+@FACTION_TEXT_X = 55
+@LOYALTY_TEXT_X = 240
+@POPULARITY_TEXT_X = 380
+@FACTION_ICONS_X = 10
+@FACTION_NAMES_X = 55
+@HEADERS_Y = 0
+guiTypes = {
+	containerWindowType = {
+		name = "braltic_war_gui"
+		position = { x = -400 y = -200 }
+		orientation = center
+		size = { width = 770 height= 550 }
+		fade_time = 7000
+		fade_type = linear
+		clipping = no
+		background = {
+			name = Background
+			quadTextureSprite = "GFX_welcome_bg"
+		}
+		buttonType = {
+			name ="introduction_icon"
+			quadTextureSprite = "GFX_welcome_close"
+			position = { x = 48 y = 470 }
+			buttonFont = "hoi_24header"
+			buttonText = "welcome_close_text"
+			pdx_tooltip = "welcome_close_text_desc"
+		}
+		buttonType = {
+			name ="introduction_welcome_botton1"
+			quadTextureSprite = "GFX_welcome_botton"
+			position = { x = 148 y = 36 }
+			scale = 1
+			buttonFont = "hoi_30header"
+			buttonText = "TFE_countries_title"
+		}
+		buttonType = {
+			name ="introduction_welcome_botton2"
+			quadTextureSprite = "GFX_welcome_botton"
+			position = { x = 360 y = 36 }
+			scale = 1
+			buttonFont = "hoi_30header"
+			buttonText = "TFE_rule_title"
+		}
+		buttonType = {
+			name ="introduction_welcome_botton3"
+			quadTextureSprite = "GFX_welcome_botton"
+			position = { x = 570 y = 36 }
+			scale = 1
+			buttonFont = "hoi_30header"
+			buttonText = "TFE_rule_title_3"
+		}
+
+		instantTextBoxType = {
+			name = "TFE_introduction_title"
+			position = { x = 10 y = 55 }
+			borderSize = {x = 0 y = 0 }
+			font = "hoi_24header"
+			text = "TFE_introduction_title"
+			maxWidth = 136
+			maxHeight = 30
+			format = center
+			
+		}
+		instantTextBoxType = {
+			name = "TFE_introduction_title_1"
+			position = { x = 330 y = 117 }
+			borderSize = {x = 0 y = 0 }
+			font = "hoi_24header"
+			text = "TFE_introduction_title_1"
+			maxWidth = 410
+			maxHeight = 30
+			format = center
+			
+		}
+		instantTextBoxType = {
+			name = "TFE_introduction_desc"
+			position = { x = 340 y = 144 }
+			borderSize = {x = 0 y = 0 }
+			font = "hoi4_typewriter16"
+			buttontext = "BLACK"
+			text = "TFE_introduction_desc"
+			maxWidth = 428
+			maxHeight = 369
+			scrollbarType = standardtext_slider
+			
+		}
+		instantTextBoxType = {
+			name = "TFE_page2"
+			position = { x = 480 y = 95 }
+			borderSize = {x = -100 y = 0 }
+			font = "hoi_24header"
+			text = "TFE_rule_text"
+			maxWidth = 750
+			maxHeight = 250
+			
+		}
+		iconType = {
+			name = "AUS_FRAME_ICON"
+			position = { x = 700 y =100 }
+			quadTextureSprite = "GFX_frame_warview"
+		}
+
+
+	
+
+
+		instantTextBoxType = {
+			name = "TVE_DSB_JIESHAO_tip"
+			position = { x = 680 y = 625 }
+			borderSize = {x = 20 y = 0 }
+			font = "hoi_18mbs"
+			text = "[TVE_country_tip_loc]"
+			maxWidth = 410
+			maxHeight = 200
+		}
+		
+		iconType = {
+			name = "welcome_icon"
+			spriteType = "GFXnothing"
+			position = { x = 42 y = 97 }		
+			alwaystransparent = yes
+			scale = 1
+		}
+	}
+}

@@ -22,7 +22,7 @@ if = {
 set_cosmetic_tag = ROC_TangsDemo
 set_research_slots = 5
 
-#领导人
+### 领导人 ###
 recruit_character = CHI_Tang_Hualong #汤化龙
 
 set_stability = 0.4
@@ -1268,7 +1268,6 @@ if = {
 		basic_battery = 1
 		basic_cruiser_armor_scheme = 1
 		basic_heavy_battery = 1
-		basic_medium_battery = 1
 		basic_light_battery = 1
 		basic_heavy_armor_scheme = 1
 		early_ship_hull_submarine = 1
@@ -1281,7 +1280,6 @@ if = {
 		basic_ship_hull_heavy = 1
 		mtg_transport = 1
 		coastal_defense_ships = 1
-		improved_airplane_launcher = 1
 	}
 	set_naval_oob = "ITA_1936_naval_mtg"
 }

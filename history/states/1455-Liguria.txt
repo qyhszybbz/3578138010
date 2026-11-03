@@ -1,0 +1,39 @@
+
+state={
+	id = 1455
+	name="STATE_1455"
+	manpower = 2126733
+	resources={
+		steel = 10
+		tungsten = 4
+		chromium = 2
+		aluminium = 7
+	}
+	state_category = large_city
+
+	history={
+		owner = ITA
+		add_core_of = LBV
+		add_core_of = ITA
+		add_core_of = TTS
+		victory_points = { #热那亚
+			6788 15
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 3
+			dockyard = 2
+			air_base = 1
+			6788 = {
+				naval_base = 6
+				coastal_bunker = 2
+			}
+		}
+	}
+	provinces={
+		6788 3772 11891
+	}
+
+	local_supplies=0.0 
+}

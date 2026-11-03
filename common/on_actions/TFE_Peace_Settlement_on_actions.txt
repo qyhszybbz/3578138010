@@ -1,0 +1,147 @@
+on_actions = {
+	### 和平结算 ###
+	on_capitulation = {
+		effect = {
+			log = "[GetDateText]: FROM: [From.GetName] ROOT: [Root.GetName] on_capitulation"
+			set_global_flag = show_peace_popup_alert
+			FROM = {
+				save_global_event_target_as = winning_country
+			}
+			ROOT = {
+				save_global_event_target_as = losing_country
+			}
+			log = "[GetDateText]: winner/loser: FROM: [winning_country.GetName] ROOT: [losing_country.GetName] on_capitulation"
+			if = {
+				limit = {
+					event_target:losing_country = {
+						any_allied_country = {
+							has_war_together_with = event_target:losing_country
+						}
+					}
+				}
+				set_global_flag = losing_country_multiple
+			}
+			if = {
+				limit = {
+					event_target:winning_country = {
+						any_allied_country = {
+							has_war_together_with = event_target:winning_country
+						}
+					}
+				}
+				set_global_flag = winning_country_multiple
+			}
+			if = {
+				limit = {
+					NOT = {
+						ROOT = {
+							is_in_faction = yes
+							any_other_country = {
+								is_in_faction_with = PREV
+								has_capitulated = no
+							}
+						}
+					}
+				}
+				set_global_flag = war_won
+				if = {
+					#初始战争不显示
+					limit = {
+						FROM = {
+							original_tag = ARI
+						}
+						ROOT = {
+							original_tag = BBR
+						}
+					}
+					clr_global_flag = show_peace_popup_alert
+					FROM = {
+						white_peace = ROOT
+						annex_country = {
+							target = ROOT
+							transfer_troops = no
+						}
+					}
+					set_global_flag = skip_default_capitulation
+				}
+				if = {
+					#海德拉巴战胜马德拉斯
+					limit = {
+						FROM = {
+							original_tag = HYD
+						}
+						ROOT = {
+							original_tag = RAS
+						}
+					}
+					FROM = {
+						white_peace = ROOT
+						set_autonomy = {
+							target = ROOT
+							autonomous_state = autonomy_Indian_state
+							freedom_level = 0.3
+						}
+					}
+					ROOT = {
+						add_popularity = {
+							ideology = tttt
+							popularity = 0.6
+						}
+						set_politics = {	
+							ruling_party = tttt
+							last_election = "1931.6.3"
+							election_frequency = 48
+							elections_allowed = no
+						}
+						set_party_name = {
+							ideology = tttt
+							name = HYD_occupied_gov
+							long_name = HYD_occupied_gov_long
+						}
+						create_country_leader = {
+							name = "Council_of_Princes"
+							picture = "gfx/leaders/HYD/Council_of_Princes.png"
+							ideology = Absolute_monarchy
+							traits = { }
+						}
+						if = {
+							limit = {
+								original_tag = RAS
+							}
+						}
+						set_cosmetic_tag = HYD_Madras_State
+					}
+					set_global_flag = skip_default_capitulation
+				}
+				#默认吞并
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = skip_default_capitulation
+						}
+					}
+					FROM = {
+						every_enemy_country = {
+							limit = {
+								OR = {
+									original_tag = ROOT
+									is_in_faction_with = ROOT
+									is_puppet_of = ROOT
+								}
+							}
+							FROM = {
+								white_peace = PREV
+								annex_country = {
+									target = PREV
+									transfer_troops = no
+								}
+							}
+						}
+					}
+				}
+			}
+			set_global_flag = war_continuing
+			clr_global_flag = skip_default_capitulation
+		}
+	}
+}

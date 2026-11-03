@@ -1,7 +1,7 @@
 ﻿capital = 291 #巴格达
 oob = "IRQ_1936"
 
-#领导人
+### 领导人 ###
 recruit_character = IRQ_Bakr_Sidqi
 
 if = {

@@ -14,6 +14,17 @@ spriteTypes = {
 		name = "GFX_IRQ_Bakr_Sidqi_large"
 		texturefile = "gfx/leaders/IRQ/IRQ_Bakr_Sidqi.png"
 	}
+	#俄罗斯
+	#领导人
+	spriteType = {
+		name = "GFX_SOV_Alexander_Kerensky_large"
+		texturefile = "gfx/leaders/SOV/SOV_Alexander_Kerensky.png"
+	}
+	spriteType = {
+		name = "GFX_SOV_Viktor_Chernov_large"
+		texturefile = "gfx/leaders/SOV/SOV_Viktor_Chernov.png"
+		legacy_lazy_load = no
+	}
 	#南俄军区
 	spriteType = {
 		name = "GFX_RCA_Anton_Denikin_large"
@@ -29,6 +40,7 @@ spriteTypes = {
 		texturefile = "gfx/leaders/FEM/FEM_Nikolai_Kosov.png"
 	}
 	#保加利亚
+	#领导人
 	spriteType = {
 		name = "GFX_BUL_boris_iii_large"
 		texturefile = "gfx/leaders/BUL/BUL_boris_iii.dds"
@@ -42,6 +54,33 @@ spriteTypes = {
 		name = "GFX_CHI_Tang_Hualong_large"
 		texturefile = "gfx/leaders/CHI/CHI_Tang_Hualong.dds"
 	}
+	#日本
+	#领导人
+	spriteType = {
+		name = "GFX_JAP_Hirohito_large"
+		texturefile = "gfx/leaders/JAP/JAP_Hirohito.png"
+	}
+	spriteType = {
+		name = "GFX_JAP_Suzuki_Teiichi_large"
+		texturefile = "gfx/leaders/JAP/JAP_Suzuki_Teiichi.png"
+		legacy_lazy_load = no
+	}
+	#元帅
+	spriteType = {
+		name = "GFX_JAP_Hirohito_army_large"
+		texturefile = "gfx/leaders/JAP/JAP_Hirohito_army.png"
+	}
+	#罗马尼亚
+	#领导人
+	spriteType = {
+		name = "GFX_ROM_Constantin_Argetoianu_large"
+		texturefile = "gfx/leaders/ROM/ROM_Constantin_Argetoianu.png"
+	}
+	spriteType = {
+		name = "GFX_ROM_Nikola_Jorga_large"
+		texturefile = "gfx/leaders/ROM/ROM_Nikola_Jorga.png"
+		legacy_lazy_load = no
+	}
 	#西班牙
 	#领导人
 	spriteType = { #米格尔·普里莫·德里维拉
@@ -51,6 +90,18 @@ spriteTypes = {
 	spriteType = { #弗朗西斯科·佛朗哥（领导人）
 		name = "GFX_SPR_Francisco_Franco_civ_large"
 		texturefile = "gfx/leaders/SPR/SPR_Francisco_Franco.png"
+	}
+	spriteType = { #何塞·普里莫·德里维拉
+		name = "GFX_SPR_Jose_Primo_Derivella_large"
+		texturefile = "gfx/leaders/SPR/SPR_Jose_Primo_Derivella.png"
+	}
+	spriteType = { #唐·卡洛斯
+		name = "GFX_SPR_Don_Carlos_large"
+		texturefile = "gfx/leaders/SPR/SPR_Don_Carlos.png"
+	}
+	spriteType = { #胡安·德·波旁
+		name = "GFX_SPR_Juan_Deborbon_large"
+		texturefile = "gfx/leaders/SPR/SPR_Juan_Deborbon.png"
 	}
 	#元帅
 	spriteType = { #弗朗西斯科·佛朗哥（元帅）
@@ -138,6 +189,10 @@ spriteTypes = {
 	#波兰
 	#领导人
 	spriteType = {
+		name = "GFX_POL_Gabriel_Narutowicz_large"
+		texturefile = "gfx/leaders/POL/POL_Gabriel_Narutowicz.png"
+	}
+	spriteType = {
 		name = "GFX_POL_Jozef_Pilsudski_large"
 		texturefile = "gfx/leaders/POL/POL_Jozef_Pilsudski.png"
 	}
@@ -158,6 +213,26 @@ spriteTypes = {
 		name = "GFX_POL_Edward_Rydz_Smigly_small"
 		texturefile = "gfx/interface/advisors/POL/POL_Edward_Rydz_Smigly.png"
 	}
+	### 奥地利大区 ###
+	#波西米亚
+	#领导人
+	spriteType = {
+		name = "GFX_CZE_Archduke_Franz_Ferdinand_large"
+		texturefile = "gfx/leaders/CZE/CZE_Archduke_Franz_Ferdinand.png"
+	}
+	#克罗地亚
+	#领导人
+	spriteType = {
+		name = "GFX_CRO_Archduke_Robert_large"
+		texturefile = "gfx/leaders/CRO/CRO_Archduke_Robert.png"
+	}
+	#南斯拉夫
+	#领导人
+	spriteType = {
+		name = "GFX_YUG_Alexander_I_large"
+		texturefile = "gfx/leaders/YUG/YUG_Alexander_I.png"
+	}
+	### 意大利大区 ###
 	#北意大利（意大利民族共和国）
 	#领导人
 	spriteType = {
@@ -166,20 +241,148 @@ spriteTypes = {
 	}
 	#顾问
 	spriteType = {
+		name = "GFX_LBV_Benito_Mussolini_small"
+		texturefile = "gfx/interface/advisors/LBV/LBV_Benito_Mussolini.png"
+	}
+	spriteType = {
 		name = "GFX_LBV_Roberto_Farinacci_small"
 		texturefile = "gfx/interface/advisors/LBV/LBV_Roberto_Farinacci.png"
 	}
+	spriteType = {
+		name = "GFX_LBV_Giuseppe_Volpi_small"
+		texturefile = "gfx/interface/advisors/LBV/LBV_Giuseppe_Volpi.png"
+	}
+	spriteType = {
+		name = "GFX_LBV_Dino_Grandi_small"
+		texturefile = "gfx/interface/advisors/LBV/LBV_Dino_Grandi.png"
+	}
+	spriteType = {
+		name = "GFX_LBV_Italo_Balbo_small"
+		texturefile = "gfx/interface/advisors/LBV/LBV_Italo_Balbo.png"
+	}
+	spriteType = {
+		name = "GFX_LBV_Arturo_Bocchini_small"
+		texturefile = "gfx/interface/advisors/LBV/LBV_Arturo_Bocchini.png"
+	}
+	#西意大利（意大利社会主义共和国）
+	#领导人
+	spriteType = {
+		name = "GFX_ITA_Antonio_Gramsci_large"
+		texturefile = "gfx/leaders/ITA/ITA_Antonio_Gramsci.png"
+	}
+	#顾问
+	spriteType = {
+		name = "GFX_ITA_Salvatore_Barzilai_small"
+		texturefile = "gfx/interface/advisors/ITA/ITA_Salvatore_Barzilai.png"
+	}
+	#南意大利（意大利王国）
+	#领导人
+	spriteType = {
+		name = "GFX_TTS_Vittorio_emanuele_iii_large"
+		texturefile = "gfx/leaders/TTS/TTS_Vittorio_emanuele_iii.png"
+	}
+	#教宗国
+	#领导人
+	spriteType = {
+		name = "GFX_PAP_Pope_Pius_XI_large"
+		texturefile = "gfx/leaders/PAP/PAP_Pope_Pius_XI.png"
+	}
+	#撒丁驻军
+	#领导人
+	spriteType = {
+		name = "GFX_SPM_Jose_Enrique_Valrela_large"
+		texturefile = "gfx/leaders/SPM/SPM_Jose_Enrique_Valrela.png"
+	}
+	### 美洲大区 ###
+	#北方美国
+	#领导人
+	spriteType = {
+		name = "GFX_USA_John_Calvin_Coolidge_large"
+		texturefile = "gfx/leaders/USA/USA_John_Calvin_Coolidge.png"
+	}
+	#南方美国
+	#领导人
+	spriteType = { #查尔斯·考夫林
+		name = "GFX_CSA_Charles_Coughlin_large"
+		texturefile = "gfx/leaders/CSA/CSA_Charles_Coughlin.png"
+	}
+	spriteType = { #休伊·朗
+		name = "GFX_CSA_Hugh_Long_large"
+		texturefile = "gfx/leaders/CSA/CSA_Hugh_Long.png"
+	}
+	#元帅
+	spriteType = { #沃尔顿·沃克
+		name = "GFX_CSA_Walton_Walker_large"
+		texturefile = "gfx/leaders/CSA/CSA_Walton_Walker.png"
+	}
+	spriteType = { #莱斯利·詹姆斯
+		name = "GFX_CSA_Leslie_James_large"
+		texturefile = "gfx/leaders/CSA/CSA_Leslie_James.png"
+	}
+	spriteType = { #奥马尔·纳尔逊·布莱德雷
+		name = "GFX_CSA_Omar_Nelson_Bradley_large"
+		texturefile = "gfx/leaders/CSA/CSA_Omar_Nelson_Bradley.png"
+	}
+	spriteType = { #弗雷德里克·哈尔西
+		name = "GFX_CSA_Frederick_Halsey_large"
+		texturefile = "gfx/leaders/CSA/CSA_Frederick_Halsey.png" 
+	}
+	spriteType = { #西蒙·玻利瓦尔·巴克纳
+		name = "GFX_CSA_Simon_Bolivar_Bachner_large"
+		texturefile = "gfx/leaders/CSA/CSA_Simon_Bolivar_Bachner.png" 
+	}
+	spriteType = { #威廉·亨利·鲁珀特斯
+		name = "GFX_CSA_William_Henry_Ruperts_large"
+		texturefile = "gfx/leaders/CSA/CSA_William_Henry_Ruperts.png" 
+	}
+	spriteType = { #克莱伦斯·许布纳
+		name = "GFX_CSA_Clarence_Hubner_large"
+		texturefile = "gfx/leaders/CSA/CSA_Clarence_Hubner.png" 
+	}
+	#德克萨斯
+	#领导人
+	spriteType = { 
+		name = "GFX_TEX_Kress_Houston_large"
+		texturefile = "gfx/leaders/TEX/TEX_Kress_Houston.png"
+	}
+	#新墨西哥
+	#领导人
+	spriteType = { #吉尔伯托·奥古斯托·阿布瑞尔
+		name = "GFX_NMX_Gilberto_Augusto_Abreu_large"
+		texturefile = "gfx/leaders/NMX/NMX_Gilberto_Augusto_Abreu.png"
+	}
+	#加拿大
+	#领导人
+	spriteType = { #威廉·莱昂·麦肯齐·金
+		name = "GFX_CAN_Mackenzie_King_large" 
+		texturefile = "gfx/leaders/CAN/CAN_Mackenzie_King.png"
+	}
+	#纽芬兰
+	#领导人
+	spriteType = { #理查德·贝内特
+		name = "GFX_NFL_Richard_Bennett_large" 
+		texturefile = "gfx/leaders/NFL/NFL_Richard_Bennett.png"
+	}
+	#中美洲
+	#领导人
+	spriteType = { #莱昂·科尔特斯·卡斯特罗
+		name = "GFX_ELS_Leon_Cortes_Castro_large"
+		texturefile = "gfx/leaders/ELS/ELS_Leon_Cortes_Castro.png"
+	}
+	### 印度大区 ###
+	#海德拉巴
+	spriteType = { #奥斯曼·阿里·汗
+		name = "GFX_HYD_Osman_Ali_Khan_large"
+		texturefile = "gfx/leaders/HYD/HYD_Osman_Ali_Khan.png"
+	}
 
 
-	
 
 
-
-
-
-
-
-
+	spriteType = { #何塞·里卡多·佩雷拉·卡布拉尔
+		name = "GFX_POR_hesai"
+		texturefile = "gfx/leaders/POR/POR_hesai.png"
+	}
 	spriteType = {
 		name = "GFX_ENG_George_V"
 		texturefile = "gfx/leaders/ENG/ENG_George_V.dds"
@@ -229,10 +432,6 @@ spriteTypes = {
 		texturefile = "gfx/leaders/JAP/JAP_Tsuyoshi_Inukai.dds"
 	}
 	spriteType = {
-		name = "GFX_GER_HITTLER"
-		texturefile = "gfx/leaders/GER_HITTLER.dds"
-	}
-	spriteType = {
 		name = "GFX_REZHEN"
 		texturefile = "gfx/leaders/CHI/TIB_REZHEN.dds"
 	}
@@ -243,22 +442,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_MON_ENQIN"
 		texturefile = "gfx/leaders/RUS/MON_ENQIN.dds"
-	}
-	spriteType = {
-		name = "GFX_JAP_Hirohito"
-		texturefile = "gfx/leaders/JAP_Hirohito.dds"
-	}
-	spriteType = {
-		name = "GFX_PRC_MAO_ZE_DONG"
-		texturefile = "gfx/leaders/PRC_MAO_ZE_DONG.dds"
-	}
-	spriteType = {
-		name = "GFX_SOV_STALIN"
-		texturefile = "gfx/leaders/SOV_STALIN.dds"
-	}
-	spriteType = {
-		name = "GFX_ENG_Baldwin"
-		texturefile = "gfx/leaders/ENG_Baldwin.dds"
 	}
 	spriteType = {
 		name = "GFX_CHI_HU_HAN_MIN"
@@ -360,10 +543,6 @@ spriteTypes = {
 		name = "GFX_UKR_Pavlo_Petrovych_Skoropadskyi"
 		texturefile = "gfx/leaders/UKR/UKR_Pavlo_Petrovych_Skoropadskyi.dds"
 	}
-	spriteType = {
-		name = "GFX_Pope_Pius_XI"
-		texturefile = "gfx/leaders/ITA/Pope_Pius_XI.png"
-	}
 	#I'm so sorry but actually there leaders's pitcure are all one person do that me,So for the working-speed, I have to simplification this leaders name.plzzzzz Forgive me,My work is too hard and large.TAT I will Formalize thier leaders if I have enough times after publish this mod.
 	spriteType = {
 		name = "GFX_TVE_DEN_LEADERS"
@@ -398,26 +577,6 @@ spriteTypes = {
 		texturefile = "gfx/leaders/SWE/TVE_SWE_LEADERS.dds"
 	}
 	spriteType = {
-		name = "GFX_TVE_LBV_LEADERS"
-		texturefile = "gfx/leaders/ITA/TVE_LBV_LEADERS.dds"
-	}
-	spriteType = {
-		name = "GFX_TVE_ITA_KINGDOM_LEADERS"
-		texturefile = "gfx/leaders/ITA/TVE_ITA_KINGDOM_LEADERS.png"
-	}
-	spriteType = {
-		name = "GFX_ITA_Gramsci"
-		texturefile = "gfx/leaders/ITA/ITA_Gramsci.png"
-	}
-	spriteType = {
-		name = "GFX_POR_hesai"
-		texturefile = "gfx/leaders/POR/POR_hesai.PNG"
-	}
-	spriteType = {
-		name = "GFX_TVE_TTS_LEADERS"
-		texturefile = "gfx/leaders/ITA/TVE_TTS_LEADERS.dds"
-	}
-	spriteType = {
 		name = "GFX_FRA_parliament"
 		texturefile = "gfx/leaders/FRA/FRA_parliament.dds"
 	}
@@ -426,20 +585,8 @@ spriteTypes = {
 		texturefile = "gfx/leaders/AUS/AUS_parliament.dds"
 	}
 	spriteType = {
-		name = "GFX_POL_parliament"
-		texturefile = "gfx/leaders/POL/POL_parliament.dds"
-	}
-	spriteType = {
 		name = "GFX_TVE_BEL_LEADERS"
 		texturefile = "gfx/leaders/BEL/TVE_BEL_LEADERS.dds"
-	}
-	spriteType = {
-		name = "GFX_TVE_BUL_LEADERS"
-		texturefile = "gfx/leaders/BUL/TVE_BUL_LEADERS.dds"
-	}
-	spriteType = {
-		name = "GFX_TVE_IRQ_LEADERS"
-		texturefile = "gfx/leaders/IRQ/TVE_IRQ_LEADERS.dds"
 	}
 	spriteType = {
 		name = "GFX_TVE_JOR_LEADERS"
@@ -458,10 +605,6 @@ spriteTypes = {
 		texturefile = "gfx/leaders/SYR/TVE_SYR_LEADERS.dds"
 	}
 	spriteType = {
-		name = "GFX_TVE_MON_LEADERS"
-		texturefile = "gfx/leaders/CHI/TVE_MON_LEADERS.dds"
-	}
-	spriteType = {
 		name = "GFX_TVE_MLY_LEADERS"
 		texturefile = "gfx/leaders/MLY/TVE_MLY_LEADERS.dds"
 	}
@@ -472,18 +615,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_TVE_HOL_LEADERS"
 		texturefile = "gfx/leaders/HOL/TVE_HOL_LEADERS.dds"
-	}
-	spriteType = {
-		name = "GFX_TVE_BOS_LEADERS"
-		texturefile = "gfx/leaders/Yug_and_her_firends/TVE_BOS_LEADERS.dds"
-	}
-	spriteType = {
-		name = "GFX_TVE_CRO_LEADERS"
-		texturefile = "gfx/leaders/Yug_and_her_firends/TVE_CRO_LEADERS.dds"
-	}
-	spriteType = {
-		name = "GFX_TVE_YUG_LEADERS"
-		texturefile = "gfx/leaders/Yug_and_her_firends/TVE_YUG_LEADERS.dds"
 	}
 	spriteType = {
 		name = "GFX_TVE_ROM_LEADERS"

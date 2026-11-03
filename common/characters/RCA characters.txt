@@ -22,7 +22,7 @@ characters = {
 			legacy_id=100
 		}
 	}
-	#将领-元帅
+	#元帅
 	#阿列克谢·卡列金
 	RCA_Aleksey_Karelin = {
 		name = RCA_Aleksey_Karelin

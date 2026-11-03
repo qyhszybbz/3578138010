@@ -442,7 +442,7 @@ POL_peasant_strike_category = {
 						}
 					}
 					start_civil_war = {
-						ideology = democratic
+						ideology = Democracy
 						size = 0.6
 						capital = 10
 						states = { 
@@ -452,7 +452,7 @@ POL_peasant_strike_category = {
 				}
 				else = { #Regular CW starting in Krakow
 					start_civil_war = {
-						ideology = democratic
+						ideology = Democracy
 						size = 0.6
 						capital = 88
 						states = { 
@@ -466,13 +466,13 @@ POL_peasant_strike_category = {
 						limit = {
 							original_tag = ROOT
 							NOT = { tag = ROOT }
-							has_government = democratic
+							has_government = Democracy
 						}
 						promote_character = POL_stanislaw_mikolajczyk
 						set_cosmetic_tag = POL_PEASANT
 						save_event_target_as = peasant_poland_target
 						set_popularities = { #The strike was mostly a coalition of SocDems, Socialists, and Communists
-							democratic = 65
+							Democracy = 65
 							communism = 35
 						}
 					}
@@ -541,7 +541,7 @@ POL_peasant_strike_category = {
 				}
 				set_capital = { state = 88 } #Move the capital to Krakow
 				start_civil_war = {
-					ruling_party = democratic
+					ruling_party = Democracy
 					ideology = ROOT
 					size = civil_war_size_var
 					capital = 10 #The old government is moved to Warsaw
@@ -584,7 +584,7 @@ POL_peasant_strike_category = {
 					value = pol_peasant_communism
 				}
 				set_popularities = {
-					democratic = pol_peasant_democracy
+					Democracy = pol_peasant_democracy
 					communism = pol_peasant_communism
 					neutrality = pol_peasant_neutrality
 				}
@@ -2314,7 +2314,7 @@ POL_anti_capitalist_decisions = {
 		target_trigger = {
 			FROM = {
 				is_major = yes
-				has_government = democratic
+				has_government = Democracy
 			}
 		}
 

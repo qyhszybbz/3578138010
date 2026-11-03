@@ -319,8 +319,8 @@ CHI_dont_join_ENG_if_not_democratic = {
 
 	enable = {
 		WTT_is_chinese_country = yes 
-		NOT = { has_government = democratic }
-		ENG = { has_government = democratic }
+		NOT = { has_government = Democracy }
+		ENG = { has_government = Democracy }
 	}
 
 	abort_when_not_enabled = yes 
@@ -341,8 +341,8 @@ CHI_dont_join_USA_if_not_democratic = {
 
 	enable = {
 		WTT_is_chinese_country = yes 
-		NOT = { has_government = democratic }
-		USA = { has_government = democratic }
+		NOT = { has_government = Democracy }
+		USA = { has_government = Democracy }
 	}
 
 	abort_when_not_enabled = yes 

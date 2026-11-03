@@ -11,8 +11,8 @@ set_technology = {
 	
 	basic_train = 1
 }
-
-recruit_character = NMX_jierbote_aburuier 
+### 领导人 ###
+recruit_character = NMX_Gilberto_Augusto_Abreu
 
 
 add_ideas = {

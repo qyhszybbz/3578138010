@@ -127,6 +127,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			AUS= {
+				country_lock_all_division_template = no
 				load_focus_tree = AUS_FOCUS_2
 				country_event = {
 					id = AUS_TVE.4

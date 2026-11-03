@@ -55,7 +55,7 @@ music = {
 			factor = 2
 
 			has_war = no
-			has_government = democratic
+			has_government = Democracy
 		}		
 	}	
 }
@@ -68,7 +68,7 @@ music = {
 			factor = 2
 
 			has_war = no
-			has_government = democratic
+			has_government = Democracy
 		}		
 	}	
 }
@@ -185,7 +185,7 @@ music = {
 			factor = 2
 
 			has_war = yes
-			has_government = democratic
+			has_government = Democracy
 		}		
 	}	
 }
@@ -198,7 +198,7 @@ music = {
 			factor = 2
 
 			has_war = yes
-			has_government = democratic
+			has_government = Democracy
 		}		
 	}	
 }

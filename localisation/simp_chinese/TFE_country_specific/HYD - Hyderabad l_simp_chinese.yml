@@ -1,0 +1,37 @@
+﻿l_simp_chinese:
+ HYD: "海德拉巴"
+ HYD_ADJ: "海德拉巴"
+ HYD_DEF: "海德拉巴"
+ HYD_Authoritarianism: "海德拉巴王国"
+ HYD_Authoritarianism_ADJ: "海德拉巴王国"
+ HYD_Authoritarianism_DEF: "海德拉巴王国"
+ HYD_tttt: "海德拉巴苏丹国"
+ HYD_tttt_ADJ: "海德拉巴苏丹国"
+ HYD_tttt_DEF: "海德拉巴苏丹国"
+ HYD_Osman: "海德拉巴王国"
+ HYD_Osman_ADJ: "海德拉巴王国"
+ HYD_Osman_DEF: "海德拉巴王国"
+
+ HYD_Madras_State: "马德拉斯邦"
+
+ HYD_Democracy_party: "大议会"
+ HYD_Democracy_party_long: "海德拉巴大议会"
+ HYD_Conservatism_party: "举国政府"
+ HYD_Conservatism_party_long: "海德拉巴举国政府"
+ HYD_Authoritarianism_party: "阿萨夫·贾赫王朝"
+ HYD_Authoritarianism_party_long: "阿萨夫·贾赫王朝"
+ HYD_tttt_party: "乌理玛"
+ HYD_tttt_party_long: "海德拉巴乌理玛"
+ HYD_fascism_party: "统一运动"
+ HYD_fascism_party_long: "全印度统一运动"
+
+ HYD_occupied_gov: "王公执行大会"
+ HYD_occupied_gov_long: "海德拉巴王公执行大会"
+ Council_of_Princes: "王公会议"
+ autonomy_Indian_state: "印度邦国"
+
+ HYD_Osman_Ali_Khan: "奥斯曼·阿里·汗"
+ HYD_Osman_Ali_Khan_desc: "§Y生于:§!§L1886年4月6日,海德拉巴邦海德拉巴古宫殿§!"
+ 
+ HYD_Splendid_Golconda: "璀璨戈尔康达"
+ HYD_Splendid_Golconda_desc: "在公元前4世纪之前，戈尔康达就已经是一处大型钻石矿区，其全盛时期更是正值莫卧儿帝国鼎盛期。戈尔康达钻石在珠宝界常被称为如水般清澈透明，英国王室王冠上186克拉的“光明之山”便是来自于这片土地。\n\n20世纪初，各大矿场的主要开采作业停止，但英印政府仍持续使用现代设备和勘探技术在该地区进行勘探活动。利用人们对天然钻石的渴望，英印政府在国际贸易中占足了外汇。而这片矿区的主人奥斯曼·阿里·汗也借此一跃成为有史以来最富有的人之一。\n\n§c可如今，印度四分五裂。钻石尽管仍然可以售往世界各地，但来势汹汹全球的大萧条，使人们不再愿意为这块璀璨的石头付出昂贵的代价……§!\n\n\n\n\n£GFX_idea_Splendid_Golconda_desc\n\n\n\n§!"

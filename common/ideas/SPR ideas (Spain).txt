@@ -1,5 +1,4 @@
 ideas = {
-
 	country = {
         ### 初始民族精神 ###
         #教皇子午线
@@ -58,6 +57,28 @@ ideas = {
 				stability_factor = -0.15
 				war_support_factor = -0.1
 				production_speed_buildings_factor = -0.15
+			}
+		}
+		### 国策民族精神 ###
+		#援助黑鹰
+        SPR_Help_Black_Eagle = {
+            on_add = { log = "[GetLogRoot]: add idea SPR_Help_Black_Eagle" }
+			picture = Help_Black_Eagle
+			allowed = { has_global_flag = ITAG_Wars_of_Unification }
+			modifier = {
+                send_volunteer_size = 4
+			}
+		}
+		#赤猎军
+		SPR_Red_Hunting = {
+			on_add = { log = "[GetLogRoot]: add idea SPR_Red_Hunting" }
+			picture = Red_Hunting
+			allowed = { has_global_flag = ITAG_Wars_of_Unification }
+			targeted_modifier = {
+				tag = ITA
+				attack_bonus_against = 0.08
+				defense_bonus_against = 0.05
+				breakthrough_bonus_against = 0.10
 			}
 		}
     }

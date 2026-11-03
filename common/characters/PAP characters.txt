@@ -1,0 +1,16 @@
+characters = {
+    #领导人
+	#庇护十一世
+	PAP_Pope_Pius_XI = {
+		name = PAP_Pope_Pius_XI
+		portraits = {
+			civilian = {
+				large = GFX_PAP_Pope_Pius_XI_large
+			}
+		}
+		country_leader = {
+			ideology = Theocracy
+			traits = {  }
+		}
+	}
+}

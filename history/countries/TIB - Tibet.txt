@@ -8,7 +8,7 @@ set_technology = {
 }
 
 set_cosmetic_tag = CHI_TIB
-#领导人
+### 领导人 ###
 recruit_character = TIB_5th_Rezhen
 
 set_politics = {

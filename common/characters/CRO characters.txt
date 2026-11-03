@@ -1,0 +1,17 @@
+characters = {
+	#领导人
+	#罗伯特大公
+	CRO_Archduke_Robert = {
+		name= CRO_Archduke_Robert
+		portraits={
+			civilian={
+				large=GFX_CRO_Archduke_Robert_large
+			}
+		}
+		country_leader={
+			#desc = CRO_Archduke_Robert_desc
+			ideology = authoritarianism_small
+			traits= {  }
+		}
+	}
+}

@@ -150,7 +150,7 @@ default_unit_production_super_heavies = {
 		num_of_military_factories > 150 # nly if we have loads of factories
 		date > 1943.6.1 # Lets wait until late war
 		NOT = { has_tech = main_battle_tank_chassis } # Abandon Super heavy projects if we start doing modern tanks instead
-		NOT = { has_government = democratic } # Let the authoritarian regimes spend money on this 
+		NOT = { has_government = Democracy } # Let the authoritarian regimes spend money on this 
 	}
 	abort_when_not_enabled = yes
 	ai_strategy = {
@@ -1722,7 +1722,7 @@ allies_avoid_starting_wars_during_endgame = { #Allies should avoid attacking.. w
 	}
 	enable = {
 		is_historical_focus_on = yes
-		ENG = { has_government = democratic }
+		ENG = { has_government = Democracy }
 		OR = {
 			tag = ENG
 			is_in_faction_with = ENG

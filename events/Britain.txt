@@ -255,7 +255,7 @@ country_event = {
 	trigger = {
 		tag = ENG
 		has_war = yes
-		has_government = democratic
+		has_government = Democracy
 		NOT = {
 			has_completed_focus = uk_scandinavian_focus
 		}
@@ -308,7 +308,7 @@ country_event = {
 
 	trigger = {
 		tag = ENG
-		has_government = democratic
+		has_government = Democracy
 		date > 1940.9.11
 		NOT = { has_country_flag = chamberlain_resigned }
 		has_country_leader = {
@@ -378,7 +378,7 @@ country_event = {
 				limit = {
 					NOT = { has_war_with = ENG }
 					is_in_faction = no
-					has_government = democratic
+					has_government = Democracy
 					is_puppet = no
 					OR = {
 						capital_scope = {
@@ -851,7 +851,7 @@ country_event = {
  
     trigger = {
         original_tag = ENG
-        has_government = democratic
+        has_government = Democracy
         has_idea = ENG_george_vi
         date > 1937.5.27
         has_start_date < 1936.01.02

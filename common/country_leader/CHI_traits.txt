@@ -1,4 +1,5 @@
 leader_traits ={
+    #领导人特质
 	#悬剑欲坠
     CHI_Assassination_Crisis = {
         random = no

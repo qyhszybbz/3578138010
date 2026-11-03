@@ -117,10 +117,7 @@ set_convoys = 15
 		interwar_artillery = 1
 
 		#doctrines
-		grand_battle_plan = 1
-		trench_warfare = 1
 		
-		battlefleet_concentration = 1
 
 		#electronics
 		electronic_mechanical_engineering = 1
@@ -163,7 +160,6 @@ set_convoys = 15
 			early_ship_hull_submarine = 1
 			basic_ship_hull_submarine = 1
 			early_ship_hull_cruiser = 1
-			basic_medium_battery = 1
 		}
 	}
 }

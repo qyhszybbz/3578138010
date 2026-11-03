@@ -205,15 +205,6 @@ SpriteTypes = {
         name = "GFX_focus_CSA_Assemble_the_patrol_team_shine"
         texturefile = "gfx/interface/goals/CSA/CSA_Assemble_the_patrol_team.dds"
     }
-    #领导人
-    spriteType = { #查尔斯·考夫林
-		name = "GFX_leader_CSA_Charles_Coughlin_large"
-		texturefile = "gfx/leaders/CSA/CSA_Charles_Coughlin.dds"
-	}
-    spriteType = { #休·伊朗
-		name = "GFX_leader_CSA_Hugh_Long"
-		texturefile = "gfx/leaders/CSA/CSA_Hugh_Iran.dds" 
-	}
     #配图
     spriteType = { #邦联国体制配图
 		name = "GFX_CSA_Confederate_Pictures"
@@ -230,35 +221,7 @@ SpriteTypes = {
 		texturefile = "gfx/texticons/banners/CSA/CSA_jackson_stone_wall_Pictures.dds"
 		legacy_lazy_load = no
 	}
-    #将领
-    spriteType = { #沃尔顿·沃克
-		name = "GFX_general_CSA_Walton_Walker"
-		texturefile = "gfx/leaders/CSA/CSA_Walton_Walker.dds" 
-	}
-     spriteType = { #莱斯利·詹姆斯
-		name = "GFX_general_CSA_Leslie_James"
-		texturefile = "gfx/leaders/CSA/CSA_Leslie_James.dds" 
-	}
-      spriteType = { #奥马尔·纳尔逊·布莱德雷
-		name = "GFX_general_CSA_Omar_Nelson_Bradley"
-		texturefile = "gfx/leaders/CSA/CSA_Omar_Nelson_Bradley.dds" 
-	}
-    spriteType = { #弗雷德里克·哈尔西
-		name = "GFX_general_CSA_Frederick_Halsey"
-		texturefile = "gfx/leaders/CSA/CSA_Frederick_Halsey.dds" 
-	}
-    spriteType = { #西蒙·玻利瓦尔·巴克纳
-		name = "GFX_general_CSA_Simon_Bolivar_Bachner"
-		texturefile = "gfx/leaders/CSA/CSA_Simon_Bolivar_Bachner.dds" 
-	}
-     spriteType = { #威廉·亨利·鲁珀特斯
-		name = "GFX_general_CSA_William_Henry_Ruperts"
-		texturefile = "gfx/leaders/CSA/CSA_William_Henry_Ruperts.dds" 
-	}
-    spriteType = { #克莱伦斯·许布纳
-		name = "GFX_general_CSA_Clarence_Hubner"
-		texturefile = "gfx/leaders/CSA/CSA_Clarence_Hubner.dds" 
-	}
+    ### 将领 ###
      spriteType = { #爱德华·阿尔芒德
 		name = "GFX_general_CSA_Edward_Armand"
 		texturefile = "gfx/leaders/CSA/CSA_Edward_Armand.dds" 
@@ -347,15 +310,10 @@ SpriteTypes = {
 		name = "GFX_pob_CSA_industrialist"
 		texturefile = "gfx/interface/bop/CSA/CSA_industrialist.dds" 
 	}
-
     #事件及世界新闻配图
     spriteType = { #西部革命
         name = "GFX_events_CSA_western_revolution"
         textureFile = "gfx/interface/events/CSA/CSA_western_revolution.dds"
-    }
-    spriteType = { #特大沙暴席卷西部
-        name = "GFX_news_events_csa_sandstorm_sweeps_the_west"
-        textureFile = "gfx/event_pictures/TVE_NEWS/Amercian/CSA_sandstorm_sweeps_the_west.dds"
     }
 }
     

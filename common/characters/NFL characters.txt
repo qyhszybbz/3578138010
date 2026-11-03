@@ -1,0 +1,17 @@
+characters = {
+	#领导人
+	#理查德·贝内特
+	NFL_Richard_Bennett = {
+		name = NFL_Richard_Bennett
+		portraits = {
+			civilian = {
+				large = GFX_NFL_Richard_Bennett_large
+			}
+		}
+		country_leader = {
+			ideology = crown_dominion
+			#traits = { }
+		}
+	}
+
+}

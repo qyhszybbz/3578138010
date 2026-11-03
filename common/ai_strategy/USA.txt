@@ -690,13 +690,13 @@ USA_torch_boost = {
 USA_save_the_aussies = {
 	allowed = { original_tag = USA }
 	enable = {
-		has_government = democratic
+		has_government = Democracy
 		is_in_faction = no
 		has_war = no
 
 		JAP = {	has_war_with = AST }
 		AST = {
-			has_government = democratic
+			has_government = Democracy
 			surrender_progress > 0.15
 		}
 		has_opinion = {
@@ -735,7 +735,7 @@ USA_save_the_aussies = {
 USA_save_india = { # in the case where japan has beaten china and is moving on india we should step up
 	allowed = { original_tag = USA }
 	enable = {
-		has_government = democratic
+		has_government = Democracy
 		is_in_faction = no
 		has_war = no
 
@@ -984,13 +984,13 @@ USA_template_design_2 = {
 }
 
 # This will prompt USA to try and support countries who are fighting against extremist elements.
-# Should improve alt-history situations like democratic Germany fighting the USSR etc.
+# Should improve alt-history situations like Democracy Germany fighting the USSR etc.
 USA_protect_against_extremism = { # Reverse strategy
 	reversed = yes
 
 	enable_reverse = {
 		USA = {
-			has_government = democratic
+			has_government = Democracy
 		}
 	}
 
@@ -1026,7 +1026,7 @@ USA_protect_against_extremism = { # Reverse strategy
 			}
 			USA = {
 				OR = {
-					NOT = {	has_government = democratic }
+					NOT = {	has_government = Democracy }
 					has_war_with = ROOT
 				}
 			}
@@ -1350,9 +1350,9 @@ GER_is_bad = {
 		ENG = {
 			has_war_with = GER
 		}
-		has_government = democratic
+		has_government = Democracy
 		ENG = {
-			has_government = democratic
+			has_government = Democracy
 		}
 		date > 1939.1.1
 	}
@@ -1438,7 +1438,7 @@ USA_stay_away_from_my_pacific = {
 USA_lets_do_a_navy = {
 	allowed = { original_tag = USA }
 	enable = {
-		has_government = democratic
+		has_government = Democracy
 		has_war = no
 		date > 1937.10.1
 		dockyard < 75 # If we have this many we can probably stop
@@ -1759,9 +1759,9 @@ USA_sugar_daddy_for_UK = {
 	allowed = { original_tag = USA }
 	enable = {
 		NOT = { has_war_with = ENG }
-		has_government = democratic
+		has_government = Democracy
 		ENG = {
-			has_government = democratic
+			has_government = Democracy
 			has_war = yes
 		}
 	}
@@ -1778,7 +1778,7 @@ USA_sugar_daddy_for_SOV = {
 	allowed = { original_tag = USA }
 	enable = {
 		NOT = { has_war_with = SOV }
-		has_government = democratic
+		has_government = Democracy
 		GER = { has_government = fascism }
 		SOV = {
 			has_war_with = GER

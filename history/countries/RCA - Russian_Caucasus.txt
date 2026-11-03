@@ -3,7 +3,7 @@ load_focus_tree = generic_focus
 oob = "RCA_1936"
 set_research_slots = 3
 
-#领导人
+### 领导人 ###
 recruit_character = RCA_Anton_Denikin
 #元帅
 recruit_character = RCA_Aleksey_Karelin

@@ -881,7 +881,7 @@ SOV_dont_mess_with_volunteers_for_european_democratic_nations = { # Reverse stra
 		original_tag = SOV
 	}
 	enable = {
-		has_government = democratic
+		has_government = Democracy
 		SOV = {
 			has_government = communism
 		}

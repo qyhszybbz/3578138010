@@ -53,7 +53,7 @@ POR_helps_SPA_win_civil_war = {
 			NOT = { country_exists = SPA }
 			OR = {
 				has_government = communism
-				has_government = democratic
+				has_government = Democracy
 			}
 			has_global_flag = scw_over
 		}

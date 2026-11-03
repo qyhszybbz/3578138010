@@ -1,0 +1,28 @@
+﻿units = {
+	fleet = {
+		name = "西地中海潜艇编队"			
+		naval_base = 12038
+		task_force = {
+			name = "第1潜艇队"
+			location = 12038
+			ship = { name = "B-1" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "B级" } } }
+			ship = { name = "B-2" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "B级" } } }
+			ship = { name = "B-3" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "B级" } } }
+			ship = { name = "新B-1" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "加强B级" } } }
+			ship = { name = "新B-2" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "加强B级" } } }
+			ship = { name = "新B-3" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "加强B级" } } }
+			ship = { name = "新B-4" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "加强B级" } } }
+		}
+		task_force = {
+			name = "第2混编队"
+			location = 4098
+			ship = { name = "B-4" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "B级" } } }
+			ship = { name = "B-5" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "B级" } } }
+			ship = { name = "B-6" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "B级" } } }
+			ship = { name = "B-7" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "B级" } } }
+			ship = { name = "新B-5" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "加强B级" } } }
+			ship = { name = "新B-6" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "加强B级" } } }
+			ship = { name = "试验C级" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C级" } } }
+		}
+	}
+}

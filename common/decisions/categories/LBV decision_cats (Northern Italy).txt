@@ -1,0 +1,10 @@
+LBV_collapse_war_decisions = { #内战决议
+	icon = military_operation
+	allowed = { original_tag = LBV }
+	visible = {
+		OR = {
+			country_exists = ITA
+			country_exists = TTS
+		}
+	}
+}

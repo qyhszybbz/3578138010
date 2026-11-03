@@ -1,0 +1,17 @@
+#战火带来的阴影
+GER_Shadow_of_War = {
+	icon = GFX_modifier_GER_Shadow_of_War
+	#enable = {  }
+	conscription_factor = GER_conscription_factor
+	consumer_goods_factor = GER_consumer_goods_factor
+}
+#帝国陆军
+GER_Imperial_Army = {
+	icon = GFX_modifier_GER_Imperial_Army
+	#enable = {  }
+	army_core_attack_factor = GER_army_core_attack_factor
+	army_core_defence_factor = GER_army_core_defence_factor
+	experience_gain_army_factor = GER_experience_gain_army_factor
+	army_attack_factor = GER_army_attack_factor
+	army_defence_factor = GER_army_defence_factor
+}

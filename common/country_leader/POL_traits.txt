@@ -1,54 +1,23 @@
 leader_traits ={
 	#领导人特质
-	#元帅，波兰历史上最伟大的人
+	#犹太人的天选之子？
+	POL_Wrong_Chosen_People ={
+		random = no
+		stability_factor = -0.20
+		political_power_factor = -0.15
+	}
+	#最伟大的元帅
 	POL_the_greatest_marshal ={
 		random = no
-		war_support_factor = 0.2
-		army_attack_factor = 0.2
-		army_org_factor = 0.1
-		custom_modifier_tooltip = POL_the_greatest_marshal_desc	
-	}
-	#元帅的亲密好友
-	POL_marshal_friend ={
-		random = no
-		stability_factor = 0.10
-		custom_modifier_tooltip = POL_marshal_friend_desc	
-	}
-	#骄傲的将军
-	POL_Proud_General = {
-		random = no
-		army_attack_factor = 0.05
-		army_defence_factor = 0.05
-		stability_factor = -0.05
-		ai_focus_aggressive_factor = 0.20
-		custom_modifier_tooltip = POL_Proud_General_desc
-	}
-
-	#副手特质
-	#元帅的阴影
-	POL_marshal_shadow_sic ={
-		random = no
-		drift_defence_factor = 0.25
-		justify_war_goal_time = 0.15
-	}
-
-	POL_yuanshuai_qingmizhanyou ={
-		random = no
-		stability_factor=0.1
-	}
-
-	#政治顾问特质
-	#萨那其亚政治家
-	POL_Sanacja_politician = {
-		random = no
-		mobilization_laws_cost_factor = -0.20
-		political_advisor_cost_factor = -0.15
-	}
-	#副元帅画家
-	POL_Marshal_Painter = {
-		random = no
-		political_power_gain = 0.10
 		war_support_factor = 0.15
+		army_org = 10
+		supply_consumption_factor = -0.15
+	}
+	#复国者
+	POL_Nation_Restorer ={
+		random = no
+		army_core_attack_factor = 0.12
+		army_core_defence_factor = 0.12
 	}
 
 }

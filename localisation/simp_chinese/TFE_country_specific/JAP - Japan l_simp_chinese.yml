@@ -1,4 +1,29 @@
 ﻿l_simp_chinese:
+ JAP: "日本"
+ JAP_ADJ: "日本"
+ JAP_DEF: "日本"
+ JAP_Authoritarianism: "日本帝国"
+ JAP_Authoritarianism_ADJ: "日本帝国"
+ JAP_Authoritarianism_DEF: "日本帝国"
+
+ JAP_communism_party: "§R非法§!"
+ JAP_communism_party_long: "§R日本共产党（非法）§!"
+ JAP_Socialism_party: "社会劳动党"
+ JAP_Socialism_party_long: "日本社会劳动党"
+ JAP_Progressivism_party: "农业进步党"
+ JAP_Progressivism_party_long: "日本农业进步党"
+ JAP_Authoritarianism_party: "军政内阁"
+ JAP_Authoritarianism_party_long: "军政内阁"
+
+ JAP_Hirohito: "裕仁天皇"
+ JAP_Hirohito_desc: "§Y生于:§!§L1901年4月29日，日本帝国东京府青山东宫§!"
+ JAP_Nosaka_Sanzo: "野坂参三"
+ JAP_Alahata_Kanson: "荒畑寒村"
+ JAP_Hirano_Rikizo: "平野力三"
+
+ JAP_Suzuki_Teiichi: "铃木贞一"
+ JAP_Suzuki_Teiichi_sl_desc: "\n\n\n§Y铃木贞一§!\n\n\n\n\n\n\n\£GFX_JAP_Suzuki_Teiichi_large\n\n\n\n\n\n\n\n\n-------------\n§Y生于:§!§L1888年12月16日,日本帝国千叶县§!"
+
  JAP_Unbroken_line_through_ages: "万世一系"
  JAP_Unbroken_line_through_ages_desc: "自帝国颁布诏书以来，天皇便是国家的机轴。对外，天皇是日本国家的象征。对内，于普罗百姓而言，天皇是引领者和神明；于政治体系而言，天皇是各方斗争来往的底线与中枢。进入近代以来，日本能以相对稳定的身姿走过数十载而未落得如某些国家般四分五裂的下场，皆仰仗天皇作为植物的根系去粘合日本松散的“土壤”，并支撑起地表上那颗看起来还过得去的“大树”。"
  JAP_Unbroken_line_through_ages_tooltip: "§R可随着时局的变化，这机轴的未来似乎也扑朔迷离？§!"

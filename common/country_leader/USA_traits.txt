@@ -83,4 +83,11 @@ leader_traits = {
 		local_resources_factor = 0.1
 		resistance_growth = -0.1
 	}
+
+	USA_New_Reformer = {#新改革者
+		random = no
+
+		research_speed_factor = 0.05
+		drift_defence_factor = 0.05
+	}
 }

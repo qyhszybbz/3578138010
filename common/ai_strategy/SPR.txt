@@ -605,7 +605,7 @@ nationalist_spain_allies_nobody_on_historical = {
 			SPR = { has_war = yes }
 			SPR = { is_in_faction = yes }
 			GER = { NOT = { has_government = fascism } }
-			ENG = { NOT = { has_government = democratic } }
+			ENG = { NOT = { has_government = Democracy } }
 		}
 	}
 

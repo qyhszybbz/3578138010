@@ -1,0 +1,191 @@
+capital = 1408 #布拉格
+oob = "CZE_1935"
+set_stability = 0.39
+set_war_support = 0.23
+starting_train_buffer = 1
+set_fuel_ratio = 0.8
+load_focus_tree = generic_focus
+set_research_slots = 3
+set_cosmetic_tag = CZE_Bohemia_Conference #波西米亚会议领
+
+### 初始科技 ###
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_mountaineers = 1
+	tech_support = 1
+	tech_recon = 1
+	tech_engineers = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+
+	fuel_silos = 1
+	basic_train = 1
+	basic_fortification_tech = 1
+	mtg_transport = 1
+	basic_battery = 1
+}
+
+add_breakthrough_progress = {
+	specialization = specialization_land
+	value = 0.40
+}
+
+add_breakthrough_progress = {
+	specialization = specialization_air
+	value = 0.25
+}
+
+add_breakthrough_progress = {
+	specialization = specialization_naval
+	value = 0.01
+}
+set_technology = {
+	aa_lmg = 1
+	engines_1 = 1
+	engines_2 = 1
+	iw_small_airframe = 1
+	iw_medium_airframe = 1
+	early_bombs = 1
+	bba_early_transport_plane = 1
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+		improved_light_tank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		improved_light_tank_chassis = 1
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		armored_car1 = 1
+	}
+}
+### 领导人 ###
+recruit_character = CZE_Archduke_Franz_Ferdinand #斐迪南六世
+
+add_ideas = {
+	### 初始法案 ###
+	limited_conscription #有限征兵
+}
+AUS = {
+	set_autonomy = {
+	    target = CZE
+	    autonomous_state = autonomy_colony
+    }
+}
+
+set_politics = {
+	ruling_party = Conservatism
+	last_election = "1935.6.9"
+	election_frequency = 12
+	elections_allowed = no
+}
+
+set_popularities = {
+	Liberalism = 10
+	Democracy = 12
+	Conservatism = 42
+	Authoritarianism = 30
+	tttt = 6
+}
+
+### PLANE VARIANTS ###
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	create_equipment_variant = {
+		name = "Avia B.534"
+		type = small_plane_airframe_0
+		design_team = mio:CZE_avia_organization
+		modules = {
+			fixed_main_weapon_slot = light_mg_4x
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Avia B.34.1"
+		type = small_plane_airframe_0
+		design_team = mio:CZE_avia_organization
+		modules = {
+			fixed_main_weapon_slot = light_mg_4x
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Aero A.101"
+		type = small_plane_cas_airframe_0
+		design_team = mio:CZE_aero_organization
+		modules = {
+			fixed_main_weapon_slot = bomb_locks
+			fixed_auxiliary_weapon_slot_1 = light_mg_2x
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = lmg_defense_turret
+		}
+	}
+	create_equipment_variant = {
+		name = "Letov S-16"
+		type = small_plane_cas_airframe_0
+		design_team = mio:CZE_letov_organization
+		modules = {
+			fixed_main_weapon_slot = bomb_locks
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = lmg_defense_turret
+		}
+	}
+}
+
+### TANK VARIANTS ###
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	create_equipment_variant = {
+		name = "Lt vz. 34"
+		type = light_tank_chassis_1
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_high_velocity_cannon
+			turret_type_slot = tank_light_one_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 2
+			tank_nsb_armor_upgrade = 1
+		}
+	}
+	add_equipment_to_stockpile = {
+    	type = light_tank_chassis_1
+    	amount = 50
+		producer = CZE
+		variant_name = "Lt vz. 34"
+	}
+}

@@ -142,11 +142,11 @@ focus_tree = {
 			modifier = {
 				add = 1
 				OR = {
-					has_government = democratic
+					has_government = Democracy
 					any_country = {
 						is_in_faction_with = ROOT
 						is_faction_leader = yes
-						has_government = democratic
+						has_government = Democracy
 					}
 				}		
 			}
@@ -259,7 +259,7 @@ focus_tree = {
 			}			
 
 			every_other_country = {
-				limit = { has_government = democratic }
+				limit = { has_government = Democracy }
 				add_opinion_modifier = {
 					target = POR
 					modifier = democratic_leanings_good 
@@ -2510,7 +2510,7 @@ focus_tree = {
 			    popularity = 0.05
 			}
 			add_popularity = {
-			    ideology = democratic
+			    ideology = Democracy
 			    popularity = 0.05
 			}
 			add_ideas = internationalism
@@ -2692,7 +2692,7 @@ focus_tree = {
 					}
 					set_temp_variable = { POR_communist_cw_opposition = party_popularity@neutrality }
 					multiply_temp_variable = { POR_communist_cw_opposition = 0.8 }
-					add_to_temp_variable = { POR_communist_cw_opposition = party_popularity@democratic }
+					add_to_temp_variable = { POR_communist_cw_opposition = party_popularity@Democracy }
 					add_to_temp_variable = { POR_communist_cw_opposition = party_popularity@fascism }
 					start_civil_war = {	
 						ideology = neutrality
@@ -3059,7 +3059,7 @@ focus_tree = {
 				limit = {
 					has_civil_war = no
 				}
-				set_temp_variable = { POR_communist_cw_opposition = party_popularity@democratic }
+				set_temp_variable = { POR_communist_cw_opposition = party_popularity@Democracy }
 				multiply_temp_variable = { POR_communist_cw_opposition = 0.8 }
 				add_to_temp_variable = { POR_communist_cw_opposition = party_popularity@neutrality }
 				add_to_temp_variable = { POR_communist_cw_opposition = party_popularity@fascism }
@@ -3699,7 +3699,7 @@ focus_tree = {
 		available = {				
 			has_global_flag = scw_over
 			OR = {
-				has_government = democratic
+				has_government = Democracy
 				has_government = communism
 			}
 			any_country = {
@@ -3775,7 +3775,7 @@ focus_tree = {
 		available = {			
 			has_global_flag = scw_over
 			threat > 0.4
-			has_government = democratic	
+			has_government = Democracy	
 		}
 
 		bypass = {		
@@ -3796,7 +3796,7 @@ focus_tree = {
 							is_on_continent = europe
 						}
 						OR = {
-							has_government = democratic
+							has_government = Democracy
 							has_government = neutrality
 						}
 						is_major = no
@@ -3905,7 +3905,7 @@ focus_tree = {
 			}
 			every_other_country = {
 				limit = {
-					has_government = democratic
+					has_government = Democracy
 				}				 								
 				add_opinion_modifier = {
 				    target = POR
@@ -4091,7 +4091,7 @@ focus_tree = {
 	focus = {
 		id = POR_allow_free_elections
 		available = {
-			democratic > 0.5
+			Democracy > 0.5
 			has_war = no
 		}
 
@@ -4108,7 +4108,7 @@ focus_tree = {
 		completion_reward = {
 			every_other_country = {
 				limit = {
-					has_government = democratic
+					has_government = Democracy
 				}
 					 								
 				add_opinion_modifier = {
@@ -4156,10 +4156,10 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					NOT = { has_government = democratic }
+					NOT = { has_government = Democracy }
 				}
 				set_politics = {
-					ruling_party = democratic
+					ruling_party = Democracy
 					elections_allowed = yes
 				}
 
@@ -4185,7 +4185,7 @@ focus_tree = {
 			else = {
 				add_political_power = 120
 				add_popularity = {
-				    ideology = democratic
+				    ideology = Democracy
 				    popularity = 0.05
 				}
 			}
@@ -4200,7 +4200,7 @@ focus_tree = {
 				NOT = { has_war_with = ROOT }
 				is_faction_leader = yes
 				is_major = yes
-				has_government = democratic
+				has_government = Democracy
 			}
 			NOT = {
 				any_other_country = {
@@ -4218,7 +4218,7 @@ focus_tree = {
 					any_other_country = {
 						is_faction_leader = yes
 						is_in_faction_with = ROOT
-						has_government = democratic
+						has_government = Democracy
 					}
 				}
 			}	
@@ -4235,7 +4235,7 @@ focus_tree = {
 				limit = { 
 					ENG = {
 						is_faction_leader = yes
-						has_government = democratic
+						has_government = Democracy
 						not = { has_war_with = ROOT }
 					}
 				}
@@ -4341,7 +4341,7 @@ focus_tree = {
 				    }
 				    SPR = {
 				 	   has_completed_focus = SPR_maintain_the_second_republic
-				    	has_government = democratic
+				    	has_government = Democracy
 				    }
 				}
 				else = {
@@ -4351,7 +4351,7 @@ focus_tree = {
 							has_war = no 
 							is_in_faction = no
 							has_completed_focus = SPR_maintain_the_second_republic
-							has_government = democratic
+							has_government = Democracy
 						}
 					}
 				}				
@@ -4901,7 +4901,7 @@ focus_tree = {
 				limit = { 
 					ENG = {
 						is_faction_leader = yes
-						has_government = democratic
+						has_government = Democracy
 						NOT = { has_war_with = ROOT }
 					}
 				}
@@ -5139,7 +5139,7 @@ focus_tree = {
 					}
 					set_temp_variable = { POR_fascist_cw_opposition = party_popularity@neutrality }
 					multiply_temp_variable = { POR_fascist_cw_opposition = 0.6 }
-					add_to_temp_variable = { POR_fascist_cw_opposition = party_popularity@democratic }
+					add_to_temp_variable = { POR_fascist_cw_opposition = party_popularity@Democracy }
 					add_to_temp_variable = { POR_fascist_cw_opposition = party_popularity@communism }
 					start_civil_war = {	
 						ideology = neutrality
@@ -5877,7 +5877,7 @@ focus_tree = {
 			}
 
 			hidden_effect = {
-				set_temp_variable = { dem_pop = party_popularity_100@democratic }
+				set_temp_variable = { dem_pop = party_popularity_100@Democracy }
 				set_temp_variable = { fas_pop = party_popularity_100@fascism }
 				set_temp_variable = { neu_pop = party_popularity_100@neutrality }
 				set_temp_variable = { com_pop = party_popularity_100@communism }
@@ -5886,7 +5886,7 @@ focus_tree = {
 				add_to_temp_variable = { fas_pop = 10 }
 				set_popularities = {
 						communism = com_pop
-						democratic = dem_pop
+						Democracy = dem_pop
 						fascism = fas_pop
 						neutrality = neu_pop
 					}
@@ -5898,7 +5898,7 @@ focus_tree = {
 				}
 
 				add_popularity = {
-				    ideology = democratic
+				    ideology = Democracy
 				    popularity = 0.10
 				}
 
@@ -6218,7 +6218,7 @@ focus_tree = {
 							limit = {
 								OR = {
 									has_government = neutrality
-									has_government = democratic
+									has_government = Democracy
 									has_government = communism
 								} 
 							}
@@ -6227,7 +6227,7 @@ focus_tree = {
 							}
 						}
 						set_popularities = {
-							democratic = 0
+							Democracy = 0
 							neutrality = 20
 							fascism = 80
 							communism = 0
@@ -6381,7 +6381,7 @@ focus_tree = {
 				}
 				set_temp_variable = { POR_monarchist_cw_opposition = party_popularity@fascism }
 				add_to_temp_variable = { POR_monarchist_cw_opposition = party_popularity@communism }
-				add_to_temp_variable = { POR_monarchist_cw_opposition = party_popularity@democratic }
+				add_to_temp_variable = { POR_monarchist_cw_opposition = party_popularity@Democracy }
 				start_civil_war = {	
 					ideology = fascism
 					size = POR_monarchist_cw_opposition

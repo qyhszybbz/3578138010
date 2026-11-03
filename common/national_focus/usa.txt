@@ -1,0 +1,855 @@
+﻿
+focus_tree = {
+	id = tfe_usa_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = USA
+		}
+		
+	}
+	
+	continuous_focus_position = { x = 50 y = 1600 }
+	shared_focus = ABDA_abdacom
+	default = no
+
+	# 政治轮换结束
+	focus = {
+		id = USA_political_rotation_end
+		#icon = GFX_focus_USA_political_rotation_end
+		x = 10
+		y = 0
+		cost = 2
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available_if_capitulated = yes
+		cancelable = no
+		
+		completion_reward = {
+			add_stability = 0.05
+			country_event = { id = tfe_usa.7 }
+		}
+	}
+
+	# 柯立芝总统的任期
+	focus = {
+		id = USA_Coolidge_term
+		#icon = GFX_focus_USA_Coolidge_term
+		relative_position_id = USA_political_rotation_end
+		x = 0
+		y = 1
+		prerequisite = { focus = USA_political_rotation_end }
+		cost = 3
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_political_power = 10
+			country_event = { id = tfe_usa.8 }
+		}
+	}
+
+	# 坚守共和传统
+	focus = {
+		id = USA_Defend_republican_tradition
+		#icon = GFX_focus_USA_Defend_republican_tradition
+		relative_position_id = USA_Coolidge_term
+		x = -6
+		y = 1
+		prerequisite = { focus = USA_Coolidge_term }
+		cost = 3
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_political_power = 15
+			add_stability = 0.07
+			add_timed_idea = { idea = USA_Republican_consensus days = 300 }
+		}
+	}
+
+	# 弥和撕裂的社会
+	focus = {
+		id = USA_Heal_torn_society
+		#icon = GFX_focus_USA_Heal_torn_society
+		relative_position_id = USA_Coolidge_term
+		x = 0
+		y = 1
+		prerequisite = { focus = USA_Coolidge_term }
+		cost = 3
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_political_power = 20
+			add_popularity = { ideology = Liberalism popularity = 0.03 }
+			# 解锁决议类型：社会平衡
+			# 解锁决议：开放全民议事通道、封禁极端主义宣传书籍、举行亲政府集会
+		}
+	}
+
+	# 国家瓶颈事业
+	focus = {
+		id = USA_National_bottleneck
+		#icon = GFX_focus_USA_National_bottleneck
+		relative_position_id = USA_Coolidge_term
+		x = 6
+		y = 1
+		prerequisite = { focus = USA_Coolidge_term }
+		cost = 3
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_stability = 0.20
+			add_ideas = USA_National_bottleneck_industry
+		}
+	}
+
+	# 整肃政坛乱象
+	focus = {
+		id = USA_Purge_political_chaos
+		#icon = GFX_focus_USA_Purge_political_chaos
+		relative_position_id = USA_Defend_republican_tradition
+		x = 0
+		y = 1
+		prerequisite = { focus = USA_Defend_republican_tradition }
+		cost = 3
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = USA_Democratic_reform_path
+			# 解锁决议变量
+		}
+	}
+
+	# 州权归位
+	focus = {
+		id = USA_State_rights_return
+		#icon = GFX_focus_USA_State_rights_return
+		relative_position_id = USA_Heal_torn_society
+		x = 0
+		y = 1
+		prerequisite = { focus = USA_Heal_torn_society }
+		cost = 2.14
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_stability = 0.05
+			# 解锁决议类型：爱达荷公投
+			# 任务：平定匪患
+			# 解锁决议：援助武器、援助民兵部队、派遣顾问、加强爱国主义教育
+			# 最终决议：爱达荷公投入美
+		}
+	}
+
+	# 签署总统令
+	focus = {
+		id = USA_Sign_presidential_decree
+		#icon = GFX_focus_USA_Sign_presidential_decree
+		relative_position_id = USA_National_bottleneck
+		x = 0
+		y = 1
+		prerequisite = { focus = USA_National_bottleneck }
+		cost = 1.43
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = USA_Coolidge_reform
+			add_trait = { character = USA_John_Calvin_Coolidge trait = USA_New_Reformer }
+		}
+	}
+
+	# 压制极端主义思潮
+	focus = {
+		id = USA_Suppress_extremism
+		#icon = GFX_focus_USA_Suppress_extremism
+		relative_position_id = USA_Purge_political_chaos
+		x = -2
+		y = 1
+		prerequisite = { focus = USA_Purge_political_chaos }
+		mutually_exclusive = { focus = USA_Relax_political_control }
+		cost = 2.86
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = USA_Heavy_fist
+		}
+	}
+
+	# 放松政治管控
+	focus = {
+		id = USA_Relax_political_control
+		#icon = GFX_focus_USA_Relax_political_control
+		relative_position_id = USA_Purge_political_chaos
+		x = 2
+		y = 1
+		prerequisite = { focus = USA_Purge_political_chaos }
+		mutually_exclusive = { focus = USA_Suppress_extremism }
+		cost = 2.86
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = USA_Open_society
+		}
+	}
+
+	# 铭记分裂之耻
+	focus = {
+		id = USA_Remember_division_shame
+		#icon = GFX_focus_USA_Remember_division_shame
+		relative_position_id = USA_State_rights_return
+		x = 0
+		y = 1
+		prerequisite = { focus = USA_State_rights_return }
+		cost = 1.43
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_political_power = 50
+			add_war_support = 0.15
+			add_ideas = extensive_conscription
+			# 解锁决议：加强边境线、反渗透行动、后备武装组建
+		}
+	}
+
+	# 本土贸易保护
+	focus = {
+		id = USA_Domestic_trade_protection
+		#icon = GFX_focus_USA_Domestic_trade_protection
+		relative_position_id = USA_Sign_presidential_decree
+		x = -3
+		y = 1
+		prerequisite = { focus = USA_Sign_presidential_decree }
+		cost = 3.57
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_political_power = 15
+			country_event = { id = tfe_usa.9 }
+			# 贸易法案（经济面板）切换为重视出口
+			if = {
+				limit = { NOT = { has_idea = export_focus } }
+				add_ideas = export_focus
+			}
+		}
+	}
+
+	# 华尔街投资基金
+	focus = {
+		id = USA_Wall_street_fund
+		#icon = GFX_focus_USA_Wall_street_fund
+		relative_position_id = USA_Sign_presidential_decree
+		x = 0
+		y = 1
+		prerequisite = { focus = USA_Sign_presidential_decree }
+		cost = 2.86
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = USA_Capital_flow_control
+		}
+	}
+
+	# 国防军司令部
+	focus = {
+		id = USA_Defense_command
+		#icon = GFX_focus_USA_Defense_command
+		relative_position_id = USA_Sign_presidential_decree
+		x = 3
+		y = 1
+		prerequisite = { focus = USA_Sign_presidential_decree }
+		cost = 2.86
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = USA_Federal_defense_force
+		}
+	}
+
+	# 扩大总统办公室职能
+	focus = {
+		id = USA_Expand_presidential_office
+		#icon = GFX_focus_USA_Expand_presidential_office
+		relative_position_id = USA_Suppress_extremism
+		x = 0
+		y = 1
+		prerequisite = { focus = USA_Suppress_extremism }
+		cost = 2.14
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			division_template = {
+				name = "总统卫队"
+				force_allow_recruiting = yes
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 0 y = 4 }
+					infantry = { x = 1 y = 0 }
+				}
+			}
+			360 = {
+				create_unit = {
+					division = "name = \"总统卫队\" division_template = \"总统卫队\" start_experience_factor = 0.4 start_equipment_factor = 1"
+					owner = ROOT
+					count = 3
+					prioritize_location = 6845
+				}
+			}
+			# 解锁决议：扩大总统权利
+			# 我们的政体将会变为超级总统制
+		}
+	}
+
+	# 民主政治
+	focus = {
+		id = USA_Democratic_politics
+		#icon = GFX_focus_USA_Democratic_politics
+		relative_position_id = USA_Relax_political_control
+		x = 0
+		y = 1
+		prerequisite = { focus = USA_Relax_political_control }
+		cost = 3
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_political_power = 100
+			add_war_support = 0.08
+			add_stability = 0.08
+		}
+	}
+
+	# 稳定联邦国防军
+	focus = {
+		id = USA_Stabilize_federal_army
+		#icon = GFX_focus_USA_Stabilize_federal_army
+		relative_position_id = USA_Remember_division_shame
+		x = 0
+		y = 1
+		prerequisite = { focus = USA_Remember_division_shame }
+		cost = 2.86
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+
+	# 遏制寡头与投机者
+	focus = {
+		id = USA_Curb_oligarchs
+		#icon = GFX_focus_USA_Curb_oligarchs
+		relative_position_id = USA_Wall_street_fund
+		x = -1.5
+		y = 1
+		prerequisite = { focus = USA_Domestic_trade_protection }
+		prerequisite = { focus = USA_Wall_street_fund }
+		cost = 2.86
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = USA_Ban_oligarchs
+		}
+	}
+
+	# 整合西部部队
+	focus = {
+		id = USA_Integrate_western_troops
+		#icon = GFX_focus_USA_Integrate_western_troops
+		relative_position_id = USA_Defense_command
+		x = -1.5
+		y = 1
+		prerequisite = { focus = USA_Defense_command }
+		cost = 2.14
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			division_template = {
+				name = "联邦西部军"
+				is_locked = no
+				force_allow_recruiting = yes
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 0 y = 4 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+				}
+			}
+			387 = {
+				create_unit = {
+					division = "name = \"联邦西部军\" division_template = \"联邦西部军\" start_experience_factor = 0.2 start_equipment_factor = 1"
+					owner = ROOT
+					count = 5
+					prioritize_location = 9616
+				}
+			}
+		}
+	}
+
+	# 宪兵队
+	focus = {
+		id = USA_Military_police
+		#icon = GFX_focus_USA_Military_police
+		relative_position_id = USA_Defense_command
+		x = 1
+		y = 1
+		prerequisite = { focus = USA_Defense_command }
+		cost = 1.43
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			set_technology = {
+				tech_military_police = 1
+				tech_military_police2 = 1
+				tech_military_police3 = 1
+			}
+			division_template = {
+				name = "联邦宪兵骑兵队"
+				is_locked = no
+				force_allow_recruiting = yes
+				regiments = {
+					cavalry = { x = 0 y = 0 }
+					cavalry = { x = 0 y = 1 }
+					cavalry = { x = 0 y = 2 }
+					cavalry = { x = 0 y = 3 }
+					cavalry = { x = 0 y = 4 }
+					cavalry = { x = 1 y = 0 }
+					cavalry = { x = 1 y = 1 }
+					cavalry = { x = 1 y = 2 }
+					cavalry = { x = 1 y = 3 }
+					cavalry = { x = 1 y = 4 }
+					cavalry = { x = 2 y = 0 }
+					cavalry = { x = 2 y = 1 }
+					cavalry = { x = 2 y = 2 }
+					cavalry = { x = 2 y = 3 }
+					cavalry = { x = 2 y = 4 }
+					cavalry = { x = 3 y = 0 }
+					cavalry = { x = 3 y = 1 }
+					cavalry = { x = 3 y = 2 }
+					cavalry = { x = 3 y = 3 }
+					cavalry = { x = 3 y = 4 }
+					cavalry = { x = 4 y = 0 }
+					cavalry = { x = 4 y = 1 }
+					cavalry = { x = 4 y = 2 }
+					cavalry = { x = 4 y = 3 }
+					cavalry = { x = 4 y = 4 }
+				}
+				support = {
+					military_police = { x = 0 y = 0 }
+				}
+			}
+			360 = {
+				create_unit = {
+					division = "name = \"联邦宪兵骑兵队\" division_template = \"联邦宪兵骑兵队\" start_experience_factor = 0.1 start_equipment_factor = 1"
+					owner = ROOT
+					count = 1
+					prioritize_location = 6845
+				}
+			}
+		}
+	}
+
+	# 强化联邦安全局
+	focus = {
+		id = USA_Strengthen_FBI
+		#icon = GFX_focus_USA_Strengthen_FBI
+		relative_position_id = USA_Expand_presidential_office
+		x = 0
+		y = 1
+		prerequisite = { focus = USA_Expand_presidential_office }
+		cost = 2.86
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = USA_FBI_expansion
+			# 设立情报机构“联邦安全局”
+			if = {
+				limit = { has_intelligence_agency = no }
+				create_intelligence_agency = {
+					name = "联邦安全局"
+					icon = GFX_intelligence_agency_logo_usa
+				}
+			}
+			add_political_power = 50
+			# 解锁决议类别：渗透南方
+		}
+	}
+
+	# 沉闷的联邦秩序
+	focus = {
+		id = USA_Gloomy_federal_order
+		#icon = GFX_focus_USA_Gloomy_federal_order
+		relative_position_id = USA_Democratic_politics
+		x = 0
+		y = 1
+		prerequisite = { focus = USA_Democratic_politics }
+		cost = 2.86
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+
+	# 防止权力固化
+	focus = {
+		id = USA_Prevent_power_solidification
+		#icon = GFX_focus_USA_Prevent_power_solidification
+		relative_position_id = USA_Democratic_politics
+		x = 2
+		y = 1
+		prerequisite = { focus = USA_Democratic_politics }
+		cost = 2.86
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = USA_Parliament_rotation_act
+		}
+	}
+
+	# 重订合众宪法
+	focus = {
+		id = USA_Rewrite_constitution
+		#icon = GFX_focus_USA_Rewrite_constitution
+		relative_position_id = USA_Stabilize_federal_army
+		x = 0
+		y = 1
+		prerequisite = { focus = USA_Stabilize_federal_army }
+		cost = 2.14
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_political_power = 100
+			add_war_support = 0.15
+			add_ideas = USA_New_constitution
+		}
+	}
+
+	# 新掠夺者游击队
+	focus = {
+		id = USA_New_raider_guerrillas
+		#icon = GFX_focus_USA_New_raider_guerrillas
+		relative_position_id = USA_Integrate_western_troops
+		x = -1.5
+		y = 1
+		prerequisite = { focus = USA_Integrate_western_troops }
+		cost = 2.14
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			army_experience = 30
+			add_ideas = USA_Sword_of_democracy
+			country_event = { id = tfe_usa.10 }
+			division_template = {
+				name = "新掠夺者游击军"
+				is_locked = no
+				force_allow_recruiting = yes
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 0 y = 4 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+				}
+			}
+			361 = {
+				create_unit = {
+					division = "name = \"新掠夺者游击军\" division_template = \"新掠夺者游击军\" start_experience_factor = 0.3 start_equipment_factor = 1"
+					owner = ROOT
+					count = 1
+					prioritize_location = 3957
+				}
+			}
+		}
+	}
+
+	# 提拔骨干将领
+	focus = {
+		id = USA_Promote_backbone_generals
+		#icon = GFX_focus_USA_Promote_backbone_generals
+		relative_position_id = USA_Integrate_western_troops
+		x = 1
+		y = 1
+		prerequisite = { focus = USA_Integrate_western_troops }
+		prerequisite = { focus = USA_Military_police }
+		cost = 2.14
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			country_event = { id = tfe_usa.11 }
+			# 巴顿、史迪威、雅各布三位将领提升1级
+			if = {
+				limit = { has_character = USA_George_S_Patton_Jr }
+				USA_George_S_Patton_Jr = { add_skill_level = 1 }
+			}
+			if = {
+				limit = { has_character = USA_Joseph_Stilwell }
+				USA_Joseph_Stilwell = { add_skill_level = 1 }
+			}
+			if = {
+				limit = { has_character = USA_Jacob_Devers }
+				USA_Jacob_Devers = { add_skill_level = 1 }
+			}
+			recruit_character = USA_George_Marshall# 乔治·马歇尔
+			add_field_marshal_role = {# 德怀特·艾森豪威尔兼任陆军元帅
+				character = USA_Dwight_D_Eisenhower
+				skill = 4
+				attack_skill = 4
+				defense_skill = 3
+				planning_skill = 5
+				logistics_skill = 4
+				traits = { }
+			}
+		}
+	}
+
+	# 美利坚永存
+	focus = {
+		id = USA_America_endures
+		#icon = GFX_focus_USA_America_endures
+		relative_position_id = USA_Prevent_power_solidification
+		x = -4
+		y = 1
+		prerequisite = { focus = USA_Strengthen_FBI focus = USA_Gloomy_federal_order focus = USA_Prevent_power_solidification }
+		cost = 2.86
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = USA_Star_spangled_banner
+		}
+	}
+
+	# 民族团结
+	focus = {
+		id = USA_National_unity
+		#icon = GFX_focus_USA_National_unity
+		relative_position_id = USA_Rewrite_constitution
+		x = 0
+		y = 1
+		prerequisite = { focus = USA_Rewrite_constitution }
+		cost = 2.86
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_timed_idea = { idea = USA_National_unity_idea days = 360 }
+		}
+	}
+
+	# 梅隆减税法案落地
+	focus = {
+		id = USA_Mellon_tax_cut
+		#icon = GFX_focus_USA_Mellon_tax_cut
+		relative_position_id = USA_Curb_oligarchs
+		x = -1
+		y = 2
+		prerequisite = { focus = USA_Curb_oligarchs }
+		cost = 4.29
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = USA_Mellon_act
+		}
+	}
+
+	# 永久战备计划
+	focus = {
+		id = USA_Permanent_readiness
+		#icon = GFX_focus_USA_Permanent_readiness
+		relative_position_id = USA_Promote_backbone_generals
+		x = -1.5
+		y = 1
+		prerequisite = { focus = USA_Promote_backbone_generals }
+		prerequisite = { focus = USA_New_raider_guerrillas }
+		cost = 4.29
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_political_power = 50
+			# 解锁决议：参军报国、民主利剑、前进美利坚、构筑边境工事、完善铁路网
+		}
+	}
+
+	# 华盛顿国民演讲
+	focus = {
+		id = USA_Washington_speech
+		#icon = GFX_focus_USA_Washington_speech
+		relative_position_id = USA_National_unity
+		x = 0
+		y = 1
+		prerequisite = { focus = USA_America_endures }
+		prerequisite = { focus = USA_National_unity }
+		prerequisite = { focus = USA_Mellon_tax_cut }
+		prerequisite = { focus = USA_Permanent_readiness }
+		cost = 5.71
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			# 解锁决议：首都问题
+		}
+	}
+
+}

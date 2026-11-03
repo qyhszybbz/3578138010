@@ -7,7 +7,7 @@ set_technology = {
 	synth_oil_experiments = 1
 }
 
-#领导人
+### 领导人 ###
 recruit_character = ENT_Ungern_Sternberg
 
 if = {

@@ -1,6 +1,0 @@
-spriteTypes = {
-	spriteType = {
-		name = "GFX_CAN_Mackenzie_King"
-		texturefile = "gfx/leaders/CAN/CAN_Mackenzie_King.dds"
-	}
-}

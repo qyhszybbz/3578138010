@@ -1,0 +1,17 @@
+characters = {
+	#领导人
+	#奥斯曼·阿里·汗
+	HYD_Osman_Ali_Khan = {
+		name = HYD_Osman_Ali_Khan
+		portraits={
+			civilian={
+				large = GFX_HYD_Osman_Ali_Khan_large
+			}
+		}
+		country_leader={
+			desc = HYD_Osman_Ali_Khan_desc
+			ideology = authoritarianism_small
+			traits={  }
+		}
+	}
+}

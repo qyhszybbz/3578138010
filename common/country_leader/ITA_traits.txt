@@ -1,0 +1,38 @@
+leader_traits ={
+	#领导人特质
+	#革命先锋
+	ITA_Revolutionary_Vanguard ={
+		random = no
+		political_power_factor = 0.05
+		war_support_factor = -0.05
+		surrender_limit = -0.075
+	}
+	#顾问特质
+	#红色卫兵
+	ITA_Red_guard ={
+		random = no
+		political_power_factor = -0.05
+		stability_factor = 0.05
+	}
+	#勤恳的领袖
+	ITA_Diligent_leader ={
+		random = no
+		political_power_factor = 0.025
+		war_support_factor = -0.025
+	}
+	#布尔什维克流亡者
+	ITA_Bolshevik_exiles ={
+		random = no
+		stability_factor = 0.05
+		industrial_capacity_factory = 0.05
+		production_factory_max_efficiency_factor = 0.05
+		local_resources_factor = -0.075
+	}
+	#红色战士
+	ITA_Red_Warrior ={
+		random = no
+		army_org_factor = -0.025
+		army_defence_factor = 0.02
+		army_org_regain = 0.03
+	}
+}

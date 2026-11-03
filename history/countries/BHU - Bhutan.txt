@@ -56,8 +56,6 @@ recruit_character = BHU_mang_pos_bhur_bai
 
 		#doctrines
 		
-		pocket_defence = 1
-		defence_in_depth = 1
 
 		#electronics
 		electronic_mechanical_engineering = 1

@@ -24,17 +24,22 @@ ideas = {
 		}
 		GER_wilhelm_ii = { #威廉二世 
 			modifier = {
-				 stability_factor = 0.10
-        		 war_support_factor = 0.10
-        		 political_power_factor = 0.50
+				stability_factor = 0.10
+        		war_support_factor = 0.10
+        		political_power_factor = 0.50
 			}
 		}
-		ROM_nicolae_iorga = { #尼古拉·约尔加
+		ROM_Nikola_Jorga = { #尼古拉·约尔加 
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		JAP_Suzuki_Teiichi = { #铃木贞一
 			modifier = {
 				
 			}
 		}
 	}
-
 
 }

@@ -1,0 +1,26 @@
+characters = {
+    #领导人
+    #亚历山大·克伦斯基
+	SOV_Alexander_Kerensky = {
+        name = SOV_Alexander_Kerensky
+        portraits = {
+            civilian = {
+				large = GFX_SOV_Alexander_Kerensky_large
+			}
+		}
+        country_leader={
+			desc = SOV_Alexander_Kerensky_desc
+			ideology= Kerenskyism
+			traits= {  }
+		}
+    }
+    #维克托·切尔诺夫
+    SOV_Viktor_Chernov = {
+        name = SOV_Viktor_Chernov
+        portraits = {
+            civilian = {
+				large = GFX_SOV_Viktor_Chernov_large
+			}
+		}
+    }
+}

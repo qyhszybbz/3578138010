@@ -1,9 +1,0 @@
-# ---- 备份 / 临时文件（不上传）----
-# 含 # 的临时/备份文件（如 #provinces.bmp、riv#ers.bmp、#leader_unknown.dds）
-*#*
-# Windows「副本」文件
-*副本*
-# 地图地形备份目录
-map/terrain_bak_*/
-# topbar 按钮备份
-gfx/interface/topbar/toolbar/bak/

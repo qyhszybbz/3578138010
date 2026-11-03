@@ -2782,7 +2782,7 @@ characters = {
 			}
 			do_effect = {
 				NOT = {
-					has_government = democratic 
+					has_government = Democracy 
 				}
 			}
 			ai_will_do = {
@@ -3009,7 +3009,7 @@ characters = {
 			available = {
 				OR = {
 					has_government = neutrality
-					has_government = democratic
+					has_government = Democracy
 				}
 			}
 			traits = {
@@ -3104,7 +3104,7 @@ characters = {
 			available = {
 				OR = {
 					has_government = neutrality
-					has_government = democratic
+					has_government = Democracy
 				}
 			}
 			traits = {
@@ -3353,7 +3353,7 @@ characters = {
 					AND = {
 						OR = {	
 							has_government = neutrality
-							has_government = democratic
+							has_government = Democracy
 						}
 						has_completed_focus = GER_monarchist_sentiment
 					}
@@ -3398,7 +3398,7 @@ characters = {
 					AND = {
 						OR = {	
 							has_government = neutrality
-							has_government = democratic
+							has_government = Democracy
 						}
 						has_completed_focus = GER_monarchist_sentiment
 					}

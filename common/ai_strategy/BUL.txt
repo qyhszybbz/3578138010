@@ -28,7 +28,7 @@ BUL_befriend_GER = {
 			has_war_with = GER
 			GER = {
 				OR = {
-					has_government = democratic
+					has_government = Democracy
 					has_government = communism
 					has_opinion	= {
 						target = ROOT
@@ -76,7 +76,7 @@ BUL_befriend_ITA = {
 			has_war_with = ITA
 			ITA = {
 				OR = {
-					has_government = democratic
+					has_government = Democracy
 					has_government = communism
 					has_opinion	= {
 						target = ROOT
@@ -124,7 +124,7 @@ BUL_befriend_ENG = {
 			is_subject = no
 		}
 		OR = {
-			has_government = democratic
+			has_government = Democracy
 			has_government = neutrality
 		}
 	}
@@ -378,7 +378,7 @@ BUL_dont_pressure_bulgarians_yet = {
 				OR = {
 					has_war = yes
 					has_government = communism
-					has_government = democratic
+					has_government = Democracy
 				}
 			}
 			NOT = { is_in_faction_with = BUL }
@@ -422,7 +422,7 @@ BUL_reject_bulgarian_aggressive_ai = {
 					is_ai = no
 					has_war = yes
 					has_government = communism
-					has_government = democratic
+					has_government = Democracy
 				}
 			}
 			date > 1941.04.01

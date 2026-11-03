@@ -1,28 +1,28 @@
 defined_text = {
-    name = TVE_title_loc
+    name = TFE_title_loc
     text = {
         trigger = {
             tag = AUS
         }
-        localization_key = "TVE_title_loc_AUS"
+        localization_key = "TFE_title_loc_AUS"
     }
     text = {
         trigger = {
             tag = POL
         }
-        localization_key = "TVE_title_loc_POL"
+        localization_key = "TFE_title_loc_POL"
     }
     text = {
 		trigger = {
             tag = FRA
         }
-        localization_key = "TVE_title_loc_FRA"
+        localization_key = "TFE_title_loc_FRA"
     }
     text = {
 		trigger = {
             tag = SPR
         }
-        localization_key = "TVE_title_loc_SPR"
+        localization_key = "TFE_title_loc_SPR"
     }
     text = {
 		trigger = {
@@ -32,9 +32,9 @@ defined_text = {
     }
     text = {
 		trigger = {
-            tag = USA
+            tag = SOV
         }
-        localization_key = "TFE_title_loc_USA"
+        localization_key = "TFE_title_loc_SOV"
     }
 }
 defined_text = {
@@ -71,9 +71,9 @@ defined_text = {
     }
     text = {
 		trigger = {
-            tag = USA
+            tag = SOV
         }
-        localization_key = "TFE_desc_loc_USA"
+        localization_key = "TFE_desc_loc_SOV"
     }
 }
 defined_text = {
@@ -96,10 +96,14 @@ defined_text = {
         }
         localization_key = "GFX_CSAWELCOME"
     }
+}
+defined_text = {
+    name = TFE_welcome_close_loc
     text = {
-		trigger = {
-            tag = USA
-        }
-        localization_key = "GFX_USAWELCOME"
+        #trigger = {
+        #    tag = SOV
+        #}
+        #localization_key = "TFE_welcome_close_loc_SOV"
+        localization_key = "TFE_welcome_close_loc_normal"
     }
 }

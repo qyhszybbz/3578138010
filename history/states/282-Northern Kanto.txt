@@ -1,0 +1,29 @@
+state = {
+	id = 282
+	name = "STATE_282" # Kanto
+	manpower = 8773000
+	
+	state_category = megalopolis
+	
+	resources = {
+		aluminium = 1 # was: 2
+	}
+
+	history = {
+		owner = JAP
+		add_core_of = JAP
+		buildings = {
+			infrastructure = 4
+			air_base = 6
+			industrial_complex = 3
+			arms_factory = 1
+			dockyard = 2
+		}
+	}
+
+	provinces = {
+		993 1113 4000 4100 7016 
+	}
+
+	local_supplies = 0.0 
+}

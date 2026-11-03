@@ -1,0 +1,45 @@
+capital = 331 #纽芬兰
+set_cosmetic_tag = NFL_England_guardian
+oob = "NFL_1935"
+set_stability = 0.60
+set_war_support = 0.30
+starting_train_buffer = 1.2
+set_fuel_ratio = 0.95
+set_research_slots = 1
+
+### 初始科技 ###
+set_technology = {
+	infantry_weapons = 1
+	tech_trucks = 1
+	gw_artillery = 1
+	basic_train = 1
+}
+
+### 领导人 ###
+recruit_character = NFL_Richard_Bennett #理查德·贝内特
+
+add_ideas = {
+	### 初始民族精神 ###
+	NFL_guardian_of_the_union_jack #大洋彼岸的米字卫士
+}
+
+set_politics = {
+	ruling_party = Authoritarianism
+	last_election = "1934.6.11"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	Communism = 3
+	Socialism = 8
+	Progressivism = 10
+	Liberalism = 10
+	Democracy = 9
+	Conservatism = 10
+	Authoritarianism = 30
+	tttt = 12
+	fascism = 6
+	nazism = 2
+}
+

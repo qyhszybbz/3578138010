@@ -1,0 +1,101 @@
+ideas = {
+	country = {
+		### 初始民族精神 ###
+		#胜利战果
+		YUG_Victorious_Outcome = {
+			on_add = { log = "[GetLogRoot]: add idea YUG_Victorious_Outcome" }
+			#picture = Victorious_Outcome
+			allowed = { always = no }
+			modifier = {
+				war_support_factor = -0.05
+				land_doctrine_cost_factor = 0.25
+			}
+		}
+		#IMRO的边境袭扰
+		YUG_IMROs_Border_Harassment = {
+			on_add = { log = "[GetLogRoot]: add idea YUG_IMROs_Border_Harassment" }
+			#picture = IMROs_Border_Harassment
+			allowed = { always = no }
+			modifier = {
+				weekly_manpower = -20
+				stability_weekly = -0.005
+			}
+			targeted_modifier = {
+                tag = BUL
+                trade_opinion_factor = -0.20
+            }
+		}
+		#中断的农改
+		YUG_Interrupted_Agrarian_Reform = {
+			on_add = { log = "[GetLogRoot]: add idea YUG_Interrupted_Agrarian_Reform" }
+			#picture = Interrupted_Agrarian_Reform
+			allowed = { always = no }
+			modifier = {
+				conscription_factor = -0.10
+				consumer_goods_factor = 0.20
+				industrial_capacity_factory = -0.10
+				industrial_capacity_dockyard = -0.10
+				Authoritarianism_drift = 0.01
+				tttt_drift = 0.01
+			}
+		}
+		#克罗地亚社群网络
+		YUG_Croatian_Social_Network = {
+			on_add = { log = "[GetLogRoot]: add idea YUG_Croatian_Social_Network" }
+			#picture = Croatian_Social_Network
+			allowed = { always = no }
+			modifier = {
+				conscription_factor = -0.10
+				stability_factor = -0.05
+				political_power_cost = 0.03
+			}
+		}
+		#经济滞涨
+		YUG_Stagflation = {
+			on_add = { log = "[GetLogRoot]: add idea YUG_Stagflation" }
+			#picture = Stagflation
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = 0.30
+				stability_factor = -0.20
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.20
+				production_speed_buildings_factor = -0.20
+				trade_opinion_factor = 1.00
+			}
+		}
+		#南斯拉夫的军队：徒有虚名
+		YUG_The_Yugoslav_military_1 = {
+			on_add = { log = "[GetLogRoot]: add idea YUG_The_Yugoslav_military_1" }
+			#picture = The_Yugoslav_military_1
+			allowed = { always = no }
+			modifier = {
+				army_attack_factor = -0.10
+				army_defence_factor = -0.25
+				army_org_factor = -0.15
+				breakthrough_factor = -0.10
+				land_doctrine_cost_factor = 0.10
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = 0.10
+					instant = yes
+				}
+				artillery_equipment= {
+					build_cost_ic = 0.15
+					instant = yes
+				}
+			}
+		}
+		#巴尔干协约国成员
+		YUG_Balkan_Entente_Member = {
+			on_add = { log = "[GetLogRoot]: add idea YUG_Balkan_Entente_Member" }
+			#picture = Balkan_Entente_Member
+			allowed = { always = no }
+			targeted_modifier = {
+                tag = BUL
+                defense_bonus_against = 0.10
+            }
+		}
+	}
+}

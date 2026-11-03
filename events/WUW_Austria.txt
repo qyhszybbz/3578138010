@@ -185,7 +185,7 @@ country_event = { #Theodor Innitzer is no longer fascist
 			modifier = {
 				factor = 10
 				OR = {
-					has_government = democratic
+					has_government = Democracy
 					has_government = communism
 				}
 			}
@@ -499,7 +499,7 @@ country_event = { #triggers missions for countdown to murder of MHC
 				factor = 2
 				OR = {
 					has_government = neutrality
-					has_government = democratic
+					has_government = Democracy
 				}
 			}
 			modifier = {
@@ -890,7 +890,7 @@ country_event = { # Event for Austria Germany Objects to the DNSAP ban and deman
 			base = 5
 			modifier = {
 				factor = 2 
-				has_government = democratic
+				has_government = Democracy
 				FROM = {
 					OR = {
 						has_government = fascism
@@ -1003,7 +1003,7 @@ country_event = { #Godwin von Brumowski offers his service
 			modifier = {
 				factor = 0.1
 				OR = {
-					has_government = democratic
+					has_government = Democracy
 					has_government = communism
 				}
 			}
@@ -1021,7 +1021,7 @@ country_event = { #Godwin von Brumowski offers his service
 			modifier = {
 				factor = 10
 				OR = {
-					has_government = democratic
+					has_government = Democracy
 					has_government = communism
 				}
 			}
@@ -3151,7 +3151,7 @@ country_event = { #militias causing unrest
 			}
 			modifier = {
 				factor = 5
-				has_government = democratic
+				has_government = Democracy
 			}
 		}
 
@@ -3168,7 +3168,7 @@ country_event = { #militias causing unrest
 			modifier = {
 				factor = 10
 				NOT = {
-					has_government = democratic
+					has_government = Democracy
 				}
 			}
 		}
@@ -7302,7 +7302,7 @@ country_event = { #FROM proposes less restrictive agreement
 	option = { #we want someone to oversee this.
 		name = AUS_political_events.73.c
 		trigger = { 
-			has_government = democratic 
+			has_government = Democracy 
 			AUS = {	
 				AUS_karl_renner = {
 					is_hired_as_advisor = no
@@ -8173,12 +8173,12 @@ country_event = { #Austria informed that their ultimatum was rejected
 
 			IF = {
 				limit = {
-					has_government = democratic
+					has_government = Democracy
 				}
 
 				start_civil_war = {
 					ideology = communism
-					ruling_party = democratic
+					ruling_party = Democracy
 					size = var:AUS_FROM_communist_support 
 					ROOT = {
 						puppet = {
@@ -8243,7 +8243,7 @@ country_event = { #Austria informed that their ultimatum was rejected
 	}
 }
 
-country_event = { #Electing a new democratic leader
+country_event = { #Electing a new Democracy leader
 	id = AUS_political_events.90
 	title = AUS_political_events.90.t
 	desc = AUS_political_events.90.desc
@@ -8292,7 +8292,7 @@ country_event = { #Electing a new democratic leader
 		}
 	
 		set_politics = {
-			ruling_party = democratic
+			ruling_party = Democracy
 			elections_allowed = yes
 			last_election = "1936.1.1"
 			election_frequency = 48
@@ -8310,7 +8310,7 @@ country_event = { #Electing a new democratic leader
 		promote_character = AUS_karl_renner
 
 		set_politics = {
-			ruling_party = democratic
+			ruling_party = Democracy
 			elections_allowed = yes
 			last_election = "1936.1.1"
 			election_frequency = 48
@@ -8332,7 +8332,7 @@ country_event = { #Electing a new democratic leader
 		promote_character = AUS_vinzenz_schumy
 
 		set_politics = {
-			ruling_party = democratic
+			ruling_party = Democracy
 			elections_allowed = yes
 			last_election = "1936.1.1"
 			election_frequency = 48
@@ -8865,7 +8865,7 @@ country_event = { #Germany informed of Austria's refusal to install Seyss-Inquar
 			limit = {
 				ENG = {
 					exists = yes
-					has_government = democratic
+					has_government = Democracy
 				}
 				ROOT = { has_country_flag = GER_has_already_upped_pressure_for_seyss_inquart_flag }
 			}
@@ -8882,7 +8882,7 @@ country_event = { #Germany informed of Austria's refusal to install Seyss-Inquar
 			limit = {
 				FRA = {
 					exists = yes
-					has_government = democratic
+					has_government = Democracy
 					ROOT = { has_country_flag = GER_has_already_upped_pressure_for_seyss_inquart_flag }
 				}
 			}
@@ -8899,7 +8899,7 @@ country_event = { #Germany informed of Austria's refusal to install Seyss-Inquar
 			limit = {
 				CZE = {
 					exists = yes
-					has_government = democratic
+					has_government = Democracy
 					ROOT = { has_country_flag = GER_has_already_upped_pressure_for_seyss_inquart_flag }
 				}
 			}
@@ -10767,7 +10767,7 @@ news_event = { #Austria holds elections again
 	option = { #great!
 		name = AUS_news_events.12.a
 		trigger = {
-			has_government = democratic
+			has_government = Democracy
 		}
 	}
 
@@ -10775,7 +10775,7 @@ news_event = { #Austria holds elections again
 		name = AUS_news_events.12.b
 		trigger = {
 			NOT = {
-				has_government = democratic
+				has_government = Democracy
 			}
 		}
 	}

@@ -1,8 +1,13 @@
-﻿capital = 1423
-
-set_research_slots = 2
+﻿capital = 1423 #里士满
+oob = "CSA_1935"
+set_naval_oob = "CSA_navy_1935"
+set_air_oob = "CSA_air_1935"
 set_stability = 0.75
 set_war_support = 0.55
+starting_train_buffer = 1
+set_fuel_ratio = 0.8
+set_research_slots = 2
+
 set_variable = { var = senators_support value = 48 }
 set_variable = { var = senators_total value = 96 }
 set_variable = { var = representatives_support value = 218 }
@@ -10,7 +15,8 @@ set_variable = { var = representatives_total value = 435 }
 set_variable = { var = quorum_low value = 39 }
 set_variable = { var = quorum_medium value = 49 }
 set_variable = { var = quorum_high value = 58 }
-# Starting tech
+
+### 初始科技 ###
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -54,9 +60,7 @@ set_technology = {
 	
 }
 
-
-
-######傀儡国
+### 傀儡国 ###
 if = {
 	limit = {
 		OR = {
@@ -95,7 +99,6 @@ if = {
 		freedom_level = 0.5
 	}
 
-
 	else = {
 		puppet = TEX
 		puppet = SCF
@@ -103,14 +106,17 @@ if = {
 	}
 }
 
-oob = "CSA_1935"
-set_naval_oob = "CSA_navy_1935"
-set_air_oob = "CSA_air_1935"
-
+### 领导人 ###
 recruit_character = CSA_Charles_Coughlin #查尔斯·考夫林
 recruit_character = CSA_Hugh_Long #休伊·朗
 recruit_character = CSA_Placeholder #占位
-
+#政治顾问
+recruit_character =	CSA_Earl_Lang #厄尔·朗
+recruit_character =	CSA_Harold_Iks #哈罗德·伊克斯
+recruit_character =	CSA_henry_ford #亨利·福特
+recruit_character =	CSA_Lyndon_B_Johnson #林登·B·约翰逊
+recruit_character =	CSA_Joseph_Raymond_McCarthy #约瑟夫·雷芒德·麦卡锡
+### 将领 ###
 recruit_character = CSA_Walton_Walker #沃尔顿·沃克
 recruit_character = CSA_Leslie_James #莱斯利·詹姆斯
 recruit_character = CSA_Omar_Nelson_Bradley #奥马尔·纳尔逊·布莱德雷
@@ -129,11 +135,6 @@ recruit_character = CSA_William_Butler #威廉·巴特勒
 recruit_character = CSA_Frank_Kulin #弗兰克·库林
 recruit_character = CSA_Norman_Cotta #诺曼·柯塔
 recruit_character = CSA_Douglas_MacArthur #道格拉斯·麦克阿瑟
-recruit_character =	CSA_Earl_Lang # 厄尔·朗
-recruit_character =	CSA_Harold_Iks # 哈罗德·伊克斯
-recruit_character =	CSA_henry_ford # 亨利·福特
-recruit_character =	CSA_Lyndon_B_Johnson # 林登·B·约翰逊
-recruit_character =	CSA_Joseph_Raymond_McCarthy # 约瑟夫·雷芒德·麦卡锡
 recruit_character =	CSA_John_Joseph_Pershing # 约翰·约瑟夫·潘兴
 
 set_convoys = 100
@@ -156,16 +157,17 @@ set_popularities = {
 }
 
 add_ideas = {
-	CSA_slave_and_industry
-	CSA_west_slave_baodong
-	CSA_victory_of_civ_war
-	CSA_jackson_stone_wall
+	### 初始民族精神 ###
+	CSA_slave_and_industry #奴隶与工业化
+	CSA_west_slave_baodong #西部奴隶暴动
+	CSA_victory_of_civ_war #内战胜利者
+	CSA_jackson_stone_wall #“石墙”杰克逊精神
 
 	#顾问
-	CSA_Earl_Lang
-	CSA_henry_ford
-	CSA_Joseph_Raymond_McCarthy
-	CSA_Lyndon_B_Johnson
+	CSA_Earl_Lang_pol #厄尔·朗
+	CSA_henry_ford_pol #亨利·福特
+	CSA_Joseph_Raymond_McCarthy_pol #约瑟夫·雷芒德·麦卡锡
+	CSA_Lyndon_B_Johnson_pol #林登·B·约翰逊
 }
 
 

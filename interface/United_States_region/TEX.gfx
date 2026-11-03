@@ -1,9 +1,4 @@
 spriteTypes = {
-	#领导人
-	spriteType = { 
-		name = "GFX_leader_TEX_Kress_Houston"
-		texturefile = "gfx/leaders/TEX/TEX_Kress_Houston.dds"
-	}
 	#民族精神
 	spriteType = { #饱受争议的王室
 		name = "GFX_idea_TEX_lone_star_republic"

@@ -1,11 +1,14 @@
-﻿capital = 41 # Madrid
-oob = "SPR_1936"
-set_naval_oob = "SPR_naval"
+﻿capital = 41 # 马德里
+oob = "SPR_1935"
+set_naval_oob = "SPR_navy_1935"
 set_stability = 0.63
 set_war_support = 0.72
 set_research_slots = 3
 set_convoys = 230
+set_fuel_ratio = 0.9
+starting_train_buffer = 1.2
 
+### 初始科技 ###
 if = {
 	limit = {
 		NOT = { has_dlc = "No Step Back" }
@@ -41,7 +44,6 @@ if = {
 	}
 }
 set_technology = {
-	### General ###
 	electronic_mechanical_engineering = 1
 	### Infantry ###
 	infantry_weapons = 1
@@ -51,6 +53,7 @@ set_technology = {
 	marines = 1
 	tech_support = 1
 	tech_engineers = 1
+	tech_logistics_company = 1
 	tech_recon = 1
 	gw_artillery = 1
 	tech_trucks = 1
@@ -84,43 +87,40 @@ if = {
 	}
 }
 
-### Navy - MtG ###
 set_technology = {
+	basic_naval_mines = 1
+	submarine_mine_laying = 1
+	basic_depth_charges = 1
+	basic_torpedo = 1
+	basic_battery = 1
+	basic_cruiser_armor_scheme = 1
+	basic_heavy_battery = 1
+	basic_light_battery = 1
+	basic_heavy_armor_scheme = 1
+	early_ship_hull_submarine = 1
+	basic_ship_hull_submarine = 1
 	early_ship_hull_light = 1
 	basic_ship_hull_light = 1
 	early_ship_hull_cruiser = 1
 	basic_ship_hull_cruiser = 1
 	early_ship_hull_heavy = 1
-	panzerschiffe = 1
-	early_ship_hull_submarine = 1
-	basic_ship_hull_submarine = 1
-	cruiser_submarines = 1
-	
-	basic_naval_mines = 1
-
-	## Modules##
-	basic_battery = 1
-	basic_light_battery = 1
-	
-	basic_heavy_battery = 1
-	basic_depth_charges = 1
-	basic_torpedo = 1
-	improved_ship_torpedo_launcher = 1
-	basic_cruiser_armor_scheme = 1
-
-	### Transport ###
+	basic_ship_hull_heavy = 1
 	mtg_transport = 1
+	coastal_defense_ships = 1
 }
 
-#领导人
+### 领导人 ###
 recruit_character = SPR_Miguel_Primo_Derivella #米格尔·普里莫·德里维拉
+recruit_character = SPR_Jose_Primo_Derivella #何塞·普里莫·德里维拉
+recruit_character = SPR_Don_Carlos #唐·卡洛斯
+recruit_character = SPR_Juan_Deborbon #胡安·德·波旁
 #政治顾问
 recruit_character = SPR_Serralo_Sunier #塞拉洛·苏涅尔
 recruit_character = SPR_Francisco_Franco #弗朗西斯科·佛朗哥
 recruit_character = SPR_Jose_GilRobles #何塞·希尔-罗夫莱斯
 recruit_character = SPR_Jose_Calvo_Sotelo #何塞·卡尔沃·索特沃
 recruit_character = SPR_Joaquin_Chapaprieta #华金·查帕普列塔
-#将领
+### 将领 ###
 recruit_character = SPR_Damaso_Berenguer #达马索·贝伦格尔
 recruit_character = SPR_Miguel_Cabanellas #米格尔·卡巴内拉斯·费雷尔
 recruit_character = SPR_Sebastian_Pozas_Perea #塞巴斯蒂安·波萨斯·佩雷亚
@@ -135,11 +135,6 @@ recruit_character = SPR_Juan_Vigon_Sueirodias #胡安·维贡·苏埃罗迪亚�
 recruit_character = SPR_Manuel_Dies_Allegria #曼努埃尔·迪耶斯·阿莱格里亚
 recruit_character = SPR_Carlos_Asensio_Cabanillas #卡洛斯·阿森西奥·卡巴尼利亚斯
 recruit_character = SPR_Emilio_Mora #埃米利奥·莫拉
-
-
-
-recruit_character = SPR_Jose_Antonio_Primo_de_la_Villa #何塞·安东尼奥·普里莫·德里维拉
-recruit_character = SPR_Don_Carlos #唐·卡洛斯
 
 add_ideas = {
 	### 初始民族精神 ###
@@ -169,32 +164,26 @@ add_ideas = {
 set_autonomy = {
 	target = VEN
 	autonomous_state = autonomy_dominion 
-	freedom_level = 0.5
 }
 set_autonomy = {
 	target = CUB
 	autonomous_state = autonomy_dominion
-	freedom_level = 0.5
 }
 set_autonomy = {
 	target = MOR
 	autonomous_state = autonomy_dominion
-	freedom_level = 0.5
 }
 set_autonomy = {
 	target = PHI
 	autonomy_state = autonomy_dominion
-	freedom_level = 0.5
 }
 set_autonomy = {
 	target = DOM
 	autonomy_state = autonomy_dominion
-	freedom_level = 0.5
 }
 set_autonomy = {
 	target = EQG
 	autonomy_state = autonomy_dominion
-	freedom_level = 0.5
 }
 set_politics = {
 	ruling_party = tttt
@@ -210,4 +199,33 @@ set_popularities = {
 	Conservatism = 24
 	Liberalism = 12
 	fascism = 8
+}
+
+
+create_equipment_variant = {
+	name = "B级"
+	type = ship_hull_submarine_1
+	modules = {
+		fixed_ship_torpedo_slot = ship_torpedo_sub_1
+		fixed_ship_engine_slot = sub_ship_engine_1
+		rear_1_custom_slot = empty
+	}
+}
+create_equipment_variant = {
+	name = "加强B级"
+	type = ship_hull_submarine_1
+	modules = {
+		fixed_ship_torpedo_slot = ship_torpedo_sub_1
+		fixed_ship_engine_slot = sub_ship_engine_1
+		rear_1_custom_slot = ship_torpedo_sub_1
+	}
+}
+create_equipment_variant = {
+	name = "C级"
+	type = ship_hull_submarine_2
+	modules = {
+		fixed_ship_torpedo_slot = ship_torpedo_sub_1
+		fixed_ship_engine_slot = sub_ship_engine_1
+		rear_1_custom_slot = ship_torpedo_sub_1
+	}
 }

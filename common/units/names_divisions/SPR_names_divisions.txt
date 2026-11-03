@@ -1,4 +1,4 @@
-﻿#西班牙编制
+#西班牙编制
 SPR_INF_01 = 
 {
 	name = "整编混成师"
@@ -23,5 +23,78 @@ SPR_INF_01 =
 		10 = { "西班牙%d号混成师 “萨拉戈萨”" }
 		11 = { "西班牙%d号混成师 “布尔戈斯”" }
 		12 = { "西班牙%d号混成师 “巴利亚多利德”" }	
+	}
+}
+SPR_INF_02 = {
+	name = "新编团"
+
+	for_countries = { SPR }
+
+	division_types = { "infantry" }
+
+	fallback_name = "新编%d团"
+
+	ordered = {
+		1 = { "新编%d团" }
+		2 = { "新编%d团" }
+		3 = { "新编%d团" }
+		4 = { "新编%d团" }
+		5 = { "新编%d团" }
+		6 = { "新编%d团" }
+	}
+}
+SPR_MTN_01 = {
+	name = "山地兵团"
+
+	for_countries = { SPR }
+
+	division_types = { "mountaineers" }
+
+	fallback_name = "山地第%d团"
+
+	ordered = {
+		1 = { "山地第%d团" }
+		2 = { "山地第%d团" }
+		3 = { "山地第%d团" }
+		4 = { "山地第%d团" }
+		5 = { "山地第%d团" }
+		6 = { "山地第%d团" }
+	}
+}
+SPR_CAV_01 = {
+	name = "骑兵旅"
+
+	for_countries = { SPR }
+
+	division_types = { "cavalry" }
+
+	fallback_name = "第%d骑兵旅"
+
+	ordered = {
+		1 = { "第%d骑兵旅" }
+		2 = { "第%d骑兵旅" }
+		3 = { "第%d骑兵旅" }
+		4 = { "第%d骑兵旅" }
+		5 = { "第%d骑兵旅" }
+		6 = { "第%d骑兵旅" }
+	}
+}
+SPR_MAR_01 = {
+	name = "海军特战队"
+
+	for_countries = { SPR }
+
+	can_use = { always = yes }
+
+	division_types = { "marine" }
+
+	fallback_name = "第%d特战队"
+
+	ordered = {
+		1 = { "第%d特战队" }
+		2 = { "第%d特战队" }
+		3 = { "第%d特战队" }
+		4 = { "第%d特战队" }
+		5 = { "第%d特战队" }
 	}
 }

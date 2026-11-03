@@ -1,0 +1,17 @@
+characters={
+	#领导人
+	#安东尼奥·索贝拉尼斯·戈梅兹
+	BLZ_Antonio_Soberanis_Gomez = {
+		name = BLZ_Antonio_Soberanis_Gomez
+		portraits={
+			civilian={
+				large = GFX_BLZ_Antonio_Soberanis_Gomez_large
+			}
+		}
+		country_leader={
+			ideology = socialism_small
+			traits = { BLZ_surviving_hero BLZ_labour_leader }
+			expire = "1965.1.1.1"
+		}
+	}
+}

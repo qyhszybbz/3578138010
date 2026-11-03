@@ -28,7 +28,7 @@ division_template = {#4 民兵营
 units = {
 	division = {
 		name = "1st 英国殖民军"
-		location = 11715
+		location = 7788
 		division_template = "Colonial Infantry"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
@@ -36,7 +36,7 @@ units = {
 	}
 	division = {
 		name = "2nd 英国殖民军"
-		location = 11715
+		location = 7788
 		division_template = "Colonial Infantry"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
@@ -44,7 +44,7 @@ units = {
 	}
 	division = {
 		name = "1st 国民警卫队民兵"
-		location = 11715
+		location = 7788
 		division_template = "National Guard"
 		start_experience_factor = 0.0
 		start_equipment_factor = 0.4
@@ -52,7 +52,7 @@ units = {
 	}
 	division = {
 		name = "2nd 国民警卫队民兵"
-		location = 11715
+		location = 7788
 		division_template = "National Guard"
 		start_experience_factor = 0.0
 		start_equipment_factor = 0.4
@@ -60,7 +60,7 @@ units = {
 	}
 	division = {
 		name = "3rd 国民警卫队民兵"
-		location = 11715
+		location = 7788
 		division_template = "National Guard"
 		start_experience_factor = 0.0
 		start_equipment_factor = 0.4

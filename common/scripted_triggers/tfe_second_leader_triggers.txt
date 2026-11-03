@@ -1,0 +1,9 @@
+has_second_leader = { #副领导人显示检测
+	OR = {
+		has_idea = ARG_Marcelo_Torquato_de_Alvial
+		has_idea = SOV_Viktor_Chernov
+		has_idea = ARG_Amedeo_II
+		has_idea = DOM_Raphael_Trujillo
+		has_idea = GER_wilhelm_ii
+	}
+}

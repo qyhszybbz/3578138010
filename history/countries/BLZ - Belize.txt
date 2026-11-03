@@ -1,18 +1,28 @@
-﻿capital = 311
-
+﻿capital = 311 #伯利兹
 oob = "BLZ_1935"
-
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-}
-
-set_convoys = 5
-
-recruit_character = BLZ_antonio_soberanis_gomez
-
 set_war_support = 0.3
 set_stability = 0.3
+starting_train_buffer = 1
+set_fuel_ratio = 0.8
+set_research_slots = 2
+
+### 初始科技 ###
+set_technology = {
+	infantry_weapons = 1
+	basic_train = 1
+}
+
+### 领导人 ###
+recruit_character = BLZ_Antonio_Soberanis_Gomez #安东尼奥·索贝拉尼斯·戈梅兹
+
+add_ideas = {
+	### 初始民族精神 ###
+	BLZ_under_the_giants #巨人脚下
+	BLZ_the_great_debate #大讨论
+	BLZ_the_curse_of_the_plantations #种植园的诅咒
+}
+
+set_convoys = 35
 
 set_politics = {
 	ruling_party = Socialism
@@ -31,7 +41,3 @@ set_popularities = {
 	Authoritarianism = 10
 	tttt = 15
 }
-
-add_ideas = BLZ_under_the_giants
-add_ideas = BLZ_the_great_debate
-add_ideas = BLZ_the_curse_of_the_plantations

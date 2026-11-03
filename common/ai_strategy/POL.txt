@@ -33,9 +33,9 @@ POL_trade_with_uk = {
 	enable = {
 		OR = {
 			has_government = neutrality
-			has_government = democratic
+			has_government = Democracy
 		}
-		ENG = { has_government = democratic }
+		ENG = { has_government = Democracy }
 	}
 	abort_when_not_enabled = yes
 
@@ -54,9 +54,9 @@ POL_trade_with_sweden = {
 	enable = {
 		OR = {
 			has_government = neutrality
-			has_government = democratic
+			has_government = Democracy
 		}
-		SWE = { has_government = democratic }
+		SWE = { has_government = Democracy }
 	}
 	abort_when_not_enabled = yes
 

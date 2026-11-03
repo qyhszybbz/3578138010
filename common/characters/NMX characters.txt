@@ -1,0 +1,16 @@
+characters = {
+    #领导人
+	#吉尔伯托·奥古斯托·阿布瑞尔
+	NMX_Gilberto_Augusto_Abreu = {
+		name = NMX_Gilberto_Augusto_Abreu
+		portraits = {
+			civilian = {
+				large = GFX_NMX_Gilberto_Augusto_Abreu_large
+			}
+		}
+		country_leader = {
+			ideology = nazism_small
+			traits = { NMX_mex_american }
+		}
+	}
+}

@@ -1,0 +1,17 @@
+characters = {
+	#领导人
+	#弗朗茨·斐迪南大公
+	CZE_Archduke_Franz_Ferdinand = {
+		name= CZE_Archduke_Franz_Ferdinand
+		portraits={
+			civilian={
+				large=GFX_CZE_Archduke_Franz_Ferdinand_large
+			}
+		}
+		country_leader={
+			#desc = CZE_Archduke_Franz_Ferdinand_desc
+			ideology = Conservatism_small
+			traits= {  }
+		}
+	}
+}

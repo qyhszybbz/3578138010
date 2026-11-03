@@ -1,5 +1,5 @@
 ﻿capital = 360 # Washington DC
-load_focus_tree = generic_focus
+load_focus_tree = tfe_usa_focus
 set_research_slots = 3
 
 oob = "USA_1935"
@@ -159,7 +159,7 @@ add_ideas = {
 	USA_Orson_Welles_advisor
 	USA_William_J_Donovan_advisor
 	USA_Alf_Landon_advisor #政府首脑 阿洛夫·兰登
-	#USA_Dwight_D_Eisenhower_advisor 
+
 }
 
 set_politics = {

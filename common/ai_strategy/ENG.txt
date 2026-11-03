@@ -506,9 +506,9 @@ ENG_trade_with_poland = {
 	enable = {
 		OR = {
 			POL = { has_government = neutrality }
-			POL = { has_government = democratic }
+			POL = { has_government = Democracy }
 		}
-		has_government = democratic
+		has_government = Democracy
 	}
 	abort_when_not_enabled = yes
 
@@ -1770,7 +1770,7 @@ ENG_please_stop_stomping_italy_so_hard_in_africa_ty = {
 ENG_in_for_the_long_haul_bruv = {
 	allowed = { original_tag = ENG }
 	enable = {
-		has_government = democratic
+		has_government = Democracy
 		date < 1937.10.1
 		has_war = no
 	}
@@ -1790,7 +1790,7 @@ ENG_in_for_the_long_haul_bruv = {
 ENG_industry_we_on_an_island_bruv = {
 	allowed = { original_tag = ENG }
 	enable = {
-		has_government = democratic
+		has_government = Democracy
 		has_war = no
 		date > 1937.10.1
 	}
@@ -1858,7 +1858,7 @@ ENG_growing_confidence_in_the_air = {
 	allowed = { original_tag = ENG }
 	enable = {
 		has_war = yes
-		has_government = democratic
+		has_government = Democracy
 		date > 1938.1.1
 	}
 	abort_when_not_enabled = yes
@@ -1872,7 +1872,7 @@ ENG_growing_confidence_in_the_air = {
 ENG_allies_dont_ask_for_diplo_access_to_SOV = {
 	enable = {
 		ENG = {
-			has_government = democratic
+			has_government = Democracy
 		}
 		SOV = {
 			has_government = communism
@@ -2953,7 +2953,7 @@ ENG_i_like_raj = {
 		has_dlc = "Graveyard of Empires"
 	}
 	enable = {
-		has_government = democratic
+		has_government = Democracy
 		RAJ = {
 			has_completed_focus = RAJ_tryst_with_destiny	
 		}

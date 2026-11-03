@@ -1,0 +1,40 @@
+defined_text = { #和平窗口
+	name = GetWarConclusionLoc
+	text = {
+		localization_key = TFE_PEACE_POPUP_WAR_CONCLUSION
+	}
+}
+
+defined_text = {
+	name = GetWarStatus
+	text = {
+		trigger = {
+			has_global_flag = war_won
+		}
+		localization_key = TFE_PEACE_POPUP_WAR_CONCLUSION
+	}
+	text = {
+		trigger = {
+			has_global_flag = war_continuing
+		}
+		localization_key = TFE_PEACE_POPUP_WAR_CONTINUING
+	}
+}
+#风味结语
+defined_text = {
+	name = GetFlavor
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				tag = HYD
+			}
+			event_target:losing_country = {
+				tag = RAS
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_HYD_RAS
+	}
+	text = {
+		localization_key = TFE_PEACE_POPUP_FLAVOR_DEFAULT
+	}
+}

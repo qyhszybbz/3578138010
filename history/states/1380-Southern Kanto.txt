@@ -1,0 +1,35 @@
+state={
+	id=1380
+	name="STATE_1380"
+	manpower = 7433233
+
+	state_category = megalopolis
+
+	history={
+		owner = JAP
+		add_core_of = JAP
+		buildings = {
+			infrastructure = 5
+			air_base = 3
+			industrial_complex = 5
+			arms_factory = 3
+			dockyard = 4
+
+			9998 = {
+				naval_base = 6
+			}
+		}
+		victory_points = {
+			1182 50 #东京
+		}
+		victory_points = {
+			9998 25 #横滨
+		}
+	}
+
+	provinces={
+		11908 1097 1182 9998 4188 4184 
+	}
+
+	local_supplies=7.0 
+}

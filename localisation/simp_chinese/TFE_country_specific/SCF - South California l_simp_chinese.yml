@@ -1,0 +1,17 @@
+﻿l_simp_chinese:
+ SCF: "加利福尼亚共和国"
+ SCF_ADJ: "加利福尼亚共和国"
+ SCF_DEF: "加利福尼亚共和国"
+
+ SCF_Authoritarianism_party: "南加利福尼亚自治委员会"
+ SCF_Authoritarianism_party_long: "南加利福尼亚自治委员会"
+
+ SCF_Southern_California_AC: "南加利福尼亚自治委员会"
+
+ SCF_hunluan_weiyuanhui: "混乱的委员会"
+ SCF_yiming_qingrao: "移民侵扰"
+ SCF_yiming_qingrao_desc: "因常年遭到墨西哥逃犯、美利坚联盟国的黑人流放者和外裔非法移民的侵扰，在街头地下走私和  器官贩卖等行业处处可见，腐败的警察和耀武扬威的黑帮成了莫大的讽刺，维持住这里的秩序已然是一件难事。"
+
+ tfe_scf_news.1.t: "洛杉矶工人运动解散"
+ tfe_scf_news.1.d: "经过长达三年的大审查与潜伏，洛杉矶和旧金山两大城市的赤色斗争运动据点和报刊均被军警查封，不仅查处了多封没来得及销毁的宣传册和横幅，还顺藤摸瓜逮捕了工会主要领导人兼报刊主负责人霍华德·斯科特。\n\n此次行动被洛杉矶政府称作是一场成功的反赤色威胁维和行动。"
+ tfe_scf_news.1.a: "北美的局势更加动荡"

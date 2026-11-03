@@ -1,5 +1,4 @@
 ideas = {
-
 	country = {
 		### 内战通用民族精神 ###
 		#内战旷久
@@ -10,7 +9,7 @@ ideas = {
 			modifier = {
 				war_support_factor = -0.10
 				conscription = -0.035
-				non_core_manpower = -0.0025
+				non_core_manpower = -0.025
 				consumer_goods_factor = 0.20
 			}
 		}
@@ -37,6 +36,210 @@ ideas = {
 				political_power_factor = -0.05
 				stability_factor = -0.05
 				consumer_goods_factor = 0.05
+			}
+		}
+		### 国策民族精神 ###
+		#总结过去
+		LBV_Summarizing_the_past = {
+			on_add = { log = "[GetLogRoot]: add idea LBV_Summarizing_the_past" }
+			picture = Summarizing_the_past
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = 0.05
+				breakthrough_factor = 0.05
+				army_infantry_defence_factor = 0.05
+				supply_consumption_factor = -0.03
+			}
+		}
+		#内战旷久
+		LBV_Protracted_civilwar_1 = {
+			on_add = { log = "[GetLogRoot]: add idea LBV_Protracted_civilwar_1" }
+			picture = Protracted_civilwar
+			allowed = { always = no }
+			modifier = {
+				conscription = -0.035
+				non_core_manpower = -0.025
+				consumer_goods_factor = 0.20
+				industrial_capacity_factory = 0.05
+			    production_factory_max_efficiency_factor = 0.10
+			}
+		}
+		#岌岌可危的委员会2
+		LBV_Committee_in_danger_1 = {
+			on_add = { log = "[GetLogRoot]: add idea LBV_Committee_in_danger_1" }
+			picture = Committee_in_danger
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.025
+				consumer_goods_factor = 0.05
+				party_popularity_stability_factor = 0.10
+			}
+		}
+		#瘫痪的黑衫军2
+        LBV_Paralyzed_Blackshirts_1 = {
+			on_add = { log = "[GetLogRoot]: add idea LBV_Paralyzed_Blackshirts_1" }
+			picture = Paralyzed_Blackshirts
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = -0.05
+				army_org_factor = -0.25
+				army_morale_factor = -0.25
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				supply_consumption_factor = 0.02
+				conscription = 0.025
+				mobilization_speed = 0.10
+			}
+		}
+		#干部培训
+		LBV_Cadre_Training = {
+			on_add = { log = "[GetLogRoot]: add idea LBV_Cadre_Training" }
+			picture = Cadre_Training
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = 0.075
+				consumer_goods_factor = -0.025
+				research_speed_factor = 0.05
+			}
+		}
+		#国民一心
+		LBV_united_people = {
+			on_add = { log = "[GetLogRoot]: add idea LBV_united_people" }
+			picture = united_people
+			allowed = { always = no }
+			modifier = {
+				army_core_defence_factor = 0.075
+				resistance_target = 0.05
+				resistance_target_on_our_occupied_states = 0.025
+				political_power_factor = -0.025
+				mobilization_speed = 0.025
+			}
+		}
+		#内战旷久2
+		LBV_Protracted_civilwar_2 = {
+			on_add = { log = "[GetLogRoot]: add idea LBV_Protracted_civilwar_2" }
+			picture = Protracted_civilwar
+			allowed = { always = no }
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				political_power_factor = -0.025
+				conscription = -0.035
+				consumer_goods_factor = 0.20
+				industrial_capacity_factory = 0.05
+			    production_factory_max_efficiency_factor = 0.10
+			}
+		}
+		#瘫痪的黑衫军2
+        LBV_Paralyzed_Blackshirts_2 = {
+			on_add = { log = "[GetLogRoot]: add idea LBV_Paralyzed_Blackshirts_2" }
+			picture = Paralyzed_Blackshirts
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = -0.05
+				army_org_factor = -0.30
+				army_morale_factor = -0.30
+				supply_consumption_factor = 0.04
+				conscription_factor = 0.025
+				mobilization_speed = 0.10
+			}
+		}
+		#内战旷久3
+		LBV_Protracted_civilwar_3 = {
+			on_add = { log = "[GetLogRoot]: add idea LBV_Protracted_civilwar_3" }
+			picture = Protracted_civilwar
+			allowed = { always = no }
+			modifier = {
+				repair_speed_infrastructure_factor = 0.10
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				political_power_factor = -0.025
+				conscription = -0.035
+				consumer_goods_factor = 0.20
+				industrial_capacity_factory = 0.05
+			    production_factory_max_efficiency_factor = 0.10
+				supply_factor = 0.025
+				army_attack_speed_factor = 0.05
+			}
+		}
+		#行动突击队
+		LBV_Assault_Team = {
+			on_add = { log = "[GetLogRoot]: add idea LBV_Assault_Team" }
+			picture = Assault_Team
+			allowed = { always = no }
+			modifier = {
+				max_planning_factor = 0.05
+				planning_speed = 0.05
+				army_speed_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = ITA
+				attack_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = TTS
+				attack_bonus_against = 0.15
+			}
+		}
+		#瘫痪的黑衫军3
+        LBV_Paralyzed_Blackshirts_3 = {
+			on_add = { log = "[GetLogRoot]: add idea LBV_Paralyzed_Blackshirts_3" }
+			picture = Paralyzed_Blackshirts
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = -0.10
+				army_org_factor = -0.225
+				army_morale_factor = -0.275
+				army_attack_factor = 0.075
+				army_defence_factor = -0.075
+				supply_consumption_factor = 0.06
+				conscription_factor = 0.075
+				mobilization_speed = 0.20
+			}
+		}
+		#缓慢恢复
+		LBV_Slow_recovery = {
+			on_add = { log = "[GetLogRoot]: add idea LBV_Slow_recovery" }
+			picture = Slow_recovery
+			allowed = { always = no }
+			modifier = {
+				repair_speed_infrastructure_factor = 0.10
+				stability_factor = 0.08
+				political_power_factor = -0.05
+				production_speed_buildings_factor = 0.10
+				conscription = -0.035
+				consumer_goods_factor = 0.20
+				industrial_capacity_factory = 0.05
+			    production_factory_max_efficiency_factor = 0.10
+				supply_factor = 0.025
+				army_attack_speed_factor = 0.05
+			}
+		}
+		#逐渐恢复的军队
+		LBV_Gradually_recovering_military = {
+			on_add = { log = "[GetLogRoot]: add idea LBV_Gradually_recovering_military" }
+			picture = Gradually_recovering_military
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = -0.10
+				army_org_factor = -0.20
+				army_morale_factor = -0.25
+				army_attack_factor = 0.075
+				army_defence_factor = -0.075
+				supply_consumption_factor = 0.09
+				conscription_factor = 0.075
+				mobilization_speed = 0.20
+			}
+		}
+		### 外国民族精神 ###
+		#来自西班牙的援助
+		LBV_Help_From_Spain = {
+			on_add = { log = "[GetLogRoot]: add idea LBV_Help_From_Spain" }
+			picture = Help_From_Spain
+			allowed = { has_global_flag = ITAG_Wars_of_Unification }
+			modifier = {
+				consumer_goods_factor = -0.05
+				army_org = 1.25
 			}
 		}
     }

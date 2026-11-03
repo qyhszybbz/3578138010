@@ -92,9 +92,9 @@ SWE_trade_with_poland = {
 	enable = {
 		OR = {
 			POL = { has_government = neutrality }
-			POL = { has_government = democratic }
+			POL = { has_government = Democracy }
 		}
-		has_government = democratic
+		has_government = Democracy
 	}
 	abort_when_not_enabled = yes
 
@@ -110,10 +110,10 @@ SWE_trade_with_czech = {
 		original_tag = SWE
 	}
 	enable = {
-		has_government = democratic
+		has_government = Democracy
 		CZE = {
 			exists = yes
-			has_government = democratic
+			has_government = Democracy
 		}
 	}
 	abort_when_not_enabled = yes

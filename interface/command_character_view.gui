@@ -2,7 +2,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "command_character_view_window"
 		position = { x = -356 y = 80 }	
-		show_position = { x = 540 y = 80 }
+		show_position = { x = 711 y = 80 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300
@@ -116,6 +116,7 @@ guiTypes = {
 			position = { x = -50 y = 5 }
 			quadTextureSprite ="GFX_closebutton"
 			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
 			Orientation = "UPPER_RIGHT"
 			clicksound = click_close
 			pdx_tooltip = "CLOSE"
@@ -200,8 +201,8 @@ guiTypes = {
 
 			instantTextboxType = {
 				name = "traits"
-				position = { x = 0 y = 28 }
-				font = "hoi_16mbs"
+				position = { x = 0 y = 32 }
+				font = "hoi_18mbs"
 				fixedsize = yes			
 				text = ""
 				maxWidth = 140

@@ -5,7 +5,6 @@ characters = {
         name = SPR_Miguel_Primo_Derivella
         portraits = {
             civilian = {
-				small = GFX_portrait_WEI_Muweizhu_civilian_small
 				large = GFX_SPR_Miguel_Primo_Derivella_large
 			}
 		}
@@ -15,7 +14,33 @@ characters = {
 			traits= { SPR_dictator }
 		}
     }
-
+	#何塞·普里莫·德里维拉
+	SPR_Jose_Primo_Derivella = {
+        name = SPR_Jose_Primo_Derivella
+        portraits = {
+            civilian = {
+				large = GFX_SPR_Jose_Primo_Derivella_large
+			}
+		}
+    }
+	#唐·卡洛斯
+	SPR_Don_Carlos = {
+        name = SPR_Don_Carlos
+        portraits = {
+            civilian = {
+				large = GFX_SPR_Don_Carlos_large
+			}
+		}
+    }
+    #胡安·德·波旁
+	SPR_Juan_Deborbon = {
+        name = SPR_Juan_Deborbon
+        portraits = {
+            civilian = {
+				large = GFX_SPR_Juan_Deborbon_large
+			}
+		}
+    }
 	#政治顾问
 	#塞拉洛·苏涅尔
 	SPR_Serralo_Sunier = {
@@ -153,7 +178,7 @@ characters = {
 		}
 	}
 	#上将
-	#塞巴斯蒂安波萨斯·佩雷亚
+	#塞巴斯蒂安·波萨斯·佩雷亚
 	SPR_Sebastian_Pozas_Perea = {
 		name = SPR_Sebastian_Pozas_Perea
 		portraits={
