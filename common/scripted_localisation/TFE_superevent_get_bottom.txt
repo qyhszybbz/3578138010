@@ -1,0 +1,16 @@
+defined_text = {
+	name = SE_bottom_text_loc
+	text = {
+		trigger = { check_variable = { global.se_display = 1 } }
+		localization_key = SE_bottom_text_loc.1
+	}
+	text = {
+		trigger = { check_variable = { global.se_display = 2 } }
+		localization_key = SE_bottom_text_loc.2
+	}
+	text = {
+		trigger = { check_variable = { global.se_display = 3 } }
+		localization_key = SE_bottom_text_loc.3
+	}
+	
+}

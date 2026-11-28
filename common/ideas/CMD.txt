@@ -1,0 +1,29 @@
+ideas = {
+
+	country = {
+
+		# 黑金之梦
+		CMD_black_gold_dream = {
+			#picture = CMD_black_gold_dream
+			removal_cost = -1
+
+			modifier = {
+				state_resources_factor = 0.15
+				industrial_capacity_factory = 0.2
+				research_speed_factor = 0.05
+			}
+		}
+
+		# 匪帮肆虐
+		CMD_banditry_rampant = {
+			#picture = CMD_banditry_rampant
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.25
+				resistance_damage_to_garrison = 0.1
+			}
+		}
+
+	}
+}

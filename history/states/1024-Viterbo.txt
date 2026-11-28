@@ -1,0 +1,27 @@
+state={
+	id = 1024
+	name="STATE_1024"
+
+	state_category = town
+
+
+	history={
+		owner = TTS
+		add_core_of = TTS
+		add_core_of = PAP
+		add_claim_by = ITA
+		add_claim_by = LBV
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+		}
+	}
+
+	provinces={
+		6862 11751
+	}
+	manpower = 837494
+	buildings_max_level_factor=1.000
+
+	local_supplies=0.0 
+}

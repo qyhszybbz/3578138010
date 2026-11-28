@@ -1,0 +1,17 @@
+leader_traits ={ 
+	CHL_tumbler = { #自由党的不到翁
+		stability_factor = 0.05
+	}
+	CHL_The_leader_of_social_democracy = { #社会民主的傀儡
+		Progressivism_drift = 0.01
+		stability_factor = 0.05
+		political_power_factor = 0.05
+	}
+	CHL_Diplomatic_guests = { #外交部的嘉宾
+
+	}
+	CHL_The_best_of_us = { #我们中的佼佼者
+		army_org_factor = 0.1
+		breakthrough_factor = 0.02
+	}
+}

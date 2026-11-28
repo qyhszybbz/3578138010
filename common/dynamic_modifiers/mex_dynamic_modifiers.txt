@@ -1,0 +1,23 @@
+MEX_yaowang_lvtu = {
+    enable = { always = yes }
+    icon = GFX_idea_MEX_yaowang_lvtu
+
+    stability_factor =                              MEX_yaowang_lvtu_stability_factor                                #稳定度
+    war_support_factor =                            MEX_yaowang_lvtu_war_support_factor                              #战争支持度
+    production_speed_buildings_factor            =  MEX_yaowang_lvtu_production_speed_buildings_factor               #建造速度
+}
+
+MEX_runwu_wusheng = {
+    enable = { always = yes }
+    icon = GFX_idea_MEX_yaowang_lvtu
+
+    stability_factor =                              MEX_runwu_wusheng_stability_factor                                #稳定度
+    war_support_factor =                            MEX_runwu_wusheng_war_support_factor                              #战争支持度
+    weekly_manpower   =                             MEX_runwu_wusheng_weekly_manpower                                 #周人力
+    production_speed_supply_node_factor   =         MEX_runwu_wusheng_production_speed_supply_node_factor             #补给中心建造速度
+	production_speed_rail_way_factor 	=           MEX_runwu_wusheng_production_speed_rail_way_factor                #铁路修建速度                               
+    political_power_gain =                          MEX_runwu_wusheng_political_power_gain                            #每日政治点
+    research_speed_factor =                         MEX_runwu_wusheng_research_speed_factor                           #研究速度
+    production_speed_industrial_complex_factor =    MEX_runwu_wusheng_production_speed_industrial_complex_factor      #民用工厂建造速度
+    production_speed_infrastructure_factor =        MEX_runwu_wusheng_production_speed_infrastructure_factor          #基础设施建造速度
+}

@@ -1,0 +1,53 @@
+﻿capital = 498
+
+load_focus_tree = generic_focus
+oob = "BRA_1936"
+
+
+
+
+	
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_trucks = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	basic_train = 1	
+}
+
+
+set_convoys = 40
+
+recruit_character = BRA_Pedro_III #佩徳罗三世
+recruit_character = BRA_Merleau_Viana #梅洛·维亚纳
+recruit_character = BRA_Otavio_Mangabera #奥塔维奥·曼加贝拉
+recruit_character = BRA_Julio_Presters #儒利奥·普雷斯特斯
+recruit_character = BRA_Armando_de_Salles_Oliveira # 阿曼多·德·萨列斯·奥利维拉 
+add_ideas = {
+	BRA_The_tyranny_of_mac #牛奶和咖啡的专制
+	BRA_Inflated_states_rights #膨胀的州权
+	BRA_Arrogant_Republicans #嚣张的共和派
+	BRA_unitary_economy #单一的经济
+}
+
+set_politics = {
+		ruling_party = Authoritarianism
+		last_election = "1934.7.17"
+		election_frequency = 48
+		elections_allowed = no
+	}
+
+	set_popularities = {
+		communism = 3
+		Socialism = 2
+		Liberalism = 5
+		Democracy = 10
+		Conservatism = 25
+		Authoritarianism = 35
+		tttt = 10
+		fascism = 7
+		nazism = 3
+	}

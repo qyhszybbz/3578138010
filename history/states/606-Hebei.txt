@@ -1,0 +1,24 @@
+state = {
+	id = 606
+	name = "STATE_606"
+	manpower = 11695436
+	state_category = town
+	history = {
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 2
+		}
+		1938.10.25 = {
+			controller = JAP
+		}
+		victory_points = {
+			7109 15
+		}
+	}
+	provinces = {
+		4032 4093 4137 4190 7000 7109 9969 10003 10022 11944 11980 11996
+	}
+	local_supplies = 0
+}

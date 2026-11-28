@@ -1,0 +1,29 @@
+CSA_balance_of_rights = { #联盟国发展
+	allowed = {
+		original_tag = CSA
+	}
+}
+CSA_Richmond_Confederation = { #里士满邦联大会
+	allowed = {
+		original_tag = CSA
+	}
+	visible = { 
+		has_completed_focus = CSA_The_status_quo_atcc
+	}
+}
+CSA_western_affairs_decision = { #西部事宜
+	allowed = {
+		original_tag = CSA
+	}
+	visible = { 
+		has_completed_focus = CSA_western_affairs
+	}
+}
+CSA_Recruiting_Cowboys = { #招募牛仔
+	allowed = {
+		original_tag = CSA
+	}
+	visible = { 
+		has_completed_focus = CSA_Gathering_loyal_cowboys
+	}
+}

@@ -1,0 +1,33 @@
+
+add_namespace = generic_events
+
+
+
+#########################
+### State Integration ###
+#########################
+
+state_event = { #event to fill the progress bar and remove the alert after three days (donotlog)
+	id = generic_events.40
+	hidden = yes
+
+	trigger = {
+		is_in_array = { ROOT.state_integration_alerts = event_target:integrated_state }
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		set_temp_variable = { target = event_target:integrated_state }
+		add_to_variable = { ROOT.integration_alert_timer_@var:target = 1 }
+		if = {
+			limit = { check_variable = { ROOT.integration_alert_timer_@var:target > 71 } }
+			ROOT = { clear_integration_alert = yes }
+		}
+		else = {
+			ROOT = { update_integration_progressbar = yes }
+			set_variable_to_random = global.thefinalecho_alerts_window
+			state_event = { id = generic_events.40 hours = 1 trigger_for = ROOT }
+		}
+	}
+}

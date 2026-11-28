@@ -1,0 +1,27 @@
+defined_text = {
+	name = SE_getpicture
+
+	text = {
+		trigger = { 
+			
+			check_variable = { global.se_display = 1 }
+			#has_country_flag = visible_superevent_mos_ita
+		}
+		localization_key = GFX_SE_Fascism_Unification
+	}
+	text = {
+		trigger = { 
+			check_variable = { global.se_display = 2 }
+			
+		}
+		localization_key = GFX_brg_war_i
+	}
+	text = {
+		trigger = { 
+			check_variable = { global.se_display = 3 }
+			
+		}
+		localization_key = GFX_eu_war_i
+	}
+	
+}

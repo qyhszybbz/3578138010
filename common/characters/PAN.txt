@@ -1,0 +1,17 @@
+characters={
+	PAN_George_Van_Horn_Mosley = { #乔治·范·霍恩·莫斯利
+    name = PAN_George_Van_Horn_Mosley
+    portraits = {
+        civilian = {
+            large = GFX_leader_PAN_George_Van_Horn_Mosley
+        }
+    }
+    
+    country_leader = {
+        ideology = military_junta_tttt
+        traits = {
+            
+        }
+    }
+}
+}

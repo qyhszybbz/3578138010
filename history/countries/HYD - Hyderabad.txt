@@ -1,0 +1,102 @@
+﻿capital = 425 #海德拉巴城
+oob = "HYD_1935"
+set_stability = 0.62
+set_war_support = 0.55
+starting_train_buffer = 1
+set_fuel_ratio = 0.9
+load_focus_tree = generic_focus
+set_research_slots = 3
+set_cosmetic_tag = HYD_Osman #奥斯曼海德拉巴
+
+### 初始科技 ###
+set_technology = {
+	electronic_mechanical_engineering = 1
+	basic_fortification_tech = 1
+	basic_machine_tools = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_military_police = 1
+	tech_trucks = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	gwtank_chassis = 1
+	engine_tech_1 = 1
+}
+if = {
+	limit = {
+		NOT = { has_dlc = "By Blood Alone" }
+	}
+	set_technology = {
+		early_fighter = 1
+		fighter1 = 1
+		early_bomber = 1
+		strategic_bomber1 = 1
+		naval_bomber1 = 1
+	}
+}
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		mtg_transport = 1
+		basic_battery = 1
+		basic_torpedo = 1
+	}
+}
+### 领导人 ###
+recruit_character = HYD_Osman_Ali_Khan #奥斯曼·阿里·汗
+### 将领 ###
+recruit_character = HYD_Syed_Ahmed_El_Edroos #赛义德·艾哈迈德·穆赫达尔·阿尔-艾达鲁斯
+recruit_character = HYD_Azam_Jah #阿扎姆·贾
+recruit_character = HYD_Moazzam_Jah #穆阿扎姆·贾
+recruit_character = HYD_Raja_Rameshwar_Rao #拉贾·拉梅什瓦尔·拉奥
+recruit_character = HYD_Sarfaraz_Ali_Khan #萨法拉兹·阿里·汗
+
+add_ideas = {
+	### 初始民族精神 ###
+	HYD_Splendid_Golconda #璀璨戈尔康达
+	HYD_fortress_without_coast #无海岸的堡垒
+}
+
+set_politics = {
+	ruling_party = Authoritarianism
+	last_election = "1934.2.11"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	Democracy = 4
+	Conservatism = 6
+	Authoritarianism = 71
+	tttt = 16
+	fascism = 3
+}
+
+########
+
+

@@ -1,0 +1,149 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Poland_Leader_death"
+		texturefile = "gfx/event_pictures/TVE_NEWS/Europe/Poland_Leader_death.dds"
+	}
+	spriteType = {
+		name = "GFX_Aus_Hungry_boomerrrrrr"
+		texturefile = "gfx/event_pictures/TVE_NEWS/Europe/Aus_Hungry_boomerrrrrr.dds"
+	}
+	spriteType = {
+		name = "GFX_Aus_Hungry_War"
+		texturefile = "gfx/event_pictures/TVE_NEWS/Europe/Aus_Hungry_War.dds"
+	}
+	spriteType = {
+		name = "GFX_Aus_Hungry_Aus_Win"
+		texturefile = "gfx/event_pictures/TVE_NEWS/Europe/Aus_Hungry_Aus_Win.dds"
+	}
+	spriteType = {
+		name = "GFX_Kare_become_Aus_Leader"
+		texturefile = "gfx/event_pictures/TVE_NEWS/Europe/Kare_become_Aus_Leader.dds"
+	}
+	spriteType = {
+		name = "GFX_Italy_civil_war"
+		texturefile = "gfx/event_pictures/TVE_NEWS/Europe/Italy_civil_war.dds"
+	}
+	spriteType = {
+		name = "GFX_Russia_Coup"
+		texturefile = "gfx/event_pictures/TVE_NEWS/Europe/Russia_Coup.dds"
+	}
+	spriteType = {
+		name = "GFX_Third_Russian_Japan_War"
+		texturefile = "gfx/event_pictures/TVE_NEWS/Europe/Third_Russian_Japan_War.dds"
+	}
+	spriteType = {
+		name = "GFX_Third_Russian_Japan_War_Russian_Win"
+		texturefile = "gfx/event_pictures/TVE_NEWS/Europe/Third_Russian_Japan_War_Russian_Win.dds"
+	}
+	spriteType = {
+		name = "GFX_Poland_civil_war"
+		texturefile = "gfx/event_pictures/TVE_NEWS/Europe/Poland_civil_war.dds"
+	}
+	spriteType = {
+		name = "GFX_The_rebellion_in_the_Caucasian_Governorate"
+		texturefile = "gfx/event_pictures/TVE_NEWS/Europe/The_rebellion_in_the_Caucasian_Governorate.dds"
+	}
+	spriteType = {
+		name = "GFX_Russian_Attack_Western"
+		texturefile = "gfx/event_pictures/TVE_NEWS/Europe/Russian_Attack_Western.dds"
+	}
+	spriteType = {
+		name = "GFX_Prussia_Invasion_Ploand"
+		texturefile = "gfx/event_pictures/TVE_NEWS/Europe/Prussia_Invasion_Ploand.dds"
+	}
+	spriteType = {
+		name = "GFX_Prussia_Invasion_Baltic"
+		texturefile = "gfx/event_pictures/TVE_NEWS/Europe/Prussia_Invasion_Baltic.dds"
+	}
+	spriteType = {
+		name = "GFX_Prussia_Attack_Germany"
+		texturefile = "gfx/event_pictures/TVE_NEWS/Europe/Prussia_Attack_Germany.dds"
+	}
+	spriteType = {
+		name = "GFX_Aus_Creat_Danube_Agreement"
+		texturefile = "gfx/event_pictures/TVE_NEWS/Europe/Aus_Creat_Danube_Agreement.dds"
+	}
+	spriteType = {
+		name = "GFX_Rommina_Creat_faction"
+		texturefile = "gfx/event_pictures/TVE_NEWS/Europe/Rommina_Creat_faction.dds"
+	}
+	spriteType = {
+		name = "GFX_Nazi_marches_Denmark"
+		texturefile = "gfx/event_pictures/TVE_NEWS/Europe/Nazi_marches_Denmark.dds"
+	}
+	spriteType = {
+		name = "GFX_Kare_Reform_win"
+		texturefile = "gfx/event_pictures/TVE_NEWS/Europe/Kare_Reform_win.dds"
+	}
+	spriteType = {
+		name = "GFX_Balkan_Wars"
+		texturefile = "gfx/event_pictures/TVE_NEWS/Europe/Balkan_Wars.dds"
+	}
+	spriteType = {
+		name = "GFX_Prussia_Occupation_Berlin"
+		texturefile = "gfx/event_pictures/TVE_NEWS/Europe/Prussia_Occupation_Berlin.dds"
+	}
+	spriteType = {
+		name = "GFX_Aus_Occupation_South_Gremany"
+		texturefile = "gfx/event_pictures/TVE_NEWS/Europe/Aus_Occupation_South_Gremany.dds"
+	}
+	spriteType = {
+		name = "GFX_Britain_Gremany_faction"
+		texturefile = "gfx/event_pictures/TVE_NEWS/Europe/Britain_Gremany_faction.dds"
+	}
+	spriteType = {
+		name = "GFX_Seocnd_World_War"
+		texturefile = "gfx/event_pictures/TVE_NEWS/Europe/Seocnd_World_War.dds"
+	}
+	#Asian
+	spriteType = {
+		name = "GFX_China_Civil_War_Endding"
+		texturefile = "gfx/event_pictures/TVE_NEWS/Asian/China_Civil_War_Endding.dds"
+	}
+	spriteType = {
+		name = "GFX_China_Civil_War"
+		texturefile = "gfx/event_pictures/TVE_NEWS/Asian/China_Civil_War_start.dds"
+	}
+	spriteType = {
+		name = "GFX_China_Russia_Coperate"
+		texturefile = "gfx/event_pictures/TVE_NEWS/Asian/China_Russia_Coperate.dds"
+	}
+	spriteType = {
+		name = "GFX_Japan_Attack_TaiWan_Land"
+		texturefile = "gfx/event_pictures/TVE_NEWS/Asian/Japan_Attack_TaiWan_Land.dds"
+	}
+	spriteType = {
+		name = "GFX_Japan_Coup"
+		texturefile = "gfx/event_pictures/TVE_NEWS/Asian/Japan_Coup.dds"
+	}
+	spriteType = {
+		name = "GFX_ManChuKuo"
+		texturefile = "gfx/event_pictures/TVE_NEWS/Asian/ManChuKuo.dds"
+	}
+	spriteType = {
+		name = "GFX_Russian_invasion_Central_Asia"
+		texturefile = "gfx/event_pictures/TVE_NEWS/Asian/Russian_invasion_Central_Asia.dds"
+	}
+	spriteType = {
+		name = "GFX_Second_China_Japan_War"
+		texturefile = "gfx/event_pictures/TVE_NEWS/Asian/Second_China_Japan_War.dds"
+	}
+	#Amercian
+	spriteType = {
+		name = "GFX_Cottonrevolution"
+		texturefile = "gfx/event_pictures/TVE_NEWS/Amercian/Cottonrevolution.dds"
+	}
+	spriteType = {
+		name = "GFX_CSA_fucked_Nothern_USA"
+		texturefile = "gfx/event_pictures/TVE_NEWS/Amercian/CSA_fucked_Nothern_USA.dds"
+	}
+	spriteType = {
+		name = "GFX_Second_Amercian_War_Start"
+		texturefile = "gfx/event_pictures/TVE_NEWS/Amercian/Second_Amercian_War_Start.dds"
+	}
+
+	spriteType = {
+		name = "GFX_My_Dick_is_too_small"
+		texturefile = "gfx/event_pictures/TVE_NEWS/My_Dick_is_too_small.dds"
+	}
+}

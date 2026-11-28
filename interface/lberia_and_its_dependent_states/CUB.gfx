@@ -1,0 +1,17 @@
+spriteTypes = {
+	#领导人
+	spriteType = { #富尔亨西奥·巴蒂斯塔·萨尔迪瓦
+		name = "GFX_ldear_CUB_Alberto_Herrera_y_Franchi"
+		texturefile = "gfx/leaders/CUB/TVE_CUB_Fulgencio_Batista_Saldiva.dds"
+	}
+	spriteType = { #阿尔韦托·埃雷拉·伊·弗兰奇
+		name = "GFX_ldear_CUB_Alberto_Herrera_y_Franchi"
+		texturefile = "gfx/leaders/CUB/CUB_Alberto_Herrera_y_Franchi.dds"
+	}
+	#民族精神
+	spriteType = { #加勒比明珠
+		name = "GFX_idea_CUB_Caribbean_Pearl"
+		texturefile = "gfx/interface/ideas/CUB/TVE_CUB_Caribbean_Pearl.dds"
+	}
+	
+}

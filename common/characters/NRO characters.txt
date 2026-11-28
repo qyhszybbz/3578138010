@@ -1,0 +1,29 @@
+characters = {
+    #领导人
+	#米哈伊尔·德兹罗多夫斯基
+	NRO_Mikhail_Drozdovsky = {
+		name = NRO_Mikhail_Drozdovsky
+		portraits = {
+			civilian = {
+				large = GFX_NRO_Mikhail_Drozdovsky_large
+			}
+		}
+		country_leader = {
+			ideology = military_junta_tttt
+			traits = {  }
+		}
+		field_marshal = {
+			traits = {
+				RUS_national_officer
+				infantry_leader
+				commando
+				organizer
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 2
+		}
+	}
+}

@@ -1,0 +1,27 @@
+state={
+	id = 927
+	name="STATE_927"
+	resources={
+		aluminium=1.000
+		oil=1.000
+	}
+	provinces={
+		5159 8198 8218 10961 13295 
+	}
+	history = {
+
+		owner = BTG
+		add_core_of = BTG
+		add_core_of = CHL
+
+		buildings = {
+			infrastructure = 1
+		}
+
+		
+	}
+	manpower=28527
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

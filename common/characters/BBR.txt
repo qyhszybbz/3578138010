@@ -1,0 +1,18 @@
+characters = {
+	BBR_Bayard_Rustin = { #贝亚德·鲁斯汀
+    name = BBR_Bayard_Rustin
+    portraits = {
+        civilian = {
+            large = GFX_leader_BBR_Bayard_Rustin
+        }
+    }
+    
+    country_leader = {
+        ideology = left_wing_populism
+		desc = BBR_Bayard_Rustin_desc
+        traits = {
+            
+        }
+    }
+}
+}

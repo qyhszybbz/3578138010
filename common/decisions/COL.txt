@@ -1,0 +1,305 @@
+﻿debug_decisions = {
+	COL_Colombian_Civil_War = { #哥伦比亚内战测试
+		complete_effect = {
+		hidden_effect = {
+			BOL = {
+				transfer_state = 489
+			}
+			ECU = {
+				set_cosmetic_tag = ECU_CCW
+				transfer_state = 304
+				transfer_state = 488 
+			}
+			MIS = {
+				transfer_state = 1211
+				transfer_state = 1212
+			}
+			INC = {
+				transfer_state = 1213
+				transfer_state = 1216
+			}
+			MAY = {
+				transfer_state = 1214
+			}
+			ITZ = {
+				transfer_state = 303
+			}
+			RIG = {
+				transfer_state = 1209
+			}
+			WLA = {
+				transfer_state = 486
+			}
+			COL = {
+				set_popularities = {
+						communism = 65
+						Socialism = 25
+						Progressivism = 10
+				}
+				add_country_leader_role = {
+					character = COL_Plinio_Mendoza_Nera
+					promote_leader = yes
+					country_leader = {
+						desc = COL_Plinio_Mendoza_Nera_desc
+						ideology = Gaitanism
+			}
+			
+		}
+				set_party_name = {
+					ideology = communism
+					name = COL_communism_party_1
+					long_name = COL_communism_party_1_long
+		}
+				set_party_name = {
+						ideology = Socialism
+						name = COL_Socialism_party_2
+						long_name = COL_Socialism_party_2_long
+		}
+				set_party_name = {
+						ideology = Progressivism
+						name = COL_Progressivism_party_3
+						long_name = COL_Progressivism_party_3_long
+		}
+				set_cosmetic_tag = COL_CCW
+					remove_ideas = {
+						COL_The_legacy_and_aotgm
+						COL_divided_house
+						COL_Fulfilling_Bolivars_last_wish
+						COL_Cooperation_between_baa
+						COL_Do_not_train_the_border
+			}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						original_tag = MIS
+						original_tag = INC
+						original_tag = MAY
+						original_tag = ITZ
+						original_tag = RIG
+						original_tag = WLA
+					}
+				}
+				every_owned_state = {
+					add_core_of = PREV
+				}
+				inherit_technology = COL
+			}
+		}
+			
+		}
+	}
+}
+COL_Colombian_Civil_War = { # 哥伦比亚内战
+
+    COL_Colombian_Civil_War_1 = {
+        visible = {
+            always = no
+        }
+        fire_only_once = yes
+        days_mission_timeout = 3
+        activation = {
+            has_country_flag = COL_Colombian_Civil_War
+        }
+
+        available = { always = no }
+
+        timeout_effect = {
+            ECU = {
+                set_cosmetic_tag = ECU_CCW
+                transfer_state = 304
+                transfer_state = 488
+                inherit_technology = COL
+            }
+
+            activate_mission = COL_Colombian_Civil_War_2
+        }
+    }
+
+    COL_Colombian_Civil_War_2 = {
+        fire_only_once = yes
+        days_mission_timeout = 1
+         visible = {
+            always = no
+        }
+        activation = { always = no }
+        available = { always = no }
+
+        timeout_effect = {
+            MIS = {
+                transfer_state = 1211
+                transfer_state = 1212
+                inherit_technology = COL
+                every_owned_state = {
+                    add_core_of = MIS
+                }
+            }
+
+            activate_mission = COL_Colombian_Civil_War_3
+        }
+    }
+
+    COL_Colombian_Civil_War_3 = {
+        fire_only_once = yes
+        days_mission_timeout = 1
+
+        activation = { always = no }
+        available = { always = no }
+        visible = {
+            always = no
+        }
+        timeout_effect = {
+            BOL = {
+                transfer_state = 489
+                inherit_technology = COL
+                every_owned_state = {
+                    add_core_of = BOL
+                }
+            }
+
+            activate_mission = COL_Colombian_Civil_War_4
+        }
+    }
+
+    COL_Colombian_Civil_War_4 = {
+        fire_only_once = yes
+        days_mission_timeout = 1
+
+        activation = { always = no }
+        available = { always = no }
+        visible = {
+            always = no
+        }
+        timeout_effect = {
+            MAY = {
+                transfer_state = 1214
+                inherit_technology = COL
+                every_owned_state = {
+                    add_core_of = MAY
+                }
+            }
+
+            activate_mission = COL_Colombian_Civil_War_5
+        }
+    }
+
+    COL_Colombian_Civil_War_5 = {
+        fire_only_once = yes
+        days_mission_timeout = 1
+        visible = {
+            always = no
+        }
+        activation = { always = no }
+        available = { always = no }
+
+        timeout_effect = {
+            RIG = {
+                transfer_state = 1209
+                inherit_technology = COL
+                every_owned_state = {
+                    add_core_of = RIG
+                }
+            }
+
+            activate_mission = COL_Colombian_Civil_War_6
+        }
+    }
+
+    COL_Colombian_Civil_War_6 = {
+        fire_only_once = yes
+        days_mission_timeout = 1
+        visible = {
+            always = no
+        }
+        activation = { always = no }
+        available = { always = no }
+
+        timeout_effect = {
+            WLA = {
+                transfer_state = 486
+                inherit_technology = COL
+                every_owned_state = {
+                    add_core_of = WLA
+                }
+            }
+
+            activate_mission = COL_Colombian_Civil_War_7
+        }
+    }
+
+    COL_Colombian_Civil_War_7 = {
+        fire_only_once = yes
+        days_mission_timeout = 1
+        visible = {
+            always = no
+        }
+        activation = { always = no }
+        available = { always = no }
+
+        timeout_effect = {
+            INC = {
+                transfer_state = 1213
+                transfer_state = 1216
+                inherit_technology = COL
+                every_owned_state = {
+                    add_core_of = INC
+                }
+            }
+
+            activate_mission = COL_Colombian_Civil_War_8
+        }
+    }
+
+    COL_Colombian_Civil_War_8 = {
+        fire_only_once = yes
+        days_mission_timeout = 1
+        visible = {
+            always = no
+        }
+        activation = { always = no }
+        available = { always = no }
+
+        timeout_effect = {
+            ITZ = {
+                transfer_state = 303
+                inherit_technology = COL
+                every_owned_state = {
+                    add_core_of = ITZ
+                }
+            }
+
+            activate_mission = COL_Colombian_Civil_War_9
+        }
+    }
+
+    COL_Colombian_Civil_War_9 = {
+        fire_only_once = yes
+        days_mission_timeout = 1
+        visible = {
+            always = no
+        }
+        activation = { always = no }
+        available = { always = no }
+
+        timeout_effect = {
+            COL = {
+                set_cosmetic_tag = COL_CCW
+            }
+
+            activate_mission = COL_Colombian_Civil_War_10
+        }
+    }
+
+    COL_Colombian_Civil_War_10 = {
+        fire_only_once = yes
+        days_mission_timeout = 14
+        visible = {
+            always = no
+        }
+        activation = { always = no }
+        available = { always = no }
+
+        timeout_effect = {
+        }
+    }
+}

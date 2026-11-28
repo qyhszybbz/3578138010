@@ -1,0 +1,7 @@
+PUK_Reintegrate_Ukrainian_territory = { #整合乌克兰故土
+	icon = generic_formable_nations
+	allowed = { original_tag = PUK }
+	visible = {
+		always = yes
+	}
+}

@@ -1,0 +1,30 @@
+state = {
+	id = 822
+	name = "STATE_822"
+	manpower = 410560
+	
+	state_category = pastoral
+	resources = {
+		oil = 2
+	}
+	
+	history = {
+		owner = KEN
+		add_core_of = KEN
+		add_core_of = SOM
+		buildings = {
+			infrastructure = 2
+			12941 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+		 	12941 3
+		}
+	}
+	provinces = { 
+		11014 12941
+	}
+
+	local_supplies = 0.0 
+}

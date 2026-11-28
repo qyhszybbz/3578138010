@@ -1,0 +1,294 @@
+focus_tree={
+	country={
+		factor=0
+		modifier={
+			add=10
+			tag=COL
+		}
+	}
+	default=no
+
+	continuous_focus_position = { x = 2500 y = 2000 }
+	focus={ #万众瞩目豪尔赫
+		id=COL_All_eyes_on_Jorge
+		icon = GFX_focus_COL_All_eyes_on_Jorge
+		x=5
+		y=0
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={ #修建巴别塔
+		id=COL_Building_ttob
+		icon = GFX_focus_COL_Building_ttob
+		x=2
+		y=1
+		prerequisite={focus=COL_All_eyes_on_Jorge}
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={ #回顾往昔
+		id=COL_Looking_back_otp
+		icon = GFX_focus_COL_Looking_back_otp
+		x=8
+		y=1
+		prerequisite={focus=COL_All_eyes_on_Jorge}
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={ #与工会的洽谈
+		id=COL_Negotiations_wtlu
+		icon = GFX_focus_COL_Negotiations_wtlu
+		x=2
+		y=2
+		prerequisite={focus=COL_Building_ttob}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={ #新建党支部
+		id=COL_Establish_a_npb
+		icon = GFX_focus_COL_Establish_a_npb
+		x=5
+		y=2
+		prerequisite={focus=COL_Building_ttob}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={ #接通昔马雷霍
+		id=COL_Connect_to_Pumarejo
+		icon = GFX_focus_COL_Connect_to_Pumarejo
+		x=8
+		y=2
+		prerequisite={focus=COL_Looking_back_otp}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={ #联系负责人
+		id=COL_Contact_the_pic
+		icon = GFX_focus_COL_Contact_the_pic
+		x=2
+		y=3
+		prerequisite={focus=COL_Negotiations_wtlu}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={ #合并左翼联盟事务
+		id=COL_Consolidating_lwaa
+		icon = GFX_focus_COL_Consolidating_lwaa
+		x=5
+		y=4
+		prerequisite={focus=COL_Establish_a_npb}
+		prerequisite={focus=COL_Contact_the_pic}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={ #改造自由党
+		id=COL_Transforming_tlp
+		icon = GFX_focus_COL_Transforming_tlp
+		x=5
+		y=5
+		prerequisite={focus=COL_Consolidating_lwaa}
+		prerequisite={focus=COL_Connect_to_Pumarejo}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={ #新建的哥伦比亚
+		id=COL_The_newly_built_Colombia
+		icon = GFX_focus_COL_The_newly_built_Colombia
+		x=2
+		y=6
+		prerequisite={focus=COL_Transforming_tlp}
+		mutually_exclusive = { focus =COL_Taking_democracy_atgp }
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={ #以民主为纲领
+		id=COL_Taking_democracy_atgp
+		icon = GFX_focus_COL_Taking_democracy_atgp
+		x=8
+		y=6
+		prerequisite={focus=COL_Transforming_tlp}
+		mutually_exclusive = { focus =COL_The_newly_built_Colombia }
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={ #熟透的石榴
+		id=COL_A_fully_ripe_pomegranate
+		icon = GFX_focus_COL_A_fully_ripe_pomegranate
+		x=2
+		y=7
+		prerequisite={focus=COL_The_newly_built_Colombia}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={ #重启巴斯克斯案
+		id=COL_Reopening_the_Vazquez_case
+		icon = GFX_focus_COL_Reopening_the_Vazquez_case
+		x=8
+		y=7
+		prerequisite={focus=COL_Taking_democracy_atgp}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={ #谴责政变
+		id=COL_Condemn_the_coup
+		icon = GFX_focus_COL_Condemn_the_coup
+		x=1
+		y=8
+		prerequisite={focus=COL_A_fully_ripe_pomegranate}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={ #反思千日战争
+		id=COL_Reflecting_on_ttdw
+		icon = GFX_focus_COL_Reflecting_on_ttdw
+		x=3
+		y=8
+		prerequisite={focus=COL_A_fully_ripe_pomegranate}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={ #团结的国家
+		id=COL_A_united_nation
+		icon = GFX_focus_COL_A_united_nation
+		x=8
+		y=8
+		prerequisite={focus=COL_Reopening_the_Vazquez_case}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={ #大哥伦比亚之黎明
+		id=COL_The_Dawn_of_gc
+		icon = GFX_focus_COL_The_Dawn_of_gc
+		x=5
+		y=9
+		prerequisite={
+			focus=COL_Condemn_the_coup
+			focus=COL_A_united_nation
+		}
+		prerequisite={
+			focus=COL_Reflecting_on_ttdw
+			focus=COL_A_united_nation
+		}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+}

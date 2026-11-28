@@ -1,0 +1,61 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_SOV_BACKGROUND"
+		texturefile = "gfx/interface/SOV_GUI/SOV_BACKGROUND.dds"
+	}
+	spriteType = {
+		name = "GFX_SOV_CARDS"
+		texturefile = "gfx/interface/SOV_GUI/SOV_CARDS.dds"
+	}
+	spriteType = {
+		name = "GFX_SOV_ICON"
+		texturefile = "gfx/interface/SOV_GUI/SOV_ICON.dds"
+	}
+	spriteType = {
+		name = "GFX_SOV_LEADER_NEED_POINTS"
+		texturefile = "gfx/interface/SOV_GUI/SOV_LEADER_NEED_POINTS.dds"
+	}
+	spriteType = {
+		name = "GFX_SOV_LEADERS"
+		texturefile = "gfx/interface/SOV_GUI/SOV_LEADERS.dds"
+	}
+	spriteType = {
+		name = "GFX_SOV_POINTS"
+		texturefile = "gfx/interface/SOV_GUI/SOV_POINTS.dds"
+	}
+	spriteType = {
+		name = "GFX_SOV_RUSSIAN_MAP"
+		texturefile = "gfx/interface/SOV_GUI/SOV_RUSSIAN_MAP.dds"
+	}
+	spriteType = {
+		name = "GFX_SOV_LEGCO_TEST"
+		texturefile = "gfx/interface/SOV_GUI/SOV_LEGCO_TEST.dds"
+	}
+	spriteType = {
+		name = "GFX_KLSJ"
+		texturefile = "gfx/interface/SOV_GUI/KLSJ.dds"
+	}
+	spriteType = {
+		name = "GFX_NBKF"
+		texturefile = "gfx/interface/SOV_GUI/NBKF.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_NKLSF"
+		texturefile = "gfx/interface/SOV_GUI/NKLSF.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_QENF"
+		texturefile = "gfx/interface/SOV_GUI/QENF.dds"
+	}
+	spriteType = {
+		name = "GFX_SOV_LEGCO_BACKGROUND"
+		texturefile = "gfx/interface/SOV_GUI/SOV_LEGCO_BACKGROUND.dds"
+	}
+	spriteType = {
+		name = "GFX_SOV_legco_crt_icon"
+		texturefile = "gfx/interface/bottom_gui/SOV_legco_crt_icon.dds"
+		noOfFrames = 2
+	}
+}

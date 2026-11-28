@@ -1,0 +1,17 @@
+characters = {
+    #领导人
+    #部落理事会
+	PWQ_tribal_council = {
+        name = PWQ_tribal_council
+        portraits = {
+            civilian = {
+                large = GFX_idea_PWQ_tribal_council
+            }
+        }
+        country_leader = {
+            ideology = authoritarianism_small
+		    #desc = TWQ_tribal_council_desc
+            traits = { }
+        }
+    }  
+}

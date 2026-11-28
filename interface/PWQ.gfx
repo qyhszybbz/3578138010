@@ -1,0 +1,6 @@
+spriteTypes = { 
+	spriteType = { #部落理事会
+		name = "GFX_idea_PWQ_tribal_council"
+		texturefile = "gfx/leaders/PWQ/PWQ_tribal_council.dds"
+	}
+}

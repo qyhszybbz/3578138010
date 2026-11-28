@@ -1,0 +1,14 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_state = { 
+				limit = { is_core_Iberia = yes }
+				for_each_scope_loop = {
+					array = global.Iberia_tags_array
+					PREV = { enable_state_integration_50_compliance = yes }
+				}
+			}
+		}
+	}
+}
+

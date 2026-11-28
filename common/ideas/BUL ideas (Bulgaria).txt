@@ -1,0 +1,92 @@
+ideas = {
+	country = {
+        ### 初始民族精神 ###
+        #赤匪肆虐
+        BUL_communism_bandit = {
+			on_add = { log = "[GetLogRoot]: add idea BUL_communism_bandit" }
+			picture = communism_bandit
+			allowed = { always = no }
+			modifier = {
+                stability_factor = -0.10
+				war_support_factor = -0.1
+                consumer_goods_factor = 0.10
+                political_power_cost = 0.5
+			}
+		}
+        #军队建设状况:糟糕透顶
+        BUL_Military_Development_1 = {
+            on_add = { log = "[GetLogRoot]: add idea BUL_Military_Development_1" }
+			picture = Military_Development_1
+			allowed = { always = no }
+			modifier = {
+                army_attack_factor = -0.30
+	            army_defence_factor = -0.20
+                political_power_cost = 0.5
+                army_org_factor = -0.10
+                army_speed_factor = -0.10
+                stability_factor = -0.10
+			}
+        }
+        #经济建设状况:财政危机
+        BUL_Economic_development_1 = {
+            on_add = { log = "[GetLogRoot]: add idea BUL_Economic_development_1" }
+			picture = Economic_development_1
+			allowed = { always = no }
+			modifier = {
+                consumer_goods_factor = 0.30
+                stability_factor = -0.20
+                industrial_capacity_factory = -0.20
+                production_speed_buildings_factor = -0.20
+                research_speed_factor = -0.10
+                communism_drift = 0.5
+                Liberalism_drift = 0.5
+                tttt_drift = -0.5
+			}
+        }
+        #沙皇的阴谋
+        BUL_Tsar_Conspiracy = {
+            on_add = { log = "[GetLogRoot]: add idea BUL_Tsar_Conspiracy" }
+			picture = Tsar_Conspiracy
+			allowed = { always = no }
+			modifier = {
+                Authoritarianism_drift = 0.1
+			}
+        }
+        #铁腕统治
+        BUL_Ironfisted_rule = {
+            on_add = { log = "[GetLogRoot]: add idea BUL_Ironfisted_rule" }
+			picture = Ironfisted_rule
+			allowed = { always = no }
+			modifier = {
+                tttt_drift = 0.5
+                stability_factor = -0.15
+                war_support_factor = 0.10
+                political_power_gain = 0.80
+			}
+        }
+        #索菲亚条约
+        BUL_Treaty_of_Sofia = {
+            on_add = { log = "[GetLogRoot]: add idea BUL_Treaty_of_Sofia" }
+			picture = Treaty_of_Sofia
+			allowed = { always = no }
+			modifier = {
+                consumer_goods_factor = 0.20
+                political_power_gain = -0.5
+                custom_modifier_tooltip = BUL_Treaty_of_Sofia_tt
+			}
+        }
+        #马其顿的双刃剑
+        BUL_Doubleedged_sword = {
+            on_add = { log = "[GetLogRoot]: add idea BUL_Doubleedged_sword" }
+			picture = Doubleedged_sword
+			allowed = { always = no }
+			modifier = {
+                political_power_gain = -0.25
+			}
+            targeted_modifier = {
+                tag = YUG
+                trade_cost_for_target_factor = 0.30
+            }
+        }
+    }
+}

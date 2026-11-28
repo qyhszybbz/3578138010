@@ -1,0 +1,112 @@
+ideas ={
+	country ={
+		republic_country_sipirts = {
+			picture = chi_chinese_support
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			rule ={
+				can_declare_war_on_same_ideology = yes
+				can_puppet = yes
+				can_send_volunteers = yes
+				can_create_factions = yes
+			}
+			modifier ={
+				stability_factor = 0.10
+			}
+		}
+		zaibatsu = {
+			picture = jap_zaibatsu_ally
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier ={
+				political_power_factor = -0.10
+				consumer_goods_factor = 0.15
+				global_building_slots_factor = 0.25
+				production_speed_arms_factory_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_dockyard_factor = 0.05
+				production_speed_infrastructure_factor = 0.05
+				trade_laws_cost_factor = 0.25
+				economy_cost_factor = 0.25
+				political_advisor_cost_factor = 0.25
+				ai_focus_peaceful_factor = 0.25
+			}
+		}
+		old_time_1 = {
+			picture = jap_militarism_showa
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier ={
+				stability_factor = -0.15
+				war_support_factor = -0.15
+			}
+		}
+		Moderate_religious_policy = {
+			picture= state_shintoism
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier ={
+				stability_factor = 0.05
+				industrial_capacity_factory = 0.10
+				army_org_factor = -0.05
+			}
+		}
+		The_knife_in_the_senake ={
+			picture = sour_loser
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			targeted_modifier = {
+				tag = FRA
+				attack_bonus_against = 0.03
+				defense_bonus_against = 0.03
+			}
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = 0.03
+				defense_bonus_against = 0.03
+			}
+			targeted_modifier = {
+				tag = USA
+				attack_bonus_against = 0.03
+				defense_bonus_against = 0.03
+			}
+		}
+	}
+}

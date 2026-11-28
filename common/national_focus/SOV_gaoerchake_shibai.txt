@@ -1,0 +1,205 @@
+shared_focus = {
+	id = SOV_gonghe_xingcun
+	available = {
+	}
+	icon = GFX_focus_BRA_utilize_security_law
+	cost = 1
+	allow_branch = {
+		has_country_flag = SOV_gaoerchake_shibai_FLAG
+	}
+	x = 15
+	y = 0
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = SOV_daibu_junguan	
+	icon = GFX_focus_BRA_utilize_security_law
+	cost = 1
+	x = 0
+	y = 1
+	relative_position_id=SOV_gonghe_xingcun
+	available = {
+	}
+	prerequisite = {
+		focus = SOV_gonghe_xingcun
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = SOV_chonggui_wending
+	icon = GFX_focus_BRA_utilize_security_law
+	cost = 1
+	x = -1
+	y = 1
+	relative_position_id=SOV_daibu_junguan
+	available = {
+	}
+	prerequisite = {
+		focus = SOV_daibu_junguan
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = SOV_shenpan_shangjiang
+	icon = GFX_focus_BRA_utilize_security_law
+	cost = 1
+	x = 1
+	y = 1
+	relative_position_id=SOV_daibu_junguan
+	available = {
+	}
+	prerequisite = {
+		focus = SOV_daibu_junguan
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = SOV_gongheguo_forever
+	icon = GFX_focus_BRA_utilize_security_law
+	cost = 1
+	x = 1
+	y = 1
+	relative_position_id=SOV_chonggui_wending
+	available = {
+	}
+	prerequisite = {
+		focus = SOV_chonggui_wending
+	}
+	prerequisite = {
+		focus = SOV_shenpan_shangjiang
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = SOV_chidao_daxuan
+	icon = GFX_focus_BRA_utilize_security_law
+	cost = 1
+	x = 0
+	y = 1
+	relative_position_id=SOV_gongheguo_forever
+	available = {
+	}
+	prerequisite = {
+		focus = SOV_gongheguo_forever
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = SOV_1936_daxuan
+	icon = GFX_focus_BRA_utilize_security_law
+	cost = 1
+	x = 0
+	y = 1
+	relative_position_id=SOV_chidao_daxuan
+	available = {
+	}
+	prerequisite = {
+		focus = SOV_chidao_daxuan
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = SOV_shemin_gongdang_xuanju
+	icon = GFX_focus_BRA_utilize_security_law
+	cost = 1
+	x = -4
+	y = 1
+	relative_position_id=SOV_1936_daxuan
+	available = {
+	}
+	prerequisite = {
+		focus = SOV_1936_daxuan
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = SOV_shehui_gemin_xuanju
+	icon = GFX_focus_BRA_utilize_security_law
+	cost = 1
+	x = -2
+	y = 1
+	relative_position_id=SOV_1936_daxuan
+	available = {
+	}
+	prerequisite = {
+		focus = SOV_1936_daxuan
+	}
+	completion_reward = {
+		country_event=SOV_TVE.3
+	}
+}
+
+shared_focus = {
+	id = SOV_lixian_minzhu_xuanju
+	icon = GFX_focus_BRA_utilize_security_law
+	cost = 1
+	x = 0
+	y = 1
+	relative_position_id=SOV_1936_daxuan
+	available = {
+	}
+	prerequisite = {
+		focus = SOV_1936_daxuan
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = SOV_quanrus_lianmeng_xuanju
+	icon = GFX_focus_BRA_utilize_security_law
+	cost = 1
+	x = 2
+	y = 1
+	relative_position_id=SOV_1936_daxuan
+	available = {
+	}
+	prerequisite = {
+		focus = SOV_1936_daxuan
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = SOV_sawenkefu_xuanju
+	icon = GFX_focus_BRA_utilize_security_law
+	cost = 1
+	x = 4
+	y = 1
+	relative_position_id=SOV_1936_daxuan
+	available = {
+	}
+	prerequisite = {
+		focus = SOV_1936_daxuan
+	}
+	completion_reward = {
+		
+	}
+}

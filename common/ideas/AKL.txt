@@ -1,0 +1,15 @@
+ideas = {
+	country = {
+		AKL_provisional_government = { #临时政府
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+		AKL_rubber_boom = { #橡胶的繁荣
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+	}
+}

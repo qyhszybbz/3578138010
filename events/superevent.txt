@@ -1,0 +1,67 @@
+add_namespace = ITA_TVE_EVENT
+country_event = {
+	id = ITA_TVE_EVENT.1
+	title = ITA_TVE_EVENT.1.t
+	desc = ITA_TVE_EVENT.1.desc
+	#picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = ITA_TVE_EVENT.1.a
+		
+		
+		set_variable = { global.se_display = 1 }
+		#set_country_flag = visible_superevent_mos_ita
+
+			
+		play_song = duceduce
+		
+		
+	}
+	
+}
+country_event = {
+	id = ITA_TVE_EVENT.2
+	title = ITA_TVE_EVENT.2.t
+	desc = ITA_TVE_EVENT.2.desc
+	#picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = ITA_TVE_EVENT.2.a
+	
+		
+
+		set_variable = { global.se_display = 2 }
+		#set_country_flag = visible_superevent_brg_i
+			
+		play_song = magyarr
+	
+		
+	}
+	
+}
+country_event = {
+	id = ITA_TVE_EVENT.3
+	title = ITA_TVE_EVENT.3.t
+	desc = ITA_TVE_EVENT.3.desc
+	#picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = ITA_TVE_EVENT.3.a
+		
+		
+
+		set_variable = { global.se_display = 3 }
+		#set_country_flag = visible_superevent_brg_i
+			
+		play_song = eu_war_44.1kHz
+	
+		
+	}
+	
+}

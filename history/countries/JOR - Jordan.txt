@@ -1,0 +1,57 @@
+﻿capital = 453
+oob = "JOR_1935"
+set_stability = 0.34
+set_war_support = 0.28
+set_research_slots = 1
+starting_train_buffer = 0.5
+set_fuel_ratio = 0.9
+set_cosmetic_tag = JOR_Hashim #约旦哈希姆王国
+
+### 初始科技 ###
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	tech_trucks = 1
+	marines  = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	basic_train = 1
+	fuel_silos = 1
+	synth_oil_experiments = 1
+	fuel_refining = 1
+	camelry = 1
+}
+
+### 领导人 ###
+recruit_character = JOR_Abdullah_Ibin_Hussein #阿卜杜拉·伊本·侯赛因
+add_ideas = {
+
+}
+SYR = {
+	set_autonomy = {
+		target = JOR
+		autonomy_state = autonomy_colony
+	}
+}
+
+
+set_politics = {
+	ruling_party = tttt
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	communism = 0
+	Socialism = 4
+	Progressivism = 2
+	Liberalism = 0
+	Democracy = 7
+	Conservatism = 0
+	Authoritarianism = 10
+	tttt = 65
+	fascism = 12
+	nazism = 0
+}

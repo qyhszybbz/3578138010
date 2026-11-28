@@ -1,0 +1,91 @@
+characters = {
+	BRA_Pedro_III = { #佩徳罗三世
+		name = BRA_Pedro_III
+		portraits = {
+			
+			civilian = {
+				large = GFX_leader_BRA_Pedro_III
+			}
+		}
+		country_leader = { 
+			desc = BRA_Pedro_III_desc
+			ideology =	authoritarianism_small
+			traits = {
+			BRA_young_king
+		}
+	}	
+	}
+	BRA_Merleau_Viana = { #梅洛·维亚纳
+    name =  BRA_Merleau_Viana
+    portraits = {
+        army = {
+            small = GFX_idea_BRA_Merleau_Viana_ad 
+        }
+       
+    }
+    advisor = {
+        slot = political_advisor
+        idea_token = BRA_Merleau_Viana_advisor
+        desc = BRA_Merleau_Viana_desc
+        traits = {
+            BRA_The_Sentinels_of_the_Wolves
+        }
+        cost = 0
+    }
+	}
+	BRA_Otavio_Mangabera = { #奥塔维奥·曼加贝拉
+    name =  BRA_Otavio_Mangabera
+    portraits = {
+        army = {
+            small = GFX_idea_BRA_Otavio_Mangabera_ad
+        }
+       
+    }
+    advisor = {
+        desc = BRA_Otavio_Mangabera_desc
+        slot = political_advisor
+        idea_token = BRA_Otavio_Mangabera_advisor
+        traits = {
+            BRA_neutral_flag_bearer
+        }
+        cost = 0
+    }
+	}
+	BRA_Julio_Presters = { #儒利奥·普雷斯特斯
+    name =  BRA_Julio_Presters
+    portraits = {
+        army = {
+            small = GFX_idea_BRA_Julio_Presters_ad
+        }
+       
+    }
+    advisor = {
+        desc = BRA_Julio_Presters_desc
+        slot = second_in_command
+        idea_token = BRA_Julio_Presters_advisor
+        traits = {
+            BRA_finance_minister
+        }
+        cost = 0
+    }
+	}
+	BRA_Armando_de_Salles_Oliveira = { #阿曼多·德·萨列斯·奥利维拉
+    name =  BRA_Armando_de_Salles_Oliveira
+    portraits = {
+        army = {
+            small = GFX_idea_BRA_Armando_de_Salles_Oliveira_ad
+        }
+       
+    }
+    advisor = {
+        desc = BRA_Armando_de_Salles_Oliveira_desc
+        slot = political_advisor
+        idea_token = BRA_Armando_de_Salles_Oliveira_advisor
+        traits = {
+            BRA_Sagittarius_of_Orion
+        }
+        cost = 0
+    }
+	}
+}
+	

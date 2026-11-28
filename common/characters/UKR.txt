@@ -1,0 +1,128 @@
+characters = {
+	UKR_Pavlo_Petrovych_Skoropadskyi = {
+		name = UKR_Pavlo_Petrovych_Skoropadskyi
+		portraits = {
+			civilian = {
+				large = GFX_UKR_Pavlo_Petrovych_Skoropadskyi
+			}
+		}
+		country_leader = {
+			ideology = Conservatism_small
+			expire = "1953.3.1"
+			id = -1
+			traits = { }
+		}
+	}
+
+	RUS_Anton_Ivanovich_Denikin = {
+		name = RUS_Anton_Ivanovich_Denikin
+		portraits = {
+			civilian = {
+				large = GFX_RUS_Anton_Ivanovich_Denikin
+			}
+		}
+		country_leader = {
+			ideology = tttt_small
+			expire = "1953.3.1"
+			id = -1
+			traits = { }
+		}
+		corps_commander = {
+			traits = { media_personality }
+			skill = 7
+			attack_skill = 9
+			defense_skill = 1
+			planning_skill = 8
+			logistics_skill = 9
+		}
+	}
+
+	UKR_nikita_krushchyov = {
+		name = UKR_nikita_krushchyov
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Nikita_Sergeyevich_Khrushchyov
+			}
+		}
+		country_leader = {
+			ideology = communism_small
+			expire = "1953.3.1"
+			id = -1
+			traits = { }
+		}
+	}
+
+	UKR_stepan_bandera = {
+		name = UKR_stepan_bandera
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Stepan_Bandera
+			}
+		}
+		country_leader = {
+			ideology = fascism_small
+			expire = "1953.3.1"
+			id = -1
+			traits = { }
+		}
+	}
+
+	UKR_mykhailo_omelianovych_pavlenko = {
+
+		name = UKR_mykhailo_omelianovych_pavlenko
+
+		portraits = {
+			army = {
+				large = GFX_portrait_UKR_mykhailo_omelianovych_pavlenko
+				small = GFX_portrait_UKR_mykhailo_omelianovych_pavlenko_small
+			}
+		}
+
+		field_marshal = {
+			traits = { winter_specialist cavalry_leader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+			visible = {
+				NOT = {
+					has_government = communism
+				}
+			}
+		}
+		
+	}
+
+	UKR_pavlo_shandruk = {
+
+		name = UKR_pavlo_shandruk
+
+		portraits = {
+			army = {
+				large = GFX_portrait_UKR_pavlo_shandruk
+				small = GFX_portrait_UKR_pavlo_shandruk_small
+			}
+		}
+
+		corps_commander = {
+			traits = { ranger infantry_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+			}
+		}
+		
+	}
+	
+
+
+
+
+}
+	

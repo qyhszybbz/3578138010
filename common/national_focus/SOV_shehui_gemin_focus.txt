@@ -1,0 +1,936 @@
+focus_tree = {
+	id = SOV_shehui_gemin_focus_tree
+	
+	country = {
+		factor = 0
+	}	
+
+
+	focus = {
+		id = SOV_kelunsiji_2
+		available = {
+		}
+
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		allow_branch = {
+			
+		}
+		x = 13
+		y = 0
+		completion_reward = {
+			country_event=SOV_TVE.4
+		}
+	}
+
+	focus = {
+		id = SOV_duma_quanwei
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id=SOV_kelunsiji_2
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_kelunsiji_2
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = SOV_junqu_minyun
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = 2
+		y = 1
+		relative_position_id=SOV_kelunsiji_2
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_kelunsiji_2
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = SOV_gongheguo_zhiyi
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = -1
+		y = 1
+		relative_position_id=SOV_duma_quanwei
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_duma_quanwei
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_lixian_minzhudang
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = -1
+		y = 1
+		relative_position_id=SOV_gongheguo_zhiyi
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_gongheguo_zhiyi
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_zongtong_quanli
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = 1
+		y = 1
+		relative_position_id=SOV_duma_quanwei
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_duma_quanwei
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_difang_yihui
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = -1
+		y = 1
+		relative_position_id=SOV_zongtong_quanli
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_zongtong_quanli
+			focus = SOV_gongheguo_zhiyi
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_genchu_fubai
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = 1
+		y = 1
+		relative_position_id=SOV_zongtong_quanli
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_zongtong_quanli
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_laogong_baozhang
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = -3
+		y = 1
+		relative_position_id=SOV_difang_yihui
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_difang_yihui
+		}
+		prerequisite = {
+			focus = SOV_lixian_minzhudang
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_shichang_jianguan
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = -1
+		y = 1
+		relative_position_id=SOV_difang_yihui
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_difang_yihui
+		}
+		prerequisite = {
+			focus = SOV_lixian_minzhudang
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_minzhu_dengta
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id=SOV_genchu_fubai
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_genchu_fubai
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_gongmin_zhishang
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = 2
+		y = 1
+		relative_position_id=SOV_genchu_fubai
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_genchu_fubai
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_zhichi_gonghui
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = -1
+		y = 1
+		relative_position_id=SOV_laogong_baozhang
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_laogong_baozhang
+		}
+		prerequisite = {
+			focus = SOV_shichang_jianguan
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_nongye_jizhong
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = 1
+		y = 1
+		relative_position_id=SOV_laogong_baozhang
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_laogong_baozhang
+		}
+		prerequisite = {
+			focus = SOV_shichang_jianguan
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_jingji_huoli
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = 3
+		y = 1
+		relative_position_id=SOV_laogong_baozhang
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_laogong_baozhang
+		}
+		prerequisite = {
+			focus = SOV_shichang_jianguan
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_rus_sun
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id=SOV_minzhu_dengta
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_minzhu_dengta
+		}
+		prerequisite = {
+			focus = SOV_gongmin_zhishang
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_shisu_zhuyi
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = 3
+		y = 1
+		relative_position_id=SOV_minzhu_dengta
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_minzhu_dengta
+		}
+		prerequisite = {
+			focus = SOV_gongmin_zhishang
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_gongyequ_changyi
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id=SOV_zhichi_gonghui
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_zhichi_gonghui
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_nongmin_yuanjing
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id=SOV_nongye_jizhong
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_nongye_jizhong
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_new_rus
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id=SOV_rus_sun
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_rus_sun
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_laogu_lianmeng
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = 2
+		y = 1
+		relative_position_id=SOV_rus_sun
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_rus_sun
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_renmin_yizhi
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = 1
+		y = 1
+		relative_position_id=SOV_gongyequ_changyi
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_gongyequ_changyi
+		}
+		prerequisite = {
+			focus = SOV_nongmin_yuanjing
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_europe_dream
+		available = {
+		}
+
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		allow_branch = {
+			
+		}
+		x = 26
+		y = 0
+		completion_reward = {
+			
+		}
+		}
+
+	focus = {
+		id = SOV_fight_for_eu
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id=SOV_europe_dream
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_europe_dream
+		}
+		completion_reward = {
+			
+		}
+		}
+
+	focus = {
+		id = SOV_tashang_zhengcheng
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = -2
+		y = 1
+		relative_position_id=SOV_fight_for_eu
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_fight_for_eu
+		}
+		completion_reward = {
+			
+		}
+		}
+
+	focus = {
+		id = SOV_heping_jieguan_boltic
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = -1
+		y = 1
+		relative_position_id=SOV_tashang_zhengcheng
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_tashang_zhengcheng
+		}
+		completion_reward = {
+			
+		}
+		}
+
+	focus = {
+		id = SOV_chongzu_jinji
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = 2
+		y = 1
+		relative_position_id=SOV_fight_for_eu
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_fight_for_eu
+		}
+		completion_reward = {
+			
+		}
+		}
+
+	focus = {
+		id = SOV_eu_linian
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = 1
+		y = 1
+		relative_position_id=SOV_tashang_zhengcheng
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_tashang_zhengcheng
+		}
+		completion_reward = {
+			
+		}
+		}
+
+	focus = {
+		id = SOV_europe_eco
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = -1
+		y = 1
+		relative_position_id=SOV_chongzu_jinji
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_chongzu_jinji
+		}
+		completion_reward = {
+			
+		}
+		}
+
+	focus = {
+		id = SOV_zhenghe_diqu
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = 1
+		y = 1
+		relative_position_id=SOV_chongzu_jinji
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_chongzu_jinji
+		}
+		completion_reward = {
+			
+		}
+		}
+
+	focus = {
+		id = SOV_tebie_action
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = -2
+		y = 1
+		relative_position_id=SOV_heping_jieguan_boltic
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_heping_jieguan_boltic
+		}
+		completion_reward = {
+			
+		}
+		}
+
+	focus = {
+		id = SOV_hundred_war
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id=SOV_heping_jieguan_boltic
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_heping_jieguan_boltic
+		}
+		completion_reward = {
+			
+		}
+		}
+
+	focus = {
+		id = SOV_lisiben_to_wulaer
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id=SOV_eu_linian
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_eu_linian
+		}
+		completion_reward = {
+			
+		}
+		}
+
+	focus = {
+		id = SOV_chongjian_gongzuo
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id=SOV_europe_eco
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_europe_eco
+		}
+		completion_reward = {
+			
+		}
+		}
+
+	focus = {
+		id = SOV_europe_huobi
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id=SOV_zhenghe_diqu
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_zhenghe_diqu
+		}
+		completion_reward = {
+			
+		}
+		}
+
+	focus = {
+		id = SOV_europe_law
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = 2
+		y = 1
+		relative_position_id=SOV_zhenghe_diqu
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_zhenghe_diqu
+		}
+		completion_reward = {
+			
+		}
+		}
+
+	focus = {
+		id = SOV_fall_of_eagle
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id=SOV_hundred_war
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_hundred_war
+		}
+		completion_reward = {
+			
+		}
+		}
+
+	focus = {
+		id = SOV_chanchu_duliu
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = 2
+		y = 1
+		relative_position_id=SOV_hundred_war
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_hundred_war
+		}
+		completion_reward = {
+			
+		}
+		}
+
+	focus = {
+		id = SOV_final_for_2eagle
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id=SOV_fall_of_eagle
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_fall_of_eagle
+		}
+		completion_reward = {
+			country_event=SOV_TVE.6
+		}
+		}
+
+	focus = {
+		id = SOV_that_night
+		available = {
+		}
+
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		allow_branch = {
+			
+		}
+		x = 37
+		y = 0
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_perhaps_final_war
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id=SOV_that_night
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_that_night
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_eu_junyan
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = -1
+		y = 1
+		relative_position_id=SOV_perhaps_final_war
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_perhaps_final_war
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_selence_in_bianjing
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = -1
+		y = 1
+		relative_position_id=SOV_eu_junyan
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_eu_junyan
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_kouzhu_bifa
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = 1
+		y = 1
+		relative_position_id=SOV_perhaps_final_war
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_perhaps_final_war
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_tanpan_with_nu
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = 1
+		y = 1
+		relative_position_id=SOV_eu_junyan
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_eu_junyan
+		}
+		prerequisite = {
+			focus = SOV_kouzhu_bifa
+		}
+		completion_reward = {
+			
+		}
+	}
+
+
+	focus = {
+		id = SOV_sky_on_eu
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = 1
+		y = 1
+		relative_position_id=SOV_kouzhu_bifa
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_kouzhu_bifa
+		}
+		completion_reward = {
+			
+		}
+	}
+
+
+	focus = {
+		id = SOV_end_the_emper
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id=SOV_tanpan_with_nu
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_tanpan_with_nu
+		}
+		prerequisite = {
+			focus = SOV_selence_in_bianjing
+		}
+		prerequisite = {
+			focus = SOV_sky_on_eu
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_final_war_for_emper
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id=SOV_end_the_emper
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_end_the_emper
+		}
+		completion_reward = {
+			
+		}
+	}
+
+
+	focus = {
+		id = SOV_down_of_the_flag
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id=SOV_final_war_for_emper
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_final_war_for_emper
+		}
+		completion_reward = {
+			country_event=SOV_TVE.6
+		}
+	}
+
+	focus = {
+		id = SOV_qingsao_menhu
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = -1
+		y = 1
+		relative_position_id=SOV_down_of_the_flag
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_down_of_the_flag
+		}
+		completion_reward = {
+			country_event=SOV_TVE.6
+		}
+	}
+
+	focus = {
+		id = SOV_liming_jingqiaoqiao
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = 1
+		y = 1
+		relative_position_id=SOV_down_of_the_flag
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_down_of_the_flag
+		}
+		completion_reward = {
+			country_event=SOV_TVE.6
+		}
+	}
+
+	focus = {
+		id = SOV_strong_eu
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		x = 0
+		y = 2
+		relative_position_id=SOV_down_of_the_flag
+		available = {
+		}
+		prerequisite = {
+			focus = SOV_qingsao_menhu
+		}
+		prerequisite = {
+			focus = SOV_liming_jingqiaoqiao
+		}
+		completion_reward = {
+
+		}
+	}
+}
+	
+
+
+

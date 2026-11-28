@@ -1,0 +1,44 @@
+﻿l_simp_chinese:
+        CUB:0 "古巴共和国"
+        CUB_DEF:0 "古巴共和国"
+        CUB_ADJ:0 "古巴共和国"
+
+        SPR_puppet_CUB:0 "古巴自治领"
+        SPR_puppet_CUB_DEF:0 "古巴自治领"
+        SPR_puppet_CUB_ADJ:0 "古巴自治领"
+
+        CUB_communism_party:0 "古巴共产革命党"
+        CUB_communism_party_long:0 "古巴共产革命党"
+        CUB_Socialism_party:0 "青年古巴"
+        CUB_Socialism_party_long:0 "青年古巴"
+        CUB_Progressivism_party:0 "全国左翼联盟"
+        CUB_Progressivism_party_long:0 "全国左翼联盟"
+        CUB_Liberalism_party:0 "全国左翼联盟"
+        CUB_Liberalism_party_long:0 "全国左翼联盟"
+        CUB_Conservatism_party:0 "民族保守党"
+        CUB_Conservatism_party_long:0 "民族保守党"
+        CUB_Democracy_party:0 "全国左翼联盟"
+        CUB_Democracy_party_long:0 "全国左翼联盟"
+        CUB_Authoritarianism_party:0 "民族保守党"
+        CUB_Authoritarianism_party_long:0 "民族保守党"
+        CUB_tttt_party:0 "古巴军队最高司令部"
+        CUB_tttt_party_long:0 "古巴军队最高司令部"
+        CUB_fascism_party:0 "极端团体"
+        CUB_fascism_party_long:0 "极端团体"
+        CUB_nazism_party:0 "极端军官"
+        CUB_nazism_party_long:0 "极端军官"
+
+        CUB_Fulgencio_Batista_Saldiva:0 "富尔亨西奥·巴蒂斯塔·萨尔迪瓦"
+        CUB_Alberto_Herrera_y_Franchi:0 "阿尔韦托·埃雷拉·伊·弗兰奇"
+        CUB_Alberto_Herrera_y_Franchi_desc:0 "阿尔韦托·埃雷拉·伊·弗兰奇很清楚自己在面对什么。内战的血腥尘埃尚未落定，西班牙人便重返古巴，舰队直接封锁全岛。在驻军与反对派的配合下，执政的独裁者马查多不到两日便倒毙街头。\n马查多虽死，留下的乱局却必须有人收拾。身为内阁中唯一未逃的成员，阿尔韦托·埃雷拉·伊·弗兰奇将军成了西班牙人眼中最合适的人选。在西班牙驻军的扶持下，这位将军宣布就任古巴自治领总理，接管了古巴的最高权力。然而对他而言，这一切并非所愿。\n§R【没有人愿意被当作傀儡推上前台，哪怕傀儡本身也是如此】§!"
+
+        CUB_night_watchman:0 "守夜人"
+
+        CUB_Caribbean_Pearl:0 "加勒比明珠"
+        CUB_Caribbean_Pearl_desc:0 "历经数十年抗争，这颗加勒比海的蔚蓝明珠——盛产糖与烟草的富庶之地，终于挣脱了西班牙长达数个世纪的殖民锁链，迎来了名义上的自治。新成立的自治领虽被许多人寄予厚望，仿佛古巴的命运第一次真正握于己手，然而，马德里从未真正放松对这座“皇冠上最璀璨宝石”的掌控。自治政府的权力处处受制，经济命脉仍被半岛资本牢牢掌握。\n与此同时，一股更深远的思想浪潮正从大陆南方席卷而来——泛拉美主义日益高涨。它鼓吹着从墨西哥到阿根廷的西语世界大团结，其“美洲人的美洲”理念，不仅激发了古巴本土更彻底的独立诉求，也从根本上威胁着西班牙残存的帝国威信与切实利益。对马德里而言，失去古巴，将不仅是失去一颗“明珠”，更意味着其在美洲大陆影响力彻底终结的序幕。"
+        CUB_antonios_woman:0 "安东尼奥的女人"
+        CUB_antonios_woman_desc:0 "马查多死了，他仓皇逃出古巴时惊魂失措，最终被西班牙抓住处决，他又被称为“加勒比的普恩加莱”用独裁手段统治了这个西班牙的小岛数年。\n但是，他的法西斯主义思想和倾向独立的精神最终被西班牙人所不接受。最终，西班牙人知道了马查多是独立运动的领导人后，便将他通缉和抓捕，最终将他处决。\n马查多至今仍是古巴茶余饭后津津乐道的话题，有些人将他视为独立战争的英雄和殉道者；有些人却把他认作叛徒和内奸。"
+        CUB_Limbo:0 "灵薄狱"
+        CUB_Limbo_desc:0 "西班牙将关塔那摩这片古巴东南一片被烈日烤透的荒地变成了一个特殊的拘留营。第一批囚犯戴着镣铐、蒙着眼罩抵达，他们被关押在新建的、被铁网和探照灯包围的牢房中。这里被指定为法律上的特殊区域，既非西班牙本土也非普通战场，审讯和关押程序绕过了许多传统法律框架。\n随着时间推移，一排排编号的牢房不断扩建，关押着来的数千名被拘留者。这里面有殖民地的反西班牙分子，内战中的红色赤匪以及大大小小的反对党，任何西班牙政府不方便将其处决的人物都会到达此地，原本默默无闻的古巴一隅，就此永远地与“拘留营”这个概念绑定在一起。"
+
+       

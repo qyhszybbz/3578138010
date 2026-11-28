@@ -1,0 +1,110 @@
+characters={
+	HAI_Jacques_Roumin = { # 雅克·鲁曼
+    name = HAI_Jacques_Roumin
+    portraits = {
+        civilian = {
+            #large = GFX_leader_HAI_Jacques_Roumin
+        }
+    }
+    
+    country_leader = {
+        ideology = communism_small
+        traits = {
+            
+        }
+    }
+	country_leader = {
+		ideology = socialism_small
+		traits = {
+            
+        }
+	}
+	country_leader = {
+		ideology = progressivism_small
+		traits = {
+            
+        }
+	}
+}
+	HAI_Demostnes_Petrus_Callixter = { #德莫斯特内斯·佩特鲁斯·卡利克斯特
+    name = HAI_Demostnes_Petrus_Callixter
+    portraits = {
+        civilian = {
+            large = GFX_leader_HAI_Demostnes_Petrus_Callixter
+        }
+    }
+    
+    country_leader = {
+        ideology = liberalism_small
+        traits = {
+            
+        }
+    }
+}
+	HAI_Pierre_Joseph_Louis_Dejouy = { #皮埃尔·约瑟夫·路易斯·德茹瓦
+    name = HAI_Pierre_Joseph_Louis_Dejouy
+    portraits = {
+        civilian = {
+            #large = GFX_leader_HAI_Pierre_Joseph_Louis_Dejouy
+        }
+    }
+    
+    country_leader = {
+        ideology = Conservatism_small
+        traits = {
+            
+        }
+    }
+}
+	HAI_Steinho_Joseph_Vincent = { #斯泰尼奥·约瑟夫·文森特
+    name = HAI_Steinho_Joseph_Vincent
+    portraits = {
+        civilian = {
+            #large = GFX_leader_HAI_Steinho_Joseph_Vincent
+        }
+    }
+    
+    country_leader = {
+        ideology = authoritarianism_small
+        traits = {
+            
+        }
+    }
+}
+	HAI_John_Henry_Russell_Jr = { #小约翰·亨利·罗素
+    name = HAI_John_Henry_Russell_Jr
+    portraits = {
+        civilian = {
+            #large = GFX_leader_HAI_John_Henry_Russell_Jr
+        }
+    }
+    
+    country_leader = {
+        ideology = tttt_small
+        traits = {
+            
+        }
+    }
+}
+	HAI_Carl_Bruyard = { #卡尔·布鲁亚德
+    name = HAI_Carl_Bruyard
+    portraits = {
+        civilian = {
+            #large = GFX_leader_HAI_Carl_Bruyard
+        }
+    }
+    
+    country_leader = {
+        ideology = fascism_small
+        traits = {
+            
+        }
+    }
+	country_leader = {
+        ideology = nazism_small
+        traits = {
+            
+        }
+    }
+}
+}

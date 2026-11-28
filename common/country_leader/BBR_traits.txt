@@ -1,0 +1,7 @@
+leader_traits ={ 
+	BBR_Black_Lenin = { #黑人列宁
+		war_support_factor = 0.15
+		Socialism_drift = 0.01
+	}
+
+}

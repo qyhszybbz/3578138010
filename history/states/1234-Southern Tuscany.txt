@@ -1,0 +1,34 @@
+
+state={
+	id = 1234
+	name="STATE_1234"
+	manpower = 1387686
+	
+	state_category = city
+
+	history={
+		owner = LBV
+		add_core_of = LBV
+		add_core_of = ITA
+		add_core_of = TTS
+		add_core_of = TOS
+		victory_points = {
+			9907 3 #佛罗伦萨
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 1
+		}
+		victory_points = {
+			6946 1 
+		}
+		
+	}
+
+	provinces={
+		9879 11889 1616 9907 6946
+	}
+
+	local_supplies=0.0 
+}

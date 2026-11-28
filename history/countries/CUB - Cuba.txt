@@ -1,0 +1,35 @@
+﻿capital = 314
+
+oob = "CUB_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_trucks = 1
+}
+
+set_war_support = 0.1
+set_convoys = 20
+
+recruit_character = CUB_Fulgencio_Batista_Saldiva  #埃米利奥·阿基纳尔多
+recruit_character = CUB_Alberto_Herrera_y_Franchi  #阿尔韦托·埃雷拉·伊·弗兰奇
+set_cosmetic_tag = SPR_puppet_CUB
+add_ideas = {
+	CUB_Caribbean_Pearl #加勒比明珠
+	CUB_antonios_woman
+	CUB_Limbo
+}
+set_politics = {
+	ruling_party = tttt
+	last_election = "1936.1.10"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	tttt = 70
+	Democracy = 5
+	Authoritarianism = 20
+	fascism = 5
+}
+
+

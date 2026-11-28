@@ -1,0 +1,630 @@
+spriteTypes = {
+	#法案
+	spriteType = {
+		name = "GFX_idea_normal_industry"
+		texturefile = "gfx/interface/ideas/_industry.dds"
+	}spriteType = {
+		name = "GFX_idea_less_industry"
+		texturefile = "gfx/interface/ideas/_industry.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_no_industry"
+		texturefile = "gfx/interface/ideas/_industry.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_well_industry"
+		texturefile = "gfx/interface/ideas/_industry.dds"
+	}
+	#意大利地区通用民族精神
+	#内战旷久
+	spriteType = {
+		name = "GFX_idea_Protracted_civilwar"
+		texturefile = "gfx/interface/ideas/LBV/Protracted_civilwar.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Protracted_civilwar_desc"
+		texturefile = "gfx/interface/ideas/LBV/Protracted_civilwar_desc.png"
+		legacy_lazy_load = no
+	}
+	#中国民族精神
+
+	#伦敦股殇
+	spriteType = {
+		name = "GFX_idea_stock_market_crash"
+		texturefile = "gfx/interface/ideas/CHI/stock_market_crash.png"
+	}
+	spriteType = {
+		name = "GFX_idea_stock_market_crash_desc"
+		texturefile = "gfx/interface/ideas/CHI/stock_market_crash_desc.png"
+		legacy_lazy_load = no
+	}
+	#宪治稳实业兴
+	spriteType = {
+		name = "GFX_idea_Good_Constitution"
+		texturefile = "gfx/interface/ideas/CHI/Good_Constitution.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Good_Constitution_desc"
+		texturefile = "gfx/interface/ideas/CHI/Good_Constitution_desc.png"
+		legacy_lazy_load = no
+	}
+	#教化未广，文教不兴
+	spriteType = {
+		name = "GFX_idea_Bad_Education_1"
+		texturefile = "gfx/interface/ideas/CHI/Bad_Education_1.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Bad_Education_1_desc"
+		texturefile = "gfx/interface/ideas/CHI/Bad_Education_1_desc.png"
+		legacy_lazy_load = no
+	}
+	#“稳健”为帜
+	spriteType = {
+		name = "GFX_idea_Banner_of_Stability"
+		texturefile = "gfx/interface/ideas/CHI/Banner_of_Stability.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Banner_of_Stability_desc"
+		texturefile = "gfx/interface/ideas/CHI/Banner_of_Stability_desc.png"
+		legacy_lazy_load = no
+	}
+	#国心两歧
+	spriteType = {
+		name = "GFX_idea_State_Divergences"
+		texturefile = "gfx/interface/ideas/CHI/State_Divergences.png"
+	}
+	spriteType = {
+		name = "GFX_idea_State_Divergences_desc"
+		texturefile = "gfx/interface/ideas/CHI/State_Divergences_desc.png"
+		legacy_lazy_load = no
+	}
+	#亚洲第一民主国
+	spriteType = {
+		name = "GFX_idea_Asias_first_democracy"
+		texturefile = "gfx/interface/ideas/CHI/Asias_first_democracy.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Asias_first_democracy_desc"
+		texturefile = "gfx/interface/ideas/CHI/Asias_first_democracy_desc.png"
+		legacy_lazy_load = no
+	}
+	#“攘外必先安内”
+	spriteType = {
+		name = "GFX_idea_Stable_Internally_first"
+		texturefile = "gfx/interface/ideas/CHI/Stable_Internally_first.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Stable_Internally_first_desc"
+		texturefile = "gfx/interface/ideas/CHI/Stable_Internally_first_desc.png"
+		legacy_lazy_load = no
+	}
+	#壬申军改
+	spriteType = {
+		name = "GFX_idea_renshen_reform"
+		texturefile = "gfx/interface/ideas/CHI/renshen_reform.png"
+	}
+	spriteType = {
+		name = "GFX_idea_renshen_reform_desc"
+		texturefile = "gfx/interface/ideas/CHI/renshen_reform_desc.png"
+		legacy_lazy_load = no
+	}
+	#备受争议的“甲戌国会”
+	spriteType = {
+		name = "GFX_idea_Questioned_Jiaxu_Congress"
+		texturefile = "gfx/interface/ideas/CHI/Questioned_Jiaxu_Congress.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Questioned_Jiaxu_Congress_desc"
+		texturefile = "gfx/interface/ideas/CHI/Questioned_Jiaxu_Congress_desc.png"
+		legacy_lazy_load = no
+	}
+	#省宪自治：央地不和
+	spriteType = {
+		name = "GFX_idea_Provincial_Autonomy_CentralLocal_Tension"
+		texturefile = "gfx/interface/ideas/CHI/Provincial_Autonomy_CentralLocal_Tension.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Provincial_Autonomy_CentralLocal_Tension_desc"
+		texturefile = "gfx/interface/ideas/CHI/Provincial_Autonomy_CentralLocal_Tension_desc.png"
+		legacy_lazy_load = no
+	}
+	#修宪风波
+	spriteType = {
+		name = "GFX_idea_Constitutional_amendment_controversy"
+		texturefile = "gfx/interface/ideas/CHI/Constitutional_amendment_controversy.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Constitutional_amendment_controversy_desc"
+		texturefile = "gfx/interface/ideas/CHI/Constitutional_amendment_controversy_desc.png"
+		legacy_lazy_load = no
+	}
+	#工业化堪为艰
+	spriteType = {
+		name = "GFX_idea_Difficult_Industrialization"
+		texturefile = "gfx/interface/ideas/CHI/Difficult_Industrialization.png"
+	}
+	#正值事业之年
+	spriteType = {
+		name = "GFX_idea_Year_of_Career_Success"
+		texturefile = "gfx/interface/ideas/CHI/Year_of_Career_Success.png"
+	}
+	#超级大总统制
+	spriteType = {
+		name = "GFX_idea_super_president"
+		texturefile = "gfx/interface/ideas/CHI/super_president.png"
+	}
+	#民族主义崛起
+	spriteType = {
+		name = "GFX_idea_Rise_of_nationalism"
+		texturefile = "gfx/interface/ideas/CHI/Rise_of_nationalism.png"
+	}
+	#府学啄玉徐缓
+	spriteType = {
+		name = "GFX_idea_slow_school"
+		texturefile = "gfx/interface/ideas/CHI/slow_school.png"
+	}
+	#袁帅武威扬望
+	spriteType = {
+		name = "GFX_idea_Yuan_pride"
+		texturefile = "gfx/interface/ideas/CHI/Yuan_pride.png"
+	}
+	#刀枪鸣北洋军
+	spriteType = {
+		name = "GFX_idea_Beiyang_army"
+		texturefile = "gfx/interface/ideas/CHI/Beiyang_army.png"
+	}
+	#佃农家经济依
+	spriteType = {
+		name = "GFX_idea_farmer_eco"
+		texturefile = "gfx/interface/ideas/CHI/farmer_eco.png"
+	}
+
+	#伊拉克民族精神
+	#堪堪起步的民族国家
+	spriteType = {
+		name = "GFX_idea_start_national_country"
+		texturefile = "gfx/interface/ideas/IRQ/start_national_country.png"
+	}
+	#国有化斗争-初步胜利
+	spriteType = {
+		name = "GFX_idea_Preliminary_nation_industry"
+		texturefile = "gfx/interface/ideas/IRQ/Preliminary_nation_industry.png"
+	}
+	#枪杆子与笔杆子的斗争
+	spriteType = {
+		name = "GFX_idea_gun_fight_pen"
+		texturefile = "gfx/interface/ideas/IRQ/gun_fight_pen.png"
+	}
+	#一轮土地改革-完全失败
+	spriteType = {
+		name = "GFX_idea_fall_land_rev"
+		texturefile = "gfx/interface/ideas/IRQ/fall_land_rev.png"
+	}
+	#亚述屠杀案争议
+	spriteType = {
+		name = "GFX_idea_discussion_of_massacre"
+		texturefile = "gfx/interface/ideas/IRQ/discussion_of_massacre.png"
+	}
+	#“革命新城”建设热潮
+	spriteType = {
+		name = "GFX_idea_rev_new_city"
+		texturefile = "gfx/interface/ideas/IRQ/rev_new_city.png"
+	}
+	#摇摆不定的什叶派
+	spriteType = {
+		name = "GFX_idea_wavering_Shia"
+		texturefile = "gfx/interface/ideas/IRQ/wavering_Shia.png"
+	}
+	#支援也门革命
+	spriteType = {
+		name = "GFX_idea_support_ym_rev"
+		texturefile = "gfx/interface/ideas/IRQ/support_ym_rev.png"
+	}
+	#两河流域的赤色灯塔
+	spriteType = {
+		name = "GFX_idea_rise_star_of_2_rivers"
+		texturefile = "gfx/interface/ideas/IRQ/rise_star_of_2_rivers.png"
+	}
+	#日本民族精神
+	#万世一系
+	spriteType = {
+		name = "GFX_idea_Unbroken_line_through_ages"
+		texturefile = "gfx/interface/ideas/JAP/Unbroken_line_through_ages.png"
+	}
+	#混乱的内阁
+	spriteType = {
+		name = "GFX_idea_Chaotic_Cabinet"
+		texturefile = "gfx/interface/ideas/JAP/Chaotic_Cabinet.png"
+	}
+	#迷茫前路
+	spriteType = {
+		name = "GFX_idea_Confused_road"
+		texturefile = "gfx/interface/ideas/JAP/Confused_road.png"
+	}
+	#共和革命的余波
+	spriteType = {
+		name = "GFX_idea_Aftermath_of_Republican_Revolution"
+		texturefile = "gfx/interface/ideas/JAP/Aftermath_of_Republican_Revolution.png"
+	}
+	#日俄战争的胜利者
+	spriteType = {
+		name = "GFX_idea_winner_of_RussoJapanese_War"
+		texturefile = "gfx/interface/ideas/JAP/winner_of_RussoJapanese_War.png"
+	}
+	#北意大利民族精神
+	#瘫痪的黑衫军
+	spriteType = {
+		name = "GFX_idea_Paralyzed_Blackshirts"
+		texturefile = "gfx/interface/ideas/LBV/Paralyzed_Blackshirts.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Paralyzed_Blackshirts_desc"
+		texturefile = "gfx/interface/ideas/LBV/Paralyzed_Blackshirts_desc.png"
+		legacy_lazy_load = no
+	}
+	#岌岌可危的委员会
+	spriteType = {
+		name = "GFX_idea_Committee_in_danger"
+		texturefile = "gfx/interface/ideas/LBV/Committee_in_danger.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Committee_in_danger_desc"
+		texturefile = "gfx/interface/ideas/LBV/Committee_in_danger_desc.png"
+		legacy_lazy_load = no
+	}
+	#西班牙民族精神
+	#教皇子午线
+	spriteType = {
+		name = "GFX_idea_Papal_Meridian"
+		texturefile = "gfx/interface/ideas/SPR/Papal_Meridian.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Papal_Meridian_desc"
+		texturefile = "gfx/interface/ideas/SPR/Papal_Meridian_desc.png"
+		legacy_lazy_load = no
+	}
+	#内战的遗产
+	spriteType = {
+		name = "GFX_idea_Legacy_of_the_Civil_War"
+		texturefile = "gfx/interface/ideas/SPR/Legacy_of_the_Civil_War.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Legacy_of_the_Civil_War_desc"
+		texturefile = "gfx/interface/ideas/SPR/Legacy_of_the_Civil_War_desc.png"
+		legacy_lazy_load = no
+	}
+	#西班牙军队
+	spriteType = {
+		name = "GFX_idea_spanish_army"
+		texturefile = "gfx/interface/ideas/SPR/spanish_army.png"
+	}
+	spriteType = {
+		name = "GFX_idea_spanish_army_desc"
+		texturefile = "gfx/interface/ideas/SPR/spanish_army_desc.png"
+		legacy_lazy_load = no
+	}
+	#空悬王座
+	spriteType = {
+		name = "GFX_idea_The_hanging_throne"
+		texturefile = "gfx/interface/ideas/SPR/The_hanging_throne.png"
+	}
+	spriteType = {
+		name = "GFX_idea_The_hanging_throne_desc"
+		texturefile = "gfx/interface/ideas/SPR/The_hanging_throne_desc.png"
+		legacy_lazy_load = no
+	}
+	#自治难题
+	spriteType = {
+		name = "GFX_idea_Autonomy_Dilemma"
+		texturefile = "gfx/interface/ideas/SPR/Autonomy_Dilemma.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Autonomy_Dilemma_desc"
+		texturefile = "gfx/interface/ideas/SPR/Autonomy_Dilemma_desc.png"
+		legacy_lazy_load = no
+	}
+	#波兰民族精神
+	#瑟姆恐慌
+	spriteType = {
+		name = "GFX_idea_Sejm_panic"
+		texturefile = "gfx/interface/ideas/POL/Sejm_panic.png"
+	}
+	#街头斗殴
+	spriteType = {
+		name = "GFX_idea_Street_brawl"
+		texturefile = "gfx/interface/ideas/POL/Street_brawl.png"
+	}
+	#腐烂生蛆的血肉长城
+	spriteType = {
+		name = "GFX_idea_Ramparts_of_Rotting_Flesh"
+		texturefile = "gfx/interface/ideas/POL/Ramparts_of_Rotting_Flesh.png"
+	}
+	#人心欲壑
+	spriteType = {
+		name = "GFX_modifier_POL_trench_desire"
+		texturefile = "gfx/interface/ideas/POL/trench_desire.png"
+	}
+	#德国民族精神
+	#普鲁士军魂
+	spriteType = {
+		name = "GFX_idea_Prussian_military_spirit"
+		texturefile = "gfx/interface/ideas/GER/Prussian_military_spirit.png"
+	}
+	#臃肿的行政系统
+	spriteType = {
+		name = "GFX_idea_Bureaucratic_administrative_system"
+		texturefile = "gfx/interface/ideas/GER/Bureaucratic_administrative_system.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Bureaucratic_administrative_system_desc"
+		texturefile = "gfx/interface/ideas/GER/Bureaucratic_administrative_system_desc.png"
+		legacy_lazy_load = no
+	}
+	#十一月革命的余烬
+	spriteType = {
+		name = "GFX_idea_Aftermath_of_November_Revolution"
+		texturefile = "gfx/interface/ideas/GER/Aftermath_of_November_Revolution.png"
+	}
+	#《凡尔赛条约》的枷锁
+	spriteType = {
+		name = "GFX_idea_Shackles_of_Treaty_of_Versailles"
+		texturefile = "gfx/interface/ideas/GER/Shackles_of_Treaty_of_Versailles.png"
+	}
+	#战火带来的阴影
+	spriteType = {
+		name = "GFX_modifier_GER_Shadow_of_War"
+		texturefile = "gfx/interface/ideas/GER/Shadow_of_War.png"
+	}
+	spriteType = {
+		name = "GFX_modifier_GER_Shadow_of_War_desc"
+		texturefile = "gfx/interface/ideas/GER/Shadow_of_War_desc.png"
+		legacy_lazy_load = no
+	}
+	#帝国陆军
+	spriteType = {
+		name = "GFX_modifier_GER_Imperial_Army"
+		texturefile = "gfx/interface/ideas/GER/Imperial_Army.png"
+	}
+	spriteType = {
+		name = "GFX_modifier_GER_Imperial_Army_desc"
+		texturefile = "gfx/interface/ideas/GER/Imperial_Army_desc.png"
+		legacy_lazy_load = no
+	}
+	#帝国海军
+	spriteType = {
+		name = "GFX_idea_Imperial_Navy"
+		texturefile = "gfx/interface/ideas/GER/Imperial_Navy.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Imperial_Navy_desc"
+		texturefile = "gfx/interface/ideas/GER/Imperial_Navy_desc.png"
+		legacy_lazy_load = no
+	}
+	#帝国空军
+	spriteType = {
+		name = "GFX_idea_Imperial_AirForce"
+		texturefile = "gfx/interface/ideas/GER/Imperial_AirForce.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Imperial_AirForce_desc"
+		texturefile = "gfx/interface/ideas/GER/Imperial_AirForce_desc.png"
+		legacy_lazy_load = no
+	}
+	#罗马尼亚民族精神
+	#徒有其表的共和国
+	spriteType = {
+		name = "GFX_idea_hollow_republic"
+		texturefile = "gfx/interface/ideas/ROM/hollow_republic.png"
+	}
+	#一党制霸的反噬
+	spriteType = {
+		name = "GFX_idea_one_party_blowback"
+		texturefile = "gfx/interface/ideas/ROM/one_party_blowback.png"
+	}
+	spriteType = {
+		name = "GFX_idea_one_party_blowback_desc"
+		texturefile = "gfx/interface/ideas/ROM/one_party_blowback_desc.png"
+		legacy_lazy_load = no
+	}
+	#刺猬国度
+	spriteType = {
+		name = "GFX_idea_hedgehog_nation"
+		texturefile = "gfx/interface/ideas/ROM/hedgehog_nation.png"
+	}
+	spriteType = {
+		name = "GFX_idea_hedgehog_nation_desc"
+		texturefile = "gfx/interface/ideas/ROM/hedgehog_nation_desc.png"
+		legacy_lazy_load = no
+	}
+	#新播种主义的复兴
+	spriteType = {
+		name = "GFX_idea_new_sowingism"
+		texturefile = "gfx/interface/ideas/ROM/new_sowingism.png"
+	}
+	#俄罗斯民族精神
+	#国家未来之路
+	spriteType = {
+		name = "GFX_idea_Nations_Path_Forward"
+		texturefile = "gfx/interface/ideas/SOV/Nations_Path_Forward.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Nations_Path_Forward_desc"
+		texturefile = "gfx/interface/ideas/SOV/Nations_Path_Forward_desc.png"
+		legacy_lazy_load = no
+	}
+	#经济发展恢复中
+	spriteType = {
+		name = "GFX_idea_Economic_development_recover"
+		texturefile = "gfx/interface/ideas/SOV/Economic_development_recover.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Economic_development_recover_desc"
+		texturefile = "gfx/interface/ideas/SOV/Economic_development_recover_desc.png"
+		legacy_lazy_load = no
+	}
+	#俄罗斯保护主义
+	spriteType = {
+		name = "GFX_idea_Russian_protectionism"
+		texturefile = "gfx/interface/ideas/SOV/Russian_protectionism.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Russian_protectionism_desc"
+		texturefile = "gfx/interface/ideas/SOV/Russian_protectionism_desc.png"
+		legacy_lazy_load = no
+	}
+	#无法约束的总参谋部
+	spriteType = {
+		name = "GFX_idea_Unconstrained_General_Staff"
+		texturefile = "gfx/interface/ideas/SOV/Unconstrained_General_Staff.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Unconstrained_General_Staff_desc"
+		texturefile = "gfx/interface/ideas/SOV/Unconstrained_General_Staff_desc.png"
+		legacy_lazy_load = no
+	}
+	#共和国之军
+	spriteType = {
+		name = "GFX_modifier_SOV_Army_of_Republic"
+		texturefile = "gfx/interface/ideas/SOV/Army_of_Republic.png"
+	}
+	spriteType = {
+		name = "GFX_modifier_SOV_Army_of_Republic_desc"
+		texturefile = "gfx/interface/ideas/SOV/Army_of_Republic_desc.png"
+		legacy_lazy_load = no
+	}
+	#普拉蒂尼民族精神
+	#共和派的避难所
+	spriteType = {
+		name = "GFX_idea_Republican_refuge"
+		texturefile = "gfx/interface/ideas/BRB/Republican_refuge.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Republican_refuge_desc" 
+		texturefile = "gfx/interface/ideas/BRB/Republican_refuge_desc.png"
+		legacy_lazy_load = no
+	}
+	#阿根廷军事援助
+	spriteType = {
+		name = "GFX_idea_argentine_militaryaid"
+		texturefile = "gfx/interface/ideas/BRB/argentine_militaryaid.png"
+	}
+	spriteType = {
+		name = "GFX_idea_argentine_militaryaid_desc" 
+		texturefile = "gfx/interface/ideas/BRB/argentine_militaryaid_desc.png"
+		legacy_lazy_load = no
+	}
+	#瓦加斯民众主义
+	spriteType = {
+		name = "GFX_idea_Vargas_Populism"
+		texturefile = "gfx/interface/ideas/BRB/Vargas_Populism.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Vargas_Populism_desc"
+		texturefile = "gfx/interface/ideas/BRB/Vargas_Populism_desc.png"
+		legacy_lazy_load = no
+	}
+	#阿根廷民族精神
+	#饱受争议的王室
+	spriteType = { 
+		name = "GFX_idea_The_controversial_royal_family"
+		texturefile = "gfx/interface/ideas/ARG/The_controversial_royal_family.png"
+	}
+	spriteType = {
+		name = "GFX_idea_The_controversial_royal_family_desc" 
+		texturefile = "gfx/interface/ideas/ARG/The_controversial_royal_family_desc.png"
+		legacy_lazy_load = no
+	}
+	#失去的繁荣
+	spriteType = { 
+		name = "GFX_idea_lost_prosperity"
+		texturefile = "gfx/interface/ideas/ARG/lost_prosperity.png"
+	}
+	spriteType = {
+		name = "GFX_idea_lost_prosperity_desc" 
+		texturefile = "gfx/interface/ideas/ARG/lost_prosperity_desc.png"
+		legacy_lazy_load = no
+	}
+    #军政关系矛盾
+	spriteType = {
+		name = "GFX_idea_Military_political_rc"
+		texturefile = "gfx/interface/ideas/ARG/Military_political_rc.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Military_political_rc_desc" 
+		texturefile = "gfx/interface/ideas/ARG/Military_political_rc_desc.png"
+		legacy_lazy_load = no
+	}
+    #罗加-萨罗协议
+	spriteType = {
+		name = "GFX_idea_Roga_Saro_Agreement"
+		texturefile = "gfx/interface/ideas/ARG/Roga_Saro_Agreement.png"
+	}
+	#阿根廷国立石油公司
+	spriteType = {
+		name = "GFX_idea_Argentine_National_Oil_Company"
+		texturefile = "gfx/interface/ideas/ARG/Argentine_National_Oil_Company.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Argentine_National_Oil_Company_desc" 
+		texturefile = "gfx/interface/ideas/ARG/Argentine_National_Oil_Company_desc.png"
+		legacy_lazy_load = no
+	}
+	#巴拉圭指数：沸反盈天
+	spriteType = {
+		name = "GFX_idea_Paraguay_Index"
+		texturefile = "gfx/interface/ideas/ARG/Paraguay_Index.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Paraguay_Index_desc" 
+		texturefile = "gfx/interface/ideas/ARG/Paraguay_Index_desc.png"
+		legacy_lazy_load = no
+	}
+	#南美灯塔
+	spriteType = {
+		name = "GFX_idea_south_america_lighthouse"
+		texturefile = "gfx/interface/ideas/ARG/south_america_lighthouse.png"
+	}
+	#阿塔卡马民族精神
+	#碉堡之林
+	spriteType = {
+		name = "GFX_idea_bunker_forest"
+		texturefile = "gfx/interface/ideas/AMD/bunker_forest.png"
+	}
+	#南非民族精神
+	#非洲福利之邦
+	spriteType = {
+		name = "GFX_idea_Welfare_State_in_Africa"
+		texturefile = "gfx/interface/ideas/SAF/Welfare_State_in_Africa.png"
+	}
+	#同床异梦的党
+	spriteType = {
+		name = "GFX_idea_Party_with_Facade_of_Peace"
+		texturefile = "gfx/interface/ideas/SAF/Party_with_Facade_of_Peace.png"
+	}
+	#分裂之家
+	spriteType = {
+		name = "GFX_idea_House_Divided"
+		texturefile = "gfx/interface/ideas/SAF/House_Divided.png"
+	}
+	#海德拉巴民族精神
+	#璀璨戈尔康达
+	spriteType = {
+		name = "GFX_idea_Splendid_Golconda"
+		texturefile = "gfx/interface/ideas/HYD/Splendid_Golconda.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Splendid_Golconda_desc"
+		texturefile = "gfx/interface/ideas/HYD/Splendid_Golconda_desc.png"
+		legacy_lazy_load = no
+	}
+	#无海岸的堡垒
+	spriteType = {
+		name = "GFX_idea_fortress_without_coast"
+		texturefile = "gfx/interface/ideas/HYD/fortress_without_coast.png"
+	}
+	spriteType = {
+		name = "GFX_idea_fortress_without_coast_desc"
+		texturefile = "gfx/interface/ideas/HYD/fortress_without_coast_desc.png"
+		legacy_lazy_load = no
+	}
+}

@@ -1,0 +1,86 @@
+ideas = {
+	country = {
+		COL_The_legacy_and_aotgm = { #盖坦运动的遗产和遗波
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COL_The_legacy_and_aotgm"}
+			modifier = {
+				stability_factor = -0.05
+				mobilization_speed = -0.15
+				Progressivism_drift = 0.01
+				Socialism_drift = 0.01
+				Progressivism_acceptance = 50
+				Socialism_acceptance = 25
+				fascism_acceptance = -100
+				nazism_acceptance = -100
+			}
+		}
+		COL_divided_house = { #分裂之家
+			modifier = {
+				stability_factor = -0.3
+				political_power_factor = -0.1
+				non_core_manpower = -0.5
+				resistance_target = 0.1
+				resistance_damage_to_garrison = 0.15
+			}
+		}
+		COL_divided_house_2 = { #分裂之家
+			picture = COL_divided_house
+			modifier = {
+				stability_factor = -0.75
+				political_power_factor = -0.1
+				non_core_manpower = -0.5
+				resistance_target = 0.1
+				resistance_damage_to_garrison = 0.15
+			}
+		}
+		COL_Fulfilling_Bolivars_last_wish = { #完成玻利瓦尔的遗愿
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COL_Fulfilling_Bolivars_last_wish"}
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				war_support_factor = 0.15
+			}
+			targeted_modifier = {
+				tag = VEN
+				attack_bonus_against = 0.15
+			}
+		}
+		COL_Cooperation_between_baa = { #哥阿合作
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COL_Cooperation_between_baa"}
+			modifier = {
+				army_org_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = ARG
+				trade_opinion_factor = 0.15
+				extra_trade_to_target_factor = 0.35
+			}
+		}
+		COL_Do_not_train_the_border = { #不训边境
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COL_Do_not_train_the_border"}
+			on_remove = {
+				BRA = {
+				remove_opinion_modifier = {
+					target = COL
+					modifier = COL_Do_not_train_the_border
+				}
+				}
+				BOL = {
+					remove_opinion_modifier = {
+					target = COL
+					modifier = COL_Do_not_train_the_border
+				}
+				}
+				GYA = {
+					remove_opinion_modifier = {
+					target = COL
+					modifier = COL_Do_not_train_the_border 
+				}
+			}
+			}
+			modifier = {
+				stability_factor = -0.15
+				custom_modifier_tooltip = COL_Do_not_train_the_border_tt
+			}
+		}
+	}
+}

@@ -1,0 +1,11 @@
+ideas = {
+	country = {
+		URG_red_and_white = { #红与白
+			picture = URG_The_Legacy_of_Jose_Batlleri_Ordonez
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea URG_red_and_white"}
+			modifier = {
+				stability_factor = -0.2
+			}
+		}
+	}
+}

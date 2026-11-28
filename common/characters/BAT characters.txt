@@ -1,0 +1,17 @@
+characters = {
+	#领导人
+	#帕维尔·贝尔蒙特-阿瓦洛夫
+	BAT_Pavel_Belmont_Avalov = {
+		name = BAT_Pavel_Belmont_Avalov
+		portraits={
+			civilian={
+				large = GFX_BAT_Pavel_Belmont_Avalov_large
+			}
+		}
+		country_leader={
+			desc = BAT_Pavel_Belmont_Avalov_desc
+			ideology = military_junta_tttt
+			traits = {  }
+		}
+	}
+}

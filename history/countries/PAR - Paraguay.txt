@@ -1,0 +1,39 @@
+﻿capital = 300
+oob = "PAR_1935"
+set_stability = 0.19
+set_war_support = 0.17
+starting_train_buffer = 0.5
+set_fuel_ratio = 0.6
+set_research_slots = 3
+set_cosmetic_tag = ARG_puppet_PAR #巴拉圭总督区
+
+### 初始科技 ###
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_trucks = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	basic_train = 1
+}
+
+### 领导人 ###
+recruit_character = PAR_Pedro_Pablo_Ramirez #佩德罗·巴勃罗·拉米雷斯
+
+add_ideas = {
+	PAR_paraguayan_resistance #巴拉圭抵抗力度
+}
+
+set_politics = {
+	ruling_party = tttt
+	last_election = "1933.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	tttt = 100
+}
+
+

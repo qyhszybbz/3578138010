@@ -1,0 +1,69 @@
+spriteTypes = { 
+	#领导及将领
+	spriteType = { #米格尔·普里莫·德里维拉
+		name = "GFX_leader_SPR_Miguel_Primo_Derivella"
+		texturefile = "gfx/leaders/SPR/TVE_SPR_Miguel_Primo_Derivella.dds"
+	}
+	spriteType = { #何塞·安东尼奥·普里莫·德里维拉
+		name = "GFX_leader_SPR_Jose_Antonio_Primo_de_la_Villa"
+		texturefile = "gfx/leaders/SPR/SPR_Jose_Antonio_Primo_de_la_Villa.dds"
+	}
+	spriteType = { #唐·卡洛斯
+		name = "GFX_leader_SPR_Don_Carlos"
+		texturefile = "gfx/leaders/SPR/SPR_Don_Carlos.dds"
+	}
+	 #事件及世界新闻配图
+    spriteType = { #德里维拉之死
+        name = "GFX_news_SPR_The_death_of_Derivella"
+        textureFile = "gfx/interface/news/SPR/SPR_The_death_of_Derivella.dds"
+    }
+	###国策
+	spriteType = { #硝烟散去
+		name = "GFX_focus_SPR_The_smoke_of_battle_dissipated"
+		texturefile = "gfx/interface/goals/SPR/SPR_The_smoke_of_battle_dissipated.dds"
+	}
+	spriteType = { #硝烟散去
+		name = "GFX_focus_SPR_The_smoke_of_battle_dissipated_shine"
+		texturefile = "gfx/interface/goals/SPR/SPR_The_smoke_of_battle_dissipated.dds"
+	}
+	spriteType = { #萧条之国
+		name = "GFX_focus_SPR_Depressed_Country"
+		texturefile = "gfx/interface/goals/SPR/SPR_Depressed_Country.dds"
+	}
+	spriteType = { #萧条之国
+		name = "GFX_focus_SPR_Depressed_Country_shine"
+		texturefile = "gfx/interface/goals/SPR/SPR_Depressed_Country.dds"
+	}
+	spriteType = { #山中之敌 
+		name = "GFX_focus_SPR_Enemy_in_the_Mountains"
+		texturefile = "gfx/interface/goals/SPR/SPR_Enemy_in_the_Mountains.dds"
+	}
+	spriteType = { #山中之敌 
+		name = "GFX_focus_SPR_Enemy_in_the_Mountains_shine"
+		texturefile = "gfx/interface/goals/SPR/SPR_Enemy_in_the_Mountains.dds"
+	}
+	spriteType = { #肮脏之战
+		name = "GFX_focus_SPR_dirty_war"
+		texturefile = "gfx/interface/goals/SPR/SPR_dirty_war.dds"
+	}
+	spriteType = { #肮脏之战
+		name = "GFX_focus_SPR_dirty_war_shine"
+		texturefile = "gfx/interface/goals/SPR/SPR_dirty_war.dds"
+	}
+	spriteType = { #将军政治
+		name = "GFX_focus_SPR_general_politics"
+		texturefile = "gfx/interface/goals/SPR/SPR_general_politics.dds"
+	}
+	spriteType = { #将军政治
+		name = "GFX_focus_SPR_general_politics_shine"
+		texturefile = "gfx/interface/goals/SPR/SPR_general_politics.dds"
+	}
+	spriteType = { #势在必行的改革
+		name = "GFX_focus_SPR_An_inevitable_reform"
+		texturefile = "gfx/interface/goals/SPR/SPR_An_inevitable_reform.dds"
+	}
+	spriteType = { #势在必行的改革
+		name = "GFX_focus_SPR_An_inevitable_reform_shine"
+		texturefile = "gfx/interface/goals/SPR/SPR_An_inevitable_reform.dds"
+	}
+}

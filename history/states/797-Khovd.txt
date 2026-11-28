@@ -1,0 +1,22 @@
+state = {
+	id = 797
+	name = "STATE_797"
+	manpower = 68817
+	state_category = pastoral
+	history = {
+		owner = CHI
+		add_core_of = MON
+		add_core_of = CHI
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			10539 3
+		}
+	}
+	provinces = {
+		1774 4751 7843 7870 10539
+	}
+	local_supplies = 0
+	buildings_max_level_factor = 1.000
+}

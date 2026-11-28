@@ -1,0 +1,35 @@
+state = {
+	id = 1006
+	name = "STATE_1006"
+	manpower = 2331138
+	state_category = city
+	resources = {
+		aluminium=9
+	}
+
+	history = {
+
+		owner = USA
+		add_core_of = CSA
+		add_claim_by = USA
+
+		
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 2
+		}
+
+		victory_points = {
+			4569 10 
+		}
+		
+	}
+
+
+	provinces={
+		1621 4569 4540 4449 12346 12463 1441 1564 10717 12361 10370 1534
+	}
+
+	local_supplies = 20.0 
+}

@@ -1,0 +1,6 @@
+leader_traits ={ 
+	CRC_native_governor = { #土著总督
+		war_support_factor = 0.1
+		stability_factor = 0.05
+	}
+}

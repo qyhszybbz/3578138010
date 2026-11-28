@@ -1,0 +1,30 @@
+
+state={
+	id = 11
+	name="STATE_11"
+
+	history={
+		owner = LIT
+		add_core_of = LIT
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
+		}
+		victory_points = {
+			6296 10
+		}
+		victory_points = {
+			9357 5
+		}
+	}
+
+	provinces={
+		327 6296 6360 9357 9404 
+	}
+
+	state_category=town
+	manpower=971940
+	buildings_max_level_factor=1.000
+	local_supplies=6.0 
+}

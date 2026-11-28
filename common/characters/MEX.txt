@@ -1,0 +1,153 @@
+characters={
+
+	############党派领导##############
+	MEX_afangsuo_leiyesi = { #阿方索·雷耶斯
+		name= MEX_afangsuo_leiyesi
+		portraits={
+			civilian={
+				large="GFX_MEX_afangsuo_leiyesi"
+			}
+		}
+		country_leader={
+			ideology= socialism_small
+			desc = MEX_afangsuo_leiyesi_desc
+			traits={ 
+				president_bug_writer 
+			}
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+
+	MEX_aoketavo_pasi = { #奥克塔维奥·帕斯
+		name= MEX_aoketavo_pasi
+		portraits={
+			army = {
+				small = GFX_idea_MEX_aoketavo_pasi
+			}
+		}
+		country_leader={
+			ideology= Progressivism_small
+			traits={ 
+				#president_bug_writer 
+			}
+			expire="1965.1.1.1"
+			id=-1
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = MEX_aerweituo
+			desc = MEX_aoketavo_pasi_desc
+			allowed = {
+				original_tag = MEX
+			}
+
+			available = {
+				
+			}
+
+	
+
+			traits = {
+				Between_Stone_and_Flower
+			}
+			cost = 150
+		
+		}
+		
+	}
+	MEX_samiuaier_lamosi = { #萨缪埃尔·拉莫斯
+		name = MEX_samiuaier_lamosi 
+		portraits={
+			army = {
+				small = GFX_idea_MEX_samiuaier_lamosi
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = MEX_samiuaier_lamosi
+			
+			allowed = {
+				original_tag = MEX
+			}
+
+			available = {
+				
+			}
+
+			on_add = {
+			}
+
+			traits = {
+				mianju_yu_wutuobang
+			}
+			cost = 150
+		
+		}
+	}
+
+
+
+	MEX_weisengte = { #维森特·隆巴多·托莱达诺
+		name= MEX_weisengte
+		portraits={
+			army = {
+				small = GFX_idea_MEX_weisengte
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = MEX_weisengte
+			
+			allowed = {
+				original_tag = MEX
+			}
+
+			available = {
+				
+			}
+
+			on_add = {
+			}
+
+			traits = {
+				zuoyi_gonghui_lingxiu
+			}
+			cost = 150
+		
+		}
+	}
+
+	
+	MEX_fulangxisike_muxika = { #弗朗西斯科·穆希卡
+		name= MEX_fulangxisike_muxika
+		portraits={
+			 army = {
+				small = GFX_idea_MEX_fulangxisike_muxika
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = MEX_fulangxisike_muxika
+			
+			allowed = {
+				original_tag = MEX
+			}
+
+			available = {
+				
+			}
+
+		
+
+			traits = {
+				geming_jingjixue
+			}
+			cost = 150
+		
+		}
+	}
+
+	
+}

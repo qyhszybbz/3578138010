@@ -1,0 +1,35 @@
+state = {
+	id = 1087
+	name = "STATE_1087"
+	manpower = 638906
+	state_category = rural
+	history = {
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+		add_extra_state_shared_building_slots = 3
+		buildings = {
+			2028 = {
+				landmark_great_wall_section = {
+					level = 1
+					allowed = {
+						has_dlc = "No Compromise, No Surrender"
+					}
+				}
+			}
+		}
+		victory_points = {
+			5100 5
+		}
+		victory_points = {
+			2028 3
+		}
+		victory_points = {
+			4783 3
+		}
+	}
+	provinces = {
+		2028 4783 5100 7727 8102 10770
+	}
+	local_supplies = 7
+}

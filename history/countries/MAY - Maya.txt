@@ -1,0 +1,25 @@
+﻿capital = 473 #Chiapas
+
+oob = "CHL_1936"
+
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_trucks = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+}
+recruit_character = MAY_Gustavo_Rojas_Pinilla
+set_cosmetic_tag = MAY_CCW
+set_politics = {
+	ruling_party = tttt
+	last_election = "1934.2.11"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	tttt = 50
+	Authoritarianism = 50
+}

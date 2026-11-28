@@ -1,0 +1,37 @@
+state={
+	id = 355
+	name="STATE_355"
+	resources={
+		steel=22
+	}
+
+	state_category = metropolis
+
+
+	history={
+		owner = USA
+		add_core_of = USA
+		buildings = {
+			infrastructure = 4
+			dockyard = 2
+			industrial_complex = 1
+			arms_factory = 3
+			air_base = 10
+			6732 = {
+				naval_base = 8
+			}
+		}
+		victory_points = {
+			6732 20 
+		}
+		set_demilitarized_zone = yes
+	}
+
+	provinces={
+		715 718 905 908 3710 3906 6732
+	}
+	manpower = 1025211
+	buildings_max_level_factor=1.000
+
+	local_supplies=0.0 
+}

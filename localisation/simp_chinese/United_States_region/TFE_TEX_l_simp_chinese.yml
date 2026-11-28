@@ -1,0 +1,18 @@
+﻿l_simp_chinese:
+    TEX:0"德克萨斯州"
+    TEX_ADJ:0"德克萨斯州"
+    TEX_DEF:0"德克萨斯州"
+
+    TEX_Kress_Houston:0 "克雷斯·休斯顿"
+    TEX_Smedley_Butler:0 "斯梅德利·巴特勒"
+
+    CSA_Conservatism_party:0 "统一邦联党(左派)"
+    CSA_Conservatism_party_long:0 "统一邦联党(左派)"
+
+    TEX_Conservatism_party:0"德克萨斯共和党"
+    TEX_Conservatism_party_long:0"德克萨斯共和党"
+    TEX_nazism_party:0"统一邦联党（德克萨斯分会）"
+    TEX_nazism_party_long:0"统一邦联党（德克萨斯分会）"
+
+    TEX_lone_star_republic:0"孤星共和国"
+    TEX_Autonomous_States_and_tcobs:0"自治州与黑人奴隶宪法"

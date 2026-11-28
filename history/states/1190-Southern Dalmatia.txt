@@ -1,0 +1,46 @@
+state = {
+	id = 1190
+	name = "STATE_1190"
+	manpower = 735278
+	
+	state_category = town
+	
+	resources = {
+		steel = 6
+	}
+	
+	history = {
+		owner = YUG
+		add_core_of = YUG
+		add_core_of = CRO	
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
+			9821 = {
+				naval_base = 1
+			}
+			3924 = {
+				naval_base = 3
+			}
+			6889 = {
+				naval_base = 1
+			}
+		}
+		victory_points = { #Dubrovnik
+			6889 3 
+		}
+		victory_points = { #Split
+			3924 3
+		}
+		victory_points = {
+			9821 1
+		}
+	}
+
+	provinces = {
+		3943 3924 11816 3868 6889 11901 984 3974 9821
+	}
+	local_supplies = 0.0 
+
+}

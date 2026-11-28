@@ -1,0 +1,16 @@
+characters={
+	#领导人
+	#卡齐斯·格里纽斯
+	LIT_Kazys_Grinius = {
+		name = LIT_Kazys_Grinius
+		portraits = {
+			civilian = {
+				large = GFX_LIT_Kazys_Grinius_large
+			}
+		}
+		country_leader = {
+			desc = LIT_Kazys_Grinius_desc
+			ideology = progressivism_small
+		}
+	}
+}

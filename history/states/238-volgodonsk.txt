@@ -1,0 +1,27 @@
+
+state={
+	id = 238
+	name="STATE_238"
+	manpower = 488915
+	
+	state_category = rural
+
+	history={
+		owner = RCA
+		add_core_of = RCA
+		add_core_of = DON
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			775 1 # City of Volgodonsk only founded in 1950 to service the new reservoir
+		}
+	}
+
+	provinces={
+		775 3417 3443 3464 3777 3779 6417 6468 6490 6765 6796 9415 9581 9722 9739 11400 11403 11727
+	}
+
+	local_supplies=0.0 
+}

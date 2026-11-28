@@ -1,0 +1,16 @@
+characters = {
+    #领导人
+	#克雷斯·休斯顿
+	TEX_Kress_Houston = {
+		name = TEX_Kress_Houston
+		portraits = {
+			civilian = {
+				large = GFX_TEX_Kress_Houston_large
+			}
+		}
+		country_leader = {
+			ideology = Right_wing_conservatism
+			traits = { }
+		}
+	}
+}

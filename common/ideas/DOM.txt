@@ -1,0 +1,73 @@
+ideas = {
+	country = {
+		DOM_The_Feast_of_the_Ram = { #公羊的盛宴
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea DOM_The_Feast_of_the_Ram"}
+			modifier = {
+				consumer_goods_factor = 0.15
+				stability_factor = 0.1
+				political_power_gain = 0.2
+				drift_defence_factor = 0.25
+				trade_laws_cost_factor = 0.25
+				mobilization_laws_cost_factor = 0.25
+			}
+		}
+		DOM_spanish_influence = { #西班牙影响度
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea DOM_spanish_influence"}
+			on_remove = {
+				DOM = {
+					remove_opinion_modifier = {
+					target = SPR
+					modifier = DOM_spanish_influence 
+				}
+				}
+				SPR = {
+					remove_opinion_modifier = {
+					target = DOM
+					modifier = DOM_spanish_influence 
+				}
+				}
+			}
+			 modifier = {
+				army_org_factor = 0.03
+					
+			 }
+			 targeted_modifier = {
+        		tag = SPR
+        		extra_trade_to_target_factor = 0.10
+				custom_modifier_tooltip = DOM_spanish_influence_tt 
+   			 }
+		}
+		DOM_The_Spaniards_wwhb = { #掣肘的西班牙人
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea DOM_The_Spaniards_wwhb"}
+			modifier = {
+				Conservatism_drift = 0.02
+				opinion_gain_monthly_factor = -0.15
+			}
+			targeted_modifier = {
+        		tag = SPR
+        		extra_trade_to_target_factor = 0.10
+				custom_modifier_tooltip = military_disloyalty_tt
+   			 }
+		}
+		DOM_The_whitewashing_peif = { #无疾而终的漂白计划
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea DOM_The_whitewashing_peif"}
+			modifier = {
+				conscription = -0.15
+				conscription_factor = -0.15
+				stability_factor = -0.1
+				opinion_gain_monthly_factor = -0.10
+			}
+		}
+		DOM_Plans_for_the_wah = { #对海地战争计划
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea DOM_Plans_for_the_wah"}
+			modifier = {
+				army_org_factor = 0.1
+			}
+			targeted_modifier = {
+        		tag = HAI
+        		defense_bonus_against = 0.1
+				breakthrough_bonus_against = 0.1
+   			 }
+		}
+	}
+}

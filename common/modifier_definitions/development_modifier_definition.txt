@@ -1,0 +1,41 @@
+industry_development_monthly = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	category = country
+}
+
+military_development_monthly = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	category = country
+}
+
+society_development_monthly = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	category = country
+}
+
+agriculture_development_monthly = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	category = country
+}
+
+administrative_efficiency_development_monthly = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	category = country
+}
+
+poverty_development_monthly = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	category = country
+}

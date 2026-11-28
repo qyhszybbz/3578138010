@@ -1,0 +1,390 @@
+﻿add_namespace = tfe_usa_focus
+add_namespace = usa_intro
+add_namespace = tfe_usa_news
+add_namespace = tfe_usa
+
+#美国精神
+country_event = {
+	id = tfe_usa_focus.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tfe_usa_focus.1" }
+	title = tfe_usa_focus.1.t
+	desc = tfe_usa_focus.1.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = tfe_usa_focus.1.a
+	}
+}
+#繁荣前景
+country_event = {
+	id = tfe_usa_focus.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tfe_usa_focus.2" }
+	title = tfe_usa_focus.2.t
+	desc = tfe_usa_focus.2.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = tfe_usa_focus.2.a
+	}
+}
+
+country_event = {
+	id = usa_intro.1
+	title = usa_intro.1.t
+	desc = usa_intro.1.d
+	#picture = GFX_report_event_usa_amelia_earhart_airplane
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = usa_intro.1.a
+		country_event = { id = usa_intro.2 }
+	}
+	option = { 
+		name = usa_intro.1.b
+		add_political_power = 10
+	}
+}
+
+country_event = {
+	id = usa_intro.2
+	title = usa_intro.2.t
+	desc = usa_intro.2.d
+	#picture = GFX_report_event_usa_amelia_earhart_airplane
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = usa_intro.2.a
+		country_event = { id = usa_intro.3 }
+	}
+
+}
+
+country_event = {
+	id = usa_intro.3
+	title = usa_intro.3.t
+	desc = usa_intro.3.d
+	#picture = GFX_report_event_usa_amelia_earhart_airplane
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = usa_intro.3.a
+		add_political_power = 10
+	}
+
+}
+
+
+
+news_event = { #新英格兰州戒严状态结束
+	# 由国策触发
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tfe_usa_news.1" }
+	id = tfe_usa_news.1
+	title = tfe_usa_news.1.t
+	desc = tfe_usa_news.1.d
+	picture = GFX_news_event_usa_martial_law_ends
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+
+	option = {
+		name = tfe_usa_news.1.a
+		custom_effect_tooltip = tfe_usa_news.1_effect
+		hidden_effect = {
+			every_controlled_state = {
+				set_demilitarized_zone = no
+			}
+		}
+	}
+}
+
+news_event = { #联邦法院判处胡佛贪污：无期徒刑
+	# 用国策触发
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tfe_usa_news.2" }
+	id = tfe_usa_news.2
+	title = tfe_usa_news.2.t
+	desc = tfe_usa_news.2.d
+	picture = GFX_news_event_usa_hoover_verdict
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+
+	option = { #罪有应得
+		name = tfe_usa_news.2.a
+		custom_effect_tooltip = tfe_usa_news.2_effect
+		#hidden_effect = { retire_character = USA_herbert_hoover }
+	}
+}
+
+news_event = { #爱达荷州并入联邦政府
+	# 由国策触发
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tfe_usa_news.3" }
+	id = tfe_usa_news.3
+	title = tfe_usa_news.3.t
+	desc = tfe_usa_news.3.d
+	picture = GFX_news_event_usa_idaho_into_government
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+
+	option = { #联邦更加完整
+		name = tfe_usa_news.3.a
+	}
+}
+
+
+country_event = { #工人罢工激进化
+	id = tfe_usa.1
+	title = tfe_usa.1.t
+	desc = tfe_usa.1.d
+	#picture = GFX_report_event_usa_flint_sitdown_strike
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		date > 1935.12.20
+	}
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event tfe_usa.1"
+	}
+
+	option = { #快去现场维持秩序！
+		name = tfe_usa.1.a
+		add_political_power = -10
+		add_stability = -0.03
+	}
+
+	option = { #这已经不是一般的暴徒了，必须出重拳！
+		name = tfe_usa.1.b
+		add_political_power = -15
+		hidden_effect = {
+			set_country_flag = tfe_usa_worker_radical_flag
+		}
+		custom_effect_tooltip = tfe_usa.1.b_tt
+	}
+}
+
+country_event = { #列克星敦大罢工事件
+	id = tfe_usa.2 #需要事件 tfe_usa.1 已发生
+	title = tfe_usa.2.t
+	desc = tfe_usa.2.d
+	#picture = GFX_report_event_usa_lexington_strike
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		date > 1936.3.14
+		has_country_flag = tfe_usa_worker_radical_flag
+	}
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event tfe_usa.2"
+	}
+
+	option = { #真糟糕……
+		name = tfe_usa.2.a
+		add_popularity = {
+			ideology = Socialism
+			popularity = 0.05
+		}
+		set_party_name = {
+			ideology = Socialism
+			name = TFE_USA_Socialism_party_2
+			long_name = TFE_USA_Socialism_party_2_long
+		}
+		367 = { #肯塔基州
+			set_demilitarized_zone = yes
+		}
+		country_event = { id = tfe_usa.3 days = 14 }
+	}
+}
+
+#白劳德受邀参加列克星敦工人会议——由 tfe_usa.2 接续触发
+country_event = {
+	id = tfe_usa.3
+	title = tfe_usa.3.t
+	desc = tfe_usa.3.d
+	#picture = GFX_report_event_usa_browder_lexington_invite
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event tfe_usa.3"
+	}
+
+	option = { #不用管他。
+		name = tfe_usa.3.a
+		add_popularity = {
+			ideology = Socialism
+			popularity = 0.02
+		}
+		country_event = { id = tfe_usa.4 days = 10} # 触发事件：演讲会议
+	}
+
+	option = { #在现场设下埋伏……
+		name = tfe_usa.3.b
+		add_political_power = -5
+		random_list = {
+			50 = {
+				country_event = { id = tfe_usa.5 days = 10} # 触发事件：白劳德被捕
+			}
+			50 = {
+				country_event = { id = tfe_usa.6 days = 10} # 触发事件：警方空手而归
+			}
+		}
+	}
+}
+
+country_event = {
+	id = tfe_usa.4
+	title = tfe_usa.4.t
+	desc = tfe_usa.4.d
+	#picture = GFX_report_event_usa_browder_speech_meeting
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event tfe_usa.4"
+	}
+
+	option = { #别听他的胡言乱语！
+		name = tfe_usa.4.a
+		set_party_name = { 
+			ideology = Socialism
+			name = TFE_USA_Socialism_party_3
+			long_name = TFE_USA_Socialism_party_3_long
+		}
+		add_equipment_to_stockpile = { 
+			type = infantry_equipment
+			amount = -500
+		}
+	}
+}
+
+country_event = {
+	id = tfe_usa.5
+	title = tfe_usa.5.t
+	desc = tfe_usa.5.d
+	#picture = GFX_report_event_usa_browder_arrested
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event tfe_usa.5"
+	}
+
+	option = { #干得漂亮！
+		name = tfe_usa.5.a
+		add_political_power = 30 
+		add_popularity = { 
+			ideology = Socialism
+			popularity = -0.05
+		}
+		add_manpower = -10 
+		add_ideas = TFE_USA_worker_morale_low #获得民族精神：工人运动士气低落
+	}
+}
+
+country_event = {
+	id = tfe_usa.6
+	title = tfe_usa.6.t
+	desc = tfe_usa.6.d
+	#picture = GFX_report_event_usa_police_empty_handed
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event tfe_usa.6"
+	}
+
+	option = { #你们这群饭桶！
+		name = tfe_usa.6.a
+		add_popularity = { 
+			ideology = Socialism
+			popularity = 0.05
+		}
+		add_political_power = -50 
+		set_party_name = { 
+			ideology = communism
+			name = TFE_USA_Communism_party_2
+			long_name = TFE_USA_Communism_party_2_long
+		}
+		set_party_name = { 
+			ideology = Socialism
+			name = TFE_USA_Socialism_party_3
+			long_name = TFE_USA_Socialism_party_3_long
+		}
+	}
+}
+
+country_event = {
+	id = tfe_usa.7
+	title = tfe_usa.7.t
+	desc = tfe_usa.7.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event tfe_usa.7"
+	}
+
+	option = { #调试：给 USA 对 CSA 的 10% 合作值
+		name = tfe_usa.7.a
+		add_collaboration = {
+			target = CSA
+			value = 0.1
+		}
+	}
+}
+
+#新一任联邦国防军总司令
+country_event = {
+	id = tfe_usa.8
+	title = tfe_usa.8.t
+	desc = tfe_usa.8.d
+	picture = GFX_report_event_usa_chiefs_of_staff
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event tfe_usa.8"
+	}
+
+	option = { #史迪威将军
+		name = tfe_usa.8.a
+		add_political_power = 50
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.30
+			uses = 1
+			category = land_doctrine
+		}
+		add_ideas = USA_Stilwell_Reforms
+	}
+
+	option = { #巴顿将军
+		name = tfe_usa.8.b
+		add_political_power = 50
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.20
+			uses = 1
+			category = land_doctrine
+		}
+		add_ideas = USA_Patton_Reforms
+	}
+}

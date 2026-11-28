@@ -1,0 +1,48 @@
+ideas = {
+	country = {
+		### 初始民族精神 ###
+		#徒有其表的共和国
+		ROM_hollow_republic = {
+			on_add = { log = "[GetLogRoot]: add idea ROM_hollow_republic" }
+			picture = hollow_republic
+			allowed = { always = no }
+			modifier = {
+				tttt_drift = 0.01
+				Authoritarianism_drift = 0.01
+				political_power_gain = -0.02
+			}
+		}
+		#一党制霸的反噬
+		ROM_one_party_blowback = {
+			on_add = { log = "[GetLogRoot]: add idea ROM_one_party_blowback" }
+			picture = one_party_blowback
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.01
+				war_support_factor = -0.01
+			}
+		}
+		#刺猬国度
+		ROM_hedgehog_nation = {
+			on_add = { log = "[GetLogRoot]: add idea ROM_hedgehog_nation" }
+			picture = hedgehog_nation
+			allowed = { always = no }
+			modifier = {
+				conscription_factor = 0.1
+				army_org_regain = 0.1
+				training_time_factor = -0.1
+			}
+		}
+		#新播种主义的复兴
+		ROM_new_sowingism = {
+			on_add = { log = "[GetLogRoot]: add idea ROM_new_sowingism" }
+			picture = new_sowingism
+			allowed = { always = no }
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				production_factory_max_efficiency_factor = -0.1
+				research_speed_factor = -0.05
+			}
+		}
+	}
+}

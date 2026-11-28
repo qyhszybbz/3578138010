@@ -1,0 +1,8 @@
+leader_traits = { 
+	NMX_mex_american = { #墨西哥裔美国人
+		random = no
+		
+		nazism_drift = 0.01
+		consumer_goods_factor = -0.02	
+	}
+}

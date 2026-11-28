@@ -1,0 +1,22 @@
+state={
+	id = 1180
+	name="STATE_1180"
+	manpower = 619691
+
+	state_category = rural
+
+	history={
+		victory_points = {
+			9495 5
+		}
+		owner = FRA
+		add_core_of = BRI
+		add_core_of = FRA
+	}
+
+    provinces={
+		9495 13405 13406 13404 527 13407
+	}
+
+	local_supplies=7.0 
+}

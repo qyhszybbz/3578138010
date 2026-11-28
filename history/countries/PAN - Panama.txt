@@ -1,0 +1,28 @@
+﻿capital = 303
+
+oob = "PAN_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_trucks = 1
+}
+
+ 
+set_war_support = 0.1
+set_convoys = 10
+add_ideas = {
+	PAN_between_two_united_states
+	PAN_Countdown_to_Gran_Columbia
+}
+recruit_character = PAN_George_Van_Horn_Mosley
+set_politics = {
+	ruling_party = tttt
+	last_election = "1932.6.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	tttt = 95
+	Authoritarianism = 5
+}

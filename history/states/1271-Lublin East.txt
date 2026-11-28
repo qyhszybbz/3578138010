@@ -1,0 +1,30 @@
+
+state={
+	id = 1271
+	name="STATE_1271"
+	resources={
+		coal = 5
+	}
+
+	history={
+		owner = POL
+		add_core_of = POL
+		add_core_of = UKR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			9452 5
+		}
+	}
+
+	provinces={
+		9452 6580
+	}
+
+	state_category = town
+	manpower=561270
+	buildings_max_level_factor=1.000
+	local_supplies=0.0 
+}

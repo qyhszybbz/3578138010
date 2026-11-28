@@ -1,0 +1,174 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ideology_communism_group"
+		texturefile = "gfx/interface/ideologies/communism_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_Authoritarianism_group"
+		texturefile = "gfx/interface/ideologies/Authoritarianism_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_tttt_group"
+		texturefile = "gfx/interface/ideologies/tttt_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_fascism_group"
+		texturefile = "gfx/interface/ideologies/fascism_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_nazism_group"
+		texturefile = "gfx/interface/ideologies/nazism_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_Socialism_group"
+		texturefile = "gfx/interface/ideologies/Socialism_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_Progressivism_group"
+		texturefile = "gfx/interface/ideologies/Progressivism_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_Liberalism_group"
+		texturefile = "gfx/interface/ideologies/Liberalism_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_Conservatism_group"
+		texturefile = "gfx/interface/ideologies/Conservatism_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_Democracy_group"
+		texturefile = "gfx/interface/ideologies/Democracy_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_Wilhelm_II_ideologies"
+		texturefile = "gfx/interface/ideologies/Wilhelm_II_ideologies.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_Manstein_ideologies"
+		texturefile = "gfx/interface/ideologies/Manstein_ideologies.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_Britain_Conservatism"
+		texturefile = "gfx/interface/ideologies/Britain_Conservatism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_Britain_republic"
+		texturefile = "gfx/interface/ideologies/Britain_republic.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_Austria_Hungary_ideologies"
+		texturefile = "gfx/interface/ideologies/Austria_Hungary_ideologies.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_Austria_Hungary_ideologies_Conservatism"
+		texturefile = "gfx/interface/ideologies/Austria_Hungary_ideologies_Conservatism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_Austria_Hungary_ideologies_Progressivism"
+		texturefile = "gfx/interface/ideologies/Austria_Hungary_ideologies_Progressivism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_Absolute_monarchy"
+		texturefile = "gfx/interface/ideologies/Absolute_monarchy.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_Theocracy"
+		texturefile = "gfx/interface/ideologies/Theocracy.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_Yuanism"
+		texturefile = "gfx/interface/ideologies/Yuanism.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_Jacksonian_Democracy"
+		texturefile = "gfx/interface/ideologies/Jacksonian_Democracy.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_works_on_constitution"
+		texturefile = "gfx/interface/ideologies/works_on_constitution.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_Chauvinism"
+		texturefile = "gfx/interface/ideologies/Chauvinism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_CSA_Confederate"
+		texturefile = "gfx/interface/ideologies/CSA_Confederate.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_XiLin"
+		texturefile = "gfx/interface/ideologies/XiLin.dds"
+	}
+	spriteType = { #米格尔·普里莫·德里维拉-专制主义
+		name = "GFX_ideology_Spain_rivera_ideologies"
+		texturefile = "gfx/interface/ideologies/Spain_rivera_ideologies.dds"
+	}
+	spriteType = { #西班牙复兴主义
+		name = "GFX_ideology_Spanish_Revivalism"
+		texturefile = "gfx/interface/ideologies/Spanish_Revivalism.png"
+	}
+	spriteType = { #殖民政府-专制主义
+		name = "GFX_ideology_colonial_government_tttt"
+		texturefile = "gfx/interface/ideologies/colonial_government.dds" 
+	}
+	spriteType = { #殖民政府-自由主义 
+		name = "GFX_ideology_colonial_government_Liberalism"
+		texturefile = "gfx/interface/ideologies/colonial_government.dds" 
+	}
+	spriteType = { #军官独裁制
+		name = "GFX_ideology_Military_dictatorship"
+		texturefile = "gfx/interface/ideologies/Military_dictatorship.png"
+	}
+	spriteType = { #宇宙种族主义
+		name = "GFX_ideology_MEX_cosmic_racism"
+		texturefile = "gfx/interface/ideologies/MEX_cosmic_racism.dds"
+	}
+	spriteType = { #休伊朗主义
+		name = "GFX_ideology_CSA_Hueylon_Doctrine"
+		texturefile = "gfx/interface/ideologies/CSA_Hueylon_Doctrine.dds"
+	}
+	spriteType = { #激进左翼民粹主义
+		name = "GFX_ideology_left_wing_populism"
+		texturefile = "gfx/interface/ideologies/left_wing_populism.dds"
+	}
+	spriteType = { #无支配体制
+		name = "GFX_ideology_non_domination_system"
+		texturefile = "gfx/interface/ideologies/non_domination_system.dds"
+	}
+	spriteType = { #自由激进主义
+		name = "GFX_ideology_liberal_radicalism"
+		texturefile = "gfx/interface/ideologies/liberal_radicalism.dds"
+	}
+	spriteType = { #盖坦主义
+		name = "GFX_ideology_Gaitanism"
+		texturefile = "gfx/interface/ideologies/Gaitanism.dds"
+	}
+	spriteType = { #特鲁希略的意识形态
+		name = "GFX_ideology_Trujillos_ideology"
+		texturefile = "gfx/interface/ideologies/Trujillos_ideology.dds"
+	}
+	spriteType = { #军政府-威权主义
+		name = "GFX_ideology_military_junta_authoritarianism"
+		texturefile = "gfx/interface/ideologies/military_junta.dds"
+	}
+	spriteType = { #军政府-专制主义
+		name = "GFX_ideology_military_junta_tttt"
+		texturefile = "gfx/interface/ideologies/military_junta.dds"
+	}
+	spriteType = { #军政府-法西斯主义
+		name = "GFX_ideology_military_junta_fascism"
+		texturefile = "gfx/interface/ideologies/military_junta.dds"
+	}
+	spriteType = { #国家法西斯主义
+		name = "GFX_ideology_National_fascism"
+		texturefile = "gfx/interface/ideologies/National_fascism.png"
+	}
+	spriteType = { #稳健进步主义
+		name = "GFX_ideology_steady_Progressivism_subtype"
+		texturefile = "gfx/interface/ideologies/steady_Progressivism_subtype.dds"
+	}
+	spriteType = { #社会自由主义
+		name = "GFX_ideology_social_liberalism"
+		texturefile = "gfx/interface/ideologies/German_Democratic_Party.dds"
+	}
+}

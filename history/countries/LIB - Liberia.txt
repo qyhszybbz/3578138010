@@ -1,0 +1,40 @@
+﻿capital = 297
+
+oob = "LIB_1935"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_convoys = 10
+
+set_stability = 0.42
+set_war_support = 0.42
+
+add_ideas = {
+	LIB_shattered_land
+	LIB_richmond_divide_and_rule
+}
+
+recruit_character = LIB_edwin_barclay
+
+
+set_politics = {
+	ruling_party = tttt
+	last_election = "1932.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	tttt = 49
+	Liberalism = 30
+	Progressivism = 21
+}
+
+CSA = {
+	set_autonomy = {
+		target = LIB
+		autonomous_state = autonomy_colony
+	}
+}

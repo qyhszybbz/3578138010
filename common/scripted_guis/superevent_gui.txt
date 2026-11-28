@@ -1,0 +1,35 @@
+scripted_gui = {
+	superevents_gui = {
+		window_name = "superevents_gui"
+		context_type = player_context
+		
+		#parent_window_token = top_bar
+
+		visible = {
+			has_variable = global.se_display
+			is_ai = no
+		}
+
+		effects = {
+		}
+
+		triggers = {
+	    	
+	    }
+
+		effects = {
+			close_SE_button_click = {
+				every_country = {
+					clear_variable = global.se_display 
+				}
+	
+
+			}
+		}
+		properties = {
+			superevent_bg = { image = "[SE_getpicture]" } 			
+	  	}
+	}
+	
+}
+

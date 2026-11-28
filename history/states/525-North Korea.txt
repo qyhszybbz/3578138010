@@ -1,0 +1,31 @@
+
+state={
+	id = 525
+	name="STATE_525"
+	manpower = 901149
+	state_category = town
+	resources={
+		steel=18 # was: 30
+		tungsten=28 # was: 52
+	}
+
+	history={
+		owner = JAP
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		
+		victory_points = {
+			4052 1
+		}	
+
+		add_core_of = KOR
+	}
+
+	provinces={
+		852 978 3852 3904 3981 6922 6928 11878 
+	}
+
+	local_supplies=0.0 
+}

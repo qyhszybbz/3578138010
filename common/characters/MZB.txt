@@ -1,0 +1,18 @@
+characters={
+	MZB_Jose_Ricardo_Pereira_Cabral = {
+    name = MZB_Jose_Ricardo_Pereira_Cabral
+    portraits = {
+        civilian = {
+            large = GFX_POR_hesai
+        }
+    }
+    
+    country_leader = {
+        ideology = authoritarianism_small
+		desc = MZB_Jose_Ricardo_Pereira_Cabral_desc
+        traits = {
+            
+        }
+    }
+}
+}

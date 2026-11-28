@@ -1,0 +1,139 @@
+focus_tree = {
+	id = austria_TVE_FOCUS
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = AUS
+		}
+	}
+	continuous_focus_position = { x = 2500 y = 2000 }
+	default = no
+	focus = {
+		id = aus_difficult_walk
+		icon = GFX_AUS_aus_difficult_walk
+		cost = 1
+		x = 5
+		y = 0
+		completion_reward = {
+			country_event = {
+				id = AUS_TVE.1
+				hours = 4
+			}
+		}
+	}
+	focus = {
+		id = aus_empersay
+		icon = GFX_AUS_aus_empersay
+		cost = 1
+		x = 5
+		y = 1
+		prerequisite = {
+			focus = aus_difficult_walk
+		}
+		completion_reward = {
+			country_event = {
+				id = AUS_TVE.2
+				hours = 4
+			}
+		}
+	}
+	focus = {
+		id = aus_laws
+		icon = GFX_AUS_aus_laws
+		cost = 2
+		x = 3
+		y = 2
+		prerequisite = {
+			focus = aus_empersay
+		}
+		completion_reward = {
+			AUS= {
+				swap_ideas = {
+					remove_idea = Failed_federalisation
+					add_idea = 	Federal_Constitution
+				}
+			}
+		}
+		
+	}
+	focus = {
+		id = aus_national_unity
+		icon = GFX_AUS_aus_national_unity
+		cost = 1
+		x = 3
+		y = 3
+		prerequisite = {
+			focus = aus_laws
+		}
+		completion_reward = {
+			AUS= {
+				swap_ideas = {
+					remove_idea = Nationalist_forces
+					add_idea = 	ethnic_unrest
+				}
+			}
+		}
+		
+	}
+	focus = {
+		id = aus_bigunit
+		icon = GFX_AUS_aus_bigunit
+		cost = 1
+		x = 7
+		y = 2
+		prerequisite = {
+			focus = aus_empersay
+		}
+		completion_reward = {
+			country_event = {
+				id = AUS_TVE.3
+				hours = 4
+			}
+		}
+	}
+	focus = {
+		id = aus_nofasim
+		icon =GFX_AUS_aus_nofasim
+		cost = 1
+		x = 7
+		y = 3
+		prerequisite = {
+			focus = aus_bigunit
+		}
+		prerequisite = {
+			focus = aus_laws
+		}
+		completion_reward = {
+			AUS= {
+				swap_ideas = {
+					remove_idea = Irreparable_national_problems
+					add_idea = 	Combat_separatism
+				}
+			}
+		}
+	}
+	focus = {
+		id = aus_lorr
+		icon = GFX_AUS_aus_lorr
+		cost = 2
+		x = 5
+		y = 4
+		prerequisite = {
+			focus = aus_nofasim
+		}
+		prerequisite = {
+			focus = aus_national_unity
+		}
+		completion_reward = {
+			AUS= {
+				country_lock_all_division_template = no
+				load_focus_tree = AUS_FOCUS_2
+				country_event = {
+					id = AUS_TVE.4
+				}
+			}
+
+		}
+	}
+}

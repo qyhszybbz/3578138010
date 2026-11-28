@@ -1,0 +1,32 @@
+state = {
+	id = 595
+	name = "STATE_595"
+	manpower = 8005213
+	state_category = town
+	resources = {
+		aluminium = 223
+	}
+	history = {
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			air_base = 3
+			industrial_complex = 1
+			infrastructure = 2
+		}
+		1938.10.25 = {
+			controller = JAP
+		}
+		victory_points = {
+			1124 15
+		}
+		victory_points = {
+			10043 3
+		}
+	}
+	provinces = {
+		1124 4010 4181 7025 9956 10043 12015 12069
+	}
+	local_supplies = 4
+}

@@ -1,0 +1,15 @@
+characters = {
+	#恩琴
+    ENT_Ungern_Sternberg = {
+        name = ENT_Ungern_Sternberg
+        portraits = {
+            civilian = {
+				large = GFX_ENT_Ungern_Sternberg_large
+			}
+		}
+        country_leader = {
+			ideology = Theocracy
+            traits = {  }
+		}
+    }
+}

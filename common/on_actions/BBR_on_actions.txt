@@ -1,0 +1,12 @@
+on_actions = {
+	on_startup = {
+		effect = {
+		BBR = {
+			become_exiled_in = {
+				target = MEX
+				legitimacy = 5 
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,141 @@
+﻿capital = 112
+load_focus_tree = generic_focus
+oob = "POR_1936"
+add_ideas = {
+	king_in_huoshan
+	spr_ring
+	zhiming_headache
+	### 副领袖 ###
+	POR_antonio_de_oliveira_salazar
+}
+set_country_flag = tfe_second_leader #副领导人
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "POR_1936_naval_mtg"
+	else = {
+		set_naval_oob = "POR_1936_naval_legacy"
+	}
+}
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "POR_1936_air_bba"
+	else = {
+		set_air_oob = "POR_1936_air_legacy"
+		set_technology = {
+			early_fighter = 1
+			early_bomber = 1
+			CAS1 = 1
+		}
+	}
+}
+
+set_research_slots = 3
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_trucks = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	tech_support = 1		
+	tech_engineers = 1
+	basic_train = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		mtg_transport = 1
+	}
+}
+
+if = {
+	limit = { has_dlc = "La Resistance" }	
+	set_stability = 0.60
+	set_war_support = 0.15	
+	set_research_slots = 2
+
+	ENG = {
+		add_opinion_modifier = {
+			target = POR 
+			modifier  = POR_anglo_portuguese_alliance
+		}
+	}
+
+	POR = {
+		add_opinion_modifier = {
+			target = ENG 
+			modifier  = POR_anglo_portuguese_alliance
+		}
+	}
+
+	GER = {
+		add_opinion_modifier = {
+			target = POR
+			modifier = fascism_leanings_good
+		}
+	}
+
+	ITA = {
+		add_opinion_modifier = {
+			target = POR
+			modifier = fascism_leanings_good
+		}
+	}
+	
+}
+
+recruit_character = POR_Duarte_II
+recruit_character = POR_antonio_de_oliveira_salazar
+recruit_character = POR_antonio_oscar_carmona
+recruit_character = POR_juan_ramon_jimenez
+recruit_character = POR_jose_saramago
+recruit_character = POR_fernando_pessoa
+
+activate_advisor = POR_antonio_de_oliveira_salazar_government
+activate_advisor = POR_antonio_oscar_carmona_pol
+activate_advisor = POR_juan_ramon_jimenez
+activate_advisor = POR_jose_saramago
+activate_advisor = POR_fernando_pessoa
+
+set_autonomy = {
+		target = MZB
+		autonomy_state = autonomy_colony
+		freedom_level = 0.5
+}
+set_convoys = 50
+set_politics = {
+	ruling_party = tttt
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	Progressivism = 1
+	Liberalism = 4
+	Democracy = 8
+	Conservatism = 12
+	Authoritarianism = 19
+	tttt = 40
+	fascism = 0
+	nazism = 16
+}
+
+

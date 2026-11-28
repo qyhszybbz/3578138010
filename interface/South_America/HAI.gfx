@@ -1,0 +1,20 @@
+spriteTypes = {
+	#领导人
+	spriteType = { #德莫斯特内斯·佩特鲁斯·卡利克斯特
+		name = "GFX_leader_HAI_Demostnes_Petrus_Callixter"
+		texturefile = "gfx/leaders/HAI/HAI_Demostnes_Petrus_Callixter.dds"
+	}
+	###民族精神
+	spriteType = { #迪克西之奴
+		name = "GFX_idea_HAI_Dixies_Slave" 
+		texturefile = "gfx/interface/ideas/HAI/HAI_Dixies_Slave.dds"
+	}
+	spriteType = { #越过马萨克河
+		name = "GFX_idea_HAI_Crossing_the_Masak_River" 
+		texturefile = "gfx/interface/ideas/HAI/HAI_Crossing_the_Masak_River.dds"
+	}
+	spriteType = { #停摆的政府
+		name = "GFX_idea_HAI_A_government_that_has_stalled" 
+		texturefile = "gfx/interface/ideas/HAI/HAI_A_government_that_has_stalled.dds"
+	}
+}

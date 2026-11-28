@@ -1,0 +1,16 @@
+characters = {
+    #领导人
+    #佩德罗·巴勃罗·拉米雷斯
+	PAR_Pedro_Pablo_Ramirez = { 
+        name = PAR_Pedro_Pablo_Ramirez
+        portraits = {
+            civilian = {
+                large = GFX_PAR_Pablo_Ramirez_large
+            }
+        }
+        country_leader = {
+            ideology = colonial_government_tttt
+            traits = { }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+defined_text = {
+    name = second_leader #副领导人
+    text = {
+        trigger = { #马塞洛·托尔夸托·德·阿尔维亚尔
+            has_idea = ARG_Marcelo_Torquato_de_Alvial
+        }
+        localization_key = "ARG_Marcelo_Torquato_de_Alvial_sl_desc"
+    }
+    text = {
+        trigger = { #维克托·切尔诺夫
+            has_idea = SOV_Viktor_Chernov
+        }
+        localization_key = "SOV_Viktor_Chernov_sl_desc"
+    }
+    text = {
+        trigger = { #阿梅迪奥二世
+            has_idea = ARG_Amedeo_II
+        }
+        localization_key = "ARG_Amedeo_II_sl_desc"
+    }
+    text = {
+        trigger = { #拉斐尔·特鲁希略
+            has_idea = DOM_Raphael_Trujillo
+        }
+        localization_key = "DOM_Raphael_Trujillo_sl_desc"
+    }
+    text = {
+        trigger = { #亚尔马·沙赫特
+            has_idea = GER_Hjalmar_Schacht
+        }
+        localization_key = "GER_Hjalmar_Schacht_sl_desc"
+    }
+    text = {
+        trigger = { #尼古拉·约尔加
+            has_idea = ROM_Nikola_Jorga
+        }
+        localization_key = "ROM_Nikola_Jorga_sl_desc"
+    }
+    text = {
+        trigger = { #铃木贞一
+            has_idea = JAP_Suzuki_Teiichi
+        }
+        localization_key = "JAP_Suzuki_Teiichi_sl_desc"
+    }
+   # text = {
+    #    trigger = { #亨舍尔
+    #        has_idea = union_dream
+    #    }
+    #    localization_key = "jhon_heser_second_leader"
+  #  }
+    text = {
+        trigger = { #安东尼奥·萨拉查
+            has_idea = POR_antonio_de_oliveira_salazar
+        }
+        localization_key = "POR_antonio_de_oliveira_salazar_sl_desc"
+    }
+
+}

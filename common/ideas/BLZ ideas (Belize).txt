@@ -1,0 +1,35 @@
+ideas = {
+	country = {
+		### 初始民族精神 ###
+		#巨人脚下
+		BLZ_under_the_giants = {
+			on_add = { log = "[GetLogRoot]: add idea BLZ_under_the_giants" }
+			picture = under_the_giants
+			allowed = { always = no }
+			modifier = {
+				cic_to_overlord_factor = 0.25
+				custom_modifier_tooltip = BLZ_under_the_giants_tip
+			}
+		}
+		#大讨论
+		BLZ_the_great_debate = {
+			on_add = { log = "[GetLogRoot]: add idea BLZ_the_great_debate" }
+			picture = the_great_debate
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.1
+				defensive_war_stability_factor = -0.1
+			}
+		}
+		#种植园的诅咒
+		BLZ_the_curse_of_the_plantations = {
+			on_add = { log = "[GetLogRoot]: add idea BLZ_the_curse_of_the_plantations" }
+			picture = the_curse_of_the_plantations
+			allowed = { always = no }
+			modifier = {
+				research_speed_factor = -0.2
+				consumer_goods_factor = -0.15
+			}
+		}
+	}
+}

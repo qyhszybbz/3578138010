@@ -1,0 +1,46 @@
+leader_traits ={
+	#领导人特质
+	#大独裁者 
+	SPR_dictator = { 
+		random = no
+		political_power_gain =  0.2
+	} 
+	#顾问特质
+	#长袖善舞
+	SPR_Smooth_operator = { 
+		random = no
+		political_power_gain = 0.5
+		stability_factor = 0.05
+		drift_defence_factor = 0.02
+	} 
+	#欧洲最年轻的将军
+	SPR_Europes_youngest_general = { 
+		random = no
+		training_time_army_factor = -0.10
+		army_attack_factor = 0.08
+		army_defence_factor = 0.08
+		planning_speed = 0.10
+	} 
+	#律师
+	SPR_Lawyer = { 
+		random = no
+		stability_factor = 0.05
+		political_power_gain = 0.1
+		Conservatism_drift = 0.05
+		tttt_drift = 0.05
+	} 
+	#毛拉门徒
+	SPR_Mauras_Disciple = {
+		random = no
+		political_power_gain = 0.1
+		stability_factor = 0.05
+		drift_defence_factor = 0.05
+	}
+	#独立劳工长
+	SPR_Independent_Labour_Minister = {
+		random= no
+		production_speed_buildings_factor = 0.08
+		industrial_capacity_factory = 0.10
+		consumer_goods_factor = -0.02 
+	}
+}

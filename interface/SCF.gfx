@@ -1,0 +1,7 @@
+spriteTypes = { 
+	#领导人
+	spriteType = {
+		name = "GFX_leader_SCF_Southern_California_AC"
+		texturefile = "gfx/leaders/SCF/SCF_Southern_California_AC.dds"
+	}
+}

@@ -1,0 +1,17 @@
+characters = {
+    #领导人
+	#彼得·迪亚琴科
+	PUK_Petro_Dyachenko = {
+		name = PUK_Petro_Dyachenko
+		portraits = {
+			civilian = {
+				large = GFX_PUK_Petro_Dyachenko_large
+			}
+		}
+		country_leader = {
+			desc = PUK_Petro_Dyachenko_desc
+			ideology = military_junta_tttt
+			traits = {  }
+		}
+	}
+}

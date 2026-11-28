@@ -1,0 +1,23 @@
+ideas = {
+    country = {
+		EU_IN_ONLY = {
+			
+			#picture = start_national_country
+			allowed = { always = no }
+			modifier = {
+				stability_factor = 0.06
+				conscription = 0.03
+			}
+		}
+		green_island = {
+			
+			#picture = start_national_country
+			allowed = { always = no }
+			modifier = {
+				
+			}
+		}
+
+		
+    }
+}

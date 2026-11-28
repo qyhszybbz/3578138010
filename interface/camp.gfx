@@ -1,0 +1,12 @@
+spriteTypes = {
+	#阵营图标
+	spriteType = { #布宜诺斯艾利斯公约组织
+		name = "GFX_camp_ARG_Buenos_Aires_Organization"
+		textureFile = "gfx/interface/camp/ARG_Buenos_Aires_Organization.dds"
+	}
+	#阵营旗帜
+	spriteType = { #布宜诺斯艾利斯公约组织
+		name = "GFX_camp_ARG_BaOA_banner"
+		textureFile = "gfx/interface/camp/ARG_BaOA_banner.dds"
+	}
+}

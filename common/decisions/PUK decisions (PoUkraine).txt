@@ -1,0 +1,106 @@
+PUK_Reintegrate_Ukrainian_territory = { #整合乌克兰故土
+	#恢复乌克兰
+	PUK_Restore_Ukraine = {
+		icon = generic_form_nation
+		allowed = { always = yes }
+
+		on_map_mode = decision_view_only
+
+		highlight_states = { 
+			highlight_state_targets = {
+				state = 91
+				state = 93
+				state = 137
+				state = 192
+				state = 193
+				state = 196
+				state = 197
+				state = 198
+				state = 199
+				state = 200
+				state = 201
+				state = 202
+				state = 203
+				state = 221
+				state = 225
+				state = 226
+				state = 227
+				state = 228
+				state = 259
+				state = 834
+				state = 1018
+				state = 1489
+			}
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = all_ukraine_coring_states_tt
+				controls_state = 91
+				controls_state = 93
+				controls_state = 137
+				controls_state = 192
+				controls_state = 193
+				controls_state = 196
+				controls_state = 197
+				controls_state = 198
+				controls_state = 199
+				controls_state = 200
+				controls_state = 201
+				controls_state = 202
+				controls_state = 203
+				controls_state = 221
+				controls_state = 225
+				controls_state = 226
+				controls_state = 227
+				controls_state = 228
+				controls_state = 259
+				controls_state = 834
+				controls_state = 1018
+				controls_state = 1489
+			}
+		}
+
+		visible = {
+			original_tag = PUK
+			NOT = { has_country_flag = PUK_Restored_Ukraine } #已恢复乌克兰
+		}
+
+		complete_effect = {  
+			set_cosmetic_tag = PUK_UKR_Restored #乌克兰
+			set_capital = {
+				state = 202
+			}
+
+			custom_effect_tooltip = all_Ukr_cores_tt
+			hidden_effect = {
+				91 = { add_core_of = ROOT }
+				93 = { add_core_of = ROOT }
+				95 = { add_core_of = ROOT }
+				137 = { add_core_of = ROOT }
+				192 = { add_core_of = ROOT }
+				193 = { add_core_of = ROOT }
+				196 = { add_core_of = ROOT }
+				197 = { add_core_of = ROOT }
+				198 = { add_core_of = ROOT }
+				199 = { add_core_of = ROOT }
+				200 = { add_core_of = ROOT }
+				201 = { add_core_of = ROOT }
+				202 = { add_core_of = ROOT }
+				203 = { add_core_of = ROOT }
+				221 = { add_core_of = ROOT }
+				225 = { add_core_of = ROOT }
+				226 = { add_core_of = ROOT }
+				227 = { add_core_of = ROOT }
+				228 = { add_core_of = ROOT }
+				259 = { add_core_of = ROOT }
+				834 = { add_core_of = ROOT }
+				1018 = { add_core_of = ROOT }
+				1489 = { add_core_of = ROOT }
+			}
+		}
+		ai_will_do = {
+			base = 200
+		}
+	}
+}

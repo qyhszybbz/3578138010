@@ -1,0 +1,7 @@
+spriteTypes = {
+	#领导人
+	spriteType = { #佩德罗·巴勃罗·拉米雷斯
+		name = "GFX_leader_PAN_George_Van_Horn_Mosley"
+		texturefile = "gfx/leaders/PAN/PAN_George_Van_Horn_Mosley.dds"
+	}
+} 

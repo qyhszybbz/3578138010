@@ -1,0 +1,40 @@
+capital = 540
+oob = "BOT_1935"
+set_stability = 0.12
+set_war_support = 0.24
+starting_train_buffer = 0.65
+set_fuel_ratio = 0.6
+set_research_slots = 2
+
+### 初始科技 ###
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1	
+	tech_mountaineers = 1
+	tech_trucks = 1
+	gw_artillery = 1
+	basic_train = 1
+	gwtank_chassis = 1
+}
+
+### 领导人 ###
+recruit_character = BOT_Charles_ArdenClarke #查尔斯·阿登-克拉克
+
+add_ideas = {
+	### 初始民族精神 ###
+	BOT_Shadow_of_Cape #开普的阴影
+}
+
+
+set_politics = {
+	ruling_party = tttt
+	last_election = "1932.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	Conservatism = 15
+	Authoritarianism = 22
+	tttt = 51
+	fascism = 12
+}

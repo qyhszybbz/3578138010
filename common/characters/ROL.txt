@@ -1,0 +1,13 @@
+characters = {
+	#领导人安东·潘涅库克
+	ROL_anton_pannekoek = {
+		name = ROL_anton_pannekoek
+		country_leader = {
+			ideology = communism_small
+			expire = "1965.1.1.1"
+			id = -1
+			#traits = { }
+		}
+	}
+
+}

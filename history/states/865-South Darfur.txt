@@ -1,0 +1,25 @@
+state={
+	id=865
+	name="STATE_865"
+	manpower = 422020
+	state_category = wasteland
+	resources = {
+		steel = 6
+		chromium = 5
+	}
+	
+	history = {
+		owner = FWA
+		add_core_of = SUD
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces={
+		1960 5060 10857 
+	}
+	
+	buildings_max_level_factor = 1.000
+	local_supplies = 0.000
+}

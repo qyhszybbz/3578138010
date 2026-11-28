@@ -1,0 +1,398 @@
+ideas = {
+	industry = {
+		law = yes
+		use_list_view = yes
+
+		no_industry = {
+
+
+			allowed = {
+				always = yes
+			}
+			cost = 150
+			modifier = {
+				production_speed_industrial_complex_factor = -0.4
+				production_speed_arms_factory_factor = -0.3
+				conversion_cost_civ_to_mil_factor = 0.2
+				industrial_capacity_factory = -0.3
+			}
+
+
+			cancel_if_invalid = no
+		}
+		less_industry = {
+
+
+			allowed = {
+				always = yes
+			}
+			cost = 450
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				conversion_cost_civ_to_mil_factor = 0.2
+				industrial_capacity_factory = -0.5
+				consumer_goods_expected_value = 0.2
+			}
+
+
+			cancel_if_invalid = no
+		}
+		normal_industry = {
+
+			default = yes
+			allowed = {
+				always = yes
+			}
+			cost = 750
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.19
+				conversion_cost_civ_to_mil_factor = 0.15
+				industrial_capacity_factory = 0.3
+				consumer_goods_expected_value = 0.15
+			}
+
+
+			cancel_if_invalid = no
+		}
+		well_industry = {
+
+
+			allowed = {
+				always = yes
+			}
+			cost = 1150
+			modifier = {
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_arms_factory_factor = 0.25
+				conversion_cost_civ_to_mil_factor = 0.10
+				industrial_capacity_factory = 0.25
+				consumer_goods_expected_value = 0.2
+			}
+
+
+			cancel_if_invalid = no
+		}
+	}
+	military = {
+		law = yes
+		use_list_view = yes
+
+		no_military = {
+
+
+			allowed = {
+				always = yes
+			}
+			cost = 150
+			modifier = {
+				army_attack_factor = -0.3
+				army_speed_factor = -0.2
+				planning_speed = -0.5
+				max_dig_in = -6
+				army_defence_factor = -0.2
+			}
+
+
+			cancel_if_invalid = no
+		}
+		less_military = {
+
+
+			allowed = {
+				always = yes
+			}
+			cost = 150
+			modifier = {
+				army_attack_factor = 0.1
+				army_speed_factor = -0.05
+				planning_speed = -0.05
+				max_dig_in = -5
+				army_defence_factor = -0.2
+			}
+
+
+			cancel_if_invalid = no
+		}
+		normal_military = {
+
+			default = yes
+			allowed = {
+				always = yes
+			}
+			cost = 150
+			modifier = {
+				army_attack_factor = 0.15
+				army_speed_factor = 0.09
+				planning_speed = 0.2
+				max_dig_in = 10
+				army_defence_factor = 0.1
+			}
+
+
+			cancel_if_invalid = no
+		}
+		war_military = {
+
+
+			allowed = {
+				always = yes
+			}
+			cost = 150
+			modifier = {
+				army_attack_factor = 0.35
+				army_speed_factor = 0.25
+				planning_speed = 0.5
+				max_dig_in = 20
+				army_defence_factor = 0.4
+			}
+
+
+			cancel_if_invalid = no
+		}
+	}
+	society = {
+		law = yes
+		use_list_view = yes
+
+		no_society = {
+			allowed = {
+				always = yes
+			}
+			cost = 150
+			modifier = {
+				stability_factor= -0.3
+				stability_weekly_factor = -0.02
+				war_support_factor = -0.25
+				resistance_growth = 0.2
+			}
+
+
+			cancel_if_invalid = no
+		}
+		less_society = {
+			allowed = {
+				always = yes
+			}
+			cost = 150
+			modifier = {
+				stability_factor= -0.05
+				stability_weekly_factor = 0.02
+				war_support_factor = -0.1
+				resistance_decay = -0.05
+			}
+
+
+			cancel_if_invalid = no
+		}
+		normal_society = {
+			default = yes
+			allowed = {
+				always = yes
+			}
+			cost = 150
+			modifier = {
+				stability_factor= 0.1
+				stability_weekly_factor = 0.05
+				war_support_factor = 0.2
+				resistance_decay = 0.25
+				required_garrison_factor = -0.2
+				non_core_manpower = 0.1
+			}
+
+
+			cancel_if_invalid = no
+		}
+		reich_society = {
+			allowed = {
+				always = yes
+			}
+			cost = 150
+			modifier = {
+				stability_factor= 0.3
+				stability_weekly_factor = 0.2
+				war_support_factor = 0.4
+				resistance_decay = 0.35
+				required_garrison_factor = -0.25
+				non_core_manpower = 0.15
+			}
+
+
+			cancel_if_invalid = no
+		}
+	}
+
+	agriculture = {
+		law = yes
+		use_list_view = yes
+
+		primitive_agriculture = {
+			allowed = {
+				always = yes
+			}
+			cost = 150
+			modifier = {
+				consumer_goods_factor = 0.1
+				monthly_population = -0.1
+				stability_factor = -0.15
+				industrial_capacity_factory = -0.20
+			}
+			cancel_if_invalid = no
+		}
+		feudal_agriculture = {
+			allowed = {
+				always = yes
+			}
+			cost = 150
+			modifier = {
+				consumer_goods_factor = 0.05
+				monthly_population = -0.05
+				stability_factor = -0.05
+				industrial_capacity_factory = -0.10
+			}
+			cancel_if_invalid = no
+		}
+		modern_agriculture = {
+			default = yes
+			allowed = {
+				always = yes
+			}
+			cost = 150
+			modifier = {
+				consumer_goods_factor = -0.05
+				monthly_population = 0.10
+				stability_factor = 0.075
+				industrial_capacity_factory = 0.075
+			}
+			cancel_if_invalid = no
+		}
+		fully_mechanized_agriculture = {
+			allowed = {
+				always = yes
+			}
+			cost = 150
+			modifier = {
+				consumer_goods_factor = -0.1
+				monthly_population = 0.15
+				stability_factor = 0.15
+				industrial_capacity_factory = 0.1
+			}
+			cancel_if_invalid = no
+		}
+	}
+
+	administrative_efficiency = {
+		law = yes
+		use_list_view = yes
+
+		corrupt_state = {
+			allowed = {
+				always = yes
+			}
+			cost = 150
+			modifier = {
+				political_power_factor = -0.5
+				production_speed_buildings_factor = -0.2
+				political_advisor_cost_factor = 0.25
+			}
+			cancel_if_invalid = no
+		}
+		severe_bureaucracy = {
+			allowed = {
+				always = yes
+			}
+			cost = 150
+			modifier = {
+				political_power_factor = -0.25
+				production_speed_buildings_factor = -0.1
+				political_advisor_cost_factor = 0.1
+			}
+			cancel_if_invalid = no
+		}
+		normal_government = {
+			default = yes
+			allowed = {
+				always = yes
+			}
+			cost = 150
+			modifier = {
+				political_power_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+			cancel_if_invalid = no
+		}
+		efficient_government = {
+			allowed = {
+				always = yes
+			}
+			cost = 150
+			modifier = {
+				political_power_factor = 0.15
+				production_speed_buildings_factor = 0.15
+				political_advisor_cost_factor = -0.1
+			}
+			cancel_if_invalid = no
+		}
+	}
+
+	poverty = {
+		law = yes
+		use_list_view = yes
+
+		high_poverty = {
+			allowed = {
+				always = yes
+			}
+			cost = 150
+			modifier = {
+				stability_factor = -0.10
+				political_power_factor = -0.15
+				production_factory_efficiency_gain_factor = -0.15
+				production_factory_start_efficiency_factor = -0.15
+				monthly_population = 0.15
+			}
+			cancel_if_invalid = no
+		}
+		common_poverty = {
+			allowed = {
+				always = yes
+			}
+			cost = 150
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = -0.10
+				production_factory_efficiency_gain_factor = -0.05
+				production_factory_start_efficiency_factor = -0.05
+				monthly_population = 0.05
+			}
+			cancel_if_invalid = no
+		}
+		less_poverty = {
+			default = yes
+			allowed = {
+				always = yes
+			}
+			cost = 150
+			modifier = {
+				stability_factor = -0.025
+				political_power_factor = -0.05
+			}
+			cancel_if_invalid = no
+		}
+		no_poverty = {
+			allowed = {
+				always = yes
+			}
+			cost = 150
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.10
+				production_factory_start_efficiency_factor = 0.10
+				monthly_population = -0.025
+			}
+			cancel_if_invalid = no
+		}
+	}
+}

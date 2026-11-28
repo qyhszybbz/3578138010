@@ -1,0 +1,39 @@
+
+state={
+	id = 1214
+	name="STATE_1214"
+	manpower = 895419
+	resources={
+	}
+	
+	state_category = town
+
+	history={
+		owner = COL
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			air_base = 4
+			12790 = {
+				naval_base = 5
+			}
+			8056 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = COL
+		victory_points = {
+			8056 1 
+		}
+		victory_points = {
+			1937 5 
+		}
+
+	}
+
+	provinces={
+		8056 1937 12703 12790
+	}
+
+	local_supplies=0.0 
+}

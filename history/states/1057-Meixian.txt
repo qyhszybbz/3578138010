@@ -1,0 +1,33 @@
+state = {
+	id = 1057
+	name = "STATE_1057"
+	manpower = 5022414
+	state_category = rural
+	history = {
+		owner = GAD
+		add_core_of = GAD
+		add_core_of = PRC
+		add_core_of = CHI
+		add_extra_state_shared_building_slots = 2
+		buildings = {
+			9938 = {
+				naval_base = 1
+				coastal_bunker = 1
+				bunker = 1
+			}
+		}
+		victory_points = {
+			4050 15
+		}
+		victory_points = {
+			7141 3
+		}
+		victory_points = {
+			9938 3
+		}
+	}
+	provinces = {
+		1078 4050 4165 4207 7067 7141 7182 9938 9978
+	}
+	local_supplies = 7
+}

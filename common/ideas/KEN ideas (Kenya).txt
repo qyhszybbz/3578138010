@@ -1,0 +1,23 @@
+ideas = {
+	country = {
+        ### 初始民族精神 ###
+        #高原与海岸的僵局
+        KEN_Stalemate_Between_Plateau_and_Coast = {
+			on_add = { log = "[GetLogRoot]: add idea KEN_Stalemate_Between_Plateau_and_Coast" }
+			picture = Stalemate_Between_Plateau_and_Coast
+			allowed = { always = no }
+			modifier = {
+				
+			}
+		}
+		#叛逆的孩子
+		KEN_Rebellious_Child = {
+			on_add = { log = "[GetLogRoot]: add idea KEN_Rebellious_Child" }
+			picture = Rebellious_Child
+			allowed = { always = no }
+			modifier = {
+				
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+
+state={
+	id = 1274
+	name="STATE_1274"
+	manpower = 48771
+	resources={
+
+	}
+	state_category = large_city
+
+	history={
+		owner = TTS
+		add_core_of = TTS
+		add_core_of = LBV
+		add_claim_by = ITA
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 2
+		}
+		
+		victory_points = {
+			13472 8
+		}
+	}
+
+	provinces={
+		13472
+	}
+
+	local_supplies=0.0 
+}

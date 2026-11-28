@@ -1,0 +1,99 @@
+ideas = {
+	country = {
+		BBR_Unorganized_leadership = { #无组织的领导层
+			modifier = {
+				conscription_factor = -0.1
+				stability_factor = -0.3
+				supply_factor = -0.2
+			}
+		}
+		BBR_revolutionary_enthusiasm_1 = { #革命热情
+			picture = BBR_revolutionary_enthusiasm
+			modifier = {
+				war_support_factor = 0.15
+				stability_factor = -0.1 
+				army_infantry_attack_factor = 0.05
+			}
+		}
+		BRB_revolutionary_enthusiasm_2 = { #革命热情2
+			picture = BBR_revolutionary_enthusiasm
+			modifier = {
+				war_support_factor = 0.15
+				stability_factor = -0.1
+				army_infantry_attack_factor = 0.05
+				army_org_factor = 0.05
+				training_time_factor = -0.05
+			}
+		}
+		BBR_Confederate_siege = { #邦联的围剿
+			modifier = {
+				stability_factor = -0.1
+				land_doctrine_cost_factor = 0.1
+				supply_factor = 0.1
+				political_power_factor = -0.05
+			}
+		}
+		BBR_peoples_war = { #人民战争
+			modifier = {
+				stability_factor = 0.05
+				weekly_manpower = 400
+				conscription_factor = 0.2
+				pocket_penalty = -0.2
+				equipment_capture = 0.2
+				
+			}
+		}
+		BBR_Riots_broke_out = { #暴乱四起
+			modifier = {
+				local_resources_factor = -1
+				industrial_capacity_factory = -1
+				stability_factor = -0.8
+				resistance_target = 0.2
+			}
+		}
+		BBR_Land_reform_weapons = { #土改武器
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.5
+					reliability = -0.3
+				}
+				support_equipment = {
+					build_cost_ic = -0.5
+					reliability = -0.3
+				}
+			}
+		}
+		BBR_Red_Army = { #红军
+			modifier = {
+				army_org_factor = 0.025
+				planning_speed = 0.06
+				army_strength_factor = 0.1
+			}
+		}
+		BBR_for_ideal = { #为了理想
+			modifier = {
+				stability_factor = 0.1
+				political_power_factor = 0.15
+				mobilization_speed = 0.15
+				war_support_factor = 0.05
+				production_factory_max_efficiency_factor = 0.15
+			}
+		}
+		BRB_Deep_guerrilla_tactics = { #纵深游击战术
+			
+			modifier = {
+				pocket_penalty = -0.2
+				army_infantry_attack_factor = 0.1
+				army_speed_factor = 0.15
+				
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					instant = yes
+					hard_attack = 0.10
+				}
+			}
+			
+		}
+	}
+}

@@ -1,0 +1,24 @@
+state={
+	id = 881
+	name="STATE_881"
+	manpower = 300560
+	state_category = pastoral
+	resources = {
+		oil = 6
+	}
+
+	history={
+		owner = KEN
+		add_core_of = KEN
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	provinces={
+		8133 10761 10976 12927 
+	}
+	
+	buildings_max_level_factor = 1.000
+	local_supplies = 0.000
+}

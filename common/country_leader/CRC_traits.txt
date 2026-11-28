@@ -1,0 +1,7 @@
+leader_traits ={ 
+	CUB_night_watchman  = { # 守夜人
+		stability_factor = 0.05
+		political_power_gain = 0.01
+		tttt_drift = 0.01
+	}
+}

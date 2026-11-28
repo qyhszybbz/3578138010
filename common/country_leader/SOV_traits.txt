@@ -1,0 +1,45 @@
+leader_traits ={
+	#政府首脑
+	SOV_chernov_head_of_government = {
+		random = no
+		political_power_factor = 0.05
+		stability_factor = 0.06
+		war_support_factor = 0.06
+	}
+	#经济部长
+	SOV_voznesensky_economy_minister = {
+		random = no
+		production_speed_buildings_factor = 0.05
+		production_speed_rail_way_factor = 0.10
+		repair_speed_rail_way_factor = 0.10
+		industrial_capacity_factory = 0.03
+	}
+	#外交部长
+	SOV_fadeyev_foreign_minister = {
+		random = no
+		compliance_gain = 0.05
+		send_volunteer_size = 1
+		min_export = 0.10
+		trade_opinion_factor = 0.15
+	}
+	#宣传部长
+	SOV_bulgakov_propaganda_minister = {
+		random = no
+		stability_factor = 0.05
+		research_speed_factor = 0.03
+	}
+	#内政部长
+	SOV_tsereteli_interior_minister = {
+		random = no
+		consumer_goods_factor = -0.05
+		local_resources_factor = 0.10
+		Progressivism_drift = 0.005
+	}
+	#国防部长
+	SOV_denikin_defence_minister = {
+		random = no
+		war_support_factor = 0.10
+		army_attack_factor = 0.10
+		army_org_regain = 0.10
+	}
+}

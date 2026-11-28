@@ -1,0 +1,29 @@
+state={
+	id = 1015
+	name="STATE_1015"
+	resources={
+		steel=10
+	}
+
+	state_category = large_city
+
+	history={
+		owner = USA
+		add_core_of = USA
+		buildings = {
+			infrastructure = 4
+			dockyard = 2
+			industrial_complex = 4
+			arms_factory = 1
+		}
+		set_demilitarized_zone = yes
+	}
+
+	provinces={
+		6909 9832 9847 9850
+	}
+	manpower = 610519
+	buildings_max_level_factor=1.000
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,23 @@
+ideas = {
+	country = {
+		### 初始民族精神 ###
+		#安萨教派网络
+		SUD_Ansar_Sect_Network = {
+			on_add = { log = "[GetLogRoot]: add idea SUD_Ansar_Sect_Network" }
+			picture = Ansar_Sect_Network
+			allowed = { always = no }
+			modifier = {
+				
+			}
+		}
+		#巴黎的橄榄枝
+		SUD_Olive_Branch_from_Paris = {
+			on_add = { log = "[GetLogRoot]: add idea SUD_Olive_Branch_from_Paris" }
+			picture = Olive_Branch_from_Paris
+			allowed = { always = no }
+			modifier = {
+				
+			}
+		}
+	}
+}

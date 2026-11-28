@@ -1,0 +1,33 @@
+state = {
+	id = 1008
+	name = "STATE_1008"
+	manpower = 883490
+	state_category = city
+	resources = {
+		oil = 17
+	}
+
+	history = {
+		owner = CSA
+		add_core_of = CSA
+		add_claim_by = USA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		victory_points = {
+			4740 10
+		}
+		victory_points = {
+			7834 10
+		}
+	}
+
+
+	provinces={
+		4586 10340 4740 7892 4811 1352 7834 9802
+	}
+
+	local_supplies = 20.0 
+}

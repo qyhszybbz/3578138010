@@ -1,0 +1,264 @@
+units = {
+
+	fleet = {
+		name = "F Fleet"
+		naval_base = 6845
+		task_force = {
+			name = "Battle Squadron"
+			location = 6845
+
+			#格兰特号
+			ship = {
+				name = "Grant"
+				pride_of_the_fleet = yes
+				definition = battle_cruiser
+				start_experience_factor = 0.3
+
+				equipment = {
+					ship_hull_heavy_1 = {
+						amount = 1
+						owner = USA
+						version_name = "BattleShip"
+					}
+				}
+			}
+
+			#宪法号
+			ship = {
+				name = "Constitution"
+				pride_of_the_fleet = yes
+				definition = battle_cruiser
+				start_experience_factor = 0.3
+
+				equipment = {
+					ship_hull_heavy_1 = {
+						amount = 1
+						owner = USA
+						version_name = "BattleShip"
+					}
+				}
+			}
+		}
+
+		task_force = {
+			name = "Cruiser Division"
+			location = 6984
+
+			ship = {
+				name = "Cruiser 1"
+				definition = light_cruiser
+				start_experience_factor = 0.2
+				equipment = {
+					ship_hull_cruiser_1 = { amount = 1  owner = USA version_name = "Danae Class" }
+				}
+			}
+			ship = {
+				name = "Cruiser 2"
+				definition = light_cruiser
+				start_experience_factor = 0.2
+				equipment = {
+					ship_hull_cruiser_1 = { amount = 1  owner = USA version_name = "Danae Class" }
+				}
+			}
+			ship = {
+				name = "Cruiser 3"
+				definition = light_cruiser
+				start_experience_factor = 0.2
+				equipment = {
+					ship_hull_cruiser_1 = { amount = 1  owner = USA version_name = "Danae Class" }
+				}
+			}
+			ship = {
+				name = "Cruiser 4"
+				definition = light_cruiser
+				start_experience_factor = 0.2
+				equipment = {
+					ship_hull_cruiser_1 = { amount = 1  owner = USA version_name = "Danae Class" }
+				}
+			}
+			ship = {
+				name = "Cruiser 5"
+				definition = light_cruiser
+				start_experience_factor = 0.2
+				equipment = {
+					ship_hull_cruiser_1 = { amount = 1  owner = USA version_name = "Danae Class" }
+				}
+			}
+			ship = {
+				name = "Cruiser 6"
+				definition = light_cruiser
+				start_experience_factor = 0.2
+				equipment = {
+					ship_hull_cruiser_1 = { amount = 1  owner = USA version_name = "Danae Class" }
+				}
+			}
+			ship = {
+				name = "Cruiser 7"
+				definition = light_cruiser
+				start_experience_factor = 0.2
+				equipment = {
+					ship_hull_cruiser_1 = { amount = 1  owner = USA version_name = "Danae Class" }
+				}
+			}
+			ship = {
+				name = "Cruiser 8"
+				definition = light_cruiser
+				start_experience_factor = 0.2
+				equipment = {
+					ship_hull_cruiser_1 = { amount = 1  owner = USA version_name = "Danae Class" }
+				}
+			}
+			ship = {
+				name = "Cruiser 9"
+				definition = light_cruiser
+				start_experience_factor = 0.2
+				equipment = {
+					ship_hull_cruiser_1 = { amount = 1  owner = USA version_name = "Danae Class" }
+				}
+			}
+			ship = {
+				name = "Cruiser 10"
+				definition = light_cruiser
+				start_experience_factor = 0.2
+				equipment = {
+					ship_hull_cruiser_1 = { amount = 1  owner = USA version_name = "Danae Class" }
+				}
+			}
+		}
+
+		task_force = {
+			name = "Destroyer Flotilla"
+			location = 6984
+
+			ship = {
+				name = "Destroyer 1"
+				definition = destroyer
+				equipment = { ship_hull_light_1 = { amount = 1  owner = USA version_name = "A/B/C/D Class" } }
+			}
+			ship = {
+				name = "Destroyer 2"
+				definition = destroyer
+				equipment = { ship_hull_light_1 = { amount = 1  owner = USA version_name = "A/B/C/D Class" } }
+			}
+			ship = {
+				name = "Destroyer 3"
+				definition = destroyer
+				equipment = { ship_hull_light_1 = { amount = 1  owner = USA version_name = "A/B/C/D Class" } }
+			}
+			ship = {
+				name = "Destroyer 4"
+				definition = destroyer
+				equipment = { ship_hull_light_1 = { amount = 1  owner = USA version_name = "A/B/C/D Class" } }
+			}
+			ship = {
+				name = "Destroyer 5"
+				definition = destroyer
+				equipment = { ship_hull_light_1 = { amount = 1  owner = USA version_name = "A/B/C/D Class" } }
+			}
+			ship = {
+				name = "Destroyer 6"
+				definition = destroyer
+				equipment = { ship_hull_light_1 = { amount = 1  owner = USA version_name = "A/B/C/D Class" } }
+			}
+			ship = {
+				name = "Destroyer 7"
+				definition = destroyer
+				equipment = { ship_hull_light_1 = { amount = 1  owner = USA version_name = "A/B/C/D Class" } }
+			}
+			ship = {
+				name = "Destroyer 8"
+				definition = destroyer
+				equipment = { ship_hull_light_1 = { amount = 1  owner = USA version_name = "A/B/C/D Class" } }
+			}
+			ship = {
+				name = "Destroyer 9"
+				definition = destroyer
+				equipment = { ship_hull_light_1 = { amount = 1  owner = USA version_name = "A/B/C/D Class" } }
+			}
+			ship = {
+				name = "Destroyer 10"
+				definition = destroyer
+				equipment = { ship_hull_light_1 = { amount = 1  owner = USA version_name = "A/B/C/D Class" } }
+			}
+		}
+
+
+		task_force = {
+			name = "Submarine Flotilla"
+			location = 6845
+
+			ship = {
+				name = "Submarine 1"
+				definition = submarine
+				equipment = { ship_hull_submarine_1 = { amount = 1  owner = USA version_name = "O/P/R Class" } }
+			}
+			ship = {
+				name = "Submarine 2"
+				definition = submarine
+				equipment = { ship_hull_submarine_1 = { amount = 1  owner = USA version_name = "O/P/R Class" } }
+			}
+			ship = {
+				name = "Submarine 3"
+				definition = submarine
+				equipment = { ship_hull_submarine_1 = { amount = 1  owner = USA version_name = "O/P/R Class" } }
+			}
+			ship = {
+				name = "Submarine 4"
+				definition = submarine
+				equipment = { ship_hull_submarine_1 = { amount = 1  owner = USA version_name = "O/P/R Class" } }
+			}
+			ship = {
+				name = "Submarine 5"
+				definition = submarine
+				equipment = { ship_hull_submarine_1 = { amount = 1  owner = USA version_name = "O/P/R Class" } }
+			}
+			ship = {
+				name = "Submarine 6"
+				definition = submarine
+				equipment = { ship_hull_submarine_1 = { amount = 1  owner = USA version_name = "O/P/R Class" } }
+			}
+			ship = {
+				name = "Submarine 7"
+				definition = submarine
+				equipment = { ship_hull_submarine_1 = { amount = 1  owner = USA version_name = "O/P/R Class" } }
+			}
+			ship = {
+				name = "Submarine 8"
+				definition = submarine
+				equipment = { ship_hull_submarine_1 = { amount = 1  owner = USA version_name = "O/P/R Class" } }
+			}
+			ship = {
+				name = "Submarine 9"
+				definition = submarine
+				equipment = { ship_hull_submarine_1 = { amount = 1  owner = USA version_name = "O/P/R Class" } }
+			}
+			ship = {
+				name = "Submarine 10"
+				definition = submarine
+				equipment = { ship_hull_submarine_1 = { amount = 1  owner = USA version_name = "O/P/R Class" } }
+			}
+		}
+
+
+		task_force = {
+			name = "Carrier Division"
+			location = 6845 # 费城
+
+			#克林顿号
+			ship = {
+				name = "Clinton"
+				pride_of_the_fleet = yes
+				definition = carrier
+				start_experience_factor = 0.3
+
+				equipment = {
+					ship_hull_carrier_1 = {
+						amount = 1
+						owner = USA
+						version_name = "Clinton Class"
+					}
+				}
+			}
+		}
+	}
+}

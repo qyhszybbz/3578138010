@@ -1,0 +1,32 @@
+
+state={
+	id = 1267
+	name="STATE_1267"
+	manpower = 334906
+	state_category = city
+	resources={
+
+	}
+
+	history={
+		owner = PUK
+		add_core_of = PUK
+		add_core_of = UKR
+		add_claim_by = POL
+		add_claim_by = NRO
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 2
+		}
+		victory_points = {
+			491 10
+		}
+	}
+
+	provinces={
+		491
+	}
+
+	local_supplies=0.0 
+}

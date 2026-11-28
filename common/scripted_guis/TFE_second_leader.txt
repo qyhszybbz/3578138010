@@ -1,0 +1,26 @@
+   scripted_gui = {
+	
+    diplo_hos_info_politics = { #副领导人gui
+        context_type = player_context
+        parent_window_token = politics_tab
+        window_name = "diplosview_second_leader_window_politics" 
+
+        visible = {
+            THIS = {
+				has_country_flag = tfe_second_leader
+            }
+        }
+    }
+    diplo_hos_info_diplomacy = { #副领导人gui
+        context_type = selected_country_context
+        parent_window_token = selected_country_view_diplomacy
+        window_name = "diplosview_second_leader_window_diplomacy"
+
+        visible = {
+            THIS = {
+				has_country_flag = tfe_second_leader
+            }
+        }
+    }
+
+}

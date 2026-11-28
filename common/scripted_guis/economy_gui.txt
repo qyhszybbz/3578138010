@@ -1,0 +1,22 @@
+scripted_gui = {
+	economy_window = {
+		context_type = player_context
+		window_name = "economy_window"
+
+		visible = {
+			ROOT = {
+				has_country_flag = economy_window_FLAG
+			}
+		}
+		effects = {
+			economy_text_click = {
+				ROOT = {
+					CLR_country_flag = economy_window_FLAG
+				}
+			}
+		}
+		
+		
+	}
+}
+

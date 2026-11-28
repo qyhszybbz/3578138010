@@ -1,0 +1,31 @@
+characters={
+	#领导人
+	#摩西·考塔尼
+	SAF_Moses_Kotane = {
+		name = SAF_Moses_Kotane
+		portraits = {
+			civilian={
+				#large = GFX_SAF_Moses_Kotane_large
+			}
+		}
+		country_leader = {
+			desc = SAF_Moses_Kotane_desc
+			ideology = communism_small
+			traits={ }
+		}
+	}
+	#弗雷德里克·克雷斯韦尔
+	SAF_Frederic_Creswell = {
+		name = SAF_Frederic_Creswell
+		portraits = {
+			civilian={
+				large = GFX_SAF_Frederic_Creswell_large
+			}
+		}
+		country_leader = {
+			desc = SAF_Frederic_Creswell_desc
+			ideology = democracy_small
+			traits={ }
+		}
+	}
+}

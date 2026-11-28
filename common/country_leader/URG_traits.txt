@@ -1,0 +1,8 @@
+leader_traits ={
+	#领导人特质
+	#乌拉圭的考迪罗
+	URG_caudillo_of_uruguay = {
+		random = no
+		war_support_factor = 0.05
+	}
+}

@@ -1,0 +1,231 @@
+﻿capital = 41 # 马德里
+oob = "SPR_1935"
+set_naval_oob = "SPR_navy_1935"
+set_stability = 0.63
+set_war_support = 0.72
+starting_train_buffer = 1.2
+set_fuel_ratio = 0.9
+set_research_slots = 3
+set_convoys = 230
+
+### 初始科技 ###
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+	create_equipment_variant = {
+		name = "Gatito"
+		type = light_tank_chassis_1
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_heavy_machine_gun
+			turret_type_slot = tank_light_one_man_tank_turret
+			suspension_type_slot = tank_christie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 5
+			tank_nsb_armor_upgrade = 1
+		}
+	}
+}
+set_technology = {
+	electronic_mechanical_engineering = 1
+	### Infantry ###
+	infantry_weapons = 1
+	basic_train = 1
+	infantry_weapons1 = 1
+	tech_mountaineers = 1
+	marines = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_logistics_company = 1
+	tech_recon = 1
+	gw_artillery = 1
+	tech_trucks = 1
+}
+
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "SPR_air_bba"
+
+		set_technology = {
+			aa_lmg = 1
+			early_bombs = 1
+			engines_1 = 1
+			iw_small_airframe = 1
+			iw_medium_airframe = 1
+			iw_large_airframe = 1
+			air_torpedoe_1 = 1
+			bba_early_transport_plane = 1
+		}
+		SPR_BBA_air_variants = yes
+	else = {
+		set_air_oob = "SPR_air_legacy"
+		set_technology = {
+			early_fighter = 1
+			naval_bomber1 = 1
+			early_bomber = 1
+			strategic_bomber1 = 1
+			tactical_bomber1 = 1
+			early_transport_plane = 1
+		}
+	}
+}
+
+set_technology = {
+	basic_naval_mines = 1
+	submarine_mine_laying = 1
+	basic_depth_charges = 1
+	basic_torpedo = 1
+	basic_battery = 1
+	basic_cruiser_armor_scheme = 1
+	basic_heavy_battery = 1
+	basic_light_battery = 1
+	basic_heavy_armor_scheme = 1
+	early_ship_hull_submarine = 1
+	basic_ship_hull_submarine = 1
+	early_ship_hull_light = 1
+	basic_ship_hull_light = 1
+	early_ship_hull_cruiser = 1
+	basic_ship_hull_cruiser = 1
+	early_ship_hull_heavy = 1
+	basic_ship_hull_heavy = 1
+	mtg_transport = 1
+	coastal_defense_ships = 1
+}
+
+### 领导人 ###
+recruit_character = SPR_Miguel_Primo_Derivella #米格尔·普里莫·德里维拉
+recruit_character = SPR_Jose_Primo_Derivella #何塞·普里莫·德里维拉
+recruit_character = SPR_Don_Carlos #唐·卡洛斯
+recruit_character = SPR_Juan_Deborbon #胡安·德·波旁
+#政治顾问
+recruit_character = SPR_Serralo_Sunier #塞拉洛·苏涅尔
+recruit_character = SPR_Francisco_Franco #弗朗西斯科·佛朗哥
+recruit_character = SPR_Jose_GilRobles #何塞·希尔-罗夫莱斯
+recruit_character = SPR_Jose_Calvo_Sotelo #何塞·卡尔沃·索特沃
+recruit_character = SPR_Joaquin_Chapaprieta #华金·查帕普列塔
+### 将领 ###
+recruit_character = SPR_Damaso_Berenguer #达马索·贝伦格尔
+recruit_character = SPR_Miguel_Cabanellas #米格尔·卡巴内拉斯·费雷尔
+recruit_character = SPR_Sebastian_Pozas_Perea #塞巴斯蒂安·波萨斯·佩雷亚
+recruit_character = SPR_Miguel_Nunez_dePrado #米格尔·努涅斯·德普拉多
+recruit_character = SPR_Jose_Miaja_Menant #何塞·米亚哈·梅南特
+recruit_character = SPR_Gonzalo_Queipo_deLlano #贡萨洛·奎波·德里亚诺
+recruit_character = SPR_Fidel_Davila_Arrondo #菲德尔·达维拉·阿隆多
+recruit_character = SPR_Francisco_Martin_Moreno #弗朗西斯科·马丁-莫雷诺
+recruit_character = SPR_Emilio_Esteban_Infantes #埃米利奥·埃斯特万·因方特斯
+recruit_character = SPR_Agustin_Munoz_Grandes #阿古斯丁·穆尼奥斯·格兰德斯
+recruit_character = SPR_Juan_Vigon_Sueirodias #胡安·维贡·苏埃罗迪亚斯
+recruit_character = SPR_Manuel_Dies_Allegria #曼努埃尔·迪耶斯·阿莱格里亚
+recruit_character = SPR_Carlos_Asensio_Cabanillas #卡洛斯·阿森西奥·卡巴尼利亚斯
+recruit_character = SPR_Emilio_Mora #埃米利奥·莫拉
+
+add_ideas = {
+	### 初始民族精神 ###
+	SPR_Papal_Meridian #教皇子午线
+	SPR_Legacy_of_the_Civil_War #内战的遗产
+	SPR_spanish_army #西班牙军队
+	SPR_The_hanging_throne #空悬王座
+	SPR_Autonomy_Dilemma #自治难题
+	### 政治顾问 ###
+	SPR_Serralo_Sunier_pol #塞拉洛·苏涅尔
+	SPR_Francisco_Franco_pol #弗朗西斯科·佛朗哥
+	SPR_Jose_GilRobles_pol #何塞·希尔-罗夫莱斯
+	SPR_Jose_Calvo_Sotelo_pol #何塞·卡尔沃·索特沃
+	SPR_Joaquin_Chapaprieta_pol #华金·查帕普列塔
+}
+
+add_ideas = {
+	#SPR_Republic_down 共和国之荡
+	#SPR_Land_of_the_Setting_Sun 日落之国
+	#SPR_Legacy_of_the_Civil_War #内战遗产
+	#SPR_spanish_army #西班牙军队
+	#SPR_The_hanging_throne #空悬王座
+	#SPR_Autonomy_Dilemma #自治难题
+}
+
+
+set_autonomy = {
+	target = VEN
+	autonomous_state = autonomy_dominion 
+}
+set_autonomy = {
+	target = CUB
+	autonomous_state = autonomy_dominion
+}
+set_autonomy = {
+	target = MOR
+	autonomous_state = autonomy_dominion
+}
+set_autonomy = {
+	target = PHI
+	autonomy_state = autonomy_dominion
+}
+set_autonomy = {
+	target = DOM
+	autonomy_state = autonomy_dominion
+}
+set_autonomy = {
+	target = EQG
+	autonomy_state = autonomy_dominion
+}
+set_politics = {
+	ruling_party = tttt
+	last_election = "1934.3.26"
+	election_frequency = 60
+	elections_allowed = no
+}
+set_popularities = {
+	communism = 5
+	Democracy = 5
+	Socialism = 10
+	tttt = 36
+	Conservatism = 24
+	Liberalism = 12
+	fascism = 8
+}
+
+
+create_equipment_variant = {
+	name = "B级"
+	type = ship_hull_submarine_1
+	modules = {
+		fixed_ship_torpedo_slot = ship_torpedo_sub_1
+		fixed_ship_engine_slot = sub_ship_engine_1
+		rear_1_custom_slot = empty
+	}
+}
+create_equipment_variant = {
+	name = "加强B级"
+	type = ship_hull_submarine_1
+	modules = {
+		fixed_ship_torpedo_slot = ship_torpedo_sub_1
+		fixed_ship_engine_slot = sub_ship_engine_1
+		rear_1_custom_slot = ship_torpedo_sub_1
+	}
+}
+create_equipment_variant = {
+	name = "C级"
+	type = ship_hull_submarine_2
+	modules = {
+		fixed_ship_torpedo_slot = ship_torpedo_sub_1
+		fixed_ship_engine_slot = sub_ship_engine_1
+		rear_1_custom_slot = ship_torpedo_sub_1
+	}
+}

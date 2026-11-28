@@ -1,0 +1,190 @@
+on_actions = {
+	on_capitulation = {
+		effect =  {
+			if = {
+				limit ={
+					FROM = {
+						original_tag = HOL
+					}
+					ROOT = {
+						original_tag = ROL
+					}
+				}
+				
+				FROM = {
+					save_global_event_target_as = winning_country
+				} 
+				ROOT = {
+					save_global_event_target_as = losing_country
+				}
+
+				
+				if = {
+					limit = {
+						event_target:losing_country = {
+							any_allied_country = {
+								has_war_together_with = event_target:losing_country
+							}
+						}
+					}
+					set_global_flag = losing_country_multiple
+				}
+				if = {
+					limit = {
+						event_target:winning_country = {
+							any_allied_country = {
+								has_war_together_with = event_target:winning_country
+							}
+						}
+					}
+					set_global_flag = winning_country_multiple
+				}
+				if = {
+					limit = { NOT = { ROOT = { original_tag = ROL } } }
+					every_country = {
+						white_peace = ROOT
+					}
+				}
+				FROM = {
+					annex_country = {
+						target = ROOT
+						transfer_troops = no
+					}
+				}
+			
+				set_global_flag = show_peace_popup_alert
+			}
+		}
+	}
+	on_capitulation = {
+		effect =  {
+			if = {
+				limit ={
+					FROM = {
+						original_tag = ROL
+					}
+					ROOT = {
+						original_tag = HOL
+					}
+				}
+				
+				FROM = {
+					save_global_event_target_as = winning_country
+				} 
+				ROOT = {
+					save_global_event_target_as = losing_country
+				}
+
+				
+				if = {
+					limit = {
+						event_target:losing_country = {
+							any_allied_country = {
+								has_war_together_with = event_target:losing_country
+							}
+						}
+					}
+					set_global_flag = losing_country_multiple
+				}
+				if = {
+					limit = {
+						event_target:winning_country = {
+							any_allied_country = {
+								has_war_together_with = event_target:winning_country
+							}
+						}
+					}
+					set_global_flag = winning_country_multiple
+				}
+				if = {
+					limit = { NOT = { ROOT = { original_tag = HOL } } }
+					every_country = {
+						white_peace = ROOT
+					}
+				}
+				FROM = {
+					annex_country = {
+						target = ROOT
+						transfer_troops = no
+					}
+					set_cosmetic_tag = ROL_RED
+					news_event = { id = HOL_NEWS.10 }
+					GER = {
+						country_event = {
+							id = HOL_TVE_EVENT.11
+							hours = 24
+						}
+					}
+				}
+			
+				set_global_flag = show_peace_popup_alert
+			}
+		}
+	}
+	on_capitulation = {
+		effect =  {
+			if = {
+				limit ={
+					FROM = {
+						original_tag = GER
+					}
+					ROOT = {
+						original_tag = ROL
+					}
+				}
+				
+				FROM = {
+					save_global_event_target_as = winning_country
+				} 
+				ROOT = {
+					save_global_event_target_as = losing_country
+				}
+
+				
+				if = {
+					limit = {
+						event_target:losing_country = {
+							any_allied_country = {
+								has_war_together_with = event_target:losing_country
+							}
+						}
+					}
+					set_global_flag = losing_country_multiple
+				}
+				if = {
+					limit = {
+						event_target:winning_country = {
+							any_allied_country = {
+								has_war_together_with = event_target:winning_country
+							}
+						}
+					}
+					set_global_flag = winning_country_multiple
+				}
+				if = {
+					limit = { NOT = { ROOT = { original_tag = ROL } } }
+					every_country = {
+						white_peace = ROOT
+					}
+				}
+				FROM = {
+					news_event = { id = HOL_NEWS.13 }
+					HOL = {
+						transfer_state = 36
+						transfer_state = 7
+						transfer_state = 35
+						transfer_state = 977
+						transfer_state = 6
+					}
+					set_autonomy = {
+						target = HOL
+						autonomy_state = autonomy_puppet
+					}
+					#set_cosmetic_tag = ROL_RED
+				}
+			
+				set_global_flag = show_peace_popup_alert
+			}
+		}
+	}
+}

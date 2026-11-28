@@ -1,0 +1,6 @@
+is_core_Iberia = { #伊比利亚地区
+	OR = {
+		state = 792
+		state = 165
+	}
+}

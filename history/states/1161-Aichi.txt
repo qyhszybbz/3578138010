@@ -1,0 +1,24 @@
+state={
+	id = 1161
+	name="STATE_1161"
+	manpower = 4032102
+
+	state_category = large_city
+
+	history={
+		owner = JAP
+		add_core_of = JAP
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 1
+			dockyard = 1
+		}
+	}
+
+	provinces={
+		7187 4172 10125 4069 12097 
+	}
+
+	local_supplies=7.0 
+}

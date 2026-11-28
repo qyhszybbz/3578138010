@@ -1,0 +1,21 @@
+state={
+	id = 719
+	name="STATE_719"
+	manpower=3426
+	state_category = tiny_island
+
+	history={
+		owner = BAS
+		add_claim_by = BAS
+		buildings = {
+			infrastructure = 2
+			373 = {
+				naval_base = 1
+			}
+		}
+	}
+	
+	provinces={ 373 }
+
+	local_supplies=0.0 
+}

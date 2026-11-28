@@ -1,0 +1,56 @@
+Mal_civil_war_Japan = {
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		has_country_flag = MAL_CIVIL_WAR_SCF_JAP
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = MLY
+		value = 9999
+	}
+}
+Mal_civil_war_Can = {
+	allowed = {
+		original_tag = CAN
+	}
+	enable = {
+		has_country_flag = MAL_CIVIL_WAR_SCF_CAN
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = MAL
+		value = 9999
+	}
+}
+Mal_civil_war_Ast = {
+	allowed = {
+		original_tag = AST
+	}
+	enable = {
+		has_country_flag = MAL_CIVIL_WAR_SCF_CAN
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = MAL
+		value = 9999
+	}
+}
+Mal_civil_war_Nzl = {
+	allowed = {
+		original_tag = NZL
+	}
+	enable = {
+		has_country_flag = MAL_CIVIL_WAR_SCF_CAN
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = MAL
+		value = 9999
+	}
+}

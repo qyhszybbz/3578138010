@@ -1,0 +1,96 @@
+characters = {
+	#领导人
+	#加布里埃尔·纳鲁托维奇
+	POL_Gabriel_Narutowicz = {
+		name = POL_Gabriel_Narutowicz
+		portraits = {
+			civilian = {
+				large = GFX_POL_Gabriel_Narutowicz_large
+			}
+		}
+		country_leader = {
+			desc = POL_Gabriel_Narutowicz_desc
+			ideology = progressivism_small
+			traits = { POL_Wrong_Chosen_People }
+		}
+	}
+	#卡罗尔·希维尔切夫斯基
+	POL_Karol_Swierczewski = {
+		name = POL_Karol_Swierczewski
+		portraits = {
+			civilian = {
+				large = GFX_POL_Karol_Swierczewski_large
+			}
+		}
+		country_leader = {
+			ideology = communism_small
+			traits = { POL_general_walter }
+		}
+	}
+	#扬·达布斯基
+	POL_Jan_Dabski = {
+		name = POL_Jan_Dabski
+		portraits = {
+			civilian = {
+				large = GFX_POL_Jan_Dabski_large
+			}
+		}
+		country_leader = {
+			ideology = socialism_small
+			traits = { POL_tavern_negotiation }
+		}
+	}
+	#斯坦尼斯瓦夫·沃伊切霍夫斯基
+	POL_Stanislaw_Wojciechowski = {
+		name = POL_Stanislaw_Wojciechowski
+		country_leader = {
+			ideology = democracy_small
+			traits = { POL_devout_democratic_christian }
+		}
+	}
+	#斯坦尼斯瓦夫·亚当斯基
+	POL_Stanislaw_Adamski = {
+		name = POL_Stanislaw_Adamski
+		country_leader = {
+			ideology = Conservatism_small
+			traits = { POL_papal_attendant }
+		}
+	}
+	#亚当·斯德望·萨皮耶哈
+	POL_Adam_Stefan_Sapieha = {
+		name = POL_Adam_Stefan_Sapieha
+		country_leader = {
+			ideology = authoritarianism_small
+			traits = { POL_roman_count }
+		}
+	}
+	#约瑟夫·毕苏斯基
+	POL_Jozef_Pilsudski = {
+		name = POL_Jozef_Pilsudski
+		portraits = {
+			civilian = {
+				large = GFX_POL_Jozef_Pilsudski_large
+			}
+		}
+		country_leader = {
+			ideology = tttt_small
+			traits = { POL_the_greatest_marshal POL_Nation_Restorer }
+		}
+		field_marshal = {
+			traits = { old_guard brilliant_strategist war_hero politically_connected }
+			skill = 6
+			attack_skill = 6
+			defense_skill = 7
+			planning_skill = 8
+			logistics_skill = 6
+		}
+	}
+	#罗曼·德莫夫斯基
+	POL_Roman_Dmowski = {
+		name = POL_Roman_Dmowski
+		country_leader = {
+			ideology = fascism_small
+			traits = { POL_unyielding_national_hero }
+		}
+	}
+}

@@ -1,0 +1,41 @@
+state = {
+	id = 599
+	name = "STATE_599"
+	manpower = 3618560
+	state_category = city
+	resources = {
+		steel = 150
+	}
+	history = {
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			air_base = 2
+			arms_factory = 3
+			industrial_complex = 3
+			infrastructure = 4
+		}
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 6
+				infrastructure = 3 #was: 6
+				air_base = 3
+				arms_factory = 3
+
+			}
+
+		}
+		victory_points = {
+			4925 30
+		}
+		victory_points = {
+			10841 3
+		}
+	}
+	provinces = {
+		1367 4375 4925 9966 10132 10841 12141
+	}
+	local_supplies = 0
+	buildings_max_level_factor = 1.000
+}

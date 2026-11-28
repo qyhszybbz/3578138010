@@ -1,0 +1,105 @@
+spriteTypes = {
+	#ideas
+	spriteType = {
+		name = "GFX_idea_British_Universal_Empire"
+		texturefile = "gfx/interface/ideas/ENG/British_Universal_Empire.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_British_London_stock_market_crashed"
+		texturefile = "gfx/interface/ideas/ENG/British_London_stock_market_crashed.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_British_Common_wealth_dominant_country"
+		texturefile = "gfx/interface/ideas/ENG/British_Common_wealth_dominant_country.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_British_bloated_colony"
+		texturefile = "gfx/interface/ideas/ENG/British_bloated_colony.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BCR_IDEAS"
+		texturefile = "gfx/interface/ideas/ENG/BCR_IDEAS.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BSR_IDEAS"
+		texturefile = "gfx/interface/ideas/ENG/BSR_IDEAS.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ENG_IDEAS"
+		texturefile = "gfx/interface/ideas/ENG/ENG_IDEAS.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ENG_SHIT_DUSTRY"
+		texturefile = "gfx/interface/ideas/ENG/ENG_SHIT_DUSTRY.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SCO_IDEAS"
+		texturefile = "gfx/interface/ideas/ENG/SCO_IDEAS.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_WLS_IDEAS"
+		texturefile = "gfx/interface/ideas/ENG/WLS_IDEAS.dds"
+	}
+	#民族精神介绍图片
+	spriteType = {
+		name = "GFX_British_Universal_Empire_banner"
+		texturefile = "gfx/texticons/banners/British_Universal_Empire_banner.dds"
+		legacy_lazy_load = no
+	}
+	#新闻
+	spriteType = {
+		name = "GFX_AFRCIAN_ANA"
+		texturefile = "gfx/event_pictures/TVE_NEWS/ENG_CIVIL_WAR/AFRCIAN_ANA.dds"
+	}
+	spriteType = {
+		name = "GFX_BOSS_ZB"
+		texturefile = "gfx/event_pictures/TVE_NEWS/ENG_CIVIL_WAR/BOSS_ZB.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_YLB"
+		texturefile = "gfx/event_pictures/TVE_NEWS/ENG_CIVIL_WAR/CAN_YLB.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_BTFL"
+		texturefile = "gfx/event_pictures/TVE_NEWS/ENG_CIVIL_WAR/ENG_BTFL.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_CIVIL_WAR"
+		texturefile = "gfx/event_pictures/TVE_NEWS/ENG_CIVIL_WAR/ENG_CIVIL_WAR.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_CIVIL_WAR_OVER"
+		texturefile = "gfx/event_pictures/TVE_NEWS/ENG_CIVIL_WAR/ENG_CIVIL_WAR_OVER.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_KING_DIE"
+		texturefile = "gfx/event_pictures/TVE_NEWS/ENG_CIVIL_WAR/ENG_KING_DIE.dds"
+	}
+	spriteType = {
+		name = "GFX_IRE_CIVIL_WAR"
+		texturefile = "gfx/event_pictures/TVE_NEWS/ENG_CIVIL_WAR/IRE_CIVIL_WAR.dds"
+	}
+	spriteType = {
+		name = "GFX_IRE_JIEYAN"
+		texturefile = "gfx/event_pictures/TVE_NEWS/ENG_CIVIL_WAR/IRE_JIEYAN.dds"
+	}
+	spriteType = {
+		name = "GFX_MAL_CIVIL_WAR"
+		texturefile = "gfx/event_pictures/TVE_NEWS/ENG_CIVIL_WAR/MAL_CIVIL_WAR.dds"
+	}
+	spriteType = {
+		name = "GFX_RAJ_CIVIL_WAR"
+		texturefile = "gfx/event_pictures/TVE_NEWS/ENG_CIVIL_WAR/RAJ_CIVIL_WAR.dds"
+	}
+	spriteType = {
+		name = "GFX_TUR_CATCH_ENG_STATE"
+		texturefile = "gfx/event_pictures/TVE_NEWS/ENG_CIVIL_WAR/TUR_CATCH_ENG_STATE.dds"
+	}
+	spriteType = {
+		name = "GFX_WLS_SCO_FUCK_UK"
+		texturefile = "gfx/event_pictures/TVE_NEWS/ENG_CIVIL_WAR/WLS_SCO_FUCK_UK.dds"
+	}
+	
+	
+
+}

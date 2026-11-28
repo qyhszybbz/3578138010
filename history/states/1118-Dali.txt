@@ -1,0 +1,39 @@
+state = {
+	id = 1118
+	name = "STATE_1118"
+	manpower = 448555
+	state_category = rural
+	history = {
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+		add_core_of = YUN
+		add_extra_state_shared_building_slots = 1
+		buildings = {
+			infrastructure = 2
+		}
+		1938.10.25 = {
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "Waking the Tiger" 
+					}
+
+				}
+				CHI = {
+					transfer_state = PREV
+
+				}
+
+			}
+
+		}
+		victory_points = {
+			7965 5
+		}
+	}
+	provinces = {
+		7965 7976 10863 12898
+	}
+	local_supplies = 7
+}

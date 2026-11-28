@@ -1,0 +1,86 @@
+ideas = {
+	country = { ### NATIONAL SPIRITS ###
+	
+	Duarte_II = {
+		name = Habsburg_glory
+		allowed = {
+			always = no
+			tag = POR
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+		picture = aus_Habsburg_glory
+		modifier = {
+		
+		}	
+	}
+	king_in_huoshan = {
+		name = king_in_huoshan
+		allowed = {
+			always = no
+			tag = POR
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+		picture = GFX_idea_king_in_huoshan
+		modifier = {
+			stability_weekly = -0.7
+			political_power_gain = 0.1
+		}	
+	}
+	spr_ring = {
+		name = spr_ring
+		allowed = {
+			always = no
+			tag = POR
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+		picture = GFX_idea_spr_ring
+		modifier = {
+			stability_factor = 0.02
+		}	
+	}
+
+	
+	zhiming_headache = {
+		name = zhiming_headache
+		allowed = {
+			always = no
+			tag = POR
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+		picture = GFX_idea_zhiming_headache
+		modifier = {
+			stability_factor = -0.1
+			war_support_factor = -0.05
+			political_power_gain = -0.02
+		}	
+	}
+
+	
+
+
+
+
+
+}
+
+}

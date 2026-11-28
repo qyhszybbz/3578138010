@@ -1,0 +1,29 @@
+
+state={
+	id = 369
+	name="STATE_369"
+	manpower = 2001775
+	
+	state_category = city
+	
+	resources={
+		oil=52
+	}
+
+	history={
+		owner = CSA
+		add_core_of = CSA 
+		add_claim_by = USA
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 4
+			air_base = 5
+		}
+	}
+
+	provinces={
+		1453 1528 1559 1643 4507 4522 4535 7524 7555 7599 12313 12398 12401 
+	}
+
+	local_supplies=0.0 
+}

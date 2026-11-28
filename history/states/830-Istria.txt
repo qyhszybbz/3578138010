@@ -1,0 +1,28 @@
+
+state = {
+	id = 830
+	name = "STATE_830" # Dalmatia
+	manpower = 109011 # Fiume had 75000 before merging rest of Istria # Dalmatia had 1431700 before Fiume split
+
+	state_category = town 
+
+
+	history = {
+		owner = AUS
+		add_core_of = AUS
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		
+		add_core_of = ITA
+		add_core_of = CRO
+		add_core_of = LBV
+	}
+
+	provinces = {
+		 11735
+	}
+
+	local_supplies = 0.0 
+}

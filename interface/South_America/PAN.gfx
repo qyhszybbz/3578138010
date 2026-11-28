@@ -1,0 +1,16 @@
+spriteTypes = {
+	#领导人
+	spriteType = { #乔治·范·霍恩·莫斯利
+		name = "GFX_leader_PHI_Emilio_Archinardo"
+		texturefile = "gfx/leaders/PAR/PAR_Pedro_Pablo_Ramirez.dds"
+	}
+	###民族精神
+	spriteType = { #在两个美国之间
+		name = "GFX_idea_PAN_between_two_united_states" 
+		texturefile = "gfx/interface/ideas/PAN/PAN_between_two_united_states.dds"
+	}
+	spriteType = { #大哥伦比亚的倒计时
+		name = "GFX_idea_PAN_Countdown_to_Gran_Columbia" 
+		texturefile = "gfx/interface/ideas/PAN/PAN_Countdown_to_Gran_Columbia.dds"
+	}
+}

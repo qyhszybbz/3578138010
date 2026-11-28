@@ -1,0 +1,88 @@
+spriteTypes = {
+	#goals
+	spriteType = {
+		name = "GFX_ROC_BYJT_P"
+		texturefile = "gfx/interface/goals/ROC/ROC_BYJT_P.png"
+	}
+	spriteType = {
+		name = "GFX_ROC_KZJWDYS_P"
+		texturefile = "gfx/interface/goals/ROC/ROC_KZJWDYS_P.png"
+	}
+	spriteType = {
+		name = "GFX_ROC_MPZD_P"
+		texturefile = "gfx/interface/goals/ROC/ROC_MPZD_P.png"
+	}
+	spriteType = {
+		name = "GFX_ROC_YSDC_P"
+		texturefile = "gfx/interface/goals/ROC/ROC_YSDC_P.png"
+	}
+	spriteType = {
+		name = "GFX_ROC_YZCL_P"
+		texturefile = "gfx/interface/goals/ROC/ROC_YZCL_P.png"
+	}
+	spriteType = {
+		name = "GFX_CGWY"
+		texturefile = "gfx/interface/goals/ROC/CGWY.png"
+	}
+	spriteType = {
+		name = "GFX_CJGGBM"
+		texturefile = "gfx/interface/goals/ROC/CJGGBM.png"
+	}
+	spriteType = {
+		name = "GFX_DHWQ"
+		texturefile = "gfx/interface/goals/ROC/DHWQ.png"
+	}
+	spriteType = {
+		name = "GFX_DXTM"
+		texturefile = "gfx/interface/goals/ROC/DXTM.png"
+	}
+	spriteType = {
+		name = "GFX_FGZSY"
+		texturefile = "gfx/interface/goals/ROC/FGZSY.png"
+	}
+	spriteType = {
+		name = "GFX_FLGJ"
+		texturefile = "gfx/interface/goals/ROC/FLGJ.png"
+	}
+	spriteType = {
+		name = "GFX_GRJZJ"
+		texturefile = "gfx/interface/goals/ROC/GRJZJ.png"
+	}
+	spriteType = {
+		name = "GFX_HFRC"
+		texturefile = "gfx/interface/goals/ROC/HFRC.png"
+	}
+	spriteType = {
+		name = "GFX_LDGS"
+		texturefile = "gfx/interface/goals/ROC/LDGS.png"
+	}
+	spriteType = {
+		name = "GFX_LJKYD"
+		texturefile = "gfx/interface/goals/ROC/LJKYD.png"
+	}
+	spriteType = {
+		name = "GFX_MSZY"
+		texturefile = "gfx/interface/goals/ROC/MSZY.png"
+	}
+	spriteType = {
+		name = "GFX_QFMY"
+		texturefile = "gfx/interface/goals/ROC/QFMY.png"
+	}
+	spriteType = {
+		name = "GFX_QYZQ"
+		texturefile = "gfx/interface/goals/ROC/QYZQ.png"
+	}
+	spriteType = {
+		name = "GFX_ZSGS"
+		texturefile = "gfx/interface/goals/ROC/ZSGS.png"
+	}
+	spriteType = {
+		name = "GFX_ZSZSZC"
+		texturefile = "gfx/interface/goals/ROC/ZSZSZC.png"
+	}
+	#leaders
+	spriteType = {
+		name = "GFX_ROC_YUAN_SHI_KAI"
+		texturefile = "gfx/leaders/CHI/ROC_YUAN_SHI_KAI.png"
+	}
+}

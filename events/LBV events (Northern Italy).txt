@@ -1,0 +1,85 @@
+add_namespace = tfe_norita_focus
+add_namespace = tfe_norita_history
+add_namespace = news_norita
+
+#收到援助
+country_event = {
+	id = tfe_norita_focus.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tfe_norita_focus.1" }
+	title = tfe_norita_focus.1.t
+	desc = tfe_norita_focus.1.d
+	#picture = 
+	major = yes
+	is_triggered_only = yes 
+	option = {
+		name = tfe_norita_focus.1.a #黑衫军
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_0
+			amount = 1500
+			producer = SPR
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 250
+			producer = SPR
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 800
+			producer = SPR
+		}
+	}
+}
+
+#击败王国
+country_event = {
+	id = tfe_norita_history.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tfe_norita_history.1" }
+	title = tfe_norita_history.1.t
+	desc = tfe_norita_history.1.d
+	major = yes
+	#picture = 
+	is_triggered_only = yes 
+	option = {
+		name = tfe_norita_history.1.a
+		
+	}
+}
+#击败意社
+country_event = {
+	id = tfe_norita_history.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tfe_norita_history.2" }
+	title = tfe_norita_history.2.t
+	desc = tfe_norita_history.2.d
+	major = yes
+	#picture = 
+	is_triggered_only = yes 
+	option = {
+		name = tfe_norita_history.2.a
+		
+	}
+}
+
+#法西斯意大利统一
+news_event = {
+	id = news_norita.1
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: new news_norita.1"
+		}
+	}
+	title = news_norita.1.t
+	desc = news_norita.1.d
+	picture = GFX_news_event_Unification_of_Fasitaly
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = news_norita.1.a
+		LBV = {
+			add_named_threat = { threat = 1.2 name = LBV_Unification_of_Fasitaly }
+		}
+		hidden_effect = {
+			set_variable = { global.se_display = 1 }
+		}
+	}
+}

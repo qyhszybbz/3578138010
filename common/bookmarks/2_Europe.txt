@@ -1,0 +1,83 @@
+bookmarks = {
+	bookmark = {
+		name = "Europe_bookmark_title"
+		desc = "Europe_bookmark_desc"
+		date = 1935.1.1.12
+		picture = "GFX_bookmark_eu_TVE"
+		default_country = "POL"
+		default = yes
+		sort_unplayed_first = no
+
+		"FRA"={
+			history = "TVE_Content_not_suitable_for_play_bookmark_country_desc"
+			ideology = Conservatism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"AUS"={
+			history = "TVE_Content_not_suitable_for_play_bookmark_country_desc"
+			ideology = Conservatism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"ROM"={
+			history = "TVE_Content_not_suitable_for_play_bookmark_country_desc"
+			ideology = Authoritarianism
+			ideas = {
+				ROM_hollow_republic #徒有其表的共和国
+				ROM_hedgehog_nation #刺猬国度
+				ROM_new_sowingism #新播种主义的复兴
+			}
+			focuses = {
+			}
+		}
+		"SPR"={
+			history = "TVE_Content_not_suitable_for_play_bookmark_country_desc"
+			ideology = Conservatism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"POL"={
+			history = "POL_GATHERING_STORM_DESC"
+			ideology = Progressivism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"ITA"={
+			history = "TVE_Content_not_suitable_for_play_bookmark_country_desc"
+			ideology = communism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"SOV"={
+			history = "SOV_desc"
+			ideology = Conservatism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"GER"={
+			history = "TVE_Content_not_suitable_for_play_bookmark_country_desc"
+			ideology = Progressivism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

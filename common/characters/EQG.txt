@@ -1,0 +1,17 @@
+characters={
+	EQG_Gonzalo_Cuepo_Deliano = { #贡萨洛·奎波·德利亚诺
+   		name = EQG_Gonzalo_Cuepo_Deliano
+   		portraits = {
+   		    civilian = {
+   		        large = GFX_idea_EQG_Emilio_Archinardo
+   		    }
+   		}
+	
+   		country_leader = {
+   		    ideology = colonial_government_tttt
+   		    traits = {
+			
+   		    }
+   		}
+}
+}

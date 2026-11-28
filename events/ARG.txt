@@ -1,0 +1,155 @@
+add_namespace = Argentina
+add_namespace = Argentina_news
+
+
+news_event = { #阿根廷的吹哨人
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Argentina_news.1"}
+	id = Argentina_news.1
+	title = Argentina_news.1.t
+	desc = Argentina_news.1.d
+	picture = GFX_news_AGR_Argentina_s_whistleblower
+	is_triggered_only = yes
+
+	option = {
+		name = Argentina_news.1.a
+		set_party_name = {
+			ideology = Liberalism
+			name = ARG_Liberalism_party2
+			long_name = ARG_Liberalism_party2_long
+		}
+		set_party_name = {
+			ideology = Democracy
+			name = ARG_Democracy_party2
+			long_name = ARG_Democracy_party2_long
+		}
+		set_party_name = {
+			ideology = Conservatism
+			name = ARG_Conservatism_party2
+			long_name = ARG_Conservatism_party2_long
+		}
+		set_party_name = {
+			ideology = Authoritarianism
+			name = ARG_Authoritarianism_party2
+			long_name = ARG_Authoritarianism_party2_long
+		}
+		set_popularities = {
+			communism = 2
+			Socialism = 1
+			Progressivism = 7
+			Liberalism = 43
+			Democracy = 2
+			Conservatism = 15
+			Authoritarianism = 18
+			tttt = 10
+			fascism = 1
+			nazism = 1
+		}
+		add_country_leader_role = {
+        	character = ARG_Marcelo_Torquato_de_Alvial
+        	promote_leader = yes
+        	country_leader = {
+				desc = ARG_Marcelo_Torquato_de_Alvial_desc
+            	ideology = liberal_radicalism
+				traits = {
+					ARG_head_of_government
+					ARG_prime_minister_number_one
+				}
+        	}
+    	}
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = ARG_Marcelo_Torquato_de_Alvial
+				add_idea = ARG_Amedeo_II
+			}
+		}
+		custom_effect_tooltip = second_leader_tt2
+	}
+}
+news_event = { #恩里克·马丁内斯接任总统
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Argentina_news.2"}
+	id = Argentina_news.2
+	title = Argentina_news.2.t
+	desc = Argentina_news.2.d
+	picture = GFX_news_ARG_Enrique_Ma_rtinez_toap
+	is_triggered_only = yes
+
+	option = {
+		name = Argentina_news.2.a
+		set_popularities = {
+			communism = 0
+			Socialism = 1
+			Progressivism = 1
+			Liberalism = 5
+			Democracy = 10
+			Conservatism = 25
+			Authoritarianism = 33
+			tttt = 15
+			fascism = 5
+			nazism = 5
+		}
+		add_country_leader_role = {
+        character = ARG_Enrique_Ma_rtinez
+        promote_leader = yes
+        country_leader = {
+			desc = ARG_Enrique_Ma_rtinez_desc
+            ideology = liberal_radicalism
+			traits = {
+				
+			}
+        }
+    }
+		set_party_name = {
+			ideology = Liberalism
+			name = ARG_Liberalism_party2
+			long_name = ARG_Liberalism_party2_long
+		}
+		set_party_name = {
+			ideology = Democracy
+			name = ARG_Democracy_party3
+			long_name = ARG_Democracy_party3_long
+		}
+		
+		set_temp_variable = { coalition_partner_var = token:Democracy }
+			add_to_coalition = yes
+		set_temp_variable = { coalition_partner_var = token:tttt }
+			add_to_coalition = yes
+	}
+}
+news_event = { #大统领的胜利
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Argentina_news.3"}
+	id = Argentina_news.3
+	title = Argentina_news.3.t
+	desc = Argentina_news.3.d
+	picture = GFX_news_ARG_The_Presidents_Victory
+	is_triggered_only = yes
+
+	option = {
+		name = Argentina_news.3.a
+		
+	}
+}
+news_event = { #奉天靖难
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Argentina_news.4"}
+	id = Argentina_news.4
+	title = Argentina_news.4.t
+	desc = Argentina_news.4.d
+	picture = GFX_news_ARG_Fengtian_Jingnan
+	is_triggered_only = yes
+
+	option = {
+		name = Argentina_news.4.a
+		
+	}
+}
+
+country_event = { #新年
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Argentina.1"}
+	id = Argentina.1
+	title = Argentina.1.t
+	desc = Argentina.1.d
+	is_triggered_only = yes
+
+	option = {
+		name = Argentina.1.a
+	}
+}

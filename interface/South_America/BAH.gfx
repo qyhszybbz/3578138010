@@ -1,0 +1,7 @@
+spriteTypes = { 
+	###领导人
+	spriteType = { #霍兰德·史密斯
+		name = "GFX_leader_BAH_Holland_Smith" 
+		texturefile = "gfx/leaders/BAH/BAH_Holland_Smith.dds" 
+	}
+}

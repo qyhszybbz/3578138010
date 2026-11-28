@@ -1,0 +1,556 @@
+﻿division_template = {
+	name = "里士满近卫师"
+	is_locked = no
+	#template_counter = 0 # The Crossed Rifles
+	division_names_group = CSA_Inf_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		maintenance_company = {x = 0 y = 1}
+	}
+}
+
+	units = {
+		division = {
+			name = "里士满第1近卫师"
+			location = 10412
+			division_template = "里士满近卫师"
+			start_experience_factor = 0.3
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
+		division = {
+			name = "里士满第2近卫师"
+			location = 1506
+			division_template = "里士满近卫师"
+			start_experience_factor = 0.3
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
+		division = {
+			name = "里士满第3近卫师"
+			location = 11841
+			division_template = "里士满近卫师"
+			start_experience_factor = 0.3
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
+
+}
+division_template = {
+	name = "纽约“祖阿夫”步兵师"
+	regiments = { }
+		division_names_group = GER_Inf_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y =0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0}
+		field_hospital = {x = 0 y = 1}
+	}
+	
+}
+	units = {
+		division = {
+			name = "纽约第1“祖阿夫”步兵师"
+			location = 10029
+			division_template = "纽约“祖阿夫”步兵师"
+			start_experience_factor = 0.8
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
+		division = {
+			name = "纽约第2“祖阿夫”步兵师"
+			location = 10047
+			division_template = "纽约“祖阿夫”步兵师"
+			start_experience_factor = 0.8
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
+		division = {
+			name = "纽约第3“祖阿夫”步兵师"
+			location = 4653
+			division_template = "纽约“祖阿夫”步兵师"
+			start_experience_factor = 0.8
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
+		division = {
+			name = "纽约第4“祖阿夫”步兵师"
+			location = 1485
+			division_template = "纽约“祖阿夫”步兵师"
+			start_experience_factor = 0.8
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
+		division = {
+			name = "纽约第5“祖阿夫”步兵师"
+			location = 1547
+			division_template = "纽约“祖阿夫”步兵师"
+			start_experience_factor = 0.8
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
+	}
+division_template = {
+	name = "弗吉尼亚骑兵团部队"
+	is_locked = no
+	#template_counter = 0 # The Crossed Rifles
+	division_names_group = GER_Inf_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y =0 }
+	}
+}
+
+	units = {
+		division = {
+			name = "弗吉尼亚第1骑兵团部队"
+			location = 3823
+			division_template = "弗吉尼亚骑兵团部队"
+			start_experience_factor = 0.3
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
+		division = {
+			name = "弗吉尼亚第2骑兵团部队"
+			location = 11738
+			division_template = "弗吉尼亚骑兵团部队"
+			start_experience_factor = 0.3
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
+		division = {
+			name = "弗吉尼亚第3骑兵团部队"
+			location = 6846
+			division_template = "弗吉尼亚骑兵团部队"
+			start_experience_factor = 0.3
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
+		division = {
+			name = "弗吉尼亚第4骑兵团部队"
+			location = 788
+			division_template = "弗吉尼亚骑兵团部队"
+			start_experience_factor = 0.3
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
+		division = {
+			name = "弗吉尼亚第5骑兵团部队"
+			location = 3925
+			division_template = "弗吉尼亚骑兵团部队"
+			start_experience_factor = 0.3
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
+		division = {
+			name = "弗吉尼亚第6骑兵团部队"
+			location = 1506
+			division_template = "弗吉尼亚骑兵团部队"
+			start_experience_factor = 0.3
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
+		division = {
+			name = "弗吉尼亚第7骑兵团部队"
+			location = 7558
+			division_template = "弗吉尼亚骑兵团部队"
+			start_experience_factor = 0.3
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
+		division = {
+			name = "弗吉尼亚第8骑兵团部队"
+			location = 9779
+			division_template = "弗吉尼亚骑兵团部队"
+			start_experience_factor = 0.3
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
+		division = {
+			name = "弗吉尼亚第9骑兵团部队"
+			location = 6846
+			division_template = "弗吉尼亚骑兵团部队"
+			start_experience_factor = 0.3
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
+		division = {
+			name = "弗吉尼亚第10骑兵团部队"
+			location = 11738
+			division_template = "弗吉尼亚骑兵团部队"
+			start_experience_factor = 0.3
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
+}
+division_template = {
+	name = "田纳西州立武装野战部队"
+	is_locked = no
+	#template_counter = 0 # The Crossed Rifles
+	division_names_group = GER_Inf_01
+
+	regiments = {
+		 mountaineers = { x = 0 y = 0 }
+		 mountaineers = { x = 0 y = 1 }
+		 mountaineers = { x = 0 y = 2 }
+	}
+	
+}
+
+	units = {
+		division = {
+			name = "田纳西州第1立武装野战部队"
+			location = 10281
+			division_template = "田纳西州立武装野战部队"
+			start_experience_factor = 0.3
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
+
+}
+division_template = {
+	name = "邦联民兵志愿兵团"
+	is_locked = no
+	#template_counter = 0 # The Crossed Rifles
+	division_names_group = GER_Inf_01
+
+	regiments = {
+		 militia = { x = 0 y = 0 }
+		 militia = { x = 0 y = 1 }
+		 militia = { x = 0 y = 2 }
+		 militia = { x = 1 y = 0 }
+		 militia = { x = 1 y = 1 }
+	}
+	
+}
+
+	units = {
+		division = {
+			name = "邦联第1民兵志愿兵团"
+			location = 5103
+			division_template = "邦联民兵志愿兵团"
+			start_experience_factor = 0
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
+		division = {
+			name = "邦联第2民兵志愿兵团"
+			location = 6803
+			division_template = "邦联民兵志愿兵团"
+			start_experience_factor = 0
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
+		division = {
+			name = "邦联第3民兵志愿兵团"
+			location = 1806
+			division_template = "邦联民兵志愿兵团"
+			start_experience_factor = 0
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
+		division = {
+			name = "邦联第4民兵志愿兵团"
+			location = 7762
+			division_template = "邦联民兵志愿兵团"
+			start_experience_factor = 0
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
+		division = {
+			name = "邦联第5民兵志愿兵团"
+			location = 12624
+			division_template = "邦联民兵志愿兵团"
+			start_experience_factor = 0
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
+		division = {
+			name = "邦联第6民兵志愿兵团"
+			location = 2043
+			division_template = "邦联民兵志愿兵团"
+			start_experience_factor = 0
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
+		division = {
+			name = "邦联第7民兵志愿兵团"
+			location = 4597
+			division_template = "邦联民兵志愿兵团"
+			start_experience_factor = 0
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
+		division = {
+			name = "邦联第8民兵志愿兵团"
+			location = 7834
+			division_template = "邦联民兵志愿兵团"
+			start_experience_factor = 0
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
+		division = {
+			name = "邦联第9民兵志愿兵团"
+			location = 4625
+			division_template = "邦联民兵志愿兵团"
+			start_experience_factor = 0
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
+		division = {
+			name = "邦联第10民兵志愿兵团"
+			location = 1753
+			division_template = "邦联民兵志愿兵团"
+			start_experience_factor = 0
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
+		division = {
+			name = "邦联第11民兵志愿兵团"
+			location = 4814
+			division_template = "邦联民兵志愿兵团"
+			start_experience_factor = 0
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
+		division = {
+			name = "邦联第12民兵志愿兵团"
+			location = 10532
+			division_template = "邦联民兵志愿兵团"
+			start_experience_factor = 0
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
+		division = {
+			name = "邦联第13民兵志愿兵团"
+			location = 12458
+			division_template = "邦联民兵志愿兵团"
+			start_experience_factor = 0
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
+		division = {
+			name = "邦联第14民兵志愿兵团"
+			location = 7543
+			division_template = "邦联民兵志愿兵团"
+			start_experience_factor = 0
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
+		division = {
+			name = "邦联第15民兵志愿兵团"
+			location = 1646
+			division_template = "邦联民兵志愿兵团"
+			start_experience_factor = 0
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
+}
+division_template = {
+	name = "佐治亚炮兵机动团"
+	is_locked = no
+	#template_counter = 0 # The Crossed Rifles
+	division_names_group = GER_Inf_01
+
+	regiments = {
+		 infantry = { x = 0 y = 0 }
+		 infantry = { x = 0 y = 1 }
+		 infantry = { x = 0 y = 2 }
+		 infantry = { x = 1 y = 0 }
+		 infantry = { x = 1 y = 1 }
+		 artillery_brigade = { x = 2 y = 0}
+		 artillery_brigade = { x = 2 y = 1}
+		 artillery_brigade = { x = 2 y = 2}
+		 artillery_brigade = { x = 3 y = 0}
+		 artillery_brigade = { x = 3 y = 1}
+	}
+	support = {
+		light_tank_recon = { x = 0 y = 0 }
+	}
+}
+
+	units = {
+		division = {
+			name = "佐治亚第1炮兵机动团"
+			location = 7612
+			division_template = "佐治亚炮兵机动团"
+			start_experience_factor = 0
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
+		division = {
+			name = "佐治亚第2炮兵机动团"
+			location = 10437
+			division_template = "佐治亚炮兵机动团"
+			start_experience_factor = 0
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
+		division = {
+			name = "佐治亚第3炮兵机动团"
+			location = 12498
+			division_template = "佐治亚炮兵机动团"
+			start_experience_factor = 0
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
+		division = {
+			name = "佐治亚第4炮兵机动团"
+			location = 12470
+			division_template = "佐治亚炮兵机动团"
+			start_experience_factor = 0
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
+		division = {
+			name = "佐治亚第5炮兵机动团"
+			location = 9996
+			division_template = "佐治亚炮兵机动团"
+			start_experience_factor = 0
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
+
+}
+division_template = {
+	name = "联盟国海军陆战队"
+	is_locked = no
+	#template_counter = 0 # The Crossed Rifles
+	division_names_group = GER_Inf_01
+
+	regiments = {
+		 marine = { x = 0 y = 0 }
+		 marine = { x = 0 y = 1 }
+		 marine = { x = 0 y = 2 }
+		 
+	}
+	
+}
+
+	units = {
+		division = {
+			name = "联盟国第1海军陆战队"
+			location = 7552
+			division_template = "联盟国海军陆战队"
+			start_experience_factor = 1.0
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
+		division = {
+			name = "联盟国第2海军陆战队"
+			location = 4464
+			division_template = "联盟国海军陆战队"
+			start_experience_factor = 1.0
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
+		division = {
+			name = "联盟国第3海军陆战队"
+			location = 7480
+			division_template = "联盟国海军陆战队"
+			start_experience_factor = 1.0
+			start_equipment_factor = 1.0
+			start_manpower_factor = 1.0
+		}
+
+}
+
+instant_effect = {
+#产线
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "CSA"
+		}
+		requested_factories = 3
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "CSA"
+		}
+		requested_factories = 4
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "CSA"
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {#卡车
+		equipment = {
+			type = motorized_equipment_1
+			creator = "CSA"
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+
+#库存
+
+	add_equipment_to_stockpile = {#步枪
+		type = infantry_equipment_1
+		amount = 500
+		producer = CSA
+	}
+
+	add_equipment_to_stockpile = {#火炮
+		type = artillery_equipment_1
+		amount = 100
+		producer = CSA
+	}
+
+	add_equipment_to_stockpile = {#支援装备
+		type = support_equipment_1
+		amount = 100
+		producer = CSA
+	}
+
+	add_equipment_to_stockpile = {#卡车
+		type = motorized_equipment_1
+		amount = 50
+		producer = CSA
+	}
+}

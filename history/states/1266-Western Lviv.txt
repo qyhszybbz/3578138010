@@ -1,0 +1,24 @@
+
+state={
+	id = 1266
+	name="STATE_1266"
+	
+	history={
+		owner = POL
+		add_core_of = POL
+		add_core_of = UKR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+		}
+	}
+
+	provinces={
+		11479 9558 536 9468 
+	}
+
+	state_category = town
+	manpower=1299204
+	buildings_max_level_factor=1.000
+	local_supplies=1.0
+}

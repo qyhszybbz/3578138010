@@ -1,0 +1,29 @@
+ideas = {
+	country = {
+		liaoboweiwhere = { 
+			picture = GFX_idea_liaoboweiwhere
+			modifier = {
+				stability_factor = -0.3
+				war_support_factor = -0.15
+				monthly_population = -0.3
+			}
+		}
+		what_is_freedom = { 
+			picture = GFX_idea_what_is_freedom
+			modifier = {
+				political_power_factor = -0.3
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		xiangjiao_land = { 
+			picture = GFX_idea_xiangjiao_land
+			modifier = {
+				production_lack_of_resource_penalty_factor = -0.1
+				state_resources_factor = 0.5
+				min_export = 0.5
+			}
+		}
+		
+	}
+}

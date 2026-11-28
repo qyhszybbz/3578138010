@@ -1,0 +1,43 @@
+state = {
+	id = 589
+	name = "STATE_589"
+	manpower = 3480000
+	state_category = town
+	resources = {
+		rubber = 58
+	}
+	history = {
+		owner = CHI
+		add_core_of = GXC
+		add_core_of = CHI
+		add_core_of = PRC
+		add_extra_state_shared_building_slots = 3
+		buildings = {
+			air_base = 1
+			infrastructure = 1
+			1070 = {
+				naval_base = 2
+			}
+		}
+		1938.10.25 = {
+			if = {
+				limit = {
+					NOT = { has_dlc = "Waking the Tiger" }
+				}
+				remove_core_of = GXC
+				CHI = { transfer_state = PREV }
+			}
+			controller = JAP
+		}
+		victory_points = {
+			1070 5
+		}
+		victory_points = {
+			994 3
+		}
+	}
+	provinces = {
+		994 1038 1070 11963 11990
+	}
+	local_supplies = 7
+}

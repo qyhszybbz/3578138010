@@ -1,0 +1,38 @@
+ideas = {
+	country = { 
+	TEX_lone_star_republic = { #孤星共和国
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				surrender_limit = 0.6
+				training_time_army_factor = -0.1
+				production_speed_infrastructure_factor = 0.05
+			}
+		}
+
+		TEX_Autonomous_States_and_tcobs = {	
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+				conscription_factor = -0.25
+			}
+		}
+	}
+}

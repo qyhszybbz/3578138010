@@ -1,0 +1,17 @@
+characters = {
+	#领导人
+	#所罗门·R·古根海姆
+	AMD_solomon_guggenheim = {
+		name = AMD_solomon_guggenheim
+		portraits = {
+			civilian = {
+				large = GFX_AMD_Solomon_Guggenheim_large
+			}
+		}
+		country_leader = {
+			desc = AMD_solomon_guggenheim_desc
+			ideology = military_junta_authoritarianism
+			traits = { AMD_mining_magnate }
+		}
+	}
+}

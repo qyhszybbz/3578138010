@@ -1,0 +1,8 @@
+spriteTypes = {
+	#法西斯意大利统一
+	spriteType = {
+		name = "GFX_news_event_Unification_of_Fasitaly"
+		texturefile = "gfx/event_pictures/LBV/Unification_of_Fasitaly.png"
+	}
+	
+}

@@ -1,0 +1,36 @@
+
+state={
+	id = 1236
+	name="STATE_1236"
+	manpower = 420552
+	resources={
+	}
+	
+	state_category = town
+
+	history={
+		owner = TUR
+		add_core_of = SYR
+		add_core_of = KUR
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		victory_points = {
+			12473 10
+		}
+		victory_points = {
+			1549 3
+		}
+		victory_points = {
+			6883 3
+		}
+	}
+
+	provinces={
+		12473 7671 6883 1606 1634 1578 1549 10882
+	}
+
+	local_supplies=0.0 
+}

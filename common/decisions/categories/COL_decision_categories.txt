@@ -1,0 +1,5 @@
+ COL_Colombian_Civil_War = { #哥伦比亚内战
+	allowed = {
+		original_tag = COL
+	}
+ }

@@ -1,0 +1,28 @@
+
+state={
+	id = 1269
+	name="STATE_1269"
+
+	history={
+		owner = BLR
+		add_core_of = BLR
+		add_claim_by = SOV
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 2
+		}
+		victory_points = {
+			6546 5
+		}
+	}
+
+	provinces={
+		6546 9520 3496 11503 6579 535
+	}
+	manpower=446968
+	buildings_max_level_factor=1.000
+	state_category = town
+
+	local_supplies=0.0 
+}

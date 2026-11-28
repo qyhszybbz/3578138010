@@ -1,0 +1,26 @@
+leader_traits = {
+	#洋基派
+	TFE_yankee_faction = {
+		type = land
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		attack_skill = 1 #占位：攻击+1，待调整
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	#宪法拥护者
+	TFE_constitutionalist = {
+		type = land
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		attack_skill = 1 #占位：攻击+1，待调整
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+}

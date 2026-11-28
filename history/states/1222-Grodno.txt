@@ -1,0 +1,28 @@
+
+state={
+	id = 1222
+	name="STATE_1222"
+
+	history={
+		owner = BLR
+		add_core_of = BLR
+		add_claim_by = LIT
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			air_base = 3
+		}
+		victory_points = {
+			6359 8
+		}
+	}
+
+	provinces={
+		318 3281 6359 9359 13206
+	}
+	manpower=671479
+	buildings_max_level_factor=1.000
+	state_category = town
+
+	local_supplies = 0.0
+}

@@ -1,0 +1,364 @@
+characters = {
+    #领导人
+    #阿梅迪奥二世
+	ARG_Amedeo_II = { 
+		name = ARG_Amedeo_II
+		portraits = {
+			civilian = {
+				large = GFX_ARG_Amedeo_II_large
+			}
+		} 
+	    country_leader = {
+            desc = ARG_Amedeo_II_desc
+            ideology = liberal_radicalism
+            traits = {
+			    ARG_honorary_king
+                ARG_Poor_physical_constitution
+            }
+        }
+	}
+    #马塞洛·托尔夸托·德·阿尔维亚尔
+    ARG_Marcelo_Torquato_de_Alvial = { 
+		name = ARG_Marcelo_Torquato_de_Alvial
+		portraits = {
+			civilian = {
+				large = GFX_ARG_Marcelo_Torquato_de_Alvial_large
+			}
+		} 
+	}
+    #恩里克·马丁内斯
+    ARG_Enrique_Martinez = { 
+		name = ARG_Enrique_Martinez
+		portraits = {
+			civilian = {
+				large = GFX_ARG_Enrique_Martinez_large
+			}
+		} 
+	}
+    #元帅
+    #佩德罗·欧亨尼奥·阿兰布鲁
+	ARG_Pedro_Eugenio_Aramburu = { 
+        name = ARG_Pedro_Eugenio_Aramburu
+        portraits = {
+            army = {
+                large = GFX_ARG_Pedro_Eugenio_Aramburu_large
+            }
+        }
+        field_marshal = {
+            skill = 3
+            attack_skill = 2
+            defense_skill = 2
+            planning_skill = 3
+            logistics_skill = 4
+            traits = {
+                politically_connected
+				fast_planner
+            }
+        }
+    }
+    #奥古斯丁·佩德罗·胡斯托
+	ARG_Augustine_Pedro_Justo = { 
+        name = ARG_Augustine_Pedro_Justo
+        portraits = {
+            army = {
+                large = GFX_ARG_Augustine_Pedro_Justo_large
+            }
+        }
+        field_marshal = {
+            skill = 3
+            attack_skill = 2
+            defense_skill = 2
+            planning_skill = 2
+            logistics_skill = 2
+            traits = {
+				inflexible_strategist
+				infantry_officer
+            }
+        
+        }
+    }
+    #埃德尔米罗·胡利安·法雷尔·普劳尔
+	ARG_Edelmiro_Julian_Farrell_Proul = { 
+        name = ARG_Edelmiro_Julian_Farrell_Proul
+        portraits = {
+            army = {
+                large = GFX_general_ARG_Edelmiro_Julian_Farrell_Proul
+            }
+        }
+        field_marshal = {
+            skill = 3
+            attack_skill = 4
+            defense_skill = 3
+            planning_skill = 3
+            logistics_skill = 2
+            traits = {
+				media_personality
+				aggressive_assaulter
+            }
+        }
+    }
+    #胡安·皮斯塔里尼
+	ARG_Juan_Pistarini = {
+        name = ARG_Juan_Pistarini
+        portraits = {
+            army = {
+                large = GFX_ARG_Juan_Pistarini_large
+            }
+        }
+        field_marshal = {
+            skill = 3
+            attack_skill = 1
+            defense_skill = 1
+            planning_skill = 2
+            logistics_skill = 4
+            traits = {
+				brilliant_strategist
+            }
+        }
+    }
+    #阿图罗·罗森
+	ARG_Arturo_Rosen = {
+        name = ARG_Arturo_Rosen
+        portraits = {
+            army = {
+                large = GFX_general_ARG_Arturo_Rosen
+            }
+        }
+        corps_commander = {
+            skill = 4
+            attack_skill = 4
+            defense_skill = 4
+            planning_skill = 2
+            logistics_skill = 3
+            traits = {
+				war_hero
+				cavalry_leader
+				inspirational_leader
+            }
+        }
+    }
+    #胡安·庇隆
+	ARG_Juan_Peron = {
+        name = ARG_Juan_Peron
+        portraits = {
+            army = {
+                large = GFX_ARG_Juan_Peron_large
+            }
+        }
+        corps_commander = {
+            skill = 2
+            attack_skill = 3
+            defense_skill = 2
+            planning_skill = 2
+            logistics_skill = 2
+            traits = {
+				inspirational_leader
+				organizer
+            }
+        }
+    }
+    #曼努埃尔·萨维奥
+    ARG_Manuel_Savio = { 
+        name = ARG_Manuel_Savio
+        portraits = {
+            army = {
+                large = GFX_general_ARG_Manuel_Savio
+            }
+        }
+        corps_commander = {
+            skill = 2
+            attack_skill = 2
+            defense_skill = 2
+            planning_skill = 4
+            logistics_skill = 5
+            traits = {
+				logistics_wizard
+                engineer_officer
+            }
+        }
+    }
+    #恩里克·莫斯科尼
+    ARG_Enrique_Mosconi = {
+        name = ARG_Enrique_Mosconi
+        portraits = {
+            army = {
+                large = GFX_general_ARG_Enrique_Mosconi
+            }
+        }
+        corps_commander = {
+            skill = 2
+            attack_skill = 1
+            defense_skill = 1
+            planning_skill = 1
+            logistics_skill = 2
+            traits = {
+				politically_connected
+            }
+        }
+    }
+    #何塞·索萨·莫利纳
+    ARG_Jose_Sosa_Molina = {
+        name = ARG_Jose_Sosa_Molina
+        portraits = {
+            army = {
+                large = GFX_general_ARG_Jose_Sosa_Molina
+            }
+        }
+        corps_commander = {
+            skill = 2
+            attack_skill = 2
+            defense_skill = 2
+            planning_skill = 3
+            logistics_skill = 2
+            traits = {
+				career_officer
+                infantry_leader
+            }
+        }
+    }
+    #本杰明·安德烈斯·梅内德斯
+    ARG_Benjamin_Andres_Menendez = {
+        name = ARG_Benjamin_Andres_Menendez
+        portraits = {
+            army = {
+                large = GFX_general_ARG_Benjamin_Andres_Menendez
+            }
+        }
+        corps_commander = {
+            skill = 2
+            attack_skill = 2
+            defense_skill = 3
+            planning_skill = 2
+            logistics_skill = 2
+            traits = {
+				old_guard
+                harsh_leader
+                fast_planner
+            }
+        }
+    }
+    #本杰明·拉滕巴赫
+    ARG_Benjamin_Ratenbach = {
+        name = ARG_Benjamin_Ratenbach
+        portraits = {
+            army = {
+                large = GFX_general_ARG_Benjamin_Ratenbach
+            }
+        }
+        corps_commander = {
+            skill = 2
+            attack_skill = 2
+            defense_skill = 1
+            planning_skill = 1
+            logistics_skill = 1
+            traits = {
+				politically_connected
+                trait_cautious
+            }
+        }
+    }
+    #爱德华多·阿根提诺·塞诺兰斯
+    ARG_Eduardo_Argentino_Senolans = { 
+        name = ARG_Eduardo_Argentino_Senolans
+        portraits = {
+            army = {
+                large = GFX_general_ARG_Eduardo_Argentino_Senolans
+            }
+        }
+        corps_commander = {
+            skill = 2
+            attack_skill = 1
+            defense_skill = 1
+            planning_skill = 1
+            logistics_skill = 1
+            traits = {
+				harsh_leader
+                trickster
+            }
+        }
+    }
+    #劳尔·亚历杭德罗·波吉
+    ARG_Raul_Alejandro_Poggio = {
+        name = ARG_Raul_Alejandro_Poggio
+        portraits = {
+            army = {
+                large = GFX_general_ARG_Raul_Alejandro_Poggio
+            }
+        }
+        corps_commander = {
+            skill = 2
+            attack_skill = 2
+            defense_skill = 2
+            planning_skill = 1
+            logistics_skill = 2
+            traits = {
+				engineer_officer
+            }
+        }
+    }
+    #海军将领
+    #曼努埃尔·托马斯·多梅克·加西亚
+    ARG_Manuel_Tomas_Domecq_Garcia = { 
+        name = ARG_Manuel_Tomas_Domecq_Garcia
+        portraits = {
+            army = {
+                large = GFX_general_ARG_Manuel_Tomas_Domecq_Garcia
+            }
+        }
+        navy_leader = {
+            skill = 5
+            attack_skill = 5
+            defense_skill = 4
+            maneuvering_skill = 4
+			coordination_skill = 4
+            traits = {
+				career_officer
+                old_guard
+                marksman
+            }
+        }
+    }
+    #艾萨克·罗哈斯
+    ARG_Isaac_Rojas = {
+        name = ARG_Isaac_Rojas
+        portraits = {
+            army = {
+                large = GFX_general_ARG_Isaac_Rojas
+            }
+        }
+        navy_leader = {
+            skill = 3
+            attack_skill = 3
+            defense_skill = 3
+            maneuvering_skill = 2
+			coordination_skill = 1
+            traits = {
+				crisis_magician
+                media_personality
+                career_officer
+                arctic_water_expert
+            }
+        }
+    }
+    #艾莱亚撒·魏地拉
+	ARG_Eliasa_Vidila = {
+        name = ARG_Eliasa_Vidila
+        portraits = {
+            civilian = {
+                large = GFX_general_ARG_Eliasa_Vidila
+            }
+        }
+        navy_leader = {
+            skill = 3
+            attack_skill = 2
+            defense_skill = 2
+            maneuvering_skill = 3
+			coordination_skill = 2
+            traits = {
+				gunnery_expert
+                loading_drill_master
+            }
+        }
+    }
+}
+	

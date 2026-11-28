@@ -1,0 +1,29 @@
+state = {
+	id = 996
+	name = "STATE_996"
+	manpower = 1138978
+	state_category = town
+	resources = {
+		steel = 4
+		oil = 2
+	}
+
+	history = {
+		owner = UKR
+		add_core_of = NRO
+		add_core_of = UKR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+		}
+		victory_points = {
+			453 10 #巴甫洛夫格勒
+		}
+	}
+
+	provinces={
+		9463 453 11452 9479 486 472
+	}
+
+	local_supplies = 20.0 
+}

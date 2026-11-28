@@ -1,0 +1,37 @@
+SpriteTypes = { 
+	#领导人
+	spriteType = { #路易斯·安东尼奥·埃吉古伦·埃斯库德罗
+		name = "GFX_leader_PRU_Luis_Antonio_Eguiguren"
+		texturefile = "gfx/leaders/PRU/PRU_Luis_Antonio_Eguiguren.dds"
+	}
+	#民族精神
+	spriteType = { #制宪会议
+		name = "GFX_idea_PRU_constitutional_assembly"
+		texturefile = "gfx/interface/ideas/PRU/PRU_constitutional_assembly.dds"
+	}
+	spriteType = { #战胜赤色暴政
+		name = "GFX_idea_PRU_victory_over_red_tyranny"
+		texturefile = "gfx/interface/ideas/PRU/PRU_victory_over_red_tyranny.dds"
+	}
+	spriteType = { #内斗不止的军官团们
+		name = "GFX_idea_PRU_feuding_officer_corps"
+		texturefile = "gfx/interface/ideas/PRU/PRU_feuding_officer_corps.dds"
+	}
+	spriteType = { #日渐分离的联邦
+		name = "GFX_idea_PRU_separating_federation"
+		texturefile = "gfx/interface/ideas/PRU/PRU_separating_federation.dds"
+	}
+	#民族精神配图
+    #spriteType = { #邦联国体制配图
+	#	name = "GFX_CSA_Confederate_Pictures"
+	#	texturefile = "gfx/texticons/banners/CSA/CSA_Confederate_Pictures.dds"
+	#}
+    #spriteType = { #奴隶与工业化配图
+	#	name = "GFX_CSA_slave_and_industry_Pictures"
+	#	texturefile = "gfx/texticons/banners/CSA/CSA_slave_and_industry_Pictures.dds"
+	#}
+    #spriteType = { #石墙杰克逊精神配图
+	#	name = "GFX_CSA_jackson_stone_wall_Pictures"
+	#	texturefile = "gfx/texticons/banners/CSA/CSA_jackson_stone_wall_Pictures.dds"
+	#}
+}

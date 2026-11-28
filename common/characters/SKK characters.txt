@@ -1,0 +1,17 @@
+characters = {
+    #领导人
+    #西德康·图尔库·南嘉尔
+	SKK_Sidkeong_Tulku_Namgyal = {
+        name = SKK_Sidkeong_Tulku_Namgyal
+        portraits = {
+            civilian = {
+				large = GFX_SKK_Sidkeong_Tulku_Namgyal_large
+			}
+		}
+        country_leader={
+			#desc = SKK_Sidkeong_Tulku_Namgyal_desc
+			ideology= tttt_small
+			traits= {  }
+		}
+    }
+}

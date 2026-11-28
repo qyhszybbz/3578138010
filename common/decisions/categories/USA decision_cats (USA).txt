@@ -1,0 +1,7 @@
+USA_Social_Equilibrium = { #社会平衡
+	icon = GFX_decision_category_generic_democracy
+	allowed = { original_tag = USA }
+	visible = {
+		has_completed_focus = USA_Society_Mending_and_Tearing #弥和撕裂的社会
+	}
+}

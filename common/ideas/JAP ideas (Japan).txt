@@ -1,0 +1,56 @@
+ideas = {
+	country = {
+        ### 初始民族精神 ###
+        #万世一系
+        JAP_Unbroken_line_through_ages = {
+			on_add = { log = "[GetLogRoot]: add idea JAP_Unbroken_line_through_ages" }
+			picture = Unbroken_line_through_ages
+			allowed = { always = no }
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = 0.1
+				custom_modifier_tooltip = JAP_Unbroken_line_through_ages_tooltip
+			}
+		}
+		#混乱的内阁
+		JAP_Chaotic_Cabinet = {
+			on_add = { log = "[GetLogRoot]: add idea JAP_Chaotic_Cabinet" }
+			picture = Chaotic_Cabinet
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = -0.05
+			}
+		}
+		#迷茫前路
+		JAP_Confused_road = {
+			on_add = { log = "[GetLogRoot]: add idea JAP_Confused_road" }
+			picture = Confused_road
+			allowed = { always = no }
+			modifier = {
+				custom_modifier_tooltip = JAP_Confused_road_tooltip
+			}
+		}
+		#共和革命的余波
+		JAP_Aftermath_of_Republican_Revolution = {
+			on_add = { log = "[GetLogRoot]: add idea JAP_Aftermath_of_Republican_Revolution" }
+			picture = Aftermath_of_Republican_Revolution
+			allowed = { always = no }
+			modifier = {
+				custom_modifier_tooltip = JAP_Aftermath_of_Republican_Revolution_tooltip
+			}
+		}
+		#日俄战争的胜利者
+		JAP_winner_of_RussoJapanese_War = {
+			on_add = { log = "[GetLogRoot]: add idea JAP_winner_of_RussoJapanese_War" }
+			picture = winner_of_RussoJapanese_War
+			allowed = { always = no }
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = -0.05
+				land_doctrine_cost_factor = 0.15
+				naval_doctrine_cost_factor = 0.15
+				air_doctrine_cost_factor = 0.15
+			}
+		}
+    }
+}

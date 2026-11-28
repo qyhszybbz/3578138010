@@ -1,0 +1,27 @@
+add_namespace = iraq_history
+
+
+
+
+
+
+country_event = { #空事件
+	id = iraq_history.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event iraq_history.1" }
+	title = iraq_history.1.t
+	desc = iraq_history.1.d
+	#picture = 1 待填充
+
+	is_triggered_only = yes 
+	fire_only_once = yes
+
+	option = {
+		name = iraq_history.1.a #正式讨论人道主义问题
+		set_country_flag = IRQ_Humanitarian_issues
+	}
+    option = {
+		name = iraq_history.1.b #巴格达胜利阅兵
+        set_country_flag = IRQ_Victory_Parade
+		
+	}
+}

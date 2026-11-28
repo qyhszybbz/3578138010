@@ -1,0 +1,32 @@
+state={
+	id = 1017
+	name="STATE_1017"
+	resources={
+		steel=6 # was: 20.000
+	}
+
+	state_category = town
+
+
+	history={
+		owner = FEM
+		add_core_of = FEM
+		buildings = {
+
+			infrastructure = 4
+			dockyard = 1
+
+		}
+		add_core_of = FER
+		add_core_of = SOV
+
+	}
+
+	provinces={
+		7785 7691 1845 1730 12591 10678 7851 12660
+	}
+	manpower = 287971
+	buildings_max_level_factor=1.000
+
+	local_supplies=0.0 
+}

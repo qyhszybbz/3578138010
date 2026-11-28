@@ -1,0 +1,41 @@
+SpriteTypes = { 
+	#领导人
+	spriteType = { #约翰·卡尔文·柯立芝
+		name = "GFX_leader_USA_John_Calvin_Coolidge"
+		texturefile = "gfx/leaders/USA/USA_John_Calvin_Coolidge.dds"
+	}
+	#民族精神
+	spriteType = { #经济危机的余波
+		name = "GFX_idea_USA_The_aftermath_of_the_ec"
+		texturefile = "gfx/interface/ideas/USA/USA_The_aftermath_of_the_ec.dds"
+	}
+	spriteType = { #福特公司巨头
+		name = "GFX_idea_USA_Ford_giant"
+		texturefile = "gfx/interface/ideas/USA/USA_Ford_giant.dds"
+	}
+	spriteType = { #南方宿敌
+		name = "GFX_idea_USA_Southern_Enemy"
+		texturefile = "gfx/interface/ideas/USA/USA_Southern_Enemy.dds"
+	}
+	spriteType = { #开放的社会风气
+		name = "GFX_idea_USA_political_openness"
+		texturefile = "gfx/interface/ideas/USA/USA_political_openness.dds"
+	}
+	spriteType = { #分裂之家
+		name = "GFX_idea_USA_divided_house"
+		texturefile = "gfx/interface/ideas/USA/USA_divided_house.dds"
+	}
+	#国策
+	spriteType = { #柯立芝总统的任期
+		name = "GFX_goal_USA_President_Coolidges_Term"
+		texturefile = "gfx/interface/goals/USA/USA_President_Coolidges_Term.png"
+	}
+	spriteType = { #坚守共和传统
+		name = "GFX_goal_USA_Uphold_Republican_Traditions"
+		texturefile = "gfx/interface/goals/USA/USA_Uphold_Republican_Traditions.png"
+	}
+	spriteType = { #弥和撕裂的社会
+		name = "GFX_goal_USA_Society_Mending_and_Tearing"
+		texturefile = "gfx/interface/goals/USA/USA_Society_Mending_and_Tearing.png"
+	}
+}

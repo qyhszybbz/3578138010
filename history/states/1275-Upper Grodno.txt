@@ -1,0 +1,28 @@
+state = {
+    id = 1275
+    name="STATE_1275"
+
+    history = {
+        owner = BLR
+        add_core_of = BLR
+        add_core_of = LIT
+        buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+            arms_factory = 1
+			air_base = 1
+		}
+        victory_points = {
+			9236 4
+		}
+    }
+
+    provinces = {
+        6340 9236
+    }
+    manpower=354911
+	buildings_max_level_factor=1.000
+	state_category = town
+
+    local_supplies = 0.0
+}

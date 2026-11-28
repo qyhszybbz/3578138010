@@ -1,0 +1,53 @@
+spriteTypes = { 
+	###领导人
+	spriteType = { 
+		name = "GFX_leader_BBR_Bayard_Rustin" #贝亚德·鲁斯汀
+		texturefile = "gfx/leaders/BBR/BBR_Bayard_Rustin.dds"
+	}
+	###国策
+	spriteType = { #为了我们的自由
+		name = "GFX_focus_BBR_for_our_freedom"
+		texturefile = "gfx/interface/goals/BBR/BBR_for_our_freedom.dds"
+	}
+	spriteType = { #为了我们的自由
+		name = "GFX_focus_BBR_for_our_freedom_shine"
+		texturefile = "gfx/interface/goals/BBR/BBR_for_our_freedom.dds"
+	}
+	spriteType = { #抵抗之火绝不熄灭
+		name = "GFX_focus_BBR_The_flame_of_rwnbe"
+		texturefile = "gfx/interface/goals/BBR/BBR_The_flame_of_rwnbe.dds"
+	}
+	spriteType = { #筹备革命物资
+		name = "GFX_focus_BBR_Prepare_revolutionary_supplies"
+		texturefile = "gfx/interface/goals/BBR/BBR_Prepare_revolutionary_supplies.dds"
+	}	
+	spriteType = { #团结左翼革命者
+		name = "GFX_focus_BBR_Unite_the_left_wr"
+		texturefile = "gfx/interface/goals/BBR/BBR_Unite_the_left_wr.dds" 
+	}
+	spriteType = { #新红军
+		name = "GFX_focus_BBR_new_red_army"
+		texturefile = "gfx/interface/goals/BBR/BBR_new_red_army.dds"
+	}
+	spriteType = { #属于黑人的黎明
+		name = "GFX_focus_BBR_Dawn_of_the_Black"
+		texturefile = "gfx/interface/goals/BBR/BBR_Dawn_of_the_Black.dds"
+	}
+	spriteType = { #打倒压迫我们的枷锁
+		name = "GFX_focus_BBR_Down_with_the_stou"
+		texturefile = "gfx/interface/goals/BBR/BBR_Down_with_the_stou.dds"
+	}
+	#民族精神
+	spriteType = { #无组织的领导层
+		name = "GFX_idea_BBR_Unorganized_leadership" 
+		texturefile = "gfx/interface/ideas/BBR/BBR_Unorganized_leadership.dds"
+	}
+	spriteType = { #革命热情
+		name = "GFX_idea_BBR_revolutionary_enthusiasm"
+		texturefile = "gfx/interface/ideas/BBR/BBR_revolutionary_enthusiasm.dds" 
+	}
+	spriteType = { #邦联的围剿
+		name = "GFX_idea_BBR_Confederate_siege"
+		texturefile = "gfx/interface/ideas/BBR/BBR_Confederate_siege.dds"
+	}
+}

@@ -1,0 +1,16 @@
+leader_traits = {
+	#领导人特质
+	#苟活的英雄
+	BLZ_surviving_hero = {
+		random = no
+		stability_factor = 0.1
+		political_power_gain = 0.05
+	}
+	#工人领袖
+	BLZ_labour_leader = {
+		random = no
+		industrial_capacity_factory = 0.05
+		industrial_capacity_dockyard = 0.05
+		production_speed_buildings_factor = 0.05
+	}
+}

@@ -1,0 +1,25 @@
+characters={
+	CUB_Fulgencio_Batista_Saldiva = { #富尔亨西奥·巴蒂斯塔·萨尔迪瓦
+    name = CUB_Fulgencio_Batista_Saldiva
+    portraits = {
+        civilian = {
+            large = GFX_ldear_CUB_Alberto_Herrera_y_Franchi
+        }
+    }
+}
+    CUB_Alberto_Herrera_y_Franchi = { #阿尔韦托·埃雷拉·伊·弗兰奇
+    name = CUB_Alberto_Herrera_y_Franchi
+    portraits = {
+        civilian = {
+            large = GFX_ldear_CUB_Alberto_Herrera_y_Franchi
+        }
+    }
+    
+    country_leader = {
+        ideology = military_junta_tttt
+        traits = {
+            CUB_night_watchman 
+        }
+    }
+}
+}

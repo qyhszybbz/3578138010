@@ -1,0 +1,24 @@
+state={
+	id = 1040
+	name="STATE_1040"
+	provinces={
+		5173 13383 13384 13385 13386 13387 13388 
+	}
+	history = {
+
+		owner = TWQ
+		add_core_of = TWQ
+		add_core_of = ARG
+		add_core_of = WLA
+
+		buildings = {
+			infrastructure = 1
+		}
+
+		
+	}
+	manpower=45232
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

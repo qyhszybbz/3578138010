@@ -1,0 +1,34 @@
+spriteTypes = { 
+	 #事件及世界新闻配图
+    spriteType = { #阿根廷的吹哨人
+        name = "GFX_news_AGR_Argentina_s_whistleblower"
+        textureFile = "gfx/interface/events/ARG/ARG_Argentina_s_whistleblowe.dds"
+    }
+	spriteType = { #恩里克·马丁内斯接任总统
+        name = "GFX_news_ARG_Enrique_Ma_rtinez_toap"
+        textureFile = "gfx/interface/events/ARG/ARG_Enrique_Ma_rtinez_toap.dds"
+    }
+	spriteType = { #大统领的胜利
+        name = "GFX_news_ARG_The_Presidents_Victory"
+        textureFile = "gfx/interface/events/ARG/ARG_The_Presidents_Victory.dds"
+    }
+	spriteType = { #奉天靖难
+        name = "GFX_news_ARG_Fengtian_Jingnan"
+        textureFile = "gfx/interface/events/ARG/ARG_Fengtian_Jingnan.dds"
+    }
+	#子意思形态配图
+	spriteType = { #自由激进主义
+		name = "GFX_ARG_liberal_radicalism_Pictures"
+		texturefile = "gfx/texticons/banners/ARG/ARG_liberal_radicalism_Pictures.dds"
+		legacy_lazy_load = no
+	}
+	#国策
+	spriteType = { #新篇章
+		name = "GFX_focus_ARG_New_Chapter"
+		texturefile = "gfx/interface/goals/ARG/ARG_New_Chapter.dds"
+	}
+	spriteType = { #新篇章
+		name = "GFX_focus_ARG_New_Chapter_shine"
+		texturefile = "gfx/interface/goals/ARG/ARG_New_Chapter.dds"
+	}
+}

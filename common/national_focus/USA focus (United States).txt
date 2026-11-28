@@ -1,0 +1,626 @@
+focus_tree={
+	id = TFE_norusa_focus
+	country={
+		factor = 0
+		modifier={
+			add = 500
+			tag = USA
+		}
+	}
+
+	#政治轮换结束
+	focus = {
+		id = USA_Political_rotation_end
+		icon = GFX_goal_USA_Political_rotation_end
+		cost = 2
+		x = 24
+		y = 0
+		ai_will_do = { 
+			base = 1
+		}
+		available = { }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		cancelable = no
+		completion_reward = { 
+			add_stability = 0.05
+			country_event = { id = tfe_usa_focus.1 days = 2 }
+		}
+	}
+	#柯立芝总统的任期
+	focus = {
+		id = USA_President_Coolidges_Term
+		icon = GFX_goal_USA_President_Coolidges_Term
+		relative_position_id = USA_Political_rotation_end
+		prerequisite = { focus = USA_Political_rotation_end }
+		x = 0
+		y = 1
+		cost = 3
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			add_political_power = 10
+			country_event = { id = tfe_usa_focus.2 days = 2 }
+		}
+	}
+	#坚守共和传统
+	focus = {
+		id = USA_Uphold_Republican_Traditions
+		icon = GFX_goal_USA_Uphold_Republican_Traditions
+		relative_position_id = USA_Political_rotation_end
+		prerequisite = { focus = USA_President_Coolidges_Term }
+		x = -4
+		y = 2
+		cost = 3
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			add_political_power = 15
+			add_stability = 0.07
+			add_timed_idea = {
+				idea = USA_The_Initial_Establishment_of_the_Republican_Consensus
+				days = 300
+			}
+		}
+	}
+	#弥和撕裂的社会
+	focus = {
+		id = USA_Society_Mending_and_Tearing
+		icon = GFX_goal_USA_Society_Mending_and_Tearing
+		relative_position_id = USA_Political_rotation_end
+		prerequisite = { focus = USA_President_Coolidges_Term }
+		x = 0
+		y = 2
+		cost = 3
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			add_political_power = 20
+			add_popularity = {
+				ideology = Liberalism
+				popularity = 0.03
+			}
+			unlock_decision_category_tooltip = USA_Social_Equilibrium
+			hidden_effect = {
+				activate_targeted_decision = { target = USA decision = USA_Open_channels_for_public_deliberation }
+			}
+		}
+	}
+	#国家瓶颈事业
+	focus = {
+		id = USA_National_Bottleneck_Project
+		icon = GFX_goal_USA_National_Bottleneck_Project
+		relative_position_id = USA_Political_rotation_end
+		prerequisite = { focus = USA_President_Coolidges_Term }
+		x = 4
+		y = 2
+		cost = 3
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			add_ideas = USA_Basic_affairs_taken_over
+		}
+	}
+	#整肃政坛乱象
+	focus = {
+		id = USA_Rectify_the_Chaos
+		icon = GFX_goal_USA_Rectify_the_Chaos
+		relative_position_id = USA_Political_rotation_end
+		prerequisite = { focus = USA_Uphold_Republican_Traditions }
+		x = -6
+		y = 3
+		cost = 3
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			add_ideas = USA_Road_to_Democratic_Reform
+		}
+	}
+	#州权归位
+	focus = {
+		id = USA_State_powers_restored
+		icon = GFX_goal_USA_State_powers_restored
+		relative_position_id = USA_Society_Mending_and_Tearing
+		prerequisite = { focus = USA_Uphold_Republican_Traditions }
+		prerequisite = { focus = USA_Society_Mending_and_Tearing }
+		x = -2
+		y = 1
+		cost = 2.2
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			
+		}
+	}
+	#签署总统令
+	focus = {
+		id = USA_Sign_Presidential_Decree
+		icon = GFX_goal_USA_Sign_Presidential_Decree
+		relative_position_id = USA_National_Bottleneck_Project
+		prerequisite = { focus = USA_National_Bottleneck_Project }
+		x = 0
+		y = 1
+		cost = 3
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+		}
+		search_filters = {}
+		completion_reward = { 
+			
+		}
+	}
+	#压制极端主义思潮
+	focus = {
+		id = USA_Suppress_Extremist_Ideologies
+		icon = GFX_goal_USA_Suppress_Extremist_Ideologies
+		relative_position_id = USA_Rectify_the_Chaos
+		prerequisite = { focus = USA_Rectify_the_Chaos }
+		x = -3
+		y = 1
+		cost = 3
+		ai_will_do = { 
+			base = 1
+		}
+		mutually_exclusive = { focus = USA_Relax_Political_Controls }
+		available = {
+		}
+		search_filters = {}
+		completion_reward = { 
+			
+		}
+	}
+	#放松政治管控
+	focus = {
+		id = USA_Relax_Political_Controls
+		icon = GFX_goal_USA_Relax_Political_Controls
+		relative_position_id = USA_Rectify_the_Chaos
+		prerequisite = { focus = USA_Rectify_the_Chaos }
+		x = 0
+		y = 1
+		cost = 3
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+		}
+		search_filters = {}
+		completion_reward = { 
+			
+		}
+	}
+	#铭记分裂之耻
+	focus = {
+		id = USA_Remember_the_Scars_of_Division
+		icon = GFX_goal_USA_Remember_the_Scars_of_Division
+		relative_position_id = USA_State_powers_restored
+		prerequisite = { focus = USA_State_powers_restored }
+		x = 0
+		y = 1
+		cost = 3
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+		}
+		search_filters = {}
+		completion_reward = { 
+			
+		}
+	}
+	#本土贸易保护
+	focus = {
+		id = USA_Domestic_Trade_Protection
+		icon = GFX_goal_USA_Domestic_Trade_Protection
+		relative_position_id = USA_Sign_Presidential_Decree
+		prerequisite = { focus = USA_Sign_Presidential_Decree }
+		x = -2
+		y = 1
+		cost = 3
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+		}
+		search_filters = {}
+		completion_reward = { 
+			
+		}
+	}
+	#华尔街投资基金
+	focus = {
+		id = USA_Wall_Street_Investment_Fund
+		icon = GFX_goal_USA_Wall_Street_Investment_Fund
+		relative_position_id = USA_Sign_Presidential_Decree
+		prerequisite = { focus = USA_Sign_Presidential_Decree }
+		x = 1
+		y = 1
+		cost = 3
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+		}
+		search_filters = {}
+		completion_reward = { 
+			
+		}
+	}
+	#国防军司令部
+	focus = {
+		id = USA_National_Defense_Command
+		icon = GFX_goal_USA_National_Defense_Command
+		relative_position_id = USA_Sign_Presidential_Decree
+		prerequisite = { focus = USA_Sign_Presidential_Decree }
+		x = 4
+		y = 1
+		cost = 3
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+		}
+		search_filters = {}
+		completion_reward = { 
+			
+		}
+	}
+	#扩大总统办公室
+	focus = {
+		id = USA_Expand_the_Office_of_the_President
+		icon = GFX_goal_USA_Expand_the_Office_of_the_President
+		relative_position_id = USA_Suppress_Extremist_Ideologies
+		prerequisite = { focus = USA_Suppress_Extremist_Ideologies focus = USA_Relax_Political_Controls}
+		x = 0
+		y = 1
+		cost = 3
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+		}
+		search_filters = {}
+		completion_reward = { 
+			
+		}
+	}
+	#民主政治
+	focus = {
+		id = USA_Democratic_Politics
+		icon = GFX_goal_USA_Democratic_Politics
+		relative_position_id = USA_Relax_Political_Controls
+		prerequisite = { focus = USA_Relax_Political_Controls focus = USA_Suppress_Extremist_Ideologies}
+		x = 0
+		y = 1
+		cost = 3
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+		}
+		search_filters = {}
+		completion_reward = { 
+			
+		}
+	}
+	#稳定联邦国防军
+	focus = {
+		id = USA_Stabilize_the_Federal_Defense_Forces
+		icon = GFX_goal_USA_Stabilize_the_Federal_Defense_Forces
+		relative_position_id = USA_Remember_the_Scars_of_Division
+		prerequisite = { focus = USA_Remember_the_Scars_of_Division }
+		x = 0
+		y = 1
+		cost = 3
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+			has_completed_focus = USA_National_Defense_Command
+		}
+		search_filters = {}
+		completion_reward = { 
+			
+		}
+	}
+	#遏制寡头与投机客
+	focus = {
+		id = USA_Restrain_Oligarchs_and_Speculators
+		icon = GFX_goal_USA_Restrain_Oligarchs_and_Speculators
+		relative_position_id = USA_Domestic_Trade_Protection
+		prerequisite = { focus = USA_Domestic_Trade_Protection }
+		prerequisite = { focus = USA_Wall_Street_Investment_Fund }
+		x = 0
+		y = 1.5
+		cost = 3
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+		}
+		search_filters = {}
+		completion_reward = { 
+			
+		}
+	}
+	#整合西部部队
+	focus = {
+		id = USA_Integrate_Western_Forces
+		icon = GFX_goal_USA_Integrate_Western_Forces
+		relative_position_id = USA_National_Defense_Command
+		prerequisite = { focus = USA_National_Defense_Command }
+		x = -2
+		y = 1
+		cost = 3
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+		}
+		search_filters = {}
+		completion_reward = { 
+			
+		}
+	}
+	#宪兵队
+	focus = {
+		id = USA_Military_Police_Corps
+		icon = GFX_goal_USA_Military_Police_Corps
+		relative_position_id = USA_National_Defense_Command
+		prerequisite = { focus = USA_National_Defense_Command }
+		x = 2
+		y = 1
+		cost = 3
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+		}
+		search_filters = {}
+		completion_reward = { 
+			
+		}
+	}
+	#强化联邦安全局
+	focus = {
+		id = USA_Strengthen_the_Federal_Security_Agency
+		icon = GFX_goal_USA_Strengthen_the_Federal_Security_Agency
+		relative_position_id = USA_Expand_the_Office_of_the_President
+		prerequisite = { focus = USA_Expand_the_Office_of_the_President }
+		x = -1
+		y = 1
+		cost = 3
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+		}
+		search_filters = {}
+		completion_reward = { 
+			
+		}
+	}
+	#沉默的联邦秩序
+	focus = {
+		id = USA_Silent_Federal_Order
+		icon = GFX_goal_USA_Silent_Federal_Order
+		relative_position_id = USA_Expand_the_Office_of_the_President
+		prerequisite = { focus = USA_Expand_the_Office_of_the_President }
+		x = 1
+		y = 1
+		cost = 3
+		ai_will_do = { 
+			base = 1
+		}
+		mutually_exclusive = { focus = USA_Prevent_Power_Consolidation }
+		available = {
+		}
+		search_filters = {}
+		completion_reward = { 
+			
+		}
+	}
+	#防止权力固化
+	focus = {
+		id = USA_Prevent_Power_Consolidation
+		icon = GFX_goal_USA_Prevent_Power_Consolidation
+		relative_position_id = USA_Democratic_Politics
+		prerequisite = { focus = USA_Democratic_Politics }
+		x = 1
+		y = 1
+		cost = 3
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+		}
+		search_filters = {}
+		completion_reward = { 
+			
+		}
+	}
+	#重订合众宪法
+	focus = {
+		id = USA_Revise_the_Constitution
+		icon = GFX_goal_USA_Revise_the_Constitution
+		relative_position_id = USA_Stabilize_the_Federal_Defense_Forces
+		prerequisite = { focus = USA_Stabilize_the_Federal_Defense_Forces }
+		x = 0
+		y = 1
+		cost = 3
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+			has_completed_focus = USA_Permanent_Readiness_Plan
+			has_completed_focus = USA_Mellon_Tax_Cut_Act_Enacted
+		}
+		search_filters = {}
+		completion_reward = { 
+			
+		}
+	}
+	#"新掠夺者"游击队
+	focus = {
+		id = USA_New_Predators_Guerrillas
+		icon = GFX_goal_USA_New_Predators_Guerrillas
+		relative_position_id = USA_Integrate_Western_Forces
+		prerequisite = { focus = USA_Integrate_Western_Forces }
+		x = -1
+		y = 1
+		cost = 3
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+		}
+		search_filters = {}
+		completion_reward = { 
+			
+		}
+	}
+	#提拔骨干将领
+	focus = {
+		id = USA_Promote_Backbone_Officers
+		icon = GFX_goal_USA_Promote_Backbone_Officers
+		relative_position_id = USA_Military_Police_Corps
+		prerequisite = { focus = USA_Military_Police_Corps }
+		prerequisite = { focus = USA_Integrate_Western_Forces }
+		x = -1
+		y = 1
+		cost = 3
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+		}
+		search_filters = {}
+		completion_reward = { 
+			
+		}
+	}
+	#美利坚永存
+	focus = {
+		id = USA_America_Endures
+		icon = GFX_goal_USA_America_Endures
+		relative_position_id = USA_Silent_Federal_Order
+		prerequisite = { focus = USA_Strengthen_the_Federal_Security_Agency }
+		prerequisite = { focus = USA_Prevent_Power_Consolidation focus = USA_Silent_Federal_Order}
+		x = 0
+		y = 1
+		cost = 3
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+		}
+		search_filters = {}
+		completion_reward = { 
+			
+		}
+	}
+	#民族团结
+	focus = {
+		id = USA_National_Unity
+		icon = GFX_goal_USA_National_Unity
+		relative_position_id = USA_Revise_the_Constitution
+		prerequisite = { focus = USA_Revise_the_Constitution }
+		x = 0
+		y = 1
+		cost = 3
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+		}
+		search_filters = {}
+		completion_reward = { 
+			
+		}
+	}
+	#梅隆减税法案落地
+	focus = {
+		id = USA_Mellon_Tax_Cut_Act_Enacted
+		icon = GFX_goal_USA_Mellon_Tax_Cut_Act_Enacted
+		relative_position_id = USA_Restrain_Oligarchs_and_Speculators
+		prerequisite = { focus = USA_Restrain_Oligarchs_and_Speculators }
+		x = 0
+		y = 1.5
+		cost = 3
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+		}
+		search_filters = {}
+		completion_reward = { 
+			
+		}
+	}
+	#永久战备计划
+	focus = {
+		id = USA_Permanent_Readiness_Plan
+		icon = GFX_goal_USA_Permanent_Readiness_Plan
+		relative_position_id = USA_New_Predators_Guerrillas
+		prerequisite = { focus = USA_New_Predators_Guerrillas }
+		prerequisite = { focus = USA_Promote_Backbone_Officers }
+		x = 2
+		y = 1
+		cost = 3
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+		}
+		search_filters = {}
+		completion_reward = { 
+			
+		}
+	}
+	#华盛顿国民演讲
+	focus = {
+		id = USA_Washington_National_Address
+		icon = GFX_goal_USA_Washington_National_Address
+		relative_position_id = USA_National_Unity
+		prerequisite = { focus = USA_America_Endures }
+		prerequisite = { focus = USA_National_Unity }
+		prerequisite = { focus = USA_Mellon_Tax_Cut_Act_Enacted }
+		prerequisite = { focus = USA_Permanent_Readiness_Plan }
+		x = 2
+		y = 1
+		cost = 3
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+		}
+		search_filters = {}
+		completion_reward = { 
+			
+		}
+	}
+}

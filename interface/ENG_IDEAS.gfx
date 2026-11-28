@@ -1,0 +1,151 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ENG_britain_seabase_desc"
+		texturefile = "gfx/interface/ideas/ENG/ENG_britain_seabase_desc.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = no
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "GFX_idea_ENG_britain_seabase"
+		texturefile = "gfx/interface/ideas/ENG/ENG_britain_seabase.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "The_London_stock_market_crashed_desc"
+		texturefile = "gfx/interface/ideas/ENG/The_London_stock_market_crashed_desc.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = no
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "GFX_idea_The_London_stock_market_crashed"
+		texturefile = "gfx/interface/ideas/ENG/The_London_stock_market_crashed.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "GFX_green_island_desc"
+		texturefile = "gfx/interface/ideas/ENG/green_island_desc.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = no
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "GFX_idea_green_island"
+		texturefile = "gfx/interface/ideas/ENG/green_island.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "GFX_leader_kelinsi"
+		texturefile = "gfx/interface/leaders/IRE/IRE_Michael_John_Mick_Collins.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EU_IN_ONLY_desc"
+		texturefile = "gfx/interface/ideas/ENG/EU_IN_ONLYZ_desc.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = no
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "GFX_idea_EU_IN_ONLY"
+		texturefile = "gfx/interface/ideas/ENG/EU_IN_ONLY.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "baodewen"
+		texturefile = "gfx/interface/baodewen.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "weilian_eng"
+		texturefile = "gfx/interface/weilian_eng.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "eng_bao"
+		texturefile = "gfx/interface/ideas/ENG/eng_bao.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "GFX_fallen_shizi_desc"
+		texturefile = "gfx/interface/ideas/ENG/fallen_shizi_desc.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = no
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "GFX_idea_fallen_shizi"
+		texturefile = "gfx/interface/ideas/ENG/fallen_shizi.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "George_V"
+		texturefile = "gfx/interface/George_V.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "ENG_broken_insdutry_desc"
+		texturefile = "gfx/interface/ideas/ENG/ENG_broken_insdutry_desc.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = no
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "GFX_idea_ENG_broken_insdutry"
+		texturefile = "gfx/interface/ideas/ENG/ENG_broken_insdutry.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+}

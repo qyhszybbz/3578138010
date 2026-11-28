@@ -1,0 +1,46 @@
+﻿capital = 428
+
+#oob = ""
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+if = {
+	limit = {
+		has_dlc = "Graveyard of Empires"
+	}
+	recruit_character = BAN_a_k_fazlul_huq
+}
+
+if = {
+	limit = {
+		has_dlc = "Graveyard of Empires"
+	}
+	recruit_character = RAJ_huseyn_shaheed_suhrawardy
+}
+
+set_convoys = 5
+
+
+set_politics = {
+	ruling_party = tttt
+	elections_allowed = no
+}
+set_popularities = {
+	tttt = 100
+}
+
+create_country_leader = {
+	
+	name = "Chithira_Thirunal_Maharaja"
+	picture = "gfx//leaders//Portrait_Chithira_Thirunal_Maharaja.png"
+	expire = "1965.1.1"
+	ideology = tttt_small
+	traits = {
+	}
+}
+
+
+

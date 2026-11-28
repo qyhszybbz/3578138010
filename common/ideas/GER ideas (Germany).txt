@@ -1,0 +1,117 @@
+ideas = {
+    country = {
+		### 初始民族精神 ###
+		#普鲁士军魂
+		GER_Prussian_military_spirit = {
+			on_add = { log = "[GetLogRoot]: add idea GER_Prussian_military_spirit" }
+			picture = Prussian_military_spirit
+			allowed = { always = no }
+			modifier = {
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				land_doctrine_cost_factor = -0.10
+ 				naval_doctrine_cost_factor = -0.10
+ 				air_doctrine_cost_factor = -0.10
+			}
+		}
+		#糟糕的政局
+		GER_Bureaucratic_administrative_system = {
+			on_add = { log = "[GetLogRoot]: add idea GER_Bureaucratic_administrative_system" }
+			picture = Bureaucratic_administrative_system
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = -0.75
+				political_advisor_cost_factor = 0.50
+				stability_factor = -0.20
+			}
+		}
+		#十一月革命的余烬
+		GER_Aftermath_of_November_Revolution = {
+			on_add = { log = "[GetLogRoot]: add idea GER_Aftermath_of_November_Revolution" }
+			picture = Aftermath_of_November_Revolution
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.20
+			}
+		}
+		#《凡尔赛条约》的枷锁
+		GER_Shackles_of_Treaty_of_Versailles = {
+			on_add = { log = "[GetLogRoot]: add idea GER_Shackles_of_Treaty_of_Versailles" }
+			picture = Shackles_of_Treaty_of_Versailles
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = 0.20
+				production_speed_buildings_factor = -0.10
+				production_factory_efficiency_gain_factor = -0.05
+			}
+		}
+		#帝国海军
+		GER_Imperial_Navy_1 = {
+			on_add = { log = "[GetLogRoot]: add idea GER_Imperial_Navy_1" }
+			picture = Imperial_Navy
+			allowed = { always = no }
+			modifier = {
+				experience_gain_navy_factor = -0.15
+				navy_screen_attack_factor = -0.10
+				navy_screen_defence_factor = -0.10
+				navy_capital_ship_attack_factor = -0.10
+				navy_capital_ship_defence_factor = -0.10
+				navy_carrier_air_attack_factor = -0.10
+				industrial_capacity_dockyard = -0.2
+			}
+			equipment_bonus = {
+				ship_hull_carrier = {
+					build_cost_ic = 0.15
+					instant = yes
+				}
+				ship_hull_cruiser = {
+					build_cost_ic = 0.15
+					instant = yes
+				}
+				ship_hull_heavy = {
+					build_cost_ic = 0.15
+					instant = yes
+				}
+				ship_hull_light = {
+					build_cost_ic = 0.15
+					instant = yes
+				}
+				ship_hull_submarine = {
+					build_cost_ic = 0.15
+					instant = yes
+				}
+			}
+		}
+		#帝国空军
+		GER_Imperial_AirForce_1 = {
+			on_add = { log = "[GetLogRoot]: add idea GER_Imperial_AirForce_1" }
+			picture = Imperial_AirForce
+			allowed = { always = no }
+			modifier = {
+				experience_gain_air_factor = -0.15
+				air_attack_factor = -0.15
+				air_cas_present_factor = -0.15
+				air_accidents = 0.15
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					build_cost_ic = 0.15
+					instant = yes
+				}
+				medium_plane_airframe = {
+					build_cost_ic = 0.15
+					instant = yes
+				}
+				large_plane_airframe = {
+					build_cost_ic = 0.15
+					instant = yes
+				}
+				transport_plane_equipment = {
+					build_cost_ic = 0.15
+					instant = yes
+				}
+			}
+		}
+	}
+}

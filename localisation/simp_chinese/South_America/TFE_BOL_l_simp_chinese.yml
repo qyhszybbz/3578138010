@@ -1,0 +1,43 @@
+﻿l_simp_chinese:
+
+    BOL:0 "秘鲁玻利维亚邦联"
+    BOL_DEF:0 "秘鲁玻利维亚邦联"
+    BOL_ADJ:0 "秘鲁玻利维亚"
+
+
+    BOL_herman_bushi:0 "赫尔曼·布什·贝塞拉"
+    BOL_herman_bushi_desc:0 "秘鲁玻利维亚自从邦联建立之时算起，也没有赫尔曼·布什这样年轻的领导人。作为孔特的亲传弟子，布什算是青出于蓝，他毕业于秘鲁玻利维亚最好的军校，并在数次查科探险和冲突中冲锋在前，为自己赢得了一枚极高荣誉的勋章。\n若不是查科战争的助推，布什也许只是一位著名的将领。直到查科战争中埃斯加蒂维亚将军一路打入博尔龙要塞之下，孔特将军要求布什所率领的部队立即撤退，然而布什公然拒绝，抵抗埃斯蒂加里维亚将军的部队达数天，最终援军到达解围。这一战使得媒体将布什将军捧成了和苏克雷并肩的将军，布什也和挚友托罗共同领导着军中的少壮派。\n战后的秘鲁玻利维亚惨胜，抗议、改革、极端分子层出不穷。布什和托罗为了拯救国家，共同发动了革命——或者说政变——推翻了文官政府，并建立了临时政府来达成文官军人的平衡以利于改革。不过这一理想目前来说困难重重：北秘鲁的反抗、内部的反对派和社会主义者，以及挚友托罗的渐行渐远，让这一改革蒙上了一层阴霾。"
+    BOL_hero_of_boqueron:0 "博尔龙的英雄"
+    BOL_military_socialist_reformer:0 "军事社会主义改革者"
+
+    
+    BOL_military_socialism:0 "军事社会主义"
+    BOL_military_socialism_desc:0 "\n\n\n\n£GFX_BOL_military_socialism_picture_picture\n\n\n\n\n\n军事社会主义是布什和托罗共同提出的一项目标。这一看起来有点像社会主义的理论实际上是根据军政府制定出来的，显得有些奇异。\n不过大部分人不买这个账：寡头和矿业集团们反对他，左翼人士则对此嗤之以鼻，认为只不过是一个套了红色外皮的独裁政权。团结在布什身边的只有少量渴望变革的文官以及少壮派武将们。"
+    BOL_mountains_of_gold:0 "群山自黄金"
+    BOL_mountains_of_gold_desc:0 "\n\n\n\n£GFX_BOL_mountains_of_gold_picture\n\n\n\n\n\n玻利维亚引以为傲的矿藏，背靠安第斯山。寡头和大亨依靠政府的特权建立起来了无数矿业基地，用滚滚的黑烟和猪狗不如的矿工环境建立起了玻利维亚的繁荣，这一事情长期以来一直是文官各党派的共识，当然除了一些吃里扒外的赤匪。\n不过，布什已经注意到了这对于经济的掌控，这一控制将对全国造成不可逆的影响。也许布什会将这一局势扭转……"
+    BOL_treaty_of_petropolis:0 "《彼得罗普利斯条约》"
+    BOL_treaty_of_petropolis_desc:0 "\n\n\n\n£GFX_BOL_treaty_of_petropolis_picture\n\n\n\n\n\n阿克里的惨败使得一任内阁倒台，但自不成文的停火协定签定之后，我们又与巴西签订了一纸条文。它规定我们暂时和他们均不得染指阿克里。\n不过我们不会放弃这一机会：白纸黑字的条文不过是强压的不平等条款，阿克里的归属权自1833年便已经明了。我们终将归来，而北秘鲁战胜大哥伦比亚显然是一个很好的开始，但并非终结。"
+    BOL_national_salvation_government:0 "救国政府"
+    BOL_national_salvation_government_desc:0 "\n\n\n\n£GFX_BOL_national_salvation_government_picture\n\n\n\n\n\n救国政府成立于1934年，作为名义上的玻利维亚政府最高机关，总统布什和托罗掌控着一切最高权力。然而好景不长，随着文官的阴谋、托罗的掣肘，救国政府文官和军人的联盟难以维系，这一机构也许走向了其生命的尽头。"
+
+  
+    BOL_communism_party:0 "全国左翼阵线"
+    BOL_communism_party_long:0 "全国左翼阵线"
+    BOL_Socialism_party:0 "全国左翼阵线"
+    BOL_Socialism_party_long:0 "全国左翼阵线"
+    BOL_Progressivism_party:0 "激进党"
+    BOL_Progressivism_party_long:0 "激进党"
+    BOL_Liberalism_party:0 "激进党"
+    BOL_Liberalism_party_long:0 "激进党"
+    BOL_Democracy_party:0 "救国政府"
+    BOL_Democracy_party_long:0 "救国政府"
+    BOL_Conservatism_party:0 "真共和党"
+    BOL_Conservatism_party_long:0 "真共和党"
+    BOL_Authoritarianism_party:0 "真共和党"
+    BOL_Authoritarianism_party_long:0 "真共和党"
+    BOL_tttt_party:0 "救国政府"
+    BOL_tttt_party_long:0 "救国政府"
+    BOL_fascism_party:0 "长枪党小组"
+    BOL_fascism_party_long:0 "长枪党小组"
+    BOL_nazism_party:0 "长枪党小组"
+    BOL_nazism_party_long:0 "长枪党小组"

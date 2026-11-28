@@ -1,0 +1,26 @@
+state={
+	id = 680
+	name="STATE_680"
+	manpower = 1075000
+	
+	state_category = town
+
+	history={
+		add_core_of = JAM
+		owner = SPR
+		add_claim_by = SPR
+		victory_points = {
+			12304 1 
+		}
+		buildings = {
+			infrastructure = 2
+			12304 = {
+				naval_base = 1
+			}
+		}
+	}
+	
+	provinces={ 12304 12477 }
+
+	local_supplies=0.0 
+}

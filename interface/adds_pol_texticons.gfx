@@ -1,0 +1,50 @@
+spriteTypes = {
+	#GUI
+	spriteType = {
+		name = "GFX_welcome_bg"
+		texturefile = "gfx/interface/Playerccccc/normal/welcomebg.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_welcome_close"
+		texturefile = "gfx/interface/Playerccccc/normal/close.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_welcome_botton"
+		texturefile = "gfx/interface/Playerccccc/normal/welcome_botton.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KARII"
+		texturefile = "gfx/interface/Playerccccc/normal/KARII.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_nothing"
+		texturefile = "gfx/interface/Playerccccc/normal/nothing.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_POLWELCOME"
+		texturefile = "gfx/interface/Playerccccc/POL/pol2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_CSAWELCOME"
+		texturefile = "gfx/interface/Playerccccc/CSA/WELCOME.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TVE_PEACE_BUTTON"
+		texturefile = "gfx/interface/peace_pop/TVE_PEACE_BUTTON.dds"
+	}
+	spriteType = {
+		name = "GFX_TVE_PEACE_POP"
+		texturefile = "gfx/interface/peace_pop/TVE_PEACE_POP.dds"
+	}
+	spriteType = {
+		name = "GFX_POL_jiaoao_pol"
+		texturefile = "gfx/texticons/banners/GFX_proud_pol.dds"  legacy_lazy_load = no
+	}
+}

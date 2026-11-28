@@ -1,0 +1,82 @@
+add_namespace = Confederate_State
+add_namespace = Confederate_State_news
+add_namespace = tfe_csa_news
+
+#国内情况
+country_event = {
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Confederate_State.1"}
+	id = Confederate_State.1
+	title = Confederate_State.1.t
+	desc = Confederate_State.1.d
+	#picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = Confederate_State.1.a
+	}
+}
+#西部事宜
+country_event = {
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Confederate_State.2"}
+	id = Confederate_State.2
+	title = Confederate_State.2.t 
+	desc = Confederate_State.2.d
+	#picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = Confederate_State.2.a
+		add_political_power = 25
+		CSA = {
+		add_equipment_to_stockpile = {
+        	type = infantry_equipment
+        	amount = 1000
+    	}
+		add_equipment_to_stockpile = {
+        	type = motorized_equipment
+        	amount = 800
+    	}
+		}
+		
+	}
+}
+
+#西部革命
+news_event = {
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Confederate_State_news.1"}
+	id = Confederate_State_news.1
+	title = Confederate_State_news.1.t
+	desc = Confederate_State_news.1.d
+	picture = GFX_news_CSA_western_revolution
+	is_triggered_only = yes
+
+	option = {
+		name = Confederate_State_news.1.a
+		
+	}
+}
+
+news_event = { #特大沙暴席卷西部
+	
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tfe_csa_news.1" }
+	id = tfe_csa_news.1
+	title = tfe_csa_news.1.t
+	desc = tfe_csa_news.1.d
+	picture = GFX_news_events_csa_sandstorm_sweeps_the_west
+
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		tag = CSA
+		date > 1935.4.26# 1935 年 4 月 26 日之后
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+	option = { #今年又消停不了了
+		name = tfe_csa_news.1.a
+	}
+}

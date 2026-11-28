@@ -1,0 +1,402 @@
+ideas = {
+
+	country = {
+		MEX_bihua_xingdong = {
+			picture = MEX_yaowang_lvtu
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.1
+				army_core_defence_factor = 0.15
+			}
+		}
+
+		MEX_naxie_xuwei_shenming = {
+			picture = MEX_yaowang_lvtu
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.1
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				consumer_goods_factor = -0.1
+			}
+		}
+
+		MEX_under_our_shadow = {
+			picture = MEX_yaowang_lvtu
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+
+
+		MEX_crying_guadalupei = {
+			picture = MEX_crying_guadalupei
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = -0.1
+				production_speed_buildings_factor = -0.1
+				conscription_factor = -0.1
+			}
+		}
+
+		MEX_crying_guadalupei2 = {
+			picture = MEX_crying_guadalupei
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = -0.05
+				production_speed_buildings_factor = -0.05
+				conscription_factor = -0.1
+			}
+		}
+		
+
+		####军队介入程度#后续可能续写程度中、高
+		MEX_jundui_jieru_1 = {
+			picture = MEX_jundui_jieru
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				
+			}
+		}
+
+		MEX_jundui_jieru_2 = {
+			picture = MEX_jundui_jieru
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = -0.02
+				experience_gain_army= 0.03
+				experience_gain_navy = 0.03
+				experience_gain_air = 0.03
+				max_command_power =  50
+			}
+		}
+
+		MEX_jundui_jieru_3 = {
+			picture = MEX_jundui_jieru
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = -0.05
+				experience_gain_army= 0.05
+				experience_gain_navy = 0.05
+				experience_gain_air = 0.05
+				max_command_power =  50
+			}
+		}
+
+
+		MEX_wenren_zhiguo = {
+			picture = MEX_wenren_zhiguo
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				research_speed_factor = 0.05
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		MEX_young_politic = {
+			picture = MEX_young_politic 
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.15
+			}
+		}
+
+		MEX_young_politic2 = {
+			picture = MEX_young_politic 
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.2
+				stability_factor = 0.05
+			}
+		}
+
+
+		#二阶段国策给予的民族精神如下
+		MEX_Fear_from_the_unknown = {#来自未知的恐惧
+			picture = 1
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.15
+			}
+		}
+
+		MEX_Martial_law = {#戒严令
+			picture = 1
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = -0.15
+				consumer_goods_factor = -0.1
+			}
+		}
+
+		MEX_Support_of_the_workers = {#工人的支持
+			picture = 1
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				line_change_production_efficiency_factor = 0.05
+				production_factory_max_efficiency_factor = -0.1
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		MEX_Association_for_young = {#青年协会为青年
+			picture = 1
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.2
+				political_power_gain = 0.3
+			}
+		}
+
+		MEX_revolutionary_propaganda = {#革命宣传
+			picture = 1
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.1
+			}
+		}
+
+		MEX_Support_of_contemporary_people = {#当代人的支持
+			picture = 1
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+
+		MEX_Populist_fervor = {#民粹狂热
+			picture = 1
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.1
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		MEX_Suppress_the_militia = {#镇压民兵
+			picture = 1
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.05
+				experience_gain_army = 0.3
+				weekly_manpower = -100
+			}
+		}
+
+		MEX_The_initial_awakening_of_the_nation = {#民族的初步觉醒
+			picture = 1
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.1
+				industrial_capacity_factory = 0.05
+				army_core_defence_factor = 0.1
+			}
+		}
+	}
+
+}

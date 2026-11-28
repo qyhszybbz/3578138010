@@ -1,0 +1,32 @@
+state={
+	id = 1025
+	name="STATE_1025"
+
+	state_category = city
+
+
+	history={
+		owner = TTS
+		add_core_of = TTS
+		add_claim_by = ITA
+		add_claim_by = LBV
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			925 = {
+				naval_base = 4
+			}
+		}
+		victory_points = {
+			925 1 
+		}
+	}
+
+	provinces={
+		9794 11790 6926 925 967 11861
+	}
+	manpower = 1930961
+	buildings_max_level_factor=1.000
+
+	local_supplies=0.0 
+}

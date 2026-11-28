@@ -1,0 +1,57 @@
+﻿capital = 452
+oob = "ISR_1935"
+set_stability = 0.25
+set_war_support = 0.51
+set_research_slots = 3
+set_convoys = 288
+starting_train_buffer = 0.9
+set_fuel_ratio = 0.9
+set_cosmetic_tag = ISR_Judenstaat #犹太国
+ 
+### 初始科技 ###
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	tech_trucks = 1
+	marines  = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	basic_train = 1
+	fuel_silos = 1
+	synth_oil_experiments = 1
+	fuel_refining = 1
+	camelry = 1
+}
+
+### 领导人 ###
+recruit_character = ISR_Chaim_Weizmann #哈伊姆·魏茨曼
+
+add_ideas = {
+	ISR_Zion #锡安
+	ISR_International_Jewish_Support #国际犹太人支持
+	ISR_Two_Axes_Jaffa_oriented #两个轴心:倾向雅法
+	ISR_Kibbutz #基布兹
+	ISR_Paramilitary_organization #准军事组织
+	ISR_Diplomatic_situation_beseton_all_sides #外交状况:四面受敌
+}
+
+set_politics = {
+	ruling_party = Progressivism
+	last_election = "1932.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	communism = 5
+	Socialism = 22
+	Progressivism = 41
+	Liberalism = 15
+	Democracy = 0
+	Conservatism = 0
+	Authoritarianism = 1
+	tttt = 8
+	fascism = 8
+	nazism = 0
+}

@@ -1,0 +1,69 @@
+characters={
+	#领导人
+	#莱昂·科尔特斯·卡斯特罗
+	ELS_Leon_Cortes_Castro = {
+		name = ELS_Leon_Cortes_Castro
+		portraits={
+			civilian={
+				large = GFX_ELS_Leon_Cortes_Castro_large
+			}
+		}
+		country_leader={
+			desc = ELS_Leon_Cortes_Castro_desc
+			ideology = democracy_small
+			traits = { ELS_disarmament_advocate ELS_infrastructure_builder }
+		}
+	}
+	#政治顾问
+	#特奥多罗·皮卡多·米查尔斯基
+	ELS_Teodoro_Picado_Michalski = {
+		name = ELS_Teodoro_Picado_Michalski
+		portraits = {
+			civilian = {
+				small = GFX_ELS_Teodoro_Picado_Michalski_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ELS_Teodoro_Picado_Michalski_pol
+			desc = ELS_Teodoro_Picado_Michalski_desc
+			traits = { ELS_core_political_ally }
+			cost = 0
+			can_be_fired = no
+		}
+	}
+	#拉斐尔·安赫尔·卡尔德隆·瓜迪亚
+	ELS_Rafael_Angel_Calderon_Guardia = {
+		name = ELS_Rafael_Angel_Calderon_Guardia
+		portraits = {
+			civilian = {
+				small = GFX_ELS_Rafael_Angel_Calderon_Guardia_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ELS_Rafael_Angel_Calderon_Guardia_pol
+			desc = ELS_Rafael_Angel_Calderon_Guardia_desc
+			traits = { ELS_doctors_and_young_political_talents }
+			cost = 0
+			can_be_fired = no
+		}
+	}
+	#何塞·马里亚·蒙卡达
+	ELS_Jose_Maria_Moncada = {
+		name = ELS_Jose_Maria_Moncada
+		portraits = {
+			civilian = {
+				small = GFX_ELS_Jose_Maria_Moncada_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ELS_Jose_Maria_Moncada_pol
+			desc = ELS_Jose_Maria_Moncada_desc
+			traits = { ELS_veteran_classical_liberal }
+			cost = 0
+			can_be_fired = no
+		}
+	}
+}

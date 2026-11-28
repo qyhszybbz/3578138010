@@ -1,0 +1,40 @@
+characters = {
+	COL_Jorge_Elisel_Gaitan = { #豪尔赫·埃利塞尔·盖坦
+    name = COL_Jorge_Elisel_Gaitan
+    portraits = {
+        civilian = {
+            large = GFX_leader_COL_Jorge_Elisel_Gaitan
+        }
+    }
+    
+    country_leader = {
+        ideology = Gaitanism
+		desc = COL_Jorge_Elisel_Gaitan_desc
+        traits = {
+			
+        }
+    }
+}
+    COL_Plinio_Mendoza_Nera = { #普利尼奥·门多萨·内拉
+    name = COL_Plinio_Mendoza_Nera
+    portraits = {
+        civilian = {
+            large = GFX_leader_COL_Plinio_Mendoza_Neran
+        }
+    }
+    advisor = {
+        slot = second_in_command
+        desc = COL_Plinio_Mendoza_Nera_desc
+        traits = { }
+    }
+}
+    COL_National_Assembly = { #大哥伦比亚国民议会 
+    name = COL_National_Assembly
+    portraits = {
+        civilian = {
+            large = GFX_leader_COL_National_Assembly
+        }
+    }
+}
+}
+	

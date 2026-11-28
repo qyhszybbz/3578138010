@@ -1,0 +1,43 @@
+﻿capital = 325
+
+oob = "PHI_1936"
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "PHI_1936_air_bba"
+	else = {
+		set_air_oob = "PHI_1936_air_legacy"
+		set_technology = {
+			early_fighter = 1
+			early_bomber = 1
+		}
+	}
+}
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+}
+
+set_convoys = 5
+
+recruit_character = PHI_Emilio_Archinardo #埃米利奥·阿基纳尔多
+
+
+set_cosmetic_tag = SPR_puppet_PHI
+add_ideas = {
+	PHI_bansang_isla#众岛之国
+	PHI_asian_outpost #亚洲前哨
+}
+set_politics = {
+	ruling_party = Conservatism
+	last_election = "1935.9.15"
+	election_frequency = 72
+	elections_allowed = yes
+}
+set_popularities = {
+	Conservatism = 100
+}

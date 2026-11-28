@@ -1,0 +1,17 @@
+characters={
+	#领导人
+	#汤化龙
+	CHI_Tang_Hualong = {
+		name= CHI_Tang_Hualong
+		portraits={
+			civilian={
+				large=GFX_CHI_Tang_Hualong_large
+			}
+		}
+		country_leader={
+			desc = CHI_Tang_Hualong_desc
+			ideology= steady_Progressivism_subtype
+			traits= { CHI_Assassination_Crisis }
+		}
+	}
+}

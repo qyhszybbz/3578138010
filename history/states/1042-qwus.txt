@@ -1,0 +1,31 @@
+state={
+	id = 1042
+	name="STATE_1042"
+	provinces={
+		13307 10953 13296
+	}
+	history = {
+
+		owner = PWQ
+		add_core_of = PWQ
+		add_core_of = ARG
+		buildings = {
+			infrastructure = 1
+			10953 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			13307 2 
+		}
+
+		victory_points = {
+			10953 3 
+		}
+		
+	}
+	manpower=110107
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

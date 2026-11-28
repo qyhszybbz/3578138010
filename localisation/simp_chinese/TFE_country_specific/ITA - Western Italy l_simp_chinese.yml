@@ -1,0 +1,39 @@
+﻿l_simp_chinese:
+ ITA_communism: "意大利社会主义共和国"
+ ITA_communism_ADJ: "意大利社会主义共和国"
+ ITA_communism_DEF: "意大利社会主义共和国"
+
+ ITA_communism_party: "意大利共产党"
+ ITA_communism_party_long: "意大利共产党"
+ ITA_Socialism_party: "意大利社会党"
+ ITA_Socialism_party_long: "意大利社会党"
+ ITA_Progressivism_party: "意大利工会联盟"
+ ITA_Progressivism_party_long: "意大利工会联盟"
+ ITA_Democracy_party: "意大利共和党"
+ ITA_Democracy_party_long: "意大利共和党"
+ ITA_fascism_party: "§R非法§!"
+ ITA_fascism_party_long: "§R意大利国家法西斯党（非法）§!"
+
+ ITA_Antonio_Gramsci: "安东尼奥·葛兰西"
+ ITA_Antonio_Gramsci_desc: "§Y生于:§!§L1891年1月23日,意大利王国撒丁岛阿莱斯§!\n§L葛兰西出生于撒丁岛的职员家庭，其最终在大学毕业后加入了意大利社会党，作为党内才华横溢的思想家，他始终站在马克思雕像下捍卫暴力革命的路线。\n\n好景不长，墨索里尼在退党后成立了战斗法西斯同盟，前党员厚颜无耻地成为了党的敌人，葛兰西在社会党分裂后加入了新创立的意大利共产党，葛兰西预见了即将到来的灾难，转变了过去的先锋党态度，呼吁并伙同社会党人、共和党人、无政府主义者组成社会主义阵线，这一先见举措导致了法西斯进军的破产。\n\n当左翼以为法西斯分子被打败、民主议会被保留维持、社会主义即将获得胜利之时，墨索里尼成立了地方政权，意大利陷入了第二次分裂。社会主义阵线在葛兰西等政治家领导下成立了意大利社会主义共和国。中央为联合革命委员会。\n\n未雨绸缪，在战火之后的平和岁月里，社会主义勇士们要面对虎视眈眈的法西斯野兽与保守顽固的王国，而现在，葛兰西仍坚持他的共产理想，在都灵为革命事业奔波。§!"
+ ITA_Revolutionary_Vanguard: "革命先锋"
+ ITA_Salvatore_Barzilai: "萨尔瓦托雷·巴尔齐莱"
+ ITA_Salvatore_Barzilai_desc: "§O安全部长§!\n§D意大利共和党§!"
+ ITA_Red_guard: "红色卫兵"
+ ITA_Pietro_Nenni: "彼得罗·南尼"
+ ITA_Pietro_Nenni_desc: "§Y内政部长§!\n§S意大利社会党§!"
+ ITA_Diligent_leader: "勤恳的领袖"
+ ITA_Nikolai_Bukharin: "尼古拉·布哈林"
+ ITA_Nikolai_Bukharin_desc: "§9经济部长§!\n§R意大利共产党§!"
+ ITA_Bolshevik_exiles: "布尔什维克流亡者"
+ ITA_Emilio_Lussu: "埃米利奥·卢苏"
+ ITA_Emilio_Lussu_desc: "§L国防部长§!\n§S意大利社会党§!"
+ ITA_Red_Warrior: "红色战士"
+
+
+
+
+ ITA_Disorganized_militia: "混乱的民兵"
+ ITA_Disorganized_militia_desc: "意大利红军建立伴随着民兵组织与正规军武装之间的分歧，民兵力量是联合阵线的早期骨干与街头分子，而正规军则是由前政府士官与大战左翼老兵组成的团体，内战以来，两派别分期不断，难以形成共识。党务工作焦点便在于如何统合这股混乱之力。"
+ ITA_Peril_of_Committee_Democracy: "委员会民主的危难"
+ ITA_Peril_of_Committee_Democracy_desc: "意识到法西斯威胁当头与分裂的预警，以意大利社会党和意大利共产党为首，开创了人民联合阵线，力在争取民主人士与工团人士。\n\n但这一委员会在历经内战种种摧残后，变得漏洞百出，左派何以能改变？"

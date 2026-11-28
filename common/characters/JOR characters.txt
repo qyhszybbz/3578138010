@@ -1,0 +1,16 @@
+characters = {
+	#领导人
+	#阿卜杜拉·伊本·侯赛因
+	JOR_Abdullah_Ibin_Hussein = {
+		name = JOR_Abdullah_Ibin_Hussein
+		portraits = {
+			civilian = {
+				large = GFX_JOR_Abdullah_Ibin_Hussein_large
+			}
+		}
+		country_leader = {
+			ideology = tttt_small
+			traits = {  }
+		}
+	}
+}

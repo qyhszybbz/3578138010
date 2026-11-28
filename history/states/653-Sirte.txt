@@ -1,0 +1,22 @@
+state={
+	id = 653
+	name="STATE_653"
+	manpower = 4734
+	
+	state_category = wasteland
+	
+	
+	history={
+		owner = FNA
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = LBA
+	}
+	
+	provinces={
+		7136 13073 
+	}
+
+	local_supplies=0.0 
+}

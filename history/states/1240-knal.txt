@@ -1,0 +1,25 @@
+
+state={
+	id = 1240
+	name="STATE_1240"
+	manpower = 309370
+	resources={
+
+	}
+	
+	state_category = town
+
+	history={
+		owner = AUS
+		
+		
+		add_core_of = AUS
+		add_core_of = SLV
+	}
+
+	provinces={
+		3631 9596
+	}
+
+	local_supplies=0.0 
+}

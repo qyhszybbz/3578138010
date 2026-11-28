@@ -1,0 +1,733 @@
+focus = {
+	current = "USA_Political_rotation_end"
+	progress = 0
+}
+division_template = {
+	name = "Infantry Division2"
+	is_locked = yes
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Infantry Division"
+	is_locked = yes
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Medium Armor Division"
+	is_locked = yes
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Marine Division"
+	is_locked = yes
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Pratrooper Division"
+	is_locked = yes
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Motorized Light Tank Division"
+	is_locked = yes
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		light_armor = { x = 2 y = 0 }
+		light_armor = { x = 2 y = 1 }
+		light_armor = { x = 3 y = 0 }
+		light_armor = { x = 3 y = 1 }
+	}
+	priority = 1
+}
+
+units = {
+
+	division = {
+		name = "第一游骑兵团"
+		location = 4760
+		division_template = "Motorized Light Tank Division"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			light_tank_chassis_0 = { owner = "USA" version_name = "LT-35" }
+			motorized_equipment_1 = { owner = "USA" }
+			infantry_equipment_1 = { owner = "USA" }
+		}
+	}
+
+	division = {
+		name = "第二装甲师"
+		location = 4830
+		division_template = "Motorized Light Tank Division"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			light_tank_chassis_0 = { owner = "USA" version_name = "LT-35" }
+			motorized_equipment_1 = { owner = "USA" }
+			infantry_equipment_1 = { owner = "USA" }
+		}
+	}
+
+	#九步一炮
+	division = {
+		name = "第1先锋步兵师“波托马克军团”"
+		location = 10606
+		division_template = "Infantry Division2"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			artillery_equipment_1 = { owner = "USA" }
+			infantry_equipment_1 = { owner = "USA" }
+		}
+	}
+
+	division = {
+		name = "第2先锋步兵师“彩虹师”"
+		location = 10333
+		division_template = "Infantry Division2"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			artillery_equipment_1 = { owner = "USA" }
+			infantry_equipment_1 = { owner = "USA" }
+		}
+	}
+	
+	division = {
+		name = "第3先锋步兵师“黑马军团”"
+		location = 12586
+		division_template = "Infantry Division2"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			artillery_equipment_1 = { owner = "USA" }
+			infantry_equipment_1 = { owner = "USA" }
+		}
+	}
+	
+	division = {
+		name = "第4先锋步兵师"
+		location = 1770
+		division_template = "Infantry Division2"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			artillery_equipment_1 = { owner = "USA" }
+			infantry_equipment_1 = { owner = "USA" }
+		}
+	}
+	
+	division = {
+		name = "第5先锋步兵师"
+		location = 6696
+		division_template = "Infantry Division2"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			artillery_equipment_1 = { owner = "USA" }
+			infantry_equipment_1 = { owner = "USA" }
+		}
+	}
+	
+	division = {
+		name = "第6先锋步兵师"
+		location = 9727
+		division_template = "Infantry Division2"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			artillery_equipment_1 = { owner = "USA" }
+			infantry_equipment_1 = { owner = "USA" }
+		}
+	}
+	
+	division = {
+		name = "第7先锋步兵师"
+		location = 831
+		division_template = "Infantry Division2"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			artillery_equipment_1 = { owner = "USA" }
+			infantry_equipment_1 = { owner = "USA" }
+		}
+	}
+	
+	division = {
+		name = "第8先锋步兵师"
+		location = 882
+		division_template = "Infantry Division2"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			artillery_equipment_1 = { owner = "USA" }
+			infantry_equipment_1 = { owner = "USA" }
+		}
+	}
+	
+	division = {
+		name = "第9先锋步兵师"
+		location = 9820
+		division_template = "Infantry Division2"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			artillery_equipment_1 = { owner = "USA" }
+			infantry_equipment_1 = { owner = "USA" }
+		}
+	}
+	
+	division = {
+		name = "第10先锋步兵师"
+		location = 9820
+		division_template = "Infantry Division2"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			artillery_equipment_1 = { owner = "USA" }
+			infantry_equipment_1 = { owner = "USA" }
+		}
+	}
+	
+	division = {
+		name = "第11先锋步兵师"
+		location = 891
+		division_template = "Infantry Division2"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			artillery_equipment_1 = { owner = "USA" }
+			infantry_equipment_1 = { owner = "USA" }
+		}
+	}
+	
+	division = {
+		name = "第12先锋步兵师"
+		location = 891
+		division_template = "Infantry Division2"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			artillery_equipment_1 = { owner = "USA" }
+			infantry_equipment_1 = { owner = "USA" }
+		}
+	}
+	
+	division = {
+		name = "第13先锋步兵师"
+		location = 891
+		division_template = "Infantry Division2"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			artillery_equipment_1 = { owner = "USA" }
+			infantry_equipment_1 = { owner = "USA" }
+		}
+	}
+	
+	division = {
+		name = "第14先锋步兵师"
+		location = 6845
+		division_template = "Infantry Division2"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			artillery_equipment_1 = { owner = "USA" }
+			infantry_equipment_1 = { owner = "USA" }
+		}
+	}
+	
+	division = {
+		name = "第15先锋步兵师"
+		location = 11817
+		division_template = "Infantry Division2"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			artillery_equipment_1 = { owner = "USA" }
+			infantry_equipment_1 = { owner = "USA" }
+		}
+	}
+
+	#九步
+	division = {
+		name = "美利坚联邦国防军步兵第1师"
+		location = 11817
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "美利坚联邦国防军步兵第1师"
+		location = 702
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "美利坚联邦国防军步兵第2师"
+		location = 1534
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "美利坚联邦国防军步兵第3师"
+		location = 4449
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "美利坚联邦国防军步兵第4师"
+		location = 4449
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "美利坚联邦国防军步兵第5师"
+		location = 4540
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "美利坚联邦国防军步兵第6师"
+		location = 4569
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "美利坚联邦国防军步兵第7师"
+		location = 11785
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "美利坚联邦国防军步兵第8师"
+		location = 3897
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "美利坚联邦国防军步兵第9师"
+		location = 3897
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "美利坚联邦国防军步兵第10师"
+		location = 3850
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "美利坚联邦国防军步兵第11师"
+		location = 880
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "美利坚联邦国防军步兵第12师"
+		location = 11769
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "美利坚联邦国防军步兵第13师"
+		location = 6823
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "美利坚联邦国防军步兵第14师"
+		location = 11800
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "美利坚联邦国防军步兵第15师"
+		location = 9825
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "美利坚联邦国防军步兵第16师"
+		location = 7466
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "美利坚联邦国防军步兵第17师"
+		location = 3687
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "美利坚联邦国防军步兵第18师"
+		location = 4442
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "美利坚联邦国防军步兵第21师"
+		location = 3802
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "美利坚联邦国防军步兵第19师"
+		location = 12405
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "美利坚联邦国防军步兵第20师"
+		location = 702
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "美利坚联邦国防军步兵第22师"
+		location = 11888
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "美利坚联邦国防军步兵第23师"
+		location = 720
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "美利坚联邦国防军步兵第24师"
+		location = 11635
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "美利坚联邦国防军步兵第25师"
+		location = 4508
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "美利坚联邦国防军步兵第26师"
+		location = 4402
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "美利坚联邦国防军步兵第27师"
+		location = 9450
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "美利坚联邦国防军步兵第28师"
+		location = 3957
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "美利坚联邦国防军步兵第29师"
+		location = 11892
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "美利坚联邦国防军步兵第30师"
+		location = 11892
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
+	#六坦
+	division = {
+		name = "第1游骑兵机械化师"
+		location = 3917
+		division_template = "Medium Armor Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			medium_tank_chassis_0 = { owner = "USA" version_name = "MT-35" }
+		}
+	}
+
+	division = {
+		name = "第2游骑兵机械化师"
+		location = 7646
+		division_template = "Medium Armor Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			medium_tank_chassis_0 = { owner = "USA" version_name = "MT-35" }
+		}
+	}
+
+	division = {
+		name = "第3游骑兵机械化师"
+		location = 7466
+		division_template = "Medium Armor Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			medium_tank_chassis_0 = { owner = "USA" version_name = "MT-35" }
+		}
+	}
+
+	division = {
+		name = "第4游骑兵机械化师"
+		location = 7528
+		division_template = "Medium Armor Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			medium_tank_chassis_0 = { owner = "USA" version_name = "MT-35" }
+		}
+	}
+
+	division = {
+		name = "第5游骑兵机械化师"
+		location = 9760
+		division_template = "Medium Armor Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			medium_tank_chassis_0 = { owner = "USA" version_name = "MT-35" }
+		}
+	}
+
+	#空降兵
+	division = {
+		name = "第101空降师"
+		location = 3917
+		division_template = "Pratrooper Division"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "第102空降师"
+		location = 7646
+		division_template = "Pratrooper Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "第103空降师"
+		location = 7466
+		division_template = "Pratrooper Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "第104空降师"
+		location = 7528
+		division_template = "Pratrooper Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "第105空降师"
+		location = 9760
+		division_template = "Pratrooper Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
+	#海军陆战队
+	division = {
+		name = "费城第9海岸警备团"
+		location = 6845
+		division_template = "Marine Division"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "第1海军陆战师"
+		location = 1582
+		division_template = "Marine Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+}
+
+
+
+instant_effect = {
+#产线
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "USA"
+		}
+		requested_factories = 3
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "USA"
+		}
+		requested_factories = 4
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "USA"
+		}
+		requested_factories = 3
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {#卡车
+		equipment = {
+			type = motorized_equipment_1
+			creator = "USA"
+		}
+		requested_factories = 3
+		progress = 0.3
+		efficiency = 50
+	}
+
+#库存
+
+	add_equipment_to_stockpile = {#步枪
+		type = infantry_equipment_1
+		amount = 1000
+		producer = USA
+	}
+
+	add_equipment_to_stockpile = {#火炮
+		type = artillery_equipment_1
+		amount = 300
+		producer = USA
+	}
+
+	add_equipment_to_stockpile = {#支援装备
+		type = support_equipment_1
+		amount = 100
+		producer = USA
+	}
+
+	add_equipment_to_stockpile = {#卡车
+		type = motorized_equipment_1
+		amount = 50
+		producer = USA
+	}
+}

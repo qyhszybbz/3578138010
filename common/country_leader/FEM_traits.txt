@@ -1,0 +1,8 @@
+leader_traits ={
+	#哈工大的翘楚
+	FEM_best_in_hgd ={
+		random = no
+		political_power_gain = 0.2
+		local_resources_factor = 0.1
+	}
+}

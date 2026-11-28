@@ -1,0 +1,18 @@
+characters = {
+
+	EMZ_eloy_gaspar_ureta = { #埃洛伊·加斯帕尔·乌雷塔
+		name = EMZ_eloy_gaspar_ureta
+		portraits = {
+			civilian = {
+				large = GFX_leader_EMZ_Eloy_Gaspar_Ureta
+			}
+		}
+		country_leader = {
+			ideology = military_junta_tttt
+			desc = EMZ_eloy_gaspar_ureta_desc
+			traits = { EMZ_northern_king }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+}

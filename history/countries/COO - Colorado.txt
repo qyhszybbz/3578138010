@@ -1,0 +1,38 @@
+capital = 380
+
+set_stability = 0.5
+set_war_support = 0.25
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	
+	
+	basic_train = 1
+}
+
+recruit_character = SCF_Southern_California_AC 
+
+
+
+add_ideas = {
+	SCF_hunluan_weiyuanhui
+	SCF_yiming_qingrao
+}
+
+set_politics = {
+	ruling_party = Authoritarianism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	Authoritarianism= 100
+}
+
+
+### VARIANTS ###
+# 1936 Start #
+

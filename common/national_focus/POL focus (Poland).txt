@@ -1,0 +1,61 @@
+focus_tree={
+	id = TFE_poland_focus
+	country={
+		factor = 0
+		modifier={
+			add = 500
+			tag = POL
+		}
+	}
+	initial_show_position = {
+		x = 12
+		y = 0
+		offset = {
+			x = 0
+			y = 0
+			trigger = { }
+		}
+	}
+	#不能妥协的斗争
+	focus = {
+		id = POL_refuse_to_compromise
+		icon = GFX_goal_support_democracy
+		x = 12
+		y = 0
+		cost = 2
+		allow_branch = {
+			has_government = Progressivism
+		}
+		available = {
+			has_government = Progressivism
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 30
+			country_event = {
+				id = tfe_poland_focus.1
+				days = 3
+			}
+		}
+	}
+	#嘉赏基本盘
+	focus = {
+		id = POL_reward_the_base
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = POL_refuse_to_compromise }
+		relative_position_id = POL_refuse_to_compromise
+		x = -4
+		y = 1
+		cost = 2
+		ai_will_do = {
+			factor = 10
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			
+		}
+	}
+}

@@ -1,0 +1,29 @@
+
+state = {
+	id = 1211
+	name = "STATE_1211"
+	manpower = 50269
+
+	state_category = pastoral
+
+	history = {
+
+		owner = COL
+		add_core_of = COL
+
+		buildings = {
+			infrastructure = 2
+		}
+
+		victory_points = {
+			 13291 3
+		}
+		
+	}
+
+	provinces = {
+		12869 13291
+	}
+
+	local_supplies = 0.0 
+}

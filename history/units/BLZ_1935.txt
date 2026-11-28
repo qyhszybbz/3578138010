@@ -1,0 +1,55 @@
+division_template = {#伯利兹步兵师
+	name = "Infantry Division"
+	is_locked = yes
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	priority = 1
+}
+
+units = {
+	division = {
+		name = "1st Infantry Division"
+		location = 2077
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
+	}
+
+	division = {
+		name = "2nd Infantry Division"
+		location = 2077
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
+	}
+
+	division = {
+		name = "3rd Infantry Division"
+		location = 2077
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
+	}
+}
+
+### Starting Equipment ###		产线
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "BLZ"
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 100
+	}
+}

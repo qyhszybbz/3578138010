@@ -1,0 +1,17 @@
+characters = {
+	#领导人
+	#哈伊姆·魏茨曼
+	ISR_Chaim_Weizmann = {
+		name = ISR_Chaim_Weizmann
+		portraits={
+			civilian={
+				large = GFX_ISR_Chaim_Weizmann_large
+			}
+		}
+		country_leader={
+			desc = ISR_Chaim_Weizmann_desc
+			ideology = progressivism_small
+			traits={  }
+		}
+	}
+}

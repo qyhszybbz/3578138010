@@ -1,0 +1,7 @@
+on_actions = {
+	on_startup = {
+		effect = { #伊比利亚地区
+			add_to_array = { global.Iberia_tags_array = SPR }
+		}
+	}
+}

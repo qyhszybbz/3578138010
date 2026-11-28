@@ -1,0 +1,32 @@
+
+state={
+	id = 362
+	name="STATE_362"
+	manpower = 1738764
+	
+	state_category = large_city
+
+	history={
+		owner = CSA
+		add_core_of = CSA
+		add_core_of = USA
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 4
+			arms_factory = 1
+			7202 = {
+				naval_base = 2
+
+			}
+		}
+		victory_points = {
+			7202 10 
+		}
+	}
+
+	provinces={
+		1485 1547 3994 4491 4653 7012 7134 7202 7527 10029 10047 11927 
+	}
+
+	local_supplies=0.0 
+}

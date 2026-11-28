@@ -1,0 +1,26 @@
+spriteTypes = { 
+	spriteType = { #加夫列尔·特拉
+		name = "GFX_idea_URG_Gabriel_Tra"
+		texturefile = "gfx/leaders/URG/URG_Gabriel_Tra.dds"
+	}
+	###民族精神
+	spriteType = { #何塞·巴特列·奥多涅斯的遗产
+		name = "GFX_idea_URG_The_Legacy_of_Jose_Batlleri_Ordonez"
+		texturefile = "gfx/interface/ideas/URG/URG_The_Legacy_of_Jose_Batlleri_Ordonez.dds"
+	}
+	spriteType = { #国家福利制度
+		name = "GFX_idea_URG_state_welfare_system"
+		texturefile = "gfx/interface/ideas/URG/URG_state_welfare_system.dds"
+	}
+	###配图
+	spriteType = { #何塞·巴特列·奥多涅斯的遗产
+		name = "GFX_idea_URG_The_Legacy_of_Jose_Batlleri_Ordonez_Picture"
+		texturefile = "gfx/texticons/banners/URG/URG_The_Legacy_of_Jose_Batlleri_Ordonez_Picture.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = { #国家福利制度
+		name = "GFX_idea_URG_state_welfare_system_Picture"
+		texturefile = "gfx/texticons/banners/URG/URG_state_welfare_system_Picture.dds"
+		legacy_lazy_load = no
+	}
+}

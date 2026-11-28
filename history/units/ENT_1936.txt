@@ -1,0 +1,48 @@
+﻿division_template = {
+	name = "ENQIN_xiaoma"			# cavalry Division
+	division_names_group = LIT_INF_01
+	# Note: Divisions were nowhere near full strength until mobilized
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+	}
+}
+units = {
+	division = {
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7819
+		division_template = "ENQIN_xiaoma"
+		start_equipment_factor = 1
+		start_experience_factor = 0.42
+	}	
+	division = {
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7804
+		division_template = "ENQIN_xiaoma"
+		start_equipment_factor = 1
+		start_experience_factor = 0.39
+	}	
+	division = {
+			division_name = {    # New syntax for compatibility with name lists
+				is_name_ordered = yes
+				name_order = 1
+			}
+			location = 7819
+			division_template = "ENQIN_xiaoma"
+			start_equipment_factor = 1
+			start_experience_factor = 0.33
+		}	
+}

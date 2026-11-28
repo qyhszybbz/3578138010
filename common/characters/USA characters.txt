@@ -1,0 +1,456 @@
+characters={
+	#领导人
+	#约翰·卡尔文·柯立芝
+	USA_John_Calvin_Coolidge = { 
+		name = USA_John_Calvin_Coolidge
+		portraits={
+			civilian={
+				large = GFX_USA_John_Calvin_Coolidge_large
+			}
+		}
+		country_leader={
+			desc = USA_John_Calvin_Coolidge_desc
+			ideology = liberalism_small
+			traits={  }
+		}
+	}
+	#约翰·里德
+	USA_John_Reed = {
+		name = USA_John_Reed
+		portraits = {
+			civilian = {
+				#large = GFX_leader_USA_John_Calvin_Coolidge
+			}
+		}
+		country_leader = {
+			ideology = communism_small
+			#traits = { }
+		}
+	}
+	#厄尔·白劳德
+	USA_Earl_Browder = {
+		name = USA_Earl_Browder
+		portraits = {
+			civilian = {
+				#large = GFX_leader_USA_John_Calvin_Coolidge
+			}
+		}
+		country_leader = {
+			ideology = socialism_small
+			#traits = { }
+		}
+	}
+	#曼彻斯特·博迪
+	USA_Manchester_Boddy = {
+		name = USA_Manchester_Boddy
+		portraits = {
+			civilian = {
+				#large = GFX_leader_USA_John_Calvin_Coolidge
+			}
+		}
+		country_leader = {
+			ideology = progressivism_small
+			#traits = { }
+		}
+	}
+	#奥逊•威尔斯
+	USA_Orson_Welles = {
+		name = USA_Orson_Welles
+		portraits = {
+			civilian = {
+				#large = GFX_leader_USA_John_Calvin_Coolidge
+			}
+		}
+		country_leader = {
+			ideology = authoritarian_democracy_christian_democracy
+			#traits = { }
+		}
+	}
+	#阿尔•史密斯
+	USA_Al_Smith = {
+		name = USA_Al_Smith
+		portraits = {
+			civilian = {
+				#large = GFX_leader_USA_John_Calvin_Coolidge
+			}
+		}
+		country_leader = {
+			ideology = Conservatism_small
+			#traits = { }
+		}
+	}
+	#企业理事会
+	USA_Corporate_Board = {
+		name = USA_Corporate_Board
+		portraits = {
+			civilian = {
+				#large = GFX_leader_USA_John_Calvin_Coolidge
+			}
+		}
+		country_leader = {
+			ideology = authoritarianism_small
+			#traits = { }
+		}
+	}
+	#乔治·莫斯利
+	USA_George_Mosley = {
+		name = USA_George_Mosley
+		portraits = {
+			civilian = {
+				#large = GFX_leader_USA_John_Calvin_Coolidge
+			}
+		}
+		country_leader = {
+			ideology = fascism_small
+			#traits = { }
+		}
+	}
+	#政治顾问
+	#奥逊•威尔斯
+	USA_Orson_Welles = {
+		name = USA_Orson_Welles
+		portraits = {
+			civilian = {
+				small = GFX_idea_USA_Orson_Welles_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = USA_Orson_Welles_pol
+			desc = USA_Orson_Welles_desc
+			traits = { USA_Chairperson_of_Association }
+			cost = 0
+			can_be_fired = no
+		}
+	}
+	#威廉•J•多诺万
+	USA_William_J_Donovan = {
+		name = USA_William_J_Donovan
+		portraits = {
+			civilian = {
+				small = GFX_idea_USA_William_J_Donovan_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = USA_William_J_Donovan_pol
+			desc = USA_William_J_Donovan_desc
+			traits = { USA_Minister_of_Federal_Security }
+			cost = 0
+			can_be_fired = no
+		}
+	}
+	#布朗•默里•卡廷
+	USA_Brown_Murray_Cutting = {
+		name = USA_Brown_Murray_Cutting
+		portraits = {
+			civilian = {
+				small = GFX_idea_USA_Brown_Murray_Cutting_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = USA_Brown_Murray_Cutting_pol
+			desc = USA_Brown_Murray_Cutting_desc
+			traits = { USA_Free_Pioneer }
+			cost = 0
+			can_be_fired = no
+		}
+	}
+	#丹•默迪
+	USA_Dan_Moody = {
+		name = USA_Dan_Moody
+		portraits = {
+			civilian = {
+				small = GFX_idea_USA_Dan_Moody_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = USA_Dan_Moody_pol
+			desc = USA_Dan_Moody_desc
+			traits = { USA_Business_Tycoon }
+			cost = 0
+			can_be_fired = no
+		}
+	}
+	#富兰克林•德莱诺•罗斯福
+	USA_Franklin_Delano_Roosevelt = {
+		name = USA_Franklin_Delano_Roosevelt
+		portraits = {
+			civilian = {
+				small = GFX_idea_USA_Franklin_Delano_Roosevelt_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = USA_Franklin_Delano_Roosevelt_pol
+			desc = USA_Franklin_Delano_Roosevelt_desc
+			traits = { USA_Governor_For_The_People }
+			cost = 0
+			can_be_fired = no
+		}
+	}
+	#德怀特·D·艾森豪威尔
+	USA_Dwight_D_Eisenhower = {
+		name = USA_Dwight_D_Eisenhower
+		portraits = {
+			army = {
+				small = GFX_idea_USA_Dwight_D_Eisenhower_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = USA_Dwight_D_Eisenhower_pol
+			desc = USA_Dwight_D_Eisenhower_desc
+			traits = { USA_Ike }
+			cost = 0
+			can_be_fired = no
+		}
+	}
+	#阿尔夫·兰登
+	USA_Alf_Landon = {
+		name = USA_Alf_Landon
+		portraits = {
+			civilian = {
+				small = GFX_idea_USA_Alf_Landon_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = USA_Alf_Landon_pol
+			desc = USA_Alf_Landon_desc
+			traits = { USA_Tough_Democratic_Diplomat USA_Gold_Standard_Economist }
+			cost = 0
+			can_be_fired = no
+		}
+	}
+	#小乔治·史密斯·巴顿
+	USA_George_S_Patton_Jr = {
+		name = USA_George_S_Patton_Jr
+		portraits = {
+			civilian = {
+				small = GFX_idea_USA_George_S_Patton_Jr_small
+			}
+			army = {
+				#large = GFX_general_USA_George_S_Patton_Jr
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = USA_George_S_Patton_Jr_pol
+			desc = USA_George_S_Patton_Jr_desc
+			traits = { USA_Federal_Army_Commander }
+			cost = 0
+			can_be_fired = no
+		}
+		#联邦共和国元帅
+		field_marshal = {
+			skill = 5
+			attack_skill = 6
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 4
+			traits = {
+				offensive_doctrine
+				infantry_expert
+				brilliant_strategist
+				engineer_officer
+				TFE_constitutionalist
+			}
+		}
+	}
+	#威廉·杜伯曼
+	USA_William_Tubman = {
+		name = USA_William_Tubman
+		portraits = {
+			civilian = {
+				small = GFX_idea_USA_William_Tubman_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = USA_William_Tubman_pol
+			desc = USA_William_Tubman_desc
+			traits = { USA_Reformer_From_Africa }
+			cost = 0
+			can_be_fired = no
+		}
+	}
+	#上将
+	#弗兰克·贝森
+	USA_Frank_Besson = {
+		name = USA_Frank_Besson
+		portraits = {
+			army = {
+				#large = GFX_general_USA_Frank_Besson
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 4
+			traits = {
+				logistics_wizard
+				TFE_yankee_faction
+				TFE_constitutionalist
+				media_personality
+			}
+		}
+	}
+	#罗伯特·贝瑞
+	USA_Robert_Berry = {
+		name = USA_Robert_Berry
+		portraits = {
+			army = {
+				#large = GFX_general_USA_Robert_Berry
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			traits = {
+				infantry_expert
+				naval_liason
+				TFE_constitutionalist
+			}
+		}
+	}
+	#托马斯·贝茨
+	USA_Thomas_Bates = {
+		name = USA_Thomas_Bates
+		portraits = {
+			army = {
+				#large = GFX_general_USA_Thomas_Bates
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+			traits = {
+				swamp_fox
+				commando
+			}
+		}
+	}
+	#欧内斯特·比克斯比
+	USA_Ernest_Bixby = {
+		name = USA_Ernest_Bixby
+		portraits = {
+			army = {
+				#large = GFX_general_USA_Ernest_Bixby
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+			traits = {
+				ambusher
+				naval_liason
+				TFE_yankee_faction
+			}
+		}
+	}
+	#约瑟夫·巴斯彻恩
+	USA_Joseph_Baschern = {
+		name = USA_Joseph_Baschern
+		portraits = {
+			army = {
+				#large = GFX_general_USA_Joseph_Baschern
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+			traits = {
+				trait_mountaineer
+				infantry_expert
+				guerilla_fighter
+			}
+		}
+	}
+	#休·米尔顿
+	USA_Hugh_Milton = {
+		name = USA_Hugh_Milton
+		portraits = {
+			army = {
+				#large = GFX_general_USA_Hugh_Milton
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			traits = {
+				media_personality
+				TFE_constitutionalist
+				combined_arms_expert
+				TFE_yankee_faction
+			}
+		}
+	}
+	#元帅
+	#约瑟夫·史迪威
+	USA_Joseph_Stilwell = {
+		name = USA_Joseph_Stilwell
+		portraits = {
+			army = {
+				#large = GFX_general_USA_Joseph_Stilwell
+			}
+		}
+		field_marshal = {
+			skill = 4
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 3
+			traits = {
+				infantry_leader
+				fast_planner
+				combined_arms_expert
+				panzer_leader
+				naval_invader
+				TFE_yankee_faction
+			}
+		}
+	}
+	#雅各布·德弗斯
+	USA_Jacob_Devers = {
+		name = USA_Jacob_Devers
+		portraits = {
+			army = {
+				#large = GFX_general_USA_Jacob_Devers
+			}
+		}
+		field_marshal = {
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+			traits = {
+				naval_liason
+				naval_invader
+				infantry_expert
+				unyielding_defender
+				media_personality
+			}
+		}
+	}
+}

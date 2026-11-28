@@ -1,0 +1,45 @@
+characters = {
+	#领导人
+	#尼古拉·科索夫
+	FEM_Nikolai_Kosov = {
+		name = FEM_Nikolai_Kosov
+		portraits={
+			civilian={
+				large = GFX_FEM_Nikolai_Kosov_large
+			}
+		}
+		country_leader={
+			ideology = tttt_small
+			traits={ FEM_best_in_hgd }
+		}
+		field_marshal = {
+			traits = { RUS_manchu_officer infantry_officer infantry_expert }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id=101
+		}
+	}
+
+
+	#米哈伊尔·季捷里赫斯
+	FEM_Mikhail_Tzeterikhs = {
+		name = FEM_Mikhail_Tzeterikhs
+		portraits={
+			civilian={
+				large = GFX_FEM_Mikhail_Tzeterikhs_large
+			}
+		}
+		field_marshal = {
+			traits = { RUS_national_officer organizer infantry_expert offensive_doctrine }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id=100
+		}
+	}
+}

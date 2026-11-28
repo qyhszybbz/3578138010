@@ -1,0 +1,79 @@
+characters={
+	#领导人
+	#裕仁天皇
+	JAP_Hirohito = {
+		name = JAP_Hirohito
+		portraits={
+			civilian={
+				large = GFX_JAP_Hirohito_large
+			}
+			army = {
+				large = GFX_JAP_Hirohito_army_large
+			}
+		}
+		country_leader={
+			desc = JAP_Hirohito_desc
+			ideology = authoritarianism_small
+			traits={  }
+		}
+		field_marshal = {
+			traits = { politically_connected }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	#野坂参三
+	JAP_Nosaka_Sanzo = {
+		name = JAP_Nosaka_Sanzo
+		portraits={
+			civilian={
+				large = GFX_JAP_Nosaka_Sanzo_large
+			}
+		}
+		country_leader={
+			#desc = JAP_Nosaka_Sanzo_desc
+			ideology = communism_small
+			traits={  }
+		}
+	}
+	#荒畑寒村
+	JAP_Alahata_Kanson = {
+		name = JAP_Alahata_Kanson
+		portraits={
+			civilian={
+				large = GFX_JAP_Alahata_Kanson_large
+			}
+		}
+		country_leader={
+			#desc = JAP_Alahata_Kanson_desc
+			ideology = socialism_small
+			traits={  }
+		}
+	}
+	#平野力三
+	JAP_Hirano_Rikizo = {
+		name = JAP_Hirano_Rikizo
+		portraits={
+			civilian={
+				large = GFX_JAP_Hirano_Rikizo_large
+			}
+		}
+		country_leader={
+			#desc = JAP_Hirano_Rikizo_desc
+			ideology = progressivism_small
+			traits={  }
+		}
+	}
+	#铃木贞一
+	JAP_Suzuki_Teiichi = {
+		name = JAP_Suzuki_Teiichi
+		portraits={
+			civilian={
+				large = GFX_JAP_Suzuki_Teiichi_large
+			}
+		}
+	}
+}

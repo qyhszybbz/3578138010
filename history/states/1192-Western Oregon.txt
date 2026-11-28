@@ -1,0 +1,29 @@
+state = {
+	id = 1192
+	name = "STATE_1192"
+	manpower = 249485
+	
+	state_category = town
+	
+	resources = {
+		steel = 10
+	}
+	
+	history = {
+		owner = SCF
+		add_core_of = SCF
+		buildings = {
+			infrastructure = 3
+			anti_air_building = 1
+		}
+		victory_points = {
+			3471 10 
+		}
+	}
+
+	provinces = {
+		505 11733 3471 11495 528 12281 4380 12211 10183 10151
+	}
+	local_supplies = 0.0 
+
+}

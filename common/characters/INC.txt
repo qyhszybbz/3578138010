@@ -1,0 +1,17 @@
+characters = {
+	INC_Diogenes_Gilles = { #第欧根尼·吉尔
+		name= INC_Diogenes_Gilles
+		portraits={
+			civilian={
+				large= GFX_leader_INC_Diogenes_Gilles
+			}
+		}
+		country_leader={
+			ideology= fascism_small
+			#desc = MIS_Alfonso_Lopez_Pumarejo_desc
+			traits={ 
+				
+			}
+		}
+	} 
+}

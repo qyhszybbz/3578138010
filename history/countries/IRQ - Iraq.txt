@@ -1,0 +1,66 @@
+﻿capital = 290 #巴格达
+oob = "IRQ_1936"
+
+### 领导人 ###
+recruit_character = IRQ_Bakr_Sidqi
+
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "IRQ_1936_air_bba"
+	else = {
+		set_air_oob = "IRQ_1936_air_legacy"
+		set_technology = {
+			early_fighter = 1
+			CAS1 = 1
+		}
+	}
+}
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	#tech_mountaineers = 1
+	tech_trucks = 1
+	gw_artillery = 1
+	fuel_silos = 1
+}
+
+set_convoys = 5
+
+if = {
+	limit = {
+		has_dlc = "Battle for the Bosporus"
+	}
+	set_technology = { camelry = 1 }
+}
+add_ideas = {
+	IRQ_start_national_country #堪堪起步的民族国家
+	IRQ_Preliminary_nation_industry #国有化斗争-初步胜利
+	IRQ_gun_fight_pen #枪杆子与笔杆子的斗争
+	IRQ_fall_land_rev #一轮土地改革-完全失败
+	IRQ_discussion_of_massacre #亚述屠杀案争议
+	IRQ_rev_new_city #“革命新城”建设热潮
+	IRQ_wavering_Shia #摇摆不定的什叶派
+	IRQ_support_ym_rev #支援也门革命
+	IRQ_rise_star_of_2_rivers #两河流域的赤色灯塔
+}
+#历史触发事件
+country_event = { id = iraq_history.1 days = 3 } #触发国策选择
+
+set_politics = {
+	ruling_party = Socialism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	Socialism = 33
+	communism = 10
+	Progressivism = 10
+	Liberalism = 5
+	Conservatism = 7
+	Authoritarianism = 13
+	fascism = 17
+	tttt = 5
+}

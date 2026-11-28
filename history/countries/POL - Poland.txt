@@ -1,0 +1,155 @@
+﻿capital = 10
+oob = "POL_1935"
+set_stability = 0.42
+set_war_support = 0.43
+starting_train_buffer = 1
+set_fuel_ratio = 0.8
+set_research_slots = 3
+
+### 初始科技 ###
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_mountaineers = 1
+	tech_trucks = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	fuel_silos = 1
+	synth_oil_experiments = 1
+	basic_train = 1
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+	}
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_destroyer = 1
+		early_submarine = 1	
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+	}
+}
+
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_technology = {
+			aa_lmg = 1
+			aa_cannon_1 = 1
+			iw_small_airframe = 1
+			basic_small_airframe = 1
+			engines_1 = 1
+			early_bombs = 1
+		}
+	else = {
+		set_air_oob = "POL_1936_air_legacy"
+		set_technology = {
+			early_fighter = 1
+			early_bomber = 1
+			CAS1 = 1
+		}
+	}
+}
+### 领导人 ###
+recruit_character = POL_Gabriel_Narutowicz #加布里埃尔·纳鲁托维奇（进步主义·执政）
+recruit_character = POL_Jozef_Pilsudski #约瑟夫·毕苏斯基（专制主义·国防部）
+recruit_character = POL_Karol_Swierczewski #卡罗尔·希维尔切夫斯基（共产主义·布尔什维克残部）
+recruit_character = POL_Jan_Dabski #扬·达布斯基（社会主义·人民党“人民团结”）
+recruit_character = POL_Stanislaw_Wojciechowski #斯坦尼斯瓦夫·沃伊切霍夫斯基（民主主义·人民党“皮亚斯特”）
+recruit_character = POL_Stanislaw_Adamski #斯坦尼斯瓦夫·亚当斯基（保守主义·基督教国家工党）
+recruit_character = POL_Adam_Stefan_Sapieha #亚当·斯德望·萨皮耶哈（威权主义·克拉科夫主教团）
+recruit_character = POL_Roman_Dmowski #罗曼·德莫夫斯基（法西斯主义·民族民主运动）
+
+#副手
+
+
+
+add_ideas={
+	### 初始法案 ###
+	less_educate
+	limited_conscription
+	limited_exports
+	partial_economic_mobilisation
+	traditional_limitations
+	no_welfare
+	
+	### 初始民族精神 ###
+	POL_Sejm_panic #瑟姆恐慌
+	POL_Street_brawl #街头斗殴
+	POL_Ramparts_of_Rotting_Flesh #腐烂生蛆的血肉长城
+	
+}
+
+set_variable = {
+	POL_consumer_goods_expected_value = 0.12
+}
+set_variable = {
+	POL_consumer_goods_factor = 0.34
+}
+set_variable = {
+	POL_research_speed_factor = 0.05
+}
+set_variable = {
+	POL_industrial_concern_cost_factor = 0.15
+}
+
+add_dynamic_modifier = { modifier = POL_trench_desire } #人心欲壑
+
+set_autonomy = {
+	target = LIT
+	autonomy_state = Comrade_country
+}
+set_autonomy = {
+	target = BLR
+	autonomy_state = Governorate
+}
+set_autonomy = {
+	target = PUK
+	autonomy_state = Governorate
+}
+
+set_politics = {
+	ruling_party = Progressivism
+	last_election = "1933.9.8"
+	election_frequency = 36
+	elections_allowed = no
+}
+set_popularities = {
+	communism = 4
+	Socialism = 10
+	Progressivism = 29
+	Liberalism = 2
+	Democracy = 9
+	Conservatism = 8
+	Authoritarianism = 2
+	tttt = 31
+	fascism = 5
+}

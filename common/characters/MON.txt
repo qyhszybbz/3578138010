@@ -1,0 +1,15 @@
+characters={
+	MON_XU_SHU_ZHENG  = {
+		name = XU_SHU_ZHENG
+		portraits={
+			civilian={
+				large="GFX_TVE_MON_LEADERS"
+			}
+		}
+		country_leader={
+			ideology = tttt_small
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

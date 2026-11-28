@@ -1,0 +1,7 @@
+﻿###########################
+# Capitulation Events
+###########################
+
+add_namespace = country_capitulated
+
+# 	# FROM.FROM is winner

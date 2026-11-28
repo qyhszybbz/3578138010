@@ -1,0 +1,77 @@
+bookmarks = {
+	bookmark = {
+		name = "America_bookmark_title"
+		desc = "America_bookmark_desc"
+		date = 1935.1.1.12
+		picture = "GFX_bookmark_american_TVE"
+		default_country = "USA"
+		default = yes
+		sort_unplayed_first = no
+		"USA"={
+			history = "TVE_Content_not_suitable_for_play_bookmark_country_desc"
+			ideology = Progressivism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"CSA"={
+			history = "TVE_Content_not_suitable_for_play_bookmark_country_desc"
+			ideology = fascism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"BBR"={
+			history = "TVE_Content_not_suitable_for_play_bookmark_country_desc"
+			ideology = Socialism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"MEX"={
+			history = "TVE_Content_not_suitable_for_play_bookmark_country_desc"
+			ideology = Progressivism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"BRA"={
+			history = "TVE_Content_not_suitable_for_play_bookmark_country_desc"
+			ideology = Conservatism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"COL"={
+			history = "TVE_Content_not_suitable_for_play_bookmark_country_desc"
+			ideology = Conservatism
+			ideas = {
+				
+			}
+			focuses = {
+			}
+		}
+		"CHL"={
+			history = "TVE_Content_not_suitable_for_play_bookmark_country_desc"
+			ideology = Conservatism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"ARG"={
+			history = "TVE_Content_not_suitable_for_play_bookmark_country_desc"
+			ideology = Conservatism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+	
+	}
+}

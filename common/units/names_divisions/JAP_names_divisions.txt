@@ -1,0 +1,930 @@
+﻿JAP_INF_01 = {
+	name = "常设师团"
+	for_countries = { JAP }
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+	fallback_name = "第%d常设师团"
+
+	ordered = {
+		168 = { "近卫师团" }
+		1 = { "第%d“玉”常设师团" }
+		2 = { "第%d“勇”常设师团" }
+		3 = { "第%d“幸”常设师团" }
+		4 = { "第%d“淀”常设师团" }
+		5 = { "第%d“鲤”常设师团" }
+		6 = { "第%d“明”常设师团" }
+		7 = { "第%d“熊”常设师团" }
+		8 = { "第%d“杉”常设师团" }
+		9 = { "第%d“武”常设师团" }
+		10 = { "第%d“铁”常设师团" }
+		11 = { "第%d“锦”常设师团" }
+		12 = { "第%d“剑”常设师团" }
+		13 = { "第%d“镜”常设师团" }
+		14 = { "第%d“将”常设师团" }
+		15 = { "第%d“祭”常设师团" }
+		16 = { "第%d“垣”常设师团" }
+		17 = { "第%d“月”常设师团" }
+		18 = { "第%d“菊”常设师团" }
+		19 = { "第%d“虎”常设师团" }
+		20 = { "第%d“朝”常设师团" }
+		21 = { "第%d“讨”常设师团" }
+		22 = { "第%d“原”常设师团" }
+		23 = { "第%d“旭”常设师团" }
+		24 = { "第%d“山”常设师团" }
+		25 = { "第%d“国”常设师团" }
+		26 = { "第%d“泉”常设师团" }
+		27 = { "第%d“极”常设师团" }
+		28 = { "第%d“丰”常设师团" }
+		29 = { "第%d“雷”常设师团" }
+		30 = { "第%d“豹”常设师团" }
+		31 = { "第%d“烈”常设师团" }
+		32 = { "第%d“枫”常设师团" }
+		33 = { "第%d“弓”常设师团" }
+	    34 = { "第%d“椿”常设师团" }
+		35 = { "第%d“东”常设师团" }
+	 	36 = { "第%d“雪”常设师团" }
+		37 = { "第%d“冬”常设师团" }
+		38 = { "第%d“沼”常设师团" }
+		39 = { "第%d“藤”常设师团" }
+		40 = { "第%d“鲸”常设师团" }
+		41 = { "第%d“河”常设师团" }
+		42 = { "第%d“勋”常设师团" }
+ 		43 = { "第%d“誉”常设师团" }
+		44 = { "第%d“橘”常设师团" }
+		46 = { "第%d“静”常设师团" }
+		47 = { "第%d“弹”常设师团" }
+		48 = { "第%d“海”常设师团" }
+		49 = { "第%d“狼”常设师团" }
+		50 = { "第%d“蓬”常设师团" }
+		51 = { "第%d“基”常设师团" }
+		52 = { "第%d“柏”常设师团" }
+		53 = { "第%d“安”常设师团" }
+		54 = { "第%d“兵”常设师团" }
+		55 = { "第%d“壮”常设师团" }
+		56 = { "第%d“龙”常设师团" }
+		57 = { "第%d“奥”常设师团" }
+		58 = { "第%d“广”常设师团" }
+		59 = { "第%d“衣”常设师团" }
+		60 = { "第%d“矛”常设师团" }
+		61 = { "第%d“鸱”常设师团" }
+		62 = { "第%d“石”常设师团" }
+		63 = { "第%d“阵”常设师团" }
+		64 = { "第%d“开”常设师团" }
+		65 = { "第%d“专”常设师团" }
+		66 = { "第%d“敢”常设师团" }
+		68 = { "第%d“桧”常设师团" }
+		69 = { "第%d“胜”常设师团" }
+		70 = { "第%d“铁”常设师团" }
+		71 = { "第%d“命”常设师团" }
+		72 = { "第%d“天”常设师团" }
+		73 = { "第%d“怒”常设师团" }
+		77 = { "第%d“念”常设师团" }
+		79 = { "第%d“奏”常设师团" }
+		81 = { "第%d“纳”常设师团" }
+		84 = { "第%d“突”常设师团" }
+		86 = { "第%d“积”常设师团" }
+		88 = { "第%d“要”常设师团" }
+		89 = { "第%d“祭”常设师团" }
+		91 = { "第%d“短视频”常设师团" } #彩蛋
+		93 = { "第%d“决”常设师团" }
+		94 = { "第%d“威烈”常设师团" }
+		96 = { "第%d“玄”常设师团" }
+		100 = { "第%d“镜”常设师团" }
+		101 = { "第%d“柒”常设师团" }
+		102 = { "第%d“拔”常设师团" }
+		103 = { "第%d“骏”常设师团" }
+		104 = { "第%d“凤”常设师团" }
+		105 = { "第%d“勤”常设师团" }
+		106 = { "第%d“澈”常设师团" }
+		107 = { "第%d“凪”常设师团" }
+		108 = { "第%d“祐”常设师团" }
+		109 = { "第%d“胆”常设师团" }
+		110 = { "第%d“鹭”常设师团" }
+		111 = { "第%d“市”常设师团" }
+		112 = { "第%d“公”常设师团" }
+		114 = { "第%d“将”常设师团" }
+		115 = { "第%d“北”常设师团" }
+		116 = { "第%d“岚”常设师团" }
+		117 = { "第%d“弘”常设师团" }
+		118 = { "第%d“惠”常设师团" }
+		119 = { "第%d“祭”常设师团" }
+		120 = { "第%d“迈进”常设师团" }
+		121 = { "第%d“荣光”常设师团" }
+		122 = { "第%d“舞鹤”常设师团" }
+		123 = { "第%d“松风”常设师团" }
+		124 = { "第%d“远谋”常设师团" }
+		125 = { "第%d“英机”常设师团" }
+		127 = { "第%d“英迈”常设师团" }
+		128 = { "第%d“英武”常设师团" }
+		129 = { "第%d“振武”常设师团" }
+		130 = { "第%d“钟馗”常设师团" }
+		131 = { "第%d“秋水”常设师团" }
+		132 = { "第%d“振起”常设师团" }
+		133 = { "第%d“进击”常设师团" }
+		134 = { "第%d“勾玉”常设师团" }
+		135 = { "第%d“真心”常设师团" }
+		136 = { "第%d“不拔”常设师团" }
+		137 = { "第%d“扶翼”常设师团" }
+		138 = { "第%d“不动”常设师团" }
+		139 = { "第%d“不屈”常设师团" }
+		140 = { "第%d“护东”常设师团" }
+		142 = { "第%d“护仙”常设师团" }
+		143 = { "第%d“护古”常设师团" }
+		144 = { "第%d“护阪”常设师团" }
+		145 = { "第%d“护州”常设师团" }
+		146 = { "第%d“护南”常设师团" }
+		147 = { "第%d“护北”常设师团" }
+		148 = { "第%d“富岳”常设师团" }
+		149 = { "第%d“不挠”常设师团" }
+		150 = { "第%d“护朝”常设师团" }
+		151 = { "第%d“护宇”常设师团" }
+		152 = { "第%d“护泽”常设师团" }
+		153 = { "第%d“护京”常设师团" }
+		154 = { "第%d“护路”常设师团" }
+		155 = { "第%d“护土”常设师团" }
+		156 = { "第%d“护西”常设师团" }
+		157 = { "第%d“护弘”常设师团" }
+		158 = { "第%d“不灭”常设师团" }
+		160 = { "第%d“护鲜”常设师团" }
+		161 = { "第%d“震天”常设师团" }
+		167 = { "第%d“清”常设师团" }
+	}
+}
+
+JAP_CAV_01 = {
+	name = "Cavalry Division"
+
+	for_countries = { JAP }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { JAP_INF_01 }
+
+	fallback_name = "%d Kihei Shidan"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "%d Kihei Shidan" }
+		2 = { "%d Kihei Shidan" }
+		3 = { "%d Kihei Shidan" }
+		4 = { "%d Kihei Shidan" }
+		5 = { "%d Kihei Shidan" }
+		6 = { "%d Kihei Shidan" }
+		7 = { "%d Kihei Shidan" }
+		8 = { "%d Kihei Shidan" }
+		9 = { "%d Kihei Shidan" }
+		10 = { "%d Kihei Shidan" }
+		11 = { "%d Kihei Shidan" }
+		12 = { "%d Kihei Shidan" }
+		13 = { "%d Kihei Shidan" }
+		14 = { "%d Kihei Shidan" }
+		15 = { "%d Kihei Shidan" }
+		16 = { "%d Kihei Shidan" }
+		17 = { "%d Kihei Shidan" }
+		18 = { "%d Kihei Shidan" }
+		19 = { "%d Kihei Shidan" }
+		20 = { "%d Kihei Shidan" }
+	}
+}
+JAP_INF_02 = {
+	name = "独立守备队"
+
+	for_countries = { JAP }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "第%d守备队"
+
+	ordered = {
+		1 = { "第%d守备队" }
+		2 = { "第%d守备队" }
+		3 = { "第%d守备队" }
+		4 = { "第%d守备队" }
+		5 = { "第%d守备队" }
+	}
+}
+JAP_INF_03 = {
+	name = "驻屯军"
+
+	for_countries = { JAP }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "第%d驻屯军"
+
+	ordered = {
+		1 = { "第%d驻屯军" }
+		2 = { "第%d驻屯军" }
+		3 = { "第%d驻屯军" }
+		4 = { "第%d驻屯军" }
+		5 = { "第%d驻屯军" }
+	}
+}
+
+JAP_MOT_01 = {
+	name = "混成旅团"
+
+	for_countries = { JAP }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	fallback_name = "第%d混成旅团"
+
+	ordered = {
+		1 = { "第%d“基”混成旅团" }
+		2 = { "第%d“柏”混成旅团" }
+		3 = { "第%d“安”混成旅团" }
+		4 = { "第%d“兵”混成旅团" }
+		5 = { "第%d“壮”混成旅团" }
+		6 = { "第%d“龙”混成旅团" }
+		7 = { "第%d“奥”混成旅团" }
+		8 = { "第%d“广”混成旅团" }
+		9 = { "第%d“衣”混成旅团" }
+		10 = { "第%d“矛”混成旅团" }
+	}
+}
+
+JAP_MEC_01 = {
+	name = "Mechanized Division"
+
+	for_countries = { JAP }
+
+	can_use = { always = yes }
+
+	division_types = { "mechanized" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { JAP_INF_01 }
+
+	fallback_name = "%d Kikaika Shidan"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "%d 'Gyoku' Kikaika Shidan" }
+		2 = { "%d 'Isamu' Kikaika Shidan" }
+		3 = { "%d 'Ko' Kikaika Shidan" }
+		4 = { "%d 'Yodo' Kikaika Shidan" }
+		5 = { "%d 'Koi' Kikaika Shidan" }
+		6 = { "%d 'Akari' Kikaika Shidan" }
+		7 = { "%d 'Kuma' Kikaika Shidan" }
+		8 = { "%d 'Sugi' Kikaika Shidan" }
+		9 = { "%d 'Take' Kikaika Shidan" }
+		10 = { "%d 'Tetsu' Kikaika Shidan" }
+		11 = { "%d 'Nishiki' Kikaika Shidan" }
+		12 = { "%d 'Ken' Kikaika Shidan" }
+		13 = { "%d 'Kyo' Kikaika Shidan" }
+		14 = { "%d 'Sho' Kikaika Shidan" }
+		15 = { "%d 'Sai' Kikaika Shidan" }
+		16 = { "%d 'Kaki' Kikaika Shidan" }
+		17 = { "%d 'Getsu' Kikaika Shidan" }
+		18 = { "%d 'Kiku' Kikaika Shidan" }
+		19 = { "%d 'Tora' Kikaika Shidan" }
+		20 = { "%d 'Asa' Kikaika Shidan" }
+		21 = { "%d 'Tou' Kikaika Shidan" }
+		22 = { "%d 'Hara' Kikaika Shidan" }
+		23 = { "%d 'Kyoku' Kikaika Shidan" }
+		24 = { "%d 'Yama' Kikaika Shidan" }
+		35 = { "%d 'Azuma' Kikaika Shidan" }
+		36 = { "%d 'Yuki' Kikaika Shidan" }
+		37 = { "%d 'Fuyu' Kikaika Shidan" }
+		38 = { "%d 'Numa' Kikaika Shidan" }
+		39 = { "%d 'Fuji' Kikaika Shidan" }
+		40 = { "%d 'Kujira' Kikaika Shidan" }
+		41 = { "%d 'Kawa' Kikaika Shidan" }
+		42 = { "%d 'Isao' Kikaika Shidan" }
+		43 = { "%d 'Homare' Kikaika Shidan" }
+		44 = { "%d 'Tachibana' Kikaika Shidan" }
+		104 = { "%d 'Ootori' Kikaika Shidan" }
+		116 = { "%d 'Ran' Kikaika Shidan" }
+		25 = { "%d 'Kuni' Kikaika Shidan" }
+		26 = { "%d 'Izumi' Kikaika Shidan" }
+		27 = { "%d 'Goku' Kikaika Shidan" }
+		28 = { "%d 'Toyo' Kikaika Shidan" }
+		29 = { "%d 'Ikazuchi' Kikaika Shidan" }
+		48 = { "%d 'Umi' Kikaika Shidan" }
+		50 = { "%d 'Yomogi' Kikaika Shidan" }
+		51 = { "%d 'Moto' Kikaika Shidan" }
+		52 = { "%d 'Kashiwa' Kikaika Shidan" }
+		53 = { "%d 'Yasushi' Kikaika Shidan" }
+		54 = { "%d 'Hei' Kikaika Shidan" }
+		55 = { "%d 'Sou' Kikaika Shidan" }
+		56 = { "%d 'Ryu' Kikaika Shidan" }
+		57 = { "%d 'Oku' Kikaika Shidan" }
+		58 = { "%d 'Kou' Kikaika Shidan" }
+		59 = { "%d 'Koromo' Kikaika Shidan" }
+		60 = { "%d 'Hoko' Kikaika Shidan" }
+		68 = { "%d 'Hinoki' Kikaika Shidan" }
+		69 = { "%d 'Katsu' Kikaika Shidan" }
+		70 = { "%d Kikaika Shidan" }
+		71 = { "%d 'Mikoto' Kikaika Shidan" }
+		31 = { "%d 'Retsu' Kikaika Shidan" }
+		61 = { "%d 'Tobi' Kikaika Shidan" }
+		30 = { "%d 'Hyo' Kikaika Shidan" }
+		46 = { "%d 'Sei' Kikaika Shidan" }
+		47 = { "%d 'Dan' Kikaika Shidan" }
+		62 = { "%d 'Ishi' Kikaika Shidan" }
+		63 = { "%d 'Jin' Kikaika Shidan" }
+		64 = { "%d 'Kai' Kikaika Shidan" }
+		65 = { "%d 'Sen' Kikaika Shidan" }
+		49 = { "%d 'Ookami' Kikaika Shidan" }
+		72 = { "%d 'Ten' Kikaika Shidan" }
+		77 = { "%d 'Nen' Kikaika Shidan" }
+		81 = { "%d 'No' Kikaika Shidan" }
+		86 = { "%d 'Seki' Kikaika Shidan" }
+		91 = { "%d 'Saki' Kikaika Shidan" }
+		100 = { "%d 'Kyo' Kikaika Shidan" }
+		102 = { "%d 'Hatsu' Kikaika Shidan" }
+		103 = { "%d 'Shun' Kikaika Shidan" }
+		66 = { "%d 'Kan' Kikaika Shidan" }
+		73 = { "%d 'Ikari' Kikaika Shidan" }
+		84 = { "%d 'To' Kikaika Shidan" }
+		93 = { "%d 'Ketsu' Kikaika Shidan" }
+		105 = { "%d 'Kin' Kikaika Shidan" }
+		107 = { "%d 'Nagi' Kikaika Shidan" }
+		108 = { "%d 'Yū' Kikaika Shidan" }
+		109 = { "%d 'Tan' Kikaika Shidan" }
+		111 = { "%d 'Ichi' Kikaika Shidan" }
+		112 = { "%d 'Kimi' Kikaika Shidan" }
+		115 = { "%d 'Kita' Kikaika Shidan" }
+		117 = { "%d 'Gu' Kikaika Shidan" }
+		114 = { "%d 'Sho' Kikaika Shidan" }
+		94 = { "%d 'Iretsu' Kikaika Shidan" }
+		118 = { "%d 'Kei' Kikaika Shidan" }
+		119 = { "%d 'Sai' Kikaika Shidan" }
+		120 = { "%d 'Maishin' Kikaika Shidan" }
+		96 = { "%d 'Gen' Kikaika Shidan" }
+		167 = { "%d Kikaika Shidan" }
+		32 = { "%d 'Kaede' Kikaika Shidan" }
+		33 = { "%d 'Yumi' Kikaika Shidan" }
+		34 = { "%d 'Tsubaki' Kikaika Shidan" }
+		79 = { "%d 'So' Kikaika Shidan" }
+		88 = { "%d 'Kaname' Kikaika Shidan" }
+		89 = { "%d 'Sai' Kikaika Shidan" }
+		101 = { "%d Kikaika Shidan" }
+		106 = { "%d Kikaika Shidan" }
+		110 = { "%d 'Sagi' Kikaika Shidan" }
+		121 = { "%d 'Eiko' Kikaika Shidan" }
+		122 = { "%d 'Maizuru' Kikaika Shidan" }
+		123 = { "%d 'Matsukaze' Kikaika Shidan" }
+		124 = { "%d 'Enbo' Kikaika Shidan" }
+		125 = { "%d 'Eiki' Kikaika Shidan" }
+		127 = { "%d 'Eimai' Kikaika Shidan" }
+		128 = { "%d 'Eibu' Kikaika Shidan" }
+		129 = { "%d 'Shinbu' Kikaika Shidan" }
+		130 = { "%d 'Shoki' Kikaika Shidan" }
+		131 = { "%d 'Shūsui' Kikaika Shidan" }
+		132 = { "%d 'Shinki' Kikaika Shidan" }
+		133 = { "%d 'Shingeki' Kikaika Shidan" }
+		134 = { "%d 'Magatama' Kikaika Shidan" }
+		135 = { "%d 'Shinshin' Kikaika Shidan" }
+		136 = { "%d 'Fubatsu' Kikaika Shidan" }
+		137 = { "%d 'Fuyoku' Kikaika Shidan" }
+		138 = { "%d 'Fudo' Kikaika Shidan" }
+		139 = { "%d 'Fukutsu' Kikaika Shidan" }
+		140 = { "%d 'Koto' Kikaika Shidan" }
+		142 = { "%d 'Kosen' Kikaika Shidan" }
+		143 = { "%d 'Kogo' Kikaika Shidan" }
+		144 = { "%d 'Kosaka' Kikaika Shidan" }
+		145 = { "%d 'Koshu' Kikaika Shidan" }
+		146 = { "%d 'Konan' Kikaika Shidan" }
+		147 = { "%d 'Koho' Kikaika Shidan" }
+		148 = { "%d 'Fugaku' Kikaika Shidan" }
+		149 = { "%d 'Fugyo' Kikaika Shidan" }
+		150 = { "%d 'Gocho' Kikaika Shidan" }
+		151 = { "%d 'Gou' Kikaika Shidan" }
+		152 = { "%d 'Gozawa' Kikaika Shidan" }
+		153 = { "%d 'Gokyo' Kikaika Shidan" }
+		154 = { "%d 'Goji' Kikaika Shidan" }
+		155 = { "%d 'Godo' Kikaika Shidan" }
+		156 = { "%d 'Gosai' Kikaika Shidan" }
+		157 = { "%d 'Gogu' Kikaika Shidan" }
+		158 = { "%d 'Fumetsu' Kikaika Shidan" }
+		160 = { "%d 'Gosen' Kikaika Shidan" }
+		161 = { "%d 'Shinten' Kikaika Shidan" }
+		201 = { "%d 'Musashi' Kikaika Shidan" }
+		202 = { "%d 'Aoba' Kikaika Shidan" }
+		205 = { "%d 'Aki' Kikaika Shidan" }
+		206 = { "%d 'Aso' Kikaika Shidan" }
+		209 = { "%d 'Kaetsu' Kikaika Shidan" }
+		212 = { "%d 'Kikuchi' Kikaika Shidan" }
+		214 = { "%d 'Hitachi' Kikaika Shidan" }
+		216 = { "%d 'Hiei' Kikaika Shidan" }
+		221 = { "%d 'Tenryū' Kikaika Shidan" }
+		222 = { "%d 'Towada' Kikaika Shidan" }
+		224 = { "%d 'Ako' Kikaika Shidan" }
+		225 = { "%d 'Kongo' Kikaika Shidan" }
+		229 = { "%d 'Hokuetsu' Kikaika Shidan" }
+		230 = { "%d 'Sobu' Kikaika Shidan" }
+		231 = { "%d 'Taikoku' Kikaika Shidan" }
+		234 = { "%d 'Tone' Kikaika Shidan" }
+		303 = { "%d 'Takashi' Kikaika Shidan" }
+		308 = { "%d 'Iwaki' Kikaika Shidan" }
+		312 = { "%d 'Chitose' Kikaika Shidan" }
+		316 = { "%d 'Yamajiro' Kikaika Shidan" }
+		320 = { "%d 'Senbu' Kikaika Shidan" }
+	}
+}
+
+JAP_ARM_01 = {
+	name = "Armored Division"
+
+	for_countries = { JAP }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { JAP_INF_01 }
+
+	fallback_name = "Sensha Dai-%d Shidan"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "Sensha Dai-%d 'Taku' Shidan" }
+		2 = { "Sensha Dai-%d 'Geki' Shidan" }
+		3 = { "Sensha Dai-%d 'Taki' Shidan" }
+		4 = { "Sensha Dai-%d 'Hagane' Shidan" }
+		5 = { "Sensha Dai-%d Shidan" }
+		6 = { "Sensha Dai-%d Shidan" }
+		7 = { "Sensha Dai-%d Shidan" }
+		8 = { "Sensha Dai-%d Shidan" }
+		9 = { "Sensha Dai-%d Shidan" }
+		10 = { "Sensha Dai-%d Shidan" }
+		11 = { "Sensha Dai-%d Shidan" }
+		12 = { "Sensha Dai-%d Shidan" }
+		13 = { "Sensha Dai-%d Shidan" }
+		14 = { "Sensha Dai-%d Shidan" }
+		15 = { "Sensha Dai-%d Shidan" }
+		16 = { "Sensha Dai-%d Shidan" }
+		17 = { "Sensha Dai-%d Shidan" }
+		18 = { "Sensha Dai-%d Shidan" }
+		19 = { "Sensha Dai-%d Shidan" }
+		20 = { "Sensha Dai-%d Shidan" }
+		21 = { "Sensha Dai-%d Shidan" }
+		22 = { "Sensha Dai-%d Shidan" }
+		23 = { "Sensha Dai-%d Shidan" }
+		24 = { "Sensha Dai-%d Shidan" }
+		25 = { "Sensha Dai-%d Shidan" }
+		26 = { "Sensha Dai-%d Shidan" }
+		27 = { "Sensha Dai-%d Shidan" }
+		28 = { "Sensha Dai-%d Shidan" }
+		29 = { "Sensha Dai-%d Shidan" }
+		30 = { "Sensha Dai-%d Shidan" }
+	}
+}
+
+JAP_PAR_01 = {
+	name = "Paratrooper Division"
+
+	for_countries = { JAP }
+
+	can_use = { always = yes }
+
+	division_types = { "paratrooper" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { JAP_INF_01 }
+
+	fallback_name = "%d Kutei Shidan"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d Kutei Shidan" }
+		2 = { "%d Kutei Shidan" }
+		3 = { "%d Kutei Shidan" }
+		4 = { "%d Kutei Shidan" }
+		5 = { "%d Kutei Shidan" }
+		6 = { "%d Kutei Shidan" }
+		7 = { "%d Kutei Shidan" }
+		8 = { "%d Kutei Shidan" }
+		9 = { "%d Kutei Shidan" }
+		10 = { "%d Kutei Shidan" }
+		11 = { "%d Kutei Shidan" }
+		12 = { "%d Kutei Shidan" }
+		13 = { "%d Kutei Shidan" }
+		14 = { "%d Kutei Shidan" }
+		15 = { "%d Kutei Shidan" }
+		16 = { "%d Kutei Shidan" }
+		17 = { "%d Kutei Shidan" }
+		18 = { "%d Kutei Shidan" }
+		19 = { "%d Kutei Shidan" }
+		20 = { "%d Kutei Shidan" }
+	}
+}
+
+JAP_MAR_01 = {
+	name = "特别陆战团"
+
+	for_countries = { JAP }
+
+	can_use = { always = yes }
+
+	division_types = { "marine" }
+
+	fallback_name = "第%d特别陆战团"
+
+	ordered = {
+		1 = { "第%d特别陆战团" }
+		2 = { "第%d特别陆战团" }
+		3 = { "第%d特别陆战团" }
+		4 = { "第%d特别陆战团" }
+		5 = { "第%d特别陆战团" }
+	}
+}
+
+JAP_MNT_01 = {
+	name = "Mountain Division"
+
+	for_countries = { JAP }
+
+	can_use = { always = yes }
+
+	division_types = { "mountaineers" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { JAP_INF_01 }
+
+	fallback_name = "%d Mountain Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		6 = { "%d 'Kumamoto' Sangaku Shidan" }
+		7 = { "%d 'Asahigawa' Sangaku Shidan" }
+		9 = { "%d 'Kanazawa' Sangaku Shidan" }
+		11 = { "%d 'Zentsuji' Sangaku Shidan" }
+		15 = { "%d Sangaku Shidan" }
+		16 = { "%d 'Kyoto' Sangaku Shidan" }
+		17 = { "%d Sangaku Shidan" }
+		21 = { "%d Sangaku Shidan" }
+		22 = { "%d Sangaku Shidan" }
+		27 = { "%d 'Chaina' Sangaku Shidan" }
+		29 = { "%d Sangaku Shidan" }
+		32 = { "%d Sangaku Shidan" }
+		33 = { "%d Sangaku Shidan" }
+		34 = { "%d Sangaku Shidan" }
+		35 = { "%d Sangaku Shidan" }
+		36 = { "%d Sangaku Shidan" }
+		37 = { "%d Sangaku Shidan" }
+		38 = { "%d Sangaku Shidan" }
+		39 = { "%d Sangaku Shidan" }
+		40 = { "%d Sangaku Shidan" }
+		41 = { "%d Sangaku Shidan" }
+		52 = { "%d Sangaku Shidan" }
+		104 = { "%d Sangaku Shidan" }
+	}
+}
+
+JAP_GAR_01 = {
+	name = "Garrison Units"
+
+	for_countries = { JAP }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { JAP_INF_01 }
+
+	fallback_name = "%d Tokubetsu Keibitai"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		68 = { "%d Tokubetsu Keibitai" }
+		69 = { "%d Tokubetsu Keibitai" }
+		70 = { "%d Tokubetsu Keibitai" }
+		71 = { "%d Tokubetsu Keibitai" }
+		31 = { "%d Tokubetsu Keibitai" }
+		61 = { "%d Tokubetsu Keibitai" }
+		30 = { "%d Tokubetsu Keibitai" }
+		46 = { "%d Tokubetsu Keibitai" }
+		47 = { "%d Tokubetsu Keibitai" }
+		62 = { "%d Tokubetsu Keibitai" }
+		63 = { "%d Tokubetsu Keibitai" }
+		64 = { "%d Tokubetsu Keibitai" }
+		65 = { "%d Tokubetsu Keibitai" }
+		49 = { "%d Tokubetsu Keibitai" }
+		72 = { "%d Tokubetsu Keibitai" }
+		77 = { "%d Tokubetsu Keibitai" }
+		81 = { "%d Tokubetsu Keibitai" }
+		86 = { "%d Tokubetsu Keibitai" }
+		91 = { "%d Tokubetsu Keibitai" }
+		100 = { "%d Tokubetsu Keibitai" }
+		102 = { "%d Tokubetsu Keibitai" }
+		103 = { "%d Tokubetsu Keibitai" }
+		66 = { "%d Tokubetsu Keibitai" }
+		73 = { "%d Tokubetsu Keibitai" }
+		84 = { "%d Tokubetsu Keibitai" }
+		93 = { "%d Tokubetsu Keibitai" }
+		105 = { "%d Tokubetsu Keibitai" }
+		107 = { "%d Tokubetsu Keibitai" }
+		108 = { "%d Tokubetsu Keibitai" }
+		109 = { "%d Tokubetsu Keibitai" }
+		111 = { "%d Tokubetsu Keibitai" }
+		112 = { "%d Tokubetsu Keibitai" }
+		115 = { "%d Tokubetsu Keibitai" }
+		117 = { "%d Tokubetsu Keibitai" }
+		114 = { "%d Tokubetsu Keibitai" }
+		94 = { "%d Tokubetsu Keibitai" }
+		118 = { "%d Tokubetsu Keibitai" }
+		119 = { "%d Tokubetsu Keibitai" }
+		120 = { "%d Tokubetsu Keibitai" }
+		96 = { "%d Tokubetsu Keibitai" }
+		167 = { "%d Tokubetsu Keibitai" }
+	}
+}
+
+
+JAP_IMB_01 = {
+	name = "Mixed Brigade"
+
+	for_countries = { JAP }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { JAP_INF_01 }
+
+	fallback_name = "%d Dokuritsu Konsei Ryodan"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "%d Dokuritsu Konsei Ryodan" }
+		11 = { "%d Dokuritsu Konsei Ryodan" }
+		201 = { "Karafuto Dokuritsu Konsei Ryodan" }
+		202 = { "Konoe Dokuritsu Konsei Ryodan" }
+		12 = { "%d Dokuritsu Konsei Ryodan" }
+		15 = { "%d Dokuritsu Konsei Ryodan" }
+		18 = { "%d Dokuritsu Konsei Ryodan" }
+		203 = { "2 Konoe Dokuritsu Konsei Ryodan" }
+		5 = { "%d Dokuritsu Konsei Ryodan" }
+		3 = { "%d Dokuritsu Konsei Ryodan" }
+		6 = { "%d Dokuritsu Konsei Ryodan" }
+		7 = { "%d Dokuritsu Konsei Ryodan" }
+		8 = { "%d Dokuritsu Konsei Ryodan" }
+		9 = { "%d Dokuritsu Konsei Ryodan" }
+		10 = { "%d Dokuritsu Konsei Ryodan" }
+		204 = { "Taiwan Dokuritsu Konsei Ryodan" }
+		13 = { "%d Dokuritsu Konsei Ryodan" }
+		17 = { "%d Dokuritsu Konsei Ryodan" }
+		19 = { "%d Dokuritsu Konsei Ryodan" }
+		21 = { "%d Dokuritsu Konsei Ryodan" }
+		22 = { "%d Dokuritsu Konsei Ryodan" }
+		14 = { "%d Dokuritsu Konsei Ryodan" }
+		16 = { "%d Dokuritsu Konsei Ryodan" }
+		20 = { "%d Dokuritsu Konsei Ryodan" }
+		65 = { "%d Dokuritsu Konsei Ryodan" }
+		4 = { "%d Dokuritsu Konsei Ryodan" }
+		29 = { "%d Dokuritsu Konsei Ryodan" }
+		30 = { "%d Dokuritsu Konsei Ryodan" }
+		32 = { "%d Dokuritsu Konsei Ryodan" }
+		2 = { "%d Dokuritsu Konsei Ryodan" }
+		24 = { "%d Dokuritsu Konsei Ryodan" }
+		25 = { "%d Dokuritsu Konsei Ryodan" }
+		26 = { "%d Dokuritsu Konsei Ryodan" }
+		27 = { "%d Dokuritsu Konsei Ryodan" }
+		28 = { "%d Dokuritsu Konsei Ryodan" }
+		34 = { "%d Dokuritsu Konsei Ryodan" }
+		31 = { "%d Dokuritsu Konsei Ryodan" }
+		33 = { "%d Dokuritsu Konsei Ryodan" }
+		35 = { "%d Dokuritsu Konsei Ryodan" }
+		36 = { "%d Dokuritsu Konsei Ryodan" }
+		37 = { "%d Dokuritsu Konsei Ryodan" }
+		38 = { "%d Dokuritsu Konsei Ryodan" }
+		39 = { "%d Dokuritsu Konsei Ryodan" }
+		40 = { "%d Dokuritsu Konsei Ryodan" }
+		43 = { "%d Dokuritsu Konsei Ryodan" }
+		46 = { "%d Dokuritsu Konsei Ryodan" }
+		47 = { "%d Dokuritsu Konsei Ryodan" }
+		48 = { "%d Dokuritsu Konsei Ryodan" }
+		49 = { "%d Dokuritsu Konsei Ryodan" }
+		50 = { "%d Dokuritsu Konsei Ryodan" }
+		51 = { "%d Dokuritsu Konsei Ryodan" }
+		52 = { "%d Dokuritsu Konsei Ryodan" }
+		53 = { "%d Dokuritsu Konsei Ryodan" }
+		54 = { "%d Dokuritsu Konsei Ryodan" }
+		55 = { "%d Dokuritsu Konsei Ryodan" }
+		56 = { "%d Dokuritsu Konsei Ryodan" }
+		57 = { "%d Dokuritsu Konsei Ryodan" }
+		58 = { "%d Dokuritsu Konsei Ryodan" }
+		61 = { "%d Dokuritsu Konsei Ryodan" }
+		62 = { "%d Dokuritsu Konsei Ryodan" }
+		64 = { "%d Dokuritsu Konsei Ryodan" }
+		68 = { "%d Dokuritsu Konsei Ryodan" }
+		70 = { "%d Dokuritsu Konsei Ryodan" }
+		71 = { "%d Dokuritsu Konsei Ryodan" }
+		72 = { "%d Dokuritsu Konsei Ryodan" }
+		73 = { "%d Dokuritsu Konsei Ryodan" }
+		75 = { "%d Dokuritsu Konsei Ryodan" }
+		77 = { "%d Dokuritsu Konsei Ryodan" }
+		89 = { "%d Dokuritsu Konsei Ryodan" }
+		91 = { "%d Dokuritsu Konsei Ryodan" }
+		23 = { "%d Dokuritsu Konsei Ryodan" }
+		44 = { "%d Dokuritsu Konsei Ryodan" }
+		45 = { "%d Dokuritsu Konsei Ryodan" }
+		59 = { "%d Dokuritsu Konsei Ryodan" }
+		60 = { "%d Dokuritsu Konsei Ryodan" }
+		66 = { "%d Dokuritsu Konsei Ryodan" }
+		67 = { "%d Dokuritsu Konsei Ryodan" }
+		69 = { "%d Dokuritsu Konsei Ryodan" }
+		76 = { "%d Dokuritsu Konsei Ryodan" }
+		78 = { "%d Dokuritsu Konsei Ryodan" }
+		79 = { "%d Dokuritsu Konsei Ryodan" }
+		80 = { "%d Dokuritsu Konsei Ryodan" }
+		81 = { "%d Dokuritsu Konsei Ryodan" }
+		82 = { "%d Dokuritsu Konsei Ryodan" }
+		83 = { "%d Dokuritsu Konsei Ryodan" }
+		84 = { "%d Dokuritsu Konsei Ryodan" }
+		85 = { "%d Dokuritsu Konsei Ryodan" }
+		86 = { "%d Dokuritsu Konsei Ryodan" }
+		87 = { "%d Dokuritsu Konsei Ryodan" }
+		88 = { "%d Dokuritsu Konsei Ryodan" }
+		90 = { "%d Dokuritsu Konsei Ryodan" }
+		92 = { "%d Dokuritsu Konsei Ryodan" }
+		95 = { "%d Dokuritsu Konsei Ryodan" }
+		96 = { "%d Dokuritsu Konsei Ryodan" }
+		97 = { "%d Dokuritsu Konsei Ryodan" }
+		98 = { "%d Dokuritsu Konsei Ryodan" }
+		100 = { "%d Dokuritsu Konsei Ryodan" }
+		101 = { "%d Dokuritsu Konsei Ryodan" }
+		102 = { "%d Dokuritsu Konsei Ryodan" }
+		103 = { "%d Dokuritsu Konsei Ryodan" }
+		105 = { "%d Dokuritsu Konsei Ryodan" }
+		107 = { "%d Dokuritsu Konsei Ryodan" }
+		108 = { "%d Dokuritsu Konsei Ryodan" }
+		109 = { "%d Dokuritsu Konsei Ryodan" }
+		112 = { "%d Dokuritsu Konsei Ryodan" }
+		113 = { "%d Dokuritsu Konsei Ryodan" }
+		114 = { "%d Dokuritsu Konsei Ryodan" }
+		115 = { "%d Dokuritsu Konsei Ryodan" }
+		116 = { "%d Dokuritsu Konsei Ryodan" }
+		117 = { "%d Dokuritsu Konsei Ryodan" }
+		118 = { "%d Dokuritsu Konsei Ryodan" }
+		119 = { "%d Dokuritsu Konsei Ryodan" }
+		120 = { "%d Dokuritsu Konsei Ryodan" }
+		121 = { "%d Dokuritsu Konsei Ryodan" }
+		122 = { "%d Dokuritsu Konsei Ryodan" }
+		123 = { "%d Dokuritsu Konsei Ryodan" }
+		124 = { "%d Dokuritsu Konsei Ryodan" }
+		125 = { "%d Dokuritsu Konsei Ryodan" }
+		126 = { "%d Dokuritsu Konsei Ryodan" }
+		127 = { "%d Dokuritsu Konsei Ryodan" }
+		128 = { "%d Dokuritsu Konsei Ryodan" }
+		129 = { "%d Dokuritsu Konsei Ryodan" }
+		130 = { "%d Dokuritsu Konsei Ryodan" }
+		131 = { "%d Dokuritsu Konsei Ryodan" }
+		132 = { "%d Dokuritsu Konsei Ryodan" }
+		133 = { "%d Dokuritsu Konsei Ryodan" }
+		134 = { "%d Dokuritsu Konsei Ryodan" }
+		135 = { "%d Dokuritsu Konsei Ryodan" }
+		136 = { "%d Dokuritsu Konsei Ryodan" }
+	}
+}
+
+JAP_MIL_01 = {
+	name = "Militia Units"
+
+	for_countries = { JAP }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { JAP_INF_01 }
+
+	fallback_name = "%d Minpei"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "%d Tokyo Minpei" }
+		2 = { "%d Osaka Minpei" }
+		3 = { "%d Hiroshima Minpei" }
+		4 = { "%d Sendai Minpei" }
+		5 = { "%d Sapporo Minpei" }
+		6 = { "%d Hakodate Minpei" }
+		7 = { "%d Yokohama Minpei" }
+		8 = { "%d Nagano Minpei" }
+		9 = { "%d Nagoya Minpei" }
+		10 = { "%d Okayama Minpei" }
+	}
+}
+
+JAP_MIL_02 = {
+	name = "Militia Units"
+
+	for_countries = { JAP }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { JAP_INF_01 }
+
+	fallback_name = "%d Sanson Kōsakutai"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "%d Nosaka Sanson Kōsakutai" }
+		2 = { "%d Tokuda Sanson Kōsakutai" }
+	}
+}
+
+JAP_RGR_01 = {
+	name = "Ranger Units"
+
+	for_countries = { JAP }
+
+	can_use = { always = yes }
+
+	division_types = { "ranger_battalion"  }
+
+	fallback_name = "%d Betsudotai"
+
+	# Names with numbers (only one number per entry)
+	ordered = {
+	1 = { "%d Betsudotai" }
+	2 = { "%d Betsudotai" }
+	3 = { "%d Betsudotai" }
+	4 = { "%d Betsudotai" }
+	5 = { "%d Betsudotai" }
+	6 = { "%d Betsudotai" }
+	7 = { "%d Betsudotai" }
+	8 = { "%d Betsudotai" }
+	9 = { "%d Betsudotai" }
+	10 = { "%d Betsudotai" }
+	11 = { "%d Betsudotai" }
+	12 = { "%d Betsudotai" }
+	13 = { "%d Betsudotai" }
+	14 = { "%d Betsudotai" }
+	15 = { "%d Betsudotai" }
+	16 = { "%d Betsudotai" }
+	17 = { "%d Betsudotai" }
+	18 = { "%d Betsudotai" }
+	19 = { "%d Betsudotai" }
+	20 = { "%d Betsudotai" }
+		
+	}
+}
+
+JAP_BIC_01 = {
+	name = "Bicycle Units"
+
+	for_countries = { JAP }
+
+	can_use = { always = yes }
+
+	division_types = { "bicycle_battalion"  }
+
+	fallback_name = "%d Ginrinbutai"
+
+	# Names with numbers (only one number per entry)
+	ordered = {
+	1 = { "%d Ginrinbutai" }
+	2 = { "%d Ginrinbutai" }
+	3 = { "%d Ginrinbutai" }
+	4 = { "%d Ginrinbutai" }
+	5 = { "%d Ginrinbutai" }
+	6 = { "%d Ginrinbutai" }
+	7 = { "%d Ginrinbutai" }
+	8 = { "%d Ginrinbutai" }
+	9 = { "%d Ginrinbutai" }
+	10 = { "%d Ginrinbutai" }
+	11 = { "%d Ginrinbutai" }
+	12 = { "%d Ginrinbutai" }
+	13 = { "%d Ginrinbutai" }
+	14 = { "%d Ginrinbutai" }
+	15 = { "%d Ginrinbutai" }
+	16 = { "%d Ginrinbutai" }
+	17 = { "%d Ginrinbutai" }
+	18 = { "%d Ginrinbutai" }
+	19 = { "%d Ginrinbutai" }
+	20 = { "%d Ginrinbutai" }
+		
+	}
+}
+

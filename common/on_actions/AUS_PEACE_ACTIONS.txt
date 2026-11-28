@@ -1,0 +1,143 @@
+﻿on_actions = {
+	#奥地利黑线北上进攻德意志
+	on_capitulation = {
+		effect =  {
+			if = {
+				limit ={
+					FROM = {
+						original_tag = AUS
+						has_completed_focus = aus_difficult_walk
+					}
+					ROOT = {
+						original_tag = GER
+					}
+				}
+				log = "[GetDateText]: FROM: [From.GetName] ROOT: [Root.GetName] on_capitulation"
+				FROM = {
+					save_global_event_target_as = winning_country
+				} 
+				ROOT = {
+					save_global_event_target_as = losing_country
+				}
+
+				log = "[GetDateText]: winner/loser: FROM: [winning_country.GetName] ROOT: [losing_country.GetName] on_capitulation"
+
+				if = {
+					limit = {
+						event_target:losing_country = {
+							any_allied_country = {
+								has_war_together_with = event_target:losing_country
+							}
+						}
+					}
+					set_global_flag = losing_country_multiple
+				}
+				if = {
+					limit = {
+						event_target:winning_country = {
+							any_allied_country = {
+								has_war_together_with = event_target:winning_country
+							}
+						}
+					}
+					set_global_flag = winning_country_multiple
+				}
+				if = {
+					limit = { NOT = { ROOT = { original_tag = GER } } }
+					every_country = {
+						white_peace = ROOT
+					}
+				}
+				else_if = {
+					limit = { ROOT = { original_tag = GER } }
+					GER = { dismantle_faction = Alies }
+					every_country = {
+						white_peace = ROOT
+					}
+				}
+				FROM = {
+					annex_country = {
+						target = ROOT
+						transfer_troops = no
+					}
+					AUS = {
+						create_faction = GERMAN-UNIT
+						set_autonomy = {
+							target = BAY
+							autonomy_state = autonomy_personal_union
+						}
+						set_autonomy = {
+							target = BAY
+							autonomy_state = autonomy_personal_union
+						}
+						set_autonomy = {
+							target = RHI
+							autonomy_state = autonomy_personal_union
+						}
+						set_autonomy = {
+							target = HAN
+							autonomy_state = autonomy_personal_union
+						}
+						set_autonomy = {
+							target = MEK
+							autonomy_state = autonomy_personal_union
+						}
+						set_autonomy = {
+							target = SAX
+							autonomy_state = autonomy_personal_union
+						}
+					}
+					DEN = {
+						set_autonomy = {
+							target = SHL
+							autonomy_state = autonomy_personal_union
+						}
+					
+					}
+					GER = {
+						transfer_state = 743
+						transfer_state = 995
+						transfer_state = 5
+						transfer_state = 997
+						transfer_state = 188
+					}
+					BAY = {
+						transfer_state = 54
+						transfer_state = 52 
+						transfer_state = 53
+						set_cosmetic_tag = AUS_POPCOLOR
+					}
+					RHI = {
+						transfer_state = 42
+						transfer_state = 51
+						set_cosmetic_tag = AUS_POPCOLOR
+					}
+					HAN = {
+						transfer_state = 56
+						transfer_state = 57
+						transfer_state = 1000
+						transfer_state = 59
+						set_cosmetic_tag = AUS_POPCOLOR
+					}
+					SAX = {
+						transfer_state = 65
+						set_cosmetic_tag = AUS_POPCOLOR
+					}
+					MEK = {
+						transfer_state = 61
+						set_cosmetic_tag = AUS_POPCOLOR
+					}
+					SHL = {
+						transfer_state = 887
+						transfer_state = 58
+						set_cosmetic_tag = DEN_POPCOLOR
+					}
+
+				}
+				
+				set_global_flag = show_peace_popup_alert
+			}
+		}
+	}
+	
+}

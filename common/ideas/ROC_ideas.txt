@@ -1,0 +1,341 @@
+ideas ={
+	country ={
+		people_country_sipirts = {
+			picture = SWI_spirit_of_helvetia_defensive_war
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			rule ={
+				can_declare_war_on_same_ideology = yes
+				can_puppet = yes
+				can_send_volunteers = yes
+				can_create_factions = yes
+			}
+			modifier ={
+				stability_factor = 0.10
+			}
+		}
+		Establishment_politics = {
+			picture = ARG_disrupt_bolivar
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier ={
+				communism_drift = 0.05
+				fascism_drift = 0.05
+			}
+		}
+		policitcs_dangerous = {
+			picture = CHL_the_Hacienda_inquilinaje_system
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier ={
+				stability_factor = -0.20
+				war_support_factor = -0.20
+				political_power_factor = -0.15
+				stability_weekly = -0.002
+			}
+		}
+		industry_in_developing = {
+			picture = ARG_public_works_investment
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier ={
+				consumer_goods_factor = -0.25
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		National_Revolution_army = {
+			picture = chi_whampoa_military_academy
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier ={
+				consumer_goods_factor = 0.10
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				planning_speed = 0.15
+			}
+		}
+		old_idea_1 = {
+			picture = citizen_militia_2
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier ={
+				encryption = -5
+				stability_factor = -0.15
+				conscription = -0.0120
+				conscription_factor = -0.75
+				production_speed_buildings_factor = -0.20
+				political_power_factor = -0.25
+				industrial_capacity_factory = -0.30
+				consumer_goods_factor = -0.05
+				industry_repair_factor = -0.45
+				research_speed_factor = -0.20
+			}
+		}
+		old_idea_2 = {
+			picture = citizen_militia_2
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier ={
+				encryption = -2
+				stability_factor = -0.10
+				conscription = -0.0110
+				conscription_factor = -0.60
+				production_speed_buildings_factor = -0.15
+				political_power_factor = -0.15
+				industrial_capacity_factory = -0.20
+				industry_repair_factor = -0.15
+				research_speed_factor = -0.10
+			}
+		}
+		old_idea_3 = {
+			picture = citizen_militia_2
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier ={
+				stability_factor = -0.05
+				conscription = -0.01
+				conscription_factor = -0.35
+				production_speed_buildings_factor = -0.10
+				political_power_factor = -0.05
+				industrial_capacity_factory = -0.10
+				industry_repair_factor = -0.10
+				research_speed_factor = -0.05
+			}
+		}
+		citizen_welfare = {
+			picture = generic_flexible_foreign_policy2
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier ={
+				consumer_goods_factor = 0.07
+				stability_factor = 0.03
+				production_factory_max_efficiency_factor = 0.02
+				industrial_capacity_factory = 0.05
+			}
+		}
+		money_jinsuo = {
+			picture = eng_steady_as_she_goes
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier ={
+				consumer_goods_factor = -0.25
+				stability_factor = -0.10
+			}
+		}
+		new_guanshui_rule = {
+			picture = can_wartime_prices_and_trade_board
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier ={
+				trade_opinion_factor = -0.75
+				resource_trade_cost_bonus_per_factory = 1
+			}
+		}
+		Tax_relief_policy = {
+			picture = generic_devalue_currency
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier ={
+				consumer_goods_factor = 0.20
+				conversion_cost_mil_to_civ_factor = -0.75
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.10
+			}
+		}
+		ZiBenWaiTao = {
+			picture = generic_devalue_currency
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier ={
+				consumer_goods_factor = 0.70
+				stability_factor = -0.20
+				production_speed_buildings_factor = -0.35
+			}
+		}
+		DaGuiMoJiuJi = {
+			picture = ARG_civilian_economy_boost
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier ={
+				consumer_goods_factor = 0.35
+				stability_weekly = 0.01
+				local_resources_factor = 0.15
+				research_speed_factor =0.10
+			}
+		}
+		LaoGongWaiPai = {
+			picture = ARG_construction_guilds
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier ={
+				industrial_capacity_factory = -0.07
+				production_factory_max_efficiency_factor = 0.03
+				consumer_goods_factor = -0.15
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		society_good = {
+			picture = ETH_corrupt_bureaucracy
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier ={
+				political_power_factor = 0.15
+				stability_factor = 0.10
+				war_support_factor = 0.10
+				opinion_gain_monthly_factor = 0.20
+				line_change_production_efficiency_factor = 0.05
+			}
+		}
+		scritis_laws = {
+			picture = FIN_maan_turva
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier ={
+				trade_laws_cost_factor = -0.25
+        		economy_cost_factor = -0.25
+        		political_advisor_cost_factor = -0.25
+			}
+		}
+		Society_Clean_Plan = {
+			picture = EST_democratic_opposition
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier ={
+				enemy_operative_intel_extraction_rate = -0.10
+				civilian_intel_to_others = -20
+        		army_intel_to_others = -20
+        		navy_intel_to_others = -20
+				airforce_intel_to_others  = -20
+			}
+		}
+	}
+}

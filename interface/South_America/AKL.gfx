@@ -1,0 +1,27 @@
+spriteTypes = { 
+	###领导人
+	spriteType = { #路易斯·加维安·德·罗德里格斯
+		name = "GFX_leader_AKL_Louis_Gavian_de_Rodriguez" 
+		texturefile = "gfx/leaders/AKL/AKL_Louis_Gavian_de_Rodriguez.dds" 
+	}
+	###民族精神
+	spriteType = { #临时政府
+		name = "GFX_idea_AKL_provisional_government"
+		texturefile = "gfx/interface/ideas/AKL/AKL_provisional_government.dds"
+	}
+	spriteType = { #橡胶的繁荣
+		name = "GFX_idea_AKL_rubber_boom"
+		texturefile = "gfx/interface/ideas/AKL/AKL_rubber_boom.dds"
+	}
+	###民族精神配图
+	spriteType = { #临时政府配图
+		name = "GFX_idea_AKL_provisional_government_Pictures"
+		texturefile = "gfx/texticons/banners/AKL/AKL_provisional_government_Pictures.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = { #橡胶的繁荣配图
+		name = "GFX_idea_AKL_rubber_boom_Pictures" 
+		texturefile = "gfx/texticons/banners/AKL/AKL_rubber_boom_Pictures.dds"
+		legacy_lazy_load = no
+	}
+}

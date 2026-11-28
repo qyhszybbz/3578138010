@@ -1,0 +1,32 @@
+﻿l_simp_chinese:
+      #傀儡类型
+      Autonomous_state:0 "自治邦"
+
+      #顺从度造核
+      territorial_integration: "整合"
+      territorial_integration_tt: "§H顺从度达到50%§!（所需的顺从度因地区而异）时获得地区核心。"
+      state_integration_alert_title: "地区整合完成"
+      state_integration_alert_message: "§Y[?integrated_state.GetName]§!现在是§Y[ROOT.GetNameWithFlag]§!的核心地区。"
+
+      #执政联盟
+      add_to_coalition: "§Y[?coalition_partner_var.GetTokenLocalizedKey]§!党派将加入联盟。"
+      remove_from_coalition: "§Y[?coalition_partner_var.GetTokenLocalizedKey]§!党派将离开联盟。"
+      end_coalition_tt: "§Y执政联盟§!将会彻底结束。"
+      is_in_coalition_with: "已与§H[?global.ideology_groups^$INDEX$.GetTokenLocalizedKey]§!党派联盟。"
+      is_in_coalition_with_NOT: "未与§H[?global.ideology_groups^$INDEX$.GetTokenLocalizedKey]§!党派联盟。"
+
+      #副领导人
+      second_leader_tt:0 "[THIS.second_leader]"
+      second_leader_tt2:0 "§R副领导人将发生变化§!"
+
+      #阵营
+      Leader:0 "领导者"
+      Member_states:0"成员国"
+      camp_button_tt:0 "§G点击§!查看§Y阵营状况§!。\n§G再次点击§!关闭§Y阵营窗口§!。\n----------------------------------\n[THIS.GetFlag]§Y[THIS.GetName]§!是§Y[THIS.GetFactionName]§!的§Y[GetFactionLeader]§!"
+
+      #其他
+      illegal:0 "§R非法§!"
+      illegal_long:0 "§R非法§!"
+      event_completed:0 "§R事件完成§!"
+      military_disloyalty_tt:0 "§R无法编辑、调整、删除陆军和陆军模板§!"
+     

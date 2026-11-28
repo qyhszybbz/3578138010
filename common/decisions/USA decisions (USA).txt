@@ -1,0 +1,22 @@
+USA_Social_Equilibrium = { #社会平衡
+	#开放全民议事通道
+	USA_Open_channels_for_public_deliberation = {
+		icon = GFX_decision_CHL_araucania_establish_a_hispaniolan_kingdom
+		allowed = { always = no }
+		visible = {
+			has_government = Liberalism
+		}
+		cost = 30
+		days_remove = 14
+		fire_only_once = yes
+		ai_will_do = { factor = 20 }
+		modifier = {
+			
+		}
+		remove_effect = {
+			log = "[GetLogRoot]: Decision remove USA_Open_channels_for_public_deliberation"
+			
+		}
+		fixed_random_seed = no
+	}
+}

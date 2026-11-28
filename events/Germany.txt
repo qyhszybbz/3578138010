@@ -1,0 +1,398 @@
+﻿add_namespace = GER_TVE_EVENT
+add_namespace = germany
+add_namespace = germany_news
+country_event = { #一夜
+	immediate = {log = "[GetDateText]: [Root.GetName]: event germany.1"}
+	id = germany.1
+	title = germany.1.t
+	desc = germany.1.d
+	picture = GFX_report_event_germany_night
+	is_triggered_only = yes
+	#yes	
+	option = {
+		name = germany.1.a
+	}
+}
+country_event = { #展翅
+	immediate = {log = "[GetDateText]: [Root.GetName]: event germany.2"}
+	id = germany.2
+	title = germany.2.t
+	desc = germany.2.d
+	is_triggered_only = yes
+
+	#yes	
+	option = {
+		name = germany.2.a
+	}
+}
+country_event = { #罪人
+	immediate = {log = "[GetDateText]: [Root.GetName]: event germany.3"}
+	id = germany.3
+	title = germany.3.t
+	desc = germany.3.d
+	picture = GFX_report_event_germany_sinner
+	is_triggered_only = yes
+
+	#yes	
+	option = {
+		name = germany.3.a
+		add_manpower = -5
+	}
+}
+country_event = { #木偶
+	immediate = {log = "[GetDateText]: [Root.GetName]: event germany.4"}
+	id = germany.4
+	title = germany.4.t
+	desc = germany.4.d
+	is_triggered_only = yes
+
+	#yes	
+	option = {
+		name = germany.4.a
+	}
+}
+country_event = { #谈判
+	immediate = {log = "[GetDateText]: [Root.GetName]: event germany.5"}
+	id = germany.5
+	title = germany.5.t
+	desc = germany.5.d
+	is_triggered_only = yes
+
+	#yes	
+	option = {
+		name = germany.5.a
+	}
+}
+country_event = { #单刀赴会
+	immediate = {log = "[GetDateText]: [Root.GetName]: event germany.6"}
+	id = germany.6
+	title = germany.6.t
+	desc = germany.6.d
+	is_triggered_only = yes
+
+	#yes	
+	option = {
+		name = germany.6.a
+	}
+}
+country_event = { #赴见
+	immediate = {log = "[GetDateText]: [Root.GetName]: event germany.7"}
+	id = germany.7
+	title = germany.7.t
+	desc = germany.7.d
+	is_triggered_only = yes
+
+	#yes	
+	option = {
+		name = germany.7.a
+	}
+}
+country_event = { #暗流
+	immediate = {log = "[GetDateText]: [Root.GetName]: event germany.8"}
+	id = germany.8
+	title = germany.8.t
+	desc = germany.8.d
+	is_triggered_only = yes
+
+	#yes	
+	option = {
+		name = germany.8.a
+	}
+}
+country_event = { #选举
+	immediate = {log = "[GetDateText]: [Root.GetName]: event germany.9"}
+	id = germany.9
+	title = germany.9.t
+	desc = germany.9.d
+	is_triggered_only = yes
+
+	#yes	
+	option = {
+		name = germany.9.a
+	}
+}
+news_event = { #布吕宁赢得大选
+	immediate = {log = "[GetDateText]: [Root.GetName]: event germany_news.1"}
+	id = germany_news.1
+	title = germany_news.1.t
+	desc = germany_news.1.d
+	picture = GFX_events_GER_Bruning_wins_the_election
+	is_triggered_only = yes
+
+	option = {
+		name = germany_news.1.a
+		
+	}
+}
+news_event = { #施莱歇尔赢得选举
+	immediate = {log = "[GetDateText]: [Root.GetName]: event germany_news.2"}
+	id = germany_news.2
+	title = germany_news.2.t
+	desc = germany_news.2.d
+	picture = GFX_events_GER_Schleicher_wins_the_election
+	is_triggered_only = yes
+
+	option = {
+		name = germany_news.2.a
+		
+	}
+}
+news_event = { #柏林发生军事政变
+	immediate = {log = "[GetDateText]: [Root.GetName]: event germany_news.3"}
+	id = germany_news.3
+	title = germany_news.3.t
+	desc = germany_news.3.d
+	picture = GFX_events_GER_A_military_coib
+	is_triggered_only = yes
+
+	option = {
+		name = germany_news.3.a
+		
+	}
+}
+news_event = { #凯撒执掌大权
+	immediate = {log = "[GetDateText]: [Root.GetName]: event germany_news.4"}
+	id = germany_news.4
+	title = germany_news.4.t
+	desc = germany_news.4.d
+	picture = GFX_events_GER_Caesar_took_control_of_tg
+	is_triggered_only = yes
+
+	option = {
+		name = germany_news.4.a
+		
+	}
+}
+
+country_event = {
+	id = GER_TVE_EVENT.1
+	title = GER_TVE_EVENT.1.t
+	desc = GER_TVE_EVENT.1.desc
+	#picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = GER_TVE_EVENT.1.a
+		country_event = {
+			id = GER_TVE_EVENT.2
+			hours = 24
+		}
+		GER ={
+			set_capital = {
+				state = 1026
+			} 
+		}
+		
+		54 = { set_demilitarized_zone = yes }
+		52 = { set_demilitarized_zone = yes }
+		53 = { set_demilitarized_zone = yes }
+		50 = { set_demilitarized_zone = yes }
+		956 = { set_demilitarized_zone = yes }
+		42 = { set_demilitarized_zone = yes }
+		51 = { set_demilitarized_zone = yes }
+		1000 = { set_demilitarized_zone = yes }
+		999 = { set_demilitarized_zone = yes }
+		56 = { set_demilitarized_zone = yes }
+		55 = { set_demilitarized_zone = yes }
+		57 = { set_demilitarized_zone = yes }
+		59 = { set_demilitarized_zone = yes }
+		743 = { set_demilitarized_zone = yes }
+		995 = { set_demilitarized_zone = yes }
+		997 = { set_demilitarized_zone = yes }
+		5 = { set_demilitarized_zone = yes }
+		188 = { set_demilitarized_zone = yes }
+		67 = { set_demilitarized_zone = yes }
+		887 = { set_demilitarized_zone = yes }
+		58 = { set_demilitarized_zone = yes }
+		
+	}
+	
+}
+country_event = {
+	id = GER_TVE_EVENT.2
+	title = GER_TVE_EVENT.2.t
+	desc = GER_TVE_EVENT.2.desc
+	#picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = GER_TVE_EVENT.2.a
+		country_event = {
+			id = GER_TVE_EVENT.3
+			hours = 24
+		}
+		54 = { set_demilitarized_zone = no }
+		50 = { set_demilitarized_zone = no }
+		956 = { set_demilitarized_zone = no }
+		BAY = {
+			transfer_state = 53
+			transfer_state = 52
+			transfer_state = 50
+			transfer_state = 54
+			transfer_state = 956
+			load_oob = BAY_CIVIL
+		}
+	}
+	
+}
+country_event = {
+	id = GER_TVE_EVENT.3
+	title = GER_TVE_EVENT.3.t
+	desc = GER_TVE_EVENT.3.desc
+	#picture = GFX_report_event_generic_sign_treaty2
+	is_triggered_only = yes
+
+	option = {
+		name = GER_TVE_EVENT.3.a
+		country_event = {
+			id = GER_TVE_EVENT.4
+			hours = 24
+		}
+		42 = { set_demilitarized_zone = no }
+		51 = { set_demilitarized_zone = no }
+		1000 = { set_demilitarized_zone = no }
+		999 = { set_demilitarized_zone = no }
+		55 = { set_demilitarized_zone = no }
+		57 = { set_demilitarized_zone = no }
+		56 = { set_demilitarized_zone = no }
+		887 = { set_demilitarized_zone = no }
+		58 = { set_demilitarized_zone = no }
+		SPT = {
+			transfer_state = 42
+			transfer_state = 51
+			transfer_state = 1000
+			transfer_state = 999
+			transfer_state = 55
+			transfer_state = 57
+			transfer_state = 56
+			load_oob = SPT_CIVIL
+		}
+		SHL = {
+			transfer_state = 887
+			transfer_state = 58
+			set_cosmetic_tag = SHL_RED
+			set_politics = { ruling_party = Socialism }
+		}
+	}
+}
+country_event = {
+	id = GER_TVE_EVENT.4
+	title = GER_TVE_EVENT.4.t
+	desc = GER_TVE_EVENT.4.desc
+	#picture = GFX_report_event_generic_sign_treaty2
+	is_triggered_only = yes
+
+	option = {
+		name = GER_TVE_EVENT.4.a
+		country_event = {
+			id = GER_TVE_EVENT.5
+			hours = 24
+		}
+		59 = { set_demilitarized_zone = no }
+		#52 = { set_demilitarized_zone = no }
+		#53 = { set_demilitarized_zone = no }
+		#RAY = {
+			#transfer_state = 53
+			#transfer_state = 52
+		#}
+		HAN = {
+			transfer_state = 59
+		}
+	}
+}
+country_event = {
+	id = GER_TVE_EVENT.5
+	title = GER_TVE_EVENT.5.t
+	desc = GER_TVE_EVENT.5.desc
+	#picture = GFX_report_event_generic_sign_treaty2
+	is_triggered_only = yes
+
+	option = {
+		name = GER_TVE_EVENT.5.a
+		country_event = {
+			id = GER_TVE_EVENT.7
+			hours = 24
+		}
+		188 = { set_demilitarized_zone = no }
+		743 = { set_demilitarized_zone = no }
+		995 = { set_demilitarized_zone = no }
+		5 = { set_demilitarized_zone = no }
+		997 = { set_demilitarized_zone = no }
+		FRE = {
+			transfer_state = 5
+			transfer_state = 997
+			transfer_state = 743
+			transfer_state = 995
+		}
+		PBR = {
+			transfer_state = 188
+		}
+		
+	}
+}
+news_event = {
+	id = GER_TVE_EVENT.6
+	title = GER_TVE_EVENT.6.t
+	desc = GER_TVE_EVENT.6.d
+	picture = GFX_CAN_YLB
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = GER_TVE_EVENT.6.a
+	}
+}
+country_event = {
+	id = GER_TVE_EVENT.7
+	title = GER_TVE_EVENT.7.t
+	desc = GER_TVE_EVENT.7.desc
+	#picture = GFX_report_event_generic_sign_treaty2
+	is_triggered_only = yes
+
+	option = {
+		name = GER_TVE_EVENT.7.a
+		country_event = {
+			id = GER_TVE_EVENT.8
+			hours = 24
+		}
+		52 = { set_demilitarized_zone = no }
+		53 = { set_demilitarized_zone = no }
+		RAY = {
+			transfer_state = 53
+			transfer_state = 52
+			load_oob = RAY_CIVIL
+		}
+		SPT = {
+			create_faction = redfac
+			add_to_faction = SPT
+			add_to_faction = SHL
+			add_to_faction = RAY
+		}
+		
+	}
+}
+country_event = {
+	id = GER_TVE_EVENT.8
+	title = GER_TVE_EVENT.8.t
+	desc = GER_TVE_EVENT.8.desc
+	#picture = GFX_report_event_generic_sign_treaty2
+	is_triggered_only = yes
+
+	option = {
+		name = GER_TVE_EVENT.8.a
+		news_event = { id = GER_TVE_EVENT.6 }
+		67 = { set_demilitarized_zone = no }
+		SIL = {
+			transfer_state = 67
+			set_cosmetic_tag = SIL_PL
+		}
+		GER = {
+			declare_war_on = { target = SIL type = civil_war }
+		}
+		BAY = {
+			declare_war_on = { target = RAY type = civil_war }
+		}
+		
+	}
+}

@@ -1,0 +1,27 @@
+state = {
+	id = 1088
+	name = "STATE_1088"
+	manpower = 1785218
+	state_category = rural
+	resources = {
+		tungsten = 2
+	}
+	history = {
+		owner = CHI
+		add_core_of = TIB
+		add_core_of = CHI
+		add_extra_state_shared_building_slots = 1
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
+		}
+		victory_points = {
+			2010 3
+		}
+	}
+	provinces = {
+		2010 5011 5094 8037 8068 10755 12784 12801
+	}
+	local_supplies = 7
+	buildings_max_level_factor = 1.000
+}

@@ -1,0 +1,424 @@
+﻿add_namespace = TFE_HOL_NEWS
+add_namespace = TFE_HOL_EVENT
+
+# 1 腐败败露（1935.6.1）
+country_event = {
+	id = TFE_HOL_EVENT.1
+	title = TFE_HOL_EVENT.1.t
+	desc = TFE_HOL_EVENT.1.desc
+	#picture = GFX_report_event_generic_corruption
+
+	is_triggered_only = yes
+
+	option = {
+		name = TFE_HOL_EVENT.1.a
+
+		add_stability = -0.1
+		country_event = {
+			id = TFE_HOL_EVENT.2
+			days = 4
+		}
+	}
+}
+
+# 2 科莱恩内阁解散（1935.6.5）
+country_event = {
+	id = TFE_HOL_EVENT.2
+	title = TFE_HOL_EVENT.2.t
+	desc = TFE_HOL_EVENT.2.desc
+	#picture = GFX_report_event_generic_parliament
+
+	is_triggered_only = yes
+
+	option = {
+		name = TFE_HOL_EVENT.2.a
+
+		add_stability = -0.05
+		add_political_power = -15
+
+		country_event = {
+			id = TFE_HOL_EVENT.3
+			days = 5
+		}
+	}
+}
+
+# 3 路易·贝尔被任命为首相（1935.6.10）
+country_event = {
+	id = TFE_HOL_EVENT.3
+	title = TFE_HOL_EVENT.3.t
+	desc = TFE_HOL_EVENT.3.desc
+	#picture = GFX_report_event_generic_parliament
+
+	is_triggered_only = yes
+
+	option = {
+		name = TFE_HOL_EVENT.3.a
+
+		# 贝尔出任首相，但不取代国家元首：威廉明娜（TVE_HOL_LEADERS，自由主义）继续担任领袖
+		recruit_character = HOL_louis_beel
+		if = {
+			limit = { has_government = Liberalism }
+			if = {
+				limit = { NOT = { has_character = TVE_HOL_LEADERS } }
+				recruit_character = TVE_HOL_LEADERS
+			}
+			TVE_HOL_LEADERS = { promote_character = liberalism_small }
+		}
+		add_stability = 0.05
+		news_event = { id = TFE_HOL_NEWS.1 days = 1}
+
+		country_event = {
+			id = TFE_HOL_EVENT.4
+			days = 5
+		}
+	}
+}
+
+# 4 瓦隆爆发独立运动（1935.6.15）
+country_event = {
+	id = TFE_HOL_EVENT.4
+	title = TFE_HOL_EVENT.4.t
+	desc = TFE_HOL_EVENT.4.desc
+	#picture = GFX_report_event_generic_revolt
+
+	is_triggered_only = yes
+
+	option = {
+		name = TFE_HOL_EVENT.4.a
+
+		WAL = {
+			transfer_state = 34
+			transfer_state = 958
+			transfer_state = 1030
+			transfer_state = 1001
+			every_owned_state = {
+				add_core_of = WAL
+			}
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			recruit_character = WAL_leon_degrelle
+			WAL_leon_degrelle = { promote_character = fascism_small }
+			set_stability = 0.2
+			set_war_support = 0.2
+			load_oob = "WAL_civil_war"
+		}
+
+		country_event = {
+			id = TFE_HOL_EVENT.5
+			days = 5
+		}
+	}
+}
+
+# 5 佛兰德军事委员会建立（1935.6.20）
+country_event = {
+	id = TFE_HOL_EVENT.5
+	title = TFE_HOL_EVENT.5.t
+	desc = TFE_HOL_EVENT.5.desc
+	#picture = GFX_report_event_generic_revolt
+
+	is_triggered_only = yes
+
+	option = {
+		name = TFE_HOL_EVENT.5.a
+
+		BEL = {
+			transfer_state = 6
+			transfer_state = 955
+			every_owned_state = {
+				add_core_of = BEL
+			}
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 35
+			}
+			recruit_character = BEL_staf_deklerk
+			BEL_staf_deklerk = { promote_character = fascism_small }
+			set_stability = 0.55
+			set_war_support = 0.45
+			load_oob = "BEL_civil_war"
+		}
+		country_event = {
+			id = TFE_HOL_EVENT.6
+			days = 4
+		}
+	}
+}
+
+# 6 卢森堡独立（1935.6.24）
+country_event = {
+	id = TFE_HOL_EVENT.6
+	title = TFE_HOL_EVENT.6.t
+	desc = TFE_HOL_EVENT.6.desc
+	#picture = GFX_report_event_generic_parliament
+
+	is_triggered_only = yes
+
+	option = {
+		name = TFE_HOL_EVENT.6.a
+
+		LUX = {
+			transfer_state = 8
+			set_stability = 0.35
+			set_war_support = 0.35
+			every_owned_state = {
+				add_core_of = LUX
+			}
+		}
+
+		country_event = {
+			id = TFE_HOL_EVENT.7
+			days = 4
+		}
+	}
+}
+
+# 7 鹿特丹工人起义（1935.6.28）
+country_event = {
+	id = TFE_HOL_EVENT.7
+	title = TFE_HOL_EVENT.7.t
+	desc = TFE_HOL_EVENT.7.desc
+	#picture = GFX_report_event_generic_revolt
+
+	is_triggered_only = yes
+
+	option = {
+		name = TFE_HOL_EVENT.7.a
+
+		set_capital = {
+			state = 35
+			#remember_old_capital = no
+		}
+		HOL = {
+			every_owned_state = {
+				add_claim_by = ROL
+			}
+		}
+		add_stability = -0.10
+		ROL = {
+			transfer_state = 7
+			every_owned_state = {
+				add_core_of = ROL
+			}
+			recruit_character = ROL_anton_pannekoek
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = yes
+			}
+			ROL_anton_pannekoek = { promote_character = communism_small }
+
+			
+			set_stability = 0.55
+			set_war_support = 0.65
+			load_oob = "ROL_civil_war"
+		}
+
+		country_event = {
+			id = TFE_HOL_EVENT.8
+			days = 4
+		}
+	}
+}
+
+# 8 海牙地区爆发刺杀事件（1935.7.2）
+country_event = {
+	id = TFE_HOL_EVENT.8
+	title = TFE_HOL_EVENT.8.t
+	desc = TFE_HOL_EVENT.8.desc
+	#picture = GFX_report_event_generic_assassination
+
+	is_triggered_only = yes
+
+	option = {
+		name = TFE_HOL_EVENT.8.a
+
+		add_stability = -0.05
+		add_war_support = 0.15
+
+		country_event = {
+			id = TFE_HOL_EVENT.9
+			days = 3
+		}
+	}
+}
+
+# 9 尼德兰内战打响（1935.7.5）
+country_event = {
+	id = TFE_HOL_EVENT.9
+	title = TFE_HOL_EVENT.9.t
+	desc = TFE_HOL_EVENT.9.desc
+	#picture = GFX_report_event_generic_war
+
+	is_triggered_only = yes
+
+	option = {
+		name = TFE_HOL_EVENT.9.a
+
+		hidden_effect = {
+
+			HOL = { load_oob = "HOL_civil_war" }
+
+			HOL = { declare_war_on = { target = ROL type = annex_everything } }
+			HOL = { declare_war_on = { target = WAL type = annex_everything } }
+			HOL = { declare_war_on = { target = BEL type = annex_everything } }
+
+			WAL = { declare_war_on = { target = ROL type = annex_everything } }
+			BEL = { declare_war_on = { target = ROL type = annex_everything } }
+		}
+
+		news_event = { id = TFE_HOL_NEWS.2 }
+
+		country_event = {
+			id = TFE_HOL_EVENT.10
+			days = 12
+		}
+	}
+}
+
+# 10 卢森堡并入德国（1935.7.17）
+country_event = {
+	id = TFE_HOL_EVENT.10
+	title = TFE_HOL_EVENT.10.t
+	desc = TFE_HOL_EVENT.10.desc
+	#picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = TFE_HOL_EVENT.10.a
+		news_event = { id = TFE_HOL_NEWS.3 }
+		GER = {
+			if = {
+				limit = { country_exists = LUX }
+				annex_country = { target = LUX }
+			}
+			else = {
+				transfer_state = 8
+			}
+		}
+
+		8 = { add_core_of = GER }
+	}
+}
+
+# 11 德国入侵低地（低地人民共和国成立后触发）
+country_event = {
+	id = TFE_HOL_EVENT.11
+	title = TFE_HOL_EVENT.11.t
+	desc = TFE_HOL_EVENT.11.desc
+	#picture = GFX_report_event_generic_war
+
+	is_triggered_only = yes
+
+	option = {
+		name = TFE_HOL_EVENT.11.a
+
+		declare_war_on = { target = ROL type = annex_everything }
+
+		hidden_effect = {
+			FRA = {
+				country_event = {
+					id = TFE_HOL_EVENT.12
+					days = 2
+				}
+			}
+		}
+	}
+}
+
+# 12 法国进军瓦隆
+country_event = {
+	id = TFE_HOL_EVENT.12
+	title = TFE_HOL_EVENT.12.t
+	desc = TFE_HOL_EVENT.12.desc
+	#picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = TFE_HOL_EVENT.12.a
+
+		news_event = { id = TFE_HOL_NEWS.4 }
+		declare_war_on = { target = ROL type = annex_everything }
+	}
+}
+
+# 尼德兰王国复辟内容在ROL_on_actions.txt里
+
+
+
+
+
+
+news_event = {
+	#immediate = {log = "[GetDateText]: [Root.GetName]: event germany_news.1"}
+	id = TFE_HOL_NEWS.1
+	title = TFE_HOL_NEWS.1.t
+	desc = TFE_HOL_NEWS.1.desc
+	picture = GFX_msln
+	is_triggered_only = yes
+
+	option = {
+		name = TFE_HOL_NEWS.1.a
+		
+	}
+}
+news_event = {
+	#immediate = {log = "[GetDateText]: [Root.GetName]: event germany_news.1"}
+	id = TFE_HOL_NEWS.2
+	title = TFE_HOL_NEWS.2.t
+	desc = TFE_HOL_NEWS.2.desc
+	picture = GFX_msln
+	is_triggered_only = yes
+
+	option = {
+		name = TFE_HOL_NEWS.2.a
+		
+	}
+}
+news_event = {
+	#immediate = {log = "[GetDateText]: [Root.GetName]: event germany_news.1"}
+	id = TFE_HOL_NEWS.3
+	title = TFE_HOL_NEWS.3.t
+	desc = TFE_HOL_NEWS.3.desc
+	picture = GFX_msln
+	is_triggered_only = yes
+
+	option = {
+		name = TFE_HOL_NEWS.3.a
+		
+	}
+}
+news_event = {
+	#immediate = {log = "[GetDateText]: [Root.GetName]: event germany_news.1"}
+	id = TFE_HOL_NEWS.4
+	title = TFE_HOL_NEWS.4.t
+	desc = TFE_HOL_NEWS.4.desc
+	picture = GFX_msln
+	is_triggered_only = yes
+
+	option = {
+		name = TFE_HOL_NEWS.4.a
+		
+	}
+}
+news_event = {
+	#immediate = {log = "[GetDateText]: [Root.GetName]: event germany_news.1"}
+	id = TFE_HOL_NEWS.5
+	title = TFE_HOL_NEWS.5.t
+	desc = TFE_HOL_NEWS.5.desc
+	picture = GFX_msln
+	is_triggered_only = yes
+
+	option = {
+		name = TFE_HOL_NEWS.5.a
+		
+	}
+}

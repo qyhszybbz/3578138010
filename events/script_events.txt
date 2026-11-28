@@ -1,0 +1,2285 @@
+﻿add_namespace = script_events
+add_namespace = TVE_News
+#奥匈帝国民族叛乱
+country_event = {
+	id = script_events.1
+	title = script_events.1.t
+	desc = script_events.1.desc 
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = script_events.1.a 
+		ai_chance = {  
+			base = 100
+		}
+		country_lock_all_division_template = no
+		news_event = { id = TVE_News.15 }
+		744 = {
+			set_demilitarized_zone = no
+		}
+		SLO = {
+			transfer_state = 70
+			transfer_state = 71
+		}
+		YUG = {
+			transfer_state = 744
+		}
+		HUN = {
+			transfer_state = 655
+			transfer_state = 73
+			transfer_state = 155
+			transfer_state = 952
+			transfer_state = 951
+			transfer_state = 43
+			transfer_state = 154
+			transfer_state = 45
+		}
+		SLV = {
+			transfer_state = 102
+			transfer_state = 831
+		}
+		declare_war_on = {
+			target = HUN
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = SLO
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = SLV
+			type = annex_everything
+		}
+		SLV = {
+			country_event = {
+				id = script_events.4
+			}
+		}
+		HUN = {
+			country_event = {
+				id = script_events.6
+				hours = 12
+			}
+		}
+		SLO = {
+			country_event = {
+				id = script_events.7
+				days = 1
+			}
+		}
+		HUN = {
+			create_faction = against_Austria_Empire_faction
+			add_to_faction = SLO
+			add_to_faction = SLV
+		}
+		every_state = {
+			limit = {
+				is_core_of = AUS
+			}
+			remove_dynamic_modifier = {
+				modifier = Aus_Hun_states_modifiers
+			}
+		}
+		764 = {
+			remove_dynamic_modifier = {
+				modifier = Aus_Hun_states_modifiers
+			}
+		}
+		add_named_threat = {
+			threat = 5
+			name = AUS_CIVIL_WAR
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_dlc = "Gotterdammerung"
+				}
+			}
+			country_event = { id = script_events.15 }
+		}
+		else = {
+			country_event = { id = script_events.14 }
+		}
+	} 
+}
+
+
+
+
+#奥匈帝国民族叛乱国家单位创建脚本
+country_event = {
+	id = script_events.4
+	title = script_events.4.t
+	desc = script_events.4.desc 
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = script_events.4.a 
+		ai_chance = {
+			base = 100
+		}
+		division_template = {
+			name = "Kazachya Kavaleryskaya Diviziya"
+			division_names_group = SOV_CAV_02
+			template_counter = 05
+
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 3 y = 1 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 3 y = 1 }
+			}
+			support = {
+				engineer = { x = 0 y = 0 }
+				artillery = { x = 0 y = 1 }
+				recon = { x = 0 y = 2 }
+			}
+		}
+		102 = {
+			#Cossack Cavalry
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+		}
+		155 = {
+			#Cossack Cavalry
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+		}
+		70 = {
+			#Cossack Cavalry
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+		}
+		972 = {
+			#Cossack Cavalry
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+		}
+	}
+}
+country_event = {
+	id = script_events.5
+	title = script_events.5.t
+	desc = script_events.5.desc 
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = script_events.5.a 
+		ai_chance = {
+			base = 100
+		}
+		division_template = {
+			name = "Kazachya Kavaleryskaya Diviziya"
+			division_names_group = SOV_CAV_02
+			template_counter = 05
+
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 3 y = 0 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 3 y = 1 }
+			}
+		}
+		capital_scope = {
+			#Cossack Cavalry
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+		}
+		capital_scope = {
+			#Cossack Cavalry
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+		}
+		capital_scope = {
+			#Cossack Cavalry
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+		}
+		capital_scope = {
+			#Cossack Cavalry
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+		}
+	}
+}
+country_event = {
+	id = script_events.6
+	title = script_events.6.t
+	desc = script_events.6.desc 
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = script_events.6.a 
+		ai_chance = {
+			base = 100
+		}
+		division_template = {
+			name = "Kazachya Kavaleryskaya Diviziya"
+			division_names_group = SOV_CAV_02
+			template_counter = 05
+
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 3 y = 0 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 3 y = 1 }
+			}
+		}
+		capital_scope = {
+			#Cossack Cavalry
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+		}
+		capital_scope = {
+			#Cossack Cavalry
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+		}
+		capital_scope = {
+			#Cossack Cavalry
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+		}
+		capital_scope = {
+			#Cossack Cavalry
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+		}
+	}
+}
+country_event = {
+	id = script_events.7
+	title = script_events.7.t
+	desc = script_events.7.desc 
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = script_events.7.a 
+		ai_chance = {
+			base = 100
+		}
+		division_template = {
+			name = "Kazachya Kavaleryskaya Diviziya"
+			division_names_group = SOV_CAV_02
+			template_counter = 05
+
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 3 y = 0 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 3 y = 1 }
+			}
+		}
+		capital_scope = {
+			#Cossack Cavalry
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+		}
+		capital_scope = {
+			#Cossack Cavalry
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+		}
+		capital_scope = {
+			#Cossack Cavalry
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+		}
+		capital_scope = {
+			#Cossack Cavalry
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+		}
+	}
+}
+#第二次日俄战争俄国胜利整合征东军
+country_event = {
+	id = script_events.8
+	title = script_events.8.t
+	desc = script_events.8.desc 
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = script_events.8.a 
+		ai_chance = {
+			base = 100
+		}
+		annex_country = {
+			target = REF
+		}
+		every_state = {
+			limit = { is_core_of = REF }
+			add_core_of = SOV
+			remove_core_of = REF
+		}
+		add_stability = 0.30
+		add_war_support = 0.30
+		add_research_slot = 1
+		remove_ideas = Second_russia_japan_war_volunteers_ideas
+	}  
+}
+#巴尔干同盟组建
+country_event = {
+	id = script_events.9
+	title = script_events.9.t
+	desc = script_events.9.desc 
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = script_events.9.a 
+		ai_chance = {
+			base = 100
+		}
+		create_faction = The_Balkan_peoples_defended_the_alliance_for_self_determination
+		add_to_faction = YUG
+		AUS = {
+			country_event = {
+				id = script_events.10
+				days = 25
+			}
+		}
+		news_event = { id =TVE_News.30 }
+	}  
+}
+#巴尔干战争
+country_event = {
+	id = script_events.10
+	title = script_events.10.t
+	desc = script_events.10.desc 
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = script_events.10.a 
+		ai_chance = {
+			base = 100
+		}
+		news_event = { id =TVE_News.33 }
+		declare_war_on = {
+			target = ROM
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = YUG
+			type = annex_everything
+		}
+		BUL = {
+			declare_war_on = {
+				target = ROM
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = YUG
+				type = annex_everything
+			}
+		}
+	}  
+}
+#英国本土分裂
+
+#WLS
+country_event = {
+	id = script_events.12
+	title = script_events.12.t
+	desc = script_events.12.desc 
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = script_events.12.a 
+		ai_chance = {
+			base = 100
+		}
+		division_template = {
+			name = "Kazachya Kavaleryskaya Diviziya"
+			division_names_group = SOV_CAV_02
+			template_counter = 05
+
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+				infantry = { x = 0 y = 4 }
+			}
+		}
+		capital_scope = {
+			#Cossack Cavalry
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+		}
+	}  
+}
+#SCO
+country_event = {
+	id = script_events.13
+	title = script_events.13.t
+	desc = script_events.13.desc 
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = script_events.13.a 
+		ai_chance = {
+			base = 100
+		}
+		division_template = {
+			name = "Kazachya Kavaleryskaya Diviziya"
+			division_names_group = SOV_CAV_02
+			template_counter = 05
+
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+				infantry = { x = 0 y = 4 }
+			}
+		}
+		capital_scope = {
+			#Cossack Cavalry
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+		}
+	}  
+}
+#BRC
+country_event = {
+	id = script_events.14
+	title = script_events.14.t
+	desc = script_events.14.desc 
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = script_events.14.a 
+		ai_chance = {
+			base = 100
+		}
+		division_template = {
+			name = "Kazachya Kavaleryskaya Diviziya"
+			division_names_group = SOV_CAV_02
+			template_counter = 05
+
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 3 y = 0 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 3 y = 1 }
+			}
+		}
+		capital_scope = {
+			#Cossack Cavalry
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+		}
+	}  
+}
+#BSR
+country_event = {
+	id = script_events.15
+	title = script_events.15.t
+	desc = script_events.15.desc 
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = script_events.15.a 
+		ai_chance = {
+			base = 100
+		}
+		division_template = {
+			name = "Kazachya Kavaleryskaya Diviziya"
+			division_names_group = SOV_CAV_02
+			template_counter = 05
+
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 3 y = 0 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 3 y = 1 }
+			}
+		}
+		capital_scope = {
+			#Cossack Cavalry
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+		}
+	}  
+}
+#英国内战正式开打
+
+#加拿大组建英联邦(邀请澳大利亚,新西兰与南非)
+country_event = {
+	id = script_events.19
+	title = script_events.19.t
+	desc = script_events.19.desc 
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = script_events.19.a 
+		ai_chance = {
+			base = 100
+		}
+		news_event = { id = TVE_News.7 }
+		CAN = {
+			create_faction = commonwealth
+			add_to_faction = AST
+			add_to_faction = NZL
+			add_ideas = Commonwealth_dominant_country
+		}
+	}  
+}
+#马来亚内战(PS:由日本策动,此时菲律宾因为西班牙内战殖民政府被日本颠覆变为日本傀儡)
+country_event = {
+	id = script_events.20
+	title = script_events.20.t
+	desc = script_events.20.desc 
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = script_events.20.a 
+		ai_chance = {
+			base = 100
+		}
+		news_event = { id = TVE_News.8 }
+		MLY = {
+			transfer_state = 1021
+			transfer_state = 1023
+			every_state = {
+				limit = {
+					is_core_of = MAL
+				}
+				add_core_of = MLY
+			}
+		}
+		SIA = {
+			transfer_state = 1022
+		}
+		MAL = {
+			declare_war_on = {
+				target = MLY
+				type = annex_everything
+			}
+			country_event = {
+				id = script_events.12
+			}
+		}
+		JAP = {
+			set_country_flag = MAL_CIVIL_WAR_SCF_JAP
+		}
+		CAN = {
+			set_country_flag = MAL_CIVIL_WAR_SCF_CAN
+		}
+		add_named_threat = {
+			threat = 3
+			name = ENG_CIVIL_WAR
+		}
+		MLY = {
+			country_event = {
+				id = script_events.13
+				days = 1
+			}
+		}
+	}  
+}
+#土耳其收复失地并封锁塞浦路斯
+country_event = {
+	id = script_events.21
+	title = script_events.21.t
+	desc = script_events.21.desc 
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = script_events.21.a 
+		ai_chance = {
+			base = 100
+		}
+		news_event = { id = TVE_News.9 }
+		TUR = {
+			transfer_state = 340
+			transfer_state = 343
+			183 = {
+				set_demilitarized_zone = yes
+			}
+			add_named_threat = {
+				threat = 3
+				name = ENG_CIVIL_WAR
+			}
+		}
+		BOG = { country_event = { id = script_events.25 days = 14 } }
+	}  
+}
+
+
+#--印度--
+
+#鲍斯政变
+country_event = {
+	id = script_events.22
+	title = script_events.22.t
+	desc = script_events.22.desc 
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = script_events.22.a 
+		ai_chance = {
+			base = 100
+		}
+		news_event = { id = TVE_News.10 }
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.35
+		}
+		create_country_leader = {
+			name = Subhash_Chandra_Bose_TVE
+			picture = GFX_Subhash_Chandra_Bose_TVE
+			expire = "1965.1.1"
+			ideology = fascism_small
+			traits = {
+			}
+		}
+		set_politics = { ruling_party = fascism elections_allowed = no }
+		drop_cosmetic_tag = RAJ_UK
+		every_state = {
+			limit = {
+				is_owned_by = RAJ
+			}
+			set_demilitarized_zone = yes
+			add_core_of = RAJ
+			437 = {
+				set_demilitarized_zone = no
+			}
+			970 = {
+				set_demilitarized_zone = no
+				remove_core_of = RAJ
+			}
+		}
+		country_event = {
+			id = script_events.23
+			days = 9
+		}
+	}  
+}
+#土邦失控独立,印度解体
+country_event = {
+	id = script_events.23
+	title = script_events.23.t
+	desc = script_events.23.desc 
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = script_events.23.a 
+		ai_chance = {
+			base = 100
+		}
+		news_event = { id = TVE_News.11 }
+		every_state = {
+			limit = {
+				is_owned_by = RAJ
+			}
+			set_demilitarized_zone = no
+		}
+		add_named_threat = {
+			threat = 10.000
+			name = ENG_CIVIL_WAR
+		}
+		AFG = {
+			transfer_state = 966
+			transfer_state = 965
+			transfer_state = 440
+		}
+		440 = {
+			add_core_of = AFG
+		}
+		965 = {
+			add_core_of = AFG
+		}
+		966 = {
+			add_core_of = AFG
+		}
+		KAS = {
+			transfer_state = 439
+			transfer_state = 767
+		}
+		KHL = {
+			transfer_state = 438
+			transfer_state = 443
+			transfer_state = 964
+		}
+		SIN = {
+			transfer_state = 441
+		}
+		BLC = {
+			transfer_state = 442
+			transfer_state = 990
+		}
+		RAS = {
+			transfer_state = 960
+		}
+		MYS = {
+			transfer_state = 423
+		}
+		HYD = {
+			transfer_state = 425
+		}
+		SKK = {
+			transfer_state = 963
+		}
+		RJP = {
+			transfer_state = 431
+			transfer_state = 967
+		}
+		TGB = {
+			transfer_state = 426
+			transfer_state = 427
+			country_event = {
+				id = script_events.13
+			}
+		}
+		FIR = {
+			transfer_state = 437
+			every_state = {
+				limit = {
+					is_core_of = RAJ
+				}
+				add_core_of = FIR
+			}
+			annex_country = {
+				target = RAJ
+			}
+			declare_war_on = {
+				target = TGB
+				type = annex_everything
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.35
+			}
+			create_country_leader = {
+				name = Subhash_Chandra_Bose_TVE
+				picture = GFX_Subhash_Chandra_Bose_TVE
+				expire = "1965.1.1"
+				ideology = fascism_small
+				traits = {
+				}
+			}
+			set_politics = { ruling_party = fascism elections_allowed = no }
+		}
+		BOG = {
+			transfer_state = 421
+			transfer_state = 422
+			transfer_state = 961
+			set_autonomy = {
+				target = MYS
+				autonomy_state = autonomy_dominion
+			}
+			set_autonomy = {
+				target = RAS
+				autonomy_state = autonomy_dominion
+			}
+		}
+		TIB = {
+			transfer_state = 432
+		}
+		FIR = {
+			country_event = {
+				id = script_events.5
+			}
+			add_ideas = RAJ_for_free_ideas
+		}
+	}  
+}
+
+#日本夺取太平洋岛屿,英国太平洋舰队封锁剩余岛屿
+country_event = {
+	id = script_events.24
+	title = script_events.24.t
+	desc = script_events.24.desc 
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = script_events.24.a 
+		ai_chance = {
+			base = 100
+		}
+		JAP = {
+			transfer_state = 637
+			transfer_state = 629
+			transfer_state = 623
+			transfer_state = 638
+		}
+		add_named_threat = {
+			threat = 5
+			name = ENG_CIVIL_WAR
+		}
+		675 = { set_demilitarized_zone = yes }
+		624 = { set_demilitarized_zone = yes }
+		621 = { set_demilitarized_zone = yes }
+		622 = { set_demilitarized_zone = yes }
+		620 = { set_demilitarized_zone = yes }
+		716 = { set_demilitarized_zone = yes }
+		630 = { set_demilitarized_zone = yes }
+		714 = { set_demilitarized_zone = yes }
+		633 = { set_demilitarized_zone = yes }
+		634 = { set_demilitarized_zone = yes }
+		627 = { set_demilitarized_zone = yes }
+		BOG = {
+			add_timed_idea = {
+				idea = FengSuoLand
+				days = 30
+			}
+		}
+		SOV = {
+			set_country_flag = FengSuoLand_scf
+		}
+	}  
+}
+#亚非利加浩劫
+country_event = {
+	id = script_events.25
+	title = script_events.25.t
+	desc = script_events.25.desc 
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = script_events.25.a 
+		ai_chance = {
+			base = 100
+		}
+		news_event = { id = TVE_News.12 }
+		add_named_threat = {
+			threat = 15.000
+			name = ENG_CIVIL_WAR
+		}
+		ANA = {
+			transfer_state = 861
+			transfer_state = 864
+			transfer_state = 747
+			transfer_state = 549
+			transfer_state = 865
+			transfer_state = 547
+			transfer_state = 863
+			transfer_state = 862
+			transfer_state = 546
+			transfer_state = 557
+			transfer_state = 269
+			transfer_state = 545
+			transfer_state = 822
+			transfer_state = 881
+			transfer_state = 882
+			transfer_state = 883
+			transfer_state = 544
+			transfer_state = 878
+			transfer_state = 879
+			transfer_state = 880
+			set_cosmetic_tag = anarchy_color
+		}
+		EGY = {
+			transfer_state = 444
+		}
+		FNA = {
+			annex_country = {
+				target = LBA
+			}
+		}
+	}  
+}
+#英国恢复秩序
+country_event = {
+	id = script_events.26
+	title = script_events.26.t
+	desc = script_events.26.desc 
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = script_events.26.a 
+		ai_chance = {
+			base = 100
+		}
+		news_event = { id = TVE_News.13 }
+		set_cosmetic_tag = ENG_NEW_color
+		create_faction = TMG
+		remove_ideas = ENG_CIVIL_WAR
+		if = {
+			limit = {
+				MAL = {
+					is_subject = no
+				}
+				has_country_flag = MAL_duli_down
+			}
+			declare_war_on = {
+				target = MLY
+				type = annex_everything
+			}
+			set_autonomy = {
+				target = MAL
+				autonomous_state = autonomy_dominion
+				freedom_level = 0.75
+			}
+			transfer_state = 1020
+		}
+		if = {
+			limit = {
+				has_country_flag = MAL_duli_down
+			}
+			set_autonomy = {
+				target = MAL
+				autonomous_state = autonomy_dominion
+				freedom_level = 0.75
+			}
+			transfer_state = 1020
+		}
+		if = {
+			limit = {
+				has_country_flag = IRE_duli_down
+			}
+			set_autonomy = {
+				target = NIR
+				autonomous_state = autonomy_dominion
+				freedom_level = 0.75
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = IRE_duli_down
+				}
+			}
+			declare_war_on = {
+				target = IRE
+				type = annex_everything
+			}
+			NIR = {
+				transfer_state = 119
+			}
+			set_autonomy = {
+				target = NIR
+				autonomous_state = autonomy_dominion
+				freedom_level = 0.15
+			}
+		}
+		set_autonomy = {
+			target = CAN
+			autonomous_state = autonomy_dominion
+			freedom_level = 0.75
+		}
+		set_autonomy = {
+			target = AST
+			autonomous_state = autonomy_dominion
+			freedom_level = 0.75
+		}
+		set_autonomy = {
+			target = NZL
+			autonomous_state = autonomy_dominion
+			freedom_level = 0.75
+		}
+		set_autonomy = {
+			target = SAF
+			autonomous_state = autonomy_dominion
+			freedom_level = 0.75
+		}
+		set_autonomy = {
+			target = JOR
+			autonomous_state = autonomy_dominion
+			freedom_level = 0.75
+		}
+		set_autonomy = {
+			target = KUW
+			autonomous_state = autonomy_dominion
+			freedom_level = 0.75
+		}
+		set_autonomy = {
+			target = PAL
+			autonomous_state = autonomy_dominion
+			freedom_level = 0.75
+		}
+		set_autonomy = {
+			target = OMA
+			autonomous_state = autonomy_dominion
+			freedom_level = 0.75
+		}
+		annex_country = {
+			target = BOG
+		}
+		annex_country = {
+			target = ANA
+		}
+		CAN = {
+			remove_ideas = Commonwealth_dominant_country
+		}
+		add_ideas = Commonwealth_dominant_country
+		add_ideas = The_afterglow_of_the_sun_that_never_sets
+		transfer_state = 444
+		country_event = { id = script_events.29 days = 30 }
+	}  
+}
+#英国二次入侵印度(event.29)
+country_event = {
+	id = script_events.29
+	title = script_events.29.t
+	desc = script_events.29.desc 
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = script_events.29.a
+		ai_chance = {
+			base = 100
+		}
+		set_autonomy = {
+			target = MYS
+			autonomy_state = autonomy_dominion
+		}
+		set_autonomy = {
+			target = RAS
+			autonomy_state = autonomy_dominion
+		}
+		set_autonomy = {
+			target = HYD
+			autonomy_state = autonomy_dominion
+		}
+		declare_war_on = {
+			target = FIR
+			type = annex_everything
+		}
+		set_global_flag = second_Britiain_Indian_war_scf
+	}
+}
+
+
+#--波兰内战--
+
+#俄国西进(event.27)
+country_event = {
+	id = script_events.27
+	title = script_events.27.t
+	desc = script_events.27.desc 
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = script_events.27.a 
+		ai_chance = {
+			base = 100
+		}
+		news_event = { id = TVE_News.25 }
+		declare_war_on = {
+			target = UKR
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = BLR
+			type = annex_everything
+		}
+		UKR = {
+			country_event = { id = script_events.5 }
+			country_event = { id = script_events.6 }
+			country_event = { id = script_events.7 }
+			country_event = { id = script_events.14 }
+		}
+		BLR = {
+			country_event = { id = script_events.5 }
+			country_event = { id = script_events.6 }
+			country_event = { id = script_events.7 }
+			country_event = { id = script_events.14 }
+		}
+		RKR = {
+			country_event = { id = script_events.15 }
+		}
+		AUS = { country_event = { id = script_events.28 days = 5 } }
+	}
+}
+#奥匈干涉波兰内战(event.28)
+
+#日本皇道派政变(event.30)
+country_event = {
+	id = script_events.30
+	title = script_events.30.t
+	desc = script_events.30.desc 
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = script_events.30.a
+		ai_chance = {
+			base = 100
+		}
+		add_popularity = {
+			ideology = Fascism
+			popularity = 0.35
+		}
+		news_event = { id = TVE_News.42 }
+		country_event = { id = script_events.34 days = 75 }
+		set_politics = { ruling_party = Fascism elections_allowed = no }
+	}
+}
+#日本入侵菲律宾(event.31)
+country_event = {
+	id = script_events.31
+	title = script_events.31.t
+	desc = script_events.31.desc 
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	trigger = {
+		tag = JAP
+		date > 1937.7.17
+	}	
+	fire_only_once = yes
+	option = {
+		name = script_events.31.a
+		ai_chance = {
+			base = 100
+		}
+		FPH = {
+			transfer_state = 614
+			every_state = {
+				limit = {
+					is_core_of = PHI
+				}
+				add_core_of = FPH
+			}
+			declare_war_on = {
+				target = PHI
+				type = annex_everything
+			}
+			country_event = { id = script_events.12 }
+		}
+		JAP = {
+			set_country_flag = PHI_free_war_scf
+		}
+	}
+}
+#俄国整合乌克兰
+country_event = {
+	id = script_events.32
+	title = script_events.32.t
+	desc = script_events.32.desc 
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = script_events.32.a
+		ai_chance = {
+			base = 100
+		}
+		annex_country = {
+			target = RKR
+		}
+		remove_ideas = A_stagnant_economy
+		remove_ideas = rus_polictics
+		remove_ideas = lower_industry
+		remove_ideas = Failed_land_reform
+		add_timed_idea = {
+			idea = Dong_Ou_BaiSejinQu
+			days = 365
+		}
+		country_event = { id = script_events.40 days = 600 }
+	}
+}
+#高加索总督辖区叛乱
+country_event = {
+	id = script_events.33
+	title = script_events.33.t
+	desc = script_events.33.desc 
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	is_triggered_only = yes	
+	fire_only_once = yes
+	option = {
+		name = script_events.33.a
+		ai_chance = {
+			base = 100
+		}
+		SOV = {
+			end_puppet = RCA
+		}
+		RCA = {
+			leave_faction = Moscow_Triple_Entente
+			declare_war_on = {
+				target = SOV
+				type = annex_everything
+			}
+		}
+		RCA = { country_event = { id = script_events.15 } }
+	}
+}
+#日本入侵东北成立伪满洲国
+
+#爱德华八世遇刺(event.35)
+country_event = {
+	id = script_events.35
+	title = script_events.35.t
+	desc = script_events.35.desc 
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	is_triggered_only = yes	
+	fire_only_once = yes
+	option = {
+		name = script_events.35.a
+		ai_chance = {
+			base = 100
+		}
+		kill_country_leader = ENG_Edward_VII
+		create_country_leader = {
+			name = ENG_George_VI
+			picture = GFX_ENG_George_VI
+			expire = "1965.1.1"
+			ideology = Britain_Conservatism
+			traits = {
+			}
+		}
+	}
+}
+#斐迪南死亡,卡尔一世继位(event.36)
+country_event = {
+	id = script_events.36
+	title = script_events.36.t
+	desc = script_events.36.desc 
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	is_triggered_only = yes	
+	fire_only_once = yes
+	option = {
+		name = script_events.36.a
+		ai_chance = {
+			base = 100
+		}
+		kill_country_leader = Archduke_Franz_Ferdinand_of_Austria
+		add_popularity = {
+			ideology = Conservatism_small
+			popularity = 0.35
+		}
+		create_country_leader = {
+			name = AUS_Charles_I
+			picture = GFX_AUS_Charles_I
+			expire = "1965.1.1"
+			ideology = Austria_Hungary_ideologies_Conservatism
+			traits = {
+			}
+		}
+		news_event = { id = TVE_News.17 }
+		set_politics = { ruling_party = Conservatism elections_allowed = no }
+		country_event = { id = script_events.38 days = 1095 }
+	}
+}
+#卡尔遇刺,奥托一世继位(event.37)
+country_event = {
+	id = script_events.37
+	title = script_events.37.t
+	desc = script_events.37.desc 
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	is_triggered_only = yes	
+	fire_only_once = yes
+	option = {
+		name = script_events.37.a
+		ai_chance = {
+			base = 100
+		}
+		kill_country_leader = AUS_Charles_I
+		add_popularity = {
+			ideology = Progressivism
+			popularity = 0.35
+		}
+		set_politics = { ruling_party = Progressivism elections_allowed = no }
+		country_event = { id = script_events.37 days = 105 }
+	}
+}
+#卡尔改革成功
+country_event = {
+	id = script_events.38
+	title = script_events.38.t
+	desc = script_events.38.desc 
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	is_triggered_only = yes	
+	fire_only_once = yes
+	option = {
+		name = script_events.38.a
+		ai_chance = {
+			base = 100
+		}
+		remove_ideas = Irreparable_national_problems_s
+		annex_country = {
+			target = GAL
+		}
+		swap_ideas = {
+			remove_idea = Habsburg_glory
+			add_idea = Habsburg_glory_two
+		}
+		every_state = {
+			limit = {
+				is_owned_by = AUS
+			}
+			add_core_of = AUS
+		}
+		set_cosmetic_tag = AUS_K_reform_win
+		news_event = { id =TVE_News.32 }
+	}
+}
+#奥托改革成功
+country_event = {
+	id = script_events.39
+	title = script_events.39.t
+	desc = script_events.39.desc 
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	is_triggered_only = yes	
+	fire_only_once = yes
+	option = {
+		name = script_events.39.a
+		ai_chance = {
+			base = 100
+		}
+		kill_country_leader = AUS_Charles_I
+		add_popularity = {
+			ideology = Progressivism
+			popularity = 0.35
+		}
+		set_politics = { ruling_party = Progressivism elections_allowed = no }
+		remove_ideas = Irreparable_national_problems_s
+	}
+}
+#俄国整合失地
+country_event = {
+	id = script_events.40
+	title = script_events.40.t
+	desc = script_events.40.desc 
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	is_triggered_only = yes	
+	fire_only_once = yes
+	option = {
+		name = script_events.40.a
+		ai_chance = {
+			base = 100
+		}
+		every_state = {
+			limit  = {
+				is_owned_by = SOV
+			}
+			add_core_of  = SOV
+		}
+	}
+}
+
+#FER VLA
+country_event = {
+	id = script_events.41
+	title = script_events.41.t
+	desc = script_events.41.desc 
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = script_events.41.a 
+		ai_chance = {
+			base = 100
+		}
+		division_template = {
+			name = "Kazachya Kavaleryskaya Diviziya"
+			division_names_group = SOV_CAV_02
+			template_counter = 05
+
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+				infantry = { x = 0 y = 4 }
+			}
+		}
+		capital_scope = {
+			#Cossack Cavalry
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
+			}
+		}
+	}
+}
+
+country_event = {
+	id = script_events.42
+	title = script_events.42.t
+	desc = script_events.42.desc
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	is_triggered_only = yes	
+	fire_only_once = yes
+	option = {
+		name = script_events.42.a
+		ai_chance = {
+			base = 100
+		}
+		every_state = {
+			limit  = {
+				is_owned_by = TAN
+			}
+			add_core_of  = ENT
+		}
+		annex_country = {
+			target = TAN
+			transfer_troops = yes
+		}
+	}
+}
+
+country_event = {
+	id = script_events.43
+	title = script_events.43.t
+	desc = script_events.43.desc 
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	is_triggered_only = yes	
+	fire_only_once = yes
+	option = {
+		name = script_events.43.a
+		ai_chance = {
+			base = 100
+		}
+		declare_war_on = {
+			target = MON
+			type = annex_everything
+		}
+	}
+}
+
+
+
+
+
+
+
+
+#——新闻——
+#--英国内战及其余波--
+news_event = {
+	id = TVE_News.1
+	title = TVE_News.1.t
+	desc = TVE_News.1.d
+	picture = GFX_ENG_KING_DIE
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.1.a
+	}
+}
+news_event = {
+	id = TVE_News.2
+	title = TVE_News.2.t
+	desc = TVE_News.2.d
+	picture = GFX_WLS_SCO_FUCK_UK
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.2.a
+	}
+}
+news_event = {
+	id = TVE_News.3
+	title = TVE_News.3.t
+	desc = TVE_News.3.d
+	picture = GFX_ENG_BTFL
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.3.a
+	}
+}
+news_event = {
+	id = TVE_News.4
+	title = TVE_News.4.t
+	desc = TVE_News.4.d
+	picture = GFX_ENG_CIVIL_WAR
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.4.a
+	}
+}
+news_event = {
+	id = TVE_News.5
+	title = TVE_News.5.t
+	desc = TVE_News.5.d
+	picture = GFX_IRE_JIEYAN
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.5.a
+	}
+}
+news_event = {
+	id = TVE_News.6
+	title = TVE_News.6.t
+	desc = TVE_News.6.d
+	picture = GFX_IRE_CIVIL_WAR
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.6.a
+	}
+}
+news_event = {
+	id = TVE_News.7
+	title = TVE_News.7.t
+	desc = TVE_News.7.d
+	picture = GFX_CAN_YLB
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.7.a
+	}
+}
+news_event = {
+	id = TVE_News.8
+	title = TVE_News.8.t
+	desc = TVE_News.8.d
+	picture = GFX_MAL_CIVIL_WAR
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.8.a
+	}
+}
+news_event = {
+	id = TVE_News.9
+	title = TVE_News.9.t
+	desc = TVE_News.9.d
+	picture = GFX_TUR_CATCH_ENG_STATE
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.9.a
+	}
+}
+news_event = {
+	id = TVE_News.10
+	title = TVE_News.10.t
+	desc = TVE_News.10.d
+	picture = GFX_BOSS_ZB
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.10.a
+	}
+}
+news_event = {
+	id = TVE_News.11
+	title = TVE_News.11.t
+	desc = TVE_News.11.d
+	picture = GFX_RAJ_CIVIL_WAR
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.11.a
+	}
+}
+news_event = {
+	id = TVE_News.12
+	title = TVE_News.12.t
+	desc = TVE_News.12.d
+	picture = GFX_AFRCIAN_ANA
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.12.a
+	}
+}
+news_event = {
+	id = TVE_News.13
+	title = TVE_News.13.t
+	desc = TVE_News.13.d
+	picture = GFX_ENG_CIVIL_WAR_OVER
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.13.a
+	}
+}
+#奥匈帝国境内大规模民族主义分子恐怖袭击
+news_event = {
+	id = TVE_News.14
+	title = TVE_News.14.t
+	desc = TVE_News.14.d
+	picture = GFX_Aus_Hungry_boomerrrrrr
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.14.a
+	}
+}
+#奥匈帝国民族大起义
+news_event = {
+	id = TVE_News.15
+	title = TVE_News.15.t
+	desc = TVE_News.15.d
+	picture = GFX_Aus_Hungry_War
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.15.a
+	}
+}
+#奥匈帝国镇压起义成功
+news_event = {
+	id = TVE_News.16
+	title = TVE_News.16.t
+	desc = TVE_News.16.d
+	picture = GFX_Aus_Hungry_Aus_Win
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.16.a
+	}
+}
+#斐迪南逝世卡尔一世继位
+news_event = {
+	id = TVE_News.17
+	title = TVE_News.17.t
+	desc = TVE_News.17.d
+	picture = GFX_Kare_become_Aus_Leader
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.17.a
+	}
+}
+#邓楠遮起义
+news_event = {
+	id = TVE_News.18
+	title = TVE_News.18.t
+	desc = TVE_News.18.d
+	picture = GFX_Italy_civil_war
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.18.a
+	}
+}
+#毕苏斯基逝世
+news_event = {
+	id = TVE_News.19
+	title = TVE_News.19.t
+	desc = TVE_News.19.d
+	picture = GFX_Poland_Leader_death
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.19.a
+	}
+}
+#邓尼金第二次进军莫斯科
+news_event = {
+	id = TVE_News.20
+	title = TVE_News.20.t
+	desc = TVE_News.20.d
+	picture = GFX_Russia_Coup
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.20.a
+	}
+}
+#第三次日俄战争
+news_event = {
+	id = TVE_News.21
+	title = TVE_News.21.t
+	desc = TVE_News.21.d
+	picture = GFX_Third_Russian_Japan_War
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.21.a
+	}
+}
+#俄国赢得第三次日俄战争
+news_event = {
+	id = TVE_News.22
+	title = TVE_News.22.t
+	desc = TVE_News.22.d
+	picture = GFX_Third_Russian_Japan_War_Russian_Win
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.22.a
+	}
+}
+#波兰内战
+news_event = {
+	id = TVE_News.23
+	title = TVE_News.23.t
+	desc = TVE_News.23.d
+	picture = GFX_Poland_civil_war
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.23.a
+	}
+}
+#高加索总督区叛乱
+news_event = {
+	id = TVE_News.24
+	title = TVE_News.24.t
+	desc = TVE_News.24.d
+	picture = GFX_The_rebellion_in_the_Caucasian_Governorate
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.24.a
+	}
+}
+#俄国西进
+news_event = {
+	id = TVE_News.25
+	title = TVE_News.25.t
+	desc = TVE_News.25.d
+	picture = GFX_Russian_Attack_Western
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.25.a
+	}
+}
+#流亡政府入侵波兰
+news_event = {
+	id = TVE_News.26
+	title = TVE_News.26.t
+	desc = TVE_News.26.d
+	picture = GFX_Prussia_Invasion_Ploand
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.26.a
+	}
+}
+#波罗的海战争
+news_event = {
+	id = TVE_News.27
+	title = TVE_News.27.t
+	desc = TVE_News.27.d
+	picture = GFX_Prussia_Invasion_Baltic
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.27.a
+	}
+}
+#德意志光复战争
+news_event = {
+	id = TVE_News.28
+	title = TVE_News.28.t
+	desc = TVE_News.28.d
+	picture = GFX_Prussia_Attack_Germany
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.28.a
+	}
+}
+#奥匈帝国创建多瑙协定
+news_event = {
+	id = TVE_News.29
+	title = TVE_News.29.t
+	desc = TVE_News.29.d
+	picture = GFX_Aus_Creat_Danube_Agreement
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.29.a
+	}
+}
+#罗马尼亚创建巴尔干同盟
+news_event = {
+	id = TVE_News.30
+	title = TVE_News.30.t
+	desc = TVE_News.30.d
+	picture = GFX_Rommina_Creat_faction
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.30.a
+	}
+}
+#纳粹进军日德兰
+news_event = {
+	id = TVE_News.31
+	title = TVE_News.31.t
+	desc = TVE_News.31.d
+	picture = GFX_Nazi_marches_Denmark
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.31.a
+	}
+}
+#卡尔一世民族改革成功
+news_event = {
+	id = TVE_News.32
+	title = TVE_News.32.t
+	desc = TVE_News.32.d
+	picture = GFX_Kare_Reform_win
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.32.a
+	}
+}
+#巴尔干战争
+news_event = {
+	id = TVE_News.33
+	title = TVE_News.33.t
+	desc = TVE_News.33.d
+	picture = GFX_Balkan_Wars
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.33.a
+	}
+}
+#流亡政府占领柏林
+news_event = {
+	id = TVE_News.34
+	title = TVE_News.34.t
+	desc = TVE_News.34.d
+	picture = GFX_Prussia_Occupation_Berlin
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.34.a
+	}
+}
+#奥匈帝国占领南德意志
+
+#英德同盟
+news_event = {
+	id = TVE_News.36
+	title = TVE_News.36.t
+	desc = TVE_News.36.d
+	picture = GFX_Britain_Gremany_faction
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.36.a
+	}
+}
+#第二次世界大战
+news_event = {
+	id = TVE_News.37
+	title = TVE_News.37.t
+	desc = TVE_News.37.d
+	picture = GFX_Seocnd_World_War
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.37.a
+	}
+}
+
+#中国内战结束
+news_event = {
+	id = TVE_News.38
+	title = TVE_News.38.t
+	desc = TVE_News.38.d
+	picture = GFX_China_Civil_War_Endding
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.38.a
+	}
+}
+#中国内战开始
+news_event = {
+	id = TVE_News.39
+	title = TVE_News.39.t
+	desc = TVE_News.39.d
+	picture = GFX_China_Civil_War
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.39.a
+	}
+}
+#中俄合作
+news_event = {
+	id = TVE_News.40
+	title = TVE_News.40.t
+	desc = TVE_News.40.d
+	picture = GFX_China_Russia_Coperate
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.40.a
+	}
+}
+#日本封锁台湾海峡
+news_event = {
+	id = TVE_News.41
+	title = TVE_News.41.t
+	desc = TVE_News.41.d
+	picture = GFX_Japan_Attack_TaiWan_Land
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.41.a
+	}
+}
+#皇道派政变
+news_event = {
+	id = TVE_News.42
+	title = TVE_News.42.t
+	desc = TVE_News.42.d
+	picture = GFX_Japan_Coup
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.42.a
+	}
+}
+#满洲事变
+news_event = {
+	id = TVE_News.43
+	title = TVE_News.43.t
+	desc = TVE_News.43.d
+	picture = GFX_ManChuKuo
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.43.a
+	}
+}
+#俄国进军中亚
+news_event = {
+	id = TVE_News.44
+	title = TVE_News.44.t
+	desc = TVE_News.44.d
+	picture = GFX_Russian_invasion_Central_Asia
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.44.a
+	}
+}
+#第二次中日战争
+news_event = {
+	id = TVE_News.45
+	title = TVE_News.45.t
+	desc = TVE_News.45.d
+	picture = GFX_Second_China_Japan_War
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.45.a
+	}
+}
+
+#棉花带起义
+news_event = {
+	id = TVE_News.46
+	title = TVE_News.46.t
+	desc = TVE_News.46.d
+	picture = GFX_Cottonrevolution
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.46.a
+	}
+}
+#第二次美国内战开始
+news_event = {
+	id = TVE_News.47
+	title = TVE_News.47.t
+	desc = TVE_News.47.d
+	picture = GFX_Second_Amercian_War_Start
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.47.a
+	}
+}
+#联盟国统一美国
+news_event = {
+	id = TVE_News.48
+	title = TVE_News.48.t
+	desc = TVE_News.48.d
+	picture = GFX_CSA_fucked_Nothern_USA
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = TVE_News.48.a
+	}
+}

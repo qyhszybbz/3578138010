@@ -1,0 +1,39 @@
+spriteTypes = {
+	#ideas
+	spriteType = {
+		name = "GFX_idea_Papal_Meridian"
+		texturefile = "gfx/interface/ideas/POR/Papal_Meridian.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_king_in_huoshan"
+		texturefile = "gfx/interface/ideas/POR/king_in_huoshan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_zhiming_headache"
+		texturefile = "gfx/interface/ideas/POR/zhiming_headache.png"
+	}
+	spriteType = {
+		name = "GFX_idea_spr_ring"
+		texturefile = "gfx/interface/ideas/POR/spr_ring.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_MZB_expanding_colony"
+		texturefile = "gfx/interface/ideas/POR/MZB_expanding_colony.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_MZB_Resistance"
+		texturefile = "gfx/interface/ideas/POR/MZB_Resistance.png"
+	}
+	spriteType = {
+		name = "GFX_Duarte_II"
+		texturefile = "gfx/leaders/POR/Duarte_II.dds"
+	}
+	spriteType = { #安东尼奥·萨拉查
+		name = "GFX_leader_POR_Antonio_Salazar"
+		texturefile = "gfx/leaders/POR/Antonio_Salazar.png"
+		legacy_lazy_load = no
+	}
+
+}

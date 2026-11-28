@@ -1,0 +1,23 @@
+ideas = {
+	country = {
+		PAN_between_two_united_states = { #在两个美国之间
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PAN_between_two_united_states"}
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = 0.02
+			}
+			targeted_modifier = {
+				tag = CSA
+				trade_opinion_factor = 0.15
+			}
+		}
+		PAN_Countdown_to_Gran_Columbia = { #大哥伦比亚的倒计时
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PAN_Countdown_to_Gran_Columbia "}
+			modifier = {
+				army_org_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+	}
+
+}

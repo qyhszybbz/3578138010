@@ -1,0 +1,236 @@
+division_template = {
+	name = "海德拉巴骑军" 
+	is_locked = no
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+		military_police = { x = 0 y = 0 }
+	}	
+}
+division_template = {
+	name = "海德拉巴非正规军" 
+	is_locked = no
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+	}
+	regimental_support = {
+		field_guns = { x = 0 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}	
+}
+division_template = {
+	name = "旧英印军" 
+	is_locked = no
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+        artillery_brigade = { x = 2 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}	
+}
+division_template = {
+	name = "宫廷卫队" 
+	is_locked = no
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+        artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+
+	}
+	regimental_support = {
+		field_guns = { x = 0 y = 0 }
+		field_guns = { x = 0 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		military_police = { x = 0 y = 2 }
+	}	
+}
+division_template = {
+	name = "旧英印摩托化部队" 
+	is_locked = no
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		light_armor = { x = 2 y = 0 }
+		light_armor = { x = 2 y = 1 }
+		light_armor = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		mot_recon = { x = 0 y = 1 }
+	}	
+}
+
+units = {
+	division = {
+		location = 12114
+		division_template = "旧英印摩托化部队"
+		start_experience_factor = 0.85
+		start_equipment_factor = 0.90
+		start_manpower_factor = 1.0
+		force_equipment_variants = {
+			infantry_equipment_1 = {
+				owner = ENG
+			}
+			motorized_equipment_1 = {
+				owner = ENG
+			}
+			support_equipment_1 = {
+				owner = ENG
+			}
+			light_tank_chassis_1 = {
+				owner = ENG version_name = "Light Tank Mk. IV"
+			}
+		}
+	}
+	division = {
+		location = 10324
+		division_template = "旧英印摩托化部队"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.90
+		start_manpower_factor = 1.0
+		force_equipment_variants = {
+			infantry_equipment_1 = {
+				owner = ENG
+			}
+			motorized_equipment_1 = {
+				owner = ENG
+			}
+			support_equipment_1 = {
+				owner = ENG
+			}
+			light_tank_chassis_1 = {
+				owner = ENG version_name = "Light Tank Mk. IV"
+			}
+		}
+	}	
+	division = {
+		location = 8087
+		division_template = "宫廷卫队"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.0
+		start_manpower_factor = 1.0
+	}
+	division = {
+		location = 11950
+		division_template = "旧英印军"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.0
+		start_manpower_factor = 1.0
+	}
+	division = {
+		location = 1275
+		division_template = "旧英印军"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.0
+		start_manpower_factor = 1.0
+	}
+	division = {
+		location = 5063
+		division_template = "海德拉巴非正规军"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+		start_manpower_factor = 1.0
+	}
+	division = {
+		location = 1317
+		division_template = "海德拉巴非正规军"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+		start_manpower_factor = 1.0
+	}
+	division = {
+		location = 1359
+		division_template = "海德拉巴非正规军"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+		start_manpower_factor = 1.0
+	}
+	division = {
+		location = 7060
+		division_template = "海德拉巴非正规军"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+		start_manpower_factor = 1.0
+	}
+	division = {
+		location = 10511
+		division_template = "海德拉巴骑军"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+		start_manpower_factor = 1.0
+	}
+	division = {
+		location = 10311
+		division_template = "海德拉巴骑军"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+		start_manpower_factor = 1.0
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+		}
+		requested_factories = 1
+		progress = 0.82
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+		}
+		requested_factories = 1
+		progress = 0.83
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+		}
+		requested_factories = 1
+		progress = 0.44
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+		}
+		requested_factories = 1
+		progress = 0.12
+		efficiency = 100
+	}
+}

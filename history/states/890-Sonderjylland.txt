@@ -1,0 +1,27 @@
+state = {
+	id = 890
+	name = "STATE_890"
+
+	manpower = 418058
+	state_category = rural
+
+	history = {
+		owner = DEN
+		add_core_of = DEN
+		victory_points = {
+			13258 1 
+		}
+		add_claim_by = GER
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+		}
+	}
+
+
+	provinces={
+		332 11251 13258
+	}
+	
+	local_supplies=0.000
+}

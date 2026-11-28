@@ -1,0 +1,40 @@
+ideas = {
+	country = { 
+		BRA_The_tyranny_of_mac = { #牛奶和咖啡的专制
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRA_The_tyranny_of_mac"}
+			modifier = {
+				stability_factor = 0.1
+				political_power_factor = -0.1
+				command_power_gain_mult = -0.1
+				Conservatism_drift = 0.01
+				Authoritarianism_drift = 0.01
+			}
+		}
+		BRA_Inflated_states_rights = { #膨胀的州权
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRA_Inflated_states_rights"}
+			modifier = {
+				resistance_target = 0.25
+				production_speed_buildings_factor = -0.1
+				local_resources_factor = -0.1
+				industrial_capacity_factory = -0.1
+			}
+
+		}
+		BRA_Arrogant_Republicans = { #嚣张的共和派
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRA_Arrogant_Republicans"}
+			modifier = {
+				stability_factor = -0.2
+				war_support_factor = 0.1
+				consumer_goods_factor = 0.1
+			}
+			
+		}
+		BRA_unitary_economy = { #单一的经济
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRA_unitary_economy"}
+			modifier = {
+				industrial_capacity_factory = -0.2
+				production_factory_max_efficiency_factor = -0.1
+			}
+		}
+	}
+}

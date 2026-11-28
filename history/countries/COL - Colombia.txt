@@ -1,0 +1,62 @@
+﻿capital = 305
+
+oob = "COL_1936"
+
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_trucks = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+}
+
+set_convoys = 50
+add_ideas = {
+	COL_The_legacy_and_aotgm
+	COL_divided_house
+	COL_Fulfilling_Bolivars_last_wish
+	COL_Cooperation_between_baa
+	COL_Do_not_train_the_border
+}
+recruit_character = COL_Jorge_Elisel_Gaitan #豪尔赫·埃利塞尔·盖坦
+recruit_character = COL_National_Assembly #大哥伦比亚国民议会
+recruit_character = COL_Plinio_Mendoza_Nera #普利尼奥·门多萨·内拉
+set_politics = {
+	ruling_party = Progressivism
+	last_election = "1934.2.11"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	communism = 6
+	Socialism = 7
+	Progressivism = 37
+	Liberalism = 10
+	Democracy = 0
+	Authoritarianism = 15
+	tttt = 15
+	fascism = 5
+	nazism = 5
+}
+BRA = {
+	add_opinion_modifier = {
+	target = COL
+	modifier = COL_Do_not_train_the_border
+}
+}
+BOL = {
+	add_opinion_modifier = {
+	target = COL
+	modifier = COL_Do_not_train_the_border
+}
+}
+GYA = {
+	add_opinion_modifier = {
+	target = COL
+	modifier = COL_Do_not_train_the_border 
+}
+}
+

@@ -1,0 +1,16 @@
+spriteTypes = {
+	spriteType = { #埃米利奥·阿基纳尔多
+		name = "GFX_idea_PHI_Emilio_Archinardo"
+		texturefile = "gfx/leaders/PHI/TVE_PHI_Emilio_Archinardo.dds"
+	}
+
+
+	spriteType = { #众岛之国
+		name = "GFX_idea_PHI_bansang_isla"
+		texturefile = "gfx/interface/ideas/PHI/TVE_PHI_bansang_isla.dds"
+	}
+	spriteType = { #亚洲前哨
+		name = "GFX_idea_PHI_asian_outpost"
+		texturefile = "gfx/interface/ideas/PHI/TVE_PHI_asian_outpost.dds"
+	}
+}

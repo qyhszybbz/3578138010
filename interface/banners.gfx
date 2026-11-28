@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Habsburg_glory"
+		texturefile = "gfx/texticons/banners/Habsburg_glory.dds"
+		legacy_lazy_load = no
+	}
+}

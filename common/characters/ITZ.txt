@@ -1,0 +1,17 @@
+characters = {
+	ITZ_Jose_Ramon_Antonio = { #何塞·雷蒙·安东尼奥
+		name= ITZ_Jose_Ramon_Antonio
+		portraits={
+			civilian={
+				large= GFX_leader_ITZ_Jose_Ramon_Antonio
+			}
+		}
+		country_leader={
+			ideology= tttt_small
+			#desc = ITZ_Jose_Ramon_Antonio_desc
+			traits={ 
+				
+			}
+		}
+	} 
+}

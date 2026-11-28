@@ -1,0 +1,17 @@
+characters={
+	#领导人
+	#阿卜杜勒-拉赫曼·马赫迪
+	SUD_Abd_Rahman_Mahdi = {
+		name = SUD_Abd_Rahman_Mahdi
+		portraits = {
+			civilian = {
+				large = GFX_SUD_Abd_Rahman_Mahdi_large
+			}
+		}
+		country_leader = {
+			desc = SUD_Abd_Rahman_Mahdi_desc
+			ideology = Absolute_monarchy
+			traits = { SUD_Son_of_Savior }
+		}
+	}
+}

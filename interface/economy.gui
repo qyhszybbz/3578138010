@@ -1,0 +1,31 @@
+guiTypes = {
+	containerWindowType = {
+		name = "economy_window"
+		position = { x= 5 y = 100 }
+		size = { width=134 height=175}
+		clipping = no
+		fade_time = 500
+		fade_type = linear
+		clipping = no
+		moveable = yes
+		background = {
+			name = "background"
+			quadTextureSprite = "GFX_economy_bg"
+			clicksound = click_checkbox
+		}
+		#instantTextBoxType = {
+		#	name = "title"
+		#	position = { x = -70 y = 50 }
+		#	textureFile = ""
+		#	font = "hoi_30"
+		#	borderSize = {x = 0 y = 0}
+		#	text = [?aus_economy]B
+		#	maxWidth = 340
+		#	maxHeight = 30
+		#	format = center
+		#}
+
+
+		
+	}
+}

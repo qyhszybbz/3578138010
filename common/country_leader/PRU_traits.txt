@@ -1,0 +1,8 @@
+leader_traits = {
+
+	#社会民主之囚
+	PRU_social_democracy_prisoner = {
+		random = no
+		Progressivism_drift = -0.02
+	}
+}

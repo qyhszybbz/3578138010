@@ -1,0 +1,101 @@
+﻿division_template = {
+	name = "División de Infantería de Montaña"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "Batallón de Cazadores de la Selva"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		name = "1.a División de Infantería de Montaña"
+		location = 5190
+		division_template = "División de Infantería de Montaña"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+		
+	}
+
+	division = {
+		name = "2.a División de Infantería de Montaña"
+		location = 2210
+		division_template = "División de Infantería de Montaña"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+		
+	}
+
+	division = {
+		name = "3.a División de Infantería de Montaña"
+		location = 2210
+		division_template = "División de Infantería de Montaña"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+		
+	}
+
+	division = {
+		name = "4.a División de Infantería de Montaña"
+		location = 2210
+		division_template = "División de Infantería de Montaña"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+
+	division = {
+		name = "5.a División de Infantería de Montaña"
+		location = 2210
+		division_template = "División de Infantería de Montaña"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+
+	division = {
+		name = "I Batallón de Cazadores"
+		location = 8160
+		division_template = "Batallón de Cazadores de la Selva"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+
+	division = {
+		name = "II Batallón de Cazadores"
+		location = 13316
+		division_template = "Batallón de Cazadores de la Selva"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+}
+
+### Starting Equipment ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "PRU"
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 100
+	}
+}

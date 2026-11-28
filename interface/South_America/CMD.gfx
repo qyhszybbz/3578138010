@@ -1,0 +1,18 @@
+SpriteTypes = { 
+	#领导人
+	spriteType = { #汉斯·孔特
+		name = "GFX_leader_CMD_Hans_Koont"
+		texturefile = "gfx/leaders/CMD/CMD_Hans_Koont.dds"
+	}
+	#民族精神
+	spriteType = { #黑金之梦
+		name = "GFX_idea_CMD_black_gold_dream"
+		texturefile = "gfx/interface/ideas/CMD/CMD_black_gold_dream.dds"
+	}
+	spriteType = { #匪帮肆虐
+		name = "GFX_idea_CMD_banditry_rampant"
+		texturefile = "gfx/interface/ideas/CMD/CMD_banditry_rampant.dds"
+	}
+	
+
+}

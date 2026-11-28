@@ -1,0 +1,28 @@
+
+state={
+	id = 1272
+	name="STATE_1272"
+	manpower = 16584
+	resources={
+
+	}
+	state_category = large_city
+
+	history={
+		owner = PAP
+		add_core_of = PAP
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+		}
+		victory_points = {
+			13471 15
+		}
+	}
+
+	provinces={
+		13471
+	}
+
+	local_supplies=0.0 
+}

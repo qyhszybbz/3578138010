@@ -1,0 +1,38 @@
+ideas = {
+	country= {
+		### 初始民族精神 ###
+		#非洲福利之邦
+		SAF_Welfare_State_in_Africa = {
+			on_add = { log = "[GetLogRoot]: add idea SAF_Welfare_State_in_Africa" }
+			picture = Welfare_State_in_Africa
+			allowed = { always = no }
+			modifier = {
+				stability_factor = 0.15
+				political_power_gain = 0.1
+				production_speed_buildings_factor = 0.05
+				consumer_goods_factor = 0.10
+			}
+		}
+		#同床异梦的党
+		SAF_Party_with_Facade_of_Peace = {
+			on_add = { log = "[GetLogRoot]: add idea SAF_Party_with_Facade_of_Peace" }
+			picture = Party_with_Facade_of_Peace
+			allowed = { always = no }
+			modifier = {
+				
+			}
+		}
+		#分裂之家
+		SAF_House_Divided = {
+			on_add = { log = "[GetLogRoot]: add idea SAF_House_Divided" }
+			picture = House_Divided
+			allowed = { always = no }
+			modifier = {
+				war_support_factor = -0.10
+				stability_factor = -0.05
+				fascism_drift = 0.01
+				nazism_drift = 0.01
+			}
+		}
+	}
+}

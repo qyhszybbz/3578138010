@@ -1,0 +1,26 @@
+state={
+	id = 932
+	name="STATE_932"
+	resources={
+		oil=3.000
+	}
+	provinces={
+		2169 12946 12952 13305 
+	}
+	history = {
+
+		owner = BTG
+		add_core_of = BTG
+		add_core_of = ARG
+
+		buildings = {
+			infrastructure = 1
+		}
+
+		
+	}
+	manpower=87689
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

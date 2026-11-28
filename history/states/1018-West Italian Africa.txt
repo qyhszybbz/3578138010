@@ -1,0 +1,26 @@
+state={
+	id = 1018
+	name="STATE_1018"
+	resources={
+	}
+
+	state_category = wasteland
+
+
+	history={
+		owner = FNA
+		buildings = {
+			infrastructure = 0
+		}
+		add_core_of = LBA
+
+	}
+
+	provinces={
+		12082 12866 12022 5004 10884 4962
+	}
+	manpower = 15917
+	buildings_max_level_factor=1.000
+
+	local_supplies=0.0 
+}

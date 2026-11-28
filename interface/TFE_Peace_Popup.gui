@@ -1,0 +1,95 @@
+@FACTION_TEXT_X = 55
+@LOYALTY_TEXT_X = 240
+@POPULARITY_TEXT_X = 380
+@FACTION_ICONS_X = 10
+@FACTION_NAMES_X = 55
+@HEADERS_Y = 0
+guiTypes = {
+	containerWindowType = {
+		name = "TFE_peace_popup_window"
+		position = { x = 0 y = 0 }
+		size = { width = 600 height = 382 }		
+		orientation= center
+		origo = center
+		moveable = yes
+		fade_time = 200
+		fade_type = linear
+		show_sound = peace_summary_message
+		hide_sound = menu_close_window
+		click_to_front = yes
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_TVE_PEACE_POP"
+		}
+
+		instantTextBoxType = {
+			name = "title"
+			position = { x = 85 y = 100 }
+			textureFile = ""
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "TFE_Peace_Pop_Title"
+			maxWidth = 410
+			maxHeight = 200
+			format = centre
+		}
+
+		instantTextBoxType = {
+			name = "description"
+			position = { x = 80 y = 210 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "TFE_Peace_Popup_description"
+			maxWidth = 410
+			maxHeight = 200
+			format = centre
+		}
+		instantTextBoxType = {
+			name = "flavor"
+			position = { x = 70 y = 260 }
+			textureFile = ""
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = -8}
+			text = "TFE_PEACE_POPUP_FLAVOR"
+			maxWidth = 460
+			maxHeight = 100
+			format = centre
+		}
+
+		instantTextBoxType = {
+			name = "War_over"
+			position = { x = 100 y = 240 }
+			textureFile = ""
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "TFE_PEACE_POP_War_over"
+			maxWidth = 410
+			maxHeight = 200
+			format = centre
+		}		
+
+
+		buttonType = {
+			name = "close_button"
+			position = { x=225 y =340 }
+			quadTextureSprite ="GFX_TVE_PEACE_BUTTON"
+			buttonText = "TFE_close_button"
+			buttonFont = "hoi_18mbs"
+			shortcut = "RETURN"
+			clicksound = click_ok
+		}
+		iconType = {
+			name = "flag_1"
+			position = { x = 120 y = 130 }
+			quadTextureSprite = "GFX_player_flag"
+		}
+		
+		iconType = {
+			name = "flag_2"
+			position = { x = 388 y = 130 }
+			quadTextureSprite = "GFX_player_flag"
+		}
+	}
+}

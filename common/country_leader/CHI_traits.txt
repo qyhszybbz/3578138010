@@ -1,0 +1,9 @@
+leader_traits ={
+    #领导人特质
+	#悬剑欲坠
+    CHI_Assassination_Crisis = {
+        random = no
+        political_power_gain = -0.12
+        stability_factor = -0.08
+    }
+}

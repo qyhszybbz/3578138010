@@ -1,0 +1,30 @@
+state = {
+	id = 384
+	name = "STATE_384"
+	manpower = 475480
+	
+	state_category = large_town
+
+	history = {
+		owner = CAN
+		add_core_of = USA
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+			dockyard = 1
+			air_base = 5
+			# Grand Coulee Dam
+			10327 = { dam = 1 }
+		}
+		victory_points = {
+			1690 10 # Spokane
+		}
+	}
+
+	provinces = {
+		4747 10687 12673 10693 1690 10327
+	}
+
+	local_supplies = 0.0 
+}

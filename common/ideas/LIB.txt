@@ -1,0 +1,51 @@
+ideas = {
+
+	country = {
+
+		LIB_shattered_land = { #饱受摧残的土地
+			#picture = generic_production_bonus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = -0.20
+				conscription_factor = -0.05
+				army_org_regain = -0.15
+				supply_factor = -0.20
+				production_factory_efficiency_gain_factor = -0.25
+				production_factory_max_efficiency_factor = -0.10
+			}
+		}
+
+		LIB_richmond_divide_and_rule = { #里士满的政策：以夷制夷
+			#picture = generic_pp_unity_bonus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.05
+				stability_factor = -0.25
+			}
+
+			rule = {
+				can_access_market = yes
+			}
+		}
+	}
+}

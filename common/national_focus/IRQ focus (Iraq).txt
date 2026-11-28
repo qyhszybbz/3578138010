@@ -1,0 +1,494 @@
+focus_tree = {
+	id = TFE_iraq_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 500
+			tag = IRQ
+		}
+	}
+
+	#正式讨论人道主义问题
+	focus = {
+		id = IRQ_discuss_Humanitarian_issues
+		icon = GFX_IRQ_discuss_Humanitarian_issues
+		cost = 3
+		x = 8
+		y = 0
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+			has_country_flag = IRQ_Humanitarian_issues
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+
+		}
+	}
+	#向受害者公开道歉
+	focus = {
+		id = IRQ_Public_apology
+		icon = GFX_IRQ_Public_apology
+		relative_position_id = IRQ_discuss_Humanitarian_issues
+		prerequisite = { focus = IRQ_discuss_Humanitarian_issues }
+		mutually_exclusive = { focus = IRQ_Facing_Oneself }
+		x = -4
+		y = 1
+
+		cost = 3
+
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {	
+			
+		}
+	}
+	#勇于面对自我
+	focus = {
+		id = IRQ_Facing_Oneself
+		icon = GFX_IRQ_Facing_Oneself
+		relative_position_id = IRQ_discuss_Humanitarian_issues
+		prerequisite = { focus = IRQ_discuss_Humanitarian_issues focus = IRQ_Baghdad_Victory_Parade }
+		mutually_exclusive = { focus = IRQ_Public_apology }
+		x = 2
+		y = 1
+
+		cost = 3
+
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {	
+			
+		}
+	}
+	#翻案无罪亚述人
+	focus = {
+		id = IRQ_Reversed_Assyrians
+		icon = GFX_IRQ_Reversed_Assyrians
+		relative_position_id = IRQ_discuss_Humanitarian_issues
+		prerequisite = { focus = IRQ_discuss_Humanitarian_issues }
+		x = 0
+		y = 2
+
+		cost = 3
+
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = { 
+
+		}
+	}
+	#全面弥合民族矛盾
+	focus = {
+		id = IRQ_Bridge_ethnic_conflicts
+		icon = GFX_IRQ_Bridge_ethnic_conflicts
+		relative_position_id = IRQ_discuss_Humanitarian_issues
+		prerequisite = { focus = IRQ_Reversed_Assyrians }
+		mutually_exclusive = { focus = IRQ_Compensation_Policy }
+		mutually_exclusive = { focus = IRQ_Blood_for_blood }
+		x = -2
+		y = 3
+
+		cost = 3
+
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {	
+			
+		}
+	}
+	#有原则补偿政策
+	focus = {
+		id = IRQ_Compensation_Policy
+		icon = GFX_IRQ_Compensation_Policy
+		relative_position_id = IRQ_discuss_Humanitarian_issues
+		prerequisite = { focus = IRQ_Facing_Oneself }
+		mutually_exclusive = { focus = IRQ_Bridge_ethnic_conflicts }
+		mutually_exclusive = { focus = IRQ_Blood_for_blood }
+		x = 2
+		y = 3
+
+		cost = 3
+
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {	
+			
+		}
+	}
+	#无民族的工农联盟
+	focus = {
+		id = IRQ_nonnationalist_alliance_of_workers
+		icon = GFX_IRQ_nonnationalist_alliance_of_workers
+		relative_position_id = IRQ_discuss_Humanitarian_issues
+		prerequisite = { focus = IRQ_Public_apology } 
+		prerequisite = { focus = IRQ_Bridge_ethnic_conflicts } 
+		x = -4
+		y = 4
+
+		cost = 3
+
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {	
+			
+		}
+	}
+	#公理正义
+	focus = {
+		id = IRQ_Axioms_and_Justice
+		icon = GFX_IRQ_Axioms_and_Justice
+		relative_position_id = IRQ_discuss_Humanitarian_issues
+		prerequisite = { focus = IRQ_Bridge_ethnic_conflicts focus = IRQ_Compensation_Policy } 
+		x = 0
+		y = 4
+
+		cost = 3
+
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {	
+			
+		}
+	}
+	#表彰阿拉伯革命者
+	focus = {
+		id = IRQ_Commend_Arab_revolutionaries
+		icon = GFX_IRQ_Commend_Arab_revolutionaries
+		relative_position_id = IRQ_discuss_Humanitarian_issues
+		prerequisite = { focus = IRQ_Compensation_Policy } 
+		x = 4
+		y = 4
+
+		cost = 3
+
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {	
+			
+		}
+	}
+	#强化社会主义意识
+	focus = {
+		id = IRQ_Strengthen_socialist_consciousness
+		icon = GFX_IRQ_Strengthen_socialist_consciousness
+		relative_position_id = IRQ_discuss_Humanitarian_issues
+		prerequisite = { focus = IRQ_Axioms_and_Justice focus = IRQ_Commend_Arab_revolutionaries } 
+		x = 0
+		y = 5
+
+		cost = 3
+
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {	
+			
+		}
+	}
+
+	#巴格达胜利阅兵
+	focus = {
+		id = IRQ_Baghdad_Victory_Parade
+		icon = GFX_IRQ_Baghdad_Victory_Parade
+		cost = 3
+		x = 16
+		y = 0
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+			has_country_flag = IRQ_Victory_Parade
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+
+		}
+	}
+	#骄傲凯旋
+	focus = {
+		id = IRQ_Triumphant_Pride
+		icon = GFX_IRQ_Triumphant_Pride
+		relative_position_id = IRQ_Baghdad_Victory_Parade
+		prerequisite = { focus = IRQ_Baghdad_Victory_Parade }
+		mutually_exclusive = { focus = IRQ_Rebuke_traitor }
+		x = -2
+		y = 1
+
+		cost = 3
+
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {	
+			
+		}
+	}
+	#痛斥祖国叛徒
+	focus = {
+		id = IRQ_Rebuke_traitor
+		icon = GFX_IRQ_Rebuke_traitor
+		relative_position_id = IRQ_Baghdad_Victory_Parade
+		prerequisite = { focus = IRQ_Baghdad_Victory_Parade }
+		mutually_exclusive = { focus = IRQ_Triumphant_Pride }
+		x = 2
+		y = 1
+
+		cost = 3
+
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {	
+			
+		}
+	}
+	#宣扬伊拉克团结
+	focus = {
+		id = IRQ_Promote_unity
+		icon = GFX_IRQ_Promote_unity
+		relative_position_id = IRQ_Baghdad_Victory_Parade
+		prerequisite = { focus = IRQ_Triumphant_Pride }
+		x = -4
+		y = 2
+
+		cost = 3
+
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = { 
+
+		}
+	}
+	#指责犹太复国主义
+	focus = {
+		id = IRQ_Blaming_Jews
+		icon = GFX_IRQ_Blaming_Jews
+		relative_position_id = IRQ_Baghdad_Victory_Parade
+		prerequisite = { focus = IRQ_Triumphant_Pride focus = IRQ_Rebuke_traitor } 
+		x = 0
+		y = 2
+
+		cost = 3
+
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {	
+			
+		}
+	}
+	#血债血偿
+	focus = {
+		id = IRQ_Blood_for_blood
+		icon = GFX_IRQ_Blood_for_blood
+		relative_position_id = IRQ_Baghdad_Victory_Parade
+		prerequisite = { focus = IRQ_Promote_unity }
+		mutually_exclusive = { focus = IRQ_Bridge_ethnic_conflicts }
+		mutually_exclusive = { focus = IRQ_Compensation_Policy }
+		x = 0
+		y = 3
+
+		cost = 3
+
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = { 
+
+		}
+	}
+	#遏制极端主义
+	focus = {
+		id = IRQ_Curb_extremism
+		icon = GFX_IRQ_Curb_extremism
+		relative_position_id = IRQ_Baghdad_Victory_Parade
+		prerequisite = { focus = IRQ_Rebuke_traitor } 
+		prerequisite = { focus = IRQ_Blood_for_blood } 
+		x = 2
+		y = 4
+
+		cost = 3
+
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {	
+			
+		}
+	}
+	#嫉恶如仇之革命
+	focus = {
+		id = IRQ_Jealous_Revolution
+		icon = GFX_IRQ_Jealous_Revolution
+		relative_position_id = IRQ_Baghdad_Victory_Parade
+		prerequisite = { focus = IRQ_Blood_for_blood }
+		x = 0
+		y = 5
+
+		cost = 3
+
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+			
+		}
+		bypass = {
+			
+		}
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = { 
+
+		}
+	}
+
+}

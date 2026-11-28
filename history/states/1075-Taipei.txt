@@ -1,0 +1,30 @@
+state={
+	id = 1075
+	name="STATE_1075"
+	manpower = 1626749
+
+	state_category = town
+
+	history={
+		owner = JAP
+		add_core_of = PRC
+		add_core_of = CHI
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			air_base = 2
+			9955 = {
+				naval_base = 6
+			}
+		}
+		victory_points = {
+			7186 5 #台北市
+		}
+	}
+
+	provinces={
+		7186 7214 9955
+	}
+
+	local_supplies=7.0 
+}

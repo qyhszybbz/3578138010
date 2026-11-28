@@ -1,0 +1,41 @@
+compliance_integration_state_50 = {
+	type = state_compliance_modifier
+	icon = "GFX_occupation_compliance_modifier_strip:5"
+	small_icon = "GFX_occupation_compliance_modifier_small_strip:5"
+	threshold = 50
+	margin = 2
+
+	visible = {
+		occupied_country_tag = event_target:system
+		check_variable = { can_integrate_@FROM = 50 }
+	}
+
+	enabled = {
+		is_owned_by = ROOT
+	}
+
+	on_enable = {
+		add_state_core_upon_reaching_compliance_threshold = yes
+	}
+}
+
+compliance_integration_state_80 = {
+	type = state_compliance_modifier
+	icon = "GFX_occupation_compliance_modifier_strip:5"
+	small_icon = "GFX_occupation_compliance_modifier_small_strip:5"
+	threshold = 80
+	margin = 2
+
+	visible = {
+		occupied_country_tag = event_target:system
+		check_variable = { can_integrate_@FROM = 80 }
+	}
+
+	enabled = {
+		is_owned_by = ROOT
+	}
+
+	on_enable = {
+		add_state_core_upon_reaching_compliance_threshold = yes
+	}
+}

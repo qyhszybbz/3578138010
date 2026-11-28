@@ -1,0 +1,25 @@
+spriteTypes = {	
+	#领导人(临时)
+	SpriteType = {
+		name = "GFX_leaders_William_Dudley_Pelley"
+		texturefile = "gfx/leaders/CSA/CSA_William_Henry_Davis_Murray.dds"			
+	}
+	### new tfv nat spirit icons
+	SpriteType = {
+		name = "GFX_idea_CSA_jackson_stone_wall"
+		texturefile = "gfx/interface/ideas/idea_CSA_jackson_stone_wall.dds"			
+	}
+	SpriteType = {
+		name = "GFX_idea_CSA_slave_and_industry"
+		texturefile = "gfx/interface/ideas/idea_CSA_slave_and_industry.dds"			
+	}
+	SpriteType = {
+		name = "GFX_idea_CSA_victory_of_civ_war"
+		texturefile = "gfx/interface/ideas/idea_CSA_victory_of_civ_war.dds"			
+	}
+	SpriteType = {
+		name = "GFX_idea_CSA_west_slave_baodong"
+		texturefile = "gfx/interface/ideas/idea_CSA_west_slave_baodong.dds"			
+	}
+
+}

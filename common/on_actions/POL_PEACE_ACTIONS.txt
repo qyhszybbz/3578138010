@@ -1,0 +1,155 @@
+on_actions = {
+	#乌克兰叛乱
+	on_capitulation = {
+		effect =  {
+			if = {
+				limit ={
+					FROM = {
+						original_tag = POL
+					}
+					ROOT = {
+						original_tag = UKR
+					}
+				}
+				log = "[GetDateText]: FROM: [From.GetName] ROOT: [Root.GetName] on_capitulation"
+				FROM = {
+					save_global_event_target_as = winning_country
+				} 
+				ROOT = {
+					save_global_event_target_as = losing_country
+				}
+
+				log = "[GetDateText]: winner/loser: FROM: [winning_country.GetName] ROOT: [losing_country.GetName] on_capitulation"
+
+				if = {
+					limit = {
+						event_target:losing_country = {
+							any_allied_country = {
+								has_war_together_with = event_target:losing_country
+							}
+						}
+					}
+					set_global_flag = losing_country_multiple
+				}
+				if = {
+					limit = {
+						event_target:winning_country = {
+							any_allied_country = {
+								has_war_together_with = event_target:winning_country
+							}
+						}
+					}
+					set_global_flag = winning_country_multiple
+				}
+				if = {
+					limit = { NOT = { ROOT = { original_tag = UKR } } }
+					every_country = {
+						white_peace = ROOT
+					}
+				}
+				else_if = {
+					limit = { ROOT = { original_tag = UKR } }
+					every_country = {
+						white_peace = ROOT
+					}
+				}
+				FROM = {
+					POL = {
+						set_autonomy = {
+							target = UKR
+							autonomy_state = autonomy_personal_union
+						}
+						country_event = {
+							id = POL_TVE.6
+							hours = 24
+						}
+					}
+					SOV = {
+						
+						add_ideas = {
+							SOV_ATUCK_RKR
+						}
+					}
+					
+
+				}
+				
+				set_global_flag = show_peace_popup_alert
+			}
+		}
+	}
+	#俄罗斯要求波兰从东乌克兰撤军
+	on_capitulation = {
+		effect =  {
+			if = {
+				limit ={
+					FROM = {
+						original_tag = SOV
+					}
+					ROOT = {
+						original_tag = RKR
+					}
+				}
+				log = "[GetDateText]: FROM: [From.GetName] ROOT: [Root.GetName] on_capitulation"
+				FROM = {
+					save_global_event_target_as = winning_country
+				} 
+				ROOT = {
+					save_global_event_target_as = losing_country
+				}
+
+				log = "[GetDateText]: winner/loser: FROM: [winning_country.GetName] ROOT: [losing_country.GetName] on_capitulation"
+
+				if = {
+					limit = {
+						event_target:losing_country = {
+							any_allied_country = {
+								has_war_together_with = event_target:losing_country
+							}
+						}
+					}
+					set_global_flag = losing_country_multiple
+				}
+				if = {
+					limit = {
+						event_target:winning_country = {
+							any_allied_country = {
+								has_war_together_with = event_target:winning_country
+							}
+						}
+					}
+					set_global_flag = winning_country_multiple
+				}
+				if = {
+					limit = { NOT = { ROOT = { original_tag = RKR } } }
+					every_country = {
+						white_peace = ROOT
+					}
+				}
+				else_if = {
+					limit = { ROOT = { original_tag = RKR } }
+					every_country = {
+						white_peace = ROOT
+					}
+				}
+				FROM = {
+					SOV = {
+						set_autonomy = {
+							target = RKR
+							autonomy_state = autonomy_personal_union
+						}
+					}
+					RKR = {
+						transfer_state = 137
+						clr_country_flag = RKR_UKR_IND
+					}
+					
+
+				}
+				
+				set_global_flag = show_peace_popup_alert
+			}
+		}
+	}
+	
+}

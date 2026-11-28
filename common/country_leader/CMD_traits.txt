@@ -1,0 +1,8 @@
+leader_traits = {
+
+	#被时代遗忘之人
+	CMD_Forgotten_by_the_Times = {
+		random = no
+		experience_gain_army_factor = -0.2
+	}
+}

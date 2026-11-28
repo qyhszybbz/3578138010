@@ -1,0 +1,23 @@
+music = {
+	name = "duceduce"
+	file = "duceduce_44.1kHz.ogg"
+	volume = 0.60
+}
+music = {
+	name = "magyarr"
+	file = "magyar_44.1kHz.ogg"
+	volume = 0.60
+}
+
+music = {
+	name = "maintheme"
+	file = "maintheme_xuehe.ogg"
+	volume = 0.60
+}
+
+music = {
+	name = "eu_war_44.1kHz"
+	file = "eu_war_44.1kHz.ogg"
+	volume = 0.60
+}
+

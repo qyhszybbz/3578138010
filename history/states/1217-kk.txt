@@ -1,0 +1,23 @@
+
+state={
+	id = 1217
+	name="STATE_1217"
+	manpower = 198872	
+	state_category = town
+
+	history={
+		owner = BUL
+		add_claim_by = BUL
+		set_demilitarized_zone = yes
+		buildings = {
+			infrastructure = 2
+			dockyard = 1
+		}
+	}
+
+	provinces={
+		6990
+	}
+
+	local_supplies=0.0 
+}

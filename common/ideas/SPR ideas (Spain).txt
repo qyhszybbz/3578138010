@@ -1,0 +1,102 @@
+ideas = {
+	country = {
+        ### 初始民族精神 ###
+        #教皇子午线
+        SPR_Papal_Meridian = {
+			on_add = { log = "[GetLogRoot]: add idea SPR_Papal_Meridian" }
+			picture = Papal_Meridian
+			allowed = { always = no }
+			modifier = {
+                political_power_gain = 0.05
+			    stability_factor = 0.05
+			    consumer_goods_factor = -0.05
+			    industrial_capacity_factory = 0.05
+			}
+		}
+        #内战的遗产
+        SPR_Legacy_of_the_Civil_War = {
+			on_add = { log = "[GetLogRoot]: add idea SPR_Legacy_of_the_Civil_War" }
+			picture = Legacy_of_the_Civil_War
+			allowed = { always = no }
+			modifier = {
+                stability_factor = -0.15
+				consumer_goods_factor = 0.1
+				line_change_production_efficiency_factor = -0.1
+				production_speed_buildings_factor = -0.05
+				war_support_factor = -0.15
+			}
+		}
+        #西班牙军队
+        SPR_spanish_army = {
+			on_add = { log = "[GetLogRoot]: add idea SPR_spanish_army" }
+			picture = spanish_army
+			allowed = { always = no }
+			modifier = {
+                army_org_factor = -0.05
+                supply_consumption_factor = -0.05
+			}
+		}
+        #空悬王座
+        SPR_The_hanging_throne = {
+			on_add = { log = "[GetLogRoot]: add idea SPR_The_hanging_throne" }
+			picture = The_hanging_throne
+			allowed = { always = no }
+			modifier = {
+                stability_factor = -0.05
+				drift_defence_factor = -0.1
+			}
+		}
+        #自治难题
+        SPR_Autonomy_Dilemma = {
+            on_add = { log = "[GetLogRoot]: add idea SPR_Autonomy_Dilemma" }
+			picture = Autonomy_Dilemma
+			allowed = { always = no }
+			modifier = {
+                monthly_population = -0.15
+				weekly_manpower = -35
+				stability_factor = -0.15
+				war_support_factor = -0.1
+				production_speed_buildings_factor = -0.15
+			}
+		}
+		### 国策民族精神 ###
+		#援助黑鹰
+        SPR_Help_Black_Eagle = {
+            on_add = { log = "[GetLogRoot]: add idea SPR_Help_Black_Eagle" }
+			picture = Help_Black_Eagle
+			allowed = { has_global_flag = ITAG_Wars_of_Unification }
+			modifier = {
+                send_volunteer_size = 4
+			}
+		}
+		#赤猎军
+		SPR_Red_Hunting = {
+			on_add = { log = "[GetLogRoot]: add idea SPR_Red_Hunting" }
+			picture = Red_Hunting
+			allowed = { has_global_flag = ITAG_Wars_of_Unification }
+			targeted_modifier = {
+				tag = ITA
+				attack_bonus_against = 0.08
+				defense_bonus_against = 0.05
+				breakthrough_bonus_against = 0.10
+			}
+		}
+		#黑鹰军团
+		SPR_Black_Eagle_Legion = {
+			on_add = { log = "[GetLogRoot]: add idea SPR_Black_Eagle_Legion" }
+			picture = Black_Eagle_Legion
+			allowed = { has_global_flag = ITAG_Wars_of_Unification }
+			targeted_modifier = {
+				tag = ITA
+				attack_bonus_against = 0.08
+				defense_bonus_against = 0.05
+				breakthrough_bonus_against = 0.10
+			}
+			modifier = {
+				army_non_core_attack_factor = 0.12
+				army_non_core_defence_factor = 0.07
+				send_volunteer_size = 2
+			}
+		}
+    }
+}

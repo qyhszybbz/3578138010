@@ -1,0 +1,50 @@
+spriteTypes = {
+	#领导人
+	spriteType = { #埃克托尔·特鲁希略瓦
+		name = "GFX_leader_DOM_Hector_Trujillo"
+		texturefile = "gfx/leaders/DOM/DOM_Hector_Trujillo.dds"
+	}
+	spriteType = { #拉斐尔·特鲁希略瓦
+		name = "GFX_leader_DOM_Raphael_Trujillo"
+		texturefile = "gfx/leaders/DOM/DOM_Raphael_Trujillo.dds"
+		legacy_lazy_load = no
+	}
+	#民族精神
+	spriteType = { #公羊的盛宴
+		name = "GFX_idea_DOM_The_Feast_of_the_Ram"
+		texturefile = "gfx/interface/ideas/DOM/TVE_DOM_The_Feast_of_the_Ram.dds"
+	}
+	spriteType = { #掣肘的西班牙人
+		name = "GFX_idea_DOM_The_Spaniards_wwhb"
+		texturefile = "gfx/interface/ideas/DOM/DOM_The_Spaniards_wwhb.dds"
+	}
+	spriteType = { #无疾而终的漂白计划
+		name = "GFX_idea_DOM_The_whitewashing_peif"
+		texturefile = "gfx/interface/ideas/DOM/DOM_The_whitewashing_peif.dds"
+	}
+	spriteType = { #对海地战争计划
+		name = "GFX_idea_DOM_Plans_for_the_wah"
+		texturefile = "gfx/interface/ideas/DOM/DOM_Plans_for_the_wah.dds"
+	}
+	#配图
+	spriteType = { #公羊的盛宴
+		name = "GFX_idea_DOM_The_Feast_of_the_Ram_Pictures"
+		texturefile = "gfx/texticons/banners/DOM/DOM_The_Feast_of_the_Ram_Pictures.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = { #掣肘的西班牙人
+		name = "GFX_idea_DOM_The_Spaniards_wwhb_Pictures"
+		texturefile = "gfx/texticons/banners/DOM/DOM_The_Spaniards_wwhb_Pictures.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = { #无疾而终的漂白计划
+		name = "GFX_idea_DOM_The_whitewashing_peif_Pictures"
+		texturefile = "gfx/texticons/banners/DOM/DOM_The_whitewashing_peif_Pictures.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = { #对海地战争计划
+		name = "GFX_idea_DOM_Plans_for_the_wah_Pictures"
+		texturefile = "gfx/texticons/banners/DOM/DOM_Plans_for_the_wah_Pictures.dds"
+		legacy_lazy_load = no
+	}
+}

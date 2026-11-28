@@ -1,0 +1,36 @@
+state = {
+	id = 607
+	name = "STATE_607"
+	manpower = 3786883
+	state_category = town
+	history = {
+		owner = CHI
+		add_core_of = SHX
+		add_core_of = CHI
+		add_core_of = PRC
+		add_extra_state_shared_building_slots = 1
+		buildings = {
+			arms_factory = 2
+			industrial_complex = 2
+			infrastructure = 2
+		}
+		1938.10.25 = {
+			#remove_core_of = SHX
+			owner = PRC
+			controller = JAP
+			PRC = {
+				set_province_controller = 1034
+				set_province_controller = 1531
+				set_province_controller = 4074
+				set_province_controller = 10367
+			}
+		}
+		victory_points = {
+			1575 3
+		}
+	}
+	provinces = {
+		1034 1531 1575 4074 10367 12300
+	}
+	local_supplies = 7
+}

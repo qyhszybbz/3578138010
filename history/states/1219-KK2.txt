@@ -1,0 +1,31 @@
+
+state={
+	id = 1219
+	name="STATE_1219"
+	manpower = 319147
+	resources={
+	}
+	
+	state_category = town
+
+	history={
+		victory_points = {
+			11818 5 
+		}
+		owner = GRE
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			air_base = 4
+		}
+	
+		add_claim_by = BUL
+		add_claim_by = GRE
+	}
+
+	provinces={
+		895 11818 3936
+	}
+
+	local_supplies=0.0 
+}

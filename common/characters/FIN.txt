@@ -1,0 +1,17 @@
+characters = {
+	FIN_Carl_Gustav_Emil_Mannerheim = { #卡尔·古斯塔夫·埃米尔·曼纳海姆
+   		name = FIN_Carl_Gustav_Emil_Mannerheim
+   		portraits = {
+   		    civilian = {
+   		        large = GFX_leader_FIN_Carl_Gustav_Emil_Mannerheim
+   		    }
+   		}
+	
+   		country_leader = {
+   		    ideology = authoritarianism_small 
+   		    traits = {
+			
+   		    }
+   		}
+	}
+}

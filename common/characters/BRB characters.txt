@@ -1,0 +1,19 @@
+characters = {
+    #领导人
+    #热图里奥·瓦加斯
+	BRB_Getulio_Vargas = {
+        name = BRB_Getulio_Vargas
+        portraits = {
+            civilian = {
+                large = GFX_BRB_Getulio_Vargas_large
+            }
+        }
+        country_leader = {
+            desc = BRB_Getulio_Vargas_desc
+            ideology = authoritarianism_small
+            traits = {
+                BRB_strongman_of_the_country
+            }
+        }
+    }
+}

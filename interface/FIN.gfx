@@ -1,0 +1,7 @@
+ spriteTypes = {
+	#领导人
+	spriteType = { #卡尔·古斯塔夫·埃米尔·曼纳海姆
+		name = "GFX_leader_FIN_Carl_Gustav_Emil_Mannerheim"
+		texturefile = "gfx/leaders/FIN/FIN_Carl_Gustav_Emil_Mannerheim.dds"
+	}
+ }

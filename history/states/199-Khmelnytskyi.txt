@@ -1,0 +1,28 @@
+
+state={
+	id = 199
+	name="STATE_199"
+	manpower = 1424022
+	state_category = town
+
+	history={
+		owner = PUK
+		add_core_of = PUK
+		add_core_of = UKR
+		add_claim_by = NRO
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			air_base = 1
+		}
+		victory_points = {
+			3457 5
+		}
+	}
+
+	provinces={
+		462 3430 3457 3511 6429 6509 
+	}
+
+	local_supplies=4.0 
+}

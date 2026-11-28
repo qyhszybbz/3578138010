@@ -1,0 +1,71 @@
+spriteTypes = {
+		# News Event #
+	spriteType = {
+		name = "GFX_news_event_generic_anglo_iraqi_war_1"
+		texturefile = "gfx/event_pictures/news_event_generic_anglo_iraqi_war_1.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_ENG_middle_eastern_conflict_2"
+		texturefile = "gfx/event_pictures/news_event_ENG_middle_eastern_conflict_2.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_generic_anglo_iraqi_war_2"
+		texturefile = "gfx/event_pictures/news_event_generic_anglo_iraqi_war_2.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_generic_arab_revolt"
+		texturefile = "gfx/event_pictures/news_event_generic_arab_revolt.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_ENG_middle_eastern_conflict"
+		texturefile = "gfx/event_pictures/news_event_ENG_middle_eastern_conflict.dds"
+	}
+	progressbartype ={
+		name = "GFX_NOU_struggle_progress_bar"
+		textureFile1 = "gfx/interface/test/bar_progress_blue.dds"
+		textureFile2 = "gfx/interface/test/bar_going_left.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = {
+			x = 350
+			y = 30
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+	spriteType = {
+		name = "GFX_CLOSE_YIHUI"
+		texturefile = "gfx/interface/goals/CLOSE_YIHUI.dds"
+	}
+	spriteType = {
+		name = "GFX_Archduke_Franz_Ferdinand_of_Austria"
+		texturefile = "gfx/leaders/AUS/Archduke_Franz_Ferdinand_of_Austria.dds"
+	}
+	spriteType = {
+		name = "GFX_Subhash_Chandra_Bose_TVE"
+		texturefile = "gfx/leaders/RAJ/Subhash_Chandra_Bose_TVE.dds"
+	}
+	spriteType = {
+		name = "GFX_bookmark_aisa_TVE"
+		texturefile = "gfx/interface/bookmark_aisa.png"
+	}
+	spriteType = {
+		name = "GFX_bookmark_eu_TVE"
+		texturefile = "gfx/interface/bookmark_eu.png"
+	}
+	spriteType = {
+		name = "GFX_bookmark_american_TVE"
+		texturefile = "gfx/interface/bookmark_american.png"
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_frame_warview"
+		textureFile = "gfx/interface/decisions/warview_191.png"
+		noOfFrames = 191
+		alwaystransparent = no
+		animation_rate_fps = 10
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	
+}

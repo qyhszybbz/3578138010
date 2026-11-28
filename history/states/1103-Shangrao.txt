@@ -1,0 +1,39 @@
+state = {
+	id = 1103
+	name = "STATE_1103"
+	manpower = 3330945
+	state_category = rural
+	history = {
+		owner = JXI
+		add_core_of = JXI
+		add_core_of = CHI
+		add_core_of = PRC
+		add_extra_state_shared_building_slots = 3
+		buildings = {
+			industrial_complex = 2
+			infrastructure = 2
+		}
+		1938.10.25 = {
+			JAP = {
+				set_province_controller = 1153
+				set_province_controller = 1628
+				set_province_controller = 3992
+				set_province_controller = 4038
+				set_province_controller = 4185
+				set_province_controller = 7653
+				set_province_controller = 10114
+				set_province_controller = 11988
+				set_province_controller = 13141
+
+			}
+
+		}
+		victory_points = {
+			1153 3
+		}
+	}
+	provinces = {
+		1066 1153 4038 4185 7007 7054 12019
+	}
+	local_supplies = 7
+}

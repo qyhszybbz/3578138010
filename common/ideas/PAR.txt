@@ -1,0 +1,10 @@
+ideas = {
+	hidden_ideas = {
+		PAR_paraguayan_resistance = { #巴拉圭抵抗力度
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PAR_paraguayan_resistance "}
+			modifier = {
+				resistance_target = 0.15
+			}
+		}
+	}
+}

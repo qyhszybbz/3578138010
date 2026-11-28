@@ -1,0 +1,48 @@
+﻿l_simp_chinese:
+      VEN:0 "委内瑞拉共和国"
+      VEN_ADJ:0 "委内瑞拉共和国"
+      VEN_DEF:0 "委内瑞拉共和国"
+
+      VEN_Miguel_Cavanellas:0 "米格尔·卡瓦内利亚斯"
+      VEN_Eliazar_Lopez_Contreras:0 "埃利亚扎尔·洛佩斯·孔特雷拉斯"
+      VEN_Eliazar_Lopez_Contreras_desc:0 "多年以后，当埃利亚扎尔·洛佩斯·孔特雷拉斯在总统府中为“小威尼斯”焦头烂额时，不知是否会想起与胡安·比森特·戈麦斯初见的那个午后。作为西班牙在拉美最重要的合作者，以及这个国家数十年独裁统治的继承者，孔特雷拉斯的日子并不轻松。他刚从统治一生的老独裁者戈麦斯手中接过权杖，尽管有西班牙支持，但老独裁者留下的权力阶级却仍根深蒂固，盘中错节。他不得不耗费心力去清理前任留下的残局。\n对外，“小威尼斯”亦如浪中扁舟。大哥伦比亚对这群“分裂者”恨之入骨，随时可能在阿根廷支持下挥师而来。而在世界眼中，他们不过是西班牙的新殖民地，日夜流淌着石油与人力的附庸。面对这些，扎特雷拉斯必须做出改变，他要世人明白，总有一天，小威尼斯将成为一个真正屹立于世的强大国家。"
+
+      SPR_puppet_VEN:0 "小威尼斯共和国"
+      SPR_puppet_VEN_DEF:0 "小威尼斯共和国" 
+      SPR_puppet_VEN_ADJ:0 "小威尼斯共和国"
+
+      VEN_communism_party:0 "-"
+      VEN_communism_party_long:0 "-"
+      VEN_Socialism_party:0 "-"
+      VEN_Socialism_party_long:0 "-"
+      VEN_Progressivism_party:0 "-"
+      VEN_Progressivism_party_long:0 "-"
+      VEN_Liberalism_party:0 "小威尼斯自由党"
+      VEN_Liberalism_party_long:0 "小威尼斯自由党"
+      VEN_Democracy_party:0 "-"
+      VEN_Democracy_party_long:0 "-"
+      VEN_Conservatism_party:0 "委内瑞拉国民党"
+      VEN_Conservatism_party_long:0 "委内瑞拉国民党"
+      VEN_Authoritarianism_party:0 "-"
+      VEN_Authoritarianism_party_long:0 "-"
+      VEN_tttt_party:0 "爱国军官同盟"
+      VEN_tttt_party_long:0 "爱国军官同盟"
+      VAN_fascism_party:0 "委内瑞拉国家社会主义劳工党"
+      VAN_fascism_party_long:0 "委内瑞拉国家社会主义劳工党"
+      VEN_nazism_party:0 "-"
+      VEN_nazism_party_long:0 "-"
+
+      VEN_Developmental_dictator:0 "发展型独裁者"
+
+      VEN_shadow_of_the_past:0 "旧日阴影"
+      VEN_shadow_of_the_past_desc:0 "在拉美独立浪潮席卷大陆后，小威尼斯共和国如同一枚被遗忘的旧日图钉，仍顽固地扎在南美洲的版图之上。其前身为西班牙殖民时期的格拉纳达总督区，却冠以共和之名，堪称历史的吊诡。对许多拉美人而言，它是革命未竟的象征，一道玻利瓦尔未能抚平的伤痕，在整体解放的叙事中，始终是一个突兀而沉郁的例外。"
+      VEN_The_land_where_bgf:0 "黑金流淌之地"
+      VEN_The_land_where_bgf_desc:0 "\n\n\n\n£GFX_idea_VEN_The_land_where_bgf_Pictures\n\n\n\n\n\n我国地下埋藏着令世界都震惊的巨量石油。在委里诺科重油带深处，亿万年沉积的黑色黄金以接近固体形态在砂石间凝固，仿佛一片被时光封印的石油之海。马拉开波湖古老的湖床下，则是另一重液态的深海——较轻的传统原油在不透水的岩盖下翻涌，在钻头抵达时喷薄出黑色的地火。这两种形态，一粘稠一如镜，构成了小威尼斯脚下最庞大也最沉重的沉睡财富。"
+      VEN_on_ones_last_legs:0 "苟延残喘"
+      VEN_on_ones_last_legs_desc:0 "\n\n\n\n£GFX_idea_VEN_on_ones_last_legs_Pictures\n\n\n\n\n\n在拉美独立浪潮席卷大陆后,小威尼斯共和国如同一枚被遗忘的旧日图钉，仍顽固地扎在南美洲的版图之上。其前身为西班牙殖民时期的格拉纳达总督区,却冠以共和之名，堪称历史的吊诡。对许多拉美人而言，这是玻利瓦尔的未竟之事，是旧世界套在美洲的最后一道枷锁。，无论付出多少代价，也要将这个所谓的共和国从地图上抹去。"
+      VEN_Wolf_Lair_and_Fortress:0 "狼穴与堡垒"
+      VEN_Wolf_Lair_and_Fortress_desc:0 "\n\n\n\n£GFX_idea_VEN_Wolf_Lair_and_Fortress_Pictures\n\n\n\n\n\n为拱卫海疆，我国与西班牙合作伙伴在漫长的边境线建立起被称为“南大西洋堡垒”的纵深防御体系。这道由永备工事、雷达哨所与机动火力构成的钢铁防线牢不可破。而在视线之外，另一项工程同步推进。为预警及化解外部威胁，情报机构在邻国境内秘密编织起一张特工网络，其核心枢纽被内部称为“狼穴”。通过资金渗透、政治颠覆与信息操控，持续威胁着邻国的政治生态。"
+
+      
+
+      

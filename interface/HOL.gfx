@@ -1,0 +1,117 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_union_dream"
+		texturefile = "gfx/interface/ideas/HOL/union_dream.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "national_allcountry_desc"
+		texturefile = "gfx/interface/ideas/HOL/national_allcountry_desc.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = no
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "GFX_idea_national_allcountry"
+		texturefile = "gfx/interface/ideas/HOL/national_allcountry.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "kingdom_army_desc"
+		texturefile = "gfx/interface/ideas/HOL/kingdom_army_desc.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = no
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "GFX_idea_kingdom_army"
+		texturefile = "gfx/interface/ideas/HOL/kingdom_army.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "GFX_idea_DARK_VIVER"
+		texturefile = "gfx/interface/ideas/HOL/DARK_VIVER.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "DARK_VIVER_desc"
+		texturefile = "gfx/interface/ideas/HOL/DARK_VIVER_desc.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = no
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "GFX_idea_todays_fishmeat"
+		texturefile = "gfx/interface/ideas/HOL/todays_fishmeat.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "union_dream_desc"
+		texturefile = "gfx/interface/ideas/HOL/union_dream_desc.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = no
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "GFX_idea_world_war_heat"
+		texturefile = "gfx/interface/ideas/HOL/world_war_heat.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "world_war_heat_desc"
+		texturefile = "gfx/interface/ideas/HOL/world_war_heat_desc.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = no
+		transparencecheck = no
+	}
+	spriteType = {
+		name = "LIBD_III"
+		texturefile = "gfx/leaders/HOL/LIBD_III.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = no
+		transparencecheck = no
+	}
+	spriteType = {
+		name = "jhon_heser"
+		texturefile = "gfx/leaders/HOL/jhon_heser.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = no
+		transparencecheck = no
+	}
+
+}

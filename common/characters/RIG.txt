@@ -1,0 +1,18 @@
+characters = {
+	RIG_Isaias_Angelita = { #伊萨亚斯·安吉立塔
+    name = RIG_Isaias_Angelita
+    portraits = {
+        civilian = {
+            large = GFX_leader_RIG_Isaias_Angelita
+        }
+    }
+    
+    country_leader = {
+        ideology = military_junta_tttt
+		#desc = RIG_Isaias_Angelita_desc
+        traits = {
+           
+        }
+    }
+}
+}

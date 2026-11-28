@@ -1,0 +1,59 @@
+add_namespace = colombia
+add_namespace = colombia_news
+
+country_event = { #盖坦的演讲
+	immediate = {log = "[GetDateText]: [Root.GetName]: event colombia.1"}
+	id = colombia.1
+	title = colombia.1.t
+	desc = colombia.1.d
+	is_triggered_only = yes
+
+	#yes	
+	option = {
+		name = colombia.1.a
+		hidden_effect = {
+			news_event = { id = colombia_news.1 days = 3 }
+		}
+	}
+}
+news_event = { #盖坦遇刺身亡
+	immediate = {log = "[GetDateText]: [Root.GetName]: event colombia_news.1"}
+	id = colombia_news.1
+	title = colombia_news.1.t
+	desc = colombia_news.1.d
+	is_triggered_only = yes
+	picture = GFX_events_COL_Gaitan_assassinated
+	#yes	
+	option = {
+		name = colombia_news.1.a
+		remove_ideas = {
+			COL_The_legacy_and_aotgm
+		}
+		swap_ideas = {
+			remove_idea = COL_divided_house
+			add_idea = COL_divided_house_2
+		}
+		COL= { Kill_country_leader = yes}
+		add_country_leader_role = {
+			character = COL_National_Assembly
+			promote_leader = yes
+			country_leader = {
+				ideology = progressivism_small
+			}
+		}
+		set_country_flag = COL_Colombian_Civil_War
+	}
+}
+news_event = {
+	immediate = {log = "[GetDateText]: [Root.GetName]: event colombia_news.2"}
+	id = colombia_news.2
+	picture = GFX_events_COL_Colombian_Civil_War
+	title = colombia_news.2.t
+	desc = colombia_news.2.d
+	is_triggered_only = yes
+
+	option = {
+		name = colombia_news.2.a
+		
+	}
+}

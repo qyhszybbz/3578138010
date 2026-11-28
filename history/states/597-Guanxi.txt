@@ -1,0 +1,38 @@
+state = {
+	id = 597
+	name = "STATE_597"
+	manpower = 195369
+	state_category = town
+	resources = {
+		chromium = 3
+		steel = 15
+		tungsten = 15
+	}
+	history = {
+		owner = GXI
+		add_core_of = GXI
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			air_base = 2
+			arms_factory = 1
+			industrial_complex = 2
+			infrastructure = 2
+		}
+		1938.10.25 = {
+			if = {
+				limit = {
+					NOT = { has_dlc = "Waking the Tiger" }
+				}
+				CHI = { transfer_state = PREV }
+			}
+		}
+		victory_points = {
+			7137 15
+		}
+	}
+	provinces = {
+		7137
+	}
+	local_supplies = 0
+}

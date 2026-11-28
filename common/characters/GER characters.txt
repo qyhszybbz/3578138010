@@ -1,0 +1,69 @@
+characters={
+	#领导人
+	#威廉二世
+	GER_wilhelm_ii = { 
+		name = GER_wilhelm_ii
+		portraits={
+			civilian={
+				large = GFX_leader_GER_wilhelm_ii_Progressivism_large
+			}
+		}
+		country_leader={
+			desc = GER_wilhelm_ii_desc
+			ideology = social_liberalism
+			traits={ GER_Kaiser }
+		}
+	}
+	#亚尔马·沙赫特
+	GER_Hjalmar_Schacht = {
+		name = GER_Hjalmar_Schacht
+		portraits = {
+			civilian = {
+				large = GFX_leader_GER_Hjalmar_Schacht
+			}
+			army = {
+				small = GFX_GER_Hjalmar_Schacht_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = GER_Hjalmar_Schacht_pol
+            allowed = {
+				original_tag = GER
+			}
+            cost = 150
+			available = {
+				not_already_hired_except_as = political_advisor
+            }
+			traits = {
+				GER_Financial_Magician
+			}
+        }
+	}
+	GER_Heinrich_Bruning = { #海因里希·布吕宁
+		name = GER_Heinrich_Bruning
+		portraits={
+			civilian={
+				large = GFX_leader_GER_Heinrich_Bruning
+			}
+		}
+		country_leader={
+			desc = GER_Heinrich_Bruning_desc
+			ideology = christian_democracy
+			traits={ }
+		}
+	}
+	GER_Karl_Liebknecht = { #卡尔·李卜克内西
+		name = GER_Karl_Liebknecht
+		portraits={
+			civilian={
+				#large = GFX_leader_GER_Karl_Liebknecht
+			}
+		}
+		country_leader={
+			desc = GER_Karl_Liebknecht_desc
+			ideology = communism_small
+			traits={  }
+		}
+	}
+}

@@ -1,0 +1,668 @@
+update_development = {
+	add_to_variable = {
+		var = industry_development_var
+		value = modifier@industry_development_monthly
+	}
+	check_industry_development = yes
+	add_to_variable = {
+		var = military_development_var
+		value = modifier@military_development_monthly
+	}
+	check_military_development = yes
+	add_to_variable = {
+		var = society_development_var
+		value = modifier@society_development_monthly
+	}
+	check_society_development = yes
+	add_to_variable = {
+		var = agriculture_development_var
+		value = modifier@agriculture_development_monthly
+	}
+	check_agriculture_development = yes
+	add_to_variable = {
+		var = administrative_efficiency_development_var
+		value = modifier@administrative_efficiency_development_monthly
+	}
+	check_administrative_efficiency_development = yes
+	add_to_variable = {
+		var = poverty_development_var
+		value = modifier@poverty_development_monthly
+	}
+	check_poverty_development = yes
+}
+
+#industry
+check_industry_development = {
+	if = {
+		limit = {
+			check_variable = {
+				var = industry_development_var
+				value = 1
+				compare = greater_than_or_equals
+			}
+		}
+		ROOT = {
+			country_event = {
+				id = generic_development.1
+			}
+		}
+		add_to_variable = {
+			var = industry_development_var
+			value = -1
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = industry_development_var
+				value = -1
+				compare = less_than_or_equals
+			}
+		}
+		ROOT = {
+			country_event = {
+				id = generic_development.2
+			}
+		}
+
+		add_to_variable = {
+			var = industry_development_var
+			value = 1
+		}
+	}
+	clamp_variable = {
+		var = industry_development_var
+		min = -1
+		max = 1
+	}
+}
+
+increase_industry = {
+	if = {
+		limit = {
+			has_idea = no_industry
+		}
+		swap_ideas = {
+			remove_idea = no_industry
+			add_idea = less_industry
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = less_industry
+		}
+		swap_ideas = {
+			remove_idea = less_industry
+			add_idea = normal_industry
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = normal_industry
+		}
+		swap_ideas = {
+			remove_idea = normal_industry
+			add_idea = well_industry
+		}
+	}
+}
+
+decrease_industry = {
+	if = {
+		limit = {
+			has_idea = less_industry
+		}
+		swap_ideas = {
+			remove_idea = less_industry
+			add_idea = no_industry
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = normal_industry
+		}
+		swap_ideas = {
+			remove_idea = normal_industry
+			add_idea = less_industry
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = well_industry
+		}
+		swap_ideas = {
+			remove_idea = well_industry
+			add_idea = normal_industry
+		}
+	}
+}
+
+#military
+check_military_development = {
+	if = {
+		limit = {
+			check_variable = {
+				var = military_development_var
+				value = 1
+				compare = greater_than_or_equals
+			}
+		}
+		ROOT = {
+			country_event = {
+				id = generic_development.3
+			}
+		}
+		add_to_variable = {
+			var = military_development_var
+			value = -1
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = military_development_var
+				value = -1
+				compare = less_than_or_equals
+			}
+		}
+		ROOT = {
+			country_event = {
+				id = generic_development.4
+			}
+		}
+
+		add_to_variable = {
+			var = military_development_var
+			value = 1
+		}
+	}
+	clamp_variable = {
+		var = military_development_var
+		min = -1
+		max = 1
+	}
+}
+
+increase_military = {
+	if = {
+		limit = {
+			has_idea = no_military
+		}
+		swap_ideas = {
+			remove_idea = no_military
+			add_idea = less_military
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = less_military
+		}
+		swap_ideas = {
+			remove_idea = less_military
+			add_idea = normal_military
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = normal_military
+		}
+		swap_ideas = {
+			remove_idea = normal_military
+			add_idea = war_military
+		}
+	}
+}
+
+decrease_military = {
+	if = {
+		limit = {
+			has_idea = less_military
+		}
+		swap_ideas = {
+			remove_idea = less_military
+			add_idea = no_military
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = normal_military
+		}
+		swap_ideas = {
+			remove_idea = normal_military
+			add_idea = less_military
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = war_military
+		}
+		swap_ideas = {
+			remove_idea = war_military
+			add_idea = normal_military
+		}
+	}
+}
+
+#society
+check_society_development = {
+	if = {
+		limit = {
+			check_variable = {
+				var = society_development_var
+				value = 1
+				compare = greater_than_or_equals
+			}
+		}
+		ROOT = {
+			country_event = {
+				id = generic_development.5
+			}
+		}
+		add_to_variable = {
+			var = society_development_var
+			value = -1
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = society_development_var
+				value = -1
+				compare = less_than_or_equals
+			}
+		}
+		ROOT = {
+			country_event = {
+				id = generic_development.6
+			}
+		}
+
+		add_to_variable = {
+			var = society_development_var
+			value = 1
+		}
+	}
+	clamp_variable = {
+		var = society_development_var
+		min = -1
+		max = 1
+	}
+}
+
+increase_society = {
+	if = {
+		limit = {
+			has_idea = no_society
+		}
+		swap_ideas = {
+			remove_idea = no_society
+			add_idea = less_society
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = less_society
+		}
+		swap_ideas = {
+			remove_idea = less_society
+			add_idea = normal_society
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = normal_society
+		}
+		swap_ideas = {
+			remove_idea = normal_society
+			add_idea = reich_society
+		}
+	}
+}
+
+decrease_society = {
+	if = {
+		limit = {
+			has_idea = less_society
+		}
+		swap_ideas = {
+			remove_idea = less_society
+			add_idea = no_society
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = normal_society
+		}
+		swap_ideas = {
+			remove_idea = normal_society
+			add_idea = less_society
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = reich_society
+		}
+		swap_ideas = {
+			remove_idea = reich_society
+			add_idea = normal_society
+		}
+	}
+}
+
+#agriculture
+check_agriculture_development = {
+	if = {
+		limit = {
+			check_variable = {
+				var = agriculture_development_var
+				value = 1
+				compare = greater_than_or_equals
+			}
+		}
+		ROOT = {
+			country_event = {
+				id = generic_development.7
+			}
+		}
+		add_to_variable = {
+			var = agriculture_development_var
+			value = -1
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = agriculture_development_var
+				value = -1
+				compare = less_than_or_equals
+			}
+		}
+		ROOT = {
+			country_event = {
+				id = generic_development.8
+			}
+		}
+
+		add_to_variable = {
+			var = agriculture_development_var
+			value = 1
+		}
+	}
+	clamp_variable = {
+		var = agriculture_development_var
+		min = -1
+		max = 1
+	}
+}
+
+increase_agriculture = {
+	if = {
+		limit = {
+			has_idea = primitive_agriculture
+		}
+		swap_ideas = {
+			remove_idea = primitive_agriculture
+			add_idea = feudal_agriculture
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = feudal_agriculture
+		}
+		swap_ideas = {
+			remove_idea = feudal_agriculture
+			add_idea = modern_agriculture
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = modern_agriculture
+		}
+		swap_ideas = {
+			remove_idea = modern_agriculture
+			add_idea = fully_mechanized_agriculture
+		}
+	}
+}
+
+decrease_agriculture = {
+	if = {
+		limit = {
+			has_idea = fully_mechanized_agriculture
+		}
+		swap_ideas = {
+			remove_idea = fully_mechanized_agriculture
+			add_idea = modern_agriculture
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = modern_agriculture
+		}
+		swap_ideas = {
+			remove_idea = modern_agriculture
+			add_idea = feudal_agriculture
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = feudal_agriculture
+		}
+		swap_ideas = {
+			remove_idea = feudal_agriculture
+			add_idea = primitive_agriculture
+		}
+	}
+}
+
+#administrative_efficiency
+check_administrative_efficiency_development = {
+	if = {
+		limit = {
+			check_variable = {
+				var = administrative_efficiency_development_var
+				value = 1
+				compare = greater_than_or_equals
+			}
+		}
+		ROOT = {
+			country_event = {
+				id = generic_development.9
+			}
+		}
+		add_to_variable = {
+			var = administrative_efficiency_development_var
+			value = -1
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = administrative_efficiency_development_var
+				value = -1
+				compare = less_than_or_equals
+			}
+		}
+		ROOT = {
+			country_event = {
+				id = generic_development.10
+			}
+		}
+
+		add_to_variable = {
+			var = administrative_efficiency_development_var
+			value = 1
+		}
+	}
+	clamp_variable = {
+		var = administrative_efficiency_development_var
+		min = -1
+		max = 1
+	}
+}
+
+increase_administrative_efficiency = {
+	if = {
+		limit = {
+			has_idea = corrupt_state
+		}
+		swap_ideas = {
+			remove_idea = corrupt_state
+			add_idea = severe_bureaucracy
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = severe_bureaucracy
+		}
+		swap_ideas = {
+			remove_idea = severe_bureaucracy
+			add_idea = normal_government
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = normal_government
+		}
+		swap_ideas = {
+			remove_idea = normal_government
+			add_idea = efficient_government
+		}
+	}
+}
+
+decrease_administrative_efficiency = {
+	if = {
+		limit = {
+			has_idea = efficient_government
+		}
+		swap_ideas = {
+			remove_idea = efficient_government
+			add_idea = normal_government
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = normal_government
+		}
+		swap_ideas = {
+			remove_idea = normal_government
+			add_idea = severe_bureaucracy
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = severe_bureaucracy
+		}
+		swap_ideas = {
+			remove_idea = severe_bureaucracy
+			add_idea = corrupt_state
+		}
+	}
+}
+
+#poverty
+check_poverty_development = {
+	if = {
+		limit = {
+			check_variable = {
+				var = poverty_development_var
+				value = 1
+				compare = greater_than_or_equals
+			}
+		}
+		ROOT = {
+			country_event = {
+				id = generic_development.11
+			}
+		}
+		add_to_variable = {
+			var = poverty_development_var
+			value = -1
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = poverty_development_var
+				value = -1
+				compare = less_than_or_equals
+			}
+		}
+		ROOT = {
+			country_event = {
+				id = generic_development.12
+			}
+		}
+
+		add_to_variable = {
+			var = poverty_development_var
+			value = 1
+		}
+	}
+	clamp_variable = {
+		var = poverty_development_var
+		min = -1
+		max = 1
+	}
+}
+
+increase_poverty = {
+	if = {
+		limit = {
+			has_idea = high_poverty
+		}
+		swap_ideas = {
+			remove_idea = high_poverty
+			add_idea = common_poverty
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = common_poverty
+		}
+		swap_ideas = {
+			remove_idea = common_poverty
+			add_idea = less_poverty
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = less_poverty
+		}
+		swap_ideas = {
+			remove_idea = less_poverty
+			add_idea = no_poverty
+		}
+	}
+}
+
+decrease_poverty = {
+	if = {
+		limit = {
+			has_idea = no_poverty
+		}
+		swap_ideas = {
+			remove_idea = no_poverty
+			add_idea = less_poverty
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = less_poverty
+		}
+		swap_ideas = {
+			remove_idea = less_poverty
+			add_idea = common_poverty
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = common_poverty
+		}
+		swap_ideas = {
+			remove_idea = common_poverty
+			add_idea = high_poverty
+		}
+	}
+}

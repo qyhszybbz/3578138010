@@ -1,0 +1,10 @@
+#阿尔及利亚危机
+FRA_Algeria_category = {
+	icon = generic_independence
+	allowed = {
+		always = yes
+	}
+	visible = {
+		has_completed_focus = FRA_1_6
+	}
+}

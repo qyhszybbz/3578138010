@@ -1,0 +1,249 @@
+ideas = {
+	country = { 
+	
+		tech_communcaite_things = {
+
+			removal_cost = -1
+
+			#picture = SOV_second_five_year_plan_ccp_2d_sov_compatibility # New GFX entry pointing to the original icon, so it can be safely overwritten by CCP 2D Sov Art without impacting other content using the same icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.1
+				research_speed_factor = 0.1
+			}
+		}
+		great_step = {
+
+			removal_cost = -1
+
+			#picture = SOV_second_five_year_plan_ccp_2d_sov_compatibility # New GFX entry pointing to the original icon, so it can be safely overwritten by CCP 2D Sov Art without impacting other content using the same icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				political_power_factor = -0.2
+				training_time_army_factor = 0.25
+				army_org_factor = -0.15
+				attrition = 0.1
+				stability_weekly = -0.001
+			}
+		}
+		factory_money = {
+
+			removal_cost = -1
+
+			#picture = SOV_second_five_year_plan_ccp_2d_sov_compatibility # New GFX entry pointing to the original icon, so it can be safely overwritten by CCP 2D Sov Art without impacting other content using the same icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_industrial_complex_factor = 0.2
+				stability_factor = 0.05
+			}
+		}
+		factory_money_0 = {
+
+			removal_cost = -1
+
+			#picture = SOV_second_five_year_plan_ccp_2d_sov_compatibility # New GFX entry pointing to the original icon, so it can be safely overwritten by CCP 2D Sov Art without impacting other content using the same icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_industrial_complex_factor = 0.25
+				stability_factor = 0.10
+			}
+		}
+		food_factory = {
+
+			removal_cost = -1
+
+			#picture = SOV_second_five_year_plan_ccp_2d_sov_compatibility # New GFX entry pointing to the original icon, so it can be safely overwritten by CCP 2D Sov Art without impacting other content using the same icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				stability_factor = 0.05
+			}
+		}
+		protect_worker = {
+
+			removal_cost = -1
+
+			#picture = SOV_second_five_year_plan_ccp_2d_sov_compatibility # New GFX entry pointing to the original icon, so it can be safely overwritten by CCP 2D Sov Art without impacting other content using the same icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				industrial_capacity_factory = -0.05
+				line_change_production_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		army_industry_amr = {
+
+			removal_cost = -1
+
+			#picture = SOV_second_five_year_plan_ccp_2d_sov_compatibility # New GFX entry pointing to the original icon, so it can be safely overwritten by CCP 2D Sov Art without impacting other content using the same icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				industrial_capacity_factory = 0.13
+				line_change_production_efficiency_factor = -0.05
+				production_speed_arms_factory_factor = 0.05
+			}
+		}
+		army_industry_amr_1 = {
+
+			removal_cost = -1
+
+			#picture = SOV_second_five_year_plan_ccp_2d_sov_compatibility # New GFX entry pointing to the original icon, so it can be safely overwritten by CCP 2D Sov Art without impacting other content using the same icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				industrial_capacity_factory = 0.2
+				line_change_production_efficiency_factor = 0.05
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+		gen_car_com = {
+
+			removal_cost = -1
+
+			#picture = SOV_second_five_year_plan_ccp_2d_sov_compatibility # New GFX entry pointing to the original icon, so it can be safely overwritten by CCP 2D Sov Art without impacting other content using the same icon
+
+			allowed = {
+				always = no
+			}
+			equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = -0.1
+					maximum_speed = 0.05
+					defense = 0.05
+					instant = yes
+				}
+			}
+			modifier = {
+				
+			}
+		}
+		un_lesswork_problem = {
+
+			removal_cost = -1
+
+			#picture = SOV_second_five_year_plan_ccp_2d_sov_compatibility # New GFX entry pointing to the original icon, so it can be safely overwritten by CCP 2D Sov Art without impacting other content using the same icon
+
+			allowed = {
+				always = no
+			}
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = -0.05
+			}
+		}
+		money_tciket_national = {
+
+			removal_cost = -1
+
+			#picture = SOV_second_five_year_plan_ccp_2d_sov_compatibility # New GFX entry pointing to the original icon, so it can be safely overwritten by CCP 2D Sov Art without impacting other content using the same icon
+
+			allowed = {
+				always = no
+			}
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.15
+				war_support_factor = -0.2
+				consumer_goods_factor = -0.3
+				stability_factor = -0.15
+			}
+		
+		
+		}
+		gen_tank_com = {
+
+			removal_cost = -1
+
+			#picture = SOV_second_five_year_plan_ccp_2d_sov_compatibility # New GFX entry pointing to the original icon, so it can be safely overwritten by CCP 2D Sov Art without impacting other content using the same icon
+
+			allowed = {
+				always = no
+			}
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.1
+					maximum_speed = 0.05
+					defense = 0.05
+					reliability = 0.1
+					instant = yes
+				}
+			}
+		}
+		aus_industry_plan = {
+
+			removal_cost = -1
+
+			#picture = SOV_second_five_year_plan_ccp_2d_sov_compatibility # New GFX entry pointing to the original icon, so it can be safely overwritten by CCP 2D Sov Art without impacting other content using the same icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				industrial_capacity_factory = 0.2
+				line_change_production_efficiency_factor = 0.05
+				production_speed_arms_factory_factor = 0.15
+				consumer_goods_factor = -0.05
+				production_speed_industrial_complex_factor = 0.25
+				stability_factor = 0.10
+			}
+		}
+		vina_tech = {
+
+			removal_cost = -1
+
+			#picture = SOV_second_five_year_plan_ccp_2d_sov_compatibility # New GFX entry pointing to the original icon, so it can be safely overwritten by CCP 2D Sov Art without impacting other content using the same icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				research_speed_factor = 0.15
+				industrial_concern_cost_factor = -0.25
+			}
+		}
+	}
+
+
+
+}

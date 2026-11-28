@@ -1,0 +1,750 @@
+spriteTypes = {
+	#西藏
+	spriteType = {
+		name = "GFX_TIB_Panchen_Chokyi_Nyima_large"
+		texturefile = "gfx/leaders/TIB/TIB_Panchen_Chokyi_Nyima.png"
+	}
+	#锡金
+	spriteType = {
+		name = "GFX_SKK_Sidkeong_Tulku_Namgyal_large"
+		texturefile = "gfx/leaders/SKK/SKK_Sidkeong_Tulku_Namgyal.png"
+	}
+	#亚洲骑兵团 
+	spriteType = {
+		name = "GFX_ENT_Ungern_Sternberg_large"
+		texturefile = "gfx/leaders/ENT/ENT_Ungern_Sternberg.dds"
+	}
+	#伊拉克
+	spriteType = {
+		name = "GFX_IRQ_Bakr_Sidqi_large"
+		texturefile = "gfx/leaders/IRQ/IRQ_Bakr_Sidqi.png"
+	}
+	#俄罗斯
+	#领导人
+	spriteType = {
+		name = "GFX_SOV_Alexander_Kerensky_large"
+		texturefile = "gfx/leaders/SOV/SOV_Alexander_Kerensky.png"
+	}
+	spriteType = {
+		name = "GFX_SOV_Viktor_Chernov_large"
+		texturefile = "gfx/leaders/SOV/SOV_Viktor_Chernov.png"
+		legacy_lazy_load = no
+	}
+	#南俄军区
+	#领导人
+	spriteType = {
+		name = "GFX_RCA_Lavr_Kornilov_large"
+		texturefile = "gfx/leaders/RCA/RCA_Lavr_Kornilov.png"
+	}
+	spriteType = {
+		name = "GFX_RCA_Anton_Denikin_large"
+		texturefile = "gfx/leaders/RCA/RCA_Anton_Denikin.png"
+	}
+	spriteType = {
+		name = "GFX_RCA_Aleksey_Karelin_large"
+		texturefile = "gfx/leaders/RCA/RCA_Aleksey_Karelin.dds"
+	}
+	#新俄罗斯
+	#领导人
+	spriteType = {
+		name = "GFX_NRO_Mikhail_Drozdovsky_large"
+		texturefile = "gfx/leaders/NRO/NRO_Mikhail_Drozdovsky.dds"
+	}
+	#远东军区
+	spriteType = {
+		name = "GFX_FEM_Nikolai_Kosov_large"
+		texturefile = "gfx/leaders/FEM/FEM_Nikolai_Kosov.png"
+	}
+	#保加利亚
+	#领导人
+	spriteType = {
+		name = "GFX_BUL_boris_iii_large"
+		texturefile = "gfx/leaders/BUL/BUL_boris_iii.dds"
+	}
+	spriteType = {
+		name = "GFX_BUL_Kimon_Georgiev_large"
+		texturefile = "gfx/leaders/BUL/BUL_Kimon_Georgiev.png"
+	}
+	#中华民国
+	spriteType = {
+		name = "GFX_CHI_Tang_Hualong_large"
+		texturefile = "gfx/leaders/CHI/CHI_Tang_Hualong.dds"
+	}
+	#日本
+	#领导人
+	spriteType = {
+		name = "GFX_JAP_Hirohito_large"
+		texturefile = "gfx/leaders/JAP/JAP_Hirohito.png"
+	}
+	spriteType = {
+		name = "GFX_JAP_Suzuki_Teiichi_large"
+		texturefile = "gfx/leaders/JAP/JAP_Suzuki_Teiichi.png"
+		legacy_lazy_load = no
+	}
+	#元帅
+	spriteType = {
+		name = "GFX_JAP_Hirohito_army_large"
+		texturefile = "gfx/leaders/JAP/JAP_Hirohito_army.png"
+	}
+	#罗马尼亚
+	#领导人
+	spriteType = {
+		name = "GFX_ROM_Constantin_Argetoianu_large"
+		texturefile = "gfx/leaders/ROM/ROM_Constantin_Argetoianu.png"
+	}
+	spriteType = {
+		name = "GFX_ROM_Nikola_Jorga_large"
+		texturefile = "gfx/leaders/ROM/ROM_Nikola_Jorga.png"
+		legacy_lazy_load = no
+	}
+	#西班牙
+	#领导人
+	spriteType = { #米格尔·普里莫·德里维拉
+		name = "GFX_SPR_Miguel_Primo_Derivella_large"
+		texturefile = "gfx/leaders/SPR/SPR_Miguel_Primo_Derivella.png"
+	}
+	spriteType = { #弗朗西斯科·佛朗哥（领导人）
+		name = "GFX_SPR_Francisco_Franco_civ_large"
+		texturefile = "gfx/leaders/SPR/SPR_Francisco_Franco.png"
+	}
+	spriteType = { #何塞·普里莫·德里维拉
+		name = "GFX_SPR_Jose_Primo_Derivella_large"
+		texturefile = "gfx/leaders/SPR/SPR_Jose_Primo_Derivella.png"
+	}
+	spriteType = { #唐·卡洛斯
+		name = "GFX_SPR_Don_Carlos_large"
+		texturefile = "gfx/leaders/SPR/SPR_Don_Carlos.png"
+	}
+	spriteType = { #胡安·德·波旁
+		name = "GFX_SPR_Juan_Deborbon_large"
+		texturefile = "gfx/leaders/SPR/SPR_Juan_Deborbon.png"
+	}
+	#元帅
+	spriteType = { #弗朗西斯科·佛朗哥（元帅）
+		name = "GFX_SPR_Francisco_Franco_army_large"
+		texturefile = "gfx/leaders/SPR/SPR_Francisco_Franco_army.png"
+	}
+	spriteType = { #达马索·贝伦格尔
+		name = "GFX_SPR_Damaso_Berenguer_large"
+		texturefile = "gfx/leaders/SPR/SPR_Damaso_Berenguer.png"
+	}
+	spriteType = { #米格尔·卡巴内拉斯·费雷尔
+		name = "GFX_SPR_Miguel_Cabanellas_large"
+		texturefile = "gfx/leaders/SPR/SPR_Miguel_Cabanellas.png"
+	}
+	#上将
+	spriteType = { #塞巴斯蒂安·波萨斯·佩雷亚
+		name = "GFX_SPR_Sebastian_Pozas_Perea_large"
+		texturefile = "gfx/leaders/SPR/SPR_Sebastian_Pozas_Perea.png"
+	}
+	spriteType = { #米格尔·努涅斯·德普拉多
+		name = "GFX_SPR_Miguel_Nunez_dePrado_large"
+		texturefile = "gfx/leaders/SPR/SPR_Miguel_Nunez_dePrado.png"
+	}
+	spriteType = { #何塞·米亚哈·梅南特
+		name = "GFX_SPR_Jose_Miaja_Menant_large"
+		texturefile = "gfx/leaders/SPR/SPR_Jose_Miaja_Menant.png"
+	}
+	spriteType = { #贡萨洛·奎波·德里亚诺
+		name = "GFX_SPR_Gonzalo_Queipo_deLlano_large"
+		texturefile = "gfx/leaders/SPR/SPR_Gonzalo_Queipo_deLlano.png"
+	}
+	spriteType = { #菲德尔·达维拉·阿隆多
+		name = "GFX_SPR_Fidel_Davila_Arrondo_large"
+		texturefile = "gfx/leaders/SPR/SPR_Fidel_Davila_Arrondo.png"
+	}
+	spriteType = { #弗朗西斯科·马丁-莫雷诺
+		name = "GFX_SPR_Francisco_Martin_Moreno_large"
+		texturefile = "gfx/leaders/SPR/SPR_Francisco_Martin_Moreno.png"
+	}
+	spriteType = { #埃米利奥·埃斯特万·因方特斯
+		name = "GFX_SPR_Emilio_Esteban_Infantes_large"
+		texturefile = "gfx/leaders/SPR/SPR_Emilio_Esteban_Infantes.png"
+	}
+	spriteType = { #阿古斯丁·穆尼奥斯·格兰德斯
+		name = "GFX_SPR_Agustin_Munoz_Grandes_large"
+		texturefile = "gfx/leaders/SPR/SPR_Agustin_Munoz_Grandes.png"
+	}
+	spriteType = { #胡安·维贡·苏埃罗迪亚斯
+		name = "GFX_SPR_Juan_Vigon_Sueirodias_large"
+		texturefile = "gfx/leaders/SPR/SPR_Juan_Vigon_Sueirodias.png"
+	}
+	spriteType = { #曼努埃尔·迪耶斯·阿莱格里亚
+		name = "GFX_SPR_Manuel_Dies_Allegria_large"
+		texturefile = "gfx/leaders/SPR/SPR_Manuel_Dies_Allegria.png"
+	}
+	spriteType = { #卡洛斯·阿森西奥·卡巴尼利亚斯
+		name = "GFX_SPR_Carlos_Asensio_Cabanillas_large"
+		texturefile = "gfx/leaders/SPR/SPR_Carlos_Asensio_Cabanillas.png"
+	}
+	spriteType = { #埃米利奥·莫拉
+		name = "GFX_SPR_Emilio_Mora_large"
+		texturefile = "gfx/leaders/SPR/SPR_Emilio_Mora.png"
+	}
+	#顾问
+	spriteType = { #塞拉洛·苏涅尔
+		name = "GFX_SPR_Serralo_Sunier_small"
+		texturefile = "gfx/interface/advisors/SPR/SPR_Serralo_Sunier.png"
+	}
+	spriteType = {
+		name = "GFX_SPR_Francisco_Franco_small"
+		texturefile = "gfx/interface/advisors/SPR/SPR_Francisco_Franco.png"
+	}
+	spriteType = {
+		name = "GFX_SPR_Jose_GilRobles_small"
+		texturefile = "gfx/interface/advisors/SPR/SPR_Jose_GilRobles.png"
+	}
+	spriteType = {
+		name = "GFX_SPR_Jose_Calvo_Sotelo_small"
+		texturefile = "gfx/interface/advisors/SPR/SPR_Jose_Calvo_Sotelo.png"
+	}
+	spriteType = {
+		name = "GFX_SPR_Joaquin_Chapaprieta_small"
+		texturefile = "gfx/interface/advisors/SPR/SPR_Joaquin_Chapaprieta.png"
+	}
+	#波兰
+	#领导人
+	spriteType = {
+		name = "GFX_POL_Gabriel_Narutowicz_large"
+		texturefile = "gfx/leaders/POL/POL_Gabriel_Narutowicz.png"
+	}
+	spriteType = {
+		name = "GFX_POL_Jozef_Pilsudski_large"
+		texturefile = "gfx/leaders/POL/POL_Jozef_Pilsudski.png"
+	}
+	spriteType = {
+		name = "GFX_POL_Walery_Slawek_large"
+		texturefile = "gfx/leaders/POL/POL_Walery_Slawek.png"
+	}
+	spriteType = {
+		name = "GFX_POL_Edward_Rydz_Smigly_large"
+		texturefile = "gfx/leaders/POL/POL_Edward_Rydz_Smigly.png"
+	}
+	#白俄罗斯
+	#领导人
+	spriteType = {
+		name = "GFX_POL_Juliusz_Rommel_large"
+		texturefile = "gfx/leaders/POL/POL_Juliusz_Rommel.png"
+	}
+	#顾问
+	spriteType = {
+		name = "GFX_POL_Walery_Slawek_small"
+		texturefile = "gfx/interface/advisors/POL/POL_Walery_Slawek.png"
+	}
+	spriteType = {
+		name = "GFX_POL_Edward_Rydz_Smigly_small"
+		texturefile = "gfx/interface/advisors/POL/POL_Edward_Rydz_Smigly.png"
+	}
+	#西乌克兰省
+	#领导人
+	spriteType = {
+		name = "GFX_PUK_Petro_Dyachenko_large"
+		texturefile = "gfx/leaders/PUK/PUK_Petro_Dyachenko.png"
+	}
+	#波罗的国
+	#领导人
+	spriteType = {
+		name = "GFX_BAT_Pavel_Belmont_Avalov_large"
+		texturefile = "gfx/leaders/BAT/BAT_Pavel_Belmont_Avalov.dds"
+	}
+	#立陶宛
+	#领导人
+	spriteType = {
+		name = "GFX_LIT_Kazys_Grinius_large"
+		texturefile = "gfx/leaders/LIT/LIT_Kazys_Grinius.dds"
+	}
+	### 奥地利大区 ###
+	#波西米亚
+	#领导人
+	spriteType = {
+		name = "GFX_CZE_Archduke_Franz_Ferdinand_large"
+		texturefile = "gfx/leaders/CZE/CZE_Archduke_Franz_Ferdinand.png"
+	}
+	#克罗地亚
+	#领导人
+	spriteType = {
+		name = "GFX_CRO_Archduke_Robert_large"
+		texturefile = "gfx/leaders/CRO/CRO_Archduke_Robert.png"
+	}
+	#南斯拉夫
+	#领导人
+	spriteType = {
+		name = "GFX_YUG_Alexander_I_large"
+		texturefile = "gfx/leaders/YUG/YUG_Alexander_I.png"
+	}
+	### 意大利大区 ###
+	#北意大利（意大利民族共和国）
+	#领导人
+	spriteType = {
+		name = "GFX_LBV_Benito_Mussolini_large"
+		texturefile = "gfx/leaders/LBV/LBV_Benito_Mussolini.png"
+	}
+	#顾问
+	spriteType = {
+		name = "GFX_LBV_Benito_Mussolini_small"
+		texturefile = "gfx/interface/advisors/LBV/LBV_Benito_Mussolini.png"
+	}
+	spriteType = {
+		name = "GFX_LBV_Roberto_Farinacci_small"
+		texturefile = "gfx/interface/advisors/LBV/LBV_Roberto_Farinacci.png"
+	}
+	spriteType = {
+		name = "GFX_LBV_Giuseppe_Volpi_small"
+		texturefile = "gfx/interface/advisors/LBV/LBV_Giuseppe_Volpi.png"
+	}
+	spriteType = {
+		name = "GFX_LBV_Dino_Grandi_small"
+		texturefile = "gfx/interface/advisors/LBV/LBV_Dino_Grandi.png"
+	}
+	spriteType = {
+		name = "GFX_LBV_Italo_Balbo_small"
+		texturefile = "gfx/interface/advisors/LBV/LBV_Italo_Balbo.png"
+	}
+	spriteType = {
+		name = "GFX_LBV_Arturo_Bocchini_small"
+		texturefile = "gfx/interface/advisors/LBV/LBV_Arturo_Bocchini.png"
+	}
+	#西意大利（意大利社会主义共和国）
+	#领导人
+	spriteType = {
+		name = "GFX_ITA_Antonio_Gramsci_large"
+		texturefile = "gfx/leaders/ITA/ITA_Antonio_Gramsci.png"
+	}
+	#顾问
+	spriteType = {
+		name = "GFX_ITA_Salvatore_Barzilai_small"
+		texturefile = "gfx/interface/advisors/ITA/ITA_Salvatore_Barzilai.png"
+	}
+	#南意大利（意大利王国）
+	#领导人
+	spriteType = {
+		name = "GFX_TTS_Vittorio_emanuele_iii_large"
+		texturefile = "gfx/leaders/TTS/TTS_Vittorio_emanuele_iii.png"
+	}
+	#教宗国
+	#领导人
+	spriteType = {
+		name = "GFX_PAP_Pope_Pius_XI_large"
+		texturefile = "gfx/leaders/PAP/PAP_Pope_Pius_XI.png"
+	}
+	#撒丁驻军
+	#领导人
+	spriteType = {
+		name = "GFX_SPM_Jose_Enrique_Valrela_large"
+		texturefile = "gfx/leaders/SPM/SPM_Jose_Enrique_Valrela.png"
+	}
+	### 北美洲大区 ###
+	#北方美国
+	#领导人
+	spriteType = {
+		name = "GFX_USA_John_Calvin_Coolidge_large"
+		texturefile = "gfx/leaders/USA/USA_John_Calvin_Coolidge.png"
+	}
+	#南方美国
+	#领导人
+	spriteType = { #查尔斯·考夫林
+		name = "GFX_CSA_Charles_Coughlin_large"
+		texturefile = "gfx/leaders/CSA/CSA_Charles_Coughlin.png"
+	}
+	spriteType = { #休伊·朗
+		name = "GFX_CSA_Hugh_Long_large"
+		texturefile = "gfx/leaders/CSA/CSA_Hugh_Long.png"
+	}
+	#元帅
+	spriteType = { #沃尔顿·沃克
+		name = "GFX_CSA_Walton_Walker_large"
+		texturefile = "gfx/leaders/CSA/CSA_Walton_Walker.png"
+	}
+	spriteType = { #莱斯利·詹姆斯
+		name = "GFX_CSA_Leslie_James_large"
+		texturefile = "gfx/leaders/CSA/CSA_Leslie_James.png"
+	}
+	spriteType = { #奥马尔·纳尔逊·布莱德雷
+		name = "GFX_CSA_Omar_Nelson_Bradley_large"
+		texturefile = "gfx/leaders/CSA/CSA_Omar_Nelson_Bradley.png"
+	}
+	spriteType = { #弗雷德里克·哈尔西
+		name = "GFX_CSA_Frederick_Halsey_large"
+		texturefile = "gfx/leaders/CSA/CSA_Frederick_Halsey.png" 
+	}
+	spriteType = { #西蒙·玻利瓦尔·巴克纳
+		name = "GFX_CSA_Simon_Bolivar_Bachner_large"
+		texturefile = "gfx/leaders/CSA/CSA_Simon_Bolivar_Bachner.png" 
+	}
+	spriteType = { #威廉·亨利·鲁珀特斯
+		name = "GFX_CSA_William_Henry_Ruperts_large"
+		texturefile = "gfx/leaders/CSA/CSA_William_Henry_Ruperts.png" 
+	}
+	spriteType = { #克莱伦斯·许布纳
+		name = "GFX_CSA_Clarence_Hubner_large"
+		texturefile = "gfx/leaders/CSA/CSA_Clarence_Hubner.png" 
+	}
+	#德克萨斯
+	#领导人
+	spriteType = { 
+		name = "GFX_TEX_Kress_Houston_large"
+		texturefile = "gfx/leaders/TEX/TEX_Kress_Houston.png"
+	}
+	#新墨西哥
+	#领导人
+	spriteType = { #吉尔伯托·奥古斯托·阿布瑞尔
+		name = "GFX_NMX_Gilberto_Augusto_Abreu_large"
+		texturefile = "gfx/leaders/NMX/NMX_Gilberto_Augusto_Abreu.png"
+	}
+	#加拿大
+	#领导人
+	spriteType = { #威廉·莱昂·麦肯齐·金
+		name = "GFX_CAN_Mackenzie_King_large" 
+		texturefile = "gfx/leaders/CAN/CAN_Mackenzie_King.png"
+	}
+	#纽芬兰
+	#领导人
+	spriteType = { #理查德·贝内特
+		name = "GFX_NFL_Richard_Bennett_large" 
+		texturefile = "gfx/leaders/NFL/NFL_Richard_Bennett.png"
+	}
+	#中美洲
+	#领导人
+	spriteType = { #莱昂·科尔特斯·卡斯特罗
+		name = "GFX_ELS_Leon_Cortes_Castro_large"
+		texturefile = "gfx/leaders/ELS/ELS_Leon_Cortes_Castro.png"
+	}
+	### 南美洲大区 ###
+	#阿根廷
+	#领导人
+	spriteType = {
+		name = "GFX_ARG_Amedeo_II_large"
+		texturefile = "gfx/leaders/ARG/ARG_Amedeo_II.png"
+		legacy_lazy_load = no
+	}
+	spriteType = { #马塞洛·托尔夸托·德·阿尔维亚尔
+		name = "GFX_ARG_Marcelo_Torquato_de_Alvial_large"
+		texturefile = "gfx/leaders/ARG/ARG_Marcelo_Torquato_de_Alvial.png"
+		legacy_lazy_load = no
+	}
+	spriteType = { #恩里克·马丁内斯
+        name = "GFX_ARG_Enrique_Martinez_large"
+        textureFile = "gfx/leaders/ARG/ARG_Enrique_Martinez.png"
+    }
+	#元帅
+	spriteType = { #佩德罗·欧亨尼奥·阿兰布鲁
+        name = "GFX_ARG_Pedro_Eugenio_Aramburu_large"
+        textureFile = "gfx/leaders/ARG/ARG_Pedro_Eugenio_Aramburu.png"
+    }
+	spriteType = { #胡安·皮斯塔里尼
+		name = "GFX_ARG_Juan_Pistarini_large"
+		texturefile = "gfx/leaders/ARG/ARG_Juan_Pistarini.png"
+	}
+	#上将
+	spriteType = { #胡安·庇隆
+		name = "GFX_ARG_Juan_Peron_large"
+		texturefile = "gfx/leaders/ARG/ARG_Juan_Peron.png"
+	}
+	spriteType = { #埃德尔米罗·胡利安·法雷尔·普劳尔
+		name = "GFX_general_ARG_Edelmiro_Julian_Farrell_Proul"
+		texturefile = "gfx/leaders/ARG/ARG_Edelmiro_Julian_Farrell_Proul.png"
+	}
+	#巴拉圭
+	#领导人
+	spriteType = { #巴勃罗·拉米雷斯
+		name = "GFX_PAR_Pablo_Ramirez_large"
+		texturefile = "gfx/leaders/PAR/PAR_Pablo_Ramirez.png"
+		legacy_lazy_load = no
+	}
+	#巴塔哥尼亚
+	spriteType = { #巴塔哥尼亚摄政委员会
+		name = "GFX_BTG_Regency_Council_large"
+		texturefile = "gfx/leaders/BTG/BTG_Regency_Council.png"
+	}
+	#普拉蒂尼
+	spriteType = { #热图里奥·瓦加斯
+		name = "GFX_BRB_Getulio_Vargas_large"
+		texturefile = "gfx/leaders/BRB/BRB_Getulio_Vargas.png"
+	}
+	#阿塔卡马
+	spriteType = { #所罗门·R·古根海姆
+		name = "GFX_AMD_Solomon_Guggenheim_large"
+		texturefile = "gfx/leaders/AMD/AMD_Solomon_Guggenheim.dds"
+	}
+	### 印度大区 ###
+	#海德拉巴
+	spriteType = { #奥斯曼·阿里·汗
+		name = "GFX_HYD_Osman_Ali_Khan_large"
+		texturefile = "gfx/leaders/HYD/HYD_Osman_Ali_Khan.png"
+	}
+	spriteType = { #赛义德·艾哈迈德·穆赫达尔·阿尔-艾达鲁斯
+		name = "GFX_HYD_Syed_Ahmed_El_Edroos_large"
+		texturefile = "gfx/leaders/HYD/HYD_Syed_Ahmed_El_Edroos.png"
+	}
+	spriteType = { #阿扎姆·贾
+		name = "GFX_HYD_Azam_Jah_large"
+		texturefile = "gfx/leaders/HYD/HYD_Azam_Jah.png"
+	}
+	spriteType = { #穆阿扎姆·贾
+		name = "GFX_HYD_Moazzam_Jah_large"
+		texturefile = "gfx/leaders/HYD/HYD_Moazzam_Jah.png"
+	}
+	spriteType = { #拉贾·拉梅什瓦尔·拉奥
+		name = "GFX_HYD_Raja_Rameshwar_Rao_large"
+		texturefile = "gfx/leaders/HYD/HYD_Raja_Rameshwar_Rao.png"
+	}
+	spriteType = { #萨法拉兹·阿里·汗
+		name = "GFX_HYD_Sarfaraz_Ali_Khan_large"
+		texturefile = "gfx/leaders/HYD/HYD_Sarfaraz_Ali_Khan.png"
+	}
+	### 中东大区 ###
+	#叙利亚
+	spriteType = { #加齐·伊本·费萨尔
+		name = "GFX_SYR_Ghazi_Ibn_Faisal_large"
+		texturefile = "gfx/leaders/SYR/SYR_Ghazi_Ibn_Faisal.png"
+	}
+	#约旦
+	spriteType = { #阿卜杜拉·伊本·侯赛因
+		name = "GFX_JOR_Abdullah_Ibin_Hussein_large"
+		texturefile = "gfx/leaders/JOR/JOR_Abdullah_Ibin_Hussein.png"
+	}
+	#犹太国
+	spriteType = { #哈伊姆·魏茨曼
+		name = "GFX_ISR_Chaim_Weizmann_large"
+		texturefile = "gfx/leaders/ISR/ISR_Chaim_Weizmann.png"
+	}
+	### 非洲大区 ###
+	#南非
+	spriteType = { #弗雷德里克·克雷斯韦尔
+		name = "GFX_SAF_Frederic_Creswell_large"
+		texturefile = "gfx/leaders/SAF/SAF_Frederic_Creswell.png"
+	}
+
+
+
+	spriteType = { #何塞·里卡多·佩雷拉·卡布拉尔
+		name = "GFX_POR_hesai"
+		texturefile = "gfx/leaders/POR/POR_hesai.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_George_V"
+		texturefile = "gfx/leaders/ENG/ENG_George_V.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_Andre_Tardieu"
+		texturefile = "gfx/leaders/FRA/FRA_Andre_Tardieu.dds"
+	}
+	spriteType = {
+		name = "GFX_CHI_CHIANG_KAI_SHEIK"
+		texturefile = "gfx/leaders/CHI_CHIANG_KAI_SHEIK.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_Chamberlain"
+		texturefile = "gfx/leaders/ENG_Chamberlain.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_Winston_c"
+		texturefile = "gfx/leaders/ENG_Winston_c.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_Laval"
+		texturefile = "gfx/leaders/FRA_Laval.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_Krasnov"
+		texturefile = "gfx/leaders/RUS/RUS_Krasnov.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_Rinov"
+		texturefile = "gfx/leaders/RUS/RUS_Rinov.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_Mikhail_Konstantinovich_Tzeterikhs"
+		texturefile = "gfx/leaders/RUS/RUS_Mikhail_Konstantinovich_Tzeterikhs.dds"
+	}
+	spriteType = {
+		name = "GFX_TVE_TAN_LEADERS"
+		texturefile = "gfx/leaders/CHI/TVE_TAN_LEADERS.dds"
+	}
+	spriteType = {
+		name = "GFX_MON_ENQIN"
+		texturefile = "gfx/leaders/RUS/MON_ENQIN.dds"
+	}
+	spriteType = {
+		name = "GFX_CHI_HU_HAN_MIN"
+		texturefile = "gfx/leaders/CHI/CHI_HU_HAN_MIN.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_Yudenich"
+		texturefile = "gfx/leaders/RUS/RUS_Yudenich.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_George_Lansbury"
+		texturefile = "gfx/leaders/ENG/ENG_George_Lansbury.dds"
+	}
+	spriteType = {
+		name = "GFX_UKR_BIDE_LIULA"
+		texturefile = "gfx/leaders/UKR/UKR_BIDE_LIULA.dds"
+	}
+	spriteType = {
+		name = "GFX_BLR_YANG_XIELADA"
+		texturefile = "gfx/leaders/BLR/BLR_YANG_XIELADA.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_Rotha_Lintorn_Orman"
+		texturefile = "gfx/leaders/ENG/ENG_Rotha_Lintorn_Orman.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_George_VI"
+		texturefile = "gfx/leaders/ENG/ENG_George_VI.dds"
+	}
+	spriteType = {
+		name = "GFX_ANA_anarchy"
+		texturefile = "gfx/leaders/ANA/ANA_anarchy.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_Henri_Philippe_Petain"
+		texturefile = "gfx/leaders/FRA/FRA_Henri_Philippe_Petain.dds"
+	}
+	spriteType = {
+		name = "GFX_George_II"
+		texturefile = "gfx/leaders/GRE/George_II.dds"
+	}
+	spriteType = {
+		name = "GFX_IRE_Michael_John_Mick_Collins"
+		texturefile = "gfx/leaders/IRE/IRE_Michael_John_Mick_Collins.dds"
+	}
+	spriteType = {
+		name = "GFX_IRE_William_Thomas_Cosgrave"
+		texturefile = "gfx/leaders/IRE/IRE_William_Thomas_Cosgrave.dds"
+	}
+	spriteType = {
+		name = "GFX_RHI_Konrad_Adenauer"
+		texturefile = "gfx/leaders/RHI/RHI_Konrad_Adenauer.dds"
+	}
+	spriteType = {
+		name = "GFX_TUR_Mustafa_Kemal_Ataturk"
+		texturefile = "gfx/leaders/TUR/TUR_Mustafa_Kemal_Ataturk.dds"
+	}
+	spriteType = {
+		name = "GFX_II_Abdvlmecid"
+		texturefile = "gfx/leaders/TUR/II_Abdvlmecid.png"
+	}
+	spriteType = {
+		name = "GFX_USA_George_William_Norris"
+		texturefile = "gfx/leaders/USA/USA_George_William_Norris.dds"
+	}
+	spriteType = {
+		name = "GFX_WLS_Lewis_Sanders"
+		texturefile = "gfx/leaders/WLS/WLS_Lewis_Sanders.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_Pyotr_Nikolayevich_Wrangel"
+		texturefile = "gfx/leaders/RUS/RUS_Pyotr_Nikolayevich_Wrangel.dds"
+	}
+	spriteType = {
+		name = "GFX_SCO_John_McCormick"
+		texturefile = "gfx/leaders/SCO/SCO_John_McCormick.dds"
+	}
+	spriteType = {
+		name = "GFX_AUS_Charles_I"
+		texturefile = "gfx/leaders/AUS/AUS_Charles_I.dds"
+	}
+	spriteType = {
+		name = "GFX_AUS_OTTO_I"
+		texturefile = "gfx/leaders/AUS/AUS_OTTO_I.dds"
+	}
+	spriteType = {
+		name = "GFX_BLR_Biełaruskaja_centralnaja_rada"
+		texturefile = "gfx/leaders/BLR/BLR_Biełaruskaja_centralnaja_rada.dds"
+	}
+	spriteType = {
+		name = "GFX_UKR_Pavlo_Petrovych_Skoropadskyi"
+		texturefile = "gfx/leaders/UKR/UKR_Pavlo_Petrovych_Skoropadskyi.dds"
+	}
+	#I'm so sorry but actually there leaders's pitcure are all one person do that me,So for the working-speed, I have to simplification this leaders name.plzzzzz Forgive me,My work is too hard and large.TAT I will Formalize thier leaders if I have enough times after publish this mod.
+	spriteType = {
+		name = "GFX_TVE_DEN_LEADERS"
+		texturefile = "gfx/leaders/DEN/TVE_DEN_LEADERS.dds"
+	}
+	spriteType = {
+		name = "GFX_TVE_EST_LEADERS"
+		texturefile = "gfx/leaders/EST/TVE_EST_LEADERS.dds"
+	}
+	spriteType = {
+		name = "GFX_TVE_FIN_LEADERS"
+		texturefile = "gfx/leaders/FIN/TVE_FIN_LEADERS.dds"
+	}
+	spriteType = {
+		name = "GFX_TVE_ICE_LEADERS"
+		texturefile = "gfx/leaders/ICE/TVE_ICE_LEADERS.dds"
+	}
+	spriteType = {
+		name = "GFX_TVE_LAT_LEADERS"
+		texturefile = "gfx/leaders/LAT/TVE_LAT_LEADERS.dds"
+	}
+	spriteType = {
+		name = "GFX_TVE_LIT_LEADERS"
+		texturefile = "gfx/leaders/LIT/TVE_LIT_LEADERS.dds"
+	}
+	spriteType = {
+		name = "GFX_TVE_NOR_LEADERS"
+		texturefile = "gfx/leaders/NOR/TVE_NOR_LEADERS.dds"
+	}
+	spriteType = {
+		name = "GFX_TVE_SWE_LEADERS"
+		texturefile = "gfx/leaders/SWE/TVE_SWE_LEADERS.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_parliament"
+		texturefile = "gfx/leaders/FRA/FRA_parliament.dds"
+	}
+	spriteType = {
+		name = "GFX_AUS_parliament"
+		texturefile = "gfx/leaders/AUS/AUS_parliament.dds"
+	}
+	spriteType = {
+		name = "GFX_TVE_BEL_LEADERS"
+		texturefile = "gfx/leaders/BEL/TVE_BEL_LEADERS.dds"
+	}
+	spriteType = {
+		name = "GFX_TVE_PER_LEADERS"
+		texturefile = "gfx/leaders/PER/TVE_PER_LEADERS.dds"
+	}
+	spriteType = {
+		name = "GFX_TVE_SAU_LEADERS"
+		texturefile = "gfx/leaders/SAU/TVE_SAU_LEADERS.dds"
+	}
+	spriteType = {
+		name = "GFX_TVE_MLY_LEADERS"
+		texturefile = "gfx/leaders/MLY/TVE_MLY_LEADERS.dds"
+	}
+	spriteType = {
+		name = "GFX_POR_TVE_LEADERS"
+		texturefile = "gfx/leaders/POR/POR_TVE_LEADERS.dds"
+	}
+	spriteType = {
+		name = "GFX_TVE_HOL_LEADERS"
+		texturefile = "gfx/leaders/HOL/TVE_HOL_LEADERS.dds"
+	}
+	spriteType = {
+		name = "GFX_TVE_ROM_LEADERS"
+		texturefile = "gfx/leaders/ROM/TVE_ROM_LEADERS.dds"
+	}
+	spriteType = {
+		name = "GFX_TVE_LUX_LEADERS"
+		texturefile = "gfx/leaders/LUX/TVE_LUX_LEADERS.dds"
+	}
+	spriteType = {
+		name = "GFX_TVE_ALB_LEADERS"
+		texturefile = "gfx/leaders/ALB/TVE_ALB_LEADERS.dds"
+	}
+	spriteType = {
+		name = "GFX_TVE_SWI_LEADERS"
+		texturefile = "gfx/leaders/SWI/TVE_SWI_LEADERS.dds"
+	}
+	spriteType = {
+		name = "GFX_BLR_Bronislav_Vladislavovich_Kaminsky"
+		texturefile = "gfx/leaders/BLR/BLR_Bronislav_Vladislavovich_Kaminsky.dds"
+	}
+	#乌拉圭
+	spriteType = { #卡洛斯·多明戈·马克斯
+		name = "GFX_URG_Carlos_Domingo_Marx_large"
+		texturefile = "gfx/leaders/URG/URG_Carlos_Domingo_Marx.dds"
+	}
+}

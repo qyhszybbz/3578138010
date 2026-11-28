@@ -1,0 +1,28 @@
+﻿capital = 316 #Nicaragua
+
+oob = "CHL_1936"
+
+### CORES = 312, 317
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_trucks = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+}
+
+set_cosmetic_tag = MIS_CCW
+recruit_character = MIS_Alfonso_Lopez_Pumarejo
+set_politics = {
+	ruling_party = Liberalism
+	last_election = "1934.2.11"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	Liberalism = 85
+	tttt = 15
+}

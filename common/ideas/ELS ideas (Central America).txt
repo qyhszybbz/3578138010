@@ -1,0 +1,49 @@
+ideas = {
+	country = {
+		### 初始民族精神 ###
+		#脆弱的联邦盟约
+		ELS_The_fragile_federal_covenant = {
+			on_add = { log = "[GetLogRoot]: add idea ELS_The_fragile_federal_covenant" }
+			picture = The_fragile_federal_covenant
+			allowed = { always = no }			
+			modifier = {
+				stability_factor = -0.3
+				mobilization_laws_cost_factor = 100
+				custom_modifier_tooltip = ELS_The_fragile_federal_covenant_tip
+			}
+		}
+		#联合果品的枷锁
+		ELS_The_shackles_of_united_fruits = {
+			on_add = { log = "[GetLogRoot]: add idea ELS_The_shackles_of_united_fruits" }
+			picture = The_shackles_of_united_fruits
+			allowed = { always = no }
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				local_resources_factor = -0.2
+			}
+		}
+		#被群山阻隔的国土
+		ELS_A_land_blocked_by_mountains = {
+			on_add = { log = "[GetLogRoot]: add idea ELS_A_land_blocked_by_mountains" }
+			picture = A_land_blocked_by_mountains
+			allowed = { always = no }
+			modifier = {
+				no_supply_grace = -6
+				army_core_defence_factor = 0.1
+				army_speed_factor = 0.05
+			}
+		}
+		#教会与原住民
+		ELS_The_church_and_indigenous_peoples = {
+			on_add = { log = "[GetLogRoot]: add idea ELS_The_church_and_indigenous_people" }
+			picture = The_church_and_indigenous_people
+			allowed = { always = no }
+			modifier = {
+				monthly_population = -0.15
+				Communism_drift = 0.1
+				Socialism_drift = 0.05
+				Progressivism_drift = 0.05
+			}
+		}
+	}
+}

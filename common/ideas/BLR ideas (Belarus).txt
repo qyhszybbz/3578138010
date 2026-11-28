@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+		### 初始民族精神 ###
+		#东方军团
+		BLR_Legion_des_Ostens = {
+			on_add = { log = "[GetLogRoot]: add idea BLR_Legion_des_Ostens" }
+			picture = Legion_des_Ostens
+			allowed = { always = no }
+			modifier = {
+				army_core_defence_factor = 0.30
+				army_attack_against_major_factor = 0.15
+				army_defence_against_major_factor = 0.10
+			}
+		}
+	}
+}

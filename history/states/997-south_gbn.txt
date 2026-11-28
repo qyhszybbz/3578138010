@@ -1,0 +1,36 @@
+state = {
+	id = 997
+	name = "STATE_997"
+	manpower = 532315
+	state_category = town
+	resources = {
+	}
+
+	history = {
+
+		owner = GER
+		add_core_of = FRE
+		add_core_of = GER
+		add_core_of = GER
+
+		victory_points = {
+			11386 1 # 鲁克
+		}
+
+		#victory_points = {
+		#	11386 1 # Lyck
+		#}
+		
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		
+	}
+
+	provinces={
+		9398 266 9327 9372 11386
+	}
+
+	local_supplies = 20.0 
+}

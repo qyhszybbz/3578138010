@@ -1,0 +1,86 @@
+CSA_Development_of_the_AP = {
+	initial_value = 0.25
+	left_side = CSA_traditionalist
+	right_side = CSA_industrialist
+	decision_category = CSA_balance_of_rights
+	range = {
+		id = CSA_balance_range
+		min = 0
+		max = 0
+		modifier = {
+			
+		}
+	}
+	side = { #传统派
+		id = CSA_traditionalist
+		icon = GFX_pob_CSA_traditionalist
+		range = {
+			id = CSA_traditionalist_3
+			min = 0
+			max = -0.4
+			modifier = {
+				
+			}
+		}
+		range = {
+			id = CSA_traditionalist_2
+			min = -0.4
+			max = -0.6
+			modifier = {
+				
+			}
+		}
+		range = {
+			id = CSA_traditionalist_1
+			min = -0.6
+			max = -1
+			modifier = {
+				local_resources_factor = 0.4
+				mobilization_speed = 0.15
+				supply_factor = 0.02
+				stability_factor = 0.1
+				surrender_limit = 0.2
+				fascism_drift = 0.01
+				nazism_drift = 0.01
+			}
+		}
+		
+	}
+	
+	side = { #工业派
+		id = CSA_industrialist
+		icon = GFX_pob_CSA_industrialist
+		range = {
+			id = CSA_industrialist_1
+			min = 0
+			max = 0.4
+			modifier = {
+				
+			}
+		}
+		range = {
+			id = CSA_industrialist_2
+			min = 0.4
+			max = 0.6
+			modifier = {
+				
+			}
+		}
+		range = {
+			id = CSA_industrialist_3
+			min = 0.6
+			max = 1
+			modifier = {
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_arms_factory_factor = 0.2
+				production_speed_buildings_factor = 0.15
+				conversion_cost_civ_to_mil_factor = -0.05
+				conversion_cost_mil_to_civ_factor = -0.05
+				political_power_factor = 0.05
+				army_org_factor = 0.05
+				attrition = -0.05
+				research_speed_factor = 0.05
+			}
+		}
+	}
+}

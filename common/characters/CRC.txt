@@ -1,0 +1,18 @@
+characters = {
+	CRC_Archibald_Currie = { #阿奇博尔德·柯里
+    name = CRC_Archibald_Currie
+    portraits = {
+        civilian = {
+            large = GFX_leader_CRC_Archibald_Currie
+        }
+    }
+    
+    country_leader = {
+        ideology = colonial_government_liberalism
+		desc = CRC_Archibald_Currie_desc
+        traits = {
+			
+        }
+    }
+}
+}

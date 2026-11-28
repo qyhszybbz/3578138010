@@ -1,0 +1,27 @@
+state = {
+	id = 1120
+	name = "STATE_1120"
+	manpower = 1853202
+	state_category = rural
+	history = {
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+		add_core_of = MAN
+		add_extra_state_shared_building_slots = 5
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			7832 5
+		}
+		victory_points = {
+			12618 3
+		}
+	}
+	provinces = {
+		1545 1693 1732 7613 7767 7832 7848 7897 10368 10379 10675 10698 12548 12618
+	}
+	local_supplies = 7
+	buildings_max_level_factor = 1.000
+}

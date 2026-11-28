@@ -1,0 +1,44 @@
+state = {
+	id = 598
+	name = "STATE_598"
+	manpower = 818606
+	state_category = rural
+	history = {
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+		add_core_of = TIB
+		add_extra_state_shared_building_slots = 3
+		buildings = {
+			industrial_complex = 2
+			infrastructure = 1
+		}
+		1938.10.25 = {
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "Waking the Tiger" 
+					}
+
+				}
+				CHI = {
+					transfer_state = PREV
+
+				}
+
+			}
+
+		}
+		victory_points = {
+			4964 3
+		}
+		victory_points = {
+			8059 3
+		}
+	}
+	provinces = {
+		1882 4964 5080 8018 8059 10817 12899
+	}
+	local_supplies = 7
+	buildings_max_level_factor = 1.000
+}

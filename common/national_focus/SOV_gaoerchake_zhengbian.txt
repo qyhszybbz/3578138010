@@ -1,0 +1,271 @@
+focus_tree = {
+	id = SOV_gaoerchake_zhengbian_tree
+	
+	country = {
+		factor = 0
+	}	
+
+	shared_focus=SOV_1918_again
+	shared_focus=SOV_gonghe_xingcun
+
+	focus = {
+		id = SOV_wuwei_shangjiang_panluan
+		available = {
+		}
+		prerequisite = {
+
+		}
+		icon = GFX_focus_BRA_utilize_security_law
+		cost = 1
+		allow_branch = {
+
+		}
+		x = 3
+		y = 0
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+	id = SOV_jinji_huiyi
+	icon = GFX_focus_AFG_establish_darulaman
+	cost = 1
+	x = 0
+	y = 1
+	prerequisite={
+		focus= SOV_wuwei_shangjiang_panluan
+	}
+	relative_position_id= SOV_wuwei_shangjiang_panluan
+	completion_reward = {
+	}
+}
+
+	focus = {
+	id = SOV_xunqiu_zhichi
+	icon = GFX_focus_AFG_establish_darulaman
+	cost = 1
+	x = -3
+	y = 1
+	prerequisite={
+		focus= SOV_jinji_huiyi
+	}
+	relative_position_id= SOV_jinji_huiyi
+	completion_reward = {
+	}
+}
+
+	focus = {
+	id = SOV_jinji_quanli
+	icon = GFX_focus_AFG_establish_darulaman
+	cost = 1
+	x = 0
+	y = 1
+	prerequisite={
+		focus= SOV_jinji_huiyi
+	}
+	relative_position_id= SOV_jinji_huiyi
+	completion_reward = {
+	}
+}
+
+	focus = {
+	id = SOV_quebao_zhongcheng
+	icon = GFX_focus_AFG_establish_darulaman
+	cost = 0
+	x = 4
+	y = 1
+	prerequisite={
+		focus= SOV_jinji_huiyi
+	}
+	relative_position_id= SOV_jinji_huiyi
+	completion_reward = {
+	}
+}
+
+	focus = {
+	id = SOV_zhichi_gonghe
+	icon = GFX_focus_AFG_establish_darulaman
+	cost = 0
+	x = -1
+	y = 1
+	prerequisite={
+		focus= SOV_xunqiu_zhichi
+	}
+	mutually_exclusive={focus=SOV_xiushou_pangguang}
+	relative_position_id= SOV_xunqiu_zhichi
+	completion_reward = {
+	}
+}
+
+	focus = {
+	id = SOV_xiushou_pangguang
+	icon = GFX_focus_AFG_establish_darulaman
+	cost = 0
+	x = 1
+	y = 1
+	prerequisite={
+		focus= SOV_xunqiu_zhichi
+	}
+	mutually_exclusive={focus=SOV_zhichi_gonghe}
+	relative_position_id= SOV_xunqiu_zhichi
+	completion_reward = {
+	}
+}
+
+	focus = {
+	id = SOV_dennijin
+	icon = GFX_focus_AFG_establish_darulaman
+	cost = 1
+	x = 0
+	y = 1
+	prerequisite={
+		focus= SOV_jinji_quanli
+	}
+	relative_position_id= SOV_jinji_quanli
+	completion_reward = {
+	}
+}
+
+	focus = {
+	id = SOV_zhaboluore_zhongcheng
+	icon = GFX_focus_AFG_establish_darulaman
+	cost = 1
+	x = -2
+	y = 1
+	prerequisite={
+		focus= SOV_quebao_zhongcheng
+	}
+	relative_position_id= SOV_quebao_zhongcheng
+	completion_reward = {
+	}
+}
+
+	focus = {
+	id = SOV_gesake_wenti
+	icon = GFX_focus_AFG_establish_darulaman
+	cost = 1
+	x = 2
+	y = 1
+	prerequisite={
+		focus= SOV_quebao_zhongcheng
+	}
+	relative_position_id= SOV_quebao_zhongcheng
+	completion_reward = {
+	}
+}
+
+	focus = {
+	id = SOV_zhongyu_minzhu_zhengfu
+	icon = GFX_focus_AFG_establish_darulaman
+	cost = 1
+	x = 0
+	y = 1
+	prerequisite={
+		focus= SOV_zhichi_gonghe
+	}
+	relative_position_id= SOV_zhichi_gonghe
+	completion_reward = {
+	}
+}
+
+	focus = {
+	id = SOV_dongyuan_minbing
+	icon = GFX_focus_AFG_establish_darulaman
+	cost = 1
+	x = 0
+	y = 1
+	prerequisite={
+		focus= SOV_xiushou_pangguang
+	}
+	relative_position_id= SOV_xiushou_pangguang
+	completion_reward = {
+	}
+}
+
+	focus = {
+	id = SOV_deluoziduofu_zhongli
+	icon = GFX_focus_AFG_establish_darulaman
+	cost = 0
+	x = -1
+	y = 1
+	prerequisite={
+		focus= SOV_zhaboluore_zhongcheng
+	}
+	mutually_exclusive={
+		focus=SOV_deluoziduofu_gaoerchake
+	}
+	relative_position_id= SOV_zhaboluore_zhongcheng
+	completion_reward = {
+	}
+}
+
+	focus = {
+	id = SOV_deluoziduofu_gaoerchake
+	icon = GFX_focus_AFG_establish_darulaman
+	cost = 0
+	x = 1
+	y = 1
+	prerequisite={
+		focus= SOV_zhaboluore_zhongcheng
+	}
+	mutually_exclusive={
+		focus=SOV_deluoziduofu_zhongli
+	}
+	relative_position_id= SOV_zhaboluore_zhongcheng
+	completion_reward = {
+	}
+}
+
+	focus = {
+	id = SOV_keluosinuofu_daotai
+	icon = GFX_focus_AFG_establish_darulaman
+	cost = 0
+	x = -1
+	y = 1
+	prerequisite={
+		focus= SOV_gesake_wenti
+	}
+	mutually_exclusive={
+		focus=SOV_keluosinuofu_budao
+	}
+	relative_position_id= SOV_gesake_wenti
+	completion_reward = {
+	}
+}
+
+	focus = {
+	id = SOV_keluosinuofu_budao
+	icon = GFX_focus_AFG_establish_darulaman
+	cost = 0
+	x = 1
+	y = 1
+	prerequisite={
+		focus= SOV_gesake_wenti
+	}
+	mutually_exclusive={
+		focus=SOV_keluosinuofu_daotai
+	}
+	relative_position_id= SOV_gesake_wenti
+	completion_reward = {
+	}
+}
+
+	focus = {
+	id = SOV_chongxinzhenghe
+	icon = GFX_focus_AFG_establish_darulaman
+	cost = 1
+	x = 0
+	y = 1
+	prerequisite={
+		focus= SOV_keluosinuofu_daotai
+	}
+	relative_position_id= SOV_keluosinuofu_daotai
+	completion_reward = {
+		country_event=SOV_TVE.2
+	}
+}
+}
+
+
+

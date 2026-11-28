@@ -1,0 +1,40 @@
+scripted_gui = {
+	TFE_peace_popup_window = {
+		window_name = "TFE_peace_popup_window"
+		context_type = player_context
+		properties = {
+			flag_1 = {
+				image = "[winning_country.GetFlag]"
+			}
+			flag_2 = {
+				image = "[losing_country.GetFlag]"
+			}
+		}
+		#parent_window_token = top_bar
+		effects = {
+		}
+
+		triggers = {
+	    	
+	    }
+
+		visible = {
+			is_ai = no
+			has_global_flag = show_peace_popup_alert
+		}
+
+		effects = {
+			close_button_click = {
+				clr_global_flag = show_peace_popup_alert
+				clr_global_flag = losing_country_multiple
+				clr_global_flag = winning_country_multiple
+				clr_global_flag = war_continuing
+				clr_global_flag = war_won
+
+				clear_variable = global.winning_country
+				clear_variable = global.losing_country
+			}
+		}
+	}
+}
+

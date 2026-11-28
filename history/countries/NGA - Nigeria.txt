@@ -1,0 +1,45 @@
+capital = 556
+oob = "NGA_1935"
+set_stability = 0.19
+set_war_support = 0.20
+starting_train_buffer = 0.65
+set_fuel_ratio = 0.80
+set_research_slots = 2
+set_convoys = 36
+set_cosmetic_tag = NGA_South_niger #尼日尔南岸联邦
+
+### 初始科技 ###
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1	
+	tech_mountaineers = 1
+	tech_trucks = 1
+	gw_artillery = 1
+	basic_train = 1
+	gwtank_chassis = 1
+	camelry = 1
+}
+
+### 领导人 ###
+recruit_character = NGA_Herbert_Macaulay #赫伯特·麦考莱
+
+add_ideas = {
+	### 初始民族精神 ###
+	NGA_Fractured_Territory #断裂的国土
+	NGA_ThreePort_Dispute_Lagos #三港之争-拉各斯霸权
+}
+
+set_politics = {
+	ruling_party = Democracy
+	last_election = "1930.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	Progressivism = 7
+	Liberalism = 16
+	Democracy = 38
+	Conservatism = 15
+	Authoritarianism = 13
+	tttt = 11
+}

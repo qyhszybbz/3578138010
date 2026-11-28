@@ -1,0 +1,709 @@
+﻿focus_tree = {
+	id = china_nationalist_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 5000
+			tag = CHI
+			has_dlc = "Waking the Tiger"
+		}
+	}
+	
+
+	default = no
+
+	continuous_focus_position = { x = 0 y = 100000 }
+	focus = {
+		id = ROC_YSDC
+		icon = GFX_ROC_YSDC_P
+		x = 10
+		y = 0
+
+		cost = 5
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROC_YZYL
+		icon = GFX_ROC_YZCL_P
+		x = 9
+		y = 1
+
+		cost = 5
+
+		prerequisite = {
+			focus = ROC_YSDC
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROC_MPZD
+		icon = GFX_ROC_MPZD_P
+		x = 11
+		y = 1
+
+		cost = 5
+
+		prerequisite = {
+			focus = ROC_YSDC
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROC_ZJWDGF
+		icon = GFX_ROC_KZJWDYS_P
+		x = 10
+		y = 2
+
+		cost = 5
+
+		prerequisite = {
+			focus = ROC_MPZD
+		}
+		prerequisite = {
+			focus = ROC_YZYL
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROC_LDGS
+		icon = GFX_LDGS
+		x = 5
+		y = 3
+
+		cost = 5
+
+		prerequisite = {
+			focus = ROC_ZJWDGF
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROC_GRJZJ
+		icon = GFX_GRJZJ
+		x = 3
+		y = 4
+
+		cost = 5
+
+		prerequisite = {
+			focus = ROC_LDGS
+		}
+		mutually_exclusive = {
+			focus = ROC_QYZQ
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROC_QYZQ
+		icon = GFX_QYZQ
+		x = 7
+		y = 4
+
+		cost = 5
+
+		prerequisite = {
+			focus = ROC_LDGS
+		}
+		mutually_exclusive = {
+			focus = ROC_GRJZJ
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROC_MSZY
+		icon = GFX_MSZY
+		x = 3
+		y = 5
+
+		cost = 5
+
+		prerequisite = {
+			focus = ROC_GRJZJ
+			focus = ROC_QYZQ
+		}
+		mutually_exclusive = {
+			focus = ROC_SJKYD
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROC_SJKYD
+		icon = GFX_LJKYD
+		x = 7
+		y = 5
+
+		cost = 5
+
+		prerequisite = {
+			focus = ROC_GRJZJ
+			focus = ROC_QYZQ
+		}
+		mutually_exclusive = {
+			focus = ROC_MSZY
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROC_DXTM
+		icon = GFX_DXTM
+		x = 3
+		y = 6
+
+		cost = 5
+
+		prerequisite = {
+			focus = ROC_MSZY
+			focus = ROC_SJKYD
+		}
+		mutually_exclusive = {
+			focus = ROC_CCGGGW
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROC_FLGJ
+		icon = GFX_FLGJ
+		x = 2
+		y = 7
+
+		cost = 5
+
+		prerequisite = {
+			focus = ROC_DXTM
+		}
+		mutually_exclusive = {
+			focus = ROC_ZSZSZC
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROC_ZSZSZC
+		icon = GFX_ZSZSZC
+		x = 4
+		y = 7
+
+		cost = 5
+
+		prerequisite = {
+			focus = ROC_DXTM
+		}
+		mutually_exclusive = {
+			focus = ROC_FLGJ
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROC_DHWQ
+		icon = GFX_DHWQ
+		x = 3
+		y = 8
+
+		cost = 5
+
+		prerequisite = {
+			focus = ROC_FLGJ
+			focus = ROC_ZSZSZC
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROC_QFMY
+		icon = GFX_QFMY
+		x = 7
+		y = 8
+
+		cost = 5
+
+		prerequisite = {
+			focus = ROC_HFRC
+			focus = ROC_CGWY
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROC_ZSGS
+		icon = GFX_ZSGS
+		x = 5
+		y = 9
+
+		cost = 5
+
+		prerequisite = {
+			focus = ROC_DHWQ
+			focus = ROC_QFMY
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROC_CCGGGW
+		icon = GFX_CJGGBM
+		x = 7
+		y = 6
+
+		cost = 5
+
+		prerequisite = {
+			focus = ROC_MSZY
+			focus = ROC_SJKYD
+		}
+		mutually_exclusive = {
+			focus = ROC_DXTM
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROC_HFRC
+		icon = GFX_HFRC
+		x = 6
+		y = 7
+
+		cost = 5
+
+		prerequisite = {
+			focus = ROC_CCGGGW
+		}
+		mutually_exclusive = {
+			focus = ROC_CGWY
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROC_CGWY
+		icon = GFX_CGWY
+		x = 8
+		y = 7
+
+		cost = 5
+
+		prerequisite = {
+			focus = ROC_CCGGGW
+		}
+		mutually_exclusive = {
+			focus = ROC_HFRC
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROC_BYJT
+		icon = GFX_ROC_BYJT_P
+		x = 16
+		y = 3
+
+		cost = 5
+
+		prerequisite = {
+			focus = ROC_ZJWDGF
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROC_DQRBG
+		icon = GFX_UNKOWN
+		x = 11
+		y = 4
+
+		cost = 5
+
+		prerequisite = {
+			focus = ROC_BYJT
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROC_XDJL
+		icon = GFX_UNKOWN
+		x = 11
+		y = 6
+
+		cost = 5
+
+		prerequisite = {
+			focus = ROC_DQRBG
+		}
+		prerequisite = {
+			focus = ROC_MDDQR
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROC_DYDQR
+		icon = GFX_UNKOWN
+		x = 11
+		y = 7
+
+		cost = 5
+
+		prerequisite = {
+			focus = ROC_XDJL
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROC_ROC_ZJDQR
+		icon = GFX_UNKOWN
+		x = 13
+		y = 7
+
+		cost = 5
+
+		prerequisite = {
+			focus = ROC_XDJL
+			focus = ROC_QHLB
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROC_ZJFGZ
+		icon = GFX_UNKOWN
+		x = 19
+		y = 7
+
+		cost = 5
+
+		prerequisite = {
+			focus = ROC_XDJLT
+			focus = ROC_QHLB
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROC_QSSK
+		icon = GFX_UNKOWN
+		x = 12
+		y = 8
+
+		cost = 5
+
+		prerequisite = {
+			focus = ROC_DYDQR
+		}
+		prerequisite = {
+			focus = ROC_ROC_ZJDQR
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROC_XDJLT
+		icon = GFX_UNKOWN
+		x = 21
+		y = 6
+
+		cost = 5
+
+		prerequisite = {
+			focus = ROC_MDFGZ
+		}
+		prerequisite = {
+			focus = ROC_FGZSY
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROC_DYFGZ
+		icon = GFX_UNKOWN
+		x = 21
+		y = 7
+
+		cost = 5
+
+		prerequisite = {
+			focus = ROC_MDFGZ
+		}
+		prerequisite = {
+			focus = ROC_FGZSY
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROC_QSSKT
+		icon = GFX_UNKOWN
+		x = 20
+		y = 8
+
+		cost = 5
+
+		prerequisite = {
+			focus = ROC_ZJFGZ
+		}
+		prerequisite = {
+			focus = ROC_DYFGZ
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROC_YSKZG
+		icon = GFX_UNKOWN
+		x = 16
+		y = 4
+
+		cost = 5
+
+		prerequisite = {
+			focus = ROC_BYJT
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROC_ZYZD
+		icon = GFX_UNKOWN
+		x = 16
+		y = 5
+
+		cost = 5
+
+		prerequisite = {
+			focus = ROC_YSKZG
+		}
+		mutually_exclusive = {
+			focus = ROC_MDFGZ
+			focus = ROC_MDDQR
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROC_QHLB
+		icon = GFX_UNKOWN
+		x = 16
+		y = 6
+
+		cost = 5
+
+		prerequisite = {
+			focus = ROC_ZYZD
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROC_HHMD
+		icon = GFX_UNKOWN
+		x = 16
+		y = 7
+
+		cost = 5
+
+		prerequisite = {
+			focus = ROC_QHLB
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROC_FBTM_YBPK
+		icon = GFX_UNKOWN
+		x = 16
+		y = 8
+
+		cost = 5
+
+		prerequisite = {
+			focus = ROC_HHMD
+		}
+		prerequisite = {
+			focus = ROC_ROC_ZJDQR
+		}
+		prerequisite = {
+			focus = ROC_ZJFGZ
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROC_YQRC
+		icon = GFX_UNKOWN
+		x = 16
+		y = 9
+
+		cost = 5
+
+		prerequisite = {
+			focus = ROC_FBTM_YBPK
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROC_WDJS
+		icon = GFX_UNKOWN
+		x = 16
+		y = 11
+
+		cost = 5
+
+		prerequisite = {
+			focus = ROC_FBTM_YBPK
+			focus = ROC_WHFQ
+			focus = ROC_WQFH
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROC_DXLCAN
+		icon = GFX_UNKOWN
+		x = 10
+		y = 12
+
+		cost = 5
+
+		prerequisite = {
+			focus = ROC_ZSGS
+		}
+		prerequisite = {
+			focus = ROC_WDJS
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROC_WHFQ
+		icon = GFX_UNKOWN
+		x = 12
+		y = 9
+
+		cost = 5
+
+		prerequisite = {
+			focus = ROC_QSSK
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROC_WQFH
+		icon = GFX_UNKOWN
+		x = 20
+		y = 9
+
+		cost = 5
+
+		prerequisite = {
+			focus = ROC_QSSKT
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROC_MDDQR
+		icon = GFX_UNKOWN
+		x = 13
+		y = 5
+
+		cost = 5
+
+		prerequisite = {
+			focus = ROC_YSKZG
+		}
+		mutually_exclusive = {
+			focus = ROC_MDFGZ
+			focus = ROC_ZYZD
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROC_MDFGZ
+		icon = GFX_UNKOWN
+		x = 19
+		y = 5
+
+		cost = 5
+
+		prerequisite = {
+			focus = ROC_YSKZG
+		}
+		mutually_exclusive = {
+			focus = ROC_MDDQR
+			focus = ROC_ZYZD
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROC_FGZSY
+		icon = GFX_FGZSY
+		x = 21
+		y = 4
+
+		cost = 5
+
+		prerequisite = {
+			focus = ROC_BYJT
+		}
+
+		completion_reward = {
+		}
+	}
+
+}

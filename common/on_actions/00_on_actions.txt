@@ -1,0 +1,22 @@
+on_actions = {
+	#on_startup = {
+	#	effect = {
+	#		every_country = {
+	#			limit = {
+	#				is_ai = no
+		#		}
+		#		set_country_flag = economy_window_FLAG
+	#		}
+	#	}
+	#}
+	on_weekly = {
+		effect = {
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				add_to_variable = { aus_economy = 0.1}
+			}
+		}
+	}
+}

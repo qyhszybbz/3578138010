@@ -1,0 +1,223 @@
+﻿division_template = {
+	name = "罗马尼亚步兵师"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		artillery_brigade = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "罗马尼亚山地旅"
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+	name = "罗马尼亚骑兵旅"
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+	name = "罗马尼亚装甲师"
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		light_armor = { x = 1 y = 2 }
+	}
+}
+
+
+units = {
+	# 9 个步兵师
+	division = {
+		name = "第1步兵师"
+		location = 818
+		division_template = "罗马尼亚步兵师"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+		start_manpower_factor = 1.0
+	}
+	division = {
+		name = "第2步兵师"
+		location = 9617
+		division_template = "罗马尼亚步兵师"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+		start_manpower_factor = 1.0
+	}
+	division = {
+		name = "第3步兵师"
+		location = 3663
+		division_template = "罗马尼亚步兵师"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+		start_manpower_factor = 1.0
+	}
+	division = {
+		name = "第4步兵师"
+		location = 6706
+		division_template = "罗马尼亚步兵师"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+		start_manpower_factor = 1.0
+	}
+	division = {
+		name = "第5步兵师"
+		location = 9716
+		division_template = "罗马尼亚步兵师"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+		start_manpower_factor = 1.0
+	}
+	division = {
+		name = "第6步兵师"
+		location = 690
+		division_template = "罗马尼亚步兵师"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+		start_manpower_factor = 1.0
+	}
+	division = {
+		name = "第7步兵师"
+		location = 6667
+		division_template = "罗马尼亚步兵师"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+		start_manpower_factor = 1.0
+	}
+	division = {
+		name = "第8步兵师"
+		location = 9685
+		division_template = "罗马尼亚步兵师"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+		start_manpower_factor = 1.0
+	}
+	division = {
+		name = "第9步兵师"
+		location = 9651
+		division_template = "罗马尼亚步兵师"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+		start_manpower_factor = 1.0
+	}
+
+	# 1 个山地旅
+	division = {
+		name = "山地旅"
+		location = 3676
+		division_template = "罗马尼亚山地旅"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+		start_manpower_factor = 1.0
+	}
+
+	# 3 个骑兵旅
+	division = {
+		name = "第1骑兵旅"
+		location = 3636
+		division_template = "罗马尼亚骑兵旅"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+		start_manpower_factor = 1.0
+	}
+	division = {
+		name = "第2骑兵旅"
+		location = 6729
+		division_template = "罗马尼亚骑兵旅"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+		start_manpower_factor = 1.0
+	}
+	division = {
+		name = "第3骑兵旅"
+		location = 3645
+		division_template = "罗马尼亚骑兵旅"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+		start_manpower_factor = 1.0
+	}
+
+	# 1 个装甲师
+	division = {
+		name = "装甲师"
+		location = 11636
+		division_template = "罗马尼亚装甲师"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+		start_manpower_factor = 1.0
+	}
+}
+
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = ROM
+		}
+		requested_factories = 2
+		progress = 0.87
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = ROM
+		}
+		requested_factories = 1
+		progress = 0.19
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = ROM
+		}
+		requested_factories = 1
+		progress = 0.24
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_chassis_1
+			creator = ROM
+			version_name = "R-1"
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 100
+	}
+}

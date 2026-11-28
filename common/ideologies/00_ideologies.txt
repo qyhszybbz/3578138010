@@ -1,0 +1,565 @@
+ideologies = {
+	communism = { #共产主义
+
+		types = {
+			communism_small = {
+			}
+
+			anarchist_communism = {
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_COMMUNIST_1"
+			"FACTION_NAME_COMMUNIST_2"
+			"FACTION_NAME_COMMUNIST_3"
+			"FACTION_NAME_COMMUNIST_4"
+			"FACTION_NAME_COMMUNIST_5"
+		}
+
+		color = { 97 23 23 }
+
+		war_impact_on_world_tension = 0.20		#Commie less threatening
+		faction_impact_on_world_tension = 0.5
+
+		ai_communist = yes # uses the commie AI behaviour
+		ai_ideology_wanted_units_factor = 1.20
+
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_join_factions = no
+		}
+
+		can_collaborate = yes
+
+		faction_modifiers = {
+
+		}
+
+		ai_fascist = yes
+
+		ai_give_core_state_control_threshold = 10
+	}
+
+	Socialism = { #社会主义
+		types = {
+			socialism_small = {
+
+			}
+			left_wing_populism = { #左翼民粹主义
+
+			}
+
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_COMMUNIST_1"
+			"FACTION_NAME_COMMUNIST_2"
+			"FACTION_NAME_COMMUNIST_3"
+			"FACTION_NAME_COMMUNIST_4"
+			"FACTION_NAME_COMMUNIST_5"
+		}
+
+		color = { 145 39 39 }
+
+		war_impact_on_world_tension = 0.20		#Commie less threatening
+		faction_impact_on_world_tension = 0.5
+
+		ai_communist = yes # uses the commie AI behaviour
+		ai_ideology_wanted_units_factor = 1.20
+
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_join_factions = no
+		}
+
+		can_collaborate = yes
+
+		modifiers = {
+			justify_war_goal_when_in_major_war_time = -0.80
+			civilian_intel_to_others = 15.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 10.0
+			airforce_intel_to_others = 10.0
+			hidden_modifier = { join_faction_tension = -0.1 }
+			embargo_cost_factor = 1
+			lend_lease_tension = 0.50
+			ai_desired_divisions_factor = 0.75
+		}
+
+		faction_modifiers = {
+
+		}
+
+		ai_fascist = yes
+
+		ai_give_core_state_control_threshold = 10
+	}
+
+	Progressivism = { #进步主义
+
+		types = {
+			progressivism_small = {
+			}
+			Social_democracy = {
+				can_be_randomly_selected = no
+			}
+			New_constitutionalism = {
+				can_be_randomly_selected = no
+			}
+			Georgism = {
+				can_be_randomly_selected = no
+			}
+			Austria_Hungary_ideologies_Progressivism = {
+				can_be_randomly_selected = no
+			}
+			Kerenskyism = { #克伦斯基主义 
+				can_be_randomly_selected = no
+			}
+			Gaitanism = { #盖坦主义
+				can_be_randomly_selected = no
+			}
+			social_liberalism = { #社会自由主义
+				can_be_randomly_selected = no
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_COMMUNIST_1"
+			"FACTION_NAME_COMMUNIST_2"
+			"FACTION_NAME_COMMUNIST_3"
+			"FACTION_NAME_COMMUNIST_4"
+			"FACTION_NAME_COMMUNIST_5"
+		}
+
+		color = { 165 58 91 }
+
+		war_impact_on_world_tension = 0.20		#Commie less threatening
+		faction_impact_on_world_tension = 0.5
+
+		ai_communist = yes # uses the commie AI behaviour
+		ai_ideology_wanted_units_factor = 1.20
+
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_join_factions = no
+		}
+
+		can_collaborate = yes
+
+
+		faction_modifiers = {
+
+		}
+
+		ai_fascist = yes
+
+		ai_give_core_state_control_threshold = 10
+	}
+
+	Liberalism = { #自由主义
+		types = {
+
+			liberalism_small = {
+				
+			}
+			populism = {
+			}
+			socialism = {
+			}
+			Britain_republic = {
+				can_be_randomly_selected = no
+			}
+			CSA_liberalism_small = {
+				can_be_randomly_selected = no
+				color = { 217 214 0 }
+			}
+			liberal_radicalism = { #自由激进主义
+				can_be_randomly_selected = no
+			}
+			isolationism = { #孤立主义
+				can_be_randomly_selected = no
+			}
+			colonial_government_Liberalism = { #殖民政府
+				can_be_randomly_selected = no
+			}
+			constitutional_liberalism = { #USA共和党的宪政自由主义
+				can_be_randomly_selected = no
+				color = { 6 233 249 }
+			}
+			classical_liberalism = { #古典自由主义
+				can_be_randomly_selected = no
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+
+		color = { 135 206 235 }
+		
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_join_factions = no
+		}
+
+		can_host_government_in_exile = yes
+
+		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.1
+
+
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+		ai_fascist = yes # uses the Democracy AI behaviour
+		ai_ideology_wanted_units_factor = 1.10 # multiplies threat impact on number of desired units by this value, defaults to 1.0. If at war, the larger of this value and NDefines::NAI::WANTED_UNITS_WAR_THREAT_FACTOR will be used instead
+		
+		ai_give_core_state_control_threshold = 0 # Extra threshold value added to DIPLOMATIC_ACTION_PROPOSE_SCORE for this ideology to give back core state control to other country
+	}
+
+	Democracy = { #民主主义
+		types = {
+			democracy_small = {
+			}
+			steady_Progressivism_subtype = { #稳健进步主义
+				can_be_randomly_selected = no
+			}
+			authoritarian_democracy_christian_democracy = { #USA民主党的威权民主主义（基督教民主）
+				can_be_randomly_selected = no
+				color = { 3 51 246 }
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+
+		color = { 151 172 205 }
+
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_join_factions = no
+		}
+
+		can_host_government_in_exile = yes
+
+		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.1
+
+		modifiers = {
+			justify_war_goal_when_in_major_war_time = -0.80
+			civilian_intel_to_others = 15.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 10.0
+			airforce_intel_to_others = 10.0
+			hidden_modifier = { join_faction_tension = -0.1 }
+			embargo_cost_factor = 1
+			lend_lease_tension = 0.50
+			ai_desired_divisions_factor = 0.75
+		}
+
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+		ai_fascist = yes # uses the Democracy AI behaviour
+		ai_ideology_wanted_units_factor = 1.10 # multiplies threat impact on number of desired units by this value, defaults to 1.0. If at war, the larger of this value and NDefines::NAI::WANTED_UNITS_WAR_THREAT_FACTOR will be used instead
+		
+		ai_give_core_state_control_threshold = 0 # Extra threshold value added to DIPLOMATIC_ACTION_PROPOSE_SCORE for this ideology to give back core state control to other country
+	}
+
+	Conservatism = { #保守主义
+
+		types = {
+			Conservatism_small = {
+			}
+			Britain_Conservatism = {
+				can_be_randomly_selected = no
+			}
+			Austria_Hungary_ideologies_Conservatism = {
+				can_be_randomly_selected = no
+			}
+			Right_wing_conservatism = { #右翼保守主义
+				can_be_randomly_selected = no
+			}
+			christian_democracy = { #基督教民主主义
+				can_be_randomly_selected = no
+			}
+			FRA_blue = {
+				color = { 0 0 102 }
+				can_be_randomly_selected = no
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+
+		color = { 0 93 149 }
+
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_join_factions = no
+		}
+
+		can_host_government_in_exile = yes
+
+		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.1
+
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+		ai_fascist = yes # uses the Democracy AI behaviour
+		ai_ideology_wanted_units_factor = 1.10 # multiplies threat impact on number of desired units by this value, defaults to 1.0. If at war, the larger of this value and NDefines::NAI::WANTED_UNITS_WAR_THREAT_FACTOR will be used instead
+		
+		ai_give_core_state_control_threshold = 0 # Extra threshold value added to DIPLOMATIC_ACTION_PROPOSE_SCORE for this ideology to give back core state control to other country
+	}
+
+	Authoritarianism = { #威权主义
+
+		types = {
+			authoritarianism_small = {
+			}
+
+			Manstein_ideologies = {
+				can_be_randomly_selected = no
+			}
+			Yuanism = { #袁世凯主义
+				can_be_randomly_selected = no
+			}
+			CSA_Hueylon_Doctrine = { #休伊朗主义
+				can_be_randomly_selected = no
+				color = { 176 224 230 }
+			}
+			non_domination_system = { #无支配体制
+				can_be_randomly_selected = no
+			}
+			military_junta_authoritarianism = { # 军政府
+				can_be_randomly_selected = no
+			}
+			authoritarian_conservatism = { #威权保守主义
+				can_be_randomly_selected = no
+			}
+			crown_dominion = { #英王管辖地
+				can_be_randomly_selected = no
+			}
+			
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_NONALIGNED_1"
+			"FACTION_NAME_NONALIGNED_2"
+			"FACTION_NAME_NONALIGNED_3"
+			"FACTION_NAME_NONALIGNED_4"
+			"FACTION_NAME_NONALIGNED_5"
+		}
+
+		color = { 56 56 56 }
+
+
+		war_impact_on_world_tension = 0.25		#no major danger
+		faction_impact_on_world_tension = 0.1
+
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_join_factions = no
+		}
+		faction_modifiers = {
+		}
+
+		ai_fascist = yes #
+		ai_ideology_wanted_units_factor = 1.15
+		
+		ai_give_core_state_control_threshold = 10000
+	}
+
+	tttt = { #专制主义
+
+		types = {
+
+			tttt_small ={
+			}
+			Wilhelm_II_ideologies = {
+				can_be_randomly_selected = no
+			}
+			Austria_Hungary_ideologies = {
+				can_be_randomly_selected = no
+			}
+			Jacksonian_Democracy = { #杰克逊民主
+				can_be_randomly_selected = no
+			}
+			Absolute_monarchy = {
+				can_be_randomly_selected = no
+			}
+			Theocracy = {
+				can_be_randomly_selected = no
+			}
+			Spain_rivera_ideologies = { #里维拉式军队专制
+				can_be_randomly_selected = no
+			}
+			colonial_government_tttt = { #殖民政府
+				can_be_randomly_selected = no
+			}
+			Military_dictatorship = { #军官独裁制
+				can_be_randomly_selected = no
+			}
+			military_junta_tttt = { # 军政府
+				can_be_randomly_selected = no
+			}
+			Spanish_Revivalism = { #西班牙复兴主义
+				can_be_randomly_selected = no
+			}
+			tttt_radical_nationalism = { #激进民族主义
+				can_be_randomly_selected = no
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_FASCIST_1"
+			"FACTION_NAME_FASCIST_2"
+			"FACTION_NAME_FASCIST_3"
+			"FACTION_NAME_FASCIST_4"
+			"FACTION_NAME_FASCIST_5"
+		}
+
+		color = { 24 24 24 }
+
+		war_impact_on_world_tension = 1.0			#evil!
+		faction_impact_on_world_tension = 1.0
+
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_join_factions = no
+		}
+
+		can_collaborate = yes
+
+		ai_fascist = yes # uses the fascist AI behaviour
+		ai_ideology_wanted_units_factor = 1.65
+		
+		ai_give_core_state_control_threshold = 10000
+	}
+
+	fascism = { #法西斯主义
+
+		types = {
+			fascism_small = {
+			}
+			works_on_constitution = {
+				can_be_randomly_selected = no
+			}
+			CSA_Confederate = {
+				can_be_randomly_selected = no
+			}
+			MEX_cosmic_racism = { #宇宙种族主义
+				can_be_randomly_selected = no
+			}
+			Trujillos_ideology = { #特鲁希略的意识形态
+				can_be_randomly_selected = no
+			}
+			military_junta_fascism = { #军政府-法西斯主义
+				can_be_randomly_selected = no
+			}
+			National_fascism = { #国家法西斯主义
+				can_be_randomly_selected = no
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_FASCIST_1"
+			"FACTION_NAME_FASCIST_2"
+			"FACTION_NAME_FASCIST_3"
+			"FACTION_NAME_FASCIST_4"
+			"FACTION_NAME_FASCIST_5"
+		}
+
+		color = { 102 51 0 }
+
+		war_impact_on_world_tension = 1.0			#evil!
+		faction_impact_on_world_tension = 1.0
+
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_join_factions = no
+		}
+
+		can_collaborate = yes
+
+		ai_fascist = yes # uses the fascist AI behaviour
+		ai_ideology_wanted_units_factor = 1.65
+		
+		ai_give_core_state_control_threshold = 10000
+	}
+
+	nazism = { #民族社会主义
+
+		types = {
+			nazism_small = {
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_FASCIST_1"
+			"FACTION_NAME_FASCIST_2"
+			"FACTION_NAME_FASCIST_3"
+			"FACTION_NAME_FASCIST_4"
+			"FACTION_NAME_FASCIST_5"
+		}
+
+		color = { 51 25 0 }
+
+		war_impact_on_world_tension = 1.0			#evil!
+		faction_impact_on_world_tension = 1.0
+
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_join_factions = no
+		}
+
+		can_collaborate = yes
+
+
+		ai_fascist = yes # uses the fascist AI behaviour
+		ai_ideology_wanted_units_factor = 1.65
+		
+		ai_give_core_state_control_threshold = 10000
+	}
+
+
+}

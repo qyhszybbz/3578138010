@@ -1,0 +1,14 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_SOV_minsk_tiaoyue"
+		texturefile = "gfx/texticons/banners/SOV_minsk_tiaoyue.dds"  legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SOV_SHIT_ARMY"
+		texturefile = "gfx/texticons/banners/SOV_SHIT_ARMY.dds"  legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Russian_future_road"
+		texturefile = "gfx/texticons/banners/Russian_future_road.dds"  legacy_lazy_load = no
+	}
+}

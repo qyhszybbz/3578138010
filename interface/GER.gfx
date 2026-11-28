@@ -1,0 +1,94 @@
+spriteTypes = {
+	#领导人
+	spriteType = { #威廉二世
+		name = "GFX_leader_GER_wilhelm_ii_Progressivism_large"
+		texturefile = "gfx/leaders/GER/GER_wilhelm_ii_Progressivism.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = { #亚尔马·沙赫特
+		name = "GFX_leader_GER_Hjalmar_Schacht"
+		texturefile = "gfx/leaders/GER/GER_Hjalmar_Schacht.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = { #海因里希·布吕宁
+		name = "GFX_leader_GER_Heinrich_Bruning"
+		texturefile = "gfx/leaders/GER/GER_Heinrich_Bruning.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = { #库尔特·冯·施莱谢尔
+		name = "GFX_leader_GER_Kurt_von_Schleicher"
+		texturefile = "gfx/leaders/GER/GER_Kurt_von_Schleicher.dds"
+		legacy_lazy_load = no
+	}
+	
+	
+	#顾问
+	spriteType = { #亚尔马·沙赫特
+		name = "GFX_GER_Hjalmar_Schacht_small"
+		texturefile = "gfx/interface/advisors/GER/GER_Hjalmar_Schacht.png"
+	}
+	#事件及世界新闻图
+	spriteType = { #布吕宁赢得大选
+        name = "GFX_events_GER_Bruning_wins_the_election"
+        textureFile = "gfx/interface/events/GER/GER_Bruning_wins_the_election.dds"
+    }
+    spriteType = { #施莱歇尔赢得选举
+        name = "GFX_events_GER_Schleicher_wins_the_election"
+        textureFile = "gfx/interface/events/GER/GER_Schleicher_wins_the_election.dds"
+    }
+	
+    spriteType = { #柏林发省军事政变
+        name = "GFX_events_GER_A_military_coib"
+        textureFile = "gfx/interface/events/GER/GER_A_military_coib.dds"
+    }
+    spriteType = { #西部革命
+        name = "GFX_events_GER_Caesar_took_control_of_tg"
+        textureFile = "gfx/interface/events/GER/GER_Caesar_took_control_of_tg.dds"
+    }
+
+	#国策
+	spriteType = { #最后一笔债务
+		name = "GFX_GER_last_debt"
+		texturefile = "gfx/interface/goals/GER/GER_last_debt.dds"
+	}
+	
+	spriteType = { #柏林阅兵
+		name = "GFX_GER_Berlin_military_parade"
+		texturefile = "gfx/interface/goals/GER/GER_Berlin_military_parade.dds"
+	}
+	spriteType = { #苟延残喘
+		name = "GFX_goal_GER_clinging_to_life"
+		texturefile = "gfx/interface/goals/GER/GER_clinging_to_life.dds"
+	}
+
+	spriteType = { #苟延残喘 国策树高光
+		name = "GFX_goal_GER_clinging_to_life_shine"
+		texturefile = "gfx/interface/goals/GER/GER_clinging_to_life.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GER/GER_clinging_to_life.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GER/GER_clinging_to_life.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+}

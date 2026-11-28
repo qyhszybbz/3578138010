@@ -1,0 +1,9 @@
+#人心欲壑
+POL_trench_desire = {
+	icon = GFX_modifier_POL_trench_desire
+	#enable = {  }
+	consumer_goods_expected_value = POL_consumer_goods_expected_value
+	consumer_goods_factor = POL_consumer_goods_factor
+	research_speed_factor = POL_research_speed_factor
+	industrial_concern_cost_factor = POL_industrial_concern_cost_factor
+}

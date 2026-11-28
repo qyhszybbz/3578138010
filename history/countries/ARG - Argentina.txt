@@ -1,0 +1,121 @@
+﻿capital = 1245
+oob = "ARG_1935"
+set_stability = 0.42
+set_war_support = 0.38
+starting_train_buffer = 0.85
+set_fuel_ratio = 0.8
+set_research_slots = 3
+load_focus_tree = TFE_argentina_focus
+set_convoys = 285
+set_cosmetic_tag = ARG_Kingdom #阿根廷王国
+set_country_flag = tfe_second_leader #副领导人
+
+
+create_faction = ARG_Buenos_Aires_Organization
+add_to_faction = BRB
+
+set_autonomy = {
+	target = PAR
+	autonomous_state = Governorate
+	freedom_level = 0.5
+}
+set_autonomy = {
+	target = URG
+	autonomous_state = Governorate
+	freedom_level = 0.5
+}
+
+### 阿根廷的部落朋友 ###
+set_autonomy = {
+	target = MPQ
+	autonomous_state = autonomy_Tribal_areas
+}
+set_autonomy = {
+	target = PWQ
+	autonomous_state = autonomy_Tribal_areas
+}
+set_autonomy = {
+	target = BTG
+	autonomous_state = autonomy_Tribal_areas
+}
+set_autonomy = {
+	target = TWQ
+	autonomous_state = autonomy_Tribal_areas
+}
+
+### 初始科技 ###
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	tech_trucks = 1
+	gw_artillery = 1
+	basic_train = 1
+	gwtank_chassis = 1
+	basic_naval_mines = 1
+	early_ship_hull_light = 1
+	basic_ship_hull_light = 1
+	early_ship_hull_cruiser = 1
+	basic_battery = 1
+	basic_light_battery = 1
+	basic_torpedo = 1
+	basic_depth_charges = 1
+	mtg_transport = 1
+}
+
+### 领导人 ###
+recruit_character = ARG_Amedeo_II #阿梅迪奥二世
+recruit_character = ARG_Marcelo_Torquato_de_Alvial #马塞洛·托尔夸托·德·阿尔维亚尔
+recruit_character = ARG_Enrique_Martinez #恩里克·马丁内斯
+### 将领 ###
+recruit_character = ARG_Pedro_Eugenio_Aramburu #佩德罗·欧亨尼奥·阿兰布鲁
+recruit_character = ARG_Augustine_Pedro_Justo #奥古斯丁·佩德罗·胡斯托
+recruit_character = ARG_Edelmiro_Julian_Farrell_Proul #埃德尔米罗·胡利安·法雷尔·普劳尔
+recruit_character = ARG_Juan_Pistarini #胡安·皮斯塔里尼
+recruit_character = ARG_Arturo_Rosen #阿图罗·罗森
+recruit_character = ARG_Juan_Peron #胡安·庇隆
+recruit_character = ARG_Manuel_Savio #曼努埃尔·萨维奥
+recruit_character = ARG_Enrique_Mosconi #恩里克·莫斯科尼
+recruit_character = ARG_Jose_Sosa_Molina #何塞·索萨·莫利纳
+recruit_character = ARG_Benjamin_Andres_Menendez #本杰明·安德烈斯·梅内德斯
+recruit_character = ARG_Benjamin_Ratenbach #本杰明·拉滕巴赫
+recruit_character = ARG_Eduardo_Argentino_Senolans #爱德华多·阿根提诺·塞诺兰斯
+recruit_character = ARG_Raul_Alejandro_Poggio #劳尔·亚历杭德罗·波吉
+recruit_character = ARG_Manuel_Tomas_Domecq_Garcia #曼努埃尔·托马斯·多梅克·加西亚
+recruit_character = ARG_Isaac_Rojas #艾萨克·罗哈斯
+recruit_character = ARG_Eliasa_Vidila #艾莱亚撒·魏地拉
+
+add_ideas = {
+	### 初始民族精神 ###
+	ARG_The_controversial_royal_family #饱受争议的王室
+	ARG_lost_prosperity #失去的繁荣
+	ARG_Military_political_rc #军政关系矛盾
+	ARG_Roga_Saro_Agreement #罗加-萨罗协议
+	ARG_Argentine_National_Oil_Company #阿根廷国立石油公司
+	ARG_Paraguay_Index #巴拉圭指数：沸反盈天
+	ARG_south_america_lighthouse #南美灯塔
+
+	ARG_Marcelo_Torquato_de_Alvial #马塞洛·托尔夸托·德·阿尔维亚尔
+}
+
+
+
+set_politics = {
+	ruling_party = Liberalism
+	last_election = "1931.11.8"
+	election_frequency = 72
+	elections_allowed = no
+}
+set_popularities = {
+	communism = 2
+	Socialism = 1
+	Progressivism = 1
+	Liberalism = 20
+	Democracy = 14
+	Conservatism = 27
+	Authoritarianism = 12
+	tttt = 13
+	fascism = 8
+	nazism = 2
+}

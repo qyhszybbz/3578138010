@@ -1,0 +1,27 @@
+state = {
+	id = 1203
+	name="STATE_1203"
+	
+	history={
+		owner = CSA
+		add_core_of = CSA
+		add_core_of = USA
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 6
+			fuel_silo = 1
+		}
+		victory_points = {
+			11841 10  
+		}
+	}
+	provinces={
+		9931 3925 11841
+	}
+	manpower=366473
+	buildings_max_level_factor=1
+	local_supplies=0
+	state_category=large_city
+}

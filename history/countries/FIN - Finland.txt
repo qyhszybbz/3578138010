@@ -1,0 +1,23 @@
+﻿capital = 111
+load_focus_tree = generic_focus
+set_oob = "FIN_1936"
+
+set_cosmetic_tag = SOV_puppet_FIN
+
+recruit_character = FIN_Carl_Gustav_Emil_Mannerheim
+add_ideas = { 
+	
+}
+
+set_politics = {
+	ruling_party = Authoritarianism
+	last_election = "1931.3.2" #Represents Presidential elections (Country leader is President of the Republic, not Prime Minister)
+	election_frequency = 72
+	elections_allowed = no 
+}
+set_popularities = {
+	Liberalism = 15
+	fascism = 19
+	communism = 1
+	Authoritarianism = 65
+}

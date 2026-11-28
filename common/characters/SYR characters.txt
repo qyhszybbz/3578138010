@@ -1,0 +1,17 @@
+characters = {
+    #领导人
+    #加齐·伊本·费萨尔
+	SYR_Ghazi_Ibn_Faisal = { 
+        name = SYR_Ghazi_Ibn_Faisal
+        portraits = {
+            civilian = {
+                large = GFX_SYR_Ghazi_Ibn_Faisal_large
+            }
+        }
+        country_leader = {
+            desc = SYR_Ghazi_Ibn_Faisal_desc
+            ideology = Absolute_monarchy
+            traits = { SYR_Unwelcome_Arabist }
+        }
+    }
+}

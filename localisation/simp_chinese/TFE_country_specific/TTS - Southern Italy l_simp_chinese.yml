@@ -1,0 +1,23 @@
+﻿l_simp_chinese:
+ TTS_tttt: "意大利王国"
+ TTS_tttt_ADJ: "意大利王国"
+ TTS_tttt_DEF: "意大利王国"
+
+ TTS_communism_party: "§R非法§!"
+ TTS_communism_party_long: "§R意大利共产党（非法）§!"
+ TTS_Socialism_party: "§R非法§!"
+ TTS_Socialism_party_long: "§R意大利社会党（非法）§!"
+ TTS_Socialism_party: "§R非法§!"
+ TTS_Socialism_party_long: "§R意大利社会党（非法）§!"
+ TTS_Liberalism_party: "民主自由党"
+ TTS_Liberalism_party_long: "意大利民主自由党"
+ TTS_Conservatism_party: "自由保守党"
+ TTS_Conservatism_party_long: "意大利自由保守党"
+ TTS_tttt_party: "保皇党"
+ TTS_tttt_party_long: "萨伏伊保皇党"
+ TTS_fascism_party: "国家法西斯党"
+ TTS_fascism_party_long: "意大利国家法西斯党-王家效忠派"
+
+ TTS_Vittorio_emanuele_iii: "维克托·埃马努埃莱三世"
+ TTS_Vittorio_emanuele_iii_desc: "§Y出生日期:1869年11月11日§!\n\n§L维克托·埃马努埃莱三世生来矮小多疑，在萨伏伊王朝伟岸先祖的阴影下长大，因而学会在权力与阴谋的缝隙中苟延残喘，1922年的危机之后，他利用王室独权，逮捕叛乱分子后，退守到南方，将国家的重担死死系在统领与旧贵族身上，不再信任文官政客与改革者。\n\n在之后岁月里，他将自己包裹为抵御汹涌赤潮与法西斯匪徒的代言人，祈求欧洲君主们帮助，但他内心仍燃烧着意大利主权与君主之心。在奎里纳尔宫的深宫的他，作为意大利王室最后的孤雄，仍固守世代先祖所筑起的王座，为君主制的存亡而屏住最后一口残气。§!"
+ TTS_Lone_Royal_Hero: "王室孤雄"

@@ -1,0 +1,35 @@
+state={
+	id = 544
+	name="STATE_544"
+	
+	state_category = rural
+	resources={
+		steel = 13
+		oil = 9
+		chromium = 11
+	}
+	history={
+		owner = KEN
+		add_core_of = KEN
+		add_core_of = TZN
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+			2196 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			2196 10
+		}
+	}
+
+	provinces={
+		2176 2196 2206 2281 2308 4171 5180 5224 8144 8182 8183 8201 8205 10845 10932 10988 11017 12911 12944 12967 
+	}
+	manpower=5299000
+	buildings_max_level_factor=1.000
+
+	local_supplies=0.0 
+}

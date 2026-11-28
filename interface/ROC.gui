@@ -1,0 +1,22 @@
+guiTypes = {
+	containerWindowType = {
+		name = "ROC_state_gui"
+
+		instantTextBoxType = {
+			name = "ROC_state"
+			text = "ROC_state_loc"
+
+			font = hoi_36header
+			format = center
+
+			position = { x = 120 y = 400 }
+			maxWidth = 40
+			maxHeight = 30
+			format = left
+			fixedsize = yes
+			
+			pdx_tooltip = "ROC_state_desc"
+			pdx_tooltip_delayed = "ROC_state_desc_delayed"
+		}
+	}
+}

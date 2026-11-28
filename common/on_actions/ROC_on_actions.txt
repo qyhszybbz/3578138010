@@ -1,0 +1,416 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			#四川
+			599 = { set_state_flag = ROC_flag_Sichuan }
+			1111 = { set_state_flag = ROC_flag_Sichuan } 
+			735 = { set_state_flag = ROC_flag_Sichuan }  
+			735 = { set_state_flag = ROC_flag_Sichuan } 
+			1110 = { set_state_flag = ROC_flag_Sichuan } 
+			1112 = { set_state_flag = ROC_flag_Sichuan } 
+			1111 = { set_state_flag = ROC_flag_Sichuan } 
+			1109 = { set_state_flag = ROC_flag_Sichuan } 
+			1109 = { set_state_flag = ROC_flag_Sichuan } 
+			1099 = { set_state_flag = ROC_flag_Sichuan } 
+			1109 = { set_state_flag = ROC_flag_Sichuan } 
+			1099 = { set_state_flag = ROC_flag_Sichuan } 
+			1110 = { set_state_flag = ROC_flag_Sichuan } 
+			1102 = { set_state_flag = ROC_flag_Sichuan } 
+			1112 = { set_state_flag = ROC_flag_Sichuan } 
+
+			#云南
+			323 = { set_state_flag = ROC_flag_Yunnan }
+			1106 = { set_state_flag = ROC_flag_Yunnan }
+			1106 = { set_state_flag = ROC_flag_Yunnan }
+			1118 = { set_state_flag = ROC_flag_Yunnan }
+			1118 = { set_state_flag = ROC_flag_Yunnan }
+			1117 = { set_state_flag = ROC_flag_Yunnan }
+			1117 = { set_state_flag = ROC_flag_Yunnan }
+			323 = { set_state_flag = ROC_flag_Yunnan }
+			1117 = { set_state_flag = ROC_flag_Yunnan }
+			1107 = { set_state_flag = ROC_flag_Yunnan }
+			1105 = { set_state_flag = ROC_flag_Yunnan }
+			1105 = { set_state_flag = ROC_flag_Yunnan }
+			735 = { set_state_flag = ROC_flag_Yunnan }
+			1118 = { set_state_flag = ROC_flag_Yunnan }
+			1039 = { set_state_flag = ROC_flag_Yunnan }
+
+			#广西
+			1060 = { set_state_flag = ROC_flag_Guangxi }
+			1116 = { set_state_flag = ROC_flag_Guangxi }
+			1113 = { set_state_flag = ROC_flag_Guangxi }
+			1114 = { set_state_flag = ROC_flag_Guangxi }
+			1114 = { set_state_flag = ROC_flag_Guangxi }
+			1139 = { set_state_flag = ROC_flag_Guangxi }
+			1059 = { set_state_flag = ROC_flag_Guangxi }
+			1060 = { set_state_flag = ROC_flag_Guangxi }
+			1115 = { set_state_flag = ROC_flag_Guangxi }
+			1115 = { set_state_flag = ROC_flag_Guangxi }
+			1059 = { set_state_flag = ROC_flag_Guangxi }
+			597 = { set_state_flag = ROC_flag_Guangxi }
+			
+			#广东
+			590 = { set_state_flag = ROC_flag_Guangdong }
+			592 = { set_state_flag = ROC_flag_Guangdong }
+			589 = { set_state_flag = ROC_flag_Guangdong }
+			591 = { set_state_flag = ROC_flag_Guangdong }
+			717 = { set_state_flag = ROC_flag_Guangdong }
+			589 = { set_state_flag = ROC_flag_Guangdong }
+			589 = { set_state_flag = ROC_flag_Guangdong }
+			589 = { set_state_flag = ROC_flag_Guangdong }
+			590 = { set_state_flag = ROC_flag_Guangdong }
+			1060 = { set_state_flag = ROC_flag_Guangdong }
+			1060 = { set_state_flag = ROC_flag_Guangdong }
+			1059 = { set_state_flag = ROC_flag_Guangdong }
+			1060 = { set_state_flag = ROC_flag_Guangdong }
+			1142 = { set_state_flag = ROC_flag_Guangdong }
+			1059 = { set_state_flag = ROC_flag_Guangdong }
+			1057 = { set_state_flag = ROC_flag_Guangdong }
+			1057 = { set_state_flag = ROC_flag_Guangdong }
+			1057 = { set_state_flag = ROC_flag_Guangdong }
+			1058 = { set_state_flag = ROC_flag_Guangdong }
+
+			#贵州
+			1102 = { set_state_flag = ROC_flag_Guizhou }
+			734 = { set_state_flag = ROC_flag_Guizhou }
+			1107 = { set_state_flag = ROC_flag_Guizhou }
+			1113 = { set_state_flag = ROC_flag_Guizhou }
+			734 = { set_state_flag = ROC_flag_Guizhou }
+			1108 = { set_state_flag = ROC_flag_Guizhou }
+			1100 = { set_state_flag = ROC_flag_Guizhou }
+			1099 = { set_state_flag = ROC_flag_Guizhou }
+
+			#湖南
+			1101 = { set_state_flag = ROC_flag_Hunan }
+			1101 = { set_state_flag = ROC_flag_Hunan }
+			1139 = { set_state_flag = ROC_flag_Hunan }
+			1140 = { set_state_flag = ROC_flag_Hunan }
+			1138 = { set_state_flag = ROC_flag_Hunan }
+			1100 = { set_state_flag = ROC_flag_Hunan }
+			1141 = { set_state_flag = ROC_flag_Hunan }
+			1138 = { set_state_flag = ROC_flag_Hunan }
+			1140 = { set_state_flag = ROC_flag_Hunan }
+			1141 = { set_state_flag = ROC_flag_Hunan }
+			1140 = { set_state_flag = ROC_flag_Hunan }
+
+			#江西
+			1103 = { set_state_flag = ROC_flag_Jiangxi }
+			1143 = { set_state_flag = ROC_flag_Jiangxi }
+			1146 = { set_state_flag = ROC_flag_Jiangxi }
+			1146 = { set_state_flag = ROC_flag_Jiangxi }
+			1145 = { set_state_flag = ROC_flag_Jiangxi }
+			1145 = { set_state_flag = ROC_flag_Jiangxi }
+			1103 = { set_state_flag = ROC_flag_Jiangxi }
+			1144 = { set_state_flag = ROC_flag_Jiangxi }
+			1144 = { set_state_flag = ROC_flag_Jiangxi }
+
+			#福建
+			593 = { set_state_flag = ROC_flag_Fujian }
+			593 = { set_state_flag = ROC_flag_Fujian }
+			593 = { set_state_flag = ROC_flag_Fujian }
+			1055 = { set_state_flag = ROC_flag_Fujian }
+			1055 = { set_state_flag = ROC_flag_Fujian }
+			1056 = { set_state_flag = ROC_flag_Fujian }
+			1056 = { set_state_flag = ROC_flag_Fujian }
+			1056 = { set_state_flag = ROC_flag_Fujian }
+			1056 = { set_state_flag = ROC_flag_Fujian }
+
+			#浙江
+			594 = { set_state_flag = ROC_flag_Zhejiang }
+			1053 = { set_state_flag = ROC_flag_Zhejiang }
+			1053 = { set_state_flag = ROC_flag_Zhejiang }
+			1104 = { set_state_flag = ROC_flag_Zhejiang }
+			1054 = { set_state_flag = ROC_flag_Zhejiang }
+			594 = { set_state_flag = ROC_flag_Zhejiang }
+
+			#江苏
+			605 = { set_state_flag = ROC_flag_Jiangsu }
+			1038 = { set_state_flag = ROC_flag_Jiangsu }
+			596 = { set_state_flag = ROC_flag_Jiangsu }
+			1049 = { set_state_flag = ROC_flag_Jiangsu }
+			1052 = { set_state_flag = ROC_flag_Jiangsu }
+			1050 = { set_state_flag = ROC_flag_Jiangsu }
+			605 = { set_state_flag = ROC_flag_Jiangsu }
+			1051 = { set_state_flag = ROC_flag_Jiangsu }
+			1038 = { set_state_flag = ROC_flag_Jiangsu }
+
+			#安徽
+			1133 = { set_state_flag = ROC_flag_Anhui }
+			1133 = { set_state_flag = ROC_flag_Anhui }
+			432 = { set_state_flag = ROC_flag_Anhui }
+			1052 = { set_state_flag = ROC_flag_Anhui }
+			1132 = { set_state_flag = ROC_flag_Anhui }
+			1134 = { set_state_flag = ROC_flag_Anhui }
+			1135 = { set_state_flag = ROC_flag_Anhui }
+			1133 = { set_state_flag = ROC_flag_Anhui }
+			1104 = { set_state_flag = ROC_flag_Anhui }
+			1103 = { set_state_flag = ROC_flag_Anhui }
+			
+			#湖北
+			611 = { set_state_flag = ROC_flag_Hubei }
+			1135 = { set_state_flag = ROC_flag_Hubei }
+			1135 = { set_state_flag = ROC_flag_Hubei }
+			1137 = { set_state_flag = ROC_flag_Hubei }
+			1136 = { set_state_flag = ROC_flag_Hubei }
+			1101 = { set_state_flag = ROC_flag_Hubei }
+			1100 = { set_state_flag = ROC_flag_Hubei }
+			1099 = { set_state_flag = ROC_flag_Hubei }
+			611 = { set_state_flag = ROC_flag_Hubei }
+
+			#河南
+			1095 = { set_state_flag = ROC_flag_Henan }
+			1092 = { set_state_flag = ROC_flag_Henan }
+			1092 = { set_state_flag = ROC_flag_Henan }
+			1092 = { set_state_flag = ROC_flag_Henan }
+			1131 = { set_state_flag = ROC_flag_Henan }
+			1137 = { set_state_flag = ROC_flag_Henan }
+			1137 = { set_state_flag = ROC_flag_Henan }
+			1093 = { set_state_flag = ROC_flag_Henan }
+			1093 = { set_state_flag = ROC_flag_Henan }
+			1094 = { set_state_flag = ROC_flag_Henan }
+			1049 = { set_state_flag = ROC_flag_Henan }
+			1049 = { set_state_flag = ROC_flag_Henan }
+			1134 = { set_state_flag = ROC_flag_Henan }
+			1095 = { set_state_flag = ROC_flag_Henan }
+
+			#山东
+			595 = { set_state_flag = ROC_flag_Shandong }
+			1044 = { set_state_flag = ROC_flag_Shandong }
+			732 = { set_state_flag = ROC_flag_Shandong }
+			1045 = { set_state_flag = ROC_flag_Shandong }
+			1046 = { set_state_flag = ROC_flag_Shandong }
+			1048 = { set_state_flag = ROC_flag_Shandong }
+			1047 = { set_state_flag = ROC_flag_Shandong }
+			1049 = { set_state_flag = ROC_flag_Shandong }
+			1052 = { set_state_flag = ROC_flag_Shandong }
+			1094 = { set_state_flag = ROC_flag_Shandong }
+
+			#陕西
+			613 = { set_state_flag = ROC_flag_Shaanxi }
+			1096 = { set_state_flag = ROC_flag_Shaanxi }
+			1123 = { set_state_flag = ROC_flag_Shaanxi }
+			613 = { set_state_flag = ROC_flag_Shaanxi }
+			1122 = { set_state_flag = ROC_flag_Shaanxi }
+			1096 = { set_state_flag = ROC_flag_Shaanxi }
+			1097 = { set_state_flag = ROC_flag_Shaanxi }
+			1097 = { set_state_flag = ROC_flag_Shaanxi }
+			1136 = { set_state_flag = ROC_flag_Shaanxi }
+			1096 = { set_state_flag = ROC_flag_Shaanxi }
+
+			#山西
+			607 = { set_state_flag = ROC_flag_Shanxi }
+			607 = { set_state_flag = ROC_flag_Shanxi }
+			1129 = { set_state_flag = ROC_flag_Shanxi }
+			1131 = { set_state_flag = ROC_flag_Shanxi }
+			1130 = { set_state_flag = ROC_flag_Shanxi }
+			1130 = { set_state_flag = ROC_flag_Shanxi }
+			1063 = { set_state_flag = ROC_flag_Shanxi }
+
+			#河北
+			600 = { set_state_flag = ROC_flag_Hebei }
+			601 = { set_state_flag = ROC_flag_Hebei }
+			606 = { set_state_flag = ROC_flag_Hebei }
+			1062 = { set_state_flag = ROC_flag_Hebei }
+			1063 = { set_state_flag = ROC_flag_Hebei }
+			1046 = { set_state_flag = ROC_flag_Hebei }
+			600 = { set_state_flag = ROC_flag_Hebei }
+			1068 = { set_state_flag = ROC_flag_Hebei }
+			283 = { set_state_flag = ROC_flag_Hebei }
+			1061 = { set_state_flag = ROC_flag_Hebei }
+			1061 = { set_state_flag = ROC_flag_Hebei }
+			1068 = { set_state_flag = ROC_flag_Hebei }
+			1069 = { set_state_flag = ROC_flag_Hebei }
+			1177 = { set_state_flag = ROC_flag_Hebei }
+
+			#绥远
+			612 = { set_state_flag = ROC_flag_Suiyuan }
+			733 = { set_state_flag = ROC_flag_Suiyuan }
+			1091 = { set_state_flag = ROC_flag_Suiyuan }
+			1091 = { set_state_flag = ROC_flag_Suiyuan }
+			1091 = { set_state_flag = ROC_flag_Suiyuan }
+			1085 = { set_state_flag = ROC_flag_Suiyuan }
+			1091 = { set_state_flag = ROC_flag_Suiyuan }
+			1085 = { set_state_flag = ROC_flag_Suiyuan }
+			1085 = { set_state_flag = ROC_flag_Suiyuan }
+			1085 = { set_state_flag = ROC_flag_Suiyuan }
+			612 = { set_state_flag = ROC_flag_Suiyuan }
+			612 = { set_state_flag = ROC_flag_Suiyuan }
+			1067 = { set_state_flag = ROC_flag_Suiyuan }
+			1067 = { set_state_flag = ROC_flag_Suiyuan }
+
+			#察哈尔
+			603 = { set_state_flag = ROC_flag_Chahaer }
+			604 = { set_state_flag = ROC_flag_Chahaer }
+			603 = { set_state_flag = ROC_flag_Chahaer }
+			603 = { set_state_flag = ROC_flag_Chahaer }
+			1069 = { set_state_flag = ROC_flag_Chahaer }
+			612 = { set_state_flag = ROC_flag_Chahaer }
+
+			#热河
+			602 = { set_state_flag = ROC_flag_Rehe }
+			1065 = { set_state_flag = ROC_flag_Rehe }
+			1070 = { set_state_flag = ROC_flag_Rehe }
+			1069 = { set_state_flag = ROC_flag_Rehe }
+			1069 = { set_state_flag = ROC_flag_Rehe }
+			1070 = { set_state_flag = ROC_flag_Rehe }
+			1070 = { set_state_flag = ROC_flag_Rehe }
+			1070 = { set_state_flag = ROC_flag_Rehe }
+			602 = { set_state_flag = ROC_flag_Rehe }
+			1070 = { set_state_flag = ROC_flag_Rehe }
+			1070 = { set_state_flag = ROC_flag_Rehe }
+			1069 = { set_state_flag = ROC_flag_Rehe }
+
+			#辽宁
+			1066 = { set_state_flag = ROC_flag_Liaoning }
+			1127 = { set_state_flag = ROC_flag_Liaoning }
+			1064 = { set_state_flag = ROC_flag_Liaoning }
+			326 = { set_state_flag = ROC_flag_Liaoning }
+			326 = { set_state_flag = ROC_flag_Liaoning }
+			326 = { set_state_flag = ROC_flag_Liaoning }
+			1064 = { set_state_flag = ROC_flag_Liaoning }
+			1064 = { set_state_flag = ROC_flag_Liaoning }
+			1064 = { set_state_flag = ROC_flag_Liaoning }
+			1119 = { set_state_flag = ROC_flag_Liaoning }
+			1065 = { set_state_flag = ROC_flag_Liaoning }
+			1127 = { set_state_flag = ROC_flag_Liaoning }
+			1127 = { set_state_flag = ROC_flag_Liaoning }
+			1127 = { set_state_flag = ROC_flag_Liaoning }
+			602 = { set_state_flag = ROC_flag_Liaoning }
+			1061 = { set_state_flag = ROC_flag_Liaoning }
+			602 = { set_state_flag = ROC_flag_Liaoning }
+			1066 = { set_state_flag = ROC_flag_Liaoning }
+			1066 = { set_state_flag = ROC_flag_Liaoning }
+
+			#吉林
+			326 = { set_state_flag = ROC_flag_Jilin }
+			706 = { set_state_flag = ROC_flag_Jilin }
+			1125 = { set_state_flag = ROC_flag_Jilin }
+			1125 = { set_state_flag = ROC_flag_Jilin }
+			1124 = { set_state_flag = ROC_flag_Jilin }
+			1126 = { set_state_flag = ROC_flag_Jilin }
+			1124 = { set_state_flag = ROC_flag_Jilin }
+			1126 = { set_state_flag = ROC_flag_Jilin }
+			1126 = { set_state_flag = ROC_flag_Jilin }
+			1128 = { set_state_flag = ROC_flag_Jilin }
+			1128 = { set_state_flag = ROC_flag_Jilin }
+			1128 = { set_state_flag = ROC_flag_Jilin }
+			1124 = { set_state_flag = ROC_flag_Jilin }
+			706 = { set_state_flag = ROC_flag_Jilin }
+			1127 = { set_state_flag = ROC_flag_Jilin }
+			1066 = { set_state_flag = ROC_flag_Jilin }
+
+			#黑龙江
+			1120 = { set_state_flag = ROC_flag_Heilongjiang }
+			705 = { set_state_flag = ROC_flag_Heilongjiang }
+			1078 = { set_state_flag = ROC_flag_Heilongjiang }
+			1120 = { set_state_flag = ROC_flag_Heilongjiang }
+			1120 = { set_state_flag = ROC_flag_Heilongjiang }
+			1119 = { set_state_flag = ROC_flag_Heilongjiang }
+			1120 = { set_state_flag = ROC_flag_Heilongjiang }
+			1120 = { set_state_flag = ROC_flag_Heilongjiang }
+			1120 = { set_state_flag = ROC_flag_Heilongjiang }
+			705 = { set_state_flag = ROC_flag_Heilongjiang }
+			1119 = { set_state_flag = ROC_flag_Heilongjiang }
+			1119 = { set_state_flag = ROC_flag_Heilongjiang }
+			1078 = { set_state_flag = ROC_flag_Heilongjiang }
+			328 = { set_state_flag = ROC_flag_Heilongjiang }
+
+			#甘肃
+			554 = { set_state_flag = ROC_flag_Gansu }
+			608 = { set_state_flag = ROC_flag_Gansu }
+			738 = { set_state_flag = ROC_flag_Gansu }
+			1089 = { set_state_flag = ROC_flag_Gansu }
+			1087 = { set_state_flag = ROC_flag_Gansu }
+			1087 = { set_state_flag = ROC_flag_Gansu }
+			1087 = { set_state_flag = ROC_flag_Gansu }
+			1090 = { set_state_flag = ROC_flag_Gansu }
+			1121 = { set_state_flag = ROC_flag_Gansu }
+			283 = { set_state_flag = ROC_flag_Gansu }
+			1121 = { set_state_flag = ROC_flag_Gansu }
+			1122 = { set_state_flag = ROC_flag_Gansu }
+			283 = { set_state_flag = ROC_flag_Gansu }
+			1097 = { set_state_flag = ROC_flag_Gansu }
+			283 = { set_state_flag = ROC_flag_Gansu }
+			735 = { set_state_flag = ROC_flag_Gansu }
+
+			#宁夏
+			1123 = { set_state_flag = ROC_flag_Ningxia }
+			1087 = { set_state_flag = ROC_flag_Ningxia }
+			1091 = { set_state_flag = ROC_flag_Ningxia }
+			608 = { set_state_flag = ROC_flag_Ningxia }
+			1091 = { set_state_flag = ROC_flag_Ningxia }
+
+			#青海
+			736 = { set_state_flag = ROC_flag_Qinghai }
+			598 = { set_state_flag = ROC_flag_Qinghai }
+			737 = { set_state_flag = ROC_flag_Qinghai }
+			1074 = { set_state_flag = ROC_flag_Qinghai }
+			598 = { set_state_flag = ROC_flag_Qinghai }
+			740 = { set_state_flag = ROC_flag_Qinghai }
+			1089 = { set_state_flag = ROC_flag_Qinghai }
+			1090 = { set_state_flag = ROC_flag_Qinghai }
+			1090 = { set_state_flag = ROC_flag_Qinghai }
+			735 = { set_state_flag = ROC_flag_Qinghai }
+			736 = { set_state_flag = ROC_flag_Qinghai }
+
+			#新疆
+			740 = { set_state_flag = ROC_flag_Xinjiang }
+			609 = { set_state_flag = ROC_flag_Xinjiang }
+			741 = { set_state_flag = ROC_flag_Xinjiang }
+			1074 = { set_state_flag = ROC_flag_Xinjiang }
+			609 = { set_state_flag = ROC_flag_Xinjiang }
+			610 = { set_state_flag = ROC_flag_Xinjiang }
+			610 = { set_state_flag = ROC_flag_Xinjiang }
+			610 = { set_state_flag = ROC_flag_Xinjiang }
+			610 = { set_state_flag = ROC_flag_Xinjiang }
+			1072 = { set_state_flag = ROC_flag_Xinjiang }
+			1074 = { set_state_flag = ROC_flag_Xinjiang }
+			741 = { set_state_flag = ROC_flag_Xinjiang }
+			609 = { set_state_flag = ROC_flag_Xinjiang }
+			1077 = { set_state_flag = ROC_flag_Xinjiang }
+			1071 = { set_state_flag = ROC_flag_Xinjiang }
+			1071 = { set_state_flag = ROC_flag_Xinjiang }
+			1073 = { set_state_flag = ROC_flag_Xinjiang }
+			609 = { set_state_flag = ROC_flag_Xinjiang }
+			1073 = { set_state_flag = ROC_flag_Xinjiang }
+			1073 = { set_state_flag = ROC_flag_Xinjiang }
+			1073 = { set_state_flag = ROC_flag_Xinjiang }
+			1073 = { set_state_flag = ROC_flag_Xinjiang }
+			609 = { set_state_flag = ROC_flag_Xinjiang }
+
+			#西康
+			432 = { set_state_flag = ROC_flag_Xikang }
+			735 = { set_state_flag = ROC_flag_Xikang }
+			432 = { set_state_flag = ROC_flag_Xikang }
+			598 = { set_state_flag = ROC_flag_Xikang }
+			1105 = { set_state_flag = ROC_flag_Xikang }
+			735 = { set_state_flag = ROC_flag_Xikang }
+			1098 = { set_state_flag = ROC_flag_Xikang }
+			1098 = { set_state_flag = ROC_flag_Xikang }
+			1098 = { set_state_flag = ROC_flag_Xikang }
+			735 = { set_state_flag = ROC_flag_Xikang }
+			735 = { set_state_flag = ROC_flag_Xikang }
+
+			#西藏
+			1088 = { set_state_flag = ROC_flag_Xizang }
+			739 = { set_state_flag = ROC_flag_Xizang }
+			1088 = { set_state_flag = ROC_flag_Xizang }
+			432 = { set_state_flag = ROC_flag_Xizang }
+			432 = { set_state_flag = ROC_flag_Xizang }
+			598 = { set_state_flag = ROC_flag_Xizang }
+			739 = { set_state_flag = ROC_flag_Xizang }
+			739 = { set_state_flag = ROC_flag_Xizang }
+			739 = { set_state_flag = ROC_flag_Xizang }
+			739 = { set_state_flag = ROC_flag_Xizang }
+			1088 = { set_state_flag = ROC_flag_Xizang }
+			739 = { set_state_flag = ROC_flag_Xizang }
+			1072 = { set_state_flag = ROC_flag_Xizang }
+
+			#台湾
+			522 = { set_state_flag = ROC_flag_Taiwan }
+			1075 = { set_state_flag = ROC_flag_Taiwan }
+			1076 = { set_state_flag = ROC_flag_Taiwan }
+			1077 = { set_state_flag = ROC_flag_Taiwan }
+		}
+	}
+}

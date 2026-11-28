@@ -1,0 +1,37 @@
+﻿capital = 963 #锡金
+oob = "SKK_1935"
+set_stability = 0.63
+set_war_support = 0.72
+starting_train_buffer = 1.2
+set_fuel_ratio = 0.9
+set_research_slots = 2
+
+TIB = {
+	set_autonomy = {
+		target = SKK
+		autonomy_state = Governorate
+	}
+}
+
+### 初始科技 ###
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	gw_artillery = 1
+}
+
+### 领导人 ###
+recruit_character = SKK_Sidkeong_Tulku_Namgyal #旺钦顿堆
+
+set_politics = {
+	ruling_party = tttt
+	last_election = "1930.2.11"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	tttt = 100
+}
+
+

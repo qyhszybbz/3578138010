@@ -1,0 +1,30 @@
+state = {
+	id = 163
+	name = "STATE_163"
+	manpower = 7976
+	
+	state_category = enclave
+	
+	history = {
+		owner = CRO
+		add_claim_by = YUG
+		add_core_of = CRO
+		#start_resistance = CRO #Yugoslavia shouldn't resist occupation
+		buildings = {
+			infrastructure = 3
+			dockyard = 1
+			11564 = {
+				naval_base = 2
+			}
+		}
+		victory_points = { #Fiume (Rijeka)
+			11564 1 
+		}
+	
+	}
+	provinces = {	
+		11564
+	}
+
+	local_supplies = 0.0 
+}

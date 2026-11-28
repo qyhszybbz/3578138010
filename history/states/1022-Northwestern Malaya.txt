@@ -1,0 +1,27 @@
+state={
+	id = 1022
+	name="STATE_1022"
+	resources = {
+		steel = 1.000
+	}
+
+	state_category = town
+
+
+	history={
+		owner = MAL
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = MAL
+
+	}
+
+	provinces={
+		1291 7342 12144
+	}
+	manpower = 524200
+	buildings_max_level_factor=1.000
+
+	local_supplies=0.0 
+}

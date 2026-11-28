@@ -1,0 +1,88 @@
+MEX_junfang_jieru_increase = {
+	custom_effect_tooltip = MEX_junfang_jieru_increase_tt
+	custom_effect_tooltip = generic_skip_one_line_tt
+
+	if = {
+		limit = {
+			has_idea = MEX_jundui_jieru_1
+		}
+		swap_ideas = {
+			remove_idea = MEX_jundui_jieru_1
+			add_idea = MEX_jundui_jieru_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = MEX_jundui_jieru_2
+		}
+		swap_ideas = {
+			remove_idea = MEX_jundui_jieru_2
+			add_idea = MEX_jundui_jieru_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = MEX_jundui_jieru_3
+		}
+		swap_ideas = {
+			remove_idea = MEX_jundui_jieru_3
+			add_idea = MEX_jundui_jieru_4
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = MEX_jundui_jieru_4
+		}
+		swap_ideas = {
+			remove_idea = MEX_jundui_jieru_4
+			add_idea = MEX_jundui_jieru_5
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = MEX_jundui_jieru_5
+		}
+		add_stability = -0.05
+	}
+	else = {
+		add_ideas = MEX_jundui_jieru_1
+	}
+}
+
+MEX_yaowang_lvtu_effect = {
+	if = {
+		limit = { 
+			NOT={has_dynamic_modifier = { modifier = MEX_yaowang_lvtu }}			
+		}
+		hidden_effect={add_dynamic_modifier={modifier = MEX_yaowang_lvtu }}
+		custom_effect_tooltip = MEX_yaowang_lvtu_modifier_tt
+		add_to_variable = { MEX_yaowang_lvtu_stability_factor = -0.15 tooltip = stability_factor_tt }
+		add_to_variable = { MEX_yaowang_lvtu_war_support_factor = -0.2  tooltip = war_support_factor_tt}
+		
+	}
+	else_if = {
+		limit = { 
+			has_dynamic_modifier = { modifier = MEX_yaowang_lvtu  }
+		}
+		custom_effect_tooltip = MEX_yaowang_lvtu_modifier_ttt
+	}
+}
+
+MEX_runwu_wusheng_effect = {
+	if = {
+		limit = { 
+			NOT={has_dynamic_modifier = { modifier = MEX_runwu_wusheng }}			
+		}
+		hidden_effect={add_dynamic_modifier={modifier = MEX_runwu_wusheng }}
+		custom_effect_tooltip = MEX_runwu_wusheng_modifier_tt
+		add_to_variable = { MEX_runwu_wusheng_production_speed_infrastructure_factor = 0.1 tooltip = production_speed_infrastructure_factor_tt }
+		add_to_variable = { MEX_runwu_wusheng_weekly_manpower = 125  tooltip = weekly_manpower_tt}
+		
+	}
+	else_if = {
+		limit = { 
+			has_dynamic_modifier = { modifier = MEX_runwu_wusheng  }
+		}
+		custom_effect_tooltip = MEX_runwu_wusheng_modifier_ttt
+	}
+}

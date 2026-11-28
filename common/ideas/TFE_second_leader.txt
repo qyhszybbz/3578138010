@@ -1,0 +1,48 @@
+ideas = {
+	hidden_ideas = {  #用于副领导人的隐藏ideas
+		ARG_Marcelo_Torquato_de_Alvial = { #马塞洛·托尔夸托·德·阿尔维亚尔
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = 0.15
+			}
+		}
+		SOV_Viktor_Chernov = { #维克托·切尔诺夫
+			modifier = {
+				
+			}
+		}
+		ARG_Amedeo_II = { # 阿梅迪奥二世
+			modifier = {
+				war_support_factor = 0.05
+				stability_factor = 0.05
+			}
+		}
+		DOM_Raphael_Trujillo = { #拉斐尔·特鲁希略
+			modifier = {
+				
+			}
+		}
+		GER_Hjalmar_Schacht = { #亚尔马·沙赫特
+			modifier = {
+				political_power_factor = 0.05
+			}
+		}
+		ROM_Nikola_Jorga = { #尼古拉·约尔加 
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		JAP_Suzuki_Teiichi = { #铃木贞一
+			modifier = {
+				
+			}
+		}
+		POR_antonio_de_oliveira_salazar = { #安东尼奥·萨拉查
+			modifier = {
+				
+			}
+		}
+	}
+
+}

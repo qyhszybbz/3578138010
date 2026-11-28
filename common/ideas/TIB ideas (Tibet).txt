@@ -1,0 +1,44 @@
+ideas = {
+	country = {
+        ### 初始民族精神 ###
+        #千年的封建农奴制
+		TIB_Thousand_years_of_feudal_serfdom = {
+			on_add = { log = "[GetLogRoot]: add idea TIB_Thousand_years_of_feudal_serfdom" }
+			picture = Thousand_years_of_feudal_serfdom
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = 0.25
+				stability_factor = -0.10
+			}
+		}
+		#九世班禅的困局
+		TIB_Predicament_of_Ninth_Panchen = {
+			on_add = { log = "[GetLogRoot]: add idea TIB_Predicament_of_Ninth_Panchen" }
+			picture = Predicament_of_Ninth_Panchen
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.15
+			}
+		}
+		#内忧外患
+		TIB_Internal_troubles_and_external_threats = {
+			on_add = { log = "[GetLogRoot]: add idea TIB_Internal_troubles_and_external_threats" }
+			picture = Internal_troubles_and_external_threats
+			allowed = { always = no }
+			modifier = {
+				war_support_factor = 0.05
+				political_power_factor = -0.10
+			}
+		}
+		#与南方的交往
+		TIB_Interactions_with_South = {
+			on_add = { log = "[GetLogRoot]: add idea TIB_Interactions_with_South" }
+			picture = Interactions_with_South
+			allowed = { always = no }
+			targeted_modifier = {
+				tag = RAJ
+				trade_cost_for_target_factor = -0.20
+			}
+		}
+	}
+}

@@ -1,0 +1,130 @@
+spriteTypes = {
+	#西班牙国策
+	#第一阶段
+	SpriteType = { #硝烟散去
+		name = "GFX_goal_SPR_Battlesmoke_dissipated"
+		texturefile = "gfx/interface/goals/SPR/SPR_Battlesmoke_dissipated.png"
+	}
+	SpriteType = { #被枪所指
+		name = "GFX_goal_SPR_at_gunpoint" 
+		texturefile = "gfx/interface/goals/SPR/SPR_at_gunpoint.png"
+	}
+	SpriteType = { #萧条之国
+		name = "GFX_goal_SPR_depressed_nation"
+		texturefile = "gfx/interface/goals/SPR/SPR_depressed_nation.png"
+	}
+	SpriteType = { #将军政治
+		name = "GFX_goal_SPR_general_politics" 
+		texturefile = "gfx/interface/goals/SPR/SPR_general_politics.png"
+	}
+	SpriteType = { #山中之敌
+		name = "GFX_goal_SPR_Enemy_in_Mountains" 
+		texturefile = "gfx/interface/goals/SPR/SPR_Enemy_in_Mountains.png"
+	}
+	SpriteType = { #生锈齿轮
+		name = "GFX_goal_SPR_Rusted_gear" 
+		texturefile = "gfx/interface/goals/SPR/SPR_Rusted_gear.png"
+	}
+	SpriteType = { #肮脏之战
+		name = "GFX_goal_SPR_Dirty_war" 
+		texturefile = "gfx/interface/goals/SPR/SPR_Dirty_war.png"
+	}
+	SpriteType = { #不得不面对的
+		name = "GFX_goal_SPR_Must_be_faced" 
+		texturefile = "gfx/interface/goals/SPR/SPR_Must_be_faced.png"
+	}
+	SpriteType = { #精兵简政
+		name = "GFX_goal_SPR_Better_soldier_Easier_policy" 
+		texturefile = "gfx/interface/goals/SPR/SPR_Better_soldier_Easier_policy.png"
+	}
+	SpriteType = { #势在必行的改革
+		name = "GFX_goal_SPR_Necessary_reforms" 
+		texturefile = "gfx/interface/goals/SPR/SPR_Necessary_reforms.png"
+	}
+	SpriteType = { #雄狮暮年
+		name = "GFX_goal_SPR_The_old_lion" 
+		texturefile = "gfx/interface/goals/SPR/SPR_The_old_lion.png"
+	}
+	SpriteType = { #亚平宁的枪声
+		name = "GFX_goal_SPR_Gunfire_in_Apennines" 
+		texturefile = "gfx/interface/goals/SPR/SPR_Gunfire_in_Apennines.png"
+	}
+	SpriteType = { #援助黑衫之鹰
+		name = "GFX_goal_SPR_Help_Black_Cloak_Eagle" 
+		texturefile = "gfx/interface/goals/SPR/SPR_Help_Black_Cloak_Eagle.png"
+	}
+	SpriteType = { #礼物与恩惠
+		name = "GFX_goal_SPR_Gifts_and_Graces" 
+		texturefile = "gfx/interface/goals/SPR/SPR_Gifts_and_Graces.png"
+	}
+	SpriteType = { #赤猎军
+		name = "GFX_goal_SPR_Red_Hunter" 
+		texturefile = "gfx/interface/goals/SPR/SPR_Red_Hunter.png"
+	}
+	SpriteType = { #增援撒丁岛驻军
+		name = "GFX_goal_SPR_Strengthen_Sardinia_Garrison" 
+		texturefile = "gfx/interface/goals/SPR/SPR_Strengthen_Sardinia_Garrison.png"
+	}
+	#北意大利国策
+	#战时国策
+	SpriteType = { #吸取进军罗马的教训
+		name = "GFX_goal_LBV_March_on_Rome_Lessons" 
+		texturefile = "gfx/interface/goals/LBV/LBV_March_on_Rome_Lessons.png"
+	}
+	SpriteType = { #为统一做准备
+		name = "GFX_goal_LBV_Ready_for_Reunification" 
+		texturefile = "gfx/interface/goals/LBV/LBV_Ready_for_Reunification.png"
+	}
+	SpriteType = { #法西斯党政
+		name = "GFX_goal_LBV_Fascist_regime" 
+		texturefile = "gfx/interface/goals/LBV/LBV_Fascist_regime.png"
+	}
+	SpriteType = { #伦巴底防线
+		name = "GFX_goal_LBV_Lombard_Line" 
+		texturefile = "gfx/interface/goals/LBV/LBV_Lombard_Line.png"
+	}
+	SpriteType = { #职业化干部
+		name = "GFX_goal_LBV_Professionalized_Cadres" 
+		texturefile = "gfx/interface/goals/LBV/LBV_Professionalized_Cadres.png"
+	}
+	SpriteType = { #整合地方民兵
+		name = "GFX_goal_LBV_Integrate_local_militias" 
+		texturefile = "gfx/interface/goals/LBV/LBV_Integrate_local_militias.png"
+	}
+	SpriteType = { #再次进军
+		name = "GFX_goal_LBV_Launching_another_offensive" 
+		texturefile = "gfx/interface/goals/LBV/LBV_Launching_another_offensive.png"
+	}
+	SpriteType = { #团结各阶级
+		name = "GFX_goal_LBV_Unite_all_classes" 
+		texturefile = "gfx/interface/goals/LBV/LBV_Unite_all_classes.png"
+	}
+	SpriteType = { #青年突击营
+		name = "GFX_goal_LBV_Youth_Assault_Camp" 
+		texturefile = "gfx/interface/goals/LBV/LBV_Youth_Assault_Camp.png"
+	}
+	SpriteType = { #革命再生
+		name = "GFX_goal_LBV_Revolutionary_Regeneration" 
+		texturefile = "gfx/interface/goals/LBV/LBV_Revolutionary_Regeneration.png"
+	}
+	SpriteType = { #武装安全民队
+		name = "GFX_goal_LBV_Armed_Security_Militia" 
+		texturefile = "gfx/interface/goals/LBV/LBV_Armed_Security_Militia.png"
+	}
+	SpriteType = { #拓进向未来
+		name = "GFX_goal_LBV_Forging_Ahead_Toward_Future" 
+		texturefile = "gfx/interface/goals/LBV/LBV_Forging_Ahead_Toward_Future.png"
+	}
+	SpriteType = { #杜切之矛
+		name = "GFX_goal_LBV_Spear_of_Duche" 
+		texturefile = "gfx/interface/goals/LBV/LBV_Spear_of_Duche.png"
+	}
+	SpriteType = { #为了民族与国家…
+		name = "GFX_goal_LBV_For_Nation_and_Country" 
+		texturefile = "gfx/interface/goals/LBV/LBV_For_Nation_and_Country.png"
+	}
+	SpriteType = { #意大利，崛起
+		name = "GFX_goal_LBV_Italy_Rise" 
+		texturefile = "gfx/interface/goals/LBV/LBV_Italy_Rise.png"
+	}
+}

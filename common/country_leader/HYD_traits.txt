@@ -1,0 +1,9 @@
+leader_traits ={
+	#领导人特质
+	#印度首富
+	HYD_Indias_richest_person = { 
+		random = no
+		political_power_gain = 0.10
+		consumer_goods_factor = -0.10
+	}
+}

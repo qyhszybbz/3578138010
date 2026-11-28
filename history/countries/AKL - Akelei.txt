@@ -1,0 +1,40 @@
+﻿capital = 918 
+
+set_stability = 0.3
+set_war_support = 0.5
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	
+	
+	basic_train = 1
+}
+
+
+recruit_character = AKL_Louis_Gavian_de_Rodriguez #路易斯·加维安·德·罗德里格斯
+
+add_ideas = {
+	AKL_provisional_government #临时政府
+	AKL_rubber_boom #橡胶的繁荣
+}
+
+set_politics = {
+	ruling_party = Conservatism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 17
+	Socialism = 3
+	Liberalism = 2
+	Democracy = 1
+	Conservatism = 47
+	Authoritarianism = 15
+	tttt = 15
+}
+
+

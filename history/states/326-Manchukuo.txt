@@ -1,0 +1,26 @@
+state = {
+	id = 326
+	name = "STATE_326"
+	manpower = 2495995
+	state_category = rural
+	resources = {
+		aluminium = 7
+	}
+	history = {
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = MAN
+		add_core_of = PRC
+		add_extra_state_shared_building_slots = 5
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			9803 3
+		}
+	}
+	provinces = {
+		800 861 887 927 945 3888 3913 3929 3949 6868 9759 9803 9841 9848 11781 11823 11862
+	}
+	local_supplies = 7
+}

@@ -1,0 +1,79 @@
+division_template = {
+	name = "Koninklijke Landmacht"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+
+	priority = 1
+}
+
+units = {
+	division = {
+		name = "1e Divisie"
+		location = 480
+		division_template = "Koninklijke Landmacht"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "2e Divisie"
+		location = 3262
+		division_template = "Koninklijke Landmacht"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "3e Divisie"
+		location = 6496
+		division_template = "Koninklijke Landmacht"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "4e Divisie"
+		location = 6241
+		division_template = "Koninklijke Landmacht"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "5e Divisie"
+		location = 6286
+		division_template = "Koninklijke Landmacht"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Koninklijke Garde"
+		location = 6336
+		division_template = "Koninklijke Landmacht"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Koninklijke Garde"
+		location = 6336
+		division_template = "Koninklijke Landmacht"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Koninklijke Garde"
+		location = 8622
+		division_template = "Koninklijke Landmacht"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Koninklijke Garde"
+		location = 11456
+		division_template = "Koninklijke Landmacht"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+}

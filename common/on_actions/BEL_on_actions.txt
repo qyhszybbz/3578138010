@@ -1,0 +1,53 @@
+on_actions = {
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = { original_tag = BEL }
+					country_exists = ROL
+				}
+
+				every_enemy_country = {
+					ROOT = { white_peace = PREV }
+				}
+
+				ROL = {
+					annex_country = {
+						target = BEL
+						transfer_troops = no
+					}
+
+					every_owned_state = {
+						add_core_of = ROL
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					country_exists = ROL
+					NOT = { country_exists = HOL }
+					NOT = { country_exists = WAL }
+					NOT = { country_exists = BEL }
+					NOT = { has_global_flag = HOL_revolution_won }
+				}
+
+				set_global_flag = HOL_revolution_won
+
+				ROL = {
+					set_cosmetic_tag = ROL_WON
+				}
+
+				if = {
+					limit = { country_exists = GER }
+					GER = {
+						country_event = {
+							id = TFE_HOL_EVENT.11
+							days = 15
+						}
+					}
+				}
+			}
+		}
+	}
+}

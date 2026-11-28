@@ -1,0 +1,17 @@
+characters = {
+    #领导人
+	#维克托·埃马努埃莱三世
+	TTS_Vittorio_emanuele_iii = {
+		name = TTS_Vittorio_emanuele_iii
+		portraits={
+			civilian={
+				large = GFX_TTS_Vittorio_emanuele_iii_large
+			}
+		}
+		country_leader={
+			desc = TTS_Vittorio_emanuele_iii_desc
+			ideology = Absolute_monarchy
+			traits={ TTS_Lone_Royal_Hero }
+		}
+	}
+}

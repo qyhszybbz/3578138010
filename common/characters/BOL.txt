@@ -1,0 +1,17 @@
+characters = {
+	BOL_herman_bushi = { #赫尔曼·布什·贝塞拉
+		name = BOL_herman_bushi
+		portraits = {
+			civilian = {
+				large = GFX_leader_BOL_herman_bushi
+			}
+		}
+		country_leader = {
+			ideology = military_junta_tttt
+			desc = BOL_herman_bushi_desc
+			traits = { BOL_hero_of_boqueron BOL_military_socialist_reformer }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+}

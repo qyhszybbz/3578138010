@@ -1,0 +1,15 @@
+add_namespace = Black_person
+
+country_event = { #少量学生游行
+	id = Black_person.1
+	title = Black_person.1.t
+	desc = Black_person.1.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = britain.1.a	#sounds good
+	}
+	
+}

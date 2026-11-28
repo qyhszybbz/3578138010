@@ -1,0 +1,18 @@
+state={
+	id = 1166
+	name="STATE_1166"
+	manpower = 2114041
+
+	state_category = rural
+
+	history={
+		owner = VIN
+		add_core_of = VIN
+	}
+
+	provinces={
+		12065 9948 7015 7093 13389 1157
+	}
+
+	local_supplies=7.0 
+}

@@ -1,0 +1,78 @@
+ideas = {
+
+	country = {
+	
+		fallen_shizi = {
+
+			picture = GFX_idea_fallen_shizi
+			
+			allowed = {
+				original_tag = ENG
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				trade_opinion_factor = -0.25
+			}
+		
+		}		
+		ENG_broken_insdutry = {
+
+			picture = GFX_idea_ENG_broken_insdutry
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.4
+				industrial_capacity_factory = -0.2
+				production_speed_arms_factory_factor = -0.3
+				production_speed_industrial_complex_factor = -0.3
+				industrial_capacity_dockyard = -0.1
+			}
+		
+		}
+		ENG_britain_seabase = {
+
+			picture = GFX_idea_ENG_britain_seabase
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_dockyard = 0.05
+				naval_speed_factor = 0.1
+				naval_equipment_research = -0.2
+			}
+		
+		}		
+		The_London_stock_market_crashed = {
+
+			picture = British_London_stock_market_crashed
+			
+			allowed = {
+				original_tag = ENG
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.5
+				production_speed_arms_factory_factor = -0.25      
+				production_speed_industrial_complex_factor = -0.25
+				production_speed_dockyard_factor = -0.25          
+				production_speed_bunker_factor = -0.25            
+				production_speed_coastal_bunker_factor = -0.25 
+			}
+		}
+	}
+}

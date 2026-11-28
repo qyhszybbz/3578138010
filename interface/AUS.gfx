@@ -1,0 +1,47 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_AUS_TVE_yih"
+		texturefile = "gfx/leaders/AUS/aus_yih.dds"
+	}
+	spriteType = {
+		name = "GFX_AUS_aus_empersay"
+		texturefile = "gfx/interface/AUS_ICON/aus_empersay.png"
+	}
+	spriteType = {
+		name = "GFX_AUS_aus_laws"
+		texturefile = "gfx/interface/AUS_ICON/aus_laws.png"
+	}
+	spriteType = {
+		name = "GFX_AUS_aus_national_unity"
+		texturefile = "gfx/interface/AUS_ICON/aus_national_unity.png"
+	}
+	spriteType = {
+		name = "GFX_AUS_aus_bigunit"
+		texturefile = "gfx/interface/AUS_ICON/aus_bigunit.png"
+	}
+	spriteType = {
+		name = "GFX_AUS_aus_nofasim"
+		texturefile = "gfx/interface/AUS_ICON/aus_nofasim.png"
+	}
+	spriteType = {
+		name = "GFX_AUS_aus_lorr"
+		texturefile = "gfx/interface/AUS_ICON/aus_lorr.png"
+	}
+	spriteType = {
+		name = "GFX_AUS_aus_difficult_walk"
+		texturefile = "gfx/interface/AUS_ICON/aus_difficult_walk.png"
+	}
+	spriteType = {
+		name = "GFX_AUS_aus_difficult_walk_shine"
+		texturefile = "gfx/interface/AUS_ICON/aus_difficult_walk.png"
+	}
+	spriteType = {
+		name = "GFX_AUS_aus_laws"
+		texturefile = "gfx/interface/AUS_ICON/aus_laws.png"
+	}
+	spriteType = {
+		name = "GFX_msln"
+		texturefile = "gfx/event_pictures/msln.dds"
+	}
+	
+}

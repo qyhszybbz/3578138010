@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_economy_bg"
+		texturefile = "gfx/interface/economy_bg.dds"
+	}
+}

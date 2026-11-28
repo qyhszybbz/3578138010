@@ -1,0 +1,27 @@
+state = {
+	id = 1059
+	name = "STATE_1059"
+	manpower = 1692973
+	state_category = rural
+	history = {
+		owner = GAD
+		add_core_of = GAD
+		add_core_of = PRC
+		add_core_of = CHI
+		add_extra_state_shared_building_slots = 2
+		buildings = {
+			1047 = { # Guangzhou
+				naval_base = 5
+				coastal_bunker = 1
+				bunker = 1
+			}
+		}
+		victory_points = {
+			1047 40
+		}
+	}
+	provinces = {
+		1047
+	}
+	local_supplies = 7
+}

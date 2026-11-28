@@ -1,0 +1,17 @@
+characters={
+	#领导人
+	#托马斯·乔尔蒙德利
+	KEN_Thomas_Cholmondeley = {
+		name = KEN_Thomas_Cholmondeley
+		portraits = {
+			civilian = {
+				large = GFX_KEN_Thomas_Cholmondeley_large
+			}
+		}
+		country_leader = {
+			desc = KEN_Thomas_Cholmondeley_desc
+			ideology = Conservatism_small
+			traits = {  }
+		}
+	}
+}

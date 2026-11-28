@@ -1,0 +1,40 @@
+CSA_Richmond_Confederation = { # 里士满邦联大会
+	
+	CSA_mobilize_people = { #利用民众
+		
+
+	}
+	CSA_Use_influence = { #利用影响力
+
+	}
+	CSA_united_church = { #团结教会
+
+	}
+	CSA_Suppressing_extremists = { #镇压极端分子
+		
+	}
+	CSA_Confront_the_left = { #对抗左派
+
+	}
+	CSA_Negotiations_with_tlf = { #与朗派交涉
+
+	}
+	CSA_Secretly_tampering_wse = { #暗地中篡改州选举
+
+	}
+}
+CSA_western_affairs_decision = { #西部事宜
+
+	CSA_Suppressing_bandits = { #清剿匪帮
+
+	}
+	CSA_Stabilize_local_order = { #稳定当地秩序
+
+	}
+	CSA_arms_aid = { #武器援助
+
+	}
+	CSA_Execute_counter_tO = { #执行反恐行动
+
+	}
+}

@@ -1,0 +1,37 @@
+ideas = {
+	country = {
+		BOL_military_socialism = { #军事社会主义
+			#picture = BOL_military_socialism
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				tttt_drift = 0.01
+				Socialism_drift = 0.01
+			}
+		}
+		BOL_mountains_of_gold = { #群山自黄金
+			#picture = BOL_mountains_of_gold
+			removal_cost = -1
+			modifier = {
+				state_resources_factor = 0.15
+				global_building_slots_factor = 0.2
+				Authoritarianism_drift = 0.01
+				stability_factor = -0.1
+			}
+		}
+		BOL_treaty_of_petropolis = { #《彼得罗普利斯条约》
+			#picture = BOL_treaty_of_petropolis
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = -0.1
+			}
+		}
+		BOL_national_salvation_government = { #救国政府
+			#picture = BOL_national_salvation_government
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.05
+			}
+		}
+	}
+}

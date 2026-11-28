@@ -1,0 +1,74 @@
+﻿capital = 276 #渥太华
+oob = "CAN_1935"
+set_stability = 0.5
+set_war_support = 0.2
+set_research_slots = 3
+set_convoys = 50
+starting_train_buffer = 1.5
+set_fuel_ratio = 1
+load_focus_tree = generic_focus
+
+### 初始科技 ###
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	tech_trucks = 1
+	gw_artillery = 1
+	basic_train = 1
+	gwtank_chassis = 1
+	basic_naval_mines = 1
+	early_ship_hull_light = 1
+	basic_ship_hull_light = 1
+	early_ship_hull_cruiser = 1
+	basic_battery = 1
+	basic_light_battery = 1
+	basic_torpedo = 1
+	basic_depth_charges = 1
+	mtg_transport = 1
+}
+
+### 领导人 ###
+recruit_character = CAN_Mackenzie_King #威廉·莱昂·麦肯齐·金
+
+set_politics = {
+	ruling_party = Liberalism
+	last_election = "1935.10.14"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+set_popularities = {
+	Communism = 3
+	Socialism = 14
+	Progressivism = 11
+	Liberalism = 20
+	Democracy = 10
+	Conservatism = 10
+	Authoritarianism = 8
+	tttt = 7
+	fascism = 0
+	nazism = 17
+}
+
+
+
+
+
+
+create_equipment_variant = {
+	name = "Cheap Light Tank"
+	type = light_tank_chassis_0          # 战间期型轻型坦克底盘
+	parent_version = 0
+
+	modules = {
+		main_armament_slot   = tank_heavy_machine_gun          # 重机枪
+		turret_type_slot     = tank_light_one_man_tank_turret  # 单乘员炮塔
+		suspension_type_slot = tank_bogie_suspension           # 台车悬挂
+		armor_type_slot      = tank_riveted_armor              # 铆接装甲
+		engine_type_slot     = tank_gasoline_engine            # 基础汽油引擎
+	}
+
+}
+

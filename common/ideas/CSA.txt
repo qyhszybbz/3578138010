@@ -1,0 +1,235 @@
+ideas = {
+
+	country = {
+		
+
+
+
+
+###################new################################
+		CSA_slave_and_industry = { #奴隶与工业化
+			picture = CSA_slave_and_industry
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 0.5
+				production_factory_efficiency_gain_factor = -0.25
+				min_export = -0.1
+			}
+		}
+		CSA_slave_and_industry_2 = { #奴隶与工业化
+			picture = CSA_slave_and_industry
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.15
+				local_building_slots_factor = 0.05
+				political_power_cost = 0.5
+				production_factory_efficiency_gain_factor = -0.25
+				min_export = -0.1
+				industry_repair_factor = 0.1
+			}
+		}
+
+		CSA_west_slave_baodong = {
+			picture = CSA_west_slave_baodong
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.1
+				resistance_target = 0.25
+				industrial_capacity_factory = -0.1
+				consumer_goods_factor = -0.15
+				custom_modifier_tooltip = CSA_west_slave_baodong_tt
+			}
+		}
+
+		CSA_victory_of_civ_war = {
+			picture = CSA_victory_of_civ_war
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.15
+				war_support_factor = 0.05
+				stability_weekly = 0.02
+				monthly_population = 0.1
+				production_speed_industrial_complex_factor = -0.1
+			}
+		}
+
+		CSA_jackson_stone_wall = {
+			picture = CSA_jackson_stone_wall
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				military_leader_cost_factor = -0.2
+				max_dig_in = 0.045
+				army_defence_factor =  0.04
+				army_core_defence_factor =  0.2
+				cavalry_attack_factor = 0.1
+
+			}
+		}
+
+		CSA_fight_with_dixie = {
+			picture = sour_loser
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.15
+				war_support_factor = 0.05
+				surrender_limit = 0.07
+				industrial_capacity_factory = 0.1
+				conscription_factor = 0.2
+				enemy_operative_capture_chance_factor = 0.4
+				modifier_army_sub_unit_militia_attack_factor = 0.02
+				modifier_army_sub_unit_militia_defence_factor = 0.15
+				max_dig_in = 0.04
+				training_time_army_factor = -0.03
+				army_attack_factor = 0.05
+			}
+		}
+		CSA_Regional_farmer_support = { #地区农民支持
+			modifier = {
+				conscription_factor = 0.15
+				local_manpower = 0.5
+				weekly_manpower = 500
+			}
+		}
+		CSA_Impact_of_lem = { #扩地法影响
+			modifier = {
+				required_garrison_factor = -0.2
+				political_power_factor = 0.2
+				consumer_goods_factor = -0.15
+			}
+
+		}
+
+################csa_puppet#############################
+		
+
+		SCF_hunluan_weiyuanhui = {
+			picture = sour_loser
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.05
+				political_power_cost = 0.5
+				military_leader_cost_factor = 0.8
+			}
+			rule = {
+				can_join_factions = no
+			}
+
+		}
+
+		SCF_yiming_qingrao = {
+			picture = sour_loser
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.1
+				conscription_factor = -0.35
+				resistance_target = 0.02
+				production_factory_efficiency_gain_factor = -0.25
+				production_factory_start_efficiency_factor = -0.1
+			}
+
+		}
+
+		NMX_black_youxing = {
+			picture = sour_loser
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = -0.4
+				production_speed_buildings_factor = -0.1
+				local_resources_factor = -0.19
+				min_export = -0.29
+			}
+
+		}
+	}
+	
+}

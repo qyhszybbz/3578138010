@@ -1,0 +1,11 @@
+spriteTypes = {
+	#民族精神
+	spriteType = { #饱受争议的王室
+		name = "GFX_idea_TEX_lone_star_republic"
+		texturefile = "gfx/interface/ideas/TEX/TEX_lone_star_republic.dds"
+	}
+	spriteType = { #失去的繁荣
+		name = "GFX_idea_TEX_Autonomous_States_and_tcobs"
+		texturefile = "gfx/interface/ideas/TEX/TEX_Autonomous_States_and_tcobs.dds"
+	}
+}

@@ -1,0 +1,86 @@
+characters = {
+	#领导人
+	#安东尼奥·葛兰西
+	ITA_Antonio_Gramsci = {
+		name = ITA_Antonio_Gramsci
+		portraits={
+			civilian={
+				large = GFX_ITA_Antonio_Gramsci_large
+			}
+		}
+		country_leader={
+			desc = ITA_Antonio_Gramsci_desc
+			ideology = communism_small
+			traits={ ITA_Revolutionary_Vanguard }
+		}
+	}
+	#政治顾问
+	#萨尔瓦托雷·巴尔齐莱
+	ITA_Salvatore_Barzilai = {
+		name = ITA_Salvatore_Barzilai
+		portraits = {
+			civilian = {
+				small = GFX_ITA_Salvatore_Barzilai_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_Salvatore_Barzilai_pol
+			desc = ITA_Salvatore_Barzilai_desc
+			traits = { ITA_Red_guard }
+			cost = 0
+			can_be_fired = no
+		}
+	}
+	#彼得罗·南尼
+	ITA_Pietro_Nenni = {
+		name = ITA_Pietro_Nenni
+		portraits = {
+			civilian = {
+				small = GFX_ITA_Pietro_Nenni_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_Pietro_Nenni_pol
+			desc = ITA_Pietro_Nenni_desc
+			traits = { ITA_Diligent_leader }
+			cost = 0
+			can_be_fired = no
+		}
+	}
+	#尼古拉·布哈林
+	ITA_Nikolai_Bukharin = {
+		name = ITA_Nikolai_Bukharin
+		portraits = {
+			civilian = {
+				small = GFX_ITA_Nikolai_Bukharin_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_Nikolai_Bukharin_pol
+			desc = ITA_Nikolai_Bukharin_desc
+			traits = { ITA_Bolshevik_exiles }
+			cost = 0
+			can_be_fired = no
+		}
+	}
+	#埃米利奥·卢苏
+	ITA_Emilio_Lussu = {
+		name = ITA_Emilio_Lussu
+		portraits = {
+			civilian = {
+				small = GFX_ITA_Emilio_Lussu_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_Emilio_Lussu_pol
+			desc = ITA_Emilio_Lussu_desc
+			traits = { ITA_Red_Warrior }
+			cost = 0
+			can_be_fired = no
+		}
+	}
+}

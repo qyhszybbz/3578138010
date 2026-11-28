@@ -1,0 +1,59 @@
+leader_traits ={
+	#领导人特质
+	#犹太人的天选之子？
+	POL_Wrong_Chosen_People ={
+		random = no
+		stability_factor = -0.20
+		political_power_factor = -0.15
+	}
+	#最伟大的元帅
+	POL_the_greatest_marshal ={
+		random = no
+		war_support_factor = 0.15
+		army_org = 10
+		supply_consumption_factor = -0.15
+	}
+	#复国者
+	POL_Nation_Restorer ={
+		random = no
+		army_core_attack_factor = 0.12
+		army_core_defence_factor = 0.12
+		conscription_factor = 0.15
+	}
+	#沃尔特将军
+	POL_general_walter ={
+		random = no
+		army_attack_factor = 0.15
+		army_core_defence_factor = 0.08
+	}
+	#会馆谈判
+	POL_tavern_negotiation ={
+		random = no
+		surrender_limit = 0.10
+		opinion_gain_monthly_factor = 0.15
+	}
+	#笃信民主的基督徒
+	POL_devout_democratic_christian ={
+		random = no
+		defensive_war_stability_factor = 0.10
+		resistance_growth_on_our_occupied_states = 0.20
+	}
+	#教皇侍从
+	POL_papal_attendant ={
+		random = no
+		compliance_growth_on_our_occupied_states = 0.15
+		non_core_manpower = 0.12
+	}
+	#罗马伯爵
+	POL_roman_count ={
+		random = no
+		stability_factor = 0.25
+	}
+	#不屈的民族英雄
+	POL_unyielding_national_hero ={
+		random = no
+		war_support_factor = 0.10
+		surrender_limit = 0.10
+	}
+
+}

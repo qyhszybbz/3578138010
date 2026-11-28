@@ -1,0 +1,115 @@
+ideas = {
+    country = {
+		#堪堪起步的民族国家
+		IRQ_start_national_country = {
+			on_add = { log = "[GetLogRoot]: add idea IRQ_start_national_country" }
+			picture = start_national_country
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.10
+  				war_support_factor = -0.05
+  				resistance_growth = 0.10
+  				drift_defence_factor = -0.15
+				custom_modifier_tooltip = IRQ_start_national_country_tt
+			}
+		}
+		#国有化斗争-初步胜利
+		IRQ_Preliminary_nation_industry = {
+			on_add = { log = "[GetLogRoot]: add idea IRQ_Preliminary_nation_industry" }
+			picture = Preliminary_nation_industry
+			allowed = { always = no }
+			modifier = {
+				industrial_capacity_factory = 0.05
+				trade_laws_cost_factor = 0.20
+				consumer_goods_factor = 0.05
+				production_factory_start_efficiency_factor = -0.10
+				min_export = -0.05
+			}
+		}
+		#枪杆子与笔杆子的斗争
+		IRQ_gun_fight_pen = {
+			on_add = { log = "[GetLogRoot]: add idea IRQ_gun_fight_pen" }
+			picture = gun_fight_pen
+			allowed = { always = no }
+			modifier = {
+				political_power_gain = -0.05
+				army_org_factor = 0.05
+				stability_weekly = -0.001
+				army_chief_cost_factor = 0.10
+				high_command_cost_factor = 0.1
+			}
+		}
+		#一轮土地改革-完全失败
+		IRQ_fall_land_rev = {
+			on_add = { log = "[GetLogRoot]: add idea IRQ_fall_land_rev" }
+			picture = fall_land_rev
+			allowed = { always = no }
+			modifier = {
+				conscription_factor = -0.15
+				weekly_manpower = -200
+				stability_factor = -0.05
+				local_resources_factor = -0.10
+			}
+		}
+		#亚述屠杀案争议
+		IRQ_discussion_of_massacre = {
+			on_add = { log = "[GetLogRoot]: add idea IRQ_discussion_of_massacre" }
+			picture = discussion_of_massacre
+			allowed = { always = no }
+			modifier = {
+				opinion_gain_monthly_same_ideology_factor = -0.20
+				opinion_gain_monthly_factor = -0.10
+				war_support_factor = 0.05
+				justify_war_goal_time = 0.15
+			}
+		}
+		#“革命新城”建设热潮
+		IRQ_rev_new_city = {
+			on_add = { log = "[GetLogRoot]: add idea IRQ_rev_new_city" }
+			picture = rev_new_city
+			allowed = { always = no }
+			modifier = {
+				production_speed_infrastructure_factor = 0.15
+				production_speed_buildings_factor = 0.10
+				consumer_goods_factor = 0.08
+				political_power_gain = 0.02
+			}
+		}
+		#摇摆不定的什叶派
+		IRQ_wavering_Shia = {
+			on_add = { log = "[GetLogRoot]: add idea IRQ_wavering_Shia" }
+			picture = wavering_Shia
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.05
+				monthly_population = 0.03
+				compliance_growth = -0.10
+				drift_defence_factor = 0.10
+			}
+		}
+		#支援也门革命
+		IRQ_support_ym_rev = {
+			on_add = { log = "[GetLogRoot]: add idea IRQ_support_ym_rev" }
+			picture = support_ym_rev
+			allowed = { always = no }
+			modifier = {
+				send_volunteer_divisions_required = -0.5
+				war_support_factor = 0.10
+				consumer_goods_factor = 0.05
+				political_power_cost = 0.05
+			}
+		}
+		#两河流域的赤色灯塔
+		IRQ_rise_star_of_2_rivers = {
+			on_add = { log = "[GetLogRoot]: add idea IRQ_rise_star_of_2_rivers" }
+			picture = rise_star_of_2_rivers
+			allowed = { always = no }
+			modifier = {
+				Socialism_drift = 0.05
+				opinion_gain_monthly_same_ideology = 0.15
+				generate_wargoal_tension = -0.10
+				join_faction_tension = -0.10
+			}
+		} 		
+    }
+}

@@ -1,0 +1,32 @@
+characters={
+	FRA_Louis_Marin = { #路易·马林
+   		name = FRA_Louis_Marin
+   		portraits = {
+   		    civilian = {
+   		        large = GFX_leader_FRA_Louis_Marin
+   		    }
+   		}
+	
+   		country_leader = {
+   		    ideology = non_domination_system
+   		    traits = {
+			
+   		    }
+   		}
+	}
+	FRA_Placeholder = { #占位
+   		name = FRA_Placeholder
+   		portraits = {
+   		    civilian = {
+   		        #large = GFX_leader_FRA_Louis_Marin
+   		    }
+   		}
+	
+   		country_leader = {
+   		    ideology = FRA_blue
+   		    traits = {
+			
+   		    }
+   		}
+	}
+}

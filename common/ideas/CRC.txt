@@ -1,0 +1,22 @@
+ideas = {
+	country = {
+		CRC_Dutch_rule_in_name_only = { #名存实亡的荷兰统治
+			modifier = {
+				drift_defence_factor = 0.15
+				political_power_cost = 0.2
+			}
+			targeted_modifier = {
+				tag = HOL
+				trade_opinion_factor = 0.5
+				extra_trade_to_target_factor = 0.5
+			}
+		}
+		CRC_violence_and_peace = { #暴力与和平
+			modifier = {
+				stability_factor = 0.2
+				Socialism_drift = 0.01
+				industrial_capacity_factory = -0.1
+			}
+		}
+	}
+}

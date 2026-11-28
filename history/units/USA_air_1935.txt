@@ -1,0 +1,34 @@
+air_wings = {
+
+	361 = {
+		small_plane_airframe_0 = {
+			owner = "USA"
+			amount = 300
+			version_name = "Gloster Gladiator"
+		}
+	}
+
+	395 = {
+		medium_plane_airframe_0 = {
+			owner = "USA"
+			amount = 100
+			version_name = "Handley Page Heyford"
+		}
+	}
+
+	395 = { 
+		small_plane_cas_airframe_0 = {
+			owner = "USA" 
+			amount = 120
+			version_name = "Fairey Gordon"
+		}
+	}
+
+	"Clinton" = { #克林顿号 航母舰载战斗机联队
+		cv_small_plane_airframe_1 = {
+			owner = "USA"
+			amount = 40
+			version_name = "F2A Buffalo"
+		}
+	}
+}

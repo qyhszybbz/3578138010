@@ -1,0 +1,31 @@
+
+state={
+	id = 793
+	name="STATE_793"
+
+	history={
+		owner = BAT
+		add_core_of = BAT
+		add_core_of = EST
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			4640 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			4640 3
+		}
+		victory_points = {
+			11127 3
+		}
+	}
+
+	provinces={
+		4640 6099 9079 11057 11127 11443 13127 
+	}
+	manpower=150560
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

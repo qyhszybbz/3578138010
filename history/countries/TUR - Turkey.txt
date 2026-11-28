@@ -1,0 +1,272 @@
+﻿capital = 777
+load_focus_tree = generic_focus
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_oob = "TUR_1936"
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_oob = "TUR_1936_nsb"
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "TUR_1936_naval_mtg"
+	else = {
+		set_naval_oob = "TUR_1936_naval_legacy"
+	}
+}
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "TUR_1936_air_bba"
+		set_technology = { 
+			bba_early_transport_plane = 1
+		}
+	else = {
+		set_air_oob = "TUR_1936_air_legacy"
+		set_technology = {
+			early_fighter = 1
+			early_bomber = 1
+			CAS1 = 1
+			early_transport_plane = 1
+		}
+	}
+}
+
+
+###################
+#### 3D MODELS ####
+###################
+
+#Cosmetic tags used (3D models will look for these cosmetic tags when hooking themselves):
+#TUR_communism
+#TUR_Liberalism
+#TUR_fascism
+#TUR_Authoritarianism
+set_cosmetic_tag = TUR_Authoritarianism
+
+set_research_slots = 3
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_mountaineers = 1
+	tech_recon = 1
+	tech_support = 1
+	tech_trucks = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	basic_train = 1
+}
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		coastal_defense_ships = 1
+		mtg_transport = 1
+	}
+}
+
+1936.1.1 = {
+	if = { 
+		limit = { has_dlc = "Battle for the Bosporus" }	
+		set_variable = { var = TUR_kemalist_power_variable value = 5 }
+		797 = {
+			add_dynamic_modifier = { modifier = kemalist_loyalties }
+		}
+		341 = {
+			add_dynamic_modifier = { modifier = kemalist_loyalties }
+		}
+		340 = {
+			add_dynamic_modifier = { modifier = kemalist_loyalties }
+		}
+		339 = {
+			add_dynamic_modifier = { modifier = kemalist_loyalties }
+		}
+		354 = {
+			add_dynamic_modifier = { modifier = kemalist_loyalties }
+		}
+		350 = {
+			add_dynamic_modifier = { modifier = kurdish_agitation }
+		}
+		352 = {
+			add_dynamic_modifier = { modifier = kurdish_separatism }
+		}
+		800 = {
+			add_dynamic_modifier = { modifier = kurdish_separatism }
+		}
+		353 = {
+			add_dynamic_modifier = { modifier = kurdish_agitation }
+		}
+		798 = {
+			add_dynamic_modifier = { modifier = islamist_opposition }
+		}
+		349 = {
+			add_dynamic_modifier = { modifier = islamist_sedition }
+		}
+		348 = {
+			add_dynamic_modifier = { modifier = islamist_sedition }
+		}
+		345 = {
+			add_dynamic_modifier = { modifier = islamist_opposition }
+		}
+		344 = {
+			add_dynamic_modifier = { modifier = islamist_opposition }
+		}
+		355 = {
+			add_dynamic_modifier = { modifier = islamist_sedition }
+		}
+		356 = {
+			add_dynamic_modifier = { modifier = islamist_opposition }
+		}
+		add_ideas = {
+			limited_conscription
+			export_focus
+			civilian_economy
+			TUR_kemalist_army_officers_limited_power_loyal
+			TUR_sectarian_woes
+			TUR_disorganised_armed_forces
+			TUR_debt_council
+		}
+		
+		353 = {
+			start_resistance = yes
+			set_compliance = 20
+			set_resistance = 10
+			set_garrison_strength = 1.0
+		}
+		
+		350 = {
+			start_resistance = yes
+			set_compliance = 25
+			set_resistance = 15
+			set_garrison_strength = 1.0
+		}
+		
+		352 = {
+			start_resistance = yes
+			set_compliance = 10
+			set_resistance = 15
+			set_garrison_strength = 0.75
+		}
+		
+		800 = {
+			start_resistance = yes
+			set_compliance = 10
+			set_resistance = 15
+			set_garrison_strength = 0.75
+		}
+		set_variable = { var = TUR_kemalist_officers_loyalty value = 1 }
+		every_owned_state = {
+			limit = {
+				OR = {
+					state = 49
+					state = 340
+					state = 341
+					state = 344
+					state = 345
+				}
+			}
+			set_state_flag = TUR_ideological_battleground_state
+		}
+	
+		add_opinion_modifier = { 
+			target = GRE
+			modifier = BFTB_balkan_pact_ally
+		}
+		add_opinion_modifier = { 
+			target = ROM
+			modifier = BFTB_balkan_pact_ally
+		}
+		add_opinion_modifier = { 
+			target = YUG
+			modifier = BFTB_balkan_pact_ally
+		}
+		add_opinion_modifier = { 
+			target = BUL
+			modifier = BFTB_balkan_pact_enemy
+		}
+		add_opinion_modifier = { 
+			target = HUN
+			modifier = BFTB_balkan_pact_enemy
+		}
+	}
+
+	if = { 
+		limit = { NOT = { has_dlc = "Battle for the Bosporus" }	}
+		add_ideas = {
+			limited_conscription
+			export_focus
+			civilian_economy
+		}
+	}
+}
+
+
+set_politics = {
+	ruling_party = Progressivism
+	last_election = "1935.2.8"
+	elections_allowed = yes
+}
+set_popularities = {
+	Liberalism = 6
+	Progressivism = 30
+	communism = 1
+	Socialism = 10
+	Liberalism = 12
+	Democracy = 18
+	Conservatism = 8
+	tttt = 4
+	fascism = 9
+	nazism = 2
+}
+recruit_character = II.Abdvlmecid
+set_convoys = 20
+set_stability = 0.5
+set_war_support = 0.3
+

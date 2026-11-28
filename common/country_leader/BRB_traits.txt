@@ -1,0 +1,6 @@
+leader_traits ={ 
+	BRB_strongman_of_the_country = { #国家强人
+		stability_factor = 0.15
+	}
+
+}

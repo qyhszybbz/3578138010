@@ -1,0 +1,17 @@
+characters={
+	PHI_Emilio_Archinardo = { #埃米利奥·阿基纳尔多
+    name = PHI_Emilio_Archinardo
+    portraits = {
+        civilian = {
+            large = GFX_idea_PHI_Emilio_Archinardo
+        }
+    }
+    
+    country_leader = {
+        ideology = Conservatism_small 
+        traits = {
+            
+        }
+    }
+}
+}

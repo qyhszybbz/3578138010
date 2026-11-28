@@ -1,0 +1,12 @@
+bitmapfonts = {
+	bitmapfont_override = {
+		name = "tahoma_60"
+		fontfiles = { 
+			"gfx/fonts/mapfont_0"
+			"gfx/fonts/mapfont_1"
+			"gfx/fonts/mapfont_2"
+			"gfx/fonts/mapfont_3"
+		}
+	languages = { "l_simp_chinese" } 
+	}
+}

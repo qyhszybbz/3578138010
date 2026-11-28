@@ -1,0 +1,22 @@
+state={
+	id = 1041
+	name="STATE_1041"
+	provinces={
+		2161 5118 
+	}
+	history = {
+
+		owner = MPQ
+		add_core_of = MPQ
+		add_core_of = CHL
+		buildings = {
+			infrastructure = 1
+		}
+
+		
+	}
+	manpower=15561
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

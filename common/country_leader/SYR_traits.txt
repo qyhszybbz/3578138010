@@ -1,0 +1,10 @@
+leader_traits ={
+	#领导人特质
+	#不受待见的阿拉伯主义者
+	SYR_Unwelcome_Arabist = { 
+		random = no
+		political_power_factor = -0.05
+		stability_factor = -0.10
+		consumer_goods_factor = -0.05
+	}
+}

@@ -1,0 +1,8 @@
+leader_traits = {
+	#领导人特质
+	#矿业巨鳄
+	AMD_mining_magnate = {
+		random = no
+		stability_factor = 0.15
+	}
+}

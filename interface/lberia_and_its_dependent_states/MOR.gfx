@@ -1,0 +1,8 @@
+spriteTypes = {
+	
+	spriteType = { #非洲军团
+		name = "GFX_idea_MOR_Afrika_Korps"
+		texturefile = "gfx/interface/ideas/MOR/TVE_MOR_Afrika_Korps.dds"
+	}
+	
+}

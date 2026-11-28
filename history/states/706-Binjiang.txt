@@ -1,0 +1,24 @@
+state = {
+	id = 706
+	name = "STATE_706"
+	manpower = 1497653
+	state_category = pastoral
+	history = {
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = MAN
+		add_core_of = PRC
+		add_extra_state_shared_building_slots = 1
+		buildings = {
+			infrastructure = 2
+		}
+				victory_points = {
+			10376 5
+		}
+	}
+	provinces = {
+		3791 9782 10376 10503 11893 12412
+	}
+	local_supplies = 7
+	buildings_max_level_factor = 1.000
+}

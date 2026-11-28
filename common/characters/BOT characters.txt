@@ -1,0 +1,17 @@
+characters={
+	#领导人
+	#查尔斯·阿登-克拉克
+	BOT_Charles_ArdenClarke = {
+		name = BOT_Charles_ArdenClarke
+        portraits = {
+            civilian = {
+                large = GFX_BOT_Charles_ArdenClarke_large
+            }
+        }
+        country_leader = {
+            desc = BOT_Charles_ArdenClarke_desc
+            ideology = tttt_small
+            traits = { }
+        }
+	}
+}

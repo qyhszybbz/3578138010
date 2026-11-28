@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_RUS_Anton_Ivanovich_Denikin"
+		texturefile = "gfx/leaders/RUS/RUS_Anton_Ivanovich_Denikin.dds"
+	}
+	spriteType = {
+		name = "GFX_WZXH_p"
+		texturefile = "gfx/interface/goals/RUS/WZXH_p.dds"
+	}
+}

@@ -1,0 +1,26 @@
+state={
+	id = 1221
+	name="STATE_1221"
+
+	history={
+		owner = POL
+		add_core_of = POL
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 1
+		}
+		victory_points = {
+			3392 8
+		}
+	}
+
+	provinces={
+		3392
+	}
+
+	state_category = town
+	manpower = 82308
+	buildings_max_level_factor=1.000
+	local_supplies=0.0 
+}

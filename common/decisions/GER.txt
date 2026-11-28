@@ -1,0 +1,2317 @@
+﻿debug_decisions = {
+	DEBUG_Manu = {
+		priority = 999
+		allowed = {
+			tag = GER
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+		}
+
+		available = {
+		}
+
+		complete_effect = {
+		}
+	}
+	DEBUG_DANNE_GER = {
+		priority = 999
+		allowed = {
+			always = yes
+			tag = GER
+		}
+
+		visible = {
+			is_debug = yes
+		}
+
+		available = {
+			
+		}
+
+		complete_effect = {	
+			if = {
+				limit = {
+					OR = {
+						has_dynamic_modifier = { modifier = GER_mefo_bills_modifier }
+						has_dynamic_modifier = { modifier = GER_economy_of_conquest_modifier }
+					}
+				}
+				custom_effect_tooltip = GER_modify_economy_of_conquest_modifier_tt
+				add_to_variable = { 
+					GER_industrial_consumer_goods_factor = -0.1
+					tooltip = consumer_goods_factor_tt
+				}
+				GER_reduce_mefo_bills_penalty = yes
+			}
+		}
+	}
+	DEBUG_DANNE_change_CG_GER = {
+		priority = 999
+		allowed = {
+			always = yes
+			tag = GER
+		}
+
+		visible = {
+			is_debug = yes
+		}
+
+		available = {
+			
+		}
+
+		complete_effect = {	
+			if = {
+				limit = {
+					OR = {
+						has_dynamic_modifier = { modifier = GER_mefo_bills_modifier }
+						has_dynamic_modifier = { modifier = GER_economy_of_conquest_modifier }
+					}
+				}
+				custom_effect_tooltip = GER_modify_economy_of_conquest_modifier_tt
+				add_to_variable = { 
+					GER_industrial_consumer_goods_factor = 0.1
+					tooltip = consumer_goods_factor_tt
+				}
+				GER_add_mefo_bills_penalty = yes
+			}
+		}
+	}
+}
+
+
+
+
+
+#Category only allowed for GER
+GER_mefo_bills_category = {
+
+	GER_mefo_bills_mission = {
+
+		allowed = { always = no }
+
+		icon = ger_mefo_bills
+
+		available = {
+			#NOT = { has_government = Liberalism }
+			#GER_can_delay_mefo_payment = yes #TODO_DANNE Remove this trigger entirely
+			has_political_power > 0
+			hidden_trigger = { always = no }
+		}
+
+		#cost = GER_mefo_bill_counter?10
+
+		days_mission_timeout = 180
+		is_good = yes
+		fire_only_once = yes
+
+		cancel_trigger = {
+			hidden_trigger = {
+				OR = {
+					NOT = { has_dynamic_modifier = { modifier = GER_mefo_bills_modifier } }
+					has_idea = GER_mefo_bills_ended
+				}
+			}
+		}
+
+		days_remove = GER_extend_mefo_bills_days?0
+		remove_effect = {
+		}
+
+		complete_effect = {
+		}
+
+		timeout_effect = {
+			if = {
+				limit = {
+					has_country_flag = ger_has_cancelled_mefo
+				}
+				#GER_remove_mefo_bills = yes
+				#1
+				GER_pay_back_mefo_bills = yes
+			}
+			else = {
+				custom_effect_tooltip = GER_mefo_bills_mission_tt #TODO_Danne Re-write this to better fit the new circumstances!
+				custom_effect_tooltip = GER_mefo_bills_effect_in_days
+				hidden_effect = {
+					set_variable = { GER_extend_mefo_bills_days = days_mission_timeout@GER_mefo_bills_mission }
+					set_country_flag = paid_for_mefo
+				}
+				#GER_mefo_bills_level_up = yes
+				if = {
+					limit = {
+						check_variable = { var = GER_mefo_bill_counter value = 15 compare = less_than }
+					}
+					hidden_effect = { set_variable = { var = GER_mefo_bill_counter value = 10 } }
+				}
+				add_to_variable = { var = GER_mefo_bill_counter value = 10 }
+
+				hidden_effect = {
+					activate_mission = GER_mefo_bills_mission
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 200
+		}
+	}
+
+	GER_cancel_mefos = {
+
+		icon = ger_mefo_bills
+
+		ai_will_do = {
+			base = 0
+		}
+
+		available = {
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		visible = {
+			has_dynamic_modifier = { modifier = GER_mefo_bills_modifier }
+			#hidden_trigger = { #These are showing up as triggers for cancelation
+			#	NOT = {
+			#		has_country_flag = ger_has_cancelled_mefo
+			#		has_idea = GER_mefo_bills_ended
+			#	}
+			#}
+		}
+
+		cancel_if_not_visible = yes
+
+		remove_effect = {
+			set_country_flag = ger_has_cancelled_mefo
+		}
+
+		complete_effect = {
+			effect_tooltip = {
+				retire_character = GER_hjalmar_schacht
+				show_ideas_tooltip = hjalmar_schacht
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			GER_stop_rearmament = yes
+		}
+	}
+
+	#GER_renew_mefos = {
+#
+	#	icon = ger_mefo_bills
+#
+	#	available = {
+	#		hidden_trigger = {
+	#			has_country_flag = ger_has_cancelled_mefo
+	#			NOT = {
+	#				OR = {
+	#					NOT = { GER_has_mefo_bills = yes }
+	#					has_idea = GER_mefo_bills_ended
+	#				}
+	#			}
+	#		}
+	#	}
+#
+	#	cost = 0
+#
+	#	fire_only_once = no
+#
+	#	visible = {
+	#		hidden_trigger = {
+	#			has_country_flag = ger_has_cancelled_mefo
+	#			NOT = {
+	#				OR = {
+	#					NOT = { GER_has_mefo_bills = yes }
+	#					has_idea = GER_mefo_bills_ended
+	#				}
+	#			}
+	#		}
+	#	}
+#
+	#	cancel_if_not_visible = yes
+#
+	#	remove_effect = {
+	#		clr_country_flag = ger_has_cancelled_mefo
+	#	}
+#
+	#	ai_will_do = {
+	#		factor = 200
+	#	}
+	#}
+}
+
+GER_seize_gold_reserves_cat = {
+	GER_seize_gold_reserves = {
+		priority = 1
+		icon = GFX_decision_generic_confiscation
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 2.5
+				check_variable = { GER_industrial_consumer_goods_factor > 0.25 }
+			}
+			modifier = {
+				factor = 2
+				check_variable = { GER_industrial_consumer_goods_factor > 0.5 }
+			}
+			modifier = {
+				factor = 2
+				check_variable = { GER_industrial_consumer_goods_factor > 0.75 }
+			}
+			modifier = {
+				factor = 5
+				check_variable = { GER_industrial_consumer_goods_factor > 0.99 }
+			}
+			modifier = {
+				factor = 1.5
+				has_war_with_major = yes
+			}
+			modifier = {
+				factor = 1.5
+				FROM = {
+					is_major = yes
+				}
+			}
+			modifier = {
+				factor = 0
+				check_variable = { GER_industrial_consumer_goods_factor < 0.15 }
+			}
+		}
+
+		target_non_existing = yes #This is required for the Decision to even show up. TODO_Danne fix a better solution
+		target_array = ROOT.GER_seize_gold_targets_array
+
+		target_trigger = {
+			FROM = {
+				has_country_flag = GER_has_capitulated_to_germany
+				NOT = { #Don't seize France's gold reserves too soon; set up Vichy France first. Set in event France.10 and cleared in event france.14
+					has_country_flag = GER_dont_seize_gold_reserves_flag
+				}
+				any_core_state = {
+					is_controlled_by = ROOT
+					NOT = { is_core_of = ROOT }
+					NOT = { has_state_flag = GER_seize_gold_reserves_state_flag }
+					OR = {
+						check_variable = { industrial_complex_level > 0 }
+						check_variable = { arms_factory_level > 0 }
+						check_variable = { building_level@dockyard > 0 }
+					}
+				}
+			}
+		}
+
+		available = {
+			FROM = {
+				has_country_flag = GER_has_capitulated_to_germany
+			}
+			ROOT = {
+				custom_trigger_tooltip = {
+					tooltip = GER_economy_of_conquest_modifier_consumer_goods_tt
+					check_variable = { GER_industrial_consumer_goods_factor > 0 }
+				}
+			}
+		}
+
+		target_root_trigger = {
+			ROOT = { has_dynamic_modifier = { modifier = GER_economy_of_conquest_modifier }}
+		}
+		
+		fire_only_once = yes
+
+		cost = 25
+
+		complete_effect = {
+			set_temp_variable = { occupied_state_num_factory = 0 } #This will show how many factories in total Germany controls from FROM's cores
+			add_to_temp_variable = { GER.occupied_state_num_factory = FROM.num_of_military_factories_in_cores@GER }
+			add_to_temp_variable = { GER.occupied_state_num_factory = FROM.num_of_civilian_factories_in_cores@GER }
+			add_to_temp_variable = { GER.occupied_state_num_factory = FROM.num_of_naval_factories_in_cores@GER }
+
+			if = {
+				limit = {
+					NOT = {
+						FROM = {
+							original_tag = TUR
+						}
+					}
+				}
+				FROM = {
+					every_core_state = {
+						limit = {
+							is_on_continent = europe
+							is_fully_controlled_by = ROOT
+							NOT = { has_state_flag = GER_seize_gold_reserves_state_flag }
+						}
+						add_compliance = -5
+						add_resistance = 10
+						set_state_flag = GER_seize_gold_reserves_state_flag
+						add_dynamic_modifier = { modifier = GER_overburdened_state_modifier days = 90 }
+					}
+				}
+			}
+			else = {
+				FROM = {
+					every_core_state = {
+						limit = {
+							is_fully_controlled_by = ROOT
+							NOT = { has_state_flag = GER_seize_gold_reserves_state_flag }
+						}
+						add_compliance = -5
+						add_resistance = 10
+						set_state_flag = GER_seize_gold_reserves_state_flag
+						add_dynamic_modifier = { modifier = GER_overburdened_state_modifier days = 90 }
+					}
+				}
+			}
+			
+			divide_temp_variable = { occupied_state_num_factory = 200 } #This is necessary since a single factory will increase the occupied_state_num_factory number to 1, which in turn translates to -100% when subtracting from the Consumer Goods. Dividing it by 100 here will give you 1% instead, which is more like what we want.
+			multiply_temp_variable = { occupied_state_num_factory = -1 }
+
+			#If Germany has seized Gold Reserves from Soviet states, deduct that amount when seizing the nation wide Gold Reserves from Soviet, so we're not double dipping
+			if = { 
+				limit = {
+					FROM = {
+						original_tag = SOV
+					}
+					#Check if Germany has seized Gold Reserves that needs to be deducted from the total amount
+					check_variable = { GER_reduce_russian_CG_bonus < 0 }
+				}
+				subtract_from_temp_variable = { occupied_state_num_factory = GER_reduce_russian_CG_bonus }
+			}
+			
+			custom_effect_tooltip = GER_modify_economy_of_conquest_modifier_tt
+			add_to_variable = {
+				GER_industrial_consumer_goods_factor = occupied_state_num_factory
+				tooltip = consumer_goods_factor_tt
+			}
+			GER_reduce_mefo_bills_penalty = yes
+		}
+	}
+	GER_seize_russian_citites_gold_reserves = {
+		priority = 1
+		icon = GFX_decision_generic_confiscation
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 3
+				check_variable = { GER_industrial_consumer_goods_factor > 0.25 }
+			}
+			modifier = {
+				factor = 3
+				check_variable = { GER_industrial_consumer_goods_factor > 0.5 }
+			}
+			modifier = {
+				factor = 3
+				check_variable = { GER_industrial_consumer_goods_factor > 0.75 }
+			}
+			modifier = {
+				factor = 5
+				check_variable = { GER_industrial_consumer_goods_factor > 0.99 }
+			}
+			modifier = {
+				factor = 1.5
+				has_war_with_major = yes
+			}
+			modifier = {
+				factor = 1.5
+				FROM = {
+					controller = {
+						is_major = yes
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				check_variable = { GER_industrial_consumer_goods_factor < 0.15 }
+			}
+		}
+
+		state_target = yes
+
+		targets = { 195 219 217 242 218 206 202 137 }
+		#States being targeted: Leningrad, Moscow, Stalingrad, Smolensk, Rostov, Minsk, Kyiv, Crimea
+
+		target_trigger = {
+			FROM = {
+				owner = {
+					original_tag = SOV
+					has_war_with = ROOT
+					NOT = { has_country_flag = GER_has_capitulated_to_germany }
+				}
+				NOT = { has_state_flag = GER_seize_gold_reserves_state_flag }
+				NOT = { is_core_of = ROOT }
+				OR = {
+					check_variable = { industrial_complex_level > 0 }
+					check_variable = { arms_factory_level > 0 }
+					check_variable = { building_level@dockyard > 0 }
+				}
+			}
+		}		
+
+		available = {
+			FROM = { #This is all for tooltip purposes
+				is_fully_controlled_by = ROOT
+				owner = {
+					NOT = { has_country_flag = GER_has_capitulated_to_germany }
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = FROM
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+
+		complete_effect = {
+
+			#All temp variables need to be in the same scope to display the effect tooltip properly
+			FROM = {
+				set_temp_variable = { occupied_state_num_factory = 0 }
+				add_to_temp_variable = { occupied_state_num_factory = arms_factory_level }
+				add_to_temp_variable = { occupied_state_num_factory = industrial_complex_level }
+				add_to_temp_variable = { occupied_state_num_factory = building_level@dockyard }
+
+				add_resistance = 10
+				add_compliance = -5
+				set_state_flag = GER_seize_gold_reserves_state_flag
+				add_dynamic_modifier = { modifier = GER_overburdened_state_modifier days = 90 }
+				
+				divide_temp_variable = { occupied_state_num_factory = 200 } #This is necessary since a single factory will increase the occupied_state_num_factory number to 1, which in turn translates to -100% when subtracting from the Consumer Goods. Dividing it by 100 here will give you 1% instead, which is more like what we want.
+				multiply_temp_variable = { occupied_state_num_factory = -1 }
+
+				if = {
+					limit = {
+						FROM = { is_fully_controlled_by = ROOT }
+					}
+					custom_effect_tooltip = GER_modify_economy_of_conquest_modifier_tt
+					add_to_variable = {
+						ROOT.GER_industrial_consumer_goods_factor = occupied_state_num_factory
+						tooltip = consumer_goods_factor_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = GER_modify_economy_of_conquest_modifier_russian_states_tt
+				}
+
+				#Reduce future Soviet Gold Reserves Germany can seize
+				add_to_variable = { ROOT.GER_reduce_russian_CG_bonus = occupied_state_num_factory }
+			}
+			GER_reduce_mefo_bills_penalty = yes
+		}
+	}
+}
+
+# Operational Planning
+GER_operational_planning_category = {
+
+	# Campaign Instructions against [FROM.GetName]
+	GER_operational_planning = {
+		icon = GFX_decision_hol_draw_up_staff_plans
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 5
+				has_war_with = FROM
+			}
+			modifier = {
+				factor = 2
+				FROM = {
+					is_major = yes
+				}
+			}
+			modifier = {
+				factor = 10
+				FROM = {
+					original_tag = POL
+				}
+				has_completed_focus = GER_danzig_or_war
+			}
+			modifier = {
+				factor = 10
+				FROM = {
+					original_tag = SOV
+				}
+				has_completed_focus = GER_war_with_the_ussr
+			}
+			#modifier = {
+			#	factor = 1.5
+			#	has_wargoal_against = FROM
+			#}
+			modifier = {
+				factor = 10
+				FROM = {
+					original_tag = FRA
+				}
+				OR = {
+					divisions_in_state = {
+						state = 6
+						size > 5
+						#type = armor
+					}
+					divisions_in_state = {
+						state = 955
+						size > 5
+						#type = armor
+					}
+					divisions_in_state = {
+						state = 34
+						size > 5
+						#type = armor
+					}
+					divisions_in_state = {
+						state = 958
+						size > 5
+						#type = armor
+					}
+				}
+			}
+			modifier = { #Don't Blitzkrieg France unless you can bypass the Maginot
+				factor = 0
+				FROM = {
+					original_tag = FRA
+					any_core_state = {
+						state_is_fully_controlled_by_ROOT_subject_or_faction_member = no
+						ROOT = {
+							divisions_in_state = {
+								state = PREV
+								size < 1
+								#type = armor
+							}
+						}
+					}
+					NOT = {
+						any_controlled_state = {
+							OR = {
+								is_core_of = HOL
+								is_core_of = BEL
+							}
+							any_neighbor_state = {
+								is_fully_controlled_by = ROOT
+							}
+						}
+					}
+				}
+				980 = {	state_is_fully_controlled_by_ROOT_subject_or_faction_member = no }
+				28 = { state_is_fully_controlled_by_ROOT_subject_or_faction_member = no }
+			}
+			modifier = { #Save CP and XP for the French offensive
+				factor = 0
+				FROM = {
+					OR = {
+						original_tag = HOL
+						original_tag = BEL
+					}
+					is_ai = yes
+				}
+				has_war_with = FRA
+				command_power < 80
+				has_army_experience < 40
+			}
+			modifier = { #Muahahahaha
+				factor = 2
+				FROM = {
+					is_ai = no
+				}
+			}
+			modifier = { #Luxemburg is not worth wasting CP and XP on
+				factor = 0
+				FROM = {
+					original_tag = LUX
+					is_ai = yes
+				}
+			}
+			modifier = { #Germany is super aggressive and wastes CP and XP on countries they only have a War Goal on
+				factor = 0
+				NOT = {
+					has_war_with = FROM
+				}
+			}
+			modifier = { #Save CP and XP for the offensive
+				factor = 0
+				focus_progress = {
+				    focus = GER_war_with_the_ussr
+				    progress > 0.01
+				}
+				NOT = {
+					has_completed_focus = GER_war_with_the_ussr
+				}
+				NOT = {
+					has_completed_focus = GER_war_with_the_ussr
+				}
+			}
+		}
+
+		allowed = {
+			original_tag = GER
+		}
+
+		days_remove = 365
+
+		custom_cost_trigger = {
+			command_power > 24
+			has_army_experience > 14
+		}
+
+		custom_cost_text = decision_cost_CP_25_ArmXP_15 
+
+		available = { #Can't be target_root_trigger
+			NOT = {	has_country_flag = GER_operational_planning_flag }
+			OR = {
+				has_war_with = FROM
+				has_wargoal_against = FROM
+			}
+		}
+
+		target_array = ROOT.GER_war_targets_array
+
+		target_trigger = { #TODO_Danne This needs to be refined! 
+			FROM = {
+				has_war_with = ROOT
+				any_controlled_state = {
+					is_on_continent = europe
+					any_neighbor_state = {
+						is_controlled_by_ROOT_or_ally = yes
+					}
+				}
+			}
+		}
+
+	#	fire_only_once = yes
+		
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -25
+				army_experience = -15
+				set_country_flag = GER_operational_planning_flag
+			}
+			#BLITZKRIEG
+			if = {
+				limit = {
+					has_completed_focus = GER_adopt_new_panzer_doctrine
+				}
+				if = { #It's easier to make this a separate modifier and using scripted loc to display the effects in the "main" state modifier
+					limit = {
+						has_completed_focus = GER_panzergrenadier
+					}
+					hidden_effect= {
+						every_state = {
+							limit = {
+								is_controlled_by = FROM
+								is_on_continent = europe
+							}
+							add_dynamic_modifier = {
+								modifier = GER_motor_and_mech_attack_modifier
+								scope = GER
+								days = 45
+							}
+						}
+					}
+				}
+				if = { #Add basic Blitzkrieg modifier
+					limit = {
+						has_completed_focus = GER_adopt_new_panzer_doctrine
+						NOT = { has_completed_focus = GER_advanced_panzer_research }
+					}
+					every_state = {
+						limit = {
+							is_controlled_by = FROM
+							is_on_continent = europe
+						}
+						add_dynamic_modifier = {
+							modifier = GER_blitzkrieg_modifier
+							scope = GER
+							days = 45
+						}
+					}
+				}
+				else_if = { #Add Blitzkrieg Level 2
+					limit = {
+						has_completed_focus = GER_advanced_panzer_research
+						NOT = { has_completed_focus = GER_expand_kummersdorfs_capacity }
+					}
+					every_state = {
+						limit = {
+							is_controlled_by = FROM
+							is_on_continent = europe
+						}
+						add_dynamic_modifier = {
+							modifier = GER_blitzkrieg_modifier_lvl_2
+							scope = GER
+							days = 45
+						}
+					}
+				}
+				else_if = { #Add Blitzkrieg Level 3
+					limit = {
+						has_completed_focus = GER_expand_kummersdorfs_capacity
+					}
+					every_state = {
+						limit = {
+							is_controlled_by = FROM
+							is_on_continent = europe
+						}
+						add_dynamic_modifier = {
+							modifier = GER_blitzkrieg_modifier_lvl_3
+							scope = GER
+							days = 45
+						}
+					}
+				}
+				hidden_effect = { #This removes the GER_operational_planning_flag, enabling Germany to do the decision again. remove_effect won't work if the country in question capitulates
+					country_event = { id = wuw_GER_military_events.1 days = 45 } 
+				}
+			}
+			#BEWEGUNGSKRIEG
+			else_if = {
+				limit = {
+					has_completed_focus = GER_the_prussian_legacy
+				}
+				if = { #It's easier to make this a separate modifier and using scripted loc to display the effects in the "main" state modifier
+					limit = {
+						has_completed_focus = GER_panzergrenadier
+					}
+					hidden_effect= {
+						every_state = {
+							limit = {
+								is_controlled_by = FROM
+								is_on_continent = europe
+							}
+							add_dynamic_modifier = {
+								modifier = GER_motor_and_mech_attack_modifier
+								scope = GER
+								days = 90
+							}
+						}
+					}
+				}
+				if = { #Add basic bewegungskrieg modifier
+					limit = {
+						has_completed_focus = GER_the_prussian_legacy
+						NOT = { has_completed_focus = GER_lessons_of_the_great_war }
+					}
+					every_state = {
+						limit = {
+							is_controlled_by = FROM
+							is_on_continent = europe
+						}
+						add_dynamic_modifier = {
+							modifier = GER_bewegungskrieg_modifier
+							scope = GER
+							days = 90
+						}
+					}
+				}
+				else_if = { #Add bewegungskrieg Level 2
+					limit = {
+						has_completed_focus = GER_lessons_of_the_great_war
+						NOT = { has_completed_focus = GER_artillery_bombardment }
+					}
+					every_state = {
+						limit = {
+							is_controlled_by = FROM
+							is_on_continent = europe
+						}
+						add_dynamic_modifier = {
+							modifier = GER_bewegungskrieg_modifier_lvl_2
+							scope = GER
+							days = 90
+						}
+					}
+				}
+				else_if = { #Add bewegungskrieg Level 3
+					limit = {
+						has_completed_focus = GER_artillery_bombardment
+						NOT = { has_completed_focus = GER_stormtroopers }
+					}
+					every_state = {
+						limit = {
+							is_controlled_by = FROM
+							is_on_continent = europe
+						}
+						add_dynamic_modifier = {
+							modifier = GER_bewegungskrieg_modifier_lvl_3
+							scope = GER
+							days = 90
+						}
+					}
+				}
+				else_if = { #Add bewegungskrieg Level 4
+					limit = {
+						has_completed_focus = GER_stormtroopers
+					}
+					every_state = {
+						limit = {
+							is_controlled_by = FROM
+							is_on_continent = europe
+						}
+						add_dynamic_modifier = {
+							modifier = GER_bewegungskrieg_modifier_lvl_4
+							scope = GER
+							days = 90
+						}
+					}
+				}				
+				hidden_effect = { #This removes the GER_operational_planning_flag, enabling Germany to do the decision again. remove_effect won't work if the country in question capitulates
+					country_event = { id = wuw_GER_military_events.1 days = 90 } 
+				}
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+		}
+		remove_effect = {
+		}
+	}
+	GER_operational_planning_africa = {
+		icon = GFX_decision_hol_draw_up_staff_plans
+
+		ai_will_do = {
+			base = 0 #TODO_DANNE Don't do this for now, concentrate your efforts elsewhere
+			#modifier = {
+			#	factor = 5
+			#	has_war_with = FROM
+			#}
+			#modifier = {
+			#	factor = 2
+			#	FROM = {
+			#		is_major = yes
+			#	}
+			#}
+		}
+
+		allowed = {
+			original_tag = GER
+		}
+
+		days_remove = 365
+
+		custom_cost_trigger = {
+			command_power > 24
+			has_army_experience > 14
+		}
+
+		custom_cost_text = decision_cost_CP_25_ArmXP_15
+
+		visible = { has_completed_focus = GER_establish_the_afrikakorps }
+
+		available = { #Can't be target_root_trigger
+			NOT = {	has_country_flag = GER_operational_planning_flag }
+			OR = {
+				has_war_with = FROM
+				has_wargoal_against = FROM
+			}
+			hidden_trigger = {
+				has_completed_focus = GER_establish_the_afrikakorps
+			}
+		}
+
+		target_array = ROOT.GER_war_targets_array
+
+		target_trigger = { #TODO_Danne This needs to be refined! 
+			FROM = {
+				has_war_with = ROOT
+				any_controlled_state = {
+					is_on_continent = africa
+					any_neighbor_state = {
+						is_controlled_by_ROOT_or_ally = yes
+					}
+				}
+			}
+		}
+
+		fire_only_once = yes
+		
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -25
+				army_experience = -15
+				set_country_flag = GER_operational_planning_flag
+			}
+			if = {
+				limit = {
+					has_completed_focus = GER_adopt_new_panzer_doctrine
+				}
+				if = { #It's easier to make this a separate modifier and using scripted loc to display the effects in the "main" state modifier
+					limit = {
+						has_completed_focus = GER_panzergrenadier
+					}
+					hidden_effect= {
+						every_state = {
+							limit = {
+								is_controlled_by = FROM
+								is_on_continent = africa
+							}
+							add_dynamic_modifier = {
+								modifier = GER_motor_and_mech_attack_modifier
+								scope = GER
+								days = 45
+							}
+						}
+					}
+				}
+				if = { #Add basic Blitzkrieg modifier
+					limit = {
+						has_completed_focus = GER_adopt_new_panzer_doctrine
+						NOT = { has_completed_focus = GER_advanced_panzer_research }
+					}
+					every_state = {
+						limit = {
+							is_controlled_by = FROM
+							is_on_continent = africa
+						}
+						add_dynamic_modifier = {
+							modifier = GER_blitzkrieg_modifier
+							scope = GER
+							days = 45
+						}
+					}
+				}
+				else_if = { #Add Blitzkrieg Level 2
+					limit = {
+						has_completed_focus = GER_advanced_panzer_research
+						NOT = { has_completed_focus = GER_expand_kummersdorfs_capacity }
+					}
+					every_state = {
+						limit = {
+							is_controlled_by = FROM
+							is_on_continent = africa
+						}
+						add_dynamic_modifier = {
+							modifier = GER_blitzkrieg_modifier_lvl_2
+							scope = GER
+							days = 45
+						}
+					}
+				}
+				else_if = { #Add Blitzkrieg Level 3
+					limit = {
+						has_completed_focus = GER_expand_kummersdorfs_capacity
+					}
+					every_state = {
+						limit = {
+							is_controlled_by = FROM
+							is_on_continent = africa
+						}
+						add_dynamic_modifier = {
+							modifier = GER_blitzkrieg_modifier_lvl_3
+							scope = GER
+							days = 45
+						}
+					}
+				}
+				hidden_effect = { #This removes the GER_operational_planning_flag, enabling Germany to do the decision again. remove_effect won't work if the country in question capitulates
+					country_event = { id = wuw_GER_military_events.1 days = 45 } 
+				}
+			}
+			#BEWEGUNGSKRIEG
+			else_if = {
+				limit = {
+					has_completed_focus = GER_the_prussian_legacy
+				}
+				if = { #It's easier to make this a separate modifier and using scripted loc to display the effects in the "main" state modifier
+					limit = {
+						has_completed_focus = GER_panzergrenadier
+					}
+					hidden_effect= {
+						every_state = {
+							limit = {
+								is_controlled_by = FROM
+								is_on_continent = africa
+							}
+							add_dynamic_modifier = {
+								modifier = GER_motor_and_mech_attack_modifier
+								scope = GER
+								days = 90
+							}
+						}
+					}
+				}
+				if = { #Add basic bewegungskrieg modifier
+					limit = {
+						has_completed_focus = GER_the_prussian_legacy
+						NOT = { has_completed_focus = GER_lessons_of_the_great_war }
+					}
+					every_state = {
+						limit = {
+							is_controlled_by = FROM
+							is_on_continent = africa
+						}
+						add_dynamic_modifier = {
+							modifier = GER_bewegungskrieg_modifier
+							scope = GER
+							days = 90
+						}
+					}
+				}
+				else_if = { #Add bewegungskrieg Level 2
+					limit = {
+						has_completed_focus = GER_lessons_of_the_great_war
+						NOT = { has_completed_focus = GER_artillery_bombardment }
+					}
+					every_state = {
+						limit = {
+							is_controlled_by = FROM
+							is_on_continent = africa
+						}
+						add_dynamic_modifier = {
+							modifier = GER_bewegungskrieg_modifier_lvl_2
+							scope = GER
+							days = 90
+						}
+					}
+				}
+				else_if = { #Add bewegungskrieg Level 3
+					limit = {
+						has_completed_focus = GER_artillery_bombardment
+						NOT = { has_completed_focus = GER_stormtroopers }
+					}
+					every_state = {
+						limit = {
+							is_controlled_by = FROM
+							is_on_continent = africa
+						}
+						add_dynamic_modifier = {
+							modifier = GER_bewegungskrieg_modifier_lvl_3
+							scope = GER
+							days = 90
+						}
+					}
+				}
+				else_if = { #Add bewegungskrieg Level 4
+					limit = {
+						has_completed_focus = GER_stormtroopers
+					}
+					every_state = {
+						limit = {
+							is_controlled_by = FROM
+							is_on_continent = africa
+						}
+						add_dynamic_modifier = {
+							modifier = GER_bewegungskrieg_modifier_lvl_4
+							scope = GER
+							days = 90
+						}
+					}
+				}				
+				hidden_effect = { #This removes the GER_operational_planning_flag, enabling Germany to do the decision again. remove_effect won't work if the country in question capitulates
+					country_event = { id = wuw_GER_military_events.1 days = 90 } 
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+		}
+		remove_effect = {
+		}
+	}
+}
+
+GER_price_controls_cat = {
+	GER_guns_before_butter = {
+
+		icon = GFX_decision_ger_military_buildup
+
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 2
+				check_variable = { GER_industrial_consumer_goods_factor > 0.2 }
+			}
+			modifier = {
+				factor = 2
+				check_variable = { GER_industrial_consumer_goods_factor > 0.3 }
+			}
+			modifier = {
+				factor = 2
+				check_variable = { GER_industrial_consumer_goods_factor > 0.4 }
+			}
+			modifier = {
+				factor = 0
+				check_variable = { GER_industrial_consumer_goods_factor < 0.1 }
+			}
+		}
+
+		available = {
+		}
+
+		visible = { #This decision is not available for the 1939 Start
+			NOT = { has_country_flag = GER_inactivate_price_control_measures_flag }
+		}
+
+		cost = 30
+
+		fire_only_once = yes
+
+		complete_effect = {
+			GER_modify_industrial_modifier = yes
+			add_to_variable = { 
+				GER_industrial_consumer_goods_factor = -0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			GER_reduce_mefo_bills_penalty = yes
+			add_war_support = 0.025
+		}
+	}
+
+	GER_arbeit_und_brot = {
+
+		icon = GFX_decision_generic_political_address
+
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 2
+				check_variable = { GER_industrial_consumer_goods_factor > 0.2 }
+			}
+			modifier = {
+				factor = 2
+				check_variable = { GER_industrial_consumer_goods_factor > 0.3 }
+			}
+			modifier = {
+				factor = 2
+				check_variable = { GER_industrial_consumer_goods_factor > 0.4 }
+			}
+			modifier = {
+				factor = 0
+				check_variable = { GER_industrial_consumer_goods_factor < 0.1 }
+			}
+		}
+
+		available = {
+		}
+
+		visible = { #This decision is not available for the 1939 Start
+			NOT = { has_country_flag = GER_inactivate_price_control_measures_flag }
+		}
+
+		cost = 30
+
+		fire_only_once = yes
+
+		complete_effect = {
+			GER_modify_industrial_modifier = yes
+			add_to_variable = { 
+				GER_industrial_consumer_goods_factor = -0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			GER_reduce_mefo_bills_penalty = yes
+			add_popularity = { ideology = ROOT popularity = 0.025 }
+		}
+	}
+	GER_collect_scrap_metal = {
+
+		icon = GFX_decision_steel
+
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 2
+				check_variable = { GER_industrial_consumer_goods_factor > 0.2 }
+			}
+			modifier = {
+				factor = 2
+				check_variable = { GER_industrial_consumer_goods_factor > 0.3 }
+			}
+			modifier = {
+				factor = 2
+				check_variable = { GER_industrial_consumer_goods_factor > 0.4 }
+			}
+			modifier = {
+				factor = 0
+				check_variable = { GER_industrial_consumer_goods_factor < 0.1 }
+			}
+		}
+
+		available = {
+		}
+
+		visible = { #This decision is not available for the 1939 Start
+			NOT = { has_country_flag = GER_inactivate_price_control_measures_flag }
+		}
+
+		cost = 30
+
+		fire_only_once = yes
+
+		complete_effect = {
+			GER_modify_industrial_modifier = yes
+			add_to_variable = { 
+				GER_industrial_consumer_goods_factor = -0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			GER_reduce_mefo_bills_penalty = yes
+			add_timed_idea = {
+				idea = GER_collect_scrap_metal_ns
+				days = 90
+			}
+		}
+	}
+	GER_ersatz_material = {
+
+		icon = GFX_decision_generic_consumer_goods
+
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 2
+				check_variable = { GER_industrial_consumer_goods_factor > 0.2 }
+			}
+			modifier = {
+				factor = 2
+				check_variable = { GER_industrial_consumer_goods_factor > 0.3 }
+			}
+			modifier = {
+				factor = 2
+				check_variable = { GER_industrial_consumer_goods_factor > 0.4 }
+			}
+			modifier = {
+				factor = 0
+				check_variable = { GER_industrial_consumer_goods_factor < 0.1 }
+			}
+		}
+
+		available = {
+			has_completed_focus = GER_coal_liquefaction
+		}
+
+		visible = { #This decision is not available for the 1939 Start
+			NOT = { has_country_flag = GER_inactivate_price_control_measures_flag }
+		}
+
+		cost = 30
+
+		fire_only_once = yes
+
+		complete_effect = {
+			GER_modify_industrial_modifier = yes
+			add_to_variable = { 
+				GER_industrial_consumer_goods_factor = -0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			GER_reduce_mefo_bills_penalty = yes
+		}
+	}
+	GER_import_tariffs = {
+
+		icon = GFX_decision_eng_trade_unions_demand
+
+		ai_will_do = {
+			base = 2.5
+			modifier = {
+				factor = 2
+				check_variable = { GER_industrial_consumer_goods_factor > 0.2 }
+			}
+			modifier = {
+				factor = 2
+				check_variable = { GER_industrial_consumer_goods_factor > 0.3 }
+			}
+			modifier = {
+				factor = 2
+				check_variable = { GER_industrial_consumer_goods_factor > 0.4 }
+			}
+			modifier = {
+				factor = 0
+				check_variable = { GER_industrial_consumer_goods_factor < 0.1 }
+			}
+		}
+
+		available = {
+		}
+
+		visible = { #This decision is not available for the 1939 Start
+			NOT = { has_country_flag = GER_inactivate_price_control_measures_flag }
+		}
+
+		cost = 15
+
+		fire_only_once = yes
+
+		complete_effect = {
+			GER_modify_industrial_modifier = yes
+			add_to_variable = { 
+				GER_industrial_consumer_goods_factor = -0.15
+				tooltip = consumer_goods_factor_tt
+			}
+			GER_reduce_mefo_bills_penalty = yes
+			add_timed_idea = {
+				idea = GER_import_tariffs_ns
+				days = 365
+			}
+		}
+	}
+	GER_implement_rations = {
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		ai_will_do = {
+			base = 2.5
+			modifier = {
+				factor = 2
+				check_variable = { GER_industrial_consumer_goods_factor > 0.2 }
+			}
+			modifier = {
+				factor = 2
+				check_variable = { GER_industrial_consumer_goods_factor > 0.3 }
+			}
+			modifier = {
+				factor = 2
+				check_variable = { GER_industrial_consumer_goods_factor > 0.4 }
+			}
+			modifier = {
+				factor = 0
+				check_variable = { GER_industrial_consumer_goods_factor < 0.1 }
+			}
+		}
+
+		available = {
+			has_stability > 0.2
+		}
+
+		visible = { #This decision is not available for the 1939 Start
+			NOT = { has_country_flag = GER_inactivate_price_control_measures_flag }
+		}
+
+		cost = 15
+
+		fire_only_once = yes
+
+		complete_effect = {
+			GER_modify_industrial_modifier = yes
+			add_to_variable = { 
+				GER_industrial_consumer_goods_factor = -0.1
+				tooltip = consumer_goods_factor_tt
+			}
+			GER_reduce_mefo_bills_penalty = yes
+			add_stability = -0.025
+		}
+	}
+	GER_implement_wage_controls = {
+
+		icon = GFX_decision_hol_attract_foreign_investors
+
+		ai_will_do = {
+			base = 2.5
+			modifier = {
+				factor = 2
+				check_variable = { GER_industrial_consumer_goods_factor > 0.2 }
+			}
+			modifier = {
+				factor = 2
+				check_variable = { GER_industrial_consumer_goods_factor > 0.3 }
+			}
+			modifier = {
+				factor = 2
+				check_variable = { GER_industrial_consumer_goods_factor > 0.4 }
+			}
+			modifier = {
+				factor = 0
+				check_variable = { GER_industrial_consumer_goods_factor < 0.1 }
+			}
+		}
+
+		available = {
+			has_stability > 0.2
+		}
+
+		visible = { #This decision is not available for the 1939 Start
+			NOT = { has_country_flag = GER_inactivate_price_control_measures_flag }
+		}
+
+		cost = 15
+
+		fire_only_once = yes
+
+		complete_effect = {
+			GER_modify_industrial_modifier = yes
+			add_to_variable = { 
+				GER_industrial_consumer_goods_factor = -0.1
+				tooltip = consumer_goods_factor_tt
+			}
+			GER_reduce_mefo_bills_penalty = yes
+			add_stability = -0.025
+		}
+	}
+	GER_exploit_the_gombos_treaty = {
+
+		icon = GFX_decision_generic_fundraising
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 1.2
+				check_variable = { GER_industrial_consumer_goods_factor > 0.3 }
+			}
+			modifier = {
+				factor = 1.3
+				check_variable = { GER_industrial_consumer_goods_factor > 0.5 }
+			}
+			modifier = {
+				factor = 1.5
+				check_variable = { GER_industrial_consumer_goods_factor > 0.7 }
+			}
+			modifier = {
+				factor = 0
+				check_variable = { GER_industrial_consumer_goods_factor < 0.1 }
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes 
+				has_government = fascism
+			}
+		}
+
+		visible = {
+			has_dlc = "Gotterdammerung"
+			NOT = {
+				OR = {
+					is_in_faction_with = HUN
+					has_guaranteed = HUN
+				}
+			}
+			HUN = {
+				exists = yes
+				has_capitulated = no
+			}
+		}
+
+		available = {
+			HUN = {
+				has_idea = HUN_gombos_trade_treaty
+				NOT = {
+					is_in_faction_with = ROOT
+				}
+			}
+		}
+
+		cost = 30
+
+		fire_only_once = yes
+
+		complete_effect = {
+			GER_modify_industrial_modifier = yes
+			add_to_variable = { 
+				GER_industrial_consumer_goods_factor = -0.15
+				tooltip = consumer_goods_factor_tt
+			}
+			custom_effect_tooltip = GER_exploit_the_gombos_treaty_tt
+			GER_reduce_mefo_bills_penalty = yes
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			HUN = {
+				country_event = {
+					id = wuw_GER_diplomacy.56
+					hours = 2
+				}	
+			}
+			effect_tooltip = {
+				HUN = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = GER_stole_our_money_opm
+					}	
+					remove_ideas = HUN_gombos_trade_treaty
+				}
+			}
+		}
+	}
+}
+
+GER_fortify_the_vaterland_cat = {
+	GER_construct_the_westwall = {
+		icon = GFX_decision_generic_fortification
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 3
+				OR = {
+					has_war_with = HOL
+					has_war_with = BEL
+					has_war_with = LUX
+					has_war_with = FRA
+					has_war_with = ENG
+				}
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					has_wargoal_against = HOL
+					has_wargoal_against = BEL
+					has_wargoal_against = LUX
+					has_wargoal_against = FRA
+				}
+			}
+			modifier = {
+				factor = 2
+				is_historical_focus_on = yes
+			}
+		}
+
+		visible = {
+			NOT = {
+				has_country_flag = GER_constructed_the_westwall
+			}
+		}
+
+		available = {
+			51 = { #Rineland
+				is_fully_controlled_by = ROOT
+				is_demilitarized_zone = no
+			}
+			42 = { #Moselland
+				is_fully_controlled_by = ROOT
+				is_demilitarized_zone = no
+			}
+			978 = { #Baden
+				is_fully_controlled_by = ROOT
+				is_demilitarized_zone = no
+			}
+			NOT = { has_country_flag = GER_constructing_forts_flag }
+		}
+
+		days_remove = 90
+
+		fire_only_once = yes
+
+		ai_hint_pp_cost = 15
+		custom_cost_trigger = {
+			command_power > GER_fort_construction_cp_cost
+			has_political_power > GER_fort_construction_pp_cost
+		}
+		custom_cost_text = decision_cost_CP_25_pp_15
+
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		cancel_trigger = {
+			NOT = { 
+				has_full_control_of_state = 51 #Rineland
+				has_full_control_of_state = 42 #Moselland
+				has_full_control_of_state = 956 #Baden
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = GER_constructing_forts_flag
+		}
+
+		complete_effect = {
+			set_country_flag = GER_constructing_forts_flag
+
+			hidden_effect = {
+				add_command_power = GER_fort_construction_cp_payment
+				add_political_power = GER_fort_construction_pp_payment
+			}
+		}
+
+		remove_effect = {
+			clr_country_flag = GER_constructing_forts_flag
+
+			custom_effect_tooltip = GER_construct_westwall_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						51 = { #Rhineland
+							any_province_building_level = {
+								province = {
+									id = 3444
+									id = 9522
+									id = 3547
+								}
+								building = bunker
+								level < 4 
+							}
+						}
+
+					}
+					51 = { #Rhineland
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = {
+								id = 3444
+								id = 9522
+								id = 3547
+							}
+							instant_build = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						42 = { #Moselland
+							any_province_building_level = {
+								province = {
+									id = 11470
+									id = 11435
+									id = 9575
+									id = 11531
+									id = 563
+									id = 3558
+								}
+								building = bunker
+								level < 4 
+							}
+						}
+
+					}
+					42 = { #Moselland
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = {
+								id = 11470
+								id = 11435
+								id = 9575
+								id = 11531
+								id = 563
+								id = 3558
+							}
+							instant_build = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						978 = { #Baden
+							any_province_building_level = {
+								province = {
+									id = 3530
+									id = 6568
+									id = 6542
+									id = 6712
+									id = 11640
+								}
+								building = bunker
+								level < 4
+							}
+						}
+
+					}
+					978 = { #Baden
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = {
+								id = 3530
+								id = 6542
+								id = 6712
+								id = 11640
+							}
+							instant_build = yes
+						}
+					}
+				}
+			}
+			hidden_effect = {
+				set_country_flag = GER_constructed_the_westwall
+			}
+		}
+	}
+
+	GER_construct_the_ostwall = {
+		icon = GFX_decision_generic_fortification
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 5
+				has_war_with = SOV
+				195 = { state_is_fully_controlled_by_ROOT_subject_or_faction_member = no } #Leningrad
+				219 = { state_is_fully_controlled_by_ROOT_subject_or_faction_member = no } #Moskow
+				217 = { state_is_fully_controlled_by_ROOT_subject_or_faction_member = no } #Stalingrad
+				date > "1943.1.1"
+			}
+			modifier = {
+				factor = 2
+				is_historical_focus_on = yes
+			}
+		}
+
+		visible = {
+		}
+
+		available = { 
+			custom_trigger_tooltip = {
+				tooltip = GER_controls_dnieper_rive_tt
+				813 = { #Virumaa
+					state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
+				}
+				209 = { #Pskov
+					state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
+				}
+				210 = { #Nevel
+					state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
+				}
+				207 = { #Vitebsk
+					state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
+				}
+				206 = { #Minsk
+					state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
+				}
+				204 = { #Bobruysk
+					state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
+				}
+				194 = { #Mozyr
+					state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
+				}
+				202 = { #Kyiv
+					state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
+				}
+				203 = { #Cherkasy
+					state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
+				}
+				226 = { #Dnipropetrovsk
+					state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
+				}
+				200 = { #Zaporozhe
+					state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
+				}
+			}
+			NOT = { has_country_flag = GER_constructing_forts_flag }
+		}
+
+		days_remove = 180
+
+		fire_only_once = yes
+
+		ai_hint_pp_cost = 15
+		custom_cost_trigger = {
+			command_power > GER_fort_construction_cp_cost
+			has_political_power > GER_fort_construction_pp_cost
+		}
+		custom_cost_text = decision_cost_CP_25_pp_15
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = GER_not_controls_dnieper_rive_tt
+				OR = {
+					813 = { #Virumaa
+						state_is_fully_controlled_by_ROOT_subject_or_faction_member = no
+					}
+					209 = { #Pskov
+						state_is_fully_controlled_by_ROOT_subject_or_faction_member = no
+					}
+					210 = { #Nevel
+						state_is_fully_controlled_by_ROOT_subject_or_faction_member = no
+					}
+					207 = { #Vitebsk
+						state_is_fully_controlled_by_ROOT_subject_or_faction_member = no
+					}
+					206 = { #Minsk
+						state_is_fully_controlled_by_ROOT_subject_or_faction_member = no
+					}
+					204 = { #Bobruysk
+						state_is_fully_controlled_by_ROOT_subject_or_faction_member = no
+					}
+					194 = { #Mozyr
+						state_is_fully_controlled_by_ROOT_subject_or_faction_member = no
+					}
+					202 = { #Kyiv
+						state_is_fully_controlled_by_ROOT_subject_or_faction_member = no
+					}
+					203 = { #Cherkasy
+						state_is_fully_controlled_by_ROOT_subject_or_faction_member = no
+					}
+					226 = { #Dnipropetrovsk
+						state_is_fully_controlled_by_ROOT_subject_or_faction_member = no
+					}
+					200 = { #Zaporozhe
+						state_is_fully_controlled_by_ROOT_subject_or_faction_member = no
+					}
+				}
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = GER_constructing_forts_flag
+		}
+
+		complete_effect = {
+			set_country_flag = GER_constructing_forts_flag
+
+			hidden_effect = {
+				add_command_power = GER_fort_construction_cp_payment
+				add_political_power = GER_fort_construction_pp_payment
+			}
+		}
+
+		remove_effect = {
+			clr_country_flag = GER_constructing_forts_flag
+
+			custom_effect_tooltip = GER_construct_ostwall_tt
+			effect_tooltip = {	
+				every_state = {
+					limit = { 
+						state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
+						bunker < 10
+						OR = { #From the Baltic to Azov
+							state = 793 #Virumaa
+							state = 209 #Pskov
+							state = 210 #Nevel
+							state = 207 #Vitebsk
+							state = 206 #Minsk
+							state = 204 #Bobruysk
+							state = 194 #Mozyr
+							state = 202 #Kyiv
+							state = 203 #Cherkasy
+							state = 226 #Dnipropetrovsk
+							state = 200 #Zaporozhe
+						}
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						instant_build = yes
+						province = {
+							all_provinces = yes
+					    }
+					}
+				}
+			}
+			if = {
+				limit = { 
+					813 = {
+						state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
+					}
+				}
+				hidden_effect = {
+					813 = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 4640
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					209 = {
+						state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
+					}
+				}
+				hidden_effect = {
+					209 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 415
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 3310
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					210 = {
+						state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
+					}
+				}
+				hidden_effect = {
+					210 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 3333
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 11259
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 9386
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					207 = {
+						state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
+					}
+				}
+				hidden_effect = {
+					207 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 323
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 11241
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 11220
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 3331
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					206 = {
+						state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
+					}
+				}
+				hidden_effect = {
+					206 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 9289
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 3378
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					204 = {
+						state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
+					}
+				}
+				hidden_effect = {
+					204 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 6373
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					194 = {
+						state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
+					}
+				}
+				hidden_effect = {
+					194 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 6319
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 9249
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 3507
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					202 = {
+						state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
+					}
+				}
+				hidden_effect = {
+					202 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 9568
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 3543
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 525
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 3494
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					203 = {
+						state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
+					}
+				}
+				hidden_effect = {
+					203 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 11454
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 488
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 3468
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 6478
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					226 = {
+						state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
+					}
+				}
+				hidden_effect = {
+					226 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 9433
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 11437
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					200 = {
+						state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
+					}
+				}
+				hidden_effect = {
+					200 = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 11405
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 6596
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 11700
+							instant_build = yes
+						}
+					}
+				}
+			}
+		}
+	}
+	GER_construct_the_north_atlantikwall = {
+		icon = GFX_decision_generic_coastal_fortification
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 3
+				OR = {
+					has_war_with = ENG
+					has_war_with = USA
+				}
+			}
+			modifier = {
+				factor = 2
+				is_historical_focus_on = yes
+			}
+			modifier = { #Save CP for the offensive
+				factor = 0
+				focus_progress = {
+				    focus = GER_war_with_the_ussr
+				    progress > 0.01
+				}
+				NOT = {
+					has_completed_focus = GER_war_with_the_ussr
+				}
+			}
+		}
+
+		visible = {
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = GER_controls_norway_tt
+				925 = { #Finnmark
+					state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
+				}
+				924 = { #Troms
+					state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
+				}
+				144 = { #Nordland
+					state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
+				}
+				923 = { #Helgeland
+					state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
+				}
+				143 = { #Trondelag
+					state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
+				}
+				142 = { #Vestlandet
+					state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
+				}
+				922 = { #Agder
+					state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
+				}
+				921 = { #Telemark
+					state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
+				}
+				110 = { #Oslo
+					state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
+				}
+			}
+			NOT = { has_country_flag = GER_constructing_forts_flag }
+		}
+
+		days_remove = 90
+
+		fire_only_once = yes
+
+		ai_hint_pp_cost = 15
+		custom_cost_trigger = {
+			command_power > GER_fort_construction_cp_cost
+			has_political_power > GER_fort_construction_pp_cost
+		}
+		custom_cost_text = decision_cost_CP_25_pp_15
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = GER_not_controls_norway_tt
+				OR = {
+					925 = { #Finnmark
+						state_is_fully_controlled_by_ROOT_subject_or_faction_member = no
+					}
+					924 = { #Troms
+						state_is_fully_controlled_by_ROOT_subject_or_faction_member = no
+					}
+					144 = { #Nordland
+						state_is_fully_controlled_by_ROOT_subject_or_faction_member = no
+					}
+					923 = { #Helgeland
+						state_is_fully_controlled_by_ROOT_subject_or_faction_member = no
+					}
+					143 = { #Trondelag
+						state_is_fully_controlled_by_ROOT_subject_or_faction_member = no
+					}
+					142 = { #Vestlandet
+						state_is_fully_controlled_by_ROOT_subject_or_faction_member = no
+					}
+					922 = { #Agder
+						state_is_fully_controlled_by_ROOT_subject_or_faction_member = no
+					}
+					921 = { #Telemark
+						state_is_fully_controlled_by_ROOT_subject_or_faction_member = no
+					}
+					110 = { #Oslo
+						state_is_fully_controlled_by_ROOT_subject_or_faction_member = no
+					}
+				}
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = GER_constructing_forts_flag
+		}
+
+		complete_effect = {
+			set_country_flag = GER_constructing_forts_flag
+
+			hidden_effect = {
+				add_command_power = GER_fort_construction_cp_payment
+				add_political_power = GER_fort_construction_pp_payment
+			}
+		}
+
+		remove_effect = {
+			clr_country_flag = GER_constructing_forts_flag
+
+			custom_effect_tooltip = GER_construct_north_atlantikwall_tt
+			every_state = {
+				limit = { 
+					state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
+					OR = { #From Finnmark to V

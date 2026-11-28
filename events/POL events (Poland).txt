@@ -1,0 +1,15 @@
+add_namespace = tfe_poland_focus
+
+#风歧不息
+country_event = {
+	id = tfe_poland_focus.1
+	title = tfe_poland_focus.1.t
+	desc = tfe_poland_focus.1.d
+	is_triggered_only = yes
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tfe_poland_focus.1" }
+	option = {
+		name = tfe_poland_focus.1.a
+		add_stability = -0.03
+		add_political_power = -15
+	}
+}

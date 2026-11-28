@@ -1,0 +1,42 @@
+characters = {
+	#领导人
+	#亚历山大一世
+	YUG_Alexander_I = { 
+		name = YUG_Alexander_I
+		portraits={
+			civilian={
+				large = GFX_YUG_Alexander_I_large
+			}
+		}
+		country_leader = {
+			desc = YUG_Alexander_I_desc
+			ideology = authoritarianism_small
+			traits={  }
+		}
+		country_leader = {
+			#desc = YUG_Alexander_I_desc
+			ideology = liberalism_small
+			traits={  }
+		}
+		country_leader={
+			#desc = YUG_Alexander_I_desc
+			ideology = democracy_small
+			traits={  }
+		}
+		country_leader={
+			#desc = YUG_Alexander_I_desc
+			ideology = Conservatism_small
+			traits={  }
+		}
+		country_leader={
+			#desc = YUG_Alexander_I_desc
+			ideology = tttt_small
+			traits={  }
+		}
+		country_leader={
+			#desc = YUG_Alexander_I_desc
+			ideology = fascism_small
+			traits={  }
+		}
+	}
+}

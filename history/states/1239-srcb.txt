@@ -1,0 +1,27 @@
+
+state={
+	id = 1239
+	name="STATE_1239"
+	manpower = 453287
+	resources={
+
+	}
+	
+	state_category = town
+
+	history={
+		owner = AUS
+		victory_points = {
+			688 10 
+		}
+		
+		add_core_of = AUS
+		
+	}
+
+	provinces={
+		688 3675 13445 13446
+	}
+
+	local_supplies=0.0 
+}

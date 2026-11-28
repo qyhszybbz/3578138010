@@ -1,0 +1,32 @@
+state = {
+	id = 878
+	name = "STATE_878"
+	manpower = 1363674
+	state_category = pastoral 
+	resources = {
+		steel = 8
+		coal = 6
+		oil = 12
+		tungsten = 4
+		chromium = 6
+	}
+
+	history = {
+		owner = FWA
+		add_core_of = NGA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			8034 5
+		}
+	}
+
+	provinces = {
+		1992 4889 7978 8034 10831 
+	}
+	
+	buildings_max_level_factor = 1.000
+	local_supplies = 0.000
+}

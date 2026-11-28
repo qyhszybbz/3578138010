@@ -1,0 +1,145 @@
+add_namespace = spain
+add_namespace = spain_news
+
+country_event = { #围剿
+	immediate = {log = "[GetDateText]: [Root.GetName]: event spain.1"}
+	id = spain.1
+	title = spain.1.t
+	desc = spain.1.d
+	is_triggered_only = yes
+
+	#yes	
+	option = {
+		name = spain.1.a
+	}
+
+}
+country_event = { #现状
+	immediate = {log = "[GetDateText]: [Root.GetName]: event spain.2"}
+	id = spain.2
+	title =  spain.2.t
+	desc =  spain.2.d
+	is_triggered_only = yes
+
+	#yes	
+	option = {
+		name =  spain.2.a
+	}
+
+}
+country_event = { #游行
+	immediate = {log = "[GetDateText]: [Root.GetName]: event spain.3"}
+	id = spain.3
+	title =  spain.3.t
+	desc =  spain.3.d
+	is_triggered_only = yes
+
+	#yes	
+	option = {
+		name =  spain.3.a
+	}
+
+}
+country_event = { #军营
+	immediate = {log = "[GetDateText]: [Root.GetName]: event spain.4"}
+	id = spain.4
+	title =  spain.4.t
+	desc =  spain.4.d
+	is_triggered_only = yes
+
+	#yes	
+	option = {
+		name =  spain.4.a
+	}
+
+}
+country_event = { #市场
+	immediate = {log = "[GetDateText]: [Root.GetName]: event spain.5"}
+	id = spain.5
+	title =  spain.5.t
+	desc =  spain.5.d
+	is_triggered_only = yes
+
+	#yes	
+	option = {
+		name =  spain.5.a
+	}
+
+}
+country_event = { #非法集会
+	immediate = {log = "[GetDateText]: [Root.GetName]: event spain.6"}
+	id = spain.6
+	title =  spain.6.t
+	desc =  spain.6.d
+	is_triggered_only = yes
+
+	#yes	
+	option = {
+		name =  spain.6.a
+	}
+}
+country_event = { #德里维拉的晚宴
+	immediate = {log = "[GetDateText]: [Root.GetName]: event spain.7"}
+	id = spain.7
+	title =  spain.7.t
+	desc =  spain.7.d
+	is_triggered_only = yes
+
+	#yes	
+	option = {
+		name =  spain.7.a
+	}
+
+}
+country_event = { #面包与明天
+	immediate = {log = "[GetDateText]: [Root.GetName]: event spain.8"}
+	id = spain.8
+	title =  spain.8.t
+	desc =  spain.8.d
+	is_triggered_only = yes
+
+	option = {
+		name =  spain.8.a
+	}
+
+}
+country_event = { #工厂轮转
+	immediate = {log = "[GetDateText]: [Root.GetName]: event spain.9"}
+	id = spain.9
+	title =  spain.9.t
+	desc =  spain.9.d
+	is_triggered_only = yes
+
+	option = {
+		name =  spain.9.a
+	}
+
+}
+news_event = {
+	immediate = {log = "[GetDateText]: [Root.GetName]: event spain_news.1"}
+	id = spain_news.1
+	title = spain_news.1.t
+	desc = spain_news.1.d
+	picture = GFX_news_SPR_The_death_of_Derivella
+	is_triggered_only = yes
+
+	option = {
+		name = spain_news.1.a
+		add_country_leader_role = {
+        character = SPR_Don_Carlos
+        promote_leader = yes
+        country_leader = {
+			desc = SPR_Don_Carlos_desc
+            ideology = tttt_small
+			traits = {
+			
+			}
+        }
+    }
+	set_party_name = {
+			ideology = tttt
+			name = SPR_tttt_party2
+			long_name = SPR_tttt_party2_long
+		}
+	}
+}

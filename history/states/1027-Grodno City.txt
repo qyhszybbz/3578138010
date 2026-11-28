@@ -1,0 +1,25 @@
+state={
+	id = 1027
+	name="STATE_1027"
+
+	history={
+		owner = BLR
+		add_core_of = BLR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			13376 15
+		}
+	}
+
+	provinces={
+		13376
+	}
+	manpower = 35240
+	buildings_max_level_factor=1.000
+	state_category = large_town
+
+	local_supplies=0.0 
+}

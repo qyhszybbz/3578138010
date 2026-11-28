@@ -1,0 +1,33 @@
+
+state={
+	id = 360
+	name="STATE_360"
+	state_category=megalopolis
+	history={
+		owner = CSA
+		add_core_of = CSA
+		add_core_of = USA
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 3
+			dockyard = 7
+			air_base = 6
+			fuel_silo = 1
+
+		}
+		victory_points = {
+			951 10 
+		}
+
+	}
+
+	provinces={
+		 865 873 951 3823  6846 10343  11873 
+	}
+
+	local_supplies=11.0
+	manpower=913227
+	buildings_max_level_factor=1.000
+	
+}

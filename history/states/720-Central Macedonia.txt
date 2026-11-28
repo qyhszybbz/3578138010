@@ -1,0 +1,28 @@
+
+state={
+	id = 720
+	name="STATE_720"
+
+	history={
+		owner = GRE
+		
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 3
+			air_base = 2
+
+		}
+		add_core_of = GRE
+		add_claim_by = BUL
+
+	}
+
+	provinces={
+		936 3526 10163 9837
+	}
+	manpower=474365
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=0.0 
+}

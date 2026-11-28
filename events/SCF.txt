@@ -1,0 +1,27 @@
+add_namespace = tfe_scf_news
+
+news_event = { #洛杉矶工人运动解散
+	id = tfe_scf_news.1
+	title = tfe_scf_news.1.t
+	desc = tfe_scf_news.1.d
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event tfe_scf_news.1"
+		SCF = { add_stability = 0.02 } # 加利福尼亚：稳定度 +2%
+		CSA = { add_stability = 0.02 } # 美利坚联盟国：稳定度 +2%
+	}
+	picture = GFX_news_event_scf_labor_movement_disbanded
+
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		tag = SCF
+		date > 1935.3.15# 1935 年 3 月 15 日之后
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+	option = { #北美的局势更加动荡
+		name = tfe_scf_news.1.a
+	}
+}

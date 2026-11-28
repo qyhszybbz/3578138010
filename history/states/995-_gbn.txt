@@ -1,0 +1,38 @@
+state = {
+	id = 995
+	name = "STATE_995"
+	manpower = 1523036
+	state_category = town
+	resources = {
+		chromium = 22.000
+		tungsten = 13.000
+	}
+
+	history = {
+
+		owner = GER
+		add_core_of = FRE
+		add_core_of = GER
+		add_core_of = GER
+
+		victory_points = {
+			3384 5 #贡宾嫩
+		}
+
+		#victory_points = {
+		#	11386 1 # Lyck
+		#}
+		
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+		}
+		
+	}
+
+	provinces={
+		395 348 281 3384
+	}
+
+	local_supplies = 20.0 
+}

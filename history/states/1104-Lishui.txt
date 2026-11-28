@@ -1,0 +1,23 @@
+state = {
+	id = 1104
+	name = "STATE_1104"
+	manpower = 7021844
+	state_category = rural
+	history = {
+		owner = ZJG
+		add_core_of = ZJG
+		add_core_of = CHI
+		add_core_of = PRC
+		add_extra_state_shared_building_slots = 1
+		victory_points = {
+			11920 10
+		}
+		victory_points = {
+			11947 3
+		}
+	}
+	provinces = {
+		4099 7086 7174 9944 9972 11920 11947
+	}
+	local_supplies = 7
+}

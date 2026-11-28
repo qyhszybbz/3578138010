@@ -1,0 +1,11 @@
+leader_traits ={ 
+	AKL_independent_hero = { #独立英雄
+		war_support_factor = 0.15
+		army_org_factor = 0.1
+		stability_factor = 0.05
+		political_power_factor = 0.05
+	}
+	AKL_Provisional_government_member = { #临时政府委员
+
+	}
+}

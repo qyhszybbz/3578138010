@@ -1,0 +1,26 @@
+
+state={
+	id = 744
+	name="STATE_744"
+	manpower = 585579
+	state_category = rural
+
+	history={
+		owner = HUN
+		add_core_of = HUN
+		add_claim_by = AUS
+		victory_points = {
+			3614 1
+		}
+		add_claim_by = ROM
+		buildings = {
+			infrastructure = 3 #was: 6
+		}
+	}
+
+	provinces={
+		614 3614 6643 11787
+	}
+
+	local_supplies=2.0 
+}

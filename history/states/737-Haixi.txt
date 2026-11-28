@@ -1,0 +1,40 @@
+state = {
+	id = 737
+	name = "STATE_737"
+	manpower = 1001526
+	state_category = pastoral
+	history = {
+		owner = CHI
+		add_core_of = XSM
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 1
+		}
+		1938.10.25 = {
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "Waking the Tiger"
+					}
+
+				}
+				CHI = {
+					transfer_state = PREV
+
+				}
+
+			}
+
+		}
+		victory_points = {
+			10834 3
+		}
+	}
+	provinces = {
+		4914 7940 7997 10315 10796 10834 10865 12890
+	}
+	local_supplies = 0
+	buildings_max_level_factor = 1.000
+}

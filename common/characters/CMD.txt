@@ -1,0 +1,18 @@
+characters = {
+
+	CMD_Hans_Koont = { #汉斯·孔特
+		name = CMD_Hans_Koont
+		portraits = {
+			civilian = {
+				large = GFX_leader_CMD_Hans_Koont
+			}
+		}
+		country_leader = {
+			ideology = tttt_small
+			desc = CMD_Hans_Koont_desc
+			traits = { CMD_Forgotten_by_the_Times }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+}

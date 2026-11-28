@@ -1,0 +1,44 @@
+capital = 808
+oob = "BAT_1935"
+set_stability = 0.33
+set_war_support = 0.54
+starting_train_buffer = 0.75
+set_fuel_ratio = 0.76
+set_research_slots = 3
+
+### 初始科技 ###
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_military_police = 1
+	tech_mountaineers = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	paratroopers = 1
+	gw_artillery = 1
+}
+
+### 领导人 ###
+recruit_character = BAT_Pavel_Belmont_Avalov #帕维尔·贝尔蒙特-阿瓦洛夫
+
+add_ideas = {
+	### 初始民族精神 ###
+	
+}
+
+set_politics = {
+	ruling_party = tttt
+	last_election = "1926.5.8"
+	election_frequency = 120
+	elections_allowed = no
+}
+set_popularities = {
+	Conservatism = 2
+	Authoritarianism = 12
+	tttt = 72
+	fascism = 12
+	nazism = 2
+}

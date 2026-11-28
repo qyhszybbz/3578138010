@@ -1,0 +1,18 @@
+characters={
+	DOM_Hector_Trujillo = { #埃克托尔·特鲁希略
+    name = DOM_Hector_Trujillo
+    portraits = {
+        civilian = {
+            large = GFX_leader_DOM_Hector_Trujillo
+        }
+    }
+    
+    country_leader = {
+        desc = DOM_Hector_Trujillo_desc
+        ideology = Trujillos_ideology
+        traits = {
+            DOM_Black_person
+        }
+    }
+}
+}

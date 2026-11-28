@@ -1,0 +1,19 @@
+characters = {
+	#领导人
+	#卡洛斯·多明戈·马克斯
+	URG_Carlos_Domingo_Marx = {
+		name = URG_Carlos_Domingo_Marx
+		portraits = {
+			civilian = {
+				large = GFX_URG_Carlos_Domingo_Marx_large
+			}
+		}
+		country_leader = {
+			desc = URG_Carlos_Domingo_Marx_desc
+			ideology = military_junta_authoritarianism
+			traits = {
+				URG_caudillo_of_uruguay
+			}
+		}
+	}
+}

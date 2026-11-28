@@ -1,0 +1,18 @@
+AUS_WAR_GUI = {
+	TEST = {
+		priority = 999
+		allowed = {
+			tag = AUS
+		}
+
+		visible = {
+			is_ai = no
+		}
+
+		available = {
+		}
+
+		complete_effect = {
+		}
+	}
+}

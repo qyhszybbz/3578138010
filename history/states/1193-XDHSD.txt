@@ -1,0 +1,40 @@
+state = {
+	id = 1193
+	name = "STATE_1193"
+	manpower = 309027
+	
+	state_category = town
+	
+	resources = {
+		steel = 2
+	}
+	
+	history = {
+
+		owner = SOV
+		add_core_of = SCF
+		
+		victory_points = {
+			7315 10 # Seattle
+		}
+
+		buildings = {
+		
+			infrastructure = 3
+			anti_air_building = 1
+
+			7315 = {
+				naval_base = 3
+			}
+
+		}
+
+
+	}
+
+	provinces = {
+		10242 4398 4296 7386 7315 10157
+	}
+	local_supplies = 0.0 
+
+}

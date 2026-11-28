@@ -1,0 +1,27 @@
+state={
+	id = 91
+	name="STATE_91"
+	manpower = 1593690
+	
+	state_category = city
+	
+	history={
+		owner = PUK
+		add_core_of = PUK
+		add_core_of = UKR
+		add_claim_by = POL
+		add_claim_by = NRO
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+
+	provinces={
+		438 3483 3562 9454 11427
+	}
+
+	local_supplies=0.0 
+}

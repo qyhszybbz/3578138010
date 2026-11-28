@@ -1,0 +1,120 @@
+﻿capital = 219 #莫斯科
+oob = "SOV_1935"
+set_stability = 0.50
+set_war_support = 0.50
+set_research_slots = 3
+set_convoys = 129
+starting_train_buffer = 1.25
+set_fuel_ratio = 0.85
+load_focus_tree = soviet_TVE_focus
+set_country_flag = tfe_second_leader #副领导人
+
+### 初始科技 ###
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	marines  = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	basic_train = 1
+	fuel_silos = 1
+	synth_oil_experiments = 1
+	fuel_refining = 1
+	gwtank_chassis = 1
+	basic_light_tank_chassis = 1
+}
+
+### 领导人 ###
+recruit_character = SOV_Alexander_Kerensky #亚历山大·克伦斯基
+recruit_character = SOV_Viktor_Chernov #维克托·切尔诺夫
+recruit_character = SOV_nikolai_voznesensky #尼古拉·沃兹涅先斯基
+recruit_character = SOV_alexander_fadeyev #亚历山大·法捷耶夫
+recruit_character = SOV_mikhail_bulgakov #米哈伊尔·布尔加科夫
+recruit_character = SOV_irakli_tsereteli #伊拉克利·策烈铁里
+recruit_character = SOV_anton_denikin #安东·邓尼金
+
+activate_advisor = SOV_viktor_chernov_government
+activate_advisor = SOV_nikolai_voznesensky
+activate_advisor = SOV_alexander_fadeyev
+activate_advisor = SOV_mikhail_bulgakov
+activate_advisor = SOV_irakli_tsereteli
+activate_advisor = SOV_anton_denikin
+
+add_ideas = {
+	### 初始民族精神 ###
+	SOV_Nations_Path_Forward #国家未来之路
+	SOV_Economic_development_recover #经济发展恢复中
+	SOV_Russian_protectionism #俄罗斯保护主义
+	SOV_Unconstrained_General_Staff #无法约束的总参谋部
+	### 副领袖 ###
+	SOV_Viktor_Chernov #维克托·切尔诺夫
+}
+set_variable = {
+	SOV_experience_gain_army_factor = -0.15
+}
+set_variable = {
+	SOV_land_doctrine_research = 0.10
+}
+set_variable = {
+	SOV_army_infantry_attack_factor = -0.05
+}
+set_variable = {
+	SOV_army_infantry_defence_factor = 0.10
+}
+set_variable = {
+	SOV_army_org_factor = -0.15
+}
+set_variable = {
+	SOV_breakthrough_factor = -0.10
+}
+add_dynamic_modifier = { modifier = SOV_Army_of_Republic } #共和国之军
+
+
+
+set_autonomy = {
+	target = RCA
+	autonomy_state = Governorate
+}
+set_autonomy = {
+	target = TRS
+	autonomy_state = Governorate
+}
+set_autonomy = {
+	target = FEM
+	autonomy_state = Governorate
+}
+set_autonomy = {
+	target = FIN
+	autonomy_state = Governorate
+}
+
+set_politics = {
+	ruling_party = Progressivism
+	last_election = "1933.7.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	communism = 0
+	Socialism = 1
+	Progressivism = 35
+	Liberalism = 20
+	Democracy = 9
+	Conservatism = 8
+	Authoritarianism = 6
+	tttt = 14
+	fascism = 2
+	nazism = 5
+}
+
+
+
+
+
+
+

@@ -1,0 +1,27 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				if = {
+					limit = {
+						tag = SOV
+					}
+					country_lock_all_division_template = yes
+				}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_country = {
+				if = {
+					limit = {
+						tag = AUS
+					}
+					country_lock_all_division_template = yes
+				}
+			}
+		}
+	}
+	
+}

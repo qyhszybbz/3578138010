@@ -1,0 +1,28 @@
+state={
+	id = 883
+	name="STATE_883"
+	manpower = 497600
+	state_category = pastoral
+
+	history={
+		owner = KEN
+		add_core_of = KEN
+		buildings = {
+			infrastructure = 2
+			dockyard = 1
+			5210 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			5210 5 
+		}
+	}
+
+	provinces={
+		5196 5210 6020 
+	}
+
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

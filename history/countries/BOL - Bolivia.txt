@@ -1,0 +1,77 @@
+﻿capital = 301
+
+oob = "BOL_1935"
+
+every_core_state = {
+	ROOT = {
+		add_to_array = { cores_at_game_start = PREV }
+	}
+}
+
+set_cosmetic_tag = peru_bolivian_confederation
+
+IF = {
+	limit = {
+		has_dlc = "Trial of Allegiance"
+	}
+	JUNO_set_shared_military_branch_defaults = yes
+}
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	tech_trucks = 1
+	fuel_silos = 1
+}
+recruit_character = BOL_herman_bushi
+
+set_politics = {
+	ruling_party = tttt
+	last_election = "1934.11.11"
+	election_frequency = 72
+	elections_allowed = yes
+}
+
+set_popularities = {
+	communism = 2
+	Socialism = 4
+	Progressivism = 7
+	Liberalism = 0
+	Democracy = 7
+	Conservatism = 12
+	Authoritarianism = 1
+	tttt = 54
+	fascism = 10
+	nazism = 3
+}
+
+add_ideas = {
+	BOL_military_socialism			#军事社会主义
+	BOL_mountains_of_gold			#群山自黄金
+	BOL_treaty_of_petropolis		#《彼得罗普利斯条约》
+	BOL_national_salvation_government	#救国政府
+}
+
+set_autonomy = {
+	target = AMD
+	autonomous_state = Autonomous_state
+	freedom_level = 0.3
+}
+set_autonomy = {
+	target = CMD
+	autonomous_state = Autonomous_state
+	freedom_level = 0.3
+}
+set_autonomy = {
+	target = EMZ
+	autonomous_state = Autonomous_state
+	freedom_level = 0.3
+}
+set_autonomy = {
+	target = PRU
+	autonomous_state = Autonomous_state
+	freedom_level = 0.6
+}

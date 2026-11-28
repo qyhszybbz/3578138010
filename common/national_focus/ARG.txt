@@ -1,0 +1,110 @@
+focus_tree = {
+	id = TFE_argentina_focus
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ARG
+		}
+	}
+
+	continuous_focus_position = { x = 2500 y = 2000 }
+
+	initial_show_position = {
+		x = 3
+		y = 1
+	}
+
+	#新篇章
+	focus = {
+		id = ARG_New_Chapter
+		icon = GFX_focus_ARG_New_Chapter
+		x = 3
+		y = 0
+		cost = 5
+		ai_will_do = { base = 1 }
+		available_if_capitulated = yes
+		available = { }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			country_event = { id = Argentina.1 }
+		}
+	}
+	#崭新之事，陈旧之人
+	focus = {
+		id = ARG_New_Things_Old_Men
+		x = 3
+		y = 1
+		cost = 5
+		prerequisite = { focus = ARG_New_Chapter }
+		ai_will_do = { base = 1 }
+		available_if_capitulated = yes
+		available = { }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			custom_effect_tooltip = ARG_New_Things_Old_Men_tt
+		}
+	}
+	#我想拥抱我们的同志
+	focus = {
+		id = ARG_Embrace_Our_Comrades
+		x = 3
+		y = 2
+		cost = 3
+		prerequisite = { focus = ARG_New_Things_Old_Men }
+		ai_will_do = { base = 1 }
+		available_if_capitulated = yes
+		available = { }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			custom_effect_tooltip = ARG_Embrace_Our_Comrades_tt
+		}
+	}
+	#左翼反对派的烈火
+	focus = {
+		id = ARG_Fire_Of_The_Left_Opposition
+		x = 2
+		y = 3
+		cost = 3
+		prerequisite = { focus = ARG_Embrace_Our_Comrades }
+		ai_will_do = { base = 1 }
+		available_if_capitulated = yes
+		available = { }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			custom_effect_tooltip = ARG_Fire_Of_The_Left_Opposition_tt
+		}
+	}
+	#右翼反对派的寒风
+	focus = {
+		id = ARG_Cold_Wind_Of_The_Right_Opposition
+		x = 4
+		y = 3
+		cost = 3
+		prerequisite = { focus = ARG_Embrace_Our_Comrades }
+		ai_will_do = { base = 1 }
+		available_if_capitulated = yes
+		available = { }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			custom_effect_tooltip = ARG_Cold_Wind_Of_The_Right_Opposition_tt
+		}
+	}
+	#必须同舟共济
+	focus = {
+		id = ARG_Must_Row_Together
+		x = 3
+		y = 4
+		cost = 3
+		prerequisite = { focus = ARG_Fire_Of_The_Left_Opposition }
+		prerequisite = { focus = ARG_Cold_Wind_Of_The_Right_Opposition }
+		ai_will_do = { base = 1 }
+		available_if_capitulated = yes
+		available = { }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			custom_effect_tooltip = ARG_Must_Row_Together_tt
+		}
+	}
+}

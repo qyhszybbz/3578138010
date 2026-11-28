@@ -1,0 +1,18 @@
+ideas = {
+	country = {
+		### 初始民族精神 ###
+		#碉堡之林
+		AMD_bunker_forest = {
+			on_add = { log = "[GetLogRoot]: add idea AMD_bunker_forest" }
+			picture = bunker_forest
+			allowed = { always = no }
+			modifier = {
+				bunker_max_level_terrain_limit = 2
+				production_speed_bunker_factor = 0.15
+				production_speed_coastal_bunker_factor = 0.15
+				production_speed_arms_factory_factor = 0.15
+			}
+		}
+
+	}
+}

@@ -1,0 +1,17 @@
+characters = {
+	BAS_george_robert = { #乔治·罗伯特
+		name = BAS_george_robert
+		portraits = {
+			civilian = {
+				large = GFX_leader_BAS_george_robert
+			}
+		} 
+	 country_leader = {
+        ideology = colonial_government_tttt
+		desc = BAS_george_robert_desc 
+        traits = {
+			
+        }
+    }
+	}
+}

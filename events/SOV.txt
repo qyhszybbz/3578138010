@@ -1,0 +1,44 @@
+add_namespace = SOV_TVE
+
+country_event = {
+	id = SOV_TVE.1
+	title = SOV_TVE.1.t
+	desc = SOV_TVE.1.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	option = {
+		name = SOV_TVE.1.a
+		load_focus_tree=SOV_gaoerchake_zhengbian_tree
+	}
+
+}
+
+country_event = {
+	id = SOV_TVE.2
+	title = SOV_TVE.2.t
+	desc = SOV_TVE.2.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	option = {
+		name = SOV_TVE.2.a
+		set_country_flag=SOV_gaoerchake_chenggong_FLAG
+	}
+	option = {
+		name = SOV_TVE.2.b
+		set_country_flag=SOV_gaoerchake_shibai_FLAG
+	}
+
+}
+
+country_event = {
+	id = SOV_TVE.3
+	title = SOV_TVE.3.t
+	desc = SOV_TVE.3.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	option = {
+		name = SOV_TVE.3.a
+		load_focus_tree=SOV_shehui_gemin_focus_tree
+	}
+
+}

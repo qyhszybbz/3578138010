@@ -1,0 +1,20 @@
+﻿l_simp_chinese:
+ KEN: "东非国"
+ KEN_ADJ: "东非国"
+ KEN_DEF: "东非国"
+ KEN_Conservatism: "东非联邦"
+ KEN_Conservatism_ADJ: "东非联邦"
+ KEN_Conservatism_DEF: "东非联邦"
+
+ KEN_communism_party: "茅茅运动"
+ KEN_communism_party_long: "茅茅运动"
+ KEN_Conservatism_party: "联邦统一党"
+ KEN_Conservatism_party_long: "东非联邦统一党"
+
+ KEN_Thomas_Cholmondeley: "托马斯·乔尔蒙德利"
+ KEN_Thomas_Cholmondeley_desc: "§Y生于:§!§L1900年8月19日,英格兰兰开夏郡威辛顿§!"
+
+ KEN_Stalemate_Between_Plateau_and_Coast: "高原与海岸的僵局"
+ KEN_Stalemate_Between_Plateau_and_Coast_desc: "东非联邦由肯尼亚与坦噶尼喀的拼合从一开始就充满裂痕，内罗毕的白人农场主把持议会，视自己为联邦的主人。达累斯萨拉姆的斯瓦希里商人、阿拉伯后裔与沿海精英则把蒙巴萨—达累斯萨拉姆走廊当作自己的命脉，对高原上的白人统治者充满戒心。冲突与混乱时长发生，联邦内的各成员从来没有融为一体。"
+ KEN_Rebellious_Child: "叛逆的孩子"
+ KEN_Rebellious_Child_desc: "一战后英国在非洲的殖民体系的崩塌，反而给了东非白人定居者脱离伦敦的机会。白人议会早已不把帝国视为必须服从的宗主——对他们而言，东非联邦不是边疆，而是家园；英国只是曾经提供保护伞、如今却碍事的旧家长。高地的农场、铁路的关税、港口的利润才是他们真正关心的东西，他们就会毫不犹豫地绕开帝国，甚至单方面宣布独立。这种傲慢让联邦在短期内显得强硬而团结，却也让英国越来越难以信任它。"

@@ -1,0 +1,23 @@
+ideas = {
+	country = {
+		### 初始民族精神 ###
+        #混乱的民兵
+        ITA_Disorganized_militia = {
+			on_add = { log = "[GetLogRoot]: add idea ITA_Disorganized_militia" }
+			picture = Disorganized_militia
+			allowed = { always = no }
+			modifier = {
+				
+			}
+		}
+		#委员会民主的危难
+        ITA_Peril_of_Committee_Democracy = {
+			on_add = { log = "[GetLogRoot]: add idea ITA_Peril_of_Committee_Democracy" }
+			picture = Peril_of_Committee_Democracy
+			allowed = { always = no }
+			modifier = {
+				
+			}
+		}
+	}
+}

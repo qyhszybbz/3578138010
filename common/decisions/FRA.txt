@@ -1,0 +1,5 @@
+#阿尔及利亚危机
+FRA_Algeria_category = {
+
+	
+}

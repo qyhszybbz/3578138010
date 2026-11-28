@@ -1,0 +1,18 @@
+characters = {
+		MAY_Gustavo_Rojas_Pinilla= { #古斯塔沃·罗哈斯·皮尼利亚
+    	name = MAY_Gustavo_Rojas_Pinilla
+    	portraits = {
+    	    civilian = {
+    	        large = GFX_leader_MAY_Gustavo_Rojas_Pinilla
+    	    }
+    	}
+	
+    	country_leader = {
+    	    ideology = tttt_small
+			#desc = MAY_Gustavo_Rojas_Pinillal_desc
+    	    traits = {
+			
+    	    }
+    	}
+	}	
+}

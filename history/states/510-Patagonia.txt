@@ -1,0 +1,38 @@
+state = {
+	id = 510
+	name = "STATE_510"
+	manpower = 489125
+	
+	state_category = rural
+	
+	resources = {
+		oil = 3
+	}
+
+	history = {
+
+		owner = ARG
+		add_core_of = ARG
+
+		buildings = {
+			infrastructure = 1
+		}
+
+		victory_points = {
+			12321 2
+		}
+		victory_points = {
+			12306 1
+		}
+
+		
+		
+	}
+
+	provinces={
+		2149 2199 8192 10935 10981 12306 12321 12349 12982 13432 13433 13435 13434 13441 13436 13440 13437 13438 13439 13442
+		13443
+	}
+
+	local_supplies = 0.0 
+}

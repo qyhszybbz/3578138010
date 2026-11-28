@@ -1,0 +1,69 @@
+characters = {
+	CHL_Arturo_Alessandri = { #阿图罗·亚历山德里
+    name = CHL_Arturo_Alessandri
+    portraits = {
+        civilian = {
+            large = GFX_idea_CHL_Arturo_Alessandri
+        }
+    }
+    
+    country_leader = {
+        ideology = democracy_small
+		desc = CHL_Arturo_Alessandri_desc
+        traits = {
+			CHL_tumbler
+        }
+    }
+}
+	CHL_Pedro_Abelino_Aguirre_Cerda = { # 佩德罗·阿贝利诺·阿吉雷·塞尔达
+		name = CHL_Pedro_Abelino_Aguirre_Cerda
+		portraits = {
+        army = {
+            #small = GFX_idea_CHL_Pedro_Abelino_Aguirre_Cerda
+        }
+       
+    }
+    advisor = {
+        slot = political_advisor
+        idea_token = CHL_Pedro_Abelino_Aguirre_Cerda
+        traits = {
+			CHL_The_leader_of_social_democracy
+        }
+        cost = 0
+    }
+	}
+	CHL_Urke = { # 乌尔克
+		name = CHL_Urke
+		portraits = {
+        army = {
+            #small = GFX_idea_CHL_Pedro_Abelino_Aguirre_Cerda
+        }
+       
+    }
+    advisor = {
+        slot = political_advisor
+        idea_token = CHL_Urke
+        traits = {
+			CHL_Diplomatic_guests
+        }
+        cost = 0
+    }
+	}
+	CHL_Oscar_Novoa_Fuentes = { #奥斯卡·诺沃亚·富恩特斯
+		name = CHL_Oscar_Novoa_Fuentes
+		portraits = {
+        army = {
+            #small = GFX_idea_CHL_Pedro_Abelino_Aguirre_Cerda
+        }
+       
+    }
+    advisor = { 
+        slot = political_advisor
+        idea_token = CHL_Oscar_Novoa_Fuentes
+        traits = {
+			CHL_The_best_of_us
+        }
+        cost = 0
+    }
+	}
+}

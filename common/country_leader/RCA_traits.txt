@@ -1,0 +1,8 @@
+leader_traits ={
+	#指挥紧密的进攻者
+	RCA_Close_attacker ={
+		random = no
+		army_speed_factor = 0.10
+		planning_speed = 0.10
+	}
+}

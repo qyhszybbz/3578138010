@@ -1,0 +1,34 @@
+ideas = {
+	country = {
+		HAI_Dixies_Slave = { #迪克西之奴
+			on_add = { log = "[GetLogRoot]: add idea HAI_Dixies_Slave" }
+			modifier = {
+				stability_factor = 0.15
+				political_power_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = CSA
+				trade_opinion_factor = 0.25
+			}
+			
+		}
+		HAI_Crossing_the_Masak_River = { #越过马萨克河
+			on_add = { log = "[GetLogRoot]: add idea HAI_Crossing_the_Masak_River" }
+			modifier = {
+				weekly_manpower = 325
+				stability_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = DOM
+				opinion_gain_monthly_factor = -0.75
+			}
+		}
+		HAI_A_government_that_has_stalled = { #停摆的政府
+			on_add = { log = "[GetLogRoot]: add idea HAI_A_government_that_has_stalled" }
+			modifier = {
+				stability_factor = -0.15
+				political_power_cost = 0.2
+			}
+		}
+	}
+}

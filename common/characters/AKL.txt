@@ -1,0 +1,19 @@
+characters = {
+	AKL_Louis_Gavian_de_Rodriguez = { #路易斯·加维安·德·罗德里格斯
+    name = AKL_Louis_Gavian_de_Rodriguez
+    portraits = {
+        civilian = {
+            large = GFX_leader_AKL_Louis_Gavian_de_Rodriguez
+        }
+    }
+    
+    country_leader = {
+        ideology = Conservatism_small
+		desc = AKL_Louis_Gavian_de_Rodriguez_desc
+        traits = {
+            AKL_independent_hero
+            AKL_Provisional_government_member
+        }
+    }
+}
+}

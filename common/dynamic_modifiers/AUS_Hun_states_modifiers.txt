@@ -1,0 +1,13 @@
+Aus_Hun_states_modifiers = {
+	enable = {
+		NOT = {
+			has_country_flag = Austria_civil_war_scf
+		}
+	}
+	icon = GFX_idea_hol_caved_to_the_germans
+
+        local_resources = -0.99
+        local_manpower =  -0.99
+        local_factories = -0.99
+        local_supplies =  -0.99
+}

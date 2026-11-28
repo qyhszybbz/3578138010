@@ -1,0 +1,15 @@
+leader_traits = {
+
+	#博尔龙的英雄
+	BOL_hero_of_boqueron = {
+		random = no
+		war_support_factor = 0.1
+	}
+
+	#军事社会主义改革者
+	BOL_military_socialist_reformer = {
+		random = no
+		political_power_gain = 0.1
+		stability_factor = -0.1
+	}
+}

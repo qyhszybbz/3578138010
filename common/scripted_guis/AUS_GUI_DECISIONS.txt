@@ -1,0 +1,11 @@
+   scripted_gui = {
+	
+    AUS_GUI_DESISIONS = { 
+        context_type = decision_category
+        #parent_window_token = decision_category
+        window_name = "AUS_GUI_DESISIONS"
+
+    }
+   
+
+}

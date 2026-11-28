@@ -1,0 +1,16 @@
+characters = {
+	WAL_leon_degrelle = {
+		name = WAL_leon_degrelle
+		#portraits = {
+		#	civilian = {
+		#		large = GFX_portrait_BEL_leon_degrelle
+		#	}
+		#}
+		country_leader = {
+			ideology = fascism_small
+			expire = "1965.1.1.1"
+			id = -1
+			#traits = { }
+		}
+	}
+}

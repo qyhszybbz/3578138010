@@ -1,0 +1,17 @@
+characters={
+	ECU_Carlos_Manhace = { #埃克托尔·特鲁希略
+    name = ECU_Carlos_Manhace
+    portraits = {
+        civilian = {
+            large = GFX_leader_ECU_Carlos_Manhace
+        }
+    }
+    
+    country_leader = {
+        #desc = ECU_Carlos_Manhace_desc
+        ideology = military_junta_fascism
+        traits = {
+        }
+    }
+}
+}

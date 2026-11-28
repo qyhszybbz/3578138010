@@ -1,0 +1,32 @@
+characters={
+	VEN_Miguel_Cavanellas = { #米格尔·卡瓦内利亚斯
+    name = VEN_Miguel_Cavanellas
+    portraits = {
+        civilian = {
+            large = GFX_leaders_VEN_Miguel_Cavanellas
+        }
+    }
+    
+    country_leader = {
+        ideology = Conservatism_small
+        traits = {
+            
+        }
+    }
+}
+    VEN_Eliazar_Lopez_Contreras = { #埃利亚扎尔·洛佩斯·孔特雷拉斯
+    name = VEN_Eliazar_Lopez_Contreras
+    portraits = {
+        civilian = {
+            large = GFX_leaders_VEN_Eliazar_Lopez_Contreras
+        }
+    }
+    
+    country_leader = {
+        ideology = military_junta_tttt
+        traits = {
+            VEN_Developmental_dictator
+        }
+    }
+}
+}

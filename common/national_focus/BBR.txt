@@ -1,0 +1,188 @@
+focus_tree={
+	country={
+		factor=0
+		modifier={
+			add=10
+			tag=BBR
+		}
+	}
+	default=no
+	focus={ #为了我们的自由
+		id=BBR_for_our_freedom
+		icon = GFX_focus_BBR_for_our_freedom
+		x=15
+		y=0
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			log = "[GetDateText]: [Root.GetName]: Focus BBR_for_our_freedom"
+			add_political_power = 250
+			add_war_support = 0.1
+			add_manpower = 20000
+			NEV = {
+				add_ideas = BBR_Riots_broke_out
+			}
+			UTA = {
+				add_ideas = BBR_Riots_broke_out
+			}
+			NMX = {
+				add_ideas = BBR_Riots_broke_out
+			}
+			COO = {
+				add_ideas = BBR_Riots_broke_out
+			}
+			TEX = {
+				add_ideas = BBR_Riots_broke_out
+			}
+			
+		}
+	}
+	focus={ #抵抗之火绝不熄灭
+		id=BBR_The_flame_of_rwnbe 
+		icon = GFX_focus_BBR_The_flame_of_rwnbe
+		x=12
+		y=1
+		prerequisite={focus=BBR_for_our_freedom}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			log = "[GetDateText]: [Root.GetName]: Focus BBR_for_our_freedom"
+			add_equipment_to_stockpile = {
+        	type = infantry_equipment
+        	amount = 2000
+    }
+		add_ideas = BBR_peoples_war
+		}
+	}
+	focus={ #筹备革命物资
+		id=BBR_Prepare_revolutionary_supplies 
+		icon = GFX_focus_BBR_Prepare_revolutionary_supplies
+		x=15
+		y=1
+		prerequisite={focus=BBR_for_our_freedom}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			log = "[GetDateText]: [Root.GetName]: Focus BBR_Prepare_revolutionary_supplies"
+			add_war_support = 0.2
+			add_doctrine_cost_reduction = { 
+				name = CHI_know_thy_self
+				category = land_doctrine
+				cost_reduction = 0.15
+				uses = 1
+			}
+			swap_ideas = {
+				remove_idea = BBR_revolutionary_enthusiasm_1
+				add_idea = BRB_revolutionary_enthusiasm_2
+			}
+			add_ideas = {
+				BBR_Land_reform_weapons
+			}
+	}
+		
+		
+	}
+	focus={ #团结左翼革命者
+		id=BBR_Unite_the_left_wr 
+		icon = GFX_focus_BBR_Unite_the_left_wr
+		x=18
+		y=1
+		prerequisite={focus=BBR_for_our_freedom}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			log = "[GetDateText]: [Root.GetName]: Focus BBR_Unite_the_left_wr"
+			add_country_leader_trait = {
+				trait = BBR_Black_Lenin
+			}
+			CSA = {
+				country_event = { id = Black_person.1 }
+			}
+		}
+	}
+	focus={
+		id=BBR_new_red_army #新红军
+		icon = GFX_focus_BBR_new_red_army
+		x=13
+		y=2
+		prerequisite={focus=BBR_The_flame_of_rwnbe}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			log = "[GetDateText]: [Root.GetName]: Focus BBR_new_red_army"
+			remove_ideas = {
+				BBR_Unorganized_leadership
+			}
+			add_ideas = {
+				BBR_Red_Army
+			}
+		}
+	}
+	focus={  #属于黑人的黎明
+		id=BBR_Dawn_of_the_Black
+		icon = GFX_focus_BBR_Dawn_of_the_Black
+		x=17
+		y=2
+		prerequisite={focus=BBR_Unite_the_left_wr}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			log = "[GetDateText]: [Root.GetName]: Focus BBR_Dawn_of_the_Black"
+			add_ideas = { 
+				BBR_for_ideal
+			}
+		}
+	}
+	focus={ #打倒压迫我们的枷锁
+		id=BBR_Down_with_the_stou
+		icon = GFX_focus_BBR_Down_with_the_stou
+		x=15
+		y=3
+		prerequisite={focus=BBR_Prepare_revolutionary_supplies}
+		prerequisite={focus=BBR_new_red_army}
+		prerequisite={focus=BBR_Dawn_of_the_Black}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			log = "[GetDateText]: [Root.GetName]: Focus BBR_Down_with_the_stou"
+			add_ideas = {
+				BRB_Deep_guerrilla_tactics
+			}
+		}
+	}
+}

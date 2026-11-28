@@ -1,0 +1,27 @@
+ideas = {
+	country = {
+		### 初始民族精神 ###
+		#断裂的国土
+		NGA_Fractured_Territory = {
+			on_add = { log = "[GetLogRoot]: add idea NGA_Fractured_Territory" }
+			picture = Fractured_Territory
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.10
+				conscription_factor = -0.05
+			}
+		}
+		#三港之争-拉各斯霸权
+		NGA_ThreePort_Dispute_Lagos = {
+			on_add = { log = "[GetLogRoot]: add idea NGA_ThreePort_Dispute_Lagos" }
+			picture = ThreePort_Dispute_Lagos
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = 0.05
+				industrial_capacity_factory = 0.10
+				production_speed_buildings_factor = 0.10
+			}
+		}
+	}
+}

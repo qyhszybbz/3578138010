@@ -1,0 +1,7 @@
+spriteTypes = {
+	#领导人
+	spriteType = { #乔治·范·霍恩·莫斯利
+		name = "GFX_leader_BAS_george_robert"
+		texturefile = "gfx/leaders/BAS/BAS_george_robert.dds"
+	}
+}

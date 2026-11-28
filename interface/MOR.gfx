@@ -1,0 +1,46 @@
+spriteTypes = {
+	spriteType = {
+		name = "BLT_PORMOSE_desc"
+		texturefile = "gfx/interface/ideas/MOR/BLT_PORMOSE_desc.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = no
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "GFX_idea_BLT_PORMOSE"
+		texturefile = "gfx/interface/ideas/MOR/GFX_idea_BLT_PORMOSE.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "GFX_idea_unpublic_country"
+		texturefile = "gfx/interface/ideas/MOR/GFX_idea_unpublic_country.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+	spriteType = {
+		name = "GFX_leaders_MOR_MHMD_IV"
+		texturefile = "gfx/leaders/MOR/MOR_MHMD_IV.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "unpublic_country_desc"
+		texturefile = "gfx/interface/ideas/MOR/unpublic_country_desc.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = no
+		transparencecheck = no
+	}
+
+}

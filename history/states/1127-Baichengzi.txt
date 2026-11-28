@@ -1,0 +1,31 @@
+state = {
+	id = 1127
+	name = "STATE_1127"
+	manpower = 2726502
+	state_category = town
+	history = {
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+		add_core_of = MAN
+		add_extra_state_shared_building_slots = 7
+		buildings = {
+			arms_factory = 1
+			industrial_complex = 1
+			infrastructure = 2
+		}
+		victory_points = {
+			4572 10
+		}
+		victory_points = {
+			1638 3
+		}
+		victory_points = {
+			12337 3
+		}
+	}
+	provinces = {
+		930 1499 1638 4503 4561 4572 4633 7523 7582 7652 11744 12337
+	}
+	local_supplies = 7
+}

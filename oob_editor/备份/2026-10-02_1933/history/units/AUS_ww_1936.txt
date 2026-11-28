@@ -1,0 +1,924 @@
+﻿division_template = {
+	name = "Gyalogdandár"				# Infantry Brigade
+
+	division_names_group = HUN_INF_02
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }   # cavalry recon
+		artillery = { x = 0 y = 1 } # Represents the smaller artillery regiments
+		engineer = { x = 0 y = 2 } # Combat Engineers
+		logistics_company = { x = 0 y = 3 } # Logistics Support
+		signal_company = { x = 0 y = 4 } # Signal and Command units
+	}
+}
+division_template = {
+	name = "Verteidigungsarmee"			
+	division_names_group = HUN_INF_02
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }  
+	}
+}
+division_template = {
+	name = "Huszár Dandár" 			# Cavalry Brigade
+
+	division_names_group = HUN_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+	}
+	support = {
+		light_tank_recon = { x = 0 y = 0 }   
+		signal_company = { x = 0 y = 1 } # Signal and Command units
+		artillery = { x = 0 y = 2 } # Represents the smaller artillery regiments
+		anti_air = { x = 0 y = 3 } # Represents the smaller artillery regiments
+	}
+}
+division_template = {
+	name = "Motorizált Dandár" 			# Motorized Brigade
+
+	division_names_group = HUN_MOT_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+
+		light_armor = { x = 2 y = 0 }
+		motorized = { x = 1 y = 2 }
+	}
+	support = {
+		mot_recon = { x = 0 y = 0 }   
+		anti_tank = { x = 0 y = 1 }   
+		artillery = { x = 0 y = 2 }   
+		signal_company = { x = 0 y = 3 }   
+		maintenance_company = { x = 0 y = 4 }   
+	}
+}
+
+units = {
+	##### Honvédelmi Fõparancsnokság #####
+	# Gyorshadtest ('Rapid Corps', actual corps raised in 1940) #
+	division= {	
+		#name = "1. Motorizált Dandár"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9660
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		#name = "2. Motorizált Dandár"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 9660
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "HUN" amount = 14 version_name = "Toldi 38M"} }
+
+	}
+	division= {	
+		#name = "1. Huszár Dandár"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9660
+		division_template = "Huszár Dandár"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	
+		#name = "2. Huszár Dandár"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 9660
+		division_template = "Huszár Dandár"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+	# I Hadtest #
+	division= {	
+		#name = "1. Gyalogdandár"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9660
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	
+		#name = "2. Gyalogdandár"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 9660
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	
+		#name = "3. Gyalogdandár"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 9660
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+	# II Hadtest #
+	division= {	
+		#name = "4. Gyalogdandár"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 701
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	
+		#name = "5. Gyalogdandár"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 701
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	
+		#name = "6. Gyalogdandár"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 701
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+	# III Hadtest #
+	division= {	
+		#name = "7. Gyalogdandár"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 11627
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	
+		#name = "8. Gyalogdandár"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 11627
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	
+		#name = "9. Gyalogdandár"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 11627
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+	# IV Hadtest #
+	division= {	
+		#name = "10. Gyalogdandár"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 11610
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	
+		#name = "11. Gyalogdandár"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 11610
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	
+		#name = "12. Gyalogdandár"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 11610
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+	# V Hadtest #
+	division= {	
+		#name = "13. Gyalogdandár"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 13
+		}	
+		location = 679
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	
+		#name = "14. Gyalogdandár"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 14
+		}	
+		location = 679
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	
+		#name = "15. Gyalogdandár"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location = 679
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+	# VI Hadtest #
+	division= {	
+		#name = "16. Gyalogdandár"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 16
+		}
+		location = 11659
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	
+		#name = "17. Gyalogdandár"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 17
+		}
+		location = 11659
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	
+		#name = "18. Gyalogdandár"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 18
+		}
+		location = 11659
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+	# VII Hadtest #
+	division= {	
+		#name = "19. Gyalogdandár"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 19
+		}
+		location = 6751
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	
+		#name = "20. Gyalogdandár"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 6751
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	
+		#name = "21. Gyalogdandár"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 6751
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+	# Note: VIII, IX Corps created during 1940 #
+	
+}
+division_template = {
+	name = "Infanterie Division"
+	division_names_group = AUS_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 2 }
+		infantry = { x = 3 y = 1 }
+
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   # Pioneer Bn
+		recon = { x = 0 y = 1}
+	}
+}
+
+division_template = {
+	name = "Alpenjäger Division"
+	division_names_group = AUS_MNT_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   # Pioneer Bn
+		recon = { x = 0 y = 1}
+	}
+}
+
+division_template = {
+	name = "Schnelle Division"  		# Schnelle-Division (cavalry)
+	division_names_group = AUS_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = {x = 0 y = 0}
+		recon = { x = 0 y = 1}
+	}
+}
+division_template = {
+	name = "Pěší divize"					# Infantry Division
+	division_names_group = CZE_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Horská divize"					# Mountain Division
+	division_names_group = CZE_MNT_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Jezdecká brigáda"				# Cavalry Brigade -- precursor to Fast Divisions. Fast Divisions add 2nd regiment of 2x L tank, 2x mot 
+	division_names_group = CZE_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }      # includes 1x AC comp, 1x L tank comp
+	}
+}
+
+division_template = {
+	name = "Rychlá divize"	#Fast division		
+	division_names_group = CZE_ARM_01
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }      # includes 1x AC comp, 1x L tank comp
+	}
+}
+
+
+
+
+units = {
+	##### Österreichisches Bundesheer #####
+	# I Korps
+	division = {
+		name = "1. jezdecká brigáda"
+		location = 11542  # Prague
+		division_template = "Jezdecká brigáda"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "1. fast"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11542  # Prague
+		division_template = "Rychlá divize"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "CZE" version_name = "Tancik vz. 33" } }
+	}
+	division = { # "4. divize"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 11542  # Prague
+		division_template = "Pěší divize"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "12. divize"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 11542  # Prague
+		division_template = "Pěší divize"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "16. divize"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 16
+		}
+		location = 3569 # Brno
+		division_template = "Horská divize"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	# VIII Sbor
+	division = { # "9. divize"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 3569 # Brno
+		division_template = "Pěší divize"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "2. fast"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3569 # Brno
+		division_template = "Rychlá divize"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "CZE" version_name = "Tancik vz. 33" } }
+	}
+	division = { # "15. divize"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location = 9692  # Bratislava
+		division_template = "Pěší divize"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "21. divize"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 9692  # Bratislava
+		division_template = "Pěší divize"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "3. fast"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 9692  # Bratislava
+		division_template = "Rychlá divize"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "CZE" version_name = "Tancik vz. 33" } }
+	}
+	division = { # "4. fast"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 9692  # Bratislava
+		division_template = "Rychlá divize"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "CZE" version_name = "Tancik vz. 33" } }
+	}
+	### I Armáda ###
+	division = { # "18. divize"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 18
+		}
+		location = 11401
+		division_template = "Pěší divize"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	# I Sbor
+	division = { # "2. divize"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 469
+		division_template = "Pěší divize"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "5. divize"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 3418
+		division_template = "Pěší divize"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	# II Sbor
+	division = { # "3. divize"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 6470
+		division_template = "Pěší divize"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "17. divize"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 17
+		}
+		location = 9555
+		division_template = "Horská divize"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+
+	### II Armáda ###
+	division = { # "8. divize"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 3414
+		division_template = "Pěší divize"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	# IV Sbor
+	division = { # "7. divize"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 9567
+		division_template = "Pěší divize"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+
+	### III Armády ###
+	# VII Sbor
+	division = { # "10. divize"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 11522
+		division_template = "Pěší divize"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "11. divize"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 3581
+		division_template = "Pěší divize"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "3. jezdecká brigáda"
+		location = 6604
+		division_template = "Jezdecká brigáda"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+
+	### IV Armády ###
+	division = {
+		name = "2. jezdecká brigáda"
+		location = 6418
+		division_template = "Jezdecká brigáda"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	# III Sbor
+	division = { # "19. divize"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 19
+		}
+		location = 5283
+		division_template = "Pěší divize"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	# V Sbor
+	division = { # "6. divize"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 11525
+		division_template = "Pěší divize"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "20. divize"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 557
+		division_template = "Pěší divize"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	# VI Sbor
+	division = {
+		name = "4. jezdecká brigáda"
+		location = 9539
+		division_template = "Jezdecká brigáda"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	#Cavalry schnelle
+		name = "Schnelle Division" 
+		location = 11666  # Vienna
+		division_template = "Schnelle Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+
+	division= {	# "1. Division"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 3700  # Eisenstadt 
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	# "2. Division"			# Used to form 44. Infanterie-division post-Anschluss
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 11666  # Vienna
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	# "3. Division"			# Used to form 44. Infanterie--division post-Anschluss
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 9648 # Graz
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+
+	# II Korps
+	division= {	# "4. Division"			# Used to form 45. Infanterie--division post-Anschluss
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 9665 # Linz
+		division_template = "Alpenjäger Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division= {	# "5. Division"			# Used to form 3. Gebirgs-division post-Anschluss
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 9648  # Graz
+		division_template = "Alpenjäger Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	
+}
+
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "AUS"
+		}
+		requested_factories = 25
+		progress = 0.54
+		efficiency = 100
+		industrial_manufacturer = mio:AUS_steyr_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "AUS"
+		}
+		requested_factories = 5
+		progress = 0.74
+		efficiency = 100
+	}
+}

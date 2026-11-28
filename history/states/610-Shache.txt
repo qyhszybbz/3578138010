@@ -1,0 +1,32 @@
+state = {
+	id = 610
+	name = "STATE_610"
+	manpower = 2593929
+	state_category = pastoral
+	resources = {
+		aluminium = 2
+		chromium = 2
+		steel = 3
+	}
+	history = {
+		owner = CHI
+		add_core_of = SIK
+		add_core_of = CHI
+		add_core_of = PRC
+		add_extra_state_shared_building_slots = 4
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 4
+		}
+		victory_points = {
+			2015 5
+		}
+		victory_points = {
+			8112 5
+		}
+	}
+	provinces = {
+		1766 1970 2015 5042 5087 8112 12119 12805
+	}
+	local_supplies = 7
+}

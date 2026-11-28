@@ -1,0 +1,22 @@
+state = {
+	id = 1039
+	name = "STATE_1039"
+	manpower = 541143
+	state_category = rural
+	history = {
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = YUN
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			1934 3
+		}
+	}
+	provinces = {
+		1197 1934 4318 4996 8126 12789
+	}
+	local_supplies = 0
+	buildings_max_level_factor = 1.000
+}

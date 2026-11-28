@@ -1,0 +1,24 @@
+
+state={
+	id = 1241
+	name="STATE_1241"
+	manpower = 943824
+	resources={
+
+	}
+	
+	state_category = town
+
+	history={
+		owner = CZE
+		victory_points = { 6418 5 }
+		
+		add_core_of = CZE
+	}
+
+	provinces={
+		6440 6418 9421
+	}
+
+	local_supplies=0.0 
+}

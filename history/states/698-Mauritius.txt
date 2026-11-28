@@ -1,0 +1,23 @@
+state={
+	id = 698
+	name="STATE_698"
+	manpower = 404458
+	
+	state_category = small_island
+
+	history={
+		owner = BOG
+		buildings = {
+			infrastructure = 2
+			13018 = {
+				naval_base = 1
+			}
+		}
+	}
+	
+	provinces={
+		13018 
+	}
+
+	local_supplies=0.0 
+}

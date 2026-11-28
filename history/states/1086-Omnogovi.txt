@@ -1,0 +1,23 @@
+state = {
+	id = 1086
+	name = "STATE_1086"
+	manpower = 42299
+	state_category = rural
+	history = {
+		owner = CHI
+		add_core_of = MON
+		add_core_of = CHI
+		add_extra_state_shared_building_slots = 1
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			4856 3
+		}
+	}
+	provinces = {
+		1723 1725 1781 1853 4655 4729 4786 4856 7806 7864 10558 10632 10689 12539 12541 12669
+	}
+	local_supplies = 7
+	buildings_max_level_factor = 1.000
+}

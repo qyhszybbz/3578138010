@@ -1,0 +1,40 @@
+state = {
+	id = 738
+	name = "STATE_738"
+	manpower = 549667
+	state_category = wasteland
+	history = {
+		owner = CHI
+		add_core_of = XSM
+		add_core_of = CHI
+		add_core_of = PRC
+		add_extra_state_shared_building_slots = 1
+		buildings = {
+			infrastructure = 1
+		}
+		1938.10.25 = {
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "Waking the Tiger" 
+					}
+
+				}
+				CHI = {
+					transfer_state = PREV
+
+				}
+
+			}
+
+		}
+		victory_points = {
+			5076 3
+		}
+	}
+	provinces = {
+		1778 4843 5076 7971 12596 12820
+	}
+	local_supplies = 7
+	buildings_max_level_factor = 1.000
+}

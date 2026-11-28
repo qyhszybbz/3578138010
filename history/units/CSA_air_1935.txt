@@ -1,0 +1,42 @@
+﻿air_wings = {
+
+	362 = {
+		small_plane_airframe_0 = {
+			owner = "CSA"
+			amount = 150
+			version_name = "OPR"
+		}
+	}
+
+	365 = {
+		medium_plane_airframe_0 = {
+			owner = "CSA"
+			amount = 30
+			version_name = "DENFLY"
+		}
+	}
+
+	1423 = { 
+		small_plane_cas_airframe_0 = {
+			owner = "CSA" 
+			amount = 50
+			version_name = "LITEN"
+		}
+	}
+
+	1426 = { 
+		small_plane_cas_airframe_0 = {
+			owner = "CSA" 
+			amount = 60
+			version_name = "LITEN"
+		}
+	}
+
+	"General Lee" = { #李将军号 航母舰载战斗机联队
+		cv_small_plane_airframe_0 = {
+			owner = "CSA"
+			amount = 40
+			version_name = "REBEL"
+		}
+	}
+}

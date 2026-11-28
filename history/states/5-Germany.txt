@@ -1,0 +1,39 @@
+state = {
+	id = 5
+	name = "STATE_5"
+	manpower = 705793
+	state_category = town
+	resources = {
+		chromium = 11.000
+		tungsten = 9.000
+	}
+
+	history = {
+
+		owner = GER
+		add_core_of = FRE
+		add_core_of = GER
+		add_core_of = GER
+
+		victory_points = {
+			6375 3 # Allenstein
+		}
+
+		#victory_points = {
+		#	11386 1 # Lyck
+		#}
+		
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			dockyard = 1
+		}
+		
+	}
+
+	provinces={
+		3351 3380 6375 6402 9346 11245
+	}
+
+	local_supplies=12.0 
+}

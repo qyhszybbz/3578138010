@@ -1,0 +1,18 @@
+state={
+	id = 1182
+	name="STATE_1182"
+	manpower = 475434
+
+	state_category = rural
+
+	history={
+		owner = FRA
+		add_core_of = FRA
+	}
+
+    provinces={
+		13412 13410 11521 553 13413 13411 3534 13416
+	}
+
+	local_supplies=7.0 
+}

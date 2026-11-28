@@ -1,0 +1,48 @@
+leader_traits = {
+	#领导人特质
+	#联邦的神父
+	CSA_lianbang_shenfu = {
+		random = no
+		fascism_drift = 0.01
+		war_support_factor = 0.15		
+	}
+	#顾问特质
+	#改良实干家
+	CSA_Reformers = {
+		random = no
+		stability_factor = 0.05
+		mobilization_speed = 0.1
+		party_popularity_stability_factor = 0.2
+		war_support_factor = 0.05
+		industrial_capacity_factory = 0.1
+	}
+	#民权运动支持者
+	CSA_civil_rights_ms = {
+		random = no
+		production_factory_efficiency_gain_factor = 0.1
+		stability_factor = 0.02
+		improve_relations_maintain_cost_factor = -0.02
+	}
+	#工业巨头
+	CSA_industrial_giant = {
+		random = no 
+		production_factory_efficiency_gain_factor = 0.15
+		consumer_goods_factor = -0.1
+		production_speed_industrial_complex_factor = 0.25
+	}
+	#建设部长
+	CSA_minister_of_construction = {
+		random = no
+		consumer_goods_factor = -0.1
+		production_speed_infrastructure_factor = 0.05
+		production_speed_buildings_factor = 0.1
+	}
+	#民粹煽动者
+	CSA_Populist_agitators = {
+		random = no
+		political_power_gain = 0.1
+		communism_acceptance = -80
+		stability_factor = 0.1
+		communism_drift = -0.05
+	}
+}

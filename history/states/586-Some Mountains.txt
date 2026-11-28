@@ -1,0 +1,34 @@
+state = {
+	id = 586
+	name = "STATE_586" # Semipalatinsk
+	
+	state_category = rural
+	
+	resources = {
+		chromium = 10 
+	}
+
+	history = {
+		owner = SOV
+		add_core_of = SOV
+		add_core_of = KAZ
+
+
+		#victory_points = {
+		#	7350 1 # Kurchatov
+		#}
+
+		buildings = {
+			infrastructure = 2
+		}
+		
+	}
+
+	provinces = {
+		1287 4674 4867 7350 10161 10218 10292 10584 10610 10653 12564 12635 13151 
+	}
+	manpower = 267772
+	buildings_max_level_factor = 1.000
+
+	local_supplies = 0.0 
+}

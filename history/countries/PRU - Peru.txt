@@ -1,0 +1,43 @@
+﻿capital = 302
+
+oob = "PRU_1935"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_trucks = 1
+	tech_support = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+}
+
+recruit_character = PRU_luis_antonio_eguiguren
+set_convoys = 5
+
+set_politics = {
+	ruling_party = Progressivism
+	last_election = "1932.1.1"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+set_popularities = {
+	communism = 0
+	Socialism = 0
+	Progressivism = 5
+	Liberalism = 2
+	Democracy = 12
+	Conservatism = 1
+	Authoritarianism = 25
+	tttt = 35
+	fascism = 18
+	nazism = 2
+}
+
+add_ideas = {
+	PRU_constitutional_assembly		#制宪会议
+	PRU_victory_over_red_tyranny	#战胜赤色暴政
+	PRU_feuding_officer_corps		#内斗不止的军官团们
+	PRU_separating_federation		#日渐分离的联邦
+}

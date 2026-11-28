@@ -1,0 +1,560 @@
+focus_tree = {
+	id = AUS_FOCUS_2
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = AUS
+		}
+	}
+	continuous_focus_position = { x = 2500 y = 2000 }
+	default = no
+	focus = {
+		id = worK_up_tO
+		x = 5
+		y = 0
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		completion_reward = {
+			#
+		}
+	}
+	focus = {
+		id = commute_with_france
+		x = 5
+		y = 1
+		cost = 2
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = worK_up_tO
+		}
+		completion_reward = {
+			country_event = {
+				id = AUS_TVE.5
+			}
+		}
+	}
+	focus = {
+		id = aus_industry_change
+		x = 5
+		y = 2
+		cost = 2
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = commute_with_france
+		}
+		completion_reward = {
+			add_ideas = {great_step}
+		}
+	}
+	focus = {
+		id = youli_complete_industry
+		x = 3
+		y = 3
+		cost = 4
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = aus_industry_change
+		}
+		completion_reward = {
+			add_ideas = {
+				factory_money
+			}
+		}
+	}
+	focus = {
+		id = aimier_army_industry
+		x = 7
+		y = 3
+		cost = 4
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = aus_industry_change
+		}
+		completion_reward = {
+			add_ideas = {army_industry_amr}
+		}
+	}
+	focus = {
+		id = lead_to_compy_outside
+		x = 2
+		y = 4
+		cost = 4
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = youli_complete_industry
+		}
+		completion_reward = {
+			4 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			152 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			976 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = usemoney_to_food
+		x = 4
+		y = 4
+		cost = 4
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = youli_complete_industry
+		}
+		completion_reward = {
+			add_ideas = {food_factory}
+			976 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			4 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = protect_worker
+		x = 2
+		y = 5
+		cost = 2
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = usemoney_to_food
+		}
+		prerequisite = {
+			focus = lead_to_compy_outside
+		}
+		completion_reward = {
+			add_ideas = {protect_worker}
+			add_popularity = { ideology = Socialism popularity = 0.05 }
+		}
+	}
+	focus = {
+		id = assin_hun_industry
+		x = 4
+		y = 5
+		cost = 5
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = lead_to_compy_outside
+		}
+		prerequisite = {
+			focus = usemoney_to_food
+		}
+		completion_reward = {
+			1410 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			43 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			155 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = dev_cze_industry
+		x = 2
+		y = 6
+		cost = 5
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = assin_hun_industry
+		}
+		prerequisite = {
+			focus = protect_worker
+		}
+		completion_reward = {
+			1408 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			9 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = aus_great_rode
+		x = 4
+		y = 6
+		cost = 5
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = protect_worker
+		}
+		prerequisite = {
+			focus = assin_hun_industry
+		}
+		completion_reward = {
+			976 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			4 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			1059 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = rich_aus
+		x = 3
+		y = 7
+		cost = 2
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = dev_cze_industry
+		}
+		prerequisite = {
+			focus = aus_great_rode
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = factory_money
+				add_idea = factory_money_0			
+			}
+		}
+	}
+	focus = {
+		id = use_money_to_skd
+		x = 6
+		y = 4
+		cost = 2
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = aimier_army_industry
+		}
+		completion_reward = {
+			4 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_ideas = { gen_car_com }
+		}
+	}
+	focus = {
+		id = countries_compy
+		x = 8
+		y = 4
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = aimier_army_industry
+		}
+		completion_reward = {
+			152 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			153 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = unsemoey_to_czeindustry
+		x = 6
+		y = 5
+		cost = 4
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = use_money_to_skd
+		}
+		prerequisite = {
+			focus = countries_compy
+		}
+		completion_reward = {
+			4 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = slove_lesswokerproblem
+		x = 8
+		y = 5
+		cost = 4
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = use_money_to_skd
+		}
+		prerequisite = {
+			focus = countries_compy
+		}
+		completion_reward = {
+			add_ideas = {un_lesswork_problem}
+		}
+	}
+	focus = {
+		id = use_ticket_money
+		x = 6
+		y = 6
+		cost = 2
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = slove_lesswokerproblem
+		}
+		prerequisite = {
+			focus = unsemoey_to_czeindustry
+		}
+		completion_reward = {
+			add_timed_idea = { idea = money_tciket_national days = 360 }
+		}
+	}
+	focus = {
+		id = tank_from_aus
+		x = 8
+		y = 6
+		cost = 5
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = slove_lesswokerproblem
+		}
+		prerequisite = {
+			focus = unsemoey_to_czeindustry
+		}
+		completion_reward = {
+			add_ideas = { 
+				gen_tank_com
+			}
+		}
+	}
+	focus = {
+		id = strongest_aus
+		x = 7
+		y = 7
+		cost = 2
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = use_ticket_money
+		}
+		prerequisite = {
+			focus = tank_from_aus
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = army_industry_amr
+				add_idea = army_industry_amr_1		
+			}
+		}
+	}
+	focus = {
+		id = clever_aus
+		x = 5
+		y = 8
+		cost = 5
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = rich_aus
+		}
+		prerequisite = {
+			focus = strongest_aus
+		}
+		completion_reward = {
+			add_ideas = {aus_industry_plan}
+			remove_ideas = {army_industry_amr_1}
+			remove_ideas = {factory_money_0}
+			remove_ideas = {great_step}
+		}
+	}
+	focus = {
+		id = vina_tech
+		x = 4
+		y = 9
+		cost = 4
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = clever_aus
+		}
+		completion_reward = {
+			add_ideas = {vina_tech}
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = more_coal
+		x = 6
+		y = 9
+		cost = 3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = clever_aus
+		}
+		completion_reward = {
+			152 = {
+				add_resource = {
+					type = steel
+					amount = 15
+				}
+			}
+			976 = {
+				add_resource = {
+					type = steel
+					amount = 15
+				}
+			}
+		}
+	}
+	focus = {
+		id = pease_before_rain
+		x = 5
+		y = 10
+		cost = 10
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = vina_tech
+		}
+		prerequisite = {
+			focus = more_coal
+		}
+		completion_reward = {
+			custom_effect_tooltip = nothing_happen
+			hidden_effect = {
+				AUS = {
+					set_cosmetic_tag = AUS_UNITED_STATE
+					annex_country = { target = HUN transfer_troops = yes }
+					annex_country = { target = CZE transfer_troops = yes }
+					annex_country = { target = GAL transfer_troops = yes }
+					annex_country = { target = SLO transfer_troops = yes }
+					annex_country = { target = TRA transfer_troops = yes }
+					annex_country = { target = CRO transfer_troops = yes }
+				}
+				every_state = {
+					limit = {
+						
+						has_full_control_of_state = HUN
+						has_full_control_of_state = CZE
+						has_full_control_of_state = GAL
+						has_full_control_of_state = SLO
+						has_full_control_of_state = TRA
+						has_full_control_of_state = CRO
+						is_core_of = HUN
+						is_core_of = CZE
+						is_core_of = GAL
+						is_core_of = SLO
+						is_core_of = TRA
+						is_core_of = CRO
+					}
+					add_core_of = AUS
+					
+				}
+			}
+		}
+	}
+}

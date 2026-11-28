@@ -1,0 +1,92 @@
+ideas ={
+	country ={
+		asia_united_supporter = {
+			picture = DDYLH
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				justify_war_goal_time = -0.5
+				generate_wargoal_tension = -0.75
+				guarantee_tension = -1
+				send_volunteers_tension = -0.95
+				lend_lease_tension = -1
+				ai_get_ally_desire_factor = 200
+			}
+		}
+		great_economy_low_3 ={
+			picture = usa_great_depression_3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.40
+				production_factory_max_efficiency_factor = -0.15
+				industry_air_damage_factor = 0.75
+				production_speed_arms_factory_factor = -0.35
+				production_speed_industrial_complex_factor = -0.35
+				stability_factor = -0.25
+			}
+		}
+		great_economy_low_2 ={
+			picture = usa_great_depression_2
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_factory_max_efficiency_factor = -0.10
+				industry_air_damage_factor = 0.40
+				production_speed_arms_factory_factor = -0.15
+				production_speed_industrial_complex_factor = -0.20
+				stability_factor = -0.15
+			}
+		}
+		great_economy_low_1 ={
+			picture = great_depression
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.10
+				production_factory_max_efficiency_factor = -0.05
+				industry_air_damage_factor = 0.15
+				production_speed_arms_factory_factor = -0.10
+				production_speed_industrial_complex_factor = -0.10
+				stability_factor = -0.05
+			}
+		}
+	}
+}

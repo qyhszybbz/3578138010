@@ -1,0 +1,20 @@
+state = {
+	id = 1099
+	name = "STATE_1099"
+	manpower = 3546718
+	state_category = rural
+	history = {
+		owner = HNA
+		add_core_of = HNA
+		add_core_of = CHI
+		add_core_of = PRC
+		add_extra_state_shared_building_slots = 1
+		victory_points = {
+			7502 3
+		}
+	}
+	provinces = {
+		1448 1640 7502 12350 13143
+	}
+	local_supplies = 7
+}

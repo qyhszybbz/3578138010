@@ -1,0 +1,18 @@
+ideas = {
+	country = {
+		### 初始民族精神 ###
+		#大洋彼岸的米字卫士
+		NFL_guardian_of_the_union_jack = {
+			on_add = { log = "[GetLogRoot]: add idea NFL_guardian_of_the_union_jack" }
+			picture = guardian_of_the_union_jack
+			allowed = { always = no }
+			modifier = {
+				stability_factor = 0.03
+				war_support_factor = 0.10
+				Authoritarianism_drift = 0.01
+				tttt_drift = 0.01
+			}
+		}
+
+	}
+}

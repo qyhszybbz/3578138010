@@ -1,0 +1,320 @@
+SpriteTypes = {
+    #国策
+    SpriteType = { #二十世纪联盟国
+        name = "GFX_focus_CSA_20th_Century_Alliance" 
+        texturefile = "gfx/interface/goals/CSA/CSA_20th_Century_Alliance.dds"  
+    }
+
+    SpriteType = { #二十世纪联盟国
+        name = "GFX_focus_CSA_20th_Century_Alliance_shine" 
+        texturefile = "gfx/interface/goals/CSA/CSA_20th_Century_Alliance.dds"
+
+    }
+
+    SpriteType = { #邦联大会的现状
+        name = "GFX_focus_CSA_The_status_quo_atcc"
+        texturefile = "gfx/interface/goals/CSA/CSA_The_status_quo_atcc.dds"
+    }
+
+    SpriteType = { #邦联大会的现状
+        name = "GFX_focus_CSA_The_status_quo_atcc_shine"
+        texturefile = "gfx/interface/goals/CSA/CSA_The_status_quo_atcc.dds"
+    }
+
+    SpriteType = { #支援德克萨斯
+        name = "GFX_focus_CSA_Support_Texas" 
+        texturefile = "gfx/interface/goals/CSA/CSA_Support_Texas.dds"
+    }
+
+    SpriteType = { #支援德克萨斯
+        name = "GFX_focus_CSA_Support_Texas_shine"
+        texturefile = "gfx/interface/goals/CSA/CSA_Support_Texas.dds"
+    }
+
+    SpriteType = { #西部事宜
+        name = "GFX_focus_CSA_western_affairs"
+        texturefile = "gfx/interface/goals/CSA/CSA_western_affairs.dds"
+    }
+
+    SpriteType = { #西部事宜
+        name = "GFX_focus_CSA_western_affairs_shine"
+        texturefile = "gfx/interface/goals/CSA/CSA_western_affairs.dds"
+    }
+
+    SpriteType = { #集结忠诚的牛仔们
+        name = "GFX_focus_CSA_Gathering_loyal_cowboys"
+        texturefile = "gfx/interface/goals/CSA/CSA_Gathering_loyal_cowboys.dds"
+    }
+
+    SpriteType = { #集结忠诚的牛仔们
+        name = "GFX_focus_CSA_Gathering_loyal_cowboys_shine"
+        texturefile = "gfx/interface/goals/CSA/CSA_Gathering_loyal_cowboys.dds"
+    }
+
+    SpriteType = { #与西部破产农民交涉
+        name = "GFX_focus_CSA_Negotiations_WbfitW"
+        texturefile = "gfx/interface/goals/CSA/CSA_Negotiations_WbfitW.dds"
+    }
+
+    SpriteType = { #与西部破产农民交涉
+        name = "GFX_focus_CSA_Negotiations_WbfitW_shine"
+        texturefile = "gfx/interface/goals/CSA/CSA_Negotiations_WbfitW.dds"
+    }
+
+    SpriteType = { #在里士满发布公文
+        name = "GFX_focus_CSA_Official_document_iiR"
+        texturefile = "gfx/interface/goals/CSA/CSA_Official_document_iiR.dds"
+    }
+
+    SpriteType = { #在里士满发布公文
+        name = "GFX_focus_CSA_Official_document_iiR_shine"
+        texturefile = "gfx/interface/goals/CSA/CSA_Official_document_iiR.dds"
+    }
+
+    SpriteType = { #签署《扩地法》
+        name = "GFX_focus_CSA_Signing_of_the_LEA"
+        texturefile = "gfx/interface/goals/CSA/CSA_Signing_of_the_LEA.dds"
+    }
+
+    SpriteType = { #签署《扩地法》
+        name = "GFX_focus_CSA_Signing_of_the_LEA_shine"
+        texturefile = "gfx/interface/goals/CSA/CSA_Signing_of_the_LEA.dds"
+    }
+
+    SpriteType = { #逮捕黑人激进分子
+        name = "GFX_focus_CSA_Arrest_of_Black_radicals"
+        texturefile = "gfx/interface/goals/CSA/CSA_Arrest_of_Black_radicals.dds"
+    }
+
+    SpriteType = { #逮捕黑人激进分子
+        name = "GFX_focus_CSA_Arrest_of_Black_radicals_shine"
+        texturefile = "gfx/interface/goals/CSA/CSA_Arrest_of_Black_radicals.dds"
+    }
+
+    SpriteType = { #大陆体系防御
+        name = "GFX_focus_CSA_continental_system_defense"
+        texturefile = "gfx/interface/goals/CSA/CSA_continental_system_defense.dds"
+    }
+
+    SpriteType = { #大陆体系防御
+        name = "GFX_focus_CSA_continental_system_defense_shine"
+        texturefile = "gfx/interface/goals/CSA/CSA_continental_system_defense.dds"
+    }
+
+    SpriteType = { #改组邦联军
+        name = "GFX_focus_CSA_Reorganize_the_Confederate_Army"
+        texturefile = "gfx/interface/goals/CSA/CSA_Reorganize_the_Confederate_Army.dds"
+    }
+
+    SpriteType = { #改组邦联军
+        name = "GFX_focus_CSA_Reorganize_the_Confederate_Army_shine"
+        texturefile = "gfx/interface/goals/CSA/CSA_Reorganize_the_Confederate_Army.dds"
+    }
+
+    SpriteType = { #第一次世界大战的经验
+        name = "GFX_focus_CSA_The_experience_of_World_War_I"
+        texturefile = "gfx/interface/goals/CSA/CSA_The_experience_of_World_War_I.dds"
+    }
+
+    SpriteType = { #第一次世界大战的经验
+        name = "GFX_focus_CSA_The_experience_of_World_War_I_shine"
+        texturefile = "gfx/interface/goals/CSA/CSA_The_experience_of_World_War_I.dds"
+    }
+
+    SpriteType = { #大兵团突击模式
+        name = "GFX_focus_CSA_Large_scale_assault_mode"
+        texturefile = "gfx/interface/goals/CSA/CSA_Large_scale_assault_mode.dds"
+    }
+
+    SpriteType = { #大兵团突击模式
+        name = "GFX_focus_CSA_Large_scale_assault_mode_shine"
+        texturefile = "gfx/interface/goals/CSA/CSA_Large_scale_assault_mode.dds"
+    }
+
+    SpriteType = { #扩招弗吉尼亚军校
+        name = "GFX_focus_CSA_Virginia_Military_Academy_ee"
+        texturefile = "gfx/interface/goals/CSA/CSA_Virginia_Military_Academy_ee.dds"
+    }
+
+    SpriteType = { #扩招弗吉尼亚军校
+        name = "GFX_focus_CSA_Virginia_Military_Academy_ee_shine"
+        texturefile = "gfx/interface/goals/CSA/CSA_Virginia_Military_Academy_ee.dds"
+    }
+
+    SpriteType = { #民兵正规化建设
+        name = "GFX_focus_CSA_Militia_Regularization"
+        texturefile = "gfx/interface/goals/CSA/CSA_Militia_Regularization.dds"
+    }
+
+    SpriteType = { #民兵正规化建设
+        name = "GFX_focus_CSA_Militia_Regularization_shine"
+        texturefile = "gfx/interface/goals/CSA/CSA_Militia_Regularization.dds"
+    }
+
+    SpriteType = { #现代化炮兵体系
+        name = "GFX_focus_CSA_Modern_artillery_system"
+        texturefile = "gfx/interface/goals/CSA/CSA_Modern_artillery_system.dds"
+    }
+
+    SpriteType = { #现代化炮兵体系
+        name = "GFX_focus_CSA_Modern_artillery_system_shine"
+        texturefile = "gfx/interface/goals/CSA/CSA_Modern_artillery_system.dds"
+    }
+
+    SpriteType = { #购买德国坦克火炮
+        name = "GFX_focus_CSA_Purchase_German_tanks_and_artillery"
+        texturefile = "gfx/interface/goals/CSA/CSA_Purchase_German_tanks_and_artillery.dds"
+    }
+
+    SpriteType = { #购买德国坦克火炮
+        name = "GFX_focus_CSA_Purchase_German_tanks_and_artillery_shine"
+        texturefile = "gfx/interface/goals/CSA/CSA_Purchase_German_tanks_and_artillery.dds"
+    }
+
+    SpriteType = { #步炮协同模式
+        name = "GFX_focus_CSA_gun_synergy_mode"
+        texturefile = "gfx/interface/goals/CSA/CSA_gun_synergy_mode.dds"
+    }
+
+    SpriteType = { #步炮协同模式
+        name = "GFX_focus_CSA_gun_synergy_mode_shine"
+        texturefile = "gfx/interface/goals/CSA/CSA_gun_synergy_mode.dds"
+    }
+    SpriteType = { #整改计划完工
+        name = "GFX_focus_CSA_Therectification_phbc"
+        texturefile = "gfx/interface/goals/CSA/CSA_Therectification_phbc.dds"
+    }
+
+    SpriteType = { #整改计划完工
+        name = "GFX_focus_CSA_Therectification_phbc_shine"
+        texturefile = "gfx/interface/goals/CSA/CSA_Therectification_phbc.dds"
+    }
+    SpriteType = { #星十字旗屹立不倒
+        name = "GFX_focus_CSA_The_Star_and_Cfat"
+        texturefile = "gfx/interface/goals/CSA/CSA_The_Star_and_Cfat.dds"
+    }
+    SpriteType = { #星十字旗屹立不倒
+        name = "GFX_focus_CSA_The_Star_and_Cfat_shine"
+        texturefile = "gfx/interface/goals/CSA/CSA_The_Star_and_Cfat.dds"
+    }
+    SpriteType = { #集结巡逻队
+        name = "GFX_focus_CSA_Assemble_the_patrol_team"
+        texturefile = "gfx/interface/goals/CSA/CSA_Assemble_the_patrol_team.dds"
+    }
+    SpriteType = { #集结巡逻队
+        name = "GFX_focus_CSA_Assemble_the_patrol_team_shine"
+        texturefile = "gfx/interface/goals/CSA/CSA_Assemble_the_patrol_team.dds"
+    }
+    #配图
+    spriteType = { #邦联国体制配图
+		name = "GFX_CSA_Confederate_Pictures"
+		texturefile = "gfx/texticons/banners/CSA/CSA_Confederate_Pictures.dds"
+		legacy_lazy_load = no
+	}
+    spriteType = { #奴隶与工业化配图
+		name = "GFX_CSA_slave_and_industry_Pictures"
+		texturefile = "gfx/texticons/banners/CSA/CSA_slave_and_industry_Pictures.dds"
+		legacy_lazy_load = no
+	}
+    spriteType = { #石墙杰克逊精神配图
+		name = "GFX_CSA_jackson_stone_wall_Pictures"
+		texturefile = "gfx/texticons/banners/CSA/CSA_jackson_stone_wall_Pictures.dds"
+		legacy_lazy_load = no
+	}
+    ### 将领 ###
+     spriteType = { #爱德华·阿尔芒德
+		name = "GFX_general_CSA_Edward_Armand"
+		texturefile = "gfx/leaders/CSA/CSA_Edward_Armand.dds" 
+	}
+     spriteType = { #威廉·阿诺德
+		name = "GFX_general_CSA_William_Arnold"
+		texturefile = "gfx/leaders/CSA/CSA_William_Arnold.dds" 
+	}
+    spriteType = { #特里·艾伦
+		name = "GFX_general_CSA_Terry_Allen"
+		texturefile = "gfx/leaders/CSA/CSA_Terry_Allen.dds" 
+	}
+     spriteType = { #亚历山大·安德森
+		name = "GFX_general_CSA_Alexander_Anderson"
+		texturefile = "gfx/leaders/CSA/CSA_Alexander_Anderson.dds" 
+	}
+     spriteType = { #亨利·奥兰德
+		name = "GFX_general_CSA_Henry_Orland"
+		texturefile = "gfx/leaders/CSA/CSA_Henry_Orland.dds" 
+	}
+     spriteType = { #莱文·艾伦
+		name = "GFX_general_CSA_Levin_Allen"
+		texturefile = "gfx/leaders/CSA/CSA_Levin_Allen.dds" 
+	}
+     spriteType = { #亨利·奥兰德
+		name = "GFX_general_CSA_William_Belkin"
+		texturefile = "gfx/leaders/CSA/CSA_William_Belkin.dds" 
+	}
+     spriteType = { #威廉·贝尔金
+		name = "GFX_general_CSA_Henry_Orland"
+		texturefile = "gfx/leaders/CSA/CSA_Henry_Orland.dds" 
+	}
+     spriteType = { #威廉·巴特勒
+		name = "GFX_general_CSA_William_Butler"
+		texturefile = "gfx/leaders/CSA/CSA_William_Butler.dds" 
+	}
+     spriteType = { #弗兰克·库林
+		name = "GFX_general_CSA_Frank_Kulin"
+		texturefile = "gfx/leaders/CSA/CSA_Frank_Kulin.dds" 
+	}
+     spriteType = { #路易斯·克莱格
+		name = "GFX_general_CSA_Louis_Craig"
+		texturefile = "gfx/leaders/CSA/CSA_Louis_Craig.dds" 
+	}
+      spriteType = { #诺曼·柯塔
+		name = "GFX_general_CSA_Norman_Cotta"
+		texturefile = "gfx/leaders/CSA/CSA_Norman_Cotta.dds" 
+	}
+     spriteType = { #道格拉斯·麦克阿瑟
+		name = "GFX_general_CSA_Douglas_MacArthur"
+		texturefile = "gfx/leaders/CSA/CSA_Douglas_MacArthur.dds" 
+	}
+    spriteType = { #约翰·约瑟夫·潘兴
+		name = "GFX_general_CSA_John_Joseph_Pershing"
+		texturefile = "gfx/leaders/CSA/CSA_John_Joseph_Pershing.dds" 
+	}
+
+
+    #顾问
+    spriteType = { #厄尔·朗
+		name = "GFX_idea_CSA_Earl_Lang"
+		texturefile = "gfx/leaders/CSA/CSA_Earl_Lang.dds" 
+	}
+    spriteType = { #哈罗德·伊克斯
+		name = "GFX_idea_CSA_Harold_Iks"
+		texturefile = "gfx/leaders/CSA/CSA_Harold_Iks.dds" 
+	}
+    spriteType = { #亨利·福特
+		name = "GFX_idea_CSA_henry_ford"
+		texturefile = "gfx/leaders/CSA/CSA_henry_ford.dds" 
+	}
+    spriteType = { #林登·B·约翰逊
+		name = "GFX_idea_CSA_Lyndon_B_Johnson"
+		texturefile = "gfx/leaders/CSA/CSA_Lyndon_B_Johnson.dds" 
+	}
+    spriteType = { #约瑟夫·雷芒德·麦卡锡
+		name = "GFX_idea_CSA_Joseph_Raymond_McCarthy"
+		texturefile = "gfx/leaders/CSA/CSA_Joseph_Raymond_McCarthy.dds" 
+	}
+    #权力平衡配图
+     spriteType = { #传统派
+		name = "GFX_pob_CSA_traditionalist"
+		texturefile = "gfx/interface/bop/CSA/CSA_traditionalist.dds" 
+	}
+     spriteType = { #工业派
+		name = "GFX_pob_CSA_industrialist"
+		texturefile = "gfx/interface/bop/CSA/CSA_industrialist.dds" 
+	}
+    #事件及世界新闻配图
+    spriteType = { #西部革命
+        name = "GFX_events_CSA_western_revolution"
+        textureFile = "gfx/interface/events/CSA/CSA_western_revolution.dds"
+    }
+}
+    
+

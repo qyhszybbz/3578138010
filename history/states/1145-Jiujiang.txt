@@ -1,0 +1,20 @@
+state = {
+	id = 1145
+	name = "STATE_1145"
+	manpower = 1252402
+	state_category = rural
+	history = {
+		owner = JXI
+		add_core_of = JXI
+		add_core_of = CHI
+		add_core_of = PRC
+		add_extra_state_shared_building_slots = 1
+		victory_points = {
+			1628 10
+		}
+	}
+	provinces = {
+		1628 10114 13141
+	}
+	local_supplies = 7
+}

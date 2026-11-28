@@ -1,0 +1,176 @@
+units = {
+	fleet = {
+		name = "西班牙撒丁舰队"
+		naval_base = 6891
+		task_force = {
+			name = "撒丁舰队"
+			location = 6891
+			#阿拉贡号
+			ship = {
+				name = "阿拉贡"
+				pride_of_the_fleet = yes
+				definition = battle_cruiser
+				start_experience_factor = 0.8
+
+				equipment = {
+					ship_hull_heavy_1 = {
+						amount = 1
+						owner = SPM
+						version_name = "Conte Di Cavour Class"
+					}
+				}
+			}
+			#两西西里号
+			ship = {
+				name = "两西西里"
+				definition = battle_cruiser
+				start_experience_factor = 0.8
+
+				equipment = {
+					ship_hull_heavy_1 = {
+						amount = 1
+						owner = SPM
+						version_name = "Conte Di Cavour Class"
+					}
+				}
+			}
+			ship = {
+				name = "Cruiser 1"
+				definition = light_cruiser
+				start_experience_factor = 0.8
+				equipment = {
+					ship_hull_cruiser_1 = { amount = 1  owner = SPM version_name = "Zara Class" }
+				}
+			}
+			ship = {
+				name = "Cruiser 2"
+				definition = light_cruiser
+				start_experience_factor = 0.8
+				equipment = {
+					ship_hull_cruiser_1 = { amount = 1  owner = SPM version_name = "Zara Class" }
+				}
+			}
+			ship = {
+				name = "Cruiser 3"
+				definition = light_cruiser
+				start_experience_factor = 0.6
+				equipment = {
+					ship_hull_cruiser_1 = { amount = 1  owner = SPM version_name = "Zara Class" }
+				}
+			}
+			ship = {
+				name = "Cruiser 4"
+				definition = light_cruiser
+				start_experience_factor = 0.6
+				equipment = {
+					ship_hull_cruiser_1 = { amount = 1  owner = SPM version_name = "Zara Class" }
+				}
+			}
+			ship = {
+				name = "Cruiser 5"
+				definition = light_cruiser
+				start_experience_factor = 0.6
+				equipment = {
+					ship_hull_cruiser_1 = { amount = 1  owner = SPM version_name = "Zara Class" }
+				}
+			}
+			ship = {
+				name = "Cruiser 6"
+				definition = light_cruiser
+				start_experience_factor = 0.6
+				equipment = {
+					ship_hull_cruiser_1 = { amount = 1  owner = SPM version_name = "Zara Class" }
+				}
+			}
+			ship = {
+				name = "Cruiser 7"
+				definition = light_cruiser
+				start_experience_factor = 0.6
+				equipment = {
+					ship_hull_cruiser_1 = { amount = 1  owner = SPM version_name = "Zara Class" }
+				}
+			}
+			ship = {
+				name = "Cruiser 8"
+				definition = light_cruiser
+				start_experience_factor = 0.6
+				equipment = {
+					ship_hull_cruiser_1 = { amount = 1  owner = SPM version_name = "Zara Class" }
+				}
+			}
+			ship = {
+				name = "Cruiser 9"
+				definition = light_cruiser
+				start_experience_factor = 0.6
+				equipment = {
+					ship_hull_cruiser_1 = { amount = 1  owner = SPM version_name = "Zara Class" }
+				}
+			}
+			ship = {
+				name = "Cruiser 10"
+				definition = light_cruiser
+				start_experience_factor = 0.6
+				equipment = {
+					ship_hull_cruiser_1 = { amount = 1  owner = SPM version_name = "Zara Class" }
+				}
+			}
+			ship = {
+				name = "Submarine 1"
+				definition = submarine
+				equipment = { ship_hull_submarine_1 = { amount = 1  owner = SPM version_name = "Mameli Class" } }
+			}
+			ship = {
+				name = "Submarine 2"
+				definition = submarine
+				equipment = { ship_hull_submarine_1 = { amount = 1  owner = SPM version_name = "Mameli Class" } }
+			}
+			ship = {
+				name = "Submarine 3"
+				definition = submarine
+				equipment = { ship_hull_submarine_1 = { amount = 1  owner = SPM version_name = "Mameli Class" } }
+			}
+			ship = {
+				name = "Submarine 4"
+				definition = submarine
+				equipment = { ship_hull_submarine_1 = { amount = 1  owner = SPM version_name = "Mameli Class" } }
+			}
+			ship = {
+				name = "Submarine 5"
+				definition = submarine
+				equipment = { ship_hull_submarine_1 = { amount = 1  owner = SPM version_name = "Mameli Class" } }
+			}
+			ship = {
+				name = "Cruiser 8"
+				definition = light_cruiser
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_cruiser_2 = { amount = 1  owner = SPM version_name = "Montecuccoli Class" }
+				}
+			}
+			ship = {
+				name = "Cruiser 9"
+				definition = light_cruiser
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_cruiser_2 = { amount = 1  owner = SPM version_name = "Montecuccoli Class" }
+				}
+			}
+			ship = {
+				name = "Cruiser 10"
+				definition = light_cruiser
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_cruiser_2 = { amount = 1  owner = SPM version_name = "Montecuccoli Class" }
+				}
+			}
+			ship = {
+				name = "Cruiser 11"
+				definition = light_cruiser
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_cruiser_2 = { amount = 1  owner = SPM version_name = "Montecuccoli Class" }
+				}
+			}
+		}
+	}
+}

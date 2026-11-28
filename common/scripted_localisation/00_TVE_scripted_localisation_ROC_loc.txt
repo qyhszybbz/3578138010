@@ -1,0 +1,578 @@
+defined_text = {
+	name = ROC_state_scripted_loc
+	text = {
+		trigger = { has_state_flag = ROC_flag_Sichuan }
+		localization_key = ROC_loc_Sichuan
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Yunnan }
+		localization_key = ROC_loc_Yunnan
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Guangxi }
+		localization_key = ROC_loc_Guangxi
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Guangdong }
+		localization_key = ROC_loc_Guangdong
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Guizhou }
+		localization_key = ROC_loc_Guizhou
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Hunan }
+		localization_key = ROC_loc_Hunan
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Jiangxi }
+		localization_key = ROC_loc_Jiangxi
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Fujian }
+		localization_key = ROC_loc_Fujian
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Zhejiang }
+		localization_key = ROC_loc_Zhejiang
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Jiangsu }
+		localization_key = ROC_loc_Jiangsu
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Anhui }
+		localization_key = ROC_loc_Anhui
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Hubei }
+		localization_key = ROC_loc_Hubei
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Henan }
+		localization_key = ROC_loc_Henan
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Shandong }
+		localization_key = ROC_loc_Shandong
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Shaanxi }
+		localization_key = ROC_loc_Shaanxi
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Shanxi }
+		localization_key = ROC_loc_Shanxi
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Hebei }
+		localization_key = ROC_loc_Hebei
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Suiyuan }
+		localization_key = ROC_loc_Suiyuan
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Chahaer }
+		localization_key = ROC_loc_Chahaer
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Rehe }
+		localization_key = ROC_loc_Rehe
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Liaoning }
+		localization_key = ROC_loc_Liaoning
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Jilin }
+		localization_key = ROC_loc_Jilin
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Heilongjiang }
+		localization_key = ROC_loc_Heilongjiang
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Gansu }
+		localization_key = ROC_loc_Gansu
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Ningxia }
+		localization_key = ROC_loc_Ningxia
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Qinghai }
+		localization_key = ROC_loc_Qinghai
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Xinjiang }
+		localization_key = ROC_loc_Xinjiang
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Xikang }
+		localization_key = ROC_loc_Xikang
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Xizang }
+		localization_key = ROC_loc_Xizang
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Taiwan }
+		localization_key = ROC_loc_Taiwan
+	}
+}
+
+defined_text = {
+	name = ROC_state_desc_scripted_loc
+	text = {
+		trigger = { has_state_flag = ROC_flag_Sichuan }
+		localization_key = ROC_state_desc_Sichuan
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Yunnan }
+		localization_key = ROC_state_desc_Yunnan
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Guangxi }
+		localization_key = ROC_state_desc_Guangxi
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Guangdong }
+		localization_key = ROC_state_desc_Guangdong
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Guizhou }
+		localization_key = ROC_state_desc_Guizhou
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Hunan }
+		localization_key = ROC_state_desc_Hunan
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Jiangxi }
+		localization_key = ROC_state_desc_Jiangxi
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Fujian }
+		localization_key = ROC_state_desc_Fujian
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Zhejiang }
+		localization_key = ROC_state_desc_Zhejiang
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Jiangsu }
+		localization_key = ROC_state_desc_Jiangsu
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Anhui }
+		localization_key = ROC_state_desc_Anhui
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Hubei }
+		localization_key = ROC_state_desc_Hubei
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Henan }
+		localization_key = ROC_state_desc_Henan
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Shandong }
+		localization_key = ROC_state_desc_Shandong
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Shaanxi }
+		localization_key = ROC_state_desc_Shaanxi
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Shanxi }
+		localization_key = ROC_state_desc_Shanxi
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Hebei }
+		localization_key = ROC_state_desc_Hebei
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Suiyuan }
+		localization_key = ROC_state_desc_Suiyuan
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Chahaer }
+		localization_key = ROC_state_desc_Chahaer
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Rehe }
+		localization_key = ROC_state_desc_Rehe
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Liaoning }
+		localization_key = ROC_state_desc_Liaoning
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Jilin }
+		localization_key = ROC_state_desc_Jilin
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Heilongjiang }
+		localization_key = ROC_state_desc_Heilongjiang
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Gansu }
+		localization_key = ROC_state_desc_Gansu
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Ningxia }
+		localization_key = ROC_state_desc_Ningxia
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Qinghai }
+		localization_key = ROC_state_desc_Qinghai
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Xinjiang }
+		localization_key = ROC_state_desc_Xinjiang
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Xikang }
+		localization_key = ROC_state_desc_Xikang
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Xizang }
+		localization_key = ROC_state_desc_Xizang
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Taiwan }
+		localization_key = ROC_state_desc_Taiwan
+	}
+}
+
+defined_text = {
+	name = ROC_state_desc_delayed_scripted_loc
+	text = {
+		trigger = { has_state_flag = ROC_flag_Sichuan }
+		localization_key = ROC_state_desc_delayed_Sichuan
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Yunnan }
+		localization_key = ROC_state_desc_delayed_Yunnan
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Guangxi }
+		localization_key = ROC_state_desc_delayed_Guangxi
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Guangdong }
+		localization_key = ROC_state_desc_delayed_Guangdong
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Guizhou }
+		localization_key = ROC_state_desc_delayed_Guizhou
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Hunan }
+		localization_key = ROC_state_desc_delayed_Hunan
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Jiangxi }
+		localization_key = ROC_state_desc_delayed_Jiangxi
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Fujian }
+		localization_key = ROC_state_desc_delayed_Fujian
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Zhejiang }
+		localization_key = ROC_state_desc_delayed_Zhejiang
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Jiangsu }
+		localization_key = ROC_state_desc_delayed_Jiangsu
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Anhui }
+		localization_key = ROC_state_desc_delayed_Anhui
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Hubei }
+		localization_key = ROC_state_desc_delayed_Hubei
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Henan }
+		localization_key = ROC_state_desc_delayed_Henan
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Shandong }
+		localization_key = ROC_state_desc_delayed_Shandong
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Shaanxi }
+		localization_key = ROC_state_desc_delayed_Shaanxi
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Shanxi }
+		localization_key = ROC_state_desc_delayed_Shanxi
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Hebei }
+		localization_key = ROC_state_desc_delayed_Hebei
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Suiyuan }
+		localization_key = ROC_state_desc_delayed_Suiyuan
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Chahaer }
+		localization_key = ROC_state_desc_delayed_Chahaer
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Rehe }
+		localization_key = ROC_state_desc_delayed_Rehe
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Liaoning }
+		localization_key = ROC_state_desc_delayed_Liaoning
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Jilin }
+		localization_key = ROC_state_desc_delayed_Jilin
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Heilongjiang }
+		localization_key = ROC_state_desc_delayed_Heilongjiang
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Gansu }
+		localization_key = ROC_state_desc_delayed_Gansu
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Qinghai }
+		localization_key = ROC_state_desc_delayed_Qinghai
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Xinjiang }
+		localization_key = ROC_state_desc_delayed_Xinjiang
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Xikang }
+		localization_key = ROC_state_desc_delayed_Xikang
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Xizang }
+		localization_key = ROC_state_desc_delayed_Xizang
+	}
+	text = {
+		trigger = { has_state_flag = ROC_flag_Taiwan }
+		localization_key = ROC_state_desc_delayed_Taiwan
+	}
+}
+
+defined_text = {
+	name = ROC_state_leader_Sichuan_scripted_loc
+	text = {
+		trigger = { always = yes }
+		localization_key = ROC_state_leader_wanglingji
+	}
+}
+defined_text = {
+	name = ROC_state_leader_Yunnan_scripted_loc
+	text = {
+		trigger = { always = yes }
+		localization_key = ROC_state_leader_handeqin
+	}
+}
+defined_text = {
+	name = ROC_state_leader_Guangxi_scripted_loc
+	text = {
+		trigger = { always = yes }
+		localization_key = ROC_state_leader_handeqin
+	}
+}
+defined_text = {
+	name = ROC_state_leader_Guangdong_scripted_loc
+	text = {
+		trigger = { always = yes }
+		localization_key = ROC_state_leader_handeqin
+	}
+}
+defined_text = {
+	name = ROC_state_leader_Guizhou_scripted_loc
+	text = {
+		trigger = { always = yes }
+		localization_key = ROC_state_leader_handeqin
+	}
+}
+defined_text = {
+	name = ROC_state_leader_Hunan_scripted_loc
+	text = {
+		trigger = { always = yes }
+		localization_key = ROC_state_leader_handeqin
+	}
+}
+defined_text = {
+	name = ROC_state_leader_Jiangxi_scripted_loc
+	text = {
+		trigger = { always = yes }
+		localization_key = ROC_state_leader_handeqin
+	}
+}
+defined_text = {
+	name = ROC_state_leader_Fujian_scripted_loc
+	text = {
+		trigger = { always = yes }
+		localization_key = ROC_state_leader_handeqin
+	}
+}
+defined_text = {
+	name = ROC_state_leader_Zhejiang_scripted_loc
+	text = {
+		trigger = { always = yes }
+		localization_key = ROC_state_leader_handeqin
+	}
+}
+defined_text = {
+	name = ROC_state_leader_Jiangsu_scripted_loc
+	text = {
+		trigger = { always = yes }
+		localization_key = ROC_state_leader_handeqin
+	}
+}
+defined_text = {
+	name = ROC_state_leader_Anhui_scripted_loc
+	text = {
+		trigger = { always = yes }
+		localization_key = ROC_state_leader_zhangtaohui
+	}
+}
+defined_text = {
+	name = ROC_state_leader_Hubei_scripted_loc
+	text = {
+		trigger = { always = yes }
+		localization_key = ROC_state_leader_handeqin
+	}
+}
+defined_text = {
+	name = ROC_state_leader_Henan_scripted_loc
+	text = {
+		trigger = { always = yes }
+		localization_key = ROC_state_leader_handeqin
+	}
+}
+defined_text = {
+	name = ROC_state_leader_Shandong_scripted_loc
+	text = {
+		trigger = { always = yes }
+		localization_key = ROC_state_leader_handeqin
+	}
+}
+defined_text = {
+	name = ROC_state_leader_Shaanxi_scripted_loc
+	text = {
+		trigger = { always = yes }
+		localization_key = ROC_state_leader_handeqin
+	}
+}
+defined_text = {
+	name = ROC_state_leader_Shanxi_scripted_loc
+	text = {
+		trigger = { always = yes }
+		localization_key = ROC_state_leader_handeqin
+	}
+}
+defined_text = {
+	name = ROC_state_leader_Hebei_scripted_loc
+	text = {
+		trigger = { always = yes }
+		localization_key = ROC_state_leader_handeqin
+	}
+}
+defined_text = {
+	name = ROC_state_leader_Suiyuan_scripted_loc
+	text = {
+		trigger = { always = yes }
+		localization_key = ROC_state_leader_handeqin
+	}
+}
+defined_text = {
+	name = ROC_state_leader_Chahaer_scripted_loc
+	text = {
+		trigger = { always = yes }
+		localization_key = ROC_state_leader_handeqin
+	}
+}
+defined_text = {
+	name = ROC_state_leader_Rehe_scripted_loc
+	text = {
+		trigger = { always = yes }
+		localization_key = ROC_state_leader_handeqin
+	}
+}
+defined_text = {
+	name = ROC_state_leader_Liaoning_scripted_loc
+	text = {
+		trigger = { always = yes }
+		localization_key = ROC_state_leader_handeqin
+	}
+}
+defined_text = {
+	name = ROC_state_leader_Jilin_scripted_loc
+	text = {
+		trigger = { always = yes }
+		localization_key = ROC_state_leader_handeqin
+	}
+}
+defined_text = {
+	name = ROC_state_leader_Heilongjiang_scripted_loc
+	text = {
+		trigger = { always = yes }
+		localization_key = ROC_state_leader_handeqin
+	}
+}
+defined_text = {
+	name = ROC_state_leader_Gansu_scripted_loc
+	text = {
+		trigger = { always = yes }
+		localization_key = ROC_state_leader_handeqin
+	}
+}
+defined_text = {
+	name = ROC_state_leader_Ningxia_scripted_loc
+	text = {
+		trigger = { always = yes }
+		localization_key = ROC_state_leader_handeqin
+	}
+}
+defined_text = {
+	name = ROC_state_leader_Qinghai_scripted_loc
+	text = {
+		trigger = { always = yes }
+		localization_key = ROC_state_leader_handeqin
+	}
+}
+defined_text = {
+	name = ROC_state_leader_Xinjiang_scripted_loc
+	text = {
+		trigger = { always = yes }
+		localization_key = ROC_state_leader_handeqin
+	}
+}
+defined_text = {
+	name = ROC_state_leader_Xikang_scripted_loc
+	text = {
+		trigger = { always = yes }
+		localization_key = ROC_state_leader_handeqin
+	}
+}
+defined_text = {
+	name = ROC_state_leader_Xizang_scripted_loc
+	text = {
+		trigger = { always = yes }
+		localization_key = ROC_state_leader_handeqin
+	}
+}
+defined_text = {
+	name = ROC_state_leader_Taiwan_scripted_loc
+	text = {
+		trigger = { always = yes }
+		localization_key = ROC_state_leader_handeqin
+	}
+}

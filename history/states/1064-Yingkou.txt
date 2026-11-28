@@ -1,0 +1,29 @@
+state = {
+	id = 1064
+	name = "STATE_1064"
+	manpower = 4229464
+	state_category = large_town
+	history = {
+		owner = CHI
+		add_core_of = PRC
+		add_core_of = CHI
+		add_core_of = MAN
+		add_extra_state_shared_building_slots = 8
+		buildings = {
+			air_base = 1
+			industrial_complex = 1
+			infrastructure = 3
+		}
+		victory_points = {
+			6981 10
+		}
+		victory_points = {
+			11764 5
+		}
+	}
+	provinces = {
+		836 892 964 3783 3970 6918 6981 9781 9854 11764
+	}
+	local_supplies = 7
+	buildings_max_level_factor = 1.000
+}

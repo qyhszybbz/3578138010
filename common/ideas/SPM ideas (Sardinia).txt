@@ -1,0 +1,18 @@
+ideas = {
+	country = {
+		### 初始民族精神 ###
+		#“阿拉贡”旅
+		SPM_Aragon_Brigade = {
+			on_add = { log = "[GetLogRoot]: add idea SPM_Aragon_Brigade" }
+			picture = Aragon_Brigade
+			allowed = { always = no }
+			modifier = {
+				land_reinforce_rate = 0.02
+				army_org_factor = 0.10
+				army_attack_speed_factor = 0.10
+				send_volunteer_size = 25
+			}
+		}
+
+	}
+}

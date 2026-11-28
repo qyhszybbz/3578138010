@@ -1,0 +1,80 @@
+﻿on_actions = {
+
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = { original_tag = ROL }
+					ROOT = { has_war_with = GER }
+					country_exists = GER
+					has_global_flag = HOL_revolution_won
+					NOT = { has_global_flag = HOL_restored }
+				}
+
+				set_global_flag = HOL_restored
+
+				every_enemy_country = {
+					ROOT = { white_peace = PREV }
+				}
+
+				GER = {
+					annex_country = {
+						target = ROL
+						transfer_troops = no
+					}
+					every_owned_state = {
+						remove_core_of = ROL
+					}
+					transfer_state = 8
+					transfer_state = 1001
+					8 = { add_core_of = GER remove_core_of = HOL }
+					1001 = { add_core_of = GER remove_core_of = HOL }
+
+					if = {
+						limit = { country_exists = FRA }
+						FRA = {
+							transfer_state = 34
+							transfer_state = 958
+							transfer_state = 1030
+						}
+						34 = { add_core_of = FRA remove_core_of = HOL }
+						958 = { add_core_of = FRA remove_core_of = HOL }
+						1030 = { add_core_of = FRA remove_core_of = HOL }
+					}
+
+					if = {
+						limit = { NOT = { country_exists = HOL } }
+						release = HOL
+					}
+
+					if = {
+						limit = { country_exists = HOL }
+						HOL = {
+							set_cosmetic_tag = HOL_KINGDOM
+							set_capital = {
+								state = 7
+								remember_old_capital = no
+							}
+							if = {
+								limit = { NOT = { has_character = TVE_HOL_LEADERS } }
+								recruit_character = TVE_HOL_LEADERS
+							}
+							set_politics = {
+								ruling_party = Liberalism
+								elections_allowed = yes
+							}
+							if = {
+								limit = { has_character = TVE_HOL_LEADERS }
+								TVE_HOL_LEADERS = { promote_character = liberalism_small }
+							}
+
+							add_stability = 0.10
+							add_war_support = -0.20
+						}
+						news_event = {id = TFE_HOL_NEWS.5}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,37 @@
+state = {
+    id = 1278
+    name="STATE_1278"
+    manpower = 494151
+    state_category = wasteland
+
+    history = {
+
+		owner = SOV
+		add_core_of = SOV
+        add_core_of = DON
+
+	
+		buildings = {
+			infrastructure = 4 #was: 7
+			arms_factory = 2
+			industrial_complex = 5
+			air_base = 1
+
+			# 22nd Congress of the CPSU Stalingrad Hydroelectric Power Station
+			#3555 = { dam = 1 }
+
+		}
+		
+		1939.1.1 = {
+			buildings = {
+				arms_factory = 2
+			}
+		}
+	}
+
+    provinces = {
+        498 6503 6527 9459 9474 9504 11447
+    }
+
+    local_supplies = 0
+}

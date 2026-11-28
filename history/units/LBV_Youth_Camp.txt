@@ -1,0 +1,36 @@
+division_template = {
+	name = "青年突击营" 
+	is_locked = no
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+	regimental_support = {
+		field_guns = { x = 0 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}	
+}
+units = {
+	division = {
+		name = "“玛蒂娜”"
+		location = 9613
+		division_template = "青年突击营"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+		start_manpower_factor = 1.0
+	}
+	division = {
+		name = "“朱莉娅”"
+		location = 11584 
+		division_template = "青年突击营"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+		start_manpower_factor = 1.0
+	}
+}

@@ -1,0 +1,14 @@
+ideas = {
+	country = {
+		### 初始民族精神 ###
+		#开普的阴影
+		BOT_Shadow_of_Cape = {
+			on_add = { log = "[GetLogRoot]: add idea BOT_Shadow_of_Cape" }
+			picture = Shadow_of_Cape
+			allowed = { always = no }
+			modifier = {
+				
+			}
+		}
+	}
+}

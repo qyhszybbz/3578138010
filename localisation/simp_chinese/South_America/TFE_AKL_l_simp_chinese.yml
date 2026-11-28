@@ -1,0 +1,25 @@
+﻿l_simp_chinese:
+        AKL:0 "阿克里第二共和国"
+        AKL_DEF:0 "阿克里第二共和国"
+
+        AKL_communism_party:0 "阿克里准则运动"
+        AKL_Socialism_party:0 "阿克里准则运动"
+        AKL_Progressivism_party:0 "-"
+        AKL_Liberalism_party:0 "阿克里共和党"
+        AKL_Democracy_party:0 "阿克里共和党"
+        AKL_Conservatism_party:0 "阿克里临时委员会"
+        AKL_Authoritarianism_party:0 "阿克里大陆军"
+        AKL_tttt_party:0 "阿克里诸部落"
+        AKL_fascism_party:0 "-"
+        AKL_nazism_party:0 "-"
+
+        AKL_Louis_Gavian_de_Rodriguez:0 "路易斯·加维安·德·罗德里格斯"
+        AKL_Louis_Gavian_de_Rodriguez_desc:0 "随着独立战争的硝烟散尽，巴西和秘鲁玻利维亚的部队仓皇逃窜，我国本以为终于赢得了宝贵的和平，然而战争仍然没有停止，巴西警察和治安部队多次深入亚马逊腹地来对我国穷追猛打，在这种情况下，独立英雄罗德里格斯站了出来。\n罗德里格斯利用橡胶的优势，我国发展起来了大量种植园和垦荒地，同时，和秘鲁玻利维亚签订的和平协议以及建设的铁路使我国努力发展起来，罗德里格斯在这一个小小共和国内不断连任。\n如今，罗德里格斯已经到了不逾矩之年，而阿克里也正在努力变得繁荣昌盛。"
+
+        AKL_independent_hero:0 "独立英雄"
+        AKL_Provisional_government_member:0 "临时政府委员"
+
+        AKL_provisional_government:0 "临时政府"
+        AKL_provisional_government_desc:0 "\n\n\n\n£GFX_idea_AKL_provisional_government_Pictures\n\n\n\n\n\n虽然我国建国已有33载，但是临时政府仍然存在于我国，这似乎很难用常理解释的通，但是抛开这些不谈，这里的问题显而易见：政府仍是一片混乱的状态，一些发展受到限制和阻碍。"
+        AKL_rubber_boom:0 "橡胶的繁荣"
+        AKL_rubber_boom_desc:0 "\n\n\n\n£GFX_idea_AKL_rubber_boom_Pictures\n\n\n\n\n\n我国这一地区最早便是因为橡胶种植业而繁荣起来，随着时间的变化，我国的橡胶朝着专业化规范化的路线上走去，这为我国带来了较为持久的繁荣。" 

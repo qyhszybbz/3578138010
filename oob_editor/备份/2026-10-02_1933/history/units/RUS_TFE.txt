@@ -1,0 +1,853 @@
+﻿division_template = {
+	name = "Gyalogdandár"				# Infantry Brigade
+
+	division_names_group = SOV_INF_02
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		artillery_brigade = { x = 2 y = 0 }
+		anti_tank_brigade = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }   # cavalry recon
+		artillery = { x = 0 y = 1 } # Represents the smaller artillery regiments
+		engineer = { x = 0 y = 2 } # Combat Engineers
+		logistics_company = { x = 0 y = 3 } # Logistics Support
+		signal_company = { x = 0 y = 4 } # Signal and Command units
+	}
+}
+division_template = {
+	name = "Verteidigungsarmee"			
+	division_names_group = HUN_INF_02
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }  
+	}
+}
+division_template = {
+	name = "Huszár Dandár" 			# Cavalry Brigade
+
+	division_names_group = HUN_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+	}
+	support = {
+		light_tank_recon = { x = 0 y = 0 }   
+		signal_company = { x = 0 y = 1 } # Signal and Command units
+		artillery = { x = 0 y = 2 } # Represents the smaller artillery regiments
+		anti_air = { x = 0 y = 3 } # Represents the smaller artillery regiments
+	}
+}
+division_template = {
+	name = "Motorizált Dandár" 			
+
+	division_names_group = HUN_MOT_01
+
+	regiments = {
+		cavalry= { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+
+		light_armor = { x = 2 y = 0 }
+	}
+	support = {
+		mot_recon = { x = 0 y = 0 }   
+		anti_tank = { x = 0 y = 1 }   
+		artillery = { x = 0 y = 2 }   
+		signal_company = { x = 0 y = 3 }   
+		maintenance_company = { x = 0 y = 4 }   
+	}
+}
+
+units = {
+	##### Honvédelmi Fõparancsnokság #####
+	# Gyorshadtest ('Rapid Corps', actual corps raised in 1940) #
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	division= {	
+		
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 236
+		division_template = "Motorizált Dandár"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "HUN" creator = "ITA" amount = 30 version_name = "L3/35"} }
+
+	}
+	
+	
+}

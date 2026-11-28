@@ -1,0 +1,63 @@
+ideas = {
+	country = {
+		### 初始民族精神 ###
+		#共和派的避难所
+		BRB_Republican_refuge = { 
+			on_add = { log = "[GetLogRoot]: add idea BRB_Republican_refuge" }
+			picture = Republican_refuge
+			allowed = { always = no }
+			modifier = {
+				stability_factor = 0.15
+				Authoritarianism_drift = 0.01
+			}
+			targeted_modifier = {
+				tag = BRA
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+		}
+		#阿根廷军事援助
+		BRB_argentine_militaryaid = { 
+			on_add = { log = "[GetLogRoot]: add idea BRB_argentine_militaryaid" }
+			picture = argentine_militaryaid
+			allowed = { always = no }
+			on_add = {
+				BRB = {
+					add_opinion_modifier = {
+						target = ARG
+						modifier = BRB_argentine_militaryaid
+					}
+				}
+			}
+			on_remove = {
+				BRB = {
+					remove_opinion_modifier = {
+						target = ARG
+						modifier = BRB_argentine_militaryaid
+					}
+				}
+			}
+			modifier = {
+				army_org_factor = 0.15
+				command_power_gain = 0.15
+			}
+			targeted_modifier = {
+				tag = ARG
+				trade_opinion_factor = 0.15
+				custom_modifier_tooltip = BRB_argentine_militaryaid_tt
+			}
+		}
+		#瓦加斯民众主义
+		BRB_Vargas_Populism = {
+			on_add = { log = "[GetLogRoot]: add idea BRB_Vargas_Populism" }
+			picture = Vargas_Populism
+			allowed = { always = no }
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.05
+				tttt_drift = 0.01
+			}
+
+		}
+	}
+}

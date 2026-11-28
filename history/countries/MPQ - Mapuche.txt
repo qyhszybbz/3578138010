@@ -1,0 +1,42 @@
+﻿capital = 933
+oob = "MPQ_1935"
+set_stability = 0.44
+set_war_support = 0.29
+starting_train_buffer = 0.9
+set_fuel_ratio = 0.45
+set_research_slots = 2
+
+### 初始科技 ###
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_trucks = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	basic_train = 1
+}
+
+### 领导人 ###
+recruit_character = MPQ_tribal_council #部落理事会
+
+add_ideas = {
+	
+}
+
+set_politics = {
+	ruling_party = Authoritarianism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	Authoritarianism = 100
+}
+
+
+### VARIANTS ###
+# 1936 Start #
+

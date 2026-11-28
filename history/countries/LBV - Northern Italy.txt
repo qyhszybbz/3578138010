@@ -1,0 +1,145 @@
+﻿capital = 159
+oob = "LBV_1935"
+set_stability = 0.5
+set_war_support = 0.5
+starting_train_buffer = 1
+set_fuel_ratio = 0.9
+set_research_slots = 3
+
+### 初始科技 ###
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	early_bomber = 1
+	naval_bomber1 = 1
+	CAS1 = 1
+	
+	fuel_silos = 1
+	fuel_refining = 1
+	basic_train = 1
+	armored_car1 = 1
+}
+IF = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}
+IF = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
+IF = {
+	limit = {
+		has_dlc = "Battle for the Bosporus"
+	}
+	set_technology = { camelry = 1 }
+}
+IF = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+		set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		basic_battleship = 1
+		early_battlecruiser = 1
+		transport = 1
+	}
+}
+IF = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		basic_depth_charges = 1
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_battery = 1
+		basic_light_battery = 1
+		basic_heavy_armor_scheme = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		mtg_transport = 1
+		coastal_defense_ships = 1
+	}
+}
+
+### 领导人 ###
+recruit_character = LBV_Benito_Mussolini #贝尼托·墨索里尼
+#政治顾问
+recruit_character = LBV_Roberto_Farinacci #罗伯托·法里纳奇
+recruit_character = LBV_Giuseppe_Volpi #朱塞佩·沃尔皮
+recruit_character = LBV_Dino_Grandi #迪诺·格兰迪
+recruit_character = LBV_Italo_Balbo #伊塔洛·巴尔博
+recruit_character = LBV_Arturo_Bocchini #阿尔图罗·博基尼
+
+add_ideas = {
+	### 初始法案 ###
+	low_economic_mobilisation #前期动员
+	service_by_requirement #按需服兵役
+
+	### 初始民族精神 ###
+	ITAG_Protracted_civilwar #内战旷久
+	LBV_Paralyzed_Blackshirts #瘫痪的黑衫军
+	LBV_Committee_in_danger #岌岌可危的委员会
+
+	### 副手 ###
+	LBV_Benito_Mussolini_sic #贝尼托·墨索里尼
+
+	### 政治顾问 ###
+	LBV_Roberto_Farinacci_pol #罗伯托·法里纳奇
+	LBV_Giuseppe_Volpi_pol #朱塞佩·沃尔皮
+	LBV_Dino_Grandi_pol #迪诺·格兰迪
+	LBV_Italo_Balbo_pol #伊塔洛·巴尔博
+	LBV_Arturo_Bocchini_pol #阿尔图罗·博基尼
+}
+
+set_cosmetic_tag = LBV_Mussolini_first
+
+set_convoys = 60
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1934.3.26"
+	election_frequency = 60
+	elections_allowed = no
+}
+set_popularities = {
+	fascism = 93.5
+	Socialism = 4.5
+	Conservatism = 2
+}
+
+add_equipment_to_stockpile = {
+	type = infantry_equipment
+	amount = 600
+}
+add_equipment_to_stockpile = {
+	type = artillery_equipment
+	amount = 55
+}

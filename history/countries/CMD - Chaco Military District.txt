@@ -1,0 +1,40 @@
+﻿capital = 679
+oob = "CMD_1935"
+load_focus_tree = generic_focus
+set_research_slots = 1
+set_stability = 0.35
+set_war_support = 0.35
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_trucks = 1
+	tech_support = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+}
+
+set_politics = {
+	ruling_party = tttt
+	elections_allowed = no
+}
+recruit_character = CMD_Hans_Koont
+
+set_popularities = {
+	communism = 0
+	Socialism = 0
+	Progressivism = 0
+	Liberalism = 12
+	Democracy = 0
+	Conservatism = 0
+	Authoritarianism = 38
+	tttt = 50
+	fascism = 0
+	nazism = 0
+}
+
+add_ideas = {
+	CMD_black_gold_dream		#黑金之梦
+	CMD_banditry_rampant		#匪帮肆虐
+}

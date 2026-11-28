@@ -1,0 +1,30 @@
+
+state = {
+	id = 558
+	name = "STATE_558" # Nikolayevsk
+	manpower = 84643
+	
+	state_category = rural
+	resources={
+		steel=18 # was: 24
+	}
+
+	history={
+		owner = FEM
+		buildings = {
+			infrastructure = 2
+			7871 = {
+				naval_base = 1
+			}
+		}
+		
+		add_core_of = SOV
+		add_core_of = FEM
+	}
+
+	provinces = {
+		1724 1842 3664 4290 4844 7748 7871 9659 10571 10577 12559 12569 12638 1807 10590
+	}
+
+	local_supplies = 0.0 
+}

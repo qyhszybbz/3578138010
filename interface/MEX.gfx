@@ -1,0 +1,81 @@
+spriteTypes = {	
+	###领导人
+	spriteType = {
+		name ="GFX_MEX_afangsuo_leiyesi"
+		texturefile = "gfx/leaders/MEX/MEX_afangsuo_leiyesi.dds"
+	}
+	###民族精神
+	spriteType = {
+		name = "GFX_idea_MEX_yaowang_lvtu"
+		texturefile = "gfx/interface/ideas/idea_MEX_yaowang_lvtu.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_idea_MEX_crying_guadalupei"
+		texturefile = "gfx/interface/ideas/idea_MEX_crying_guadalupei.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_idea_MEX_jundui_jieru"
+		texturefile = "gfx/interface/ideas/idea_MEX_jundui_jieru.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_MEX_wenren_zhiguo"
+		texturefile = "gfx/interface/ideas/idea_MEX_wenren_zhiguo.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_MEX_young_politic"
+		texturefile = "gfx/interface/ideas/idea_MEX_young_politic.dds"			
+	}
+	###民族精神配图
+	spriteType = { #瓜达卢佩在哭泣配图
+		name = "GFX_MEX_crying_guadalupei_Pictures"
+		texturefile = "gfx/texticons/banners/MEX/MEX_crying_guadalupei_Pictures.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = { #军队介入程度配图
+		name = "GFX_MEX_jundui_jieru_1_Pictures"
+		texturefile = "gfx/texticons/banners/MEX/MEX_jundui_jieru_1_Pictures.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = { #文人治国配图
+		name = "GFX_MEX_wenren_zhiguo_Pictures"
+		texturefile = "gfx/texticons/banners/MEX/MEX_wenren_zhiguo_Pictures.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = { #年轻化的政坛配图
+		name = "GFX_MEX_young_politic_Pictures"
+		texturefile = "gfx/texticons/banners/MEX/MEX_young_politic_Pictures.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = { #遥望你的旅途配图
+		name = "GFX_MEX_yaowang_lvtu_Pictures"
+		texturefile = "gfx/texticons/banners/MEX/MEX_yaowang_lvtu_Pictures.dds"
+		legacy_lazy_load = no
+	}
+	###政治顾问
+	SpriteType = { #奥克塔维奥·帕斯
+		name = "GFX_idea_MEX_aoketavo_pasi"
+		texturefile = "gfx/interface/ideas/MEX/MEX_aoketavo_pasi.dds"			
+	}
+	SpriteType = { #萨缪埃尔·拉莫斯
+		name = "GFX_idea_MEX_samiuaier_lamosi"
+		texturefile = "gfx/interface/ideas/MEX/MEX_samiuaier_lamosi.dds"			
+	}
+	SpriteType = { #维森特·隆巴多·托莱达诺
+		name = "GFX_idea_MEX_weisengte"
+		texturefile = "gfx/interface/ideas/MEX/MEX_weisengte.dds"			
+	}
+	SpriteType = { #弗朗西斯科·穆希卡
+		name = "GFX_idea_MEX_fulangxisike_muxika"
+		texturefile = "gfx/interface/ideas/MEX/MEX_fulangxisike_muxika.dds"			
+	}
+	###国策
+	SpriteType = { #新的一年
+		name = "GFX_focus_MEX_a_new_year"
+		texturefile = "gfx/interface/goals/MEX/MEX_a_new_year.dds"			
+	}
+	
+}

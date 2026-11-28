@@ -1,0 +1,230 @@
+#汤化龙的土黄民国
+ROC_TangsDemo = {
+	color = rgb { 166 134 42 }
+	color_ui = rgb { 184 152 54 }
+}
+#墨索里尼的民族共和国
+LBV_Mussolini_first = {
+	color = rgb { 128 92 50 }
+	color_ui = rgb { 150 110 64 }
+}
+#开局纽芬兰
+NFL_England_guardian = {
+	color = rgb { 200 16 46 }
+	color_ui = rgb { 200 16 46 }
+}
+#奥斯曼海德拉巴
+HYD_Osman = {
+	color = rgb { 102 205 170 }
+	color_ui = rgb { 102 205 170 }
+}
+#斯拉沃尼亚形态
+CRO_Slavonija = {
+	color = rgb { 209 199 199 }
+	color_ui = rgb { 209 199 199 }
+}
+#撒丁西班牙驻军
+SPM_Garrison_tag = {
+	color = rgb { 231 91 18 }
+	color_ui = rgb { 231 91 18 }
+}
+#叙利亚王国
+SYR_Kingdom = {
+	color = rgb { 80 106 207 }
+	color_ui = rgb { 80 106 207 }
+}
+#约旦哈希姆王国
+JOR_Hashim = {
+	color = rgb { 80 106 207 }
+	color_ui = rgb { 80 106 207 }
+}
+#第聂伯东岸军区
+NRO_RUS_Puppet = {
+	color = rgb { 35 108 41 }
+	color_ui = rgb { 35 108 41 }
+}
+#尼日尔南岸联邦
+NGA_South_niger = {
+	color = rgb { 237 145 33 }
+	color_ui = rgb { 237 145 33 }
+}
+
+bo_luo_di_sea = {
+	color = rgb { 138 155 116 }
+	color_ui = rgb { 138 155 116 }
+}
+HUN_EMPIRE_neutrality_TVE = {
+	color = rgb { 209 199 199 }
+	color_ui = rgb { 209 199 199 }
+}
+CZE_AUS_EMPIRE = {
+	color = rgb { 209 199 199 }
+	color_ui = rgb { 209 199 199 }
+}
+HUN_INDE_TVE = {
+	color = rgb { 100 188 0 }
+	color_ui = rgb { 100 188 0 }
+}
+SIL_POL = {
+	color = rgb { 165 87 146 }
+	color_ui = rgb { 165 87 146 }
+}
+SHL_RED ={
+	color = rgb { 255 46 0 }
+	color_ui = rgb { 255 46 0 }
+}
+AUS_POPCOLOR = {
+	color = rgb { 117 117 117 }
+	color_ui = rgb { 117 117 117 }
+}
+DEN_POPCOLOR = {
+	color = rgb { 153 116 93 }
+	color_ui = rgb { 199 151 121 }
+}
+AUS_DEC_COLOR ={
+	color = rgb { 117 117 117 }
+	color_ui = rgb { 117 117 117 }
+}
+TRA_ROM_ANT = {
+	color = rgb { 215 196 72 }
+	color_ui = rgb { 255 255 120 }
+}
+ROC = {
+	color = rgb { 55 64 130 }
+	color_ui = rgb { 55 64 130 }
+}
+ENG_NEW_color = {
+	color = rgb { 157 43 45 }
+	color_ui = rgb { 255 73 121 }
+}
+TUR_Authoritarianism = {
+	color = rgb { 117 0 5 }
+	color_ui = rgb { 79 0 3 }
+}
+BOG_color = {
+	color = rgb { 157 43 45 }
+	color_ui = rgb { 80  165  10 }
+}
+FNA_color = {
+	color = rgb { 56 92 168 }
+	color_ui = rgb { 72 110 184 }
+}
+FNA_MOR_color = {
+	color = rgb { 47 74 163 }
+	color_ui = rgb { 47 74 163 }
+}
+FNA_TUN_color = {
+	color = rgb { 47 74 163 }
+	color_ui = rgb { 47 74 163 }
+}
+FREE_RAJ_COLOR = {
+	color = rgb { 204 102 0 }
+	color_ui = rgb { 47 74 163 }
+}
+SCO_color = {
+	color = rgb { 102 178 255 }
+	color_ui = rgb { 102  178  255 }
+}
+WLS_color = {
+	color = rgb { 76 153 0 }
+	color_ui = rgb { 76  153  0 }
+}
+BSR_color = {
+	color = rgb { 97 2 89 }
+	color_ui = rgb { 97  2  89 }
+}
+BRC_color = {
+	color = rgb { 187 10 64 }
+	color_ui = rgb { 187  10  64 }
+}
+anarchy_color = {
+	color = rgb { 0 0 0 }
+	color_ui = rgb { 0 0 0 }
+}
+ENG_IRE = {
+	color = rgb { 157 43 45 }
+	color_ui = rgb { 80  165  10 }
+}
+PAP_color = {
+	color = rgb { 67 127 63 }
+	color_ui = rgb { 80  165  10 }
+}
+AUS_COLOR = {
+	color = rgb { 255 255 255 }
+	color_ui = rgb { 255 255 255 }
+}
+KAZ_color = {
+	color = rgb { 14 115 229 }
+	color_ui = rgb { 14 115 229 }
+}
+
+YUG_BOS = {
+	color = rgb { 0 205 116 }
+	color_ui = rgb { 13 217 200 }
+}
+SPR_puppet_CUB = {
+	color = rgb { 213 164 15 }
+	color_ui = rgb { 213 164 15 }
+}
+SPR_puppet_DOM = {
+	color = rgb { 213 164 15 }
+	color_ui = rgb { 213 164 15 }
+}
+SPR_puppet_EQG = {
+	color = rgb { 213 164 15 }
+	color_ui = rgb { 213 164 15 }
+}
+SPR_puppet_MOR = {
+	color = rgb { 213 164 15 }
+	color_ui = rgb { 213 164 15 }
+}
+SPR_puppet_VEN = {
+	color = rgb { 213 164 15 }
+	color_ui = rgb { 213 164 15 }
+}
+SPR_puppet_PHI = {
+	color = rgb { 213 164 15 }
+	color_ui = rgb { 213 164 15 }
+}
+POR_puppet_MZB = {
+	color = rgb { 39 116 70 }
+	color_ui = rgb { 51 151 91 }
+}
+ARG_puppet_PAR = {
+	color = rgb { 50 64 90 }
+	color_ui = rgb { 189 204 255 }
+}
+COL_CCW = {
+	color = rgb { 109 20 2 }
+	color_ui = rgb { 255 243 118 }
+}
+ECU_CCW = {
+	color = rgb { 211 211 46 }
+	color_ui = rgb { 255 190 127 }
+}
+WLA_CCW = {
+	color = rgb { 204 0 51 }
+	color_ui = rgb { 255 190 127 }
+}
+RIG_CCW = {
+	color = rgb { 184 134 11 }
+	color_ui = rgb { 255 190 127 }
+}
+MAY_CCW = {
+	color = rgb { 81 81 81 }
+	color_ui = rgb { 255 190 127 }
+}
+MIS_CCW = {
+	color = rgb { 6 54 98 }
+	color_ui = rgb { 255 190 127 }
+}
+
+# 尼德兰王国（内战复辟后）
+HOL_KINGDOM = {
+	color = rgb { 203 138 74 }
+	color_ui = rgb { 203 138 74 }
+}
+ARG_puppet_URG = {
+	color = rgb { 50 64 90 }
+	color_ui = rgb { 189 204 255 }
+}

@@ -1,0 +1,27 @@
+scripted_gui = {
+	kaiserreich_alerts = {
+		context_type = player_context
+		window_name = "thefinalecho_alerts_window"
+		dirty = global.thefinalecho_alerts_window
+
+		ai_enabled = {
+			always = no
+		}
+
+		dynamic_lists = {
+			
+			state_integration_alerts_grid = {
+				array = state_integration_alerts
+				entry_container = state_integration_alert
+				value = integrated_state
+			}
+			
+		}
+
+		properties = {
+			state_integration_alert_progressbar = {
+				x = integration_progressbar_value_@var:integrated_state
+			}
+		}
+	}
+}

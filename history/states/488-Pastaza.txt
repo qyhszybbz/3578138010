@@ -1,0 +1,27 @@
+
+state = {
+	id = 488
+	name = "STATE_488"
+	manpower = 26365
+	
+	state_category = pastoral
+
+	history = {
+		owner = COL
+		add_core_of = BOL #Used to be PRU but should become theirs through the Peruvian-Ecuadorian War
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 1
+		}
+						
+		add_core_of = COL
+		add_core_of = ECU
+	}
+
+	provinces={
+		13475 7014 6851
+	}
+
+	local_supplies = 6.0 
+}

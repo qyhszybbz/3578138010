@@ -1,0 +1,47 @@
+capital = 545
+oob = "KEN_1935"
+set_stability = 0.21
+set_war_support = 0.23
+starting_train_buffer = 0.6
+set_fuel_ratio = 0.85
+load_focus_tree = generic_focus
+set_research_slots = 2
+set_convoys = 78
+
+### 初始科技 ###
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1	
+	tech_mountaineers = 1
+	tech_trucks = 1
+	gw_artillery = 1
+	basic_train = 1
+	gwtank_chassis = 1
+	camelry = 1
+}
+
+### 领导人 ###
+recruit_character = KEN_Thomas_Cholmondeley #托马斯·乔尔蒙德利
+
+add_ideas = {
+	### 初始民族精神 ###
+	KEN_Stalemate_Between_Plateau_and_Coast #高原与海岸的僵局
+	KEN_Rebellious_Child #叛逆的孩子
+}
+
+set_politics = {
+	ruling_party = Conservatism
+	last_election = "1933.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	communism = 6
+	Socialism = 4
+	Conservatism = 46
+	Authoritarianism = 21
+	tttt = 15
+	fascism = 8
+}
+
+

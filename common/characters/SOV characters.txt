@@ -1,0 +1,99 @@
+characters = {
+    #领导人
+    #亚历山大·克伦斯基
+	SOV_Alexander_Kerensky = {
+        name = SOV_Alexander_Kerensky
+        portraits = {
+            civilian = {
+				large = GFX_SOV_Alexander_Kerensky_large
+			}
+		}
+        country_leader={
+			desc = SOV_Alexander_Kerensky_desc
+			ideology= Kerenskyism
+			traits= {  }
+		}
+    }
+    #维克托·切尔诺夫
+    SOV_Viktor_Chernov = {
+        name = SOV_Viktor_Chernov
+        portraits = {
+            civilian = {
+				large = GFX_SOV_Viktor_Chernov_large
+			}
+		}
+        advisor = {
+            slot = second_in_command
+            idea_token = SOV_viktor_chernov_government
+            desc = SOV_Viktor_Chernov_desc
+            traits = { SOV_chernov_head_of_government }
+            cost = 0
+            can_be_fired = no
+        }
+    }
+    #尼古拉·沃兹涅先斯基
+    SOV_nikolai_voznesensky = {
+        name = SOV_nikolai_voznesensky
+        advisor = {
+            slot = political_advisor
+            idea_token = SOV_nikolai_voznesensky
+            desc = SOV_nikolai_voznesensky_desc
+            traits = { SOV_voznesensky_economy_minister }
+            cost = 0
+            can_be_fired = no
+        }
+    }
+    #亚历山大·法捷耶夫
+    SOV_alexander_fadeyev = {
+        name = SOV_alexander_fadeyev
+        advisor = {
+            slot = political_advisor
+            idea_token = SOV_alexander_fadeyev
+            desc = SOV_alexander_fadeyev_desc
+            traits = { SOV_fadeyev_foreign_minister }
+            cost = 0
+            can_be_fired = no
+        }
+    }
+    #米哈伊尔·布尔加科夫
+    SOV_mikhail_bulgakov = {
+        name = SOV_mikhail_bulgakov
+        advisor = {
+            slot = political_advisor
+            idea_token = SOV_mikhail_bulgakov
+            desc = SOV_mikhail_bulgakov_desc
+            traits = { SOV_bulgakov_propaganda_minister }
+            cost = 0
+            can_be_fired = no
+        }
+    }
+    #伊拉克利·策烈铁里
+    SOV_irakli_tsereteli = {
+        name = SOV_irakli_tsereteli
+        advisor = {
+            slot = political_advisor
+            idea_token = SOV_irakli_tsereteli
+            desc = SOV_irakli_tsereteli_desc
+            traits = { SOV_tsereteli_interior_minister }
+            cost = 0
+            can_be_fired = no
+        }
+    }
+    #安东·邓尼金
+    SOV_anton_denikin = {
+        name = SOV_anton_denikin
+        portraits = {
+            civilian = {
+				large = GFX_RCA_Anton_Denikin_large
+			}
+		}
+        advisor = {
+            slot = political_advisor
+            idea_token = SOV_anton_denikin
+            desc = SOV_anton_denikin_desc
+            traits = { SOV_denikin_defence_minister }
+            cost = 0
+            can_be_fired = no
+        }
+    }
+}

@@ -1,0 +1,160 @@
+add_namespace = FRA_TVE_EVENT
+
+#我们的未来
+country_event = {
+	id = FRA_TVE_EVENT.1
+	title = FRA_TVE_EVENT.1.t
+	desc = FRA_TVE_EVENT.1.desc
+	#picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA_TVE_EVENT.1.a
+		add_political_power = 50
+	}
+}
+
+#国防部会议
+country_event = {
+	id = FRA_TVE_EVENT.2
+	title = FRA_TVE_EVENT.2.t
+	desc = FRA_TVE_EVENT.2.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA_TVE_EVENT.2.a
+	}
+}
+
+#与企业家谈话
+country_event = {
+	id = FRA_TVE_EVENT.3
+	title = FRA_TVE_EVENT.3.t
+	desc = FRA_TVE_EVENT.3.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA_TVE_EVENT.3.a
+	}
+}
+
+#傀儡们在干什么
+country_event = {
+	id = FRA_TVE_EVENT.4
+	title = FRA_TVE_EVENT.4.t
+	desc = FRA_TVE_EVENT.4.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA_TVE_EVENT.4.a
+	}
+}
+
+#一桩小事
+country_event = {
+	id = FRA_TVE_EVENT.5
+	title = FRA_TVE_EVENT.5.t
+	desc = FRA_TVE_EVENT.5.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA_TVE_EVENT.5.a
+	}
+}
+
+#沙漠战争
+country_event = {
+	id = FRA_TVE_EVENT.6
+	title = FRA_TVE_EVENT.6.t
+	desc = FRA_TVE_EVENT.6.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA_TVE_EVENT.6.a
+	}
+}
+
+#黑烟燎天，枪声纤响
+country_event = {
+	id = FRA_TVE_EVENT.7
+	title = FRA_TVE_EVENT.7.t
+	desc = FRA_TVE_EVENT.7.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA_TVE_EVENT.7.a	
+		mark_focus_tree_layout_dirty = yes
+	}
+}
+
+#紧急会议
+country_event = {
+	id = FRA_TVE_EVENT.8
+	title = FRA_TVE_EVENT.8.t
+	desc = FRA_TVE_EVENT.8.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA_TVE_EVENT.8.a
+	}
+}
+
+#历史的消亡
+country_event = {
+	id = FRA_TVE_EVENT.9
+	title = FRA_TVE_EVENT.9.t
+	desc = FRA_TVE_EVENT.9.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA_TVE_EVENT.9.a
+	}
+}
+
+#关于阿尔及利亚利省居民待遇若干条例
+country_event = {
+	id = FRA_TVE_EVENT.10
+	title = FRA_TVE_EVENT.10.t
+	desc = FRA_TVE_EVENT.10.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA_TVE_EVENT.10.a
+	}
+}
+
+#一对母子
+country_event = {
+	id = FRA_TVE_EVENT.11
+	title = FRA_TVE_EVENT.11.t
+	desc = FRA_TVE_EVENT.11.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA_TVE_EVENT.11.a
+	}
+}
+
+#尘埃落定
+country_event = {
+	id = FRA_TVE_EVENT.12
+	title = FRA_TVE_EVENT.12.t
+	desc = FRA_TVE_EVENT.12.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA_TVE_EVENT.12.a
+	}
+}

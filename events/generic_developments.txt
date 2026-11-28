@@ -1,0 +1,169 @@
+add_namespace = generic_development
+
+country_event = {
+	id = generic_development.1
+	title = generic_development.1.t
+	desc = generic_development.1.desc 
+	picture = GFX_industry_development_level_up
+	is_triggered_only = yes
+
+	option = {
+		name = generic_development.1.a 
+		ai_chance = { base = 100 } 
+		increase_industry = yes
+	}
+}
+
+country_event = {
+	id = generic_development.2
+	title = generic_development.2.t
+	desc = generic_development.2.desc 
+	picture = GFX_industry_development_level_down
+	is_triggered_only = yes
+
+	option = {
+		name = generic_development.2.a
+		ai_chance = { base = 100 } 
+		decrease_industry = yes
+	}
+}
+
+country_event = {
+	id = generic_development.3
+	title = generic_development.3.t
+	desc = generic_development.3.desc 
+	picture = GFX_military_development_level_up
+	is_triggered_only = yes
+
+	option = {
+		name = generic_development.3.a 
+		ai_chance = { base = 100 } 
+		increase_military = yes
+	}
+}
+
+country_event = {
+	id = generic_development.4
+	title = generic_development.4.t
+	desc = generic_development.4.desc 
+	picture = GFX_military_development_level_down
+	is_triggered_only = yes
+
+	option = {
+		name = generic_development.4.a
+		ai_chance = { base = 100 } 
+		decrease_military = yes
+	}
+}
+
+country_event = {
+	id = generic_development.5
+	title = generic_development.5.t
+	desc = generic_development.5.desc 
+	picture = GFX_society_development_level_up
+	is_triggered_only = yes
+
+	option = {
+		name = generic_development.5.a 
+		ai_chance = { base = 100 } 
+		increase_society = yes
+	}
+}
+
+country_event = {
+	id = generic_development.6
+	title = generic_development.6.t
+	desc = generic_development.6.desc 
+	picture = GFX_society_development_level_down
+	is_triggered_only = yes
+
+	option = {
+		name = generic_development.6.a
+		ai_chance = { base = 100 } 
+		decrease_society = yes
+	}
+}
+
+country_event = {
+	id = generic_development.7
+	title = generic_development.7.t
+	desc = generic_development.7.desc 
+	picture = GFX_agriculture_development_level_up
+	is_triggered_only = yes
+
+	option = {
+		name = generic_development.7.a 
+		ai_chance = { base = 100 } 
+		increase_agriculture = yes
+	}
+}
+
+country_event = {
+	id = generic_development.8
+	title = generic_development.8.t
+	desc = generic_development.8.desc 
+	picture = GFX_agriculture_development_level_down
+	is_triggered_only = yes
+
+	option = {
+		name = generic_development.8.a
+		ai_chance = { base = 100 } 
+		decrease_agriculture = yes
+	}
+}
+
+country_event = {
+	id = generic_development.9
+	title = generic_development.9.t
+	desc = generic_development.9.desc 
+	picture = GFX_administrative_efficiency_development_level_up
+	is_triggered_only = yes
+
+	option = {
+		name = generic_development.9.a 
+		ai_chance = { base = 100 } 
+		increase_agriculture = yes
+	}
+}
+
+country_event = {
+	id = generic_development.10
+	title = generic_development.10.t
+	desc = generic_development.10.desc 
+	picture = GFX_aadministrative_efficiency_development_level_down
+	is_triggered_only = yes
+
+	option = {
+		name = generic_development.10.a
+		ai_chance = { base = 100 } 
+		decrease_agriculture = yes
+	}
+}
+
+country_event = {
+	id = generic_development.11
+	title = generic_development.11.t
+	desc = generic_development.11.desc 
+	picture = GFX_poverty_development_level_up
+	is_triggered_only = yes
+
+	option = {
+		name = generic_development.11.a 
+		ai_chance = { base = 100 } 
+		increase_poverty = yes
+	}
+}
+
+country_event = {
+	id = generic_development.12
+	title = generic_development.12.t
+	desc = generic_development.12.desc 
+	picture = GFX_poverty_development_level_down
+	is_triggered_only = yes
+
+	option = {
+		name = generic_development.12.a
+		ai_chance = { base = 100 } 
+		decrease_poverty = yes
+	}
+}

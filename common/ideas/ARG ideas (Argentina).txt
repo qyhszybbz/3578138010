@@ -1,0 +1,84 @@
+ideas = {
+	country = {
+		### 初始民族精神 ###
+		#饱受争议的王室
+		ARG_The_controversial_royal_family = {
+			on_add = { log = "[GetLogRoot]: add idea ARG_The_controversial_royal_family" }
+			picture = The_controversial_royal_family
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+		#失去的繁荣
+		ARG_lost_prosperity = {
+			on_add = { log = "[GetLogRoot]: add idea ARG_lost_prosperity" }
+			picture = lost_prosperity
+			allowed = { always = no }
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				consumer_goods_expected_value = 0.05
+				mobilization_speed = -0.15
+			}
+		}
+		#军政关系矛盾
+		ARG_Military_political_rc = { 
+			on_add = { log = "[GetLogRoot]: add idea ARG_Military_political_rc" }
+			picture = Military_political_rc
+			allowed = { always = no }
+			modifier = {
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				army_org_factor = -0.1
+			}
+		}
+		#罗加-萨罗协议
+		ARG_Roga_Saro_Agreement = {
+			on_add = { log = "[GetLogRoot]: add idea ARG_Roga_Saro_Agreement" }
+			picture = Roga_Saro_Agreement
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = 0.05
+				min_export = 0.1
+				trade_laws_cost_factor = 0.15
+			}
+		}
+		#阿根廷国立石油公司
+		ARG_Argentine_National_Oil_Company = {
+			on_add = { log = "[GetLogRoot]: add idea ARG_Argentine_National_Oil_Company" }
+			picture = Argentine_National_Oil_Company
+			allowed = { always = no }
+			modifier = {
+				local_resources_factor  = 0.15
+			}
+		}
+		#巴拉圭指数：沸反盈天
+		ARG_Paraguay_Index = { 
+			on_add = { log = "[GetLogRoot]: add idea ARG_Paraguay_Index" }
+			picture = Paraguay_Index
+			allowed = { always = no }
+			on_add = {
+				PAR = {
+					add_ideas = PAR_paraguayan_resistance
+				}
+			}
+			on_remove = {
+				PAR = {
+					remove_ideas = PAR_paraguayan_resistance
+				}
+			}
+			modifier = {
+				custom_modifier_tooltip = ARG_Paraguay_Index_tt
+			}
+		}
+		#南美的灯塔
+		ARG_south_america_lighthouse = {
+			on_add = { log = "[GetLogRoot]: add idea ARG_south_america_lighthouse" }
+			picture = south_america_lighthouse
+			allowed = { always = no }
+			modifier = {
+				drift_defence_factor = 0.2
+			}
+		}
+	}
+}

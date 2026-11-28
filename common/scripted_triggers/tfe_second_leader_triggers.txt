@@ -1,0 +1,8 @@
+has_second_leader = { #副领导人显示检测
+	OR = {
+		has_idea = ARG_Amedeo_II
+		has_idea = DOM_Raphael_Trujillo
+		has_idea = GER_Hjalmar_Schacht
+		has_idea = POR_antonio_de_oliveira_salazar
+	}
+}

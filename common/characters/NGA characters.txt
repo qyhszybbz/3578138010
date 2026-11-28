@@ -1,0 +1,17 @@
+characters={
+	#领导人
+	#赫伯特·麦考莱
+	NGA_Herbert_Macaulay = {
+		name = NGA_Herbert_Macaulay
+		portraits = {
+			civilian={
+				large = GFX_NGA_Herbert_Macaulay_large
+			}
+		}
+		country_leader = {
+			desc = NGA_Herbert_Macaulay_desc
+			ideology = democracy_small
+			traits={ }
+		}
+	}
+}

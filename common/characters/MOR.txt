@@ -1,0 +1,18 @@
+characters = {
+    MOR_MHMD_IV= {
+        name =  MOR_MHMD_IV
+        portraits = {
+            civilian = {
+                large = GFX_leaders_MOR_MHMD_IV
+            }
+        }
+        
+        country_leader = {
+            ideology = tttt_small
+
+            traits = {
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,234 @@
+@FACTION_TEXT_X = 55
+@LOYALTY_TEXT_X = 240
+@POPULARITY_TEXT_X = 380
+@FACTION_ICONS_X = 10
+@FACTION_NAMES_X = 55
+@HEADERS_Y = 0
+guiTypes = {
+
+	containerWindowType = {
+		name = "SOV_Legco"
+		position = { x = 350 y = 100 }
+		size = { width = 1500 height= 1500 }
+		fade_time = 7000
+		fade_type = linear
+		background = {
+			name = Background
+			quadTextureSprite = "GFX_SOV_LEGCO_BACKGROUND"
+		}
+		buttonType = {
+			name ="SOV_ICON_TWO"
+			quadTextureSprite = "GFX_SOV_LEGCO_TEST"
+			position = { x = 250 y = 250 }
+		}
+		buttonType = {
+			name ="SOV_CPP"
+			quadTextureSprite = "GFX_SOV_RUSSIAN_MAP"
+			position = { x = 615 y = 600 }
+			pdx_tooltip_delayed = GNG_legco_current_ordinance_tt
+		}
+
+		buttonType = {
+			name ="KLSJ"
+			quadTextureSprite = "GFX_KLSJ"
+			position = { x = 5 y = 10 }
+			pdx_tooltip_delayed = KLSJ_tt
+		}
+		buttonType = {
+			name ="QENF"
+			quadTextureSprite = "GFX_QENF"
+			position = { x = 1015 y = 10 }
+		}
+		instantTextBoxType = {
+			name = "TVE_DSB_KEWANLUXIAN"
+			position = { x = 990 y = 250 }
+			borderSize = {x = 20 y = 0 }
+			font = "hoi_18mbs"
+			text = "DUMA_ZONGLI"
+			maxWidth = 410
+			maxHeight = 200
+		}
+		instantTextBoxType = {
+			name = "TVE_SOV_LEADER_PONITS"
+			position = { x = 0 y = 250 }
+			borderSize = {x = 20 y = 0 }
+			font = "hoi_18mbs"
+			text = "SOV_ZONGTONG"
+			maxWidth = 410
+			maxHeight = 200
+		}
+		instantTextBoxType = {
+			name = "SOV_DUMA_NAME"
+			position = { x = 520 y = 10 }
+			borderSize = {x = 20 y = 0 }
+			font = "hoi_24header"
+			text = "SOV_DUMA_NAME"
+			maxWidth = 410
+			maxHeight = 200
+		}
+		instantTextBoxType = {
+			name = "SOV_DUMA_OPEN"
+			position = { x = 540 y = 30 }
+			borderSize = {x = 20 y = 0 }
+			font = "hoi_24header"
+			text = "SOV_DUMA_OPEN"
+			maxWidth = 410
+			maxHeight = 200
+		}
+		containerWindowType = {
+			name = "GNG_legco_ord"
+			position = { x = 960 y = 445 }
+			size = { width = 216 height = 62 }
+
+			instantTextboxType = {
+				name = "ordinance_name"
+				position = { x = 42 y = 9 }
+				font = "hoi_18mbs"
+				text = "GNG_legco_historic_ordinance_title"
+				maxWidth = 164
+				format = center
+				alwaystransparent = yes
+				multiline = yes
+
+				maxHeight = 40
+				vertical_alignment = center
+			}
+
+			iconType = {
+				name = "history_letterhead"
+				quadTextureSprite = "GFX_GNG_LegCo_Ordinance_History_Letterhead"
+				position = { x = 0 y = 0 }
+			}
+
+			iconType = {
+				name = "history_symbol"
+				quadTextureSprite = "GFX_GNG_LegCo_Ordinance_Symbol"
+				position = { x = 11 y = 16 }
+			}
+
+			iconType = {
+				name = "history_bg"
+				spriteType = "GFX_GNG_LegCo_Ordinance_History_Background"
+				position = { x = 0 y = 0 }
+				pdx_tooltip = "GNG_legco_historic_ordinance_tt"
+			}
+		}
+	}
+	containerWindowType = {
+		name = "HEYIWEI"
+		position = { x = 1310 y = 605 }
+		size = { width = 216 height = 62 }
+
+		instantTextboxType = {
+			name = "ordinance_name"
+			position = { x = 42 y = 9 }
+			font = "hoi_18mbs"
+			text = "LIULIULIU"
+			maxWidth = 164
+			format = center
+			alwaystransparent = yes
+			multiline = yes
+
+			maxHeight = 40
+			vertical_alignment = center
+		}
+
+		iconType = {
+			name = "history_letterhead"
+			quadTextureSprite = "GFX_GNG_LegCo_Ordinance_History_Letterhead"
+			position = { x = 0 y = 0 }
+		}
+
+		iconType = {
+			name = "history_symbol"
+			quadTextureSprite = "GFX_GNG_LegCo_Ordinance_Symbol"
+			position = { x = 11 y = 16 }
+		}
+
+		iconType = {
+			name = "history_bg"
+			spriteType = "GFX_GNG_LegCo_Ordinance_History_Background"
+			position = { x = 0 y = 0 }
+			pdx_tooltip = "HOUYAOWEN"
+		}
+	}
+	containerWindowType = {
+		name = "SOV_ZHEMEQIANG"
+		position = { x = 355 y = 550 }
+		size = { width = 1500 height= 1500 }
+		background = {
+			name = Background
+			quadTextureSprite = "GFX_GNG_IJA_LegCo_Cover"
+		}
+	}
+	containerWindowType = {
+		name = "NBKF_LAILE"
+		position = { x = 355 y = 110 }
+		size = { width = 1500 height= 1500 }
+		background = {
+			name = Background
+			quadTextureSprite = "GFX_NBKF"
+		}
+	}
+
+
+	containerWindowType = {
+		name = "SOV_PARTY"
+		position = { x = 0 y = 0 }
+		size = { width = 1500 height= 1500 }
+		fade_time = 7000
+		fade_type = linear
+
+		background = {
+			name = Background
+			quadTextureSprite = "GFX_SOV_LEGCO_BACKGROUND"
+		}
+
+		buttonType = {
+			name ="NBKF"
+			quadTextureSprite = "GFX_NBKF"
+			position = { x = 5 y = 10 }
+		}
+		buttonType = {
+			name ="NKLSF"
+			quadTextureSprite = "GFX_NKLSF"
+			position = { x = 1015 y = 10 }
+		}
+		instantTextBoxType = {
+			name = "SOV_CPP_NKLSF"
+			position = { x = 990 y = 250 }
+			borderSize = {x = 20 y = 0 }
+			font = "hoi_18mbs"
+			text = "SOV_CPP_NKLSF"
+			maxWidth = 200
+			maxHeight = 200
+		}
+		instantTextBoxType = {
+			name = "SOV_CPP_NBKF"
+			position = { x = 0 y = 250 }
+			borderSize = {x = 20 y = 0 }
+			font = "hoi_18mbs"
+			text = "SOV_CPP_NBKF"
+			maxWidth = 200
+			maxHeight = 200
+		}
+		instantTextBoxType = {
+			name = "SOV_CPP"
+			position = { x = 520 y = 10 }
+			borderSize = {x = 20 y = 0 }
+			font = "hoi_24header"
+			text = "SOV_CPP"
+			maxWidth = 200
+			maxHeight = 200
+		}
+		instantTextBoxType = {
+			name = "SOV_CPP_DECISION"
+			position = { x = 540 y = 300 }
+			borderSize = {x = 20 y = 0 }
+			font = "hoi_24header"
+			text = "SOV_CPP_DECISION"
+			maxWidth = 200
+			maxHeight = 200
+		}
+	}
+}

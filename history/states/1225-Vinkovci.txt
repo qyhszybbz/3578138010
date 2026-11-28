@@ -1,0 +1,29 @@
+
+state={
+	id = 1225
+	name="STATE_1225"
+	manpower = 223769
+	resources={
+	
+	}	
+	state_category = town
+	history={
+		owner = CRO
+		add_core_of = CRO
+		add_claim_by = YUG
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			air_base = 1
+		}
+		victory_points = {
+			11580 8
+		}
+	}
+
+	provinces={
+		11580
+	}
+
+	local_supplies=0.0 
+}

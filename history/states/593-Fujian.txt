@@ -1,0 +1,30 @@
+state = {
+	id = 593
+	name = "STATE_593"
+	manpower = 3942990
+	state_category = city
+	history = {
+		owner = FUJ
+		add_core_of = FUJ
+		add_core_of = CHI
+		add_core_of = PRC
+		add_extra_state_shared_building_slots = 2
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
+		}
+		1938.10.25 = {		
+			JAP = {
+				set_province_controller = 4196
+				set_province_controller = 7071
+			} 			
+		}
+		victory_points = {
+			1138 10
+		}
+	}
+	provinces = {
+		1094 1138 4070 4113 10012 10042 10084 11961
+	}
+	local_supplies = 7
+}

@@ -1,0 +1,29 @@
+
+state={
+	id = 487
+	name="STATE_487" # Zulia
+	manpower = 400639
+	
+	state_category = town
+	
+	resources={
+		oil=35 # was: 126
+	}
+
+	history={
+		owner = VEN
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+		}
+		add_core_of = VEN
+		
+
+	}
+
+	provinces={
+		2052 12772 
+	}
+
+	local_supplies=6.0 
+}

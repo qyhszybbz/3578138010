@@ -1,0 +1,35 @@
+state = {
+	id = 1102
+	name = "STATE_1102"
+	manpower = 3270448
+	state_category = rural
+	history = {
+		owner = HNA
+		add_core_of = HNA
+		add_core_of = CHI
+		add_core_of = PRC
+		add_extra_state_shared_building_slots = 2
+		buildings = {
+			arms_factory = 2
+			industrial_complex = 1
+			infrastructure = 1
+		}
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 4
+				infrastructure = 2
+				air_base = 1
+				arms_factory = 2
+
+			}
+
+		}
+		victory_points = {
+			10377 3
+		}
+	}
+	provinces = {
+		4125 10377 12053 12378
+	}
+	local_supplies = 7
+}

@@ -1,0 +1,57 @@
+ideas = {
+	country = {
+		CHL_The_defeat_in_the_Pacific_War = { #太平洋战争的失败
+			on_add = {log = "[GetDateText]: [Root.GetName]: add CHL_The_defeat_in_the_Pacific_War "}
+			picture = "GFX_idea_CHL_The_defeat_in_the_Pacific_War"
+			modifier = {
+				 experience_gain_army_factor = -0.15
+    			 army_org_factor = -0.1
+				 naval_speed_factor = -0.1
+    			 army_core_attack_factor = -0.10
+    			 army_core_defence_factor = -0.10
+				 production_speed_dockyard_factor = -0.05
+			}
+		}
+		CHL_Patagonia_Affairs_Bureau = { #巴塔哥尼亚事务局
+			on_add = {log = "[GetDateText]: [Root.GetName]: add CHL_Patagonia_Affairs_Bureau "}
+			picture = "GFX_idea_CHL_Patagonia_Affairs_Bureau"
+			modifier = {
+				political_power_factor = 0.05
+			}
+		}
+		CHL_Patagonia_Affairs_Bureau_2 = { #巴塔哥尼亚事务局
+			on_add = {log = "[GetDateText]: [Root.GetName]: add CHL_Patagonia_Affairs_Bureau_2 "}
+			picture = "CHL_Patagonia_Affairs_Bureau"
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+		CHL_Patagonia_Affairs_Bureau_3 = { #巴塔哥尼亚事务局
+			on_add = {log = "[GetDateText]: [Root.GetName]: add CHL_Patagonia_Affairs_Bureau_3 "}
+			picture = "CHL_Patagonia_Affairs_Bureau"
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+		CHL_glimmer_of_democracy = { #民主微光
+			on_add = {log = "[GetDateText]: [Root.GetName]: add CHL_glimmer_of_democracy "}
+			picture = "GFX_idea_CHL_glimmer_of_democracy"
+			on_add = {
+				add_popularity = {
+					ideology = Democracy
+					popularity = 0.1
+			}
+			}
+			on_remove = {
+				add_popularity = {
+					ideology = Democracy
+					popularity = -0.1
+			}
+			}
+			modifier = {
+				stability_factor = 0.1
+				custom_modifier_tooltip = CHL_glimmer_of_democracy_tt
+			}
+		}
+	}
+}

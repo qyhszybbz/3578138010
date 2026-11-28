@@ -1,0 +1,34 @@
+leader_traits ={
+	#政府首脑兼财政部长
+	POR_salazar_head_of_government = {
+		random = no
+		political_power_factor = 0.10
+		consumer_goods_factor = -0.05
+		trade_opinion_factor = 0.30
+	}
+	#国防部长
+	POR_carmona_defence_minister = {
+		random = no
+		army_org_factor = 0.05
+		army_strength_factor = 0.03
+		army_org_regain = 0.10
+		war_support_factor = 0.05
+	}
+	#内政部长
+	POR_jimenez_interior_minister = {
+		random = no
+		stability_factor = 0.10
+		war_support_factor = 0.02
+	}
+	#外交部长
+	POR_saramago_foreign_minister = {
+		random = no
+		send_volunteer_size = 2
+	}
+	#宣传部长
+	POR_pessoa_propaganda_minister = {
+		random = no
+		resistance_growth = -0.12
+		compliance_gain = 0.20
+	}
+}

@@ -1,0 +1,274 @@
+#内战
+LBV_collapse_war_decisions = {
+	### 开始 ###
+	#求购流失步枪
+	LBV_Purchasing_Lost_Rifle = {
+		icon = GFX_decision_category_GER_war_planning
+		allowed = { original_tag = LBV }
+
+		visible = {
+			OR = {
+				country_exists = ITA
+				country_exists = TTS
+			}
+		}
+		cost = 30
+		days_remove = 14
+		days_re_enable = 10
+
+		ai_will_do = { factor = 400 }
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+		remove_effect = {
+			log = "[GetLogRoot]: Decision remove LBV_Purchasing_Lost_Rifle"
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 492
+				producer = AUS
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 151
+				producer = SWI
+			}
+		}
+		fixed_random_seed = no
+	}
+	#照顾军火黑市
+	LBV_Managing_black_market = {
+		icon = GFX_decision_category_GER_war_planning
+		allowed = { original_tag = LBV }
+
+		visible = {
+			OR = {
+				country_exists = ITA
+				country_exists = TTS
+			}
+		}
+		cost = 45
+		days_remove = 28
+		days_re_enable = 16
+
+		ai_will_do = { factor = 350 }
+		modifier = {
+			consumer_goods_factor = 0.08
+			industrial_capacity_factory = -0.05
+		}
+		remove_effect = {
+			log = "[GetLogRoot]: Decision remove LBV_Managing_black_market"
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_1
+				amount = 237
+				producer = FRA
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 448
+				producer = POL
+			}
+		}
+		fixed_random_seed = no
+	}
+	#瑞士老牌佣兵
+	LBV_Veteran_Swiss_Mercenary = {
+		icon = GFX_decision_category_GER_war_planning
+		allowed = { original_tag = LBV }
+		available = {
+			country_exists = SWI
+			has_equipment = { infantry_equipment > 480 }
+		}
+		visible = {
+			OR = {
+				country_exists = ITA
+				country_exists = TTS
+			}
+		}
+		cost = 50
+		days_remove = 12
+		days_re_enable = 40
+
+		ai_will_do = { factor = 450 }
+		
+		modifier = {
+			industrial_capacity_factory = -0.15
+		}
+		complete_effect = {  
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -480
+			}
+		}
+		remove_effect = {
+			log = "[GetLogRoot]: Decision remove LBV_Veteran_Swiss_Mercenary"
+			custom_effect_tooltip = LBV_Veteran_Swiss_Mercenary_tt
+			hidden_effect = {
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 159 }
+					create_unit = {
+						division = "name = \"瑞士佣兵队\" division_template = \"瑞士佣兵\" start_experience_factor = 0.75" 
+						owner = LBV
+					}
+				}
+			}
+		}
+		fixed_random_seed = no
+	}
+	### 为统一做准备 ###
+	#渗透敌方组织
+	LBV_Infiltrate_enemy_organization = {
+		icon = generic_scorched_earth
+
+		targets = { LBV }
+
+		target_trigger = {
+			always = yes
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				OR = {
+					is_owned_by = TTS
+					is_owned_by = ITA
+				}
+			}
+		}
+		allowed = { always = no }
+		
+		available = {
+			has_equipment = {
+				infantry_equipment > 128
+				support_equipment > 15
+			}
+		}
+		visible = {
+			PREV = {
+				OR = {
+					is_owned_by = TTS
+					is_owned_by = ITA
+				}
+			}
+		}
+
+		cost = 15
+		days_remove = 10
+
+		ai_will_do = { factor = 200 }
+		modifier = {
+			experience_gain_army_factor = -0.15
+		}
+		remove_effect = {
+			log = "[GetLogRoot]: Decision remove LBV_Infiltrate_enemy_organization"
+			
+		}
+		fixed_random_seed = no
+	}
+	#寻求外国援助
+	LBV_Seeking_foreign_aid = {
+		icon = GFX_decision_category_GER_war_planning
+		allowed = { always = no }
+
+		available = {
+			has_war = no
+		}
+		visible = {
+			OR = {
+				country_exists = ITA
+				country_exists = TTS
+			}
+		}
+
+		fire_only_once = yes
+		cost = 20
+		days_remove = 25
+
+		ai_will_do = { factor = 100 }
+
+		remove_effect = {
+			log = "[GetLogRoot]: Decision remove LBV_Seeking_foreign_aid"
+			
+		}
+		fixed_random_seed = no
+	}
+	#建立军工厂
+	LBV_Establish_military_factory = {
+		icon = GFX_decision_category_GER_war_planning
+		allowed = { always = no }
+
+		available = {
+			has_war = no
+		}
+		visible = {
+			OR = {
+				country_exists = ITA
+				country_exists = TTS
+			}
+		}
+
+		fire_only_once = yes
+		cost = 20
+		days_remove = 25
+
+		ai_will_do = { factor = 200 }
+
+		remove_effect = {
+			log = "[GetLogRoot]: Decision remove LBV_Establish_military_factory"
+			
+		}
+		fixed_random_seed = no
+	}
+	#破坏敌方补给
+	LBV_Destroy_enemy_supplies = {
+		icon = GFX_decision_category_GER_war_planning
+		allowed = { always = no }
+
+		available = {
+			has_war = no
+		}
+		visible = {
+			OR = {
+				country_exists = ITA
+				country_exists = TTS
+			}
+		}
+
+		fire_only_once = yes
+		cost = 20
+		days_remove = 25
+
+		ai_will_do = { factor = 200 }
+
+		remove_effect = {
+			log = "[GetLogRoot]: Decision remove LBV_Destroy_enemy_supplies"
+			
+		}
+		fixed_random_seed = no
+	}
+	#抢夺敌人物资
+	LBV_Seize_enemy_supplies = {
+		icon = GFX_decision_category_GER_war_planning
+		allowed = { always = no }
+
+		available = {
+			has_war = no
+		}
+		visible = {
+			OR = {
+				country_exists = ITA
+				country_exists = TTS
+			}
+		}
+
+		fire_only_once = yes
+		cost = 20
+		days_remove = 25
+
+		ai_will_do = { factor = 200 }
+
+		remove_effect = {
+			log = "[GetLogRoot]: Decision remove LBV_Seize_enemy_supplies"
+			
+		}
+		fixed_random_seed = no
+	}
+}

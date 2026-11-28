@@ -1,0 +1,99 @@
+defiend_text = { #阵营图标变化
+	name = GetDynamicFactionIR 
+	text = { #没图标暂时顶着
+		trigger = {
+			THIS = {
+				NOT = {
+					is_in_array = {
+					global.grid_faction_array_ARG = THIS
+				}
+				}
+			}
+		}
+		localization_key = "GFX_ideology_XiLin"
+	}
+	text = {
+		trigger = { #布宜诺斯艾利斯公约组织
+			THIS = {
+				is_in_array = {
+					global.grid_faction_array_ARG = THIS
+				}
+			}
+		}
+		localization_key = "GFX_camp_ARG_Buenos_Aires_Organization"
+	}
+	#text = {
+	#	trigger = { #奥地利-匈牙利
+	#		THIS = {
+	#			is_in_array = {
+	#				global.grid_faction_array_AUS = THIS
+	#			}
+	#		}
+	#	}
+	#	localization_key = "GFX_camp_ARG_Buenos_Aires_Organization"
+	#}
+	#text = {
+	#	trigger = { #海间联邦
+	#		THIS = {
+	#			is_in_array = {
+	#				global.grid_faction_array_POL = THIS
+	#			}
+	#		}
+	#	}
+	#	localization_key = "GFX_camp_ARG_Buenos_Aires_Organization"
+	#}
+}
+defiend_text = { #阵营旗帜变化
+	name = GetFactionBanner
+	text = {
+		trigger = { #布宜诺斯艾利斯公约组织
+			THIS = {
+				is_in_array = {
+					global.grid_faction_array_ARG = THIS
+				}
+			}
+		}
+		localization_key = "GFX_camp_ARG_BaOA_banner"
+	}
+	#text = {
+	#	trigger = { #奥地利-匈牙利
+	#		THIS = {
+	#			is_in_array = {
+	#				global.grid_faction_array_AUS = THIS
+	#			}
+	#		}
+	#	}
+	#	localization_key = "GFX_camp_ARG_Buenos_Aires_Organization"
+	#}
+	#text = {
+	#	trigger = { #海间联邦
+	#		THIS = {
+	#			is_in_array = {
+	#				global.grid_faction_array_POL = THIS
+	#			}
+	#		}
+	#	}
+	#	localization_key = "GFX_camp_ARG_Buenos_Aires_Organization"
+	#}
+}
+defiend_text = { #阵营领导者判断
+	name = GetFactionLeader
+	text = {
+		trigger = { 
+			THIS = {
+				is_faction_leader = yes
+			}
+		}
+		localization_key = "Leader"
+	}
+	text = {
+		trigger = { 
+			THIS = {
+				NOT = {
+					is_faction_leader = yes
+				}
+			}
+		}
+		localization_key = "Member_states"
+	}
+}

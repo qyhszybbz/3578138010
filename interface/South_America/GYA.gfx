@@ -1,0 +1,7 @@
+spriteTypes = { 
+	###领导人
+	spriteType = { #威廉·克里斯蒂
+		name = "GFX_leader_GYA_william_christie" 
+		texturefile = "gfx/leaders/GYA/GYA_william_christie.dds"
+	}
+}

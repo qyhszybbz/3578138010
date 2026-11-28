@@ -1,0 +1,40 @@
+﻿capital = 317
+
+oob = "HAI_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+ 
+set_war_support = 0.1
+set_convoys = 5
+
+recruit_character = HAI_Jacques_Roumin
+recruit_character = HAI_Demostnes_Petrus_Callixter
+recruit_character = HAI_Pierre_Joseph_Louis_Dejouy
+recruit_character = HAI_Steinho_Joseph_Vincent
+recruit_character = HAI_John_Henry_Russell_Jr
+recruit_character = HAI_Carl_Bruyard
+
+add_ideas = {
+	HAI_Dixies_Slave
+	HAI_Crossing_the_Masak_River
+	HAI_A_government_that_has_stalled
+}
+
+set_politics = {
+	ruling_party = Liberalism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	communism = 1
+	Socialism = 1
+	Liberalism = 38
+	Conservatism = 7
+	Authoritarianism = 23
+	tttt = 25
+	fascism = 5
+}

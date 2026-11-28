@@ -1,0 +1,22 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_years5_plan"
+		texturefile = "gfx/interface/ideas/BRC/years5_plan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_The_Big_Three"
+		texturefile = "gfx/interface/ideas/BRC/The_Big_Three.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Corruption_and_welfare"
+		texturefile = "gfx/interface/ideas/BRC/Corruption_and_welfare.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Across_the_ocean"
+		texturefile = "gfx/interface/ideas/BRC/Across_the_ocean.png"
+	}
+	spriteType = {
+		name = "GFX_idea_red_write_blue"
+		texturefile = "gfx/interface/ideas/BRC/red_write_blue.png"
+	}
+}

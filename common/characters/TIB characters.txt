@@ -1,0 +1,16 @@
+characters = {
+    #领导人
+    #九世班禅额尔德尼
+	TIB_Panchen_Chokyi_Nyima = {
+        name = TIB_Panchen_Chokyi_Nyima
+        portraits = {
+			civilian = {
+				large = GFX_TIB_Panchen_Chokyi_Nyima_large
+			}
+		}
+		country_leader = {
+			ideology = authoritarianism_small
+			traits = { }
+		}
+    }
+}

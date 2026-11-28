@@ -1,0 +1,33 @@
+state = {
+	id = 196
+	name = "STATE_196"
+	manpower = 617383
+	
+	state_category = rural
+	
+	resources = {
+		chromium = 18
+	}
+
+	history = {
+		owner = NRO
+		add_core_of = NRO
+		add_core_of = UKR
+		add_core_of = CRI
+		buildings = {
+			infrastructure = 3
+			dockyard = 1
+			arms_factory = 1
+			737 = { dam = 1 }
+		}
+		victory_points = {
+			721 5 #赫尔松
+		}
+	}
+
+	provinces = {
+		568 721 737 767 3573 6771 9712
+	}
+
+	local_supplies = 0.0 
+}

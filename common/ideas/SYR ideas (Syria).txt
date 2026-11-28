@@ -1,0 +1,55 @@
+ideas = {
+	country = {
+        ### 初始民族精神 ###
+        #封建社会
+        SYR_Feudal_society = {
+			on_add = { log = "[GetLogRoot]: add idea SYR_Feudal_society" }
+			picture = Feudal_society
+			allowed = { always = no }
+			modifier = {
+                political_power_cost = 0.1
+				stability_factor = -0.10
+				production_factory_efficiency_gain_factor = -0.10
+				production_factory_max_efficiency_factor = -0.10
+				line_change_production_efficiency_factor = -0.10
+				industrial_capacity_factory = -0.15
+				production_speed_buildings_factor = -0.20
+				conscription = -0.005
+				Authoritarianism_drift = 0.02
+				tttt_drift = 0.02
+			}
+		}
+		#民族革命军
+		SYR_National_Revolutionary_Army = {
+			on_add = { log = "[GetLogRoot]: add idea SYR_National_Revolutionary_Army" }
+			picture = National_Revolutionary_Army
+			allowed = { always = no }
+			modifier = {
+                stability_factor = -0.15
+				conscription_factor = -0.10
+				communism_drift = 0.01
+				Socialism_drift = 0.01
+				Progressivism_drift = 0.01
+				Liberalism_drift = 0.01
+				Democracy_drift = 0.01
+				fascism_drift = 0.01
+			}
+		}
+		#囚笼之下
+		SYR_Beneath_Prison_Cage = {
+			on_add = { log = "[GetLogRoot]: add idea SYR_Beneath_Prison_Cage" }
+			picture = Beneath_Prison_Cage
+			allowed = { always = no }
+			targeted_modifier = {
+				tag = TUR
+				cic_to_target_factor = 0.30
+				mic_to_target_factor = 0.30
+				custom_modifier_tooltip = SYR_Beneath_Prison_Cage_tt
+			}
+			modifier = {
+                political_power_factor = -0.20
+				stability_factor = -0.05
+			}
+		}
+	}
+}

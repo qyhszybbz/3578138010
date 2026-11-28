@@ -1,0 +1,25 @@
+ideas = {
+	country = {
+		MZB_Resistance = { #雨林中的抵抗组织
+			picture = GFX_idea_MZB_Resistance
+			modifier = {
+				war_support_factor= -0.1
+				stability_factor = -0.1
+				resistance_growth = 0.01
+			}
+		}
+		MZB_expanding_colony = { #扩张的殖民地
+			picture = GFX_idea_MZB_expanding_colony
+			modifier = {
+				production_speed_buildings_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = POR
+				cic_to_target_factor = 0.3
+				mic_to_target_factor = 0.3
+				trade_opinion_factor = 0.3
+			
+		}
+	}
+}
+}

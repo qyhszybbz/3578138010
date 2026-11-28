@@ -1,0 +1,29 @@
+state = {
+	id = 611
+	name = "STATE_611"
+	manpower = 9276641
+	state_category = city
+	history = {
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+		add_extra_state_shared_building_slots = 1
+		buildings = {
+			air_base = 1
+			arms_factory = 3
+			industrial_complex = 2
+			infrastructure = 3
+		}
+		victory_points = {
+			12467 15
+		}
+		victory_points = {
+			7167 10
+		}
+			}
+	provinces = {
+		1036 4631 7167 7637 9959 10462 12467
+	}
+	local_supplies = 7
+	buildings_max_level_factor = 1.000
+}

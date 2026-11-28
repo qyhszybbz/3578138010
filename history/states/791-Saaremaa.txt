@@ -1,0 +1,25 @@
+
+state={
+	id = 791
+	name="STATE_791"
+
+	history={
+		owner = BAT
+		add_core_of = BAT
+		add_core_of = EST
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			185 3
+		}
+	}
+
+	provinces={
+		185 6201 
+	}
+	manpower=32370
+	buildings_max_level_factor=1.000
+	state_category=small_island
+}

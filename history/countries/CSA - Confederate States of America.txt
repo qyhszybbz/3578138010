@@ -1,0 +1,294 @@
+﻿capital = 1204 #里士满
+oob = "CSA_1935"
+set_naval_oob = "CSA_navy_1935"
+set_air_oob = "CSA_air_1935"
+set_stability = 0.75
+set_war_support = 0.55
+starting_train_buffer = 1
+set_fuel_ratio = 0.8
+set_research_slots = 2
+
+set_variable = { var = senators_support value = 48 }
+set_variable = { var = senators_total value = 96 }
+set_variable = { var = representatives_support value = 218 }
+set_variable = { var = representatives_total value = 435 }
+set_variable = { var = quorum_low value = 39 }
+set_variable = { var = quorum_medium value = 49 }
+set_variable = { var = quorum_high value = 58 }
+
+### 初始科技 ###
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	basic_train = 1
+
+	#下面是空军科技
+	iw_small_airframe = 1
+	iw_medium_airframe = 1
+	aa_lmg = 1
+	engines_1 = 1
+	early_bombs = 1
+	bba_early_transport_plane = 1
+
+	#下面是海军科技
+	early_ship_hull_light = 1        
+	early_ship_hull_cruiser = 1      
+	early_ship_hull_heavy = 1        
+	early_ship_hull_submarine = 1
+	early_ship_hull_carrier = 1
+	basic_naval_mines = 1
+	submarine_mine_laying = 1    
+	basic_battery = 1
+	basic_light_battery = 1
+	basic_heavy_battery = 1
+	basic_torpedo = 1
+	sonar = 1
+	smoke_generator = 1
+	basic_depth_charges = 1
+	basic_cruiser_armor_scheme = 1
+	basic_heavy_armor_scheme = 1
+	mtg_transport = 1
+	basic_fire_control_system = 1
+	basic_dp_light_battery = 1
+	coastal_defense_ships = 1
+	
+}
+
+### 傀儡国 ###
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = TEX
+		autonomous_state = Autonomous_state
+		freedom_level = 0.5
+	}
+	set_autonomy = {
+		target = NMX
+		autonomous_state = Autonomous_state
+		freedom_level = 0.5
+	}
+	set_autonomy = {
+		target = COO
+		autonomous_state = Autonomous_state
+		freedom_level = 0.5
+	}
+	set_autonomy = {
+		target = UTA
+		autonomous_state = Autonomous_state
+		freedom_level = 0.5
+	}
+	set_autonomy = {
+		target = ARI
+		autonomous_state = Autonomous_state
+		freedom_level = 0.5
+	}
+	set_autonomy = {
+		target = NEV
+		autonomous_state = Autonomous_state
+		freedom_level = 0.5
+	}
+
+	else = {
+		puppet = TEX
+		puppet = SCF
+		puppet = NMX
+	}
+}
+
+### 领导人 ###
+recruit_character = CSA_Charles_Coughlin #查尔斯·考夫林
+recruit_character = CSA_Hugh_Long #休伊·朗
+recruit_character = CSA_Placeholder #占位
+#政治顾问
+recruit_character =	CSA_Earl_Lang #厄尔·朗
+recruit_character =	CSA_Harold_Iks #哈罗德·伊克斯
+recruit_character =	CSA_henry_ford #亨利·福特
+recruit_character =	CSA_Lyndon_B_Johnson #林登·B·约翰逊
+recruit_character =	CSA_Joseph_Raymond_McCarthy #约瑟夫·雷芒德·麦卡锡
+### 将领 ###
+recruit_character = CSA_Walton_Walker #沃尔顿·沃克
+recruit_character = CSA_Leslie_James #莱斯利·詹姆斯
+recruit_character = CSA_Omar_Nelson_Bradley #奥马尔·纳尔逊·布莱德雷
+recruit_character = CSA_Frederick_Halsey #弗雷德里克·哈尔西
+recruit_character = CSA_Simon_Bolivar_Bachner #西蒙·玻利瓦尔·巴克纳
+recruit_character = CSA_William_Henry_Ruperts #威廉·亨利·鲁珀特斯
+recruit_character = CSA_Clarence_Hubner #克莱伦斯·许布纳
+recruit_character = CSA_Edward_Armand #爱德华·阿尔芒德
+recruit_character = CSA_William_Arnold  #威廉·阿诺德
+recruit_character = CSA_Terry_Allen #特里·艾伦
+recruit_character = CSA_Alexander_Anderson #亚历山大·安德森
+recruit_character = CSA_Henry_Orland #亨利·奥兰德
+recruit_character = CSA_Levin_Allen #莱文·艾伦
+recruit_character = CSA_William_Belkin #威廉·贝尔金
+recruit_character = CSA_William_Butler #威廉·巴特勒
+recruit_character = CSA_Frank_Kulin #弗兰克·库林
+recruit_character = CSA_Norman_Cotta #诺曼·柯塔
+recruit_character = CSA_Douglas_MacArthur #道格拉斯·麦克阿瑟
+recruit_character =	CSA_John_Joseph_Pershing # 约翰·约瑟夫·潘兴
+
+set_convoys = 100
+
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	fascism = 32
+	communism = 4
+	Conservatism = 11
+	Authoritarianism = 20
+	nazism = 10
+	Liberalism = 21
+	tttt = 2
+}
+
+add_ideas = {
+	### 初始民族精神 ###
+	CSA_slave_and_industry #奴隶与工业化
+	CSA_west_slave_baodong #西部奴隶暴动
+	CSA_victory_of_civ_war #内战胜利者
+	CSA_jackson_stone_wall #“石墙”杰克逊精神
+
+	#顾问
+	CSA_Earl_Lang_pol #厄尔·朗
+	CSA_henry_ford_pol #亨利·福特
+	CSA_Joseph_Raymond_McCarthy_pol #约瑟夫·雷芒德·麦卡锡
+	CSA_Lyndon_B_Johnson_pol #林登·B·约翰逊
+}
+
+
+create_equipment_variant = {#战斗机
+	name = "OPR" 
+	type = small_plane_airframe_0
+	modules = {
+		fixed_main_weapon_slot = light_mg_4x
+		engine_type_slot = engine_1_1x
+		special_type_slot_1 = empty
+	}
+}
+create_equipment_variant = {#轰炸机
+	name = "DENFLY" 
+	type = medium_plane_airframe_0
+	modules = {
+		fixed_main_weapon_slot = medium_bomb_bay
+		engine_type_slot = engine_1_2x
+		special_type_slot_1 = empty
+	}
+}
+create_equipment_variant = {#舔地机
+	name = "LITEN" 
+	type = small_plane_cas_airframe_0
+	design_team = mio:ENG_hawker_organization
+	modules = {
+		fixed_main_weapon_slot = bomb_locks
+		engine_type_slot = engine_1_1x
+		special_type_slot_1 = empty
+	}
+	obsolete = yes
+	icon = "GFX_ENG_CAS1_medium"
+}
+
+
+create_equipment_variant = {#战列舰
+	name = "BattleShip"
+	type = ship_hull_heavy_1
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_heavy_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = heavy_ship_engine_1
+		fixed_ship_secondaries_slot = dp_ship_secondaries_2
+		fixed_ship_armor_slot = ship_armor_bc_2
+		front_1_custom_slot = ship_anti_air_1
+		mid_1_custom_slot = empty
+		mid_2_custom_slot = ship_secondaries_1
+		rear_1_custom_slot = ship_heavy_battery_1
+	}
+}
+create_equipment_variant = {#潜艇
+	name = "KLF Class"
+	type = ship_hull_submarine_1
+	parent_version = 0
+	modules = {
+		fixed_ship_torpedo_slot = ship_torpedo_sub_1
+		fixed_ship_engine_slot = sub_ship_engine_1
+		rear_1_custom_slot = empty
+	}
+	upgrades = {
+		ship_reliability_upgrade = 3
+		sub_engine_upgrade = 2
+		sub_stealth_upgrade = 2
+		sub_torpedo_upgrade = 3
+	}
+}
+create_equipment_variant = {#巡洋舰
+	name = "AL Class"
+	type = ship_hull_cruiser_1
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_medium_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = cruiser_ship_engine_1
+		fixed_ship_armor_slot = ship_armor_cruiser_1
+		mid_1_custom_slot = ship_torpedo_1
+		mid_2_custom_slot = ship_torpedo_1
+		rear_1_custom_slot = empty
+	}
+}
+create_equipment_variant = {#航母
+		name = "Courageous Class"
+		type = ship_hull_carrier_conversion_bb
+		parent_version = 0
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = dp_ship_secondaries_1
+			mid_1_custom_slot = ship_deck_space
+		}
+	}
+
+
+create_equipment_variant = {#航母
+	name = "General Lee Class"
+	type = ship_hull_carrier_conversion_bb
+	parent_version = 0
+	modules = {
+		fixed_ship_deck_slot_1 = ship_deck_space
+		fixed_ship_deck_slot_2 = ship_deck_space
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = carrier_ship_engine_1
+		fixed_ship_secondaries_slot = dp_ship_secondaries_1
+		mid_1_custom_slot = ship_deck_space
+	}
+}
+create_equipment_variant = {#舰载战斗机
+	name = "REBEL"
+	type = cv_small_plane_airframe_0
+	modules = {
+		fixed_main_weapon_slot = light_mg_2x
+		engine_type_slot = engine_1_1x
+		special_type_slot_1 = empty
+	}
+}

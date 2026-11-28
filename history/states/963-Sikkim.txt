@@ -1,0 +1,30 @@
+
+state={
+	id = 963
+	name="STATE_963" #锡金
+	manpower = 109808 
+	state_category = rural
+
+	resources={
+		steel = 2
+	}
+
+	history={
+		owner = SKK
+		add_core_of = SKK
+		add_claim_by = RAJ
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			4435 8 #甘托克
+		}
+	}
+
+	provinces={
+		4435
+	}
+
+	local_supplies=0.0 
+}

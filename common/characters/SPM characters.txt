@@ -1,0 +1,17 @@
+characters = {
+    #领导人
+    #何塞·恩里克·巴莱拉
+	SPM_Jose_Enrique_Valrela = {
+        name = SPM_Jose_Enrique_Valrela
+        portraits = {
+            civilian = {
+				large = GFX_SPM_Jose_Enrique_Valrela_large
+			}
+		}
+        country_leader={
+			desc = SPM_Jose_Enrique_Valrela_desc
+			ideology= military_junta_tttt
+			traits= {  }
+		}
+    }
+}

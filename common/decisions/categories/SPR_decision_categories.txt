@@ -1,0 +1,16 @@
+################
+##### SPR ######
+################
+SPR_post_war_reconstruction = { #西班牙战后重建
+	allowed = {
+		original_tag = SPR
+	}
+} 
+SPR_our_choice = { #继承人
+	allowed = {
+		original_tag = SPR
+	}
+	visible = {
+		has_completed_focus = SPR_The_Lion_in_His_Twilight_Years 
+	}
+} 

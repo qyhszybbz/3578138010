@@ -1,0 +1,44 @@
+﻿capital = 459
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_cosmetic_tag = SPR_puppet_MOR
+
+set_convoys = 20
+
+recruit_character = MOR_MHMD_IV
+
+add_ideas = {
+	#MOR_Afrika_Korps #非洲军团
+	BLT_PORMOSE
+	unpublic_country
+}
+set_politics = {
+	ruling_party = tttt
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	Liberalism = 25
+	fascism = 20
+	communism = 5
+	tttt = 50
+}
+set_party_name = {
+	ideology = tttt
+	name = MOR_tttt_1
+	long_name = MOR_tttt_1
+}
+create_country_leader = {
+	name = "Mohammed V"
+	desc = ""
+	picture = GFX_portrait_Mohammed_V
+	ideology = authoritarianism_small
+	traits = {
+		#
+	}
+}

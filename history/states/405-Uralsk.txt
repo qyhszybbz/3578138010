@@ -1,0 +1,26 @@
+state={
+	id = 405
+	name="STATE_405"
+
+	history={
+		owner = SOV
+		add_core_of = SOV
+		add_core_of = KAZ
+		buildings = {
+			infrastructure = 2
+
+		}
+		victory_points = {
+			3618 1
+		}
+	}
+
+	provinces={
+		9526 11510 3502 3563 4322 1254 7438 1290 1318 9462 508 432 576 11480 9528 4351 11552 554 11442 11469 11455 6615 7322 3618 9453 11591
+	}
+	manpower=388544
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=0.0 
+}

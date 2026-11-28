@@ -1,0 +1,24 @@
+focus_tree = {
+	id = austria_TVE_FOCUS_2
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = AUS
+		}
+	}
+	default = no
+	focus = {
+		id = Th_new_federal_election
+		icon = GFX_AUS_aus_lorr
+		cost = 1
+		x = 5
+		y = 0
+		completion_reward = {
+			country_event = {
+				id = AUS_TVE.1
+				hours = 4
+			}
+		}
+	}
+}

@@ -1,0 +1,84 @@
+ideas = {
+    country = {
+		### 初始民族精神 ###
+		#锡安
+		ISR_Zion = {
+			on_add = { log = "[GetLogRoot]: add idea ISR_Zion" }
+			picture = Zion
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = 0.10
+				stability_factor = 0.05
+				war_support_factor = 0.10
+			}
+		}
+		#国际犹太人支持
+		ISR_International_Jewish_Support = {
+			on_add = { log = "[GetLogRoot]: add idea ISR_International_Jewish_Support" }
+			picture = International_Jewish_Support
+			allowed = { always = no }
+			modifier = {
+				research_speed_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				consumer_goods_factor = -0.05
+				weekly_manpower = 500
+			}
+		}
+		#两个轴心-倾向雅法
+		ISR_Two_Axes_Jaffa_oriented = {
+			on_add = { log = "[GetLogRoot]: add idea ISR_Two_Axes_Jaffa_oriented" }
+			picture = Two_Axes_Jaffa_oriented
+			allowed = { always = no }
+			modifier = {
+				political_power_cost = 0.05
+				stability_factor = 0.025
+			}
+		}
+		#基布兹
+		ISR_Kibbutz = {
+			on_add = { log = "[GetLogRoot]: add idea ISR_Kibbutz" }
+			picture = Kibbutz
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = -0.05
+				stability_factor = 0.05
+				line_change_production_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+				consumer_goods_factor = 0.05
+				Socialism_drift = 0.01
+				Progressivism_drift = 0.01
+			}
+		}
+		#准军事组织
+		ISR_Paramilitary_organization = {
+			on_add = { log = "[GetLogRoot]: add idea ISR_Paramilitary_organization" }
+			picture = Paramilitary_organization
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = 0.10
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_org_factor = -0.10
+				breakthrough_factor = -0.05
+				land_reinforce_rate = -0.02
+				coordination_bonus = -0.02
+				training_time_factor = -0.10
+				tttt_drift = 0.01
+				fascism_drift = 0.01
+			}
+		}
+		#外交状况:四面受敌
+		ISR_Diplomatic_situation_beseton_all_sides = {
+			on_add = { log = "[GetLogRoot]: add idea ISR_Diplomatic_situation_beseton_all_sides" }
+			picture = Diplomatic_situation_beseton_all_sides
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = -0.15
+				stability_factor = -0.15
+			}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+ideas = {
+
+	country = {
+
+		RAJ_for_free_ideas = {
+			picture = sour_loser
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				ai_focus_aggressive_factor = 100
+				supply_consumption_factor = -0.35
+				weekly_manpower = 1500
+				army_core_attack_factor = 0.50
+				army_core_defence_factor = 0.50
+				planning_speed = 4.00
+				max_planning = 1.50
+				river_crossing_factor = -0.75
+				terrain_penalty_reduction = 0.75
+			}
+			targeted_modifier = {
+				tag = TGB
+				attack_bonus_against = 1.75
+				defense_bonus_against = 1.75
+			}
+		}
+	}
+}

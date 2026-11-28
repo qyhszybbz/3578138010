@@ -1,0 +1,421 @@
+﻿focus_tree={
+	id = TFE_spain_focus
+	country={
+		factor = 0
+		modifier={
+			add = 500
+			tag = SPR
+		}
+	}
+
+	#硝烟散去
+	focus = {
+		id = SPR_Battlesmoke_dissipated
+		icon = GFX_goal_SPR_Battlesmoke_dissipated
+		cost = 2
+		x = 18
+		y = 0
+		ai_will_do = { 
+			base = 1
+		}
+		available_if_capitulated = yes
+		available = { }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			add_stability = 0.02
+			unlock_decision_category_tooltip = SPR_post_war_reconstruction
+			country_event = { id = spain.8 }
+		}
+	}
+	#被枪所指
+ 	focus = {
+ 		id = SPR_at_gunpoint
+ 		icon = GFX_goal_SPR_at_gunpoint
+ 		relative_position_id = SPR_Battlesmoke_dissipated
+ 		prerequisite = { focus = SPR_Battlesmoke_dissipated }
+ 		x = -2
+ 		y = 1
+ 		cost = 2
+ 		ai_will_do = { 
+ 			base = 1
+ 		}
+ 		available = {
+ 		}
+ 		search_filters = { FOCUS_FILTER_POLITICAL }
+ 		completion_reward = {
+ 			
+ 		}
+ 	}
+	#萧条之国
+ 	focus = {
+ 		id = SPR_depressed_nation
+ 		icon = GFX_goal_SPR_depressed_nation
+ 		relative_position_id = SPR_Battlesmoke_dissipated
+ 		prerequisite = { focus = SPR_Battlesmoke_dissipated }
+ 		x = 2
+ 		y = 1
+ 		cost = 2
+ 		ai_will_do = { 
+ 			base = 1
+ 		}
+ 		available = {
+ 		}
+ 		search_filters = { FOCUS_FILTER_POLITICAL }
+ 		completion_reward = {
+ 			
+ 		}
+ 	}
+	#将军政治
+ 	focus = {
+ 		id = SPR_general_politics
+ 		icon = GFX_goal_SPR_general_politics
+ 		relative_position_id = SPR_Battlesmoke_dissipated
+ 		prerequisite = { focus = SPR_at_gunpoint }
+ 		x = -4
+ 		y = 2
+ 		cost = 2
+ 		ai_will_do = { 
+ 			base = 1
+ 		}
+ 		available = {
+ 		}
+ 		search_filters = { FOCUS_FILTER_POLITICAL }
+ 		completion_reward = {
+ 			
+ 		}
+ 	}
+	#山中之敌
+	focus = {
+ 		id = SPR_Enemy_in_Mountains
+ 		icon = GFX_goal_SPR_Enemy_in_Mountains
+ 		relative_position_id = SPR_Battlesmoke_dissipated
+ 		prerequisite = { focus = SPR_at_gunpoint }
+		prerequisite = { focus = SPR_depressed_nation }
+ 		x = 0
+ 		y = 2
+ 		cost = 2
+ 		ai_will_do = { 
+ 			base = 1
+ 		}
+ 		available = {
+ 		}
+ 		search_filters = { FOCUS_FILTER_POLITICAL }
+ 		completion_reward = {
+ 			
+ 		}
+ 	}
+	#生锈齿轮
+	focus = {
+ 		id = SPR_Rusted_gear
+ 		icon = GFX_goal_SPR_Rusted_gear
+ 		relative_position_id = SPR_Battlesmoke_dissipated
+		prerequisite = { focus = SPR_depressed_nation }
+ 		x = 4
+ 		y = 2
+ 		cost = 2
+ 		ai_will_do = { 
+ 			base = 1
+ 		}
+ 		available = {
+ 		}
+ 		search_filters = { FOCUS_FILTER_POLITICAL }
+ 		completion_reward = {
+ 			
+ 		}
+ 	}
+	#肮脏之战
+	focus = {
+ 		id = SPR_Dirty_war
+ 		icon = GFX_goal_SPR_Dirty_war
+ 		relative_position_id = SPR_Battlesmoke_dissipated
+		prerequisite = { focus = SPR_Enemy_in_Mountains }
+ 		x = -2
+ 		y = 3
+ 		cost = 2
+ 		ai_will_do = { 
+ 			base = 1
+ 		}
+ 		available = {
+ 		}
+ 		search_filters = { FOCUS_FILTER_POLITICAL }
+ 		completion_reward = {
+ 			
+ 		}
+ 	}
+	#不得不面对的
+	focus = {
+ 		id = SPR_Must_be_faced
+ 		icon = GFX_goal_SPR_Must_be_faced
+ 		relative_position_id = SPR_Battlesmoke_dissipated
+		prerequisite = { focus = SPR_Enemy_in_Mountains }
+ 		x = 2
+ 		y = 3
+ 		cost = 2
+ 		ai_will_do = { 
+ 			base = 1
+ 		}
+ 		available = {
+ 		}
+ 		search_filters = { FOCUS_FILTER_POLITICAL }
+ 		completion_reward = {
+ 			
+ 		}
+ 	}
+	#精兵简政
+	focus = {
+ 		id = SPR_Better_soldier_Easier_policy
+ 		icon = GFX_goal_SPR_Better_soldier_Easier_policy
+ 		relative_position_id = SPR_Battlesmoke_dissipated
+		prerequisite = { focus = SPR_general_politics }
+ 		x = -4
+ 		y = 4
+ 		cost = 2
+ 		ai_will_do = { 
+ 			base = 1
+ 		}
+ 		available = {
+ 		}
+ 		search_filters = { FOCUS_FILTER_POLITICAL }
+ 		completion_reward = {
+ 			
+ 		}
+ 	}
+	#势在必行的改革
+	focus = {
+ 		id = SPR_Necessary_reforms
+ 		icon = GFX_goal_SPR_Necessary_reforms
+ 		relative_position_id = SPR_Battlesmoke_dissipated
+		prerequisite = { focus = SPR_Rusted_gear }
+ 		x = 4
+ 		y = 4
+ 		cost = 2
+ 		ai_will_do = { 
+ 			base = 1
+ 		}
+ 		available = {
+ 		}
+ 		search_filters = { FOCUS_FILTER_POLITICAL }
+ 		completion_reward = {
+ 			
+ 		}
+ 	}
+	#雄狮暮年
+	focus = {
+ 		id = SPR_The_old_lion
+ 		icon = GFX_goal_SPR_The_old_lion
+ 		relative_position_id = SPR_Battlesmoke_dissipated
+		prerequisite = { focus = SPR_Better_soldier_Easier_policy }
+		prerequisite = { focus = SPR_Dirty_war }
+		prerequisite = { focus = SPR_Must_be_faced}
+		prerequisite = { focus = SPR_Necessary_reforms }
+ 		x = 0
+ 		y = 6
+ 		cost = 2
+ 		ai_will_do = { 
+ 			base = 1
+ 		}
+ 		available = {
+ 		}
+ 		search_filters = { FOCUS_FILTER_POLITICAL }
+ 		completion_reward = {
+ 			
+ 		}
+ 	}
+	#西班牙援助意大利
+	#亚平宁的枪声
+	focus = {
+ 		id = SPR_Gunfire_in_Apennines
+ 		icon = GFX_goal_SPR_Gunfire_in_Apennines
+ 		x = 6
+ 		y = 0
+ 		cost = 2
+ 		ai_will_do = { 
+ 			base = 1
+ 		}
+ 		available = {
+			always = no
+ 		}
+		allow_branch = {
+			has_global_flag = ITAG_Wars_of_Unification #意大利内战
+		}
+ 		search_filters = { FOCUS_FILTER_POLITICAL }
+ 		completion_reward = {
+ 			add_political_power = 50
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 500
+				producer = SPR
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 500
+				producer = SPR
+			}
+			hidden_effect = {
+				country_event = { id = tfe_spain_focus.1 days = 12 }
+			}
+ 		}
+ 	}
+	#援助黑衫之鹰
+	focus = {
+ 		id = SPR_Help_Black_Cloak_Eagle
+ 		icon = GFX_goal_SPR_Help_Black_Cloak_Eagle
+		relative_position_id = SPR_Gunfire_in_Apennines
+		prerequisite = { focus = SPR_Gunfire_in_Apennines }
+ 		x = 0
+ 		y = 1
+ 		cost = 2
+ 		ai_will_do = { 
+ 			base = 1
+ 		}
+ 		available = {
+			has_global_flag = ITAG_Wars_of_Unification
+ 		}
+		allow_branch = {
+			has_global_flag = ITAG_Wars_of_Unification
+			has_country_flag = SPR_help_Fascism 
+		}
+ 		search_filters = { FOCUS_FILTER_POLITICAL }
+ 		completion_reward = {
+ 			add_ideas = SPR_Help_Black_Eagle
+			LBV = {
+				add_ideas = LBV_Help_From_Spain #来自西班牙的援助
+			}
+			hidden_effect = {
+				add_ai_strategy = {
+					type = send_volunteers_desire
+					id = LBV
+					value = 2000
+				}
+			}
+ 		}
+ 	}
+	#礼物与恩惠
+	focus = {
+		id = SPR_Gifts_and_Graces
+		icon = GFX_goal_SPR_Gifts_and_Graces
+		relative_position_id = SPR_Gunfire_in_Apennines
+	   	prerequisite = { focus = SPR_Help_Black_Cloak_Eagle }
+		x = -2
+		y = 2
+		cost = 2
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+		   has_global_flag = ITAG_Wars_of_Unification
+		}
+	   	allow_branch = {
+			has_global_flag = ITAG_Wars_of_Unification
+			has_country_flag = SPR_help_Fascism 
+	  	}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = -15
+			custom_effect_tooltip = SPR_Gifts_and_Graces_tt
+			LBV = {
+				army_experience = 25
+				country_event = { id = tfe_norita_focus.1 days = 5 }
+			}
+		}
+	}
+	#赤猎军
+	focus = {
+		id = SPR_Red_Hunter
+		icon = GFX_goal_SPR_Red_Hunter
+		relative_position_id = SPR_Gunfire_in_Apennines
+	   	prerequisite = { focus = SPR_Help_Black_Cloak_Eagle }
+		x = 2
+		y = 2
+		cost = 2
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+		   has_global_flag = ITAG_Wars_of_Unification
+		}
+	   	allow_branch = {
+			has_global_flag = ITAG_Wars_of_Unification
+			has_country_flag = SPR_help_Fascism 
+	  	}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = SPR_Red_Hunting
+			LBV = {
+				add_ideas = SPR_Red_Hunting
+			}
+			SPM = {
+				add_ideas = SPR_Red_Hunting
+			}
+		}
+	}
+	#增援撒丁岛驻军
+	focus = {
+		id = SPR_Strengthen_Sardinia_Garrison
+		icon = GFX_goal_SPR_Strengthen_Sardinia_Garrison
+		relative_position_id = SPR_Gunfire_in_Apennines
+	   	prerequisite = { focus = SPR_Help_Black_Cloak_Eagle }
+		x = 0
+		y = 3
+		cost = 2
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+		   has_global_flag = ITAG_Wars_of_Unification
+		}
+	   	allow_branch = {
+			has_global_flag = ITAG_Wars_of_Unification
+			has_country_flag = SPR_help_Fascism 
+	  	}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			custom_effect_tooltip = SPR_Strengthen_Sardinia_Garrison_tt
+			hidden_effect = {
+				SPM = {
+					add_ai_strategy = {
+						type = send_volunteers_desire
+						id = LBV
+						value = 2000
+					}
+					load_oob = "SPM_SPR_Armor"
+					load_oob = "SPM_SPR_Garrison_naval"
+				}
+			}
+		}
+	}
+	#意大利军团
+	focus = {
+		id = SPR_Italian_Legion
+		icon = GFX_goal_SPR_Italian_Legion
+		relative_position_id = SPR_Gunfire_in_Apennines
+		prerequisite = { focus = SPR_Strengthen_Sardinia_Garrison }
+	   	prerequisite = { focus = SPR_Red_Hunter }
+		x = 2
+		y = 4
+		cost = 2
+		ai_will_do = { 
+			base = 1
+		}
+		available = {
+		   has_global_flag = ITAG_Wars_of_Unification
+		}
+	   	allow_branch = {
+			has_global_flag = ITAG_Wars_of_Unification
+			has_country_flag = SPR_help_Fascism 
+	  	}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SPR_Red_Hunting
+				add_idea = SPR_Black_Eagle_Legion #黑鹰军团
+			}
+			SPM = {
+				swap_ideas = {
+					remove_idea = SPR_Red_Hunting
+					add_idea = SPR_Black_Eagle_Legion #黑鹰军团
+				}
+			}
+		}
+	}
+}

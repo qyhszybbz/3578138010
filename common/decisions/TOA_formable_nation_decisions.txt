@@ -1,0 +1,241 @@
+
+hispaniola_category = {
+	
+	unite_hispaniola = { 
+
+		icon = generic_form_nation
+
+		allowed = {
+			OR = {
+				original_tag = HAI # Haiti
+				original_tag = DOM # Dominican Republic
+			}
+		}
+
+		available = {
+			
+			319 = {
+				is_controlled_by = ROOT
+			}
+
+			318 = {
+				is_controlled_by = ROOT
+			}
+
+		}
+
+		visible = {
+			OR = {
+				original_tag = HAI # Haiti
+				original_tag = DOM # Dominican Republic
+			}
+			
+			NOT = { 
+				OR = {
+					has_global_flag = antilles_formed_flag
+					has_global_flag = hispaniola_flag 
+				}
+			}
+			
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = hispaniola 
+			
+			IF =  {
+				limit = {
+					NOT = {
+						319 = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				318 = { add_core_of = ROOT }
+			}
+			
+			IF =  {
+				limit = {
+					NOT = {
+						318 = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				317 = { add_core_of = ROOT }
+			}
+
+			hidden_effect = {
+				set_global_flag = hispaniola_flag
+
+				news_event = { 
+					id = south_american_news.6
+					days = 1
+					random_days = 2
+				}
+
+			}
+		}
+
+		ai_will_do = {
+			factor = 2000
+		}
+	}
+}
+
+
+guianas_category = {
+	
+	unite_guiana = { 
+
+		icon = generic_form_nation
+
+		allowed = {
+			OR = {
+				original_tag = GYA
+				original_tag = SUR
+				original_tag = CAY
+			}
+		}
+
+		available = {
+			
+			309 = {
+				is_controlled_by = ROOT
+			}
+
+			310 = {
+				is_controlled_by = ROOT
+			}
+
+			687 = {
+				is_controlled_by = ROOT
+			}
+
+		}
+
+		visible = {
+			OR = {
+				original_tag = GYA # Guyana
+				original_tag = SUR # Suriname
+				original_tag = CAY # Cayenne
+			}
+			
+			NOT = { has_global_flag = guiana_flag }
+			
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = united_guiana 
+			
+			# Suriname
+			IF =  {
+				limit = {
+					NOT = {
+						309 = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				308 = { 
+					add_core_of = ROOT 
+					transfer_state_to = ROOT
+				}
+			}
+			
+			# French Guyana
+			IF =  {
+				limit = {
+					NOT = {
+						310 = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				309 = { 
+					add_core_of = ROOT 
+					transfer_state_to = ROOT
+				}
+			}
+
+			# British Guyana
+			IF =  {
+				limit = {
+					NOT = {
+						687 = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				678 = { 
+					add_core_of = ROOT 
+					transfer_state_to = ROOT
+				}
+			}
+
+			# Bolivar
+			IF =  {
+				limit = {
+					NOT = {
+						488 = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				486 = { add_core_of = ROOT }
+			}
+
+			# Amapa
+			IF =  {
+				limit = {
+					NOT = {
+						939 = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				917 = { add_core_of = ROOT }
+			}
+
+			# Rio Branco
+			IF =  {
+				limit = {
+					NOT = {
+						969 = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				947 = { add_core_of = ROOT }
+			}
+
+			hidden_effect = {
+				# Guianan Rainforest
+				IF =  {
+					limit = {
+						NOT = {
+							968 = {
+								is_core_of = ROOT
+							}
+						}
+					}
+					946 = { add_core_of = ROOT }
+				}
+			}
+
+			hidden_effect = {
+				set_global_flag = guiana_flag
+
+				news_event = { 
+					id = south_american_news.7
+					days = 1
+					random_days = 2
+				}
+
+			}
+		}
+
+		ai_will_do = {
+			factor = 2000
+		}
+	}
+}

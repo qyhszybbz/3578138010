@@ -1,0 +1,16 @@
+spriteTypes = { 
+	###领导人
+	spriteType = { #阿奇博尔德·柯里
+		name = "GFX_leader_CRC_Archibald_Currie" 
+		texturefile = "gfx/leaders/CRC/CRC_Archibald_Currie.dds" 
+	}
+	###民族精神
+	spriteType = { #名存实亡的荷兰统治
+		name = "GFX_idea_CRC_Dutch_rule_in_name_only" 
+		texturefile = "gfx/interface/ideas/CRC/CRC_Dutch_rule_in_name_only.dds"
+	}
+	#spriteType = { #暴力与和平
+	#	name = "GFX_idea_CRC_violence_and_peace" 
+	#	texturefile = "gfx/interface/ideas/CRC/CRC_violence_and_peace.dds"
+	#}
+}

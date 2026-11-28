@@ -1,0 +1,42 @@
+state = {
+	id = 1038
+	name = "STATE_1038"
+	manpower = 1821589
+	state_category = megalopolis
+	history = {
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+		add_extra_state_shared_building_slots = 1
+		buildings = {
+			air_base = 6
+			dockyard = 1
+			industrial_complex = 1
+			infrastructure = 3
+			11913 = {
+				landmark_nanjing_presidential_palace = {
+					level = 1
+					allowed = {
+						has_dlc = "No Compromise, No Surrender"
+					}
+				}
+			}
+		}
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 1
+				infrastructure = 1
+
+			}
+
+		}
+		victory_points = {
+			11913 40
+		}
+	}
+	provinces = {
+		11913
+	}
+	local_supplies = 7
+	buildings_max_level_factor = 1.000
+}

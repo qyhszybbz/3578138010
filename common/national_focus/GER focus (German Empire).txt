@@ -1,0 +1,270 @@
+focus_tree={
+	id = TFE_germany_focus
+	country={
+		factor = 0
+		modifier={
+			add = 500
+			tag = GER
+		}
+	}
+
+	continuous_focus_position = { x = 2500 y = 2000 }
+
+	initial_show_position = {
+		x = 8
+		y = -1
+	}
+
+	#苟延残喘
+	focus = {
+		id = GER_clinging_to_life
+		icon = GFX_goal_GER_clinging_to_life
+		x = 8
+		y = 0
+		cost=1
+		ai_will_do = {
+			base = 1
+		}
+		available_if_capitulated = yes
+		available = { }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward={
+			add_political_power = 50
+			country_event = { id = germany.1 days = 2 }
+		}
+	}
+	focus={ #最后一笔债务
+		id=GER_last_debt
+		icon=GFX_GER_last_debt
+		x=8
+		y=1
+		prerequisite={focus=GER_clinging_to_life}
+		cost=1
+		ai_will_do={
+			base=1
+		}
+		available={
+		}
+		bypass={
+		}
+		search_filters={
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward={
+			log = "[GetDateText]: [Root.GetName]: Focus GER_last_debt"
+			add_political_power = 100
+			remove_ideas = { GER_Shackles_of_Treaty_of_Versailles }
+		}
+	}
+	focus={ #柏林阅兵
+		id=GER_Berlin_military_parade
+		icon=GFX_GER_Berlin_military_parade
+		x=8
+		y=2
+		prerequisite={focus=GER_last_debt}
+		cost=2
+		ai_will_do={
+			base=1
+		}
+		available={
+		}
+		bypass={
+		}
+		search_filters={
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward={
+			log = "[GetDateText]: [Root.GetName]: Focus GER_Berlin_military_parade"
+			add_political_power = 50
+			army_experience = 25
+			country_event = {id = germany.2 }
+		}
+	}
+	focus={ #工人暴乱
+		id=GER_workers_riot
+		x=8
+		y=3
+		prerequisite={focus=GER_Berlin_military_parade}
+		cost=0
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		available = {
+			always = no
+		}
+		
+		search_filters={
+		}
+		completion_reward={
+			log = "[GetDateText]: [Root.GetName]: Focus GER_workers_riot"
+			custom_effect_tooltip = event_completed
+		}
+	}
+	focus={ #寂静的夜晚
+		id=GER_A_quiet_night
+		x=8
+		y=4
+		prerequisite={focus=GER_workers_riot}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			log = "[GetDateText]: [Root.GetName]: Focus GER_A_quiet_night"
+			add_stability = 0.1
+			add_political_power = 50
+			country_event = { id = germany.3 }
+		}
+	}
+	focus={ #宣布紧急状态
+		id=GER_declare_a_state_of_emergency
+		x=8
+		y=5
+		prerequisite={focus=GER_A_quiet_night}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			log = "[GetDateText]: [Root.GetName]: Focus GER_declare_a_state_of_emergency"
+			country_event = {id = germany.4 }
+		}
+		
+	}
+	focus={ #稳定议会
+		id=GER_Stable_parliament
+		x=6
+		y=6
+		prerequisite={focus=GER_declare_a_state_of_emergency}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			log = "[GetDateText]: [Root.GetName]: Focus GER_Stable_parliament"
+			add_political_power = 25
+			country_event = {id = germany.5 }
+		}
+	}
+	focus={ #开放部分选举
+		id=GER_open_partial_elections
+		x=6
+		y=7
+		prerequisite={focus=GER_Stable_parliament}
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			log = "[GetDateText]: [Root.GetName]: Focus GER_open_partial_elections"
+			add_political_power = 100
+		}
+	}
+	focus={ #安顿失业青年
+		id=GER_Settle_unemployed_youth
+		x=6
+		y=8
+		prerequisite={focus=GER_open_partial_elections}
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			log = "[GetDateText]: [Root.GetName]: Focus GER_Settle_unemployed_youth"
+			add_to_variable = {
+				var = GER_consumer_goods_factor
+				value = -0.05
+			}
+		}
+	}
+	focus={ #安抚军方
+		id=GER_appease_the_military
+		x= 10
+		y=6
+		prerequisite={focus=GER_declare_a_state_of_emergency}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			log = "[GetDateText]: [Root.GetName]: Focus GER_appease_the_military"
+			add_manpower = 50
+			add_stability = 0.05
+			country_event = {id = germany.6 }
+		}
+	}
+	focus={ #召见施莱谢尔
+		id=GER_Summon_Schleicher
+		x=10
+		y=7
+		prerequisite={focus=GER_appease_the_military}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			log = "[GetDateText]: [Root.GetName]: Focus GER_Summon_Schleicher"
+			add_stability = 0.05
+			country_event = { id = germany.7 }
+		}
+	}
+	focus={ #让火焰熄灭
+		id=GER_Extinguish_the_flames
+		x=10
+		y=8
+		prerequisite={focus=GER_Summon_Schleicher}
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			log = "[GetDateText]: [Root.GetName]: Focus GER_Extinguish_the_flames"
+			add_stability = 0.05
+			country_event = {id = germany.8 }
+		}
+	}
+	focus={ #筹备1935年大选
+		id=GER_Preparations_for_the_1935_ge
+		x=8
+		y=9
+		prerequisite={focus=GER_Settle_unemployed_youth}
+		prerequisite={focus=GER_Extinguish_the_flames}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes 
+		search_filters={
+		}
+		completion_reward={
+			log = "[GetDateText]: [Root.GetName]: Focus GER_Preparations_for_the_1935_ge"
+			add_political_power = 100
+			country_event = {id = germany.9 }
+		}
+	}
+}

@@ -1,0 +1,15 @@
+leader_traits ={ 
+	SPR_Command_limit = { #西班牙将领指挥上限
+		type = all
+		trait_type = personality_trait
+		gain_xp = {
+			always = no 
+		}
+		modifier = {
+			max_commander_army_size = -8
+		}
+		new_commander_weight = { 
+			factor = 0
+		}
+	} 
+}

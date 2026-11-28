@@ -1,0 +1,14 @@
+leader_traits ={
+	#鸡蛋上的舞者
+    BUL_egg_dancer = {
+        random = no
+        political_power_gain = 0.5
+        stability_factor = 0.10
+    }
+    #人格魅力者
+    BUL_Charismatic_person = {
+        random = no
+        stability_factor = 0.10
+        Authoritarianism_drift = 0.5
+    }
+}

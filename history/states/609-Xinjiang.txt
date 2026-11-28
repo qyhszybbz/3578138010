@@ -1,0 +1,28 @@
+state = {
+	id = 609
+	name = "STATE_609"
+	manpower = 90206
+	state_category = rural
+	resources = {
+		oil = 55
+	}
+	history = {
+		owner = CHI
+		add_core_of = SIK
+		add_core_of = CHI
+		add_core_of = PRC
+		add_extra_state_shared_building_slots = 4
+		buildings = {
+			industrial_complex = 3
+			infrastructure = 4
+		}
+		victory_points = {
+			4709 15
+		}
+	}
+	provinces = {
+		4709
+	}
+	local_supplies = 7
+	buildings_max_level_factor = 1.000
+}

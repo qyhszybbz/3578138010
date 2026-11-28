@@ -1,0 +1,31 @@
+state = {
+    id = 1277
+    name="STATE_1277"
+    manpower = 507366
+    state_category = wasteland
+
+    history = {
+        owner = COL
+		add_core_of = COL
+		add_core_of = ECU
+        buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 4
+			air_base = 1
+			8252 = {
+				naval_base = 4
+			}
+		}
+
+        victory_points = {
+			8252 10
+		}
+    }
+
+    provinces = {
+        8047 8252
+    }
+
+    local_supplies = 0
+}

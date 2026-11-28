@@ -1,0 +1,57 @@
+﻿capital = 277
+
+oob = "MEX_1936"
+
+
+load_focus_tree =  mexico_focus_tree
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_trucks = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	
+	fuel_silos = 1
+	fuel_refining = 1
+}
+
+
+set_politics = {
+	ruling_party = socialism
+	last_election = "1934.7.1"
+	election_frequency = 72
+	elections_allowed = yes
+}
+
+set_popularities = {
+	nazism = 23
+	Socialism = 25
+	Progressivism = 30
+	Conservatism = 12
+	fascism = 2
+	Progressivism = 8
+}
+
+add_ideas = {
+	MEX_crying_guadalupei
+	MEX_jundui_jieru_1
+	MEX_wenren_zhiguo
+	MEX_young_politic
+}
+
+MEX_yaowang_lvtu_effect = yes
+
+recruit_character = MEX_afangsuo_leiyesi #阿方索·雷耶斯
+recruit_character = MEX_aoketavo_pasi #奥克塔维奥·帕斯
+recruit_character = MEX_samiuaier_lamosi #萨缪埃尔·拉莫斯
+recruit_character = MEX_weisengte #维森特·隆巴多·托莱达诺
+recruit_character = MEX_fulangxisike_muxika #弗朗西斯科·穆希卡
+
+
+set_convoys = 45
+set_stability = 0.2
+set_war_support = 0.1
+
+
+
+

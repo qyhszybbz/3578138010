@@ -1,0 +1,4 @@
+remove_cores_of_tag_if_non_existent = {
+	is_core_Iberia = yes 
+	NOT = { has_country_flag = reserved_dynamic_tag }
+}

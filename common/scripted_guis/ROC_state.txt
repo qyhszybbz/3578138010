@@ -1,0 +1,42 @@
+scripted_gui = {
+	ROC_state_gui = {
+		context_type = selected_state_context
+		window_name = ROC_state_gui
+		parent_window_token = selected_state_view
+
+		visible = {
+			OR = {
+				has_state_flag = ROC_flag_Sichuan
+				has_state_flag = ROC_flag_Yunnan
+				has_state_flag = ROC_flag_Guangxi
+				has_state_flag = ROC_flag_Guangdong
+				has_state_flag = ROC_flag_Guizhou
+				has_state_flag = ROC_flag_Hunan
+				has_state_flag = ROC_flag_Jiangxi
+				has_state_flag = ROC_flag_Fujian
+				has_state_flag = ROC_flag_Zhejiang
+				has_state_flag = ROC_flag_Jiangsu
+				has_state_flag = ROC_flag_Anhui
+				has_state_flag = ROC_flag_Hubei
+				has_state_flag = ROC_flag_Henan
+				has_state_flag = ROC_flag_Shandong
+				has_state_flag = ROC_flag_Shaanxi
+				has_state_flag = ROC_flag_Shanxi
+				has_state_flag = ROC_flag_Hebei
+				has_state_flag = ROC_flag_Suiyuan
+				has_state_flag = ROC_flag_Chahaer
+				has_state_flag = ROC_flag_Rehe
+				has_state_flag = ROC_flag_Liaoning
+				has_state_flag = ROC_flag_Jilin
+				has_state_flag = ROC_flag_Heilongjiang
+				has_state_flag = ROC_flag_Gansu
+				has_state_flag = ROC_flag_Ningxia
+				has_state_flag = ROC_flag_Qinghai
+				has_state_flag = ROC_flag_Xinjiang
+				has_state_flag = ROC_flag_Xikang
+				has_state_flag = ROC_flag_Xizang
+				has_state_flag = ROC_flag_Taiwan
+			}
+		}
+	}
+}

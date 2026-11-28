@@ -1,0 +1,25 @@
+state = {
+	id=862
+	name = "STATE_862"
+	manpower = 860121
+	state_category = pastoral
+	resources = {
+		oil = 6
+	}
+
+	history = {
+		owner = SUD
+		add_core_of = SUD
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+
+	provinces = {
+		2096 10859 10877 12800 
+	}
+
+	buildings_max_level_factor = 1.000
+	local_supplies = 0.000
+}

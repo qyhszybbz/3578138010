@@ -1,0 +1,55 @@
+﻿capital = 313
+oob = "ELS_1935"
+set_war_support = 0.3
+set_stability = 0.3
+starting_train_buffer = 1.2
+set_fuel_ratio = 0.90
+set_research_slots = 2
+
+### 初始科技 ###
+set_technology = {
+	infantry_weapons = 1
+	tech_trucks = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	fuel_silos = 1
+}
+
+### 领导人 ###
+recruit_character = ELS_Leon_Cortes_Castro #莱昂·科尔特斯·卡斯特罗
+recruit_character = ELS_Teodoro_Picado_Michalski #特奥多罗·皮卡多·米查尔斯基
+recruit_character = ELS_Rafael_Angel_Calderon_Guardia #拉斐尔·安赫尔·卡尔德隆·瓜迪亚
+recruit_character = ELS_Jose_Maria_Moncada #何塞·马里亚·蒙卡达
+
+add_ideas = {
+	### 初始民族精神 ###
+	ELS_The_fragile_federal_covenant #脆弱的联邦盟约
+	ELS_The_shackles_of_united_fruits #联合果品的枷锁
+	ELS_A_land_blocked_by_mountains #被群山阻隔的国土
+	ELS_The_church_and_indigenous_peoples #教会与原住民
+	### 政治顾问 ###
+	ELS_Teodoro_Picado_Michalski_pol #特奥多罗·皮卡多·米查尔斯基
+	ELS_Rafael_Angel_Calderon_Guardia_pol #拉斐尔·安赫尔·卡尔德隆·瓜迪亚
+	ELS_Jose_Maria_Moncada_pol #何塞·马里亚·蒙卡达
+}
+
+set_convoys = 50
+
+set_politics = {
+	ruling_party = Democracy
+	last_election = "1935.1.15"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	Liberalism = 7
+	Socialism = 3
+	Progressivism = 10
+	Conservatism = 16
+	Authoritarianism = 20
+	fascism = 4
+	Democracy = 29
+	Communism = 2
+	tttt = 8
+	nazism = 1
+}

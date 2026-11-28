@@ -1,0 +1,222 @@
+﻿units = {
+
+	fleet = {
+		name = "K Fleet"
+		naval_base = 7552
+		task_force = {
+			name = "Battle Squadron"
+			location = 788
+
+			#弗吉尼亚号
+			ship = {
+				name = "Virginia"
+				pride_of_the_fleet = yes
+				definition = battle_cruiser
+				start_experience_factor = 0.3
+
+				equipment = {
+					ship_hull_heavy_1 = {
+						amount = 1
+						owner = CSA
+						version_name = "BattleShip"
+					}
+				}
+			}
+
+			#葛底斯堡号
+			ship = {
+				name = "Gettysburg"
+				pride_of_the_fleet = yes
+				definition = battle_cruiser
+				start_experience_factor = 0.3
+
+				equipment = {
+					ship_hull_heavy_1 = {
+						amount = 1
+						owner = CSA
+						version_name = "BattleShip"
+					}
+				}
+			}
+		}
+
+
+		task_force = {
+			name = "Cruiser Division"
+			location = 1132
+
+			ship = {
+				name = "Cruiser 1"
+				definition = light_cruiser
+				start_experience_factor = 0.4
+				equipment = {
+					ship_hull_cruiser_1 = { amount = 1  owner = CSA version_name = "AL Class" }
+				}
+			}
+			ship = {
+				name = "Cruiser 2"
+				definition = light_cruiser
+				start_experience_factor = 0.8
+				equipment = {
+					ship_hull_cruiser_1 = { amount = 1  owner = CSA version_name = "AL Class" }
+				}
+			}
+			ship = {
+				name = "Cruiser 3"
+				definition = light_cruiser
+				start_experience_factor = 0.2
+				equipment = {
+					ship_hull_cruiser_1 = { amount = 1  owner = CSA version_name = "AL Class" }
+				}
+			}
+			ship = {
+				name = "Cruiser 4"
+				definition = light_cruiser
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_cruiser_1 = { amount = 1  owner = CSA version_name = "AL Class" }
+				}
+			}
+			ship = {
+				name = "Cruiser 5"
+				definition = light_cruiser
+				start_experience_factor = 0.1
+				equipment = {
+					ship_hull_cruiser_1 = { amount = 1  owner = CSA version_name = "AL Class" }
+				}
+			}
+			ship = {
+				name = "Cruiser 6"
+				definition = light_cruiser
+				start_experience_factor = 0.1
+				equipment = {
+					ship_hull_cruiser_1 = { amount = 1  owner = CSA version_name = "AL Class" }
+				}
+			}
+			ship = {
+				name = "Cruiser 7"
+				definition = light_cruiser
+				start_experience_factor = 0.2
+				equipment = {
+					ship_hull_cruiser_1 = { amount = 1  owner = CSA version_name = "AL Class" }
+				}
+			}
+			ship = {
+				name = "Cruiser 8"
+				definition = light_cruiser
+				start_experience_factor = 0.2
+				equipment = {
+					ship_hull_cruiser_1 = { amount = 1  owner = CSA version_name = "AL Class" }
+				}
+			}
+			ship = {
+				name = "Cruiser 9"
+				definition = light_cruiser
+				start_experience_factor = 0.1
+				equipment = {
+					ship_hull_cruiser_1 = { amount = 1  owner = CSA version_name = "AL Class" }
+				}
+			}
+			ship = {
+				name = "Cruiser 10"
+				definition = light_cruiser
+				start_experience_factor = 0.3
+				equipment = {
+					ship_hull_cruiser_1 = { amount = 1  owner = CSA version_name = "AL Class" }
+				}
+			}
+			ship = {
+				name = "Cruiser 11"
+				definition = light_cruiser
+				start_experience_factor = 0.2
+				equipment = {
+					ship_hull_cruiser_1 = { amount = 1  owner = CSA version_name = "AL Class" }
+				}
+			}
+			ship = {
+				name = "Cruiser 12"
+				definition = light_cruiser
+				start_experience_factor = 0.3
+				equipment = {
+					ship_hull_cruiser_1 = { amount = 1  owner = CSA version_name = "AL Class" }
+				}
+			}
+			ship = {
+				name = "Cruiser 13"
+				definition = light_cruiser
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_cruiser_1 = { amount = 1  owner = CSA version_name = "AL Class" }
+				}
+			}
+			ship = {
+				name = "Cruiser 14"
+				definition = light_cruiser
+				start_experience_factor = 0.6
+				equipment = {
+					ship_hull_cruiser_1 = { amount = 1  owner = CSA version_name = "AL Class" }
+				}
+			}
+			ship = {
+				name = "Cruiser 15"
+				definition = light_cruiser
+				start_experience_factor = 0.3
+				equipment = {
+					ship_hull_cruiser_1 = { amount = 1  owner = CSA version_name = "AL Class" }
+				}
+			}
+		}
+
+		task_force = {
+			name = "Submarine Flotilla"
+			location = 7552
+
+			ship = {
+				name = "Submarine 1"
+				definition = submarine
+				equipment = { ship_hull_submarine_1 = { amount = 1  owner = CSA version_name = "KLF Class" } }
+			}
+			ship = {
+				name = "Submarine 2"
+				definition = submarine
+				equipment = { ship_hull_submarine_1 = { amount = 1  owner = CSA version_name = "KLF Class" } }
+			}
+			ship = {
+				name = "Submarine 3"
+				definition = submarine
+				equipment = { ship_hull_submarine_1 = { amount = 1  owner = CSA version_name = "KLF Class" } }
+			}
+			ship = {
+				name = "Submarine 4"
+				definition = submarine
+				equipment = { ship_hull_submarine_1 = { amount = 1  owner = CSA version_name = "KLF Class" } }
+			}
+			ship = {
+				name = "Submarine 5"
+				definition = submarine
+				equipment = { ship_hull_submarine_1 = { amount = 1  owner = CSA version_name = "KLF Class" } }
+			}
+		}
+
+		task_force = {
+			name = "Carrier Division"
+			location = 7552 # 新奥尔良
+
+			#李将军号
+			ship = {
+				name = "General Lee"
+				pride_of_the_fleet = yes
+				definition = carrier
+				start_experience_factor = 0.3
+
+				equipment = {
+					ship_hull_carrier_conversion_bb = {
+						amount = 1
+						owner = CSA
+						version_name = "General Lee Class"
+					}
+				}
+			}
+		}
+	}
+}

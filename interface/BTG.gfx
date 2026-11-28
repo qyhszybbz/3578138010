@@ -1,0 +1,13 @@
+spriteTypes = {
+	#民族精神配图
+	spriteType = { #南美的畸形儿配图
+		name = "GFX_BTG_Deformed_fetuses_in_South_America_Pictures"
+		texturefile = "gfx/texticons/banners/BTG/BTG_Deformed_fetuses_in_South_America_Pictures.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = { #新法兰西配图
+		name = "GFX_BTG_new_france_Pictures"
+		texturefile = "gfx/texticons/banners/BTG/BTG_new_france_Pictures.dds" 
+		legacy_lazy_load = no
+	}
+}

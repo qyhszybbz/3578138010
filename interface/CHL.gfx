@@ -1,0 +1,35 @@
+spriteTypes = { 
+	spriteType = { #阿图罗·亚历山德里
+		name = "GFX_idea_CHL_Arturo_Alessandri"
+		texturefile = "gfx/leaders/CHL/CHL_Arturo_Alessandri.dds"
+	}
+	###民族精神
+	spriteType = { #太平洋战争的失败
+		name = "GFX_idea_CHL_The_defeat_in_the_Pacific_War"
+		texturefile = "gfx/interface/ideas/CHL/CHL_The_defeat_in_the_Pacific_War.dds"
+	}
+	spriteType = { #巴塔哥尼亚事务局
+		name = "GFX_idea_CHL_Patagonia_Affairs_Bureau"
+		texturefile = "gfx/interface/ideas/CHL/CHL_Patagonia_Affairs_Bureaur.dds"
+	}
+	spriteType = { #民主微光
+		name = "GFX_idea_CHL_glimmer_of_democracy"
+		texturefile = "gfx/interface/ideas/CHL/CHL_glimmer_of_democracy.dds"
+	}
+	###民族精神配图
+	spriteType = { #太平洋战争的失败配图 
+		name = "GFX_CHL_The_defeat_in_the_Pacific_War_Pictures" 
+		texturefile = "gfx/texticons/banners/CHL/CHL_The_defeat_in_the_Pacific_War_Pictures.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = { #巴塔哥尼亚事务局配图
+		name = "GFX_CHL_Patagonia_Affairs_Bureau_Pictures"
+		texturefile = "gfx/texticons/banners/CHL/CHL_Patagonia_Affairs_Bureau_Pictures.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = { #民主微光配图
+		name = "GFX_CHL_glimmer_of_democracy_Pictures"
+		texturefile = "gfx/texticons/banners/CHL/CHL_glimmer_of_democracy_Pictures.dds"
+		legacy_lazy_load = no
+	}
+}

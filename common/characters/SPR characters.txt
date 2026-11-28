@@ -1,0 +1,397 @@
+characters = {
+	#领导人
+	#米格尔·普里莫·德里维拉
+    SPR_Miguel_Primo_Derivella = {
+        name = SPR_Miguel_Primo_Derivella
+        portraits = {
+            civilian = {
+				large = GFX_SPR_Miguel_Primo_Derivella_large
+			}
+		}
+        country_leader={
+			desc = SPR_Miguel_Primo_Derivella_desc
+			ideology= Spanish_Revivalism
+			traits= { SPR_dictator }
+		}
+    }
+	#何塞·普里莫·德里维拉
+	SPR_Jose_Primo_Derivella = {
+        name = SPR_Jose_Primo_Derivella
+        portraits = {
+            civilian = {
+				large = GFX_SPR_Jose_Primo_Derivella_large
+			}
+		}
+    }
+	#唐·卡洛斯
+	SPR_Don_Carlos = {
+        name = SPR_Don_Carlos
+        portraits = {
+            civilian = {
+				large = GFX_SPR_Don_Carlos_large
+			}
+		}
+    }
+    #胡安·德·波旁
+	SPR_Juan_Deborbon = {
+        name = SPR_Juan_Deborbon
+        portraits = {
+            civilian = {
+				large = GFX_SPR_Juan_Deborbon_large
+			}
+		}
+    }
+	#政治顾问
+	#塞拉洛·苏涅尔
+	SPR_Serralo_Sunier = {
+		name = SPR_Serralo_Sunier
+		portraits={
+			civilian={
+				small = GFX_SPR_Serralo_Sunier_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SPR_Serralo_Sunier_pol
+			desc = SPR_Serralo_Sunier_desc
+			traits = { SPR_Smooth_operator }
+			cost = 0
+			can_be_fired = no
+		}
+	}
+	#弗朗西斯科·佛朗哥
+	SPR_Francisco_Franco = {
+		name = SPR_Francisco_Franco
+		portraits={
+			civilian={
+				large = GFX_SPR_Francisco_Franco_civ_large
+				small = GFX_SPR_Francisco_Franco_small
+			}
+			army={
+				large = GFX_SPR_Francisco_Franco_army_large
+				small = GFX_SPR_Francisco_Franco_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SPR_Francisco_Franco_pol
+			desc = SPR_Francisco_Franco_desc
+			traits = { SPR_Europes_youngest_general }
+			cost = 0
+			can_be_fired = no
+		}
+		field_marshal = {
+			traits = { war_hero brilliant_strategist career_officer trickster }
+			skill = 3
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	#何塞·希尔-罗夫莱斯
+	SPR_Jose_GilRobles = {
+		name = SPR_Jose_GilRobles
+		portraits={
+			civilian={
+				small = GFX_SPR_Jose_GilRobles_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SPR_Jose_GilRobles_pol
+			desc = SPR_Jose_GilRobles_desc
+			traits = { SPR_Lawyer }
+			cost = 0
+			can_be_fired = no
+		}
+	}
+	#何塞·卡尔沃·索特沃
+	SPR_Jose_Calvo_Sotelo = {
+		name = SPR_Jose_Calvo_Sotelo
+		portraits={
+			civilian={
+				small = GFX_SPR_Jose_Calvo_Sotelo_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SPR_Jose_Calvo_Sotelo_pol
+			desc = SPR_Jose_Calvo_Sotelo_desc
+			traits = { SPR_Mauras_Disciple }
+			cost = 0
+			can_be_fired = no
+		}
+	}
+	#华金·查帕普列塔
+	SPR_Joaquin_Chapaprieta = {
+		name = SPR_Joaquin_Chapaprieta
+		portraits={
+			civilian={
+				small = GFX_SPR_Joaquin_Chapaprieta_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SPR_Joaquin_Chapaprieta_pol
+			desc = SPR_Joaquin_Chapaprieta_desc
+			traits = { SPR_Independent_Labour_Minister }
+			cost = 0
+			can_be_fired = no
+		}
+	}
+	#元帅
+	#达马索·贝伦格尔
+	SPR_Damaso_Berenguer = {
+		name = SPR_Damaso_Berenguer
+		portraits={
+			army={
+				large = GFX_SPR_Damaso_Berenguer_large
+				small = GFX_SPR_Damaso_Berenguer_small
+			}
+		}
+		field_marshal = {
+			traits = { organisational_leader thorough_planner infantry_officer old_guard }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	#米格尔·卡巴内拉斯·费雷尔
+	SPR_Miguel_Cabanellas = {
+		name = SPR_Miguel_Cabanellas
+		portraits={
+			army={
+				large = GFX_SPR_Miguel_Cabanellas_large
+				small = GFX_SPR_Miguel_Cabanellas_small
+			}
+		}
+		field_marshal = {
+			traits = { infantry_leader career_officer infantry_officer }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	#上将
+	#塞巴斯蒂安·波萨斯·佩雷亚
+	SPR_Sebastian_Pozas_Perea = {
+		name = SPR_Sebastian_Pozas_Perea
+		portraits={
+			army={
+				large = GFX_SPR_Sebastian_Pozas_Perea_large
+				small = GFX_SPR_Sebastian_Pozas_Perea_small
+			}
+		}
+		corps_commander = {
+			traits = { SPR_Command_limit guerilla_fighter engineer_officer infantry_officer }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	#米格尔·努涅斯·德普拉多
+	SPR_Miguel_Nunez_dePrado = {
+		name = SPR_Miguel_Nunez_dePrado
+		portraits={
+			army={
+				large = GFX_SPR_Miguel_Nunez_dePrado_large
+				small = GFX_SPR_Miguel_Nunez_dePrado_small
+			}
+		}
+		corps_commander = {
+			traits = { SPR_Command_limit skilled_staffer career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	#何塞·米亚哈·梅南特
+	SPR_Jose_Miaja_Menant = {
+		name = SPR_Jose_Miaja_Menant
+		portraits={
+			army={
+				large = GFX_SPR_Jose_Miaja_Menant_large
+				small = GFX_SPR_Jose_Miaja_Menant_small
+			}
+		}
+		corps_commander = {
+			traits = { SPR_Command_limit infantry_leader guerilla_fighter organizer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	#贡萨洛·奎波·德里亚诺
+	SPR_Gonzalo_Queipo_deLlano = {
+		name = SPR_Gonzalo_Queipo_deLlano
+		portraits={
+			army={
+				large = GFX_SPR_Gonzalo_Queipo_deLlano_large
+				small = GFX_SPR_Gonzalo_Queipo_deLlano_small
+			}
+		}
+		corps_commander = {
+			traits = { SPR_Command_limit fortress_buster hill_fighter career_officer }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	#菲德尔·达维拉·阿隆多
+	SPR_Fidel_Davila_Arrondo = {
+		name = SPR_Fidel_Davila_Arrondo
+		portraits={
+			army={
+				large = GFX_SPR_Fidel_Davila_Arrondo_large
+				small = GFX_SPR_Fidel_Davila_Arrondo_small
+			}
+		}
+		corps_commander = {
+			traits = { SPR_Command_limit career_officer infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	#弗朗西斯科·马丁-莫雷诺
+	SPR_Francisco_Martin_Moreno = {
+		name = SPR_Francisco_Martin_Moreno
+		portraits={
+			army={
+				large = GFX_SPR_Francisco_Martin_Moreno_large
+				small = GFX_SPR_Francisco_Martin_Moreno_small
+			}
+		}
+		corps_commander = {
+			traits = { SPR_Command_limit career_officer infantry_leader trait_cautious }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	#埃米利奥·埃斯特万·因方特斯
+	SPR_Emilio_Esteban_Infantes = {
+		name = SPR_Emilio_Esteban_Infantes
+		portraits={
+			army={
+				large = GFX_SPR_Emilio_Esteban_Infantes_large
+				small = GFX_SPR_Emilio_Esteban_Infantes_small
+			}
+		}
+		corps_commander = {
+			traits = { SPR_Command_limit infantry_officer trait_reckless career_officer }
+			skill = 2
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	#阿古斯丁·穆尼奥斯·格兰德斯
+	SPR_Agustin_Munoz_Grandes = {
+		name = SPR_Agustin_Munoz_Grandes
+		portraits={
+			army={
+				large = GFX_SPR_Agustin_Munoz_Grandes_large
+				small = GFX_SPR_Agustin_Munoz_Grandes_small
+			}
+		}
+		corps_commander = {
+			traits = { SPR_Command_limit defensive_doctrine infantry_officer trait_cautious career_officer }
+			skill = 2
+            attack_skill = 3
+            defense_skill = 4
+            planning_skill = 1
+            logistics_skill = 3 
+		}
+	}
+	#胡安·维贡·苏埃罗迪亚斯
+	SPR_Juan_Vigon_Sueirodias = {
+		name = SPR_Juan_Vigon_Sueirodias
+		portraits={
+			army={
+				large = GFX_SPR_Juan_Vigon_Sueirodias_large
+				small = GFX_SPR_Juan_Vigon_Sueirodias_small
+			}
+		}
+		corps_commander = {
+			traits = { SPR_Command_limit old_guard urban_assault_specialist career_officer engineer_officer }
+			skill = 2
+            attack_skill = 3
+            defense_skill = 3
+            planning_skill = 2
+            logistics_skill = 4
+		}
+	}
+	#曼努埃尔·迪耶斯·阿莱格里亚
+	SPR_Manuel_Dies_Allegria = {
+		name = SPR_Manuel_Dies_Allegria
+		portraits={
+			army={
+				large = GFX_SPR_Manuel_Dies_Allegria_large
+				small = GFX_SPR_Manuel_Dies_Allegria_small
+			}
+		}
+		corps_commander = {
+			traits = { SPR_Command_limit old_guard career_officer trait_cautious }
+			skill = 2
+            attack_skill = 3
+            defense_skill = 2
+            planning_skill = 3
+            logistics_skill = 2
+		}
+	}
+	#卡洛斯·阿森西奥·卡巴尼利亚斯
+	SPR_Carlos_Asensio_Cabanillas = {
+		name = SPR_Carlos_Asensio_Cabanillas
+		portraits={
+			army={
+				large = GFX_SPR_Carlos_Asensio_Cabanillas_large
+				small = GFX_SPR_Carlos_Asensio_Cabanillas_small
+			}
+		}
+		corps_commander = {
+			traits = { SPR_Command_limit career_officer brilliant_strategist armor_officer offensive_doctrine }
+			skill = 3
+            attack_skill = 4
+            defense_skill = 4
+            planning_skill = 2
+            logistics_skill = 3
+		}
+	}
+	#埃米利奥·莫拉
+	SPR_Emilio_Mora = {
+		name = SPR_Emilio_Mora
+		portraits={
+			army={
+				large = GFX_SPR_Emilio_Mora_large
+				small = GFX_SPR_Emilio_Mora_small
+			}
+		}
+		corps_commander = {
+			traits = { SPR_Command_limit hill_fighter harsh_leader guerilla_fighter career_officer }
+			skill = 3
+            attack_skill = 4
+            defense_skill = 4
+            planning_skill = 2
+            logistics_skill = 1
+		}
+	}
+}

@@ -1,0 +1,26 @@
+
+state={
+	id = 404
+	name="STATE_404" # Gurev
+	manpower = 221095
+	
+	state_category = wasteland
+
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			11537 1
+		}
+		add_core_of = SOV
+		add_core_of = KAZ
+	}
+
+	provinces={
+		566 11537 3404 9549 11473 6491 11524 9469 464 6551 9538 3515 6523 3467 9487 470 6588 6564 11482 6514 615 6498 3406 3538 9513 468 477 3459 3622 11538 545 11472 11578 6525 11457
+	}
+
+	local_supplies=0.0 
+}

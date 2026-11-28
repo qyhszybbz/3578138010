@@ -1,0 +1,43 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_portrait_ARG_maersailo"
+		texturefile = "gfx/leaders/ARG/ARG_maersailo.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ARG_amadio_2"
+		texturefile = "gfx/leaders/ARG/ARG_amadio_2.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_BOL_aosika_leimengduo"
+		texturefile = "gfx/leaders/BOL/BOL_aosika_leimengduo.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_BOL_herman_bushi"
+		texturefile = "gfx/leaders/BOL/BOL_herman_bushi.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_BRA_peideluo_3"
+		texturefile = "gfx/leaders/BRA/BRA_peideluo_3.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_BRA_washitong_luyisi"
+		texturefile = "gfx/leaders/BRA/BRA_washitong_luyisi.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_portrait_BTG_antuowan_3"
+		texturefile = "gfx/leaders/BTG/BTG_antuowan_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_COL_huan_bisengte"
+		texturefile = "gfx/leaders/COL/COL_huan_bisengte.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_URG_jiafuliefu_tela"
+		texturefile = "gfx/leaders/URG/URG_jiafuliefu_tela.dds"
+	}
+
+}

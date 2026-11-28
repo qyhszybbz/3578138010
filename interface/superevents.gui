@@ -1,0 +1,59 @@
+guiTypes = {
+	containerWindowType = {
+		name = "superevents_gui"
+		#orientation = lower_left
+		position = { x = -600 y = -340 }
+		clipping = no
+		moveable = yes
+		orientation= center
+		iconType = {
+			name = "superevent_bg"
+			quadTextureSprite = "GFX_superevent_0"
+			position = { x = 35 y = 74 }
+			alwaystransparent = yes
+		}
+		background = {
+			name = "background"
+			quadTextureSprite = "GFX_superevent"
+		}
+		
+		
+		iconType = {
+			name = "superevent_bg_icon"
+			quadTextureSprite = "GFX_superevent"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "SE_title"
+			position = { x = 345 y = 14 }
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = "SE_title_text"
+			maxWidth = 185
+			maxHeight = 20
+			fixedsize = yes
+			format = center
+		}
+		instantTextBoxType = {
+			name = "SE_desc"
+			position = { x = 40 y = 440 }
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 0}
+			text = "SE_desc_text"
+			maxWidth = 400
+			maxHeight = 400
+			fixedsize = yes
+			format = center
+		}
+		buttonType = {
+			name = "close_SE_button" 
+			position = { x=471 y =526} 
+			quadTextureSprite ="GFX_superevent_bottom" 
+			buttonText = "SE_bottom_text" 
+			buttonFont = "nsb_hoi_24header"
+			
+			
+		}
+	}
+}

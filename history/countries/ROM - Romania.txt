@@ -1,0 +1,155 @@
+﻿capital = 46 #布加勒斯特
+oob = "ROM_1935"
+set_stability = 0.67
+set_war_support = 0.51
+starting_train_buffer = 1.2
+set_fuel_ratio = 0.7
+load_focus_tree = generic_focus
+set_research_slots = 3
+set_convoys = 10
+set_country_flag = tfe_second_leader #副领导人
+
+### 初始科技 ###
+set_technology = {
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	basic_train = 1
+	gwtank_chassis = 1
+	basic_light_tank_chassis = 1
+
+	basic_naval_mines = 1
+	submarine_mine_laying = 1
+	early_ship_hull_light = 1
+	early_ship_hull_submarine = 1
+	basic_ship_hull_submarine = 1
+	basic_battery = 1
+}
+
+### 领导人 ###
+recruit_character = ROM_Constantin_Argetoianu #康斯坦丁·阿尔格托亚努
+recruit_character = ROM_Nikola_Jorga #尼古拉·约尔加
+recruit_character = ROM_Boris_Stefanov #鲍里斯·斯特法诺夫
+recruit_character = ROM_Lothar_Radzianu #洛塔尔·拉德齐亚努
+recruit_character = ROM_Ion_Mihalache #扬·米哈拉凯
+recruit_character = ROM_Gheorghe_Tatarescu #格奥尔基·塔塔内斯库
+recruit_character = ROM_Vintila_Bratianu #温蒂勒·布勒蒂亚努
+recruit_character = ROM_Alexandru_Vaida_Voievod	#亚历山德鲁·瓦伊达·沃艾沃德
+recruit_character = ROM_Constantin_Prezan #康斯坦丁·普雷赞
+recruit_character = ROM_Horia_Sima #霍里亚·西马
+recruit_character = ROM_Octavian_Goga #屋大维·戈加
+### 将领 ###
+recruit_character = ROM_Ion_Antonescu #扬·安东内斯库
+recruit_character = ROM_Gheorghe_Argeseanu #格奥尔基·阿尔杰沙努
+
+add_ideas = {
+	### 初始民族精神 ###
+	ROM_hollow_republic #徒有其表的共和国
+	ROM_one_party_blowback #一党制霸的反噬
+	ROM_hedgehog_nation #刺猬国度
+	ROM_new_sowingism #新播种主义的复兴
+
+	### 初始副领袖 ###
+	ROM_Nikola_Jorga #尼古拉·约尔加
+}
+
+set_politics = {
+	ruling_party = Authoritarianism
+	last_election = "1933.12.20"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	communism = 0
+	Socialism = 3
+	Progressivism = 10
+	Liberalism = 5
+	Democracy = 11
+	Conservatism = 17
+	Authoritarianism = 28
+	tttt = 10
+	fascism = 11
+	nazism = 5
+}
+
+
+### VARIANTS ###
+# 1936 Start #
+create_equipment_variant = {
+	name = "IAR 14" 
+	type = small_plane_airframe_0
+	modules = {
+		fixed_main_weapon_slot = light_mg_2x
+		engine_type_slot = engine_1_1x
+		special_type_slot_1 = empty
+	}
+}
+
+create_equipment_variant = {
+	name = "Delfinul Class"				
+	type = ship_hull_submarine_2
+	name_group = ROM_SS_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_torpedo_slot = ship_torpedo_sub_1
+		fixed_ship_engine_slot = sub_ship_engine_1
+		rear_1_custom_slot = ship_mine_layer_sub
+	}
+}
+# Destroyers #
+create_equipment_variant = {
+	name = "Marasti Class"				
+	type = ship_hull_light_1
+	name_group = ROM_DD_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_torpedo_slot = ship_torpedo_1
+		mid_1_custom_slot = ship_mine_layer_1
+		rear_1_custom_slot = empty
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Regele Ferdinand Class"	
+	type = ship_hull_light_1
+	name_group = ROM_DD_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_torpedo_slot = ship_torpedo_1
+		mid_1_custom_slot = ship_mine_layer_1
+		rear_1_custom_slot = ship_depth_charge_1
+	}
+}
+create_equipment_variant = {
+	name = "R-1"
+	type = light_tank_chassis_1
+	parent_version = 0
+	modules = {
+		turret_type_slot = tank_light_two_man_tank_turret
+		main_armament_slot = tank_small_cannon
+		suspension_type_slot = tank_bogie_suspension
+		armor_type_slot = tank_riveted_armor
+		engine_type_slot = tank_gasoline_engine
+		special_type_slot_1 = tank_radio_1
+		special_type_slot_2 = additional_machine_guns
+		special_type_slot_3 = sloped_armor
+		special_type_slot_4 = armor_skirts
+	}
+}
+

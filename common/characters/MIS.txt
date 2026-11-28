@@ -1,0 +1,17 @@
+characters = {
+	MIS_Alfonso_Lopez_Pumarejo = { #阿方索·雷耶斯
+		name= MIS_Alfonso_Lopez_Pumarejo
+		portraits={
+			civilian={
+				large= GFX_leader_MIS_Alfonso_Lopez_Pumarejo
+			}
+		}
+		country_leader={
+			ideology= liberalism_small
+			#desc = MIS_Alfonso_Lopez_Pumarejo_desc
+			traits={ 
+				
+			}
+		}
+	} 
+}

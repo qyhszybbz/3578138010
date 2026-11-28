@@ -1,0 +1,23 @@
+guiTypes = {
+
+	   containerWindowType = {
+		   name = "AUS_GUI_DESISIONS"
+		
+		   size = { width = 581 height =500 }
+
+		   background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_bg"
+			}
+		   
+		 	iconType = {
+				name = "AUS_FRAME_ICON"
+				position = { x = 0 y =150 }
+				quadTextureSprite = "GFX_frame_warview"
+			}
+
+   
+		
+		}
+	}
+ 

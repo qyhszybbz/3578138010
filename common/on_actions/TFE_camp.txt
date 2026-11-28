@@ -1,0 +1,24 @@
+on_actions = {
+	on_startup = {
+		effect = { #开局阵营进数组
+			every_country = {
+				if = {
+				limit = {
+				is_faction_leader = yes
+			}
+			add_to_array = {
+				array = global.grid_faction_array_@THIS
+				index = 0
+			}
+			for_each_scope_loop = { 
+					array = THIS.allies
+					add_to_array = {
+					array = global.grid_faction_array_@PREV
+				}
+				}
+			}
+			}
+		}
+	}
+	
+}

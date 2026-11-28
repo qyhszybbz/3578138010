@@ -1,0 +1,217 @@
+spriteTypes = { 
+	###领导人
+	spriteType = { #豪尔赫·埃利塞尔·盖坦
+		name = "GFX_leader_COL_Jorge_Elisel_Gaitan" 
+		texturefile = "gfx/leaders/COL/COL_Jorge_Elisel_Gaitan.dds" 
+	}
+	spriteType = { #国民议会
+		name = "GFX_leader_COL_National_Assembly" 
+		texturefile = "gfx/leaders/COL/COL_National_Assembly.dds" 
+	}
+	spriteType = { #普利尼奥·门多萨·内拉
+		name = "GFX_leader_COL_Plinio_Mendoza_Neran" 
+		texturefile = "gfx/leaders/COL/COL_Plinio_Mendoza_Nera.dds" 
+	}
+	###民族精神
+	spriteType = { #盖坦运动的遗产和遗波
+		name = "GFX_idea_COL_The_legacy_and_aotgm" 
+		texturefile = "gfx/interface/ideas/COL/COL_The_legacy_and_aotgm.dds"
+	}
+	spriteType = { #完成玻利瓦尔的遗愿
+		name = "GFX_idea_COL_Fulfilling_Bolivars_last_wish" 
+		texturefile = "gfx/interface/ideas/COL/COL_Fulfilling_Bolivars_last_wish.dds"
+	}
+	spriteType = { #嚣张的共和派
+		name = "GFX_idea_COL_Cooperation_between_baa" 
+		texturefile = "gfx/interface/ideas/COL/COL_Cooperation_between_baa.dds"
+	}
+	spriteType = { #分裂之家
+		name = "GFX_idea_COL_divided_house" 
+		texturefile = "gfx/interface/ideas/COL/COL_divided_house.dds"
+	}
+	spriteType = { #不驯边境
+		name = "GFX_idea_COL_Do_not_train_the_border" 
+		texturefile = "gfx/interface/ideas/COL/COL_Do_not_train_the_border.dds"
+	}
+	#配图
+	spriteType = { #盖坦运动的遗产和遗波配图
+		name = "GFX_idea_COL_The_legacy_and_aotgm_Pictures" 
+		texturefile = "gfx/texticons/banners/COL/COL_The_legacy_and_aotgm_Pictures.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = { #完成玻利瓦尔的遗愿配图
+		name = "GFX_idea_COL_Fulfilling_Bolivars_last_wish_Pictures" 
+		texturefile = "gfx/texticons/banners/COL/COL_Fulfilling_Bolivars_last_wish_Pictures.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = { #哥阿合作配图
+		name = "GFX_idea_COL_Cooperation_between_baa_Pictures" 
+		texturefile = "gfx/texticons/banners/COL/COL_Cooperation_between_baa_Pictures.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = { #不驯边境
+		name = "GFX_idea_COL_Do_not_train_the_border_Pictures" 
+		texturefile = "gfx/interface/ideas/COL/COL_Do_not_train_the_border_Pictures.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = { #分裂之家配图
+		name = "GFX_idea_COL_divided_house_Pictures"
+		texturefile = "gfx/texticons/banners/COL/COL_divided_house_Pictures.dds" 
+		legacy_lazy_load = no
+	}
+	#新闻及事件图
+	 spriteType = { #盖坦遇刺
+        name = "GFX_events_COL_Gaitan_assassinated"
+        textureFile = "gfx/interface/events/COL/COL_Gaitan_assassinated.dds"
+    }
+	spriteType = { #哥伦比亚内战
+        name = "GFX_events_COL_Colombian_Civil_War"
+        textureFile = "gfx/interface/events/COL/COL_Colombian_Civil_War.dds" 
+    }
+	##国策
+	SpriteType = { #万众瞩目豪尔赫
+	    name = "GFX_focus_COL_All_eyes_on_Jorge"
+	    texturefile = "gfx/interface/goals/COL/COL_All_eyes_on_Jorge.dds"
+	}
+	SpriteType = { #万众瞩目豪尔赫
+	    name = "GFX_focus_COL_All_eyes_on_Jorge_shine"
+	    texturefile = "gfx/interface/goals/COL/COL_All_eyes_on_Jorge.dds"
+	}
+	SpriteType = { #修建巴别塔
+	    name = "GFX_focus_COL_Building_ttob"
+	    texturefile = "gfx/interface/goals/COL/COL_Building_ttob.dds"
+	}
+	SpriteType = { #修建巴别塔
+	    name = "GFX_focus_COL_Building_ttob_shine"
+	    texturefile = "gfx/interface/goals/COL/COL_Building_ttob.dds"
+	}
+	SpriteType = { #与工会的洽谈
+	    name = "GFX_focus_COL_Negotiations_wtlu"
+	    texturefile = "gfx/interface/goals/COL/COL_Negotiations_wtlu.dds"
+	}
+	SpriteType = { #与工会的洽谈
+	    name = "GFX_focus_COL_Negotiations_wtlu_shine"
+	    texturefile = "gfx/interface/goals/COL/COL_Negotiations_wtlu.dds"
+	}
+	SpriteType = { #回顾往昔
+	    name = "GFX_focus_COL_Looking_back_otp"
+	    texturefile = "gfx/interface/goals/COL/COL_Looking_back_otp.dds"
+	}
+	SpriteType = { #回顾往昔
+	    name = "GFX_focus_COL_Looking_back_otp_shine"
+	    texturefile = "gfx/interface/goals/COL/COL_Looking_back_otp.dds"
+	}
+	SpriteType = { #新建党支部
+	    name = "GFX_focus_COL_Establish_a_npb"
+	    texturefile = "gfx/interface/goals/COL/COL_Establish_a_npb.dds"
+	}
+	SpriteType = { #新建党支部
+	    name = "GFX_focus_COL_Establish_a_npb_shine"
+	    texturefile = "gfx/interface/goals/COL/COL_Establish_a_npb.dds"
+	}
+	SpriteType = { #联系负责人
+	    name = "GFX_focus_COL_Contact_the_pic"
+	    texturefile = "gfx/interface/goals/COL/COL_Contact_the_pic.dds"
+	}
+	SpriteType = { #联系负责人
+	    name = "GFX_focus_COL_Contact_the_pic_shine"
+	    texturefile = "gfx/interface/goals/COL/COL_Contact_the_pic.dds"
+	}
+	SpriteType = { #谴责政变
+	    name = "GFX_focus_COL_Condemn_the_coup"
+	    texturefile = "gfx/interface/goals/COL/COL_Condemn_the_coup.dds"
+	}
+	SpriteType = { #谴责政变
+	    name = "GFX_focus_COL_Condemn_the_coup_shine"
+	    texturefile = "gfx/interface/goals/COL/COL_Condemn_the_coup.dds"
+	}
+	SpriteType = { #合并左翼联盟事务
+	    name = "GFX_focus_COL_Consolidating_lwaa"
+	    texturefile = "gfx/interface/goals/COL/COL_Consolidating_lwaa.dds"
+	}
+	SpriteType = { #合并左翼联盟事务
+	    name = "GFX_focus_COL_Consolidating_lwaa_shine"
+	    texturefile = "gfx/interface/goals/COL/COL_Consolidating_lwaa.dds"
+	}
+	SpriteType = { #接通昔马雷霍
+	    name = "GFX_focus_COL_Connect_to_Pumarejo"
+	    texturefile = "gfx/interface/goals/COL/COL_Connect_to_Pumarejo.dds"
+	}
+	SpriteType = { #接通昔马雷霍
+	    name = "GFX_focus_COL_Connect_to_Pumarejo_shine"
+	    texturefile = "gfx/interface/goals/COL/COL_Connect_to_Pumarejo.dds"
+	}
+	SpriteType = { #改造自由党
+	    name = "GFX_focus_COL_Transforming_tlp"
+	    texturefile = "gfx/interface/goals/COL/COL_Transforming_tlp.dds"
+	}
+	SpriteType = { #改造自由党
+	    name = "GFX_focus_COL_Transforming_tlp_shine"
+	    texturefile = "gfx/interface/goals/COL/COL_Transforming_tlp.dds"
+	}
+	SpriteType = { #反思千日战争
+	    name = "GFX_focus_COL_Reflecting_on_ttdw"
+	    texturefile = "gfx/interface/goals/COL/COL_Reflecting_on_ttdw.dds"
+	}
+	SpriteType = { #反思千日战争
+	    name = "GFX_focus_COL_Reflecting_on_ttdw_shine"
+	    texturefile = "gfx/interface/goals/COL/COL_Reflecting_on_ttdw.dds"
+	}
+	SpriteType = { #新建的哥伦比亚
+	    name = "GFX_focus_COL_The_newly_built_Colombia"
+	    texturefile = "gfx/interface/goals/COL/COL_The_newly_built_Colombia.dds"
+	}
+	SpriteType = { #新建的哥伦比亚
+	    name = "GFX_focus_COL_The_newly_built_Colombia_shine"
+	    texturefile = "gfx/interface/goals/COL/COL_The_newly_built_Colombia.dds"
+	}
+	SpriteType = { #以民主为纲领
+	    name = "GFX_focus_COL_Taking_democracy_atgp"
+	    texturefile = "gfx/interface/goals/COL/COL_Taking_democracy_atgp.dds"
+	}
+	SpriteType = { #以民主为纲领
+	    name = "GFX_focus_COL_Taking_democracy_atgp_shine"
+	    texturefile = "gfx/interface/goals/COL/COL_Taking_democracy_atgp.dds"
+	}
+	SpriteType = { #熟透的石榴
+	    name = "GFX_focus_COL_A_fully_ripe_pomegranate"
+	    texturefile = "gfx/interface/goals/COL/COL_A_fully_ripe_pomegranate.dds"
+	}
+	SpriteType = { #熟透的石榴
+	    name = "GFX_focus_COL_A_fully_ripe_pomegranate_shine"
+	    texturefile = "gfx/interface/goals/COL/COL_A_fully_ripe_pomegranate.dds"
+	}
+	SpriteType = { #重启巴斯克斯案
+	    name = "GFX_focus_COL_Reopening_the_Vazquez_case"
+	    texturefile = "gfx/interface/goals/COL/COL_Reopening_the_Vazquez_case.dds"
+	}
+	SpriteType = { #重启巴斯克斯案
+	    name = "GFX_focus_COL_Reopening_the_Vazquez_case_shine"
+	    texturefile = "gfx/interface/goals/COL/COL_Reopening_the_Vazquez_case.dds"
+	}
+	SpriteType = { #团结的国家
+	    name = "GFX_focus_COL_A_united_nation"
+	    texturefile = "gfx/interface/goals/COL/COL_A_united_nation.dds"
+	}
+	SpriteType = { #团结的国家
+	    name = "GFX_focus_COL_A_united_nation_shine"
+	    texturefile = "gfx/interface/goals/COL/COL_A_united_nation.dds"
+	}
+	SpriteType = { #大哥伦比亚之黎明
+	    name = "GFX_focus_COL_The_Dawn_of_gc"
+	    texturefile = "gfx/interface/goals/COL/COL_The_Dawn_of_gc.dds"
+	}
+	SpriteType = { #大哥伦比亚之黎明
+	    name = "GFX_focus_COL_The_Dawn_of_gc_shine"
+	    texturefile = "gfx/interface/goals/COL/COL_The_Dawn_of_gc.dds"
+	}
+	#SpriteType = { #闪耀的启明星
+	#    name = "GFX_focus_COL_The_Shining_Morning_Star"
+	#    texturefile = "gfx/interface/goals/COL/COL_The_Shining_Morning_Star.dds"
+	#}
+	#SpriteType = { #闪耀的启明星
+	#    name = "GFX_focus_COL_The_Shining_Morning_Star_shine"
+	#    texturefile = "gfx/interface/goals/COL/COL_The_Shining_Morning_Star.dds"
+	#}
+
+}

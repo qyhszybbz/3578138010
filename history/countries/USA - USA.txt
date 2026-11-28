@@ -1,0 +1,300 @@
+﻿capital = 358 #华盛顿特区
+oob = "USA_1935"
+set_naval_oob = "USA_navy_1935"
+set_air_oob = "USA_air_1935"
+set_stability = 0.60
+set_war_support = 0.40
+starting_train_buffer = 1.3
+set_fuel_ratio = 0.8
+set_research_slots = 3
+
+
+### 初始科技 ###
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_trucks = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	#superior_firepower = 1
+	#base_strike = 1
+	motorised_infantry = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	marines = 1
+	basic_train = 1
+	engine_tech_1 = 1
+	gwtank_chassis = 1
+	basic_light_tank_chassis = 1
+
+	#下面是空军科技
+	iw_small_airframe = 1
+	basic_small_airframe = 1
+	iw_medium_airframe = 1
+	aa_lmg = 1
+	engines_1 = 1
+	early_bombs = 1
+	bba_early_transport_plane = 1
+
+	#下面是海军科技
+	early_ship_hull_light = 1        
+	early_ship_hull_cruiser = 1      
+	early_ship_hull_heavy = 1        
+	early_ship_hull_submarine = 1
+	early_ship_hull_carrier = 1
+	basic_ship_hull_carrier = 1
+	basic_naval_mines = 1
+	submarine_mine_laying = 1    
+	basic_battery = 1
+	basic_light_battery = 1
+	basic_heavy_battery = 1
+	basic_torpedo = 1
+	sonar = 1
+	smoke_generator = 1
+	basic_depth_charges = 1
+	basic_cruiser_armor_scheme = 1
+	basic_heavy_armor_scheme = 1
+	mtg_transport = 1
+	basic_fire_control_system = 1
+	basic_dp_light_battery = 1
+	coastal_defense_ships = 1
+} 
+### 领导人 ###
+recruit_character = USA_John_Calvin_Coolidge #约翰·卡尔文·柯立芝
+recruit_character = USA_John_Reed #约翰·里德
+recruit_character = USA_Earl_Browder #厄尔·白劳德
+recruit_character = USA_Manchester_Boddy #曼彻斯特·博迪
+recruit_character = USA_Orson_Welles #奥逊•威尔斯
+recruit_character = USA_Al_Smith #阿尔·史密斯
+recruit_character = USA_Corporate_Board #企业理事会
+recruit_character = USA_George_Mosley #乔治·莫斯利
+#政治顾问
+recruit_character = USA_Orson_Welles #奥逊•威尔斯
+recruit_character = USA_William_J_Donovan #威廉•J•多诺万
+recruit_character = USA_Brown_Murray_Cutting #布朗•默里•卡廷
+recruit_character = USA_Dan_Moody #丹•默迪
+recruit_character = USA_Franklin_Delano_Roosevelt #富兰克林•德莱诺•罗斯福
+recruit_character = USA_Dwight_D_Eisenhower #德怀特·D·艾森豪威尔
+recruit_character = USA_Alf_Landon #阿尔夫·兰登
+recruit_character = USA_George_S_Patton_Jr #小乔治·史密斯·巴顿
+recruit_character = USA_William_Tubman #威廉·杜伯曼
+### 将领 ###
+recruit_character = USA_Frank_Besson #弗兰克·贝森
+recruit_character = USA_Robert_Berry #罗伯特·贝瑞
+recruit_character = USA_Thomas_Bates #托马斯·贝茨
+recruit_character = USA_Ernest_Bixby #欧内斯特·比克斯比
+recruit_character = USA_Joseph_Baschern #约瑟夫·巴斯彻恩
+recruit_character = USA_Hugh_Milton #休·米尔顿
+recruit_character = USA_Joseph_Stilwell #约瑟夫·史迪威
+recruit_character = USA_Jacob_Devers #雅各布·德弗斯
+
+set_autonomy = {
+	target = IDA
+	autonomous_state = Autonomous_state
+	freedom_level = 0.5
+}
+
+
+
+add_ideas = {
+	### 初始民族精神 ###
+	USA_Large_business_owners #国家由大企业主导
+	USA_Incompetent_Army #无能的军队
+	USA_Ethnic_conflict #民族冲突
+	USA_The_Tragedy_of_a_Divided_Homeland #祖国分裂之殇
+	USA_Northern_Free_State #北方自由州
+}
+
+set_politics = {
+	ruling_party = Liberalism
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	Communism = 11
+	Socialism = 5
+	Progressivism = 10
+	Liberalism = 38
+	Democracy = 20
+	Conservatism = 5
+	Authoritarianism = 5
+	fascism = 4
+	nazism = 2
+}
+
+send_embargo = CSA
+
+
+create_equipment_variant = {#战斗机
+	name = "Gloster Gladiator" 
+	type = small_plane_airframe_0
+	modules = {
+		fixed_main_weapon_slot = light_mg_4x
+		engine_type_slot = engine_1_1x
+		special_type_slot_1 = empty
+	}
+}
+create_equipment_variant = {#轰炸机
+	name = "Handley Page Heyford" 
+	type = medium_plane_airframe_0
+	modules = {
+		fixed_main_weapon_slot = medium_bomb_bay
+		engine_type_slot = engine_1_2x
+		special_type_slot_1 = empty
+	}
+}
+create_equipment_variant = {#舔地机
+	name = "Fairey Gordon" 
+	type = small_plane_cas_airframe_0
+	modules = {
+		fixed_main_weapon_slot = bomb_locks
+		engine_type_slot = engine_1_1x
+		special_type_slot_1 = empty
+	}
+}
+
+create_equipment_variant = {#战列舰
+	name = "BattleShip"
+	type = ship_hull_heavy_1
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_heavy_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = heavy_ship_engine_1
+		fixed_ship_secondaries_slot = dp_ship_secondaries_2
+		fixed_ship_armor_slot = ship_armor_bc_2
+		front_1_custom_slot = ship_anti_air_1
+		mid_1_custom_slot = empty
+		mid_2_custom_slot = ship_secondaries_1
+		rear_1_custom_slot = ship_heavy_battery_1
+	}
+}
+create_equipment_variant = {#潜艇
+	name = "O/P/R Class"
+	type = ship_hull_submarine_1
+	parent_version = 0
+	modules = {
+		fixed_ship_torpedo_slot = ship_torpedo_sub_1
+		fixed_ship_engine_slot = sub_ship_engine_1
+		rear_1_custom_slot = empty
+	}
+	upgrades = {
+		ship_reliability_upgrade = 3
+		sub_engine_upgrade = 2
+		sub_stealth_upgrade = 2
+		sub_torpedo_upgrade = 3
+	}
+}
+create_equipment_variant = {#驱逐舰
+	name = "A/B/C/D Class"
+	type = ship_hull_light_1
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_torpedo_slot = ship_torpedo_1
+		mid_1_custom_slot = empty
+		rear_1_custom_slot = ship_depth_charge_1
+	}
+	upgrades = {
+		ship_torpedo_upgrade = 1
+		destroyer_engine_upgrade = 3
+		ship_ASW_upgrade = 2
+		ship_anti_air_upgrade = 1
+	}
+}
+create_equipment_variant = {#巡洋舰
+	name = "Danae Class"
+	type = ship_hull_cruiser_1
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_medium_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = cruiser_ship_engine_1
+		fixed_ship_armor_slot = ship_armor_cruiser_1
+		mid_1_custom_slot = ship_torpedo_1
+		mid_2_custom_slot = ship_torpedo_1
+		rear_1_custom_slot = empty
+	}
+}
+
+
+create_equipment_variant = {#航母
+	name = "Clinton Class"
+	type = ship_hull_carrier_1
+	parent_version = 0
+	modules = {
+		fixed_ship_deck_slot_1 = ship_deck_space
+		fixed_ship_deck_slot_2 = ship_deck_space
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = carrier_ship_engine_2
+		fixed_ship_secondaries_slot = dp_ship_secondaries_2
+		front_1_custom_slot = ship_deck_space
+	}
+}
+create_equipment_variant = {#舰载战斗机
+	name = "F2A Buffalo"
+	type = cv_small_plane_airframe_1
+	modules = {
+		fixed_main_weapon_slot = light_mg_4x
+		engine_type_slot = engine_1_1x
+		special_type_slot_1 = empty
+	}
+}
+
+create_equipment_variant = {#轻坦 LT-35
+	name = "LT-35"
+	type = light_tank_chassis_0
+	parent_version = 0
+	modules = {
+		main_armament_slot = tank_heavy_machine_gun
+		turret_type_slot = tank_light_one_man_tank_turret
+		suspension_type_slot = tank_bogie_suspension
+		armor_type_slot = tank_riveted_armor
+		engine_type_slot = tank_gasoline_engine
+		special_type_slot_1 = additional_machine_guns
+		special_type_slot_2 = sloped_armor
+	}
+}
+
+add_equipment_to_stockpile = {#LT-35 库存
+	type = light_tank_chassis_0
+	amount = 100
+	producer = USA
+	variant_name = "LT-35"
+}
+
+create_equipment_variant = {#中坦 MT-35
+	name = "MT-35"
+	type = medium_tank_chassis_0
+	parent_version = 0
+	modules = {
+		main_armament_slot = tank_small_cannon
+		turret_type_slot = tank_medium_one_man_tank_turret
+		suspension_type_slot = tank_bogie_suspension
+		armor_type_slot = tank_riveted_armor
+		engine_type_slot = tank_gasoline_engine
+		special_type_slot_1 = additional_machine_guns
+		special_type_slot_2 = sloped_armor
+	}
+}
+
+add_equipment_to_stockpile = {#MT-35 库存
+	type = medium_tank_chassis_0
+	amount = 100
+	producer = USA
+	variant_name = "MT-35"
+}

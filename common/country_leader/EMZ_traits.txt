@@ -1,0 +1,7 @@
+leader_traits = {
+
+	EMZ_northern_king = { #北方王
+		political_power_gain = 0.2
+		army_org_factor = 0.1
+	}
+}

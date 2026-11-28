@@ -1,0 +1,60 @@
+﻿capital = 275
+oob = "SAF_1935"
+set_stability = 0.29
+set_war_support = 0.24
+starting_train_buffer = 0.9
+set_fuel_ratio = 0.85
+load_focus_tree = generic_focus
+set_research_slots = 3
+set_convoys = 25
+
+### 初始科技 ###
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	gw_artillery = 1
+	fuel_silos = 1
+	gwtank_chassis = 1
+
+	basic_naval_mines = 1
+	submarine_mine_laying = 1
+	early_ship_hull_light = 1
+	early_ship_hull_submarine = 1
+	basic_ship_hull_submarine = 1
+	basic_battery = 1
+	basic_torpedo = 1
+}
+
+### 领导人 ###
+recruit_character = SAF_Frederic_Creswell #弗雷德里克·克雷斯韦尔
+
+add_ideas = {
+	### 初始民族精神 ###
+	SAF_Welfare_State_in_Africa #非洲福利之邦
+	SAF_Party_with_Facade_of_Peace #同床异梦的党
+	SAF_House_Divided #分裂之家
+}
+
+set_politics = {
+	ruling_party = Democracy
+	last_election = "1933.5.17"
+	election_frequency = 60
+	elections_allowed = no
+}
+set_popularities = {
+	communism = 1
+	Socialism = 4
+	Progressivism = 16
+	Liberalism = 14
+	Democracy = 24
+	Conservatism = 7
+	Authoritarianism = 21
+	tttt = 8
+	fascism = 4
+	nazism = 1
+}

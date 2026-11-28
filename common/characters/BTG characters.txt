@@ -1,0 +1,17 @@
+characters = {
+	#领导人
+	#摄政委员会
+	BTG_Regency_Council = {
+		name = BTG_Regency_Council
+		portraits = {
+			civilian = {
+				large = GFX_BTG_Regency_Council_large
+			}
+		}
+		country_leader = {
+			desc = BTG_Regency_Council_desc
+			ideology = authoritarianism_small
+			traits= { }
+		}
+	}
+}

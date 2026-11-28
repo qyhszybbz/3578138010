@@ -1,0 +1,36 @@
+﻿capital = 7
+load_focus_tree = generic_focus
+#set_cosmetic_tag = HOL_BEL_LUX
+
+set_research_slots = 2
+set_stability = 0.2
+set_war_support = 0.2
+add_command_power = 20
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_trucks = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	marines = 1
+	basic_train = 1
+}
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1933.4.26"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	communism = 75
+	Socialism = 10
+	Progressivism = 15
+}
+set_convoys = 150
+

@@ -1,0 +1,41 @@
+state = {
+	id = 1007
+	name = "STATE_1007"
+	manpower = 2298704
+	state_category = megalopolis
+	resources = {
+		oil = 170.000
+		aluminium = 7.000
+	}
+
+	history = {
+
+		owner = SCF
+		add_core_of = SCF
+		add_core_of = CSA
+		add_claim_by = USA
+
+		
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+		}
+
+		victory_points = {
+			9814 30
+		}
+		victory_points = {
+			1562 15 
+		}
+	
+		
+	}
+
+
+	provinces={
+		9814 1562 7517 11757 986 11859 6881 3784 11876 9855 9911 941 1651 10387 10483 11795 12303 4727 823 4657 7986 12374
+	}
+
+	local_supplies = 20.0 
+}

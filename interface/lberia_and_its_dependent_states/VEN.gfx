@@ -1,0 +1,44 @@
+spriteTypes = {
+	#领导者
+	spriteType = { #米格尔·卡瓦内利亚斯
+		name = "GFX_leaders_VEN_Miguel_Cavanellas"
+		texturefile = "gfx/leaders/VEN/TVE_VEN_Miguel_Cavanellas.dds"
+	}
+	spriteType = { #米格尔·卡瓦内利亚斯
+		name = "GFX_leaders_VEN_Eliazar_Lopez_Contreras"
+		texturefile = "gfx/leaders/VEN/VEN_Eliazar_Lopez_Contreras.dds"
+	}
+	#民族精神
+	spriteType = { #旧日阴影
+		name = "GFX_idea_TVE_VEM_shadow_of_the_past"
+		texturefile = "gfx/interface/ideas/VEN/TVE_VEM_shadow_of_the_past.dds" 
+	}
+	spriteType = { #黑金流淌之地
+		name = "GFX_idea_VEN_The_land_where_bgf"
+		texturefile = "gfx/interface/ideas/VEN/VEN_The_land_where_bgf.dds" 
+	}
+	#spriteType = { #苟延残喘
+	#	name = "GFX_idea_VEN_on_ones_last_legs"
+	#	texturefile = "gfx/interface/ideas/VEN/VEN_on_ones_last_legs.dds"  
+	#}
+	spriteType = { #狼穴与堡垒
+		name = "GFX_idea_VEN_Wolf_Lair_and_Fortress"
+		texturefile = "gfx/interface/ideas/VEN/VEN_Wolf_Lair_and_Fortress.dds" 
+	}
+	###配图
+	spriteType = { #黑金流淌之地
+		name = "GFX_idea_VEN_The_land_where_bgf_Pictures"
+		texturefile = "gfx/texticons/banners/VEN/VEN_The_land_where_bgf_Pictures.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = { #狼穴与堡垒
+		name = "GFX_idea_VEN_Wolf_Lair_and_Fortress_Pictures"
+		texturefile = "gfx/texticons/banners/VEN/VEN_Wolf_Lair_and_Fortress_Pictures.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = { #苟延残喘
+		name = "GFX_idea_VEN_on_ones_last_legs_Pictures"
+		texturefile = "gfx/texticons/banners/VEN/VEN_on_ones_last_legs_Pictures.dds"
+		legacy_lazy_load = no
+	}
+}

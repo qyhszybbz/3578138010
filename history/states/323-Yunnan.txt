@@ -1,0 +1,48 @@
+state = {
+	id = 323
+	name = "STATE_323"
+	manpower = 9528156
+	state_category = town
+	resources = {
+		tungsten = 2
+	}
+	history = {
+		owner = CHI
+		add_core_of = YUN
+		add_core_of = CHI
+		add_core_of = PRC
+		add_extra_state_shared_building_slots = 1
+		buildings = {
+			arms_factory = 1
+			industrial_complex = 3
+			infrastructure = 2
+		}
+		1938.10.25 = {
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "Waking the Tiger" 
+					}
+
+				}
+				CHI = {
+					transfer_state = PREV
+
+				}
+
+			}
+
+		}
+		victory_points = {
+			1319 15
+		}
+		victory_points = {
+			5072 3
+		}
+	}
+	provinces = {
+		1319 4559 4937 5072 7446 8023 10346 11972 12841
+	}
+	local_supplies = 7
+	buildings_max_level_factor = 1.000
+}

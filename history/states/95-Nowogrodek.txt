@@ -1,0 +1,29 @@
+state={
+	id = 95
+	name="STATE_95"
+
+	history={
+		victory_points = {
+			9304 1
+		}
+	
+		owner = BLR
+		buildings = {
+			infrastructure = 3
+			air_base = 3
+
+		}
+		add_core_of = BLR
+		add_claim_by = SOV
+
+	}
+
+	provinces={
+		3309 9304 11341
+	}
+	manpower=386953
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=6.0 
+}

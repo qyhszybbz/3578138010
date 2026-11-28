@@ -1,0 +1,489 @@
+focus_tree = {
+	id = CSA_TVE_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = CSA
+		}
+	}
+
+	default = no
+
+	continuous_focus_position = { x = 30 y = 2000 }
+
+		#allow_branch = {
+		#	not = {
+		#		has_country_flag = SOV_gaoerchake_panluan_flag
+		#	}
+		#}
+
+	focus = { #二十世纪联盟国
+		id = CSA_20th_Century_Alliance
+		icon = GFX_focus_CSA_20th_Century_Alliance
+		cost = 3
+		x = 9
+		y = 0
+		available = {
+		}
+
+		completion_reward = {
+			add_political_power = 200
+			country_event = {
+				id = Confederate_State.1
+			}
+		}
+	}
+	focus = { #邦联大会的现状
+		id = CSA_The_status_quo_atcc
+		icon = GFX_focus_CSA_The_status_quo_atcc 
+		cost = 3
+		x = 0
+		y = 1
+		relative_position_id = CSA_20th_Century_Alliance
+		prerequisite = { focus = CSA_20th_Century_Alliance }
+		available = {
+		}
+
+		completion_reward = {
+			1423 = { set_demilitarized_zone = yes }
+			unlock_decision_category_tooltip = CSA_Richmond_Confederation
+				set_power_balance = {
+    			id = CSA_Development_of_the_AP
+    			left_side = CSA_traditionalist
+    			right_side = CSA_industrialist
+    			set_value = 0.15
+		}
+		}
+		
+	}
+	focus = { #支援德克萨斯
+		id = CSA_Support_Texas
+		icon = GFX_focus_CSA_Support_Texas
+		cost = 3
+		x = 0
+		y = 3
+		relative_position_id = CSA_The_status_quo_atcc
+		prerequisite = { focus = CSA_The_status_quo_atcc }
+		available = {
+		}
+
+		completion_reward = {
+
+		}
+	}
+	focus = { #星十字旗屹立不倒
+		id = CSA_The_Star_and_Cfat
+		icon = GFX_focus_CSA_The_Star_and_Cfat
+		cost = 3
+		x = 0
+		y = 4
+		relative_position_id = CSA_Support_Texas
+		prerequisite = { focus = CSA_Support_Texas }
+		prerequisite = { focus = CSA_Assemble_the_patrol_team }
+		prerequisite = { focus = CSA_Arrest_of_Black_radicals }
+		prerequisite = { focus = CSA_continental_system_defense }
+		prerequisite = { focus = CSA_Therectification_phbc }
+		available = {
+		}
+
+		completion_reward = {
+
+		}
+	}
+	focus = { #西部事宜
+		id = CSA_western_affairs
+		icon = GFX_focus_CSA_western_affairs
+		cost = 3
+		x = -4
+		y = 1
+		relative_position_id = CSA_The_status_quo_atcc
+		prerequisite = { focus = CSA_The_status_quo_atcc }
+		available = {
+		}
+
+		completion_reward = {
+			unlock_decision_category_tooltip = CSA_western_affairs_decision
+			SCF = {
+				country_event = {
+					id = Confederate_State.2
+				}
+			}
+			
+		}
+	}
+	focus = { #集结忠诚的牛仔们
+		id = CSA_Gathering_loyal_cowboys
+		icon = GFX_focus_CSA_Gathering_loyal_cowboys
+		cost = 3
+		x = 1
+		y = 1
+		relative_position_id = CSA_western_affairs
+		prerequisite = { focus = CSA_western_affairs }
+		available = {
+		}
+
+		completion_reward = {
+			378 = { add_manpower = 2000 }
+			add_war_support = 0.02
+			unlock_decision_category_tooltip = CSA_Recruiting_Cowboys
+		}
+	}
+	focus = { #与西部破产农民交涉
+		id = CSA_Negotiations_WbfitW
+		icon = GFX_focus_CSA_Negotiations_WbfitW
+		cost = 3
+		x = 0
+		y = 1
+		relative_position_id = CSA_Gathering_loyal_cowboys
+		prerequisite = { focus = CSA_Gathering_loyal_cowboys }
+		available = {
+		}
+
+		completion_reward = {
+			add_ideas = {
+				CSA_Regional_farmer_support
+			}
+		}
+	}
+	focus = { #集结巡逻队
+		id = CSA_Assemble_the_patrol_team
+		icon = GFX_focus_CSA_Assemble_the_patrol_team
+		cost = 3
+		x = 0
+		y = 1
+		relative_position_id = CSA_Negotiations_WbfitW
+		prerequisite = { focus = CSA_Negotiations_WbfitW }
+		available = {
+		}
+
+		completion_reward = {
+			add_war_support = 0.05
+			SCF = {
+				add_command_power = 30
+			}
+			TEX = {
+				add_command_power = 30
+			}
+		}
+	}
+	focus = { #在里士满发布公文
+		id = CSA_Official_document_iiR
+		icon = GFX_focus_CSA_Official_document_iiR
+		cost = 3
+		x = -2	
+		y = 1
+		relative_position_id = CSA_western_affairs
+		prerequisite = { focus = CSA_western_affairs }
+		available = {
+		}
+
+		completion_reward = {
+			add_war_support = 0.05
+		}
+	}
+	focus = { # 签署《扩地法》
+		id = CSA_Signing_of_the_LEA
+		icon = GFX_focus_CSA_Signing_of_the_LEA
+		cost = 3
+		x = 0
+		y = 2
+		relative_position_id = CSA_Official_document_iiR
+		prerequisite = { focus = CSA_Official_document_iiR }
+		available = {
+		}
+
+		completion_reward = {
+			add_offsite_building = { type = industrial_complex level = 2 }
+			swap_ideas = {
+				remove_idea = CSA_slave_and_industry
+				add_idea = CSA_slave_and_industry_2
+			}
+			375 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			1026 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			362 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			371 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			MEX = {
+				add_ideas = {
+					CSA_Impact_of_lem 
+				}
+			}
+			SCF = {
+				add_ideas = {
+					CSA_Impact_of_lem 
+				}
+			}
+			TEX = {
+				add_ideas = {
+					CSA_Impact_of_lem 
+				}
+			}
+		}
+	}
+	focus = { #逮捕黑人激进分子
+		id = CSA_Arrest_of_Black_radicals
+		icon = GFX_focus_CSA_Arrest_of_Black_radicals
+		cost = 3
+		x = 0
+		y = 1
+		relative_position_id = CSA_Signing_of_the_LEA
+		prerequisite = { focus = CSA_Signing_of_the_LEA }
+		available = {
+		}
+
+		completion_reward = {
+
+		}
+	}
+	focus = { #大陆体系防御
+		id = CSA_continental_system_defense
+		icon = GFX_focus_CSA_continental_system_defense
+		cost = 3
+		x = 3
+		y = 1
+		relative_position_id = CSA_The_status_quo_atcc
+		prerequisite = { focus = CSA_The_status_quo_atcc }
+		available = {
+		}
+
+		completion_reward = {
+			1423 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { 
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = { 
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					province = 7388
+				}
+			}
+			366 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = { 
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = { 
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					province = 7388
+				}
+			}
+			363 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { 
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = { 
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+			371 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { 
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = { 
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+			362 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { 
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = { 
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = { 
+					type = bunker
+					level = 2
+					instant_build = yes
+				}
+			}
+			370 = {
+				add_building_construction = { 
+					type = bunker
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = { #改组邦联军
+		id = CSA_Reorganize_the_Confederate_Army
+		icon = GFX_focus_CSA_Reorganize_the_Confederate_Army
+		cost = 3
+		x = 0
+		y = 2
+		relative_position_id = CSA_continental_system_defense
+		prerequisite = { focus = CSA_continental_system_defense }
+		available = {
+		}
+
+		completion_reward = {
+
+		}
+	}
+	focus = { #第一次世界大战的经验
+		id = CSA_The_experience_of_World_War_I
+		icon = GFX_focus_CSA_The_experience_of_World_War_I
+		cost = 3
+		x = 0
+		y = 1
+		relative_position_id = CSA_Reorganize_the_Confederate_Army
+		prerequisite = { focus = CSA_Reorganize_the_Confederate_Army }
+		available = {
+		}
+
+		completion_reward = {
+
+		}
+	}
+	focus = { #大兵团突击模式
+		id = CSA_Large_scale_assault_mode
+		icon = GFX_focus_CSA_Large_scale_assault_mode
+		cost = 3
+		x = 0
+		y = 1
+		relative_position_id = CSA_The_experience_of_World_War_I
+		prerequisite = { focus = CSA_The_experience_of_World_War_I }
+		mutually_exclusive = { focus = CSA_gun_synergy_mode }
+		available = {
+		}
+
+		completion_reward = {
+
+		}
+	}
+	focus = { #扩招弗吉尼亚军校
+		id = CSA_Virginia_Military_Academy_ee
+		icon = GFX_focus_CSA_Virginia_Military_Academy_ee
+		cost = 3
+		x = 3
+		y = 1
+		relative_position_id = CSA_continental_system_defense
+		prerequisite = { focus = CSA_continental_system_defense }
+		available = {
+		}
+
+		completion_reward = {
+
+		}
+	}
+	focus = { #民兵正规化建设
+		id = CSA_Militia_Regularization
+		icon = GFX_focus_CSA_Militia_Regularization
+		cost = 3
+		x = 0
+		y = 2
+		relative_position_id = CSA_Virginia_Military_Academy_ee
+		prerequisite = { focus = CSA_Reorganize_the_Confederate_Army }
+		prerequisite = { focus = CSA_Virginia_Military_Academy_ee }
+		available = {
+		}
+
+		completion_reward = {
+
+		}
+	}
+	focus = { #现代化炮兵体系
+		id = CSA_Modern_artillery_system
+		icon = GFX_focus_CSA_Modern_artillery_system
+		cost = 3
+		x = 6
+		y = 1
+		relative_position_id = CSA_continental_system_defense
+		prerequisite = { focus = CSA_continental_system_defense }
+		available = {
+		}
+
+		completion_reward = {
+
+		}
+	}
+	focus = { #购买德国坦克火炮
+		id = CSA_Purchase_German_tanks_and_artillery
+		icon = GFX_focus_CSA_Purchase_German_tanks_and_artillery
+		cost = 3
+		x = 0
+		y = 1
+		relative_position_id = CSA_Modern_artillery_system
+		prerequisite = { focus = CSA_Modern_artillery_system }
+		available = {
+		}
+
+		completion_reward = {
+
+		}
+	}
+	focus = { #步炮协同模式
+		id = CSA_gun_synergy_mode
+		icon = GFX_focus_CSA_gun_synergy_mode
+		cost = 3
+		x = 3
+		y = 1
+		relative_position_id = CSA_Militia_Regularization
+		prerequisite = { focus = CSA_Militia_Regularization }
+		prerequisite = { focus = CSA_Purchase_German_tanks_and_artillery }
+		mutually_exclusive = { focus = CSA_Large_scale_assault_mode }
+		available = {
+		}
+
+		completion_reward = {
+
+		}
+	}
+	focus = { #整改计划完工
+		id = CSA_Therectification_phbc
+		icon = GFX_focus_CSA_Therectification_phbc
+		cost = 3
+		x = 3
+		y = 1
+		relative_position_id = CSA_Large_scale_assault_mode
+		prerequisite = { focus = CSA_Large_scale_assault_mode focus = CSA_gun_synergy_mode }
+		available = {
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+}

@@ -1,0 +1,39 @@
+﻿l_simp_chinese:
+
+ PRU_luis_antonio_eguiguren:0 "路易斯·安东尼奥·埃吉古伦·埃斯库德罗"
+ PRU_luis_antonio_eguiguren_desc:0 "路易斯早年取得法学学位后步入政坛，北秘鲁的政坛永远不会安定，倒是社会民主党一直败而不妥的坚持着自己的合法总统路径，路易斯选择社会民主党也许是出于远离斗争的需要。随着阅历和经验增长，路易斯于1924年出任教廷大使，随后又在极短的时间内出任利马市长。\n1932年的新年被炮火撕碎后，军政府假惺惺的搞了一次“民主选举”，社会民主党居然选举胜利了！他们的候选人正是路易斯，尽管他当上了总统，但是他的几乎全部权力被军政府没收，他只能孤独的耸立于利马城，看着制宪会议中军官们的耀武扬威。"
+ 
+ 
+ PRU_social_democracy_prisoner:0 "社会民主之囚"
+ 
+ 
+ PRU_constitutional_assembly:0 "制宪会议"
+ PRU_constitutional_assembly_desc:0 "制宪会议起源于1932年政变后一段过渡时期的国家最高政府，不过随后总统就任，但他仍然没有被取消，反而成为军政府操纵国家的工具。会议内所有代表几乎全部来自于革命联盟党，这是军政府所谓北秘鲁唯二的合法政党，除此之外，会议也被用于团结寡头和资本家，共同对抗在山区负隅顽抗的阿普拉党和其他异议人士。\n当然，如果革命联盟取得政权，这一军方的工具恐怕会脱离他们的掌控吧。"
+ PRU_victory_over_red_tyranny:0 "战胜赤色暴政"
+ PRU_victory_over_red_tyranny_desc:0 "秘鲁社会党在党代会中四分五裂，大部分成员被捕或者合法化加入社会民主党；阿普拉党仍在抵抗，不过他们无足轻重，掀不起大风大浪。我们无疑是摧毁了社会主义者们处心积虑摧毁北秘鲁的阴谋，保卫了玻利瓦尔和圣马丁的遗产。欢庆着真正的爱国者的胜利吧！救国者和革命者们！"
+ PRU_feuding_officer_corps:0 "内斗不止的军官团们"
+ PRU_feuding_officer_corps_desc:0 "军官们各有各的理想，从临时总统塞罗的改革到贝尔纳德斯的保守，从革命联盟派到寡头派，再到墨索里尼和多里奥乃至何塞的拙劣模仿者，军官团们在政变中的沆瀣一气已经出现了裂痕，也许终有一日他们将会兵戎相见，北秘鲁的局势将会更加扑朔迷离。"
+ PRU_separating_federation:0 "日渐分离的联邦"
+ PRU_separating_federation_desc:0 "虽然自从联邦建立已经过去了几乎一个世纪，但是联邦内部的裂缝一直未能修补，而且随着全球性金融危机以及南美的危机局势，秘鲁玻利维亚的局势已经难以维系，众多的人相信联盟已经走向了坟墓。但如果一个严重的危机出现，保不准秘鲁玻利维亚能够重新恢复成团结的模样。"
+
+
+ PRU_communism_party: "秘鲁社会民主党"
+ PRU_communism_party_long: "§R非法§!"
+ PRU_Socialism_party: "阿普拉党"
+ PRU_Socialism_party_long: "§R非法§!"
+ PRU_Progressivism_party: "社会民主党"
+ PRU_Progressivism_party_long: "社会民主党"
+ PRU_Liberalism_party: "阿奎拉尔集团"
+ PRU_Liberalism_party_long: "阿奎拉尔集团"
+ PRU_Democracy_party: "公民党"
+ PRU_Democracy_party_long: "§R非法§!"
+ PRU_Conservatism_party: "制宪会议"
+ PRU_Conservatism_party_long: "制宪会议"
+ PRU_Authoritarianism_party: "制宪会议"
+ PRU_Authoritarianism_party_long: "制宪会议"
+ PRU_tttt_party: "制宪会议"
+ PRU_tttt_party_long: "制宪会议"
+ PRU_fascism_party: "革命联盟"
+ PRU_fascism_party_long: "革命联盟"
+ PRU_nazism_party: "革命联盟"
+ PRU_nazism_party_long: "革命联盟"

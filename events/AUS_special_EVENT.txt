@@ -1,0 +1,159 @@
+﻿add_namespace = AUS_TVE_EVENT
+country_event = {
+	id = AUS_TVE_EVENT.1
+	title = AUS_TVE_EVENT.1.t
+	desc = AUS_TVE_EVENT.1.desc
+	#picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = AUS_TVE_EVENT.1.a
+		country_event = {
+			id = AUS_TVE_EVENT.2
+			hours = 24
+		}
+		AUS = {
+			#kill_country_leader = Archduke_Franz_Ferdinand_of_Austria
+			create_country_leader = {
+				name = AUS_UPYIYUAN
+				picture = GFX_AUS_TVE_yih
+				expire = "1965.1.1"
+				ideology = Austria_Hungary_ideologies_Conservatism
+				traits = {
+					#
+				}
+			}
+		}
+		70 = { set_demilitarized_zone = yes }
+		71= { set_demilitarized_zone = yes }
+		73= { set_demilitarized_zone = yes }
+		655= { set_demilitarized_zone = yes }
+		115= { set_demilitarized_zone = yes }
+		43= { set_demilitarized_zone = yes }
+		154= { set_demilitarized_zone = yes }
+		951= { set_demilitarized_zone = yes }
+		952= { set_demilitarized_zone = yes }
+		45= { set_demilitarized_zone = yes }
+		744= { set_demilitarized_zone = yes }
+		155= { set_demilitarized_zone = yes }
+		1187= { set_demilitarized_zone = yes }
+		1189= { set_demilitarized_zone = yes }
+		1191= { set_demilitarized_zone = yes }
+		953= { set_demilitarized_zone = yes }
+		1188= { set_demilitarized_zone = yes }
+	}
+	
+}
+country_event = {
+	id = AUS_TVE_EVENT.2
+	title = AUS_TVE_EVENT.2.t
+	desc = AUS_TVE_EVENT.2.desc
+	#picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = AUS_TVE_EVENT.2.a
+		country_event = {
+			id = AUS_TVE_EVENT.3
+			hours = 24
+		}
+		70 = { set_demilitarized_zone = no }
+		71= { set_demilitarized_zone = no }
+		73= { set_demilitarized_zone = no }
+		655= { set_demilitarized_zone = no }
+		SLO = {
+			transfer_state = 70
+			transfer_state = 71
+			transfer_state = 655
+		}
+		ZAK = {
+			transfer_state = 73
+		}
+	}
+}
+country_event = {
+	id = AUS_TVE_EVENT.3
+	title = AUS_TVE_EVENT.3.t
+	desc = AUS_TVE_EVENT.3.desc
+	#picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = AUS_TVE_EVENT.2.a
+		country_event = {
+			id = AUS_TVE_EVENT.4
+			hours = 24
+		}
+		AUS ={set_cosmetic_tag = AUS_DEC_COLOR}
+		115= { set_demilitarized_zone = no }
+		43= { set_demilitarized_zone = no }
+		154= { set_demilitarized_zone = no }
+		951= { set_demilitarized_zone = no }
+		45= { set_demilitarized_zone = no }
+		744= { set_demilitarized_zone = no }
+		952= { set_demilitarized_zone = no }
+		155= { set_demilitarized_zone = no }
+		1189= { set_demilitarized_zone = no }
+		1191= { set_demilitarized_zone = no }
+		75= { set_demilitarized_zone = yes }
+		1185= { set_demilitarized_zone = yes }
+		72= { set_demilitarized_zone = yes }
+		953= { set_demilitarized_zone = no }
+		1188= { set_demilitarized_zone = no }
+		AUS ={
+			set_autonomy = {
+				target = HUN
+				autonomy_state = autonomy_free
+			}
+		}
+	}
+}
+country_event = {
+	id = AUS_TVE_EVENT.4
+	title = AUS_TVE_EVENT.4.t
+	desc = AUS_TVE_EVENT.4.desc
+	#picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = AUS_TVE_EVENT.4.a
+		country_event = {
+			id = AUS_TVE_EVENT.5
+			hours = 24
+		}
+		HUN = {set_cosmetic_tag = HUN_INDE_TVE}
+		9 = { set_demilitarized_zone = yes }
+		remove_from_faction = AUS
+		1187= { set_demilitarized_zone = yes }
+	}
+}
+country_event = {
+	id = AUS_TVE_EVENT.5
+	title = AUS_TVE_EVENT.5.t
+	desc = AUS_TVE_EVENT.5.desc
+	#picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = AUS_TVE_EVENT.5.a
+		9 = { set_demilitarized_zone = NO }
+		75= { set_demilitarized_zone = NO }
+		1185= { set_demilitarized_zone = NO }
+		1187= { set_demilitarized_zone = NO }
+		72= { set_demilitarized_zone = NO }
+		CZE = {
+			transfer_state = 9
+			transfer_state = 75
+			transfer_state = 1185
+			transfer_state = 1187
+		}
+		POL ={
+			transfer_state = 72
+		}
+	}
+}

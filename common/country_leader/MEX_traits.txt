@@ -1,0 +1,180 @@
+leader_traits = {
+	MEX_wangyang_bulao = {
+		random = no
+
+		stability_weekly = 0.005
+		
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	president_bug_writer = {
+		random = no
+
+		political_power_cost = 0.05
+		stability_factor = 0.1
+		
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	mianju_yu_wutuobang = { #面具与乌托邦
+		random = no
+
+		
+		war_support_factor = 0.05
+		stability_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	wusi_yu_cishan = {
+		random = no
+
+		Progressivism_drift = 0.05
+		stability_factor = 0.05
+		political_power_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	minzu_jiaoxiangyue = {
+		random = no
+
+		Socialism_drift = 0.05
+		party_popularity_stability_factor = 0.2
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	heise_shizhe = {
+		random = no
+
+		Progressivism_drift = 0.05
+		army_core_defence_factor  = 0.1
+		political_power_factor = 0.2
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	aer_tasuoer = {
+		random = no
+
+		Progressivism_drift = 0.05
+		war_support_factor = 0.15
+		defensive_war_stability_factor = 0.1
+		offensive_war_stability_factor = 0.1
+		justify_war_goal_time = -0.5		
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	bihua_sanjie1 = {
+		random = no
+
+		Socialism_drift = 0.05
+		improve_relations_maintain_cost_factor = -0.5
+		communism_acceptance = 25	
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	bihua_sanjie2 = {
+		random = no
+
+		Socialism_drift = 0.05
+		conscription_factor = 0.1
+		war_support_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	zuoyi_gonghui_lingxiu = {
+		random = no
+
+		industrial_capacity_factory = 0.1
+		industrial_capacity_dockyard = 0.1
+		production_factory_efficiency_gain_factor  = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	junfang_zuoyi_zhengzhijia = {
+		random = no
+
+		Socialism_drift = 0.05
+		research_speed_factor = 0.05
+		training_time_army_factor = -0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	nongminjun_daibiao = {
+		random = no
+
+		weekly_manpower = 500
+		production_speed_buildings_factor = 0.05
+		production_speed_infrastructure_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	guanfang_gonghui_zhuyizhe = {
+		random = no
+
+		Progressivism_drift = 0.05
+		production_factory_max_efficiency_factor = 0.15
+		industrial_capacity_factory = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	Between_Stone_and_Flower = { #石与花之间
+		random = no
+
+		research_speed_factor = 0.1
+		improve_relations_maintain_cost_factor = -0.5
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	geming_jingjixue = { #革命经济学
+		random = no
+
+		consumer_goods_factor = -0.15
+		production_speed_buildings_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

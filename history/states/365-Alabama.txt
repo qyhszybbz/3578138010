@@ -1,0 +1,33 @@
+
+state={
+	id = 365
+	name="STATE_365"
+	manpower = 2646247
+	
+	state_category = city
+
+	history={
+		owner = CSA
+		add_core_of = CSA
+		add_core_of = USA
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 5
+			7480 = {
+				naval_base = 3
+			}
+		}
+		victory_points = {
+			7480 10 
+		}
+		victory_points = {
+			12735 10 
+		}
+	}
+
+	provinces={
+		492 860 1587 4594 4622 4756 5059 7422 7480 7640 10192 10520 11509 11942 12735 12803 
+	}
+
+	local_supplies=0.0 
+}

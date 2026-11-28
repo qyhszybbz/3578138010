@@ -1,0 +1,29 @@
+state={
+	id=691
+	name="STATE_691"
+	manpower = 1568500
+	state_category = pastoral
+	resources = {
+		steel = 17
+	}
+	
+	history={
+		owner = FWA
+		add_core_of = SIE
+		buildings = {
+			infrastructure = 2
+			2038 = {
+				naval_base = 3
+			}
+		}
+		victory_points = {
+			2038 5
+		}
+	}
+	
+	provinces={
+		2038 2094 
+	}
+
+	local_supplies=1.0
+}

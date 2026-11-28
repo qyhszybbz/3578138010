@@ -1,0 +1,24 @@
+state = {
+	id = 740
+	name = "STATE_740"
+	manpower = 70000
+	state_category = wasteland
+	history = {
+		owner = CHI
+		add_core_of = SIK
+		add_core_of = CHI
+		add_core_of = PRC
+		add_extra_state_shared_building_slots = 1
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			4947 3
+		}
+	}
+	provinces = {
+		1698 2074 4947 5736
+	}
+	local_supplies = 7
+	buildings_max_level_factor = 1.000
+}

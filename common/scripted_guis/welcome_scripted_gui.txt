@@ -1,0 +1,41 @@
+scripted_gui = {
+	welcome_system_politics = {
+		context_type = player_context
+		window_name = "braltic_war_gui"
+
+		visible = {
+			NOT = {
+				has_country_flag = TFE_introduction_over
+			}
+		}
+
+		triggers = {
+            page2_visible = {
+				has_country_flag = welcome_page2
+            }
+			introduction_desc_visible = {
+				NOT = { has_country_flag = welcome_page2 }
+            }
+			welcome_icon_visible = {
+				NOT = { has_country_flag = welcome_page2 }
+            }
+        }
+		effects = {
+			introduction_icon_click = {
+				set_country_flag = TFE_introduction_over
+			}
+			introduction_welcome_botton2_click = {
+				set_country_flag = welcome_page2
+			}
+			introduction_welcome_botton1_click = {
+				clr_country_flag = welcome_page2
+			}
+		}
+		properties = {
+			welcome_icon = {
+				image = "[welcome_icon_loc]"
+			}
+		}
+	}
+}
+

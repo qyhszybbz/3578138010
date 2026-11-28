@@ -1,0 +1,62 @@
+spriteTypes = { 
+	###领导人
+	spriteType = { #佩徳罗三世
+		name = "GFX_leader_BRA_Pedro_III" 
+		texturefile = "gfx/leaders/BRA/BRA_Pedro_III.dds"
+	}
+	###顾问
+	spriteType = { #梅洛·维亚纳
+		name = "GFX_idea_BRA_Merleau_Viana_ad" 
+		texturefile = "gfx/interface/ideas/BRA/BRA_Merleau_Viana_ad.dds"
+	}
+	spriteType = { #奥塔维奥·曼加贝拉
+		name = "GFX_idea_BRA_Otavio_Mangabera_ad" 
+		texturefile = "gfx/interface/ideas/BRA/BRA_Otavio_Mangabera_ad.dds"
+	}
+	spriteType = { #儒利奥·普雷斯特斯
+		name = "GFX_idea_BRA_Julio_Presters_ad" 
+		texturefile = "gfx/interface/ideas/BRA/BRA_Julio_Presters_ad.dds"
+	}
+	spriteType = { #阿曼多·德·萨列斯·奥利维拉
+		name = "GFX_idea_BRA_Armando_de_Salles_Oliveira_ad" 
+		texturefile = "gfx/interface/ideas/BRA/BRA_Armando_de_Salles_Oliveira_ad.dds"
+	}
+	###民族精神
+	spriteType = { #牛奶和咖啡的专制
+		name = "GFX_idea_BRA_The_tyranny_of_mac" 
+		texturefile = "gfx/interface/ideas/BRA/BRA_The_tyranny_of_mac.dds"
+	}
+	spriteType = { #膨胀的州权
+		name = "GFX_idea_BRA_Inflated_states_rights" 
+		texturefile = "gfx/interface/ideas/BRA/BRA_Inflated_states_rights.dds"
+	}
+	spriteType = { #嚣张的共和派
+		name = "GFX_idea_BRA_Arrogant_Republicans" 
+		texturefile = "gfx/interface/ideas/BRA/BRA_Arrogant_Republicans.dds"
+	}
+	spriteType = { #单一的经济
+		name = "GFX_idea_BRA_unitary_economy" 
+		texturefile = "gfx/interface/ideas/BRA/BRA_unitary_economy.dds"
+	}
+	###民族精神配图
+	spriteType = { #牛奶和咖啡的专制配图
+		name = "GFX_idea_BRA_The_tyranny_of_mac_Pictures" 
+		texturefile = "gfx/texticons/banners/BRA/BRA_The_tyranny_of_mac_Pictures.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = { #膨胀的州权配图
+		name = "GFX_idea_BRA_Inflated_states_rights_Pictures" 
+		texturefile = "gfx/texticons/banners/BRA/BRA_Inflated_states_rights_Pictures.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = { #嚣张的共和派配图
+		name = "GFX_idea_BRA_Arrogant_Republicans_Pictures"
+		texturefile = "gfx/texticons/banners/BRA/BRA_Arrogant_Republicans_Pictures.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = { #单一的经济配图
+		name = "GFX_idea_BRA_unitary_economy_Pictures" 
+		texturefile = "gfx/texticons/banners/BRA/BRA_unitary_economy_Pictures.dds"
+		legacy_lazy_load = no
+	}
+}

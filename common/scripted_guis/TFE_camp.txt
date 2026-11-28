@@ -1,0 +1,214 @@
+scripted_gui = { #阵营
+	##政治界面
+	camp_system_politics = { 
+		context_type = player_context
+        parent_window_token = politics_tab
+		window_name = "camp_system_politics"
+		ai_enabled = {
+			always = no
+		}
+		properties = {
+			camp_button = {
+			image = "[GetDynamicFactionIR]"
+		}
+		}
+		
+		triggers = {
+			camp_button_visible = {
+				is_in_faction = yes
+			}
+		}
+		effects = {
+            camp_button_click = {
+				if = {
+					limit = {
+						has_country_flag = nato_list_open_politics
+					}
+					clr_country_flag = nato_list_open_politics
+				}
+				else = {
+					set_country_flag = nato_list_open_politics
+				}
+				clear_array = global.grid_faction_array_@FROM
+				add_to_variable = {
+					global.nato_list_variable = 0.01
+				}
+				FROM = {
+					add_to_array = {
+						array = global.grid_faction_array_@FROM
+					}
+				}
+				for_each_scope_loop = {
+					array = FROM.allies
+					THIS = {
+					if = {
+						limit = {
+							PREV = {
+								is_faction_leader = yes
+							}
+						}
+						add_to_array = {
+							array = global.grid_faction_array_@FROM
+							index = 0
+						}
+					}
+					else = {
+						add_to_array = {
+							array = global.grid_faction_array_@FROM
+						}
+					}
+					}
+				}
+				
+            }
+        }
+	}
+	nato_list_politics = {
+        context_type = player_context
+        parent_window_token = politics_tab
+        window_name = "nato_list_window_politics"
+		dirty = nato_list_variable
+		ai_enabled = {
+			always = no
+		}
+        visible = {
+            has_country_flag = nato_list_open_politics
+			is_in_faction = yes
+        }
+		dynamic_lists = {
+			nato_tags_grid = {
+				array = global.grid_faction_array_@FROM
+				change_scope = yes
+				entry_container = nato_member_entry
+			}
+		}
+		triggers = {
+			major_country_overlay_visible = {
+				THIS = {
+					is_faction_leader = yes
+				}
+			}
+		}
+        effects = {
+            button_close_click = {
+				clr_country_flag = nato_list_open_politics
+            }
+        }
+		properties = {
+			country_flag = {
+				image = "[This.GetFlag]"
+			}
+			camp_banner = {
+			image = "[GetFactionBanner]"
+		}
+		}
+    }
+	##外交界面
+	camp_system_diplomacy = { 
+		context_type = selected_country_context
+        parent_window_token = selected_country_view_diplomacy
+		window_name = "camp_system_diplomacy"
+		ai_enabled = {
+			always = no
+		}
+		properties = {
+			camp_button = {
+			image = "[GetDynamicFactionIR]"
+		}
+			camp_banner = {
+			image = "[GetFactionBanner]"
+		}
+		}
+		triggers = {
+			camp_button_visible = {
+				is_in_faction = yes
+			}
+		}
+		effects = {
+            camp_button_click = {
+				if = {
+					limit = {
+						has_country_flag = nato_list_open_diplomacy
+					}
+					clr_country_flag = nato_list_open_diplomacy
+				}
+				else = {
+					set_country_flag = nato_list_open_diplomacy
+				}
+				clear_array = global.grid_faction_array_@FROM
+				add_to_variable = {
+					global.nato_list_variable = 0.01
+				}
+				FROM = {
+					add_to_array = {
+						array = global.grid_faction_array_@FROM
+					}
+				}
+				for_each_scope_loop = {
+					array = FROM.allies
+					THIS = {
+					if = {
+						limit = {
+							PREV = {
+								is_faction_leader = yes
+							}
+						}
+						add_to_array = {
+							array = global.grid_faction_array_@FROM
+							index = 0
+						}
+					}
+					else = {
+						add_to_array = {
+							array = global.grid_faction_array_@FROM
+						}
+					}
+						
+					}
+				}
+				
+            }
+        }
+	}
+	nato_list_diplomacy = { 
+        context_type = selected_country_context
+        parent_window_token = selected_country_view_diplomacy
+        window_name = "nato_list_window_diplomacy"
+		dirty = nato_list_variable
+		ai_enabled = {
+			always = no
+		}
+        visible = {
+            has_country_flag = nato_list_open_diplomacy
+			is_in_faction = yes
+        }
+		dynamic_lists = {
+			nato_tags_grid = {
+				array = global.grid_faction_array_@FROM
+				change_scope = yes
+				entry_container = nato_member_entry
+			}
+		}
+		triggers = {
+			major_country_overlay_visible = {
+				THIS = {
+					is_faction_leader = yes
+				}
+			}
+		}
+        effects = {
+            button_close_click = {
+				clr_country_flag = nato_list_open_diplomacy
+            }
+        }
+		properties = {
+			country_flag = {
+				image = "[This.GetFlag]"
+			}
+			camp_banner = {
+				image = "[GetFactionBanner]"
+			}
+		}
+		
+    }
+}

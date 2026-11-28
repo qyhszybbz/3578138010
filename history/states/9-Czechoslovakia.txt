@@ -1,0 +1,30 @@
+state={
+	id = 9
+	name="STATE_9"
+	manpower = 2757896
+	resources={
+		steel=5 # was: 8
+	}
+	
+	state_category = large_city
+	
+	history={
+		owner = CZE
+		add_core_of = CZE
+		victory_points = { 9569 5 }
+		buildings = {
+			infrastructure = 4
+			arms_factory = 6
+			industrial_complex = 1
+			anti_air_building = 5
+			air_base = 5
+		}
+		
+	}
+
+	provinces={
+		445 494 583 3462 9414 9429 9569 11556 421
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,12 @@
+spriteTypes = {
+		spriteType = { #贡萨洛·奎波·德利亚诺
+		name = "GFX_idea_EQG_Emilio_Archinardo"
+		texturefile = "gfx/leaders/EQG/TVE_EQG_Emilio_Archinardo.dds"
+	}
+
+	spriteType = { #雨林地带
+		name = "GFX_idea_EQG_rainforest_zone"
+		texturefile = "gfx/interface/ideas/EQG/TVE_EQG_rainforest_zone.dds"
+	}
+	
+}

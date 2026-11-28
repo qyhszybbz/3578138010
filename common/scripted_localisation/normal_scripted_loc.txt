@@ -1,0 +1,108 @@
+defined_text = {
+    name = TFE_title_loc
+    text = {
+        trigger = {
+            tag = AUS
+        }
+        localization_key = "TFE_title_loc_AUS"
+    }
+    text = {
+        trigger = {
+            tag = POL
+        }
+        localization_key = "TFE_title_loc_POL"
+    }
+    text = {
+		trigger = {
+            tag = FRA
+        }
+        localization_key = "TFE_title_loc_FRA"
+    }
+    text = {
+		trigger = {
+            tag = SPR
+        }
+        localization_key = "TFE_title_loc_SPR"
+    }
+    text = {
+		trigger = {
+            tag = CSA
+        }
+        localization_key = "TFE_title_loc_CSA"
+    }
+    text = {
+		trigger = {
+            tag = SOV
+        }
+        localization_key = "TFE_title_loc_SOV"
+    }
+}
+defined_text = {
+    name = TVE_desc_loc
+    text = {
+        trigger = {
+            tag = AUS
+        }
+        localization_key = "TVE_desc_loc_AUS"
+    }
+    text = {
+		trigger = {
+            tag = FRA
+        }
+        localization_key = "TVE_desc_loc_FRA"
+    }
+    text = {
+		trigger = {
+            tag = POL
+        }
+        localization_key = "TVE_desc_loc_POL"
+    }
+     text = {
+		trigger = {
+            tag = SPR
+        }
+        localization_key = "TVE_desc_loc_SPR"
+    }
+    text = {
+		trigger = {
+            tag = CSA
+        }
+        localization_key = "TFE_desc_loc_CSA"
+    }
+    text = {
+		trigger = {
+            tag = SOV
+        }
+        localization_key = "TFE_desc_loc_SOV"
+    }
+}
+defined_text = {
+    name = welcome_icon_loc
+    text = {
+        trigger = {
+            tag = AUS
+        }
+        localization_key = "GFX_KARII"
+    }
+    text = {
+		trigger = {
+            tag = POL
+        }
+        localization_key = "GFX_POLWELCOME"
+    }
+    text = {
+		trigger = {
+            tag = CSA
+        }
+        localization_key = "GFX_CSAWELCOME"
+    }
+}
+defined_text = {
+    name = TFE_welcome_close_loc
+    text = {
+        trigger = {
+            tag = SOV
+        }
+        localization_key = "TFE_welcome_close_loc_SOV"
+    }
+}

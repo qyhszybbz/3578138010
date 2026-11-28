@@ -1,0 +1,56 @@
+﻿capital = 500
+oob = "BRB_1935"
+set_stability = 0.34
+set_war_support = 0.52
+starting_train_buffer = 0.9
+set_fuel_ratio = 0.8
+set_research_slots = 2
+
+### 初始科技 ###
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_trucks = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	basic_train = 1
+}
+
+### 领导人 ###
+recruit_character = BRB_Getulio_Vargas #热图里奥·瓦加斯
+
+add_ideas = {
+	### 初始民族精神 ###
+	BRB_Republican_refuge #共和派的避难所
+	BRB_argentine_militaryaid #阿根廷军事援助
+	BRB_Vargas_Populism #瓦加斯民众主义
+}
+
+set_politics = {
+	ruling_party = Authoritarianism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	Socialism = 5
+	Progressivism = 5
+	Liberalism = 2
+	Democracy = 13
+	Conservatism = 7
+	Authoritarianism = 66
+	fascism = 2
+}
+
+
+BRB = {
+	add_opinion_modifier = {
+		target = ARG
+		modifier = BRB_argentine_militaryaid
+	}
+}
+

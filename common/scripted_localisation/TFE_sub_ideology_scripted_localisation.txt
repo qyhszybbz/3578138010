@@ -1,0 +1,385 @@
+defined_text = {
+	name = GetIdeologySubtype
+	text = {
+		trigger = { has_government = communism }
+		localization_key = "[GetSubIdeologyLocTotSoc]"
+	}
+	text = {
+		trigger = { has_government = Socialism }
+		localization_key = "[GetSubIdeologyLocAuthSoc]"
+	}
+	text = {
+		trigger = { has_government = Progressivism }
+		localization_key = "[GetSubIdeologyLocLibSoc]"
+	}
+	text = {
+		trigger = { has_government = Liberalism }
+		localization_key = "[GetSubIdeologyLocSocDem]"
+	}
+	text = {
+		trigger = { has_government = Democracy }
+		localization_key = "[GetSubIdeologyLocSocLib]"
+	}
+	text = {
+		trigger = { has_government = Conservatism }
+		localization_key = "[GetSubIdeologyLocMarLib]"
+	}
+	text = {
+		trigger = { has_government = Authoritarianism }
+		localization_key = "[GetSubIdeologyLocCon]"
+	}
+	text = {
+		trigger = { has_government = tttt }
+		localization_key = "[GetSubIdeologyLocAuthDem]"
+	}
+	text = {
+		trigger = { has_government = fascism  }
+		localization_key = "[GetSubIdeologyLocDespot]"
+	}
+	text = {
+		trigger = { has_government = nazism }
+		localization_key = "[GetSubIdeologyLocFascist]"
+	}
+}
+defined_text = {
+    name = GetSubIdeologyLocTotSoc
+	#共产主义及其子意识形态
+	text = { 
+		trigger = { #共产主义
+			OR = {
+				has_country_leader_ideology = communism_small
+				has_country_leader_ideology = anarchist_communism
+			}
+			
+		}
+		localization_key = communism_small
+	}
+}
+defined_text = {
+	#社会主义及其子意识形态
+	name = GetSubIdeologyLocAuthSoc
+	text = {
+		trigger = { #社会主义
+			OR = {
+				has_country_leader_ideology = socialism_small
+			}
+			
+		}
+		localization_key = socialism_small
+	}
+	text = {
+		trigger = { #左翼民粹主义
+			OR = {
+				has_country_leader_ideology = left_wing_populism
+			}
+			
+		}
+		localization_key = left_wing_populism
+	}
+}
+defined_text = {
+	name = GetSubIdeologyLocLibSoc
+	#进步主义及其子意识形态
+	text = {
+		trigger = { #德意志民主党
+			has_country_leader_ideology = social_liberalism
+		}
+		localization_key = social_liberalism
+	}
+	text = {
+		trigger = { #进步主义
+			OR = {
+				has_country_leader_ideology = progressivism_small
+				has_country_leader_ideology = Austria_Hungary_ideologies_Progressivism
+			}
+			
+		}
+		localization_key = progressivism_small
+
+	}
+	text = {
+		trigger = { #新式宪政
+			has_country_leader_ideology = New_constitutionalism
+		}
+		localization_key = New_constitutionalism
+
+	}
+	text = {
+		trigger = { #乔治主义
+			has_country_leader_ideology = Georgism
+		}
+		localization_key = Georgism
+		
+	}
+	text = {
+		trigger = { #克伦斯基主义
+			has_country_leader_ideology = Kerenskyism
+		}
+		localization_key = Kerenskyism
+		
+	}
+	text = {
+		trigger = { #盖坦主义
+			has_country_leader_ideology = Gaitanism
+		}
+		localization_key = Gaitanism
+	}
+}
+defined_text = {
+	name = GetSubIdeologyLocSocDem
+	#自由主义及其子意识形态
+	text = {
+		trigger = { #自由主义
+			OR = {
+				has_country_leader_ideology = liberalism_small
+				has_country_leader_ideology = socialism
+				has_country_leader_ideology = Britain_republic
+			}
+		}
+		localization_key = liberalism_small
+	}
+		text = {
+		trigger = { # 民粹主义
+			has_country_leader_ideology = populism
+		}
+		localization_key = populism
+	}
+		text = {
+		trigger = { #自由激进主义
+			has_country_leader_ideology = liberal_radicalism
+		}
+		localization_key = liberal_radicalism
+	}
+	text = {
+		trigger = { #孤立主义
+			has_country_leader_ideology = isolationism
+		}
+		localization_key = isolationism
+	}
+	text = {
+		trigger = { #殖民政府-自由主义
+			has_country_leader_ideology = colonial_government_liberalism
+		}
+		localization_key = colonial_government_tttt
+    }
+	text = {
+		trigger = { #宪政自由主义
+			has_country_leader_ideology = constitutional_liberalism
+		}
+		localization_key = constitutional_liberalism
+	}
+	text = {
+		trigger = { #古典自由主义
+			has_country_leader_ideology = classical_liberalism
+		}
+		localization_key = classical_liberalism
+	}
+}
+defined_text = {
+	name = GetSubIdeologyLocSocLib
+	#民主主义及其子意识形态
+	text = {
+		trigger = { #稳健进步主义
+			has_country_leader_ideology = steady_Progressivism_subtype
+		}
+		localization_key = steady_Progressivism_subtype
+	}
+	text = {
+		trigger = { #民主主义
+			has_country_leader_ideology = democracy_small
+		}
+		localization_key = democracy_small
+	}
+	text = {
+		trigger = { #威权民主主义（基督教民主）
+			has_country_leader_ideology = authoritarian_democracy_christian_democracy
+		}
+		localization_key = authoritarian_democracy_christian_democracy
+	}
+}
+defined_text = {
+	name = GetSubIdeologyLocMarLib
+	#保守主义及其子意识形态
+	text = {
+		trigger = { #保守主义
+			OR = {
+				has_country_leader_ideology = Conservatism_small
+				has_country_leader_ideology = Britain_Conservatism
+				has_country_leader_ideology = Austria_Hungary_ideologies_Conservatism
+				has_country_leader_ideology = FRA_blue
+			}
+			
+			
+		}
+		localization_key = Conservatism_small
+	}
+	text = {
+		trigger = { #基督教民主主义
+			has_country_leader_ideology = christian_democracy
+		}
+		localization_key = christian_democracy
+	}
+	text = {
+		trigger = { #右翼保守主义
+			has_country_leader_ideology = Right_wing_conservatism
+		}
+		localization_key = Right_wing_conservatism
+	}
+}
+defined_text = {
+	name = GetSubIdeologyLocCon
+	#威权主义及其子意识形态
+	text = {
+		trigger = { #威权主义
+			OR = {
+				has_country_leader_ideology = authoritarianism_small
+				has_country_leader_ideology = Manstein_ideologies
+			}
+			
+		}
+		localization_key = authoritarianism_small
+	}
+	text = {
+		trigger = { #威权保守主义
+			has_country_leader_ideology = authoritarian_conservatism
+		}
+		localization_key = authoritarian_conservatism
+	}
+	text = {
+		trigger = { #袁世凯主义
+			has_country_leader_ideology = Yuanism
+		}
+		localization_key = Yuanism
+	}
+	text = {
+		trigger = { #休伊朗主义
+			has_country_leader_ideology = CSA_Hueylon_Doctrine
+		}
+		localization_key = CSA_Hueylon_Doctrine
+	}
+	text = {
+		trigger = { #无支配体制
+			has_country_leader_ideology = non_domination_system
+		}
+		localization_key = non_domination_system
+	}
+	text = {
+		trigger = { #军政府
+			has_country_leader_ideology = military_junta_authoritarianism
+		}
+		localization_key = military_junta
+    }
+	text = {
+		trigger = { #英王管辖地
+			has_country_leader_ideology = crown_dominion
+		}
+		localization_key = crown_dominion
+	}
+}
+defined_text = {
+	name = GetSubIdeologyLocAuthDem
+	#专制主义及其子意识形态
+	text = {
+		trigger = { #专制主义
+			OR = {
+				has_country_leader_ideology = tttt_small
+				has_country_leader_ideology = Wilhelm_II_ideologies
+				has_country_leader_ideology = Austria_Hungary_ideologies
+				has_country_leader_ideology = Absolute_monarchy
+				has_country_leader_ideology = Theocracy
+			}
+			
+		}
+		localization_key = tttt_small
+	}
+	text = {
+		trigger = { #杰克逊民主
+			has_country_leader_ideology = Jacksonian_Democracy 
+		}
+		localization_key = Jacksonian_Democracy 
+	}
+	text = {
+		trigger = { #里维拉式军队专制
+			has_country_leader_ideology = Spain_rivera_ideologies
+		}
+		localization_key = Spain_rivera_ideologies
+	}
+	text = {
+		trigger = { #殖民政府-专制主义
+			has_country_leader_ideology = colonial_government_tttt
+		}
+		localization_key = colonial_government_tttt 
+    }
+	text = {
+		trigger = { #军官独裁制
+			has_country_leader_ideology = Military_dictatorship
+		}
+		localization_key = Military_dictatorship
+    }
+	text = {
+		trigger = { #军政府
+			has_country_leader_ideology = military_junta_tttt
+		}
+		localization_key = military_junta
+    }
+	text = {
+		trigger = { #西班牙复兴主义
+			has_country_leader_ideology = Spanish_Revivalism
+		}
+		localization_key = Spanish_Revivalism
+    }
+}
+defined_text = {
+	name = GetSubIdeologyLocDespot
+	#法西斯主义及其子意识形态
+	text = {
+		trigger = { #法西斯主义
+			OR = {
+				has_country_leader_ideology = fascism_small
+				has_country_leader_ideology = works_on_constitution
+				has_country_leader_ideology = Trujillos_ideology 
+			}
+			
+		}
+		localization_key = fascism_small
+	}
+	text = {
+		trigger = { #邦联国体制
+			has_country_leader_ideology = CSA_Confederate
+		}
+		localization_key = CSA_Confederate
+    }
+		text = {
+		trigger = { #宇宙种族主义
+			has_country_leader_ideology = MEX_cosmic_racism
+		}
+		localization_key = MEX_cosmic_racism
+    }
+	text = {
+		trigger = { #军政府-法西斯主义
+			has_country_leader_ideology = military_junta_fascism
+		}
+		localization_key = military_junta
+    }
+	text = {
+		trigger = { #军政府-法西斯主义
+			has_country_leader_ideology = National_fascism
+		}
+		localization_key = National_fascism
+    }
+}
+defined_text = {
+	name = GetSubIdeologyLocFascist
+	#民族社会主义及其子意识形态
+	text = {
+		trigger = { #民族社会主义
+			OR = {
+				has_country_leader_ideology = nazism_small
+			}
+			
+		}
+		localization_key = nazism_small
+	}
+	
+}
+	

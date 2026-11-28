@@ -1,0 +1,17 @@
+characters = {
+	GYA_william_christie = { #威廉·克里斯蒂
+		name = GYA_william_christie
+		portraits = {
+			civilian = {
+				large = GFX_leader_GYA_william_christie
+			}
+		} 
+	 country_leader = {
+        ideology = tttt_small
+		desc = GYA_william_christie_desc 
+        traits = {
+			
+        }
+    }
+	}
+}

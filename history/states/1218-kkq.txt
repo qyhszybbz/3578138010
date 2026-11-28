@@ -1,0 +1,31 @@
+
+state={
+	id = 1218
+	name="STATE_1218"
+	manpower = 158519
+	resources={
+	}
+	
+	state_category = town
+
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			air_base = 4
+		}
+		add_core_of = TUR
+		add_claim_by = BUL
+		add_claim_by = TUR
+		victory_points = {
+			11842 5
+		}
+	}
+
+	provinces={
+		11842 3893 13444
+	}
+
+	local_supplies=0.0 
+}

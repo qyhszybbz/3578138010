@@ -1,0 +1,37 @@
+state={
+	id = 90
+	name="STATE_90"
+	
+	resources={
+		steel=29
+		tungsten = 3
+		aluminium = 3
+		chromium = 3
+		oil = 4
+		coal = 9
+	}
+
+	history={
+		owner = POL
+		add_core_of = POL
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+		}
+		victory_points = {
+			11430 5
+		}
+		victory_points = {
+			3458 5
+		}
+	}
+
+	provinces={
+		562 3458 3497 3586 6416 11430 11532 
+	}
+
+	manpower = 1669245
+	buildings_max_level_factor=1.000
+	state_category = town
+	local_supplies=0.0 
+}

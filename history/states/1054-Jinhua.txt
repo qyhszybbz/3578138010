@@ -1,0 +1,19 @@
+state = {
+	id = 1054
+	name = "STATE_1054"
+	manpower = 4423478
+	state_category = rural
+	history = {
+		owner = ZJG
+		add_core_of = ZJG
+		add_core_of = PRC
+		add_core_of = CHI
+		victory_points = {
+			1125 3
+		}
+	}
+	provinces = {
+		1096 1125 10086 11991 12059
+	}
+	local_supplies = 7
+}
